@@ -2,16 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { FormControl } from '@angular/forms';
 import { map, startWith } from 'rxjs/operators';
-
-interface FileReaderEvent extends ProgressEvent {
-  target: FileReaderEventTarget;
-  getMessage(): string;
-}
-
-interface FileReaderEventTarget extends EventTarget {
-  result: string;
-}
-
+import regioes from './estados.json';
 @Component({
   selector: 'app-profile',
   templateUrl: './profile.component.html',
@@ -23,35 +14,7 @@ export class ProfileComponent implements OnInit {
   url = this.baseImg;
 
   myControl = new FormControl();
-  options: string[] = [
-    'Acre',
-    'Alagoas',
-    'Amapá',
-    'Amazonas',
-    'Bahia',
-    'Ceará',
-    'Distrito Federal',
-    'Espírito Santo',
-    'Goiás',
-    'Maranhão',
-    'Mato Grosso',
-    'Mato Grosso do Sul',
-    'Minas Gerais',
-    'Pará',
-    'Paraíba',
-    'Paraná',
-    'Pernambuco',
-    'Piauí',
-    'Rio de Janeiro',
-    'Rio Grande do Nort',
-    'Rio Grande do Sul',
-    'Rondônia',
-    'Roraima',
-    'Santa Catarina',
-    'São Paulo',
-    'Sergipe',
-    'Tocantins'
-  ];
+  options: string[] = regioes.estados.map(estado => estado.nome);
 
   filteredOptions: Observable<string[]>;
 
@@ -67,7 +30,6 @@ export class ProfileComponent implements OnInit {
 
   private _filter(value: string): string[] {
     const filterValue = value.toLowerCase();
-
     return this.options.filter(option => option.toLowerCase().includes(filterValue));
   }
 
