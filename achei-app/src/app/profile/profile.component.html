@@ -1,0 +1,103 @@
+<mat-card class="form-profile">
+  <mat-card-content>
+
+    <mat-grid-list cols="5" rowHeight="400px">
+
+      <mat-grid-tile [colspan]="3" [rowspan]="1">
+        <div class="block">
+
+          <table class="full-width" cellspacing="0">
+            <tr>
+              <td>
+                <mat-form-field class="full-width">
+                  <input type="text" matInput placeholder="Nome">
+                </mat-form-field>
+              </td>
+              <td>
+                <mat-form-field class="full-width">
+                  <input type="text" matInput placeholder="Sobrenome">
+                </mat-form-field>
+              </td>
+            </tr>
+          </table>
+
+          <mat-form-field class="full-field">
+            <input type="email" matInput placeholder="Email">
+          </mat-form-field>
+
+          <mat-form-field class="full-field">
+            <input type="password" matInput placeholder="Senha">
+          </mat-form-field>
+
+          <mat-form-field class="full-width">
+            <input matInput [matDatepicker]="picker" placeholder="Data Nascimento">
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+          </mat-form-field>
+
+          <mat-form-field class="full-width">
+            <span matPrefix>+31 &nbsp;</span>
+            <input type="tel" matInput placeholder="Telefone">
+            <mat-icon matSuffix>mode_edit</mat-icon>
+          </mat-form-field>
+
+          <table class="full-width" cellspacing="0">
+            <tr>
+              <td>
+                <form class="full-width">
+                  <mat-form-field class="full-width">
+                    <input type="text" placeholder="Pick one" aria-label="Number" matInput [formControl]="myControl"
+                      [matAutocomplete]="auto">
+                    <mat-autocomplete #auto="matAutocomplete">
+                      <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
+                        {{option}}
+                      </mat-option>
+                    </mat-autocomplete>
+                  </mat-form-field>
+                </form>
+              </td>
+              <td>
+                <mat-form-field class="full-width">
+                  <input matInput placeholder="Estado">
+                </mat-form-field>
+              </td>
+            </tr>
+          </table>
+
+          <section class="section">
+            <label class="radio-margin">Sexo:</label>
+            <mat-radio-group>
+              <mat-radio-button class="radio-margin" color="primary" value="masculino">Maculino</mat-radio-button>
+              <mat-radio-button class="radio-margin" color="primary" value="feminino">Feminino</mat-radio-button>
+              <mat-radio-button class="radio-margin" color="primary" value="outro">Outro</mat-radio-button>
+            </mat-radio-group>
+          </section>
+
+        </div>
+      </mat-grid-tile>
+      <mat-grid-tile [colspan]="2" [rowspan]="1">
+
+        <div class="block">
+
+          <div class="full-width">
+            <img id="profileimg" height="200" (click)="selectImg()" [src]="url">
+            <input type="file" id="imgupload" (change)="setFile($event)" style="display:none" />
+          </div>
+
+          <div class="full-width">
+            <button mat-raised-button color="primary" (click)="removeImg()" *ngIf="url !== baseImg"
+              class="full-width remove-button">Remover Imagem</button>
+          </div>
+
+        </div>
+      </mat-grid-tile>
+
+    </mat-grid-list>
+
+    <div class="row">
+      <button mat-raised-button color="primary" class="button-right">Salvar</button>
+    </div>
+
+  </mat-card-content>
+
+</mat-card>

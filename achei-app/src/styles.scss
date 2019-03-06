@@ -1,4 +1,9 @@
-/* You can add global styles to this file, and also import other style files */
+// Angular Material Themes
+// deeppurple-amber.css
+// indigo-pink.css
+// pink-bluegrey.css
+// purple-green.css
+@import "@angular/material/prebuilt-themes/deeppurple-amber.css";
 
 html,
 body {
@@ -10,22 +15,25 @@ body {
 }
 
 .full-field {
-    width: 100%;
-  }
-  
-  .form {
-    margin: 100px auto;
-    width: 100%;
-    max-width: 450px;
-    min-width: 200px;
-  }
-  
-  .right {
-    float: right;
-  }
-  
-  a {
-    color: inherit;
-    text-decoration: inherit;
-  }
-  
+  width: 100%;
+}
+
+.form {
+  margin: 50px auto;
+  width: 100%;
+  max-width: 450px;
+  min-width: 200px;
+}
+
+.right {
+  float: right;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.btn:focus {
+  outline: none;
+}

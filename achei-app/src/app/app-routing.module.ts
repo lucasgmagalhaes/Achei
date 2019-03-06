@@ -3,11 +3,13 @@ import { Routes, RouterModule } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { LostpwdComponent } from './lostpwd/lostpwd.component';
+import { ProfileComponent } from './profile/profile.component';
 
 const routes: Routes = [
   { path: '', component: LoginComponent },
   { path: 'signup', component: SignupComponent },
-  { path: 'recoverpwd', component: LostpwdComponent }
+  { path: 'recoverpwd', component: LostpwdComponent },
+  { path: 'profile', component: ProfileComponent }
 ];
 
 @NgModule({
