@@ -46,20 +46,28 @@
               <td>
                 <form class="full-width">
                   <mat-form-field class="full-width">
-                    <input type="text" placeholder="Pick one" aria-label="Number" matInput [formControl]="myControl"
-                      [matAutocomplete]="auto">
-                    <mat-autocomplete #auto="matAutocomplete">
-                      <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
-                        {{option}}
+                    <input type="text" placeholder="Estado" aria-label="Number" matInput [formControl]="estadoFormControl"
+                      [matAutocomplete]="estadoAuto" (focusout)="setCidades()">
+                    <mat-autocomplete #estadoAuto="matAutocomplete">
+                      <mat-option *ngFor="let estado of estadosFiltrados | async" [value]="estado">
+                        {{estado}}
                       </mat-option>
                     </mat-autocomplete>
                   </mat-form-field>
                 </form>
               </td>
               <td>
-                <mat-form-field class="full-width">
-                  <input matInput placeholder="Estado">
-                </mat-form-field>
+                <form class="full-width">
+                  <mat-form-field class="full-width">
+                    <input type="text" placeholder="Cidade" aria-label="Number" matInput [formControl]="cidadeFormControl"
+                      [matAutocomplete]="cidadeAuto">
+                    <mat-autocomplete #cidadeAuto="matAutocomplete">
+                      <mat-option *ngFor="let cidade of cidadesFiltradas | async" [value]="cidade">
+                        {{cidade}}
+                      </mat-option>
+                    </mat-autocomplete>
+                  </mat-form-field>
+                </form>
               </td>
             </tr>
           </table>
