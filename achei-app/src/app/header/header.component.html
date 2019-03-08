@@ -1,9 +1,9 @@
 <mat-toolbar color="primary" class="header">
   <span class="right-align"></span>
-  <button mat-button routerLink="/">Login</button>
-  <button mat-button [matMenuTriggerFor]="menu" *ngIf="usuarioLogado()">{{getNomeUsuario()}}</button>
+  <button mat-button routerLink="/" *ngIf="!logado">Login</button>
+  <button mat-button [matMenuTriggerFor]="menu" *ngIf="logado">{{nomeUsuario}}</button>
   <mat-menu #menu="matMenu">
-    <button mat-menu-item>Perfil</button>
-    <button mat-menu-item>Logout</button>
+    <button mat-menu-item routerLink="/profile">Perfil</button>
+    <button mat-menu-item (click)="logout()">Logout</button>
   </mat-menu>
 </mat-toolbar>

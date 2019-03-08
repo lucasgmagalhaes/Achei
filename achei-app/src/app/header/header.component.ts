@@ -8,16 +8,18 @@ import { SessionService } from '../login/shared/session.service';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor(private sessionService: SessionService) { }
+  logado: boolean;
+  nomeUsuario: string;
 
-  ngOnInit() {
+  constructor(private sessionService: SessionService) {
+    this.sessionService.isLogado().subscribe(logado => this.logado = logado);
+    this.sessionService.getNomeUsuarioLogado().subscribe(nome => this.nomeUsuario = nome);
   }
 
-  usuarioLogado() {
-    return this.sessionService.usuarioLogado();
+  logout() {
+    this.sessionService.logout();
   }
 
-  getNomeUsuario(): string {
-    return this.sessionService.getNomeUsuarioLogado();
-  }
+  ngOnInit() { }
+
 }
