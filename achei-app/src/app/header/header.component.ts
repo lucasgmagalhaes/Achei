@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SessionService } from '../login/shared/session.service';
 
 @Component({
   selector: 'app-header',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  constructor(private sessionService: SessionService) { }
 
   ngOnInit() {
   }
 
+  usuarioLogado() {
+    return this.sessionService.usuarioLogado();
+  }
+
+  getNomeUsuario(): string {
+    return this.sessionService.getNomeUsuarioLogado();
+  }
 }
