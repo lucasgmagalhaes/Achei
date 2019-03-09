@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Gerencia\**" />
+    <EmbeddedResource Remove="Gerencia\**" />
+    <None Remove="Gerencia\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Persistencia\Persistencia.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Application\" />
+  </ItemGroup>
+
+</Project>

@@ -26,6 +26,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { MatNativeDateModule } from '@angular/material/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HomeComponent } from './home/home.component';
+import { AuthGuard } from './auth/auth.guard';
 @NgModule({
   declarations: [
     AppComponent,
@@ -55,7 +56,7 @@ import { HomeComponent } from './home/home.component';
     FormsModule,
     ReactiveFormsModule
   ],
-  providers: [MatDatepickerModule],
+  providers: [MatDatepickerModule, AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
