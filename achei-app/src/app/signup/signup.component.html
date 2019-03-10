@@ -53,7 +53,7 @@
     </mat-card-content>
     <mat-card-actions align="end">
       <button mat-button routerLink="/">Cancelar</button>
-      <button mat-raised-button color="primary" [disabled]="!cadastroUsuario.valid">Cadastrar</button>
+      <button id="btnCadastrar" mat-raised-button color="primary" [disabled]="!cadastroUsuario.valid || criando">Cadastrar</button>
     </mat-card-actions>
   </form>
 </mat-card>

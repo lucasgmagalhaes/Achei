@@ -12,7 +12,7 @@ namespace Entidades.Configuration.Gerencia
 
             entity.Property(e => e.Id)
                 .HasColumnName("id")
-                .ValueGeneratedNever();
+                .ValueGeneratedOnAdd();
 
             entity.Property(e => e.Cidade)
                 .HasColumnName("cidade")

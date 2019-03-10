@@ -18,6 +18,8 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatIconModule } from '@angular/material/icon';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
@@ -54,9 +56,11 @@ import { HttpClientModule } from '@angular/common/http';
     MatNativeDateModule,
     MatIconModule,
     MatAutocompleteModule,
+    MatProgressBarModule,
+    MatSnackBarModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [MatDatepickerModule, AuthGuard],
   bootstrap: [AppComponent]

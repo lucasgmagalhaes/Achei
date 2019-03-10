@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { SessionService } from '../auth/session.service';
+import { HeaderService } from './header.service';
 
 @Component({
   selector: 'app-header',
@@ -10,10 +11,12 @@ export class HeaderComponent implements OnInit {
 
   logado: boolean;
   nomeUsuario: string;
+  exibirBarra: boolean;
 
-  constructor(private sessionService: SessionService) {
+  constructor(private sessionService: SessionService, private headerService: HeaderService) {
     this.sessionService.isLogado().subscribe(logado => this.logado = logado);
     this.sessionService.getNomeUsuarioLogado().subscribe(nome => this.nomeUsuario = nome);
+    this.headerService.statusBarraDeProgresso().subscribe(status => this.exibirBarra = status);
   }
 
   logout() {

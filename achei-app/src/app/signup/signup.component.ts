@@ -1,6 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators, FormControl } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { SignupService } from './signup.service';
+import { HeaderService } from '../header/header.service';
+import { Router } from '@angular/router';
+import { MatSnackBar } from '@angular/material';
+import { SessionService } from '../auth/session.service';
 
 @Component({
   selector: 'app-signup',
@@ -11,8 +15,14 @@ export class SignupComponent implements OnInit {
 
   cadastroUsuario: FormGroup;
   submitted: boolean;
+  criando: boolean;
 
-  constructor(private form: FormBuilder, private signUpService: SignupService) { }
+  constructor(private form: FormBuilder,
+    private signUpService: SignupService,
+    private headerService: HeaderService,
+    private route: Router,
+    private notificacao: MatSnackBar,
+    private sessionService: SessionService) { }
 
   ngOnInit() {
 
@@ -30,11 +40,42 @@ export class SignupComponent implements OnInit {
 
   cadastrar() {
     this.submitted = true;
+    this.criando = true;
+    this.headerService.esconderBarraDeProgresso();
+
     this.signUpService.criarUsuario({
       nome: this.cadastroUsuario.get('nome').value,
       email: this.cadastroUsuario.get('email').value,
       senha: this.cadastroUsuario.get('senha').value,
-    }).subscribe(response => console.log(response));
+    }).then(response => {
+
+      const email = this.cadastroUsuario.get('email').value;
+      const senha = this.cadastroUsuario.get('senha').value;
+
+      this.headerService.esconderBarraDeProgresso();
+      const status = response.status;
+
+      if (status) {
+        if (status.toString().substring(0, 1) === '2') {
+          console.log('Usuário criado com sucesso');
+          this.sessionService.iniciarSessao(email, senha).then(() => {
+            this.route.navigate(['/home']);
+          })
+          // Não foi possível realizar o login (Não faz sentido isso acontecer logo)
+          // após cadastrar o usuário. Mas...
+          .catch(error => {
+            this.notificacao.open(error, 'Ok', { duration: 2000 });
+            this.submitted = false;
+            this.criando = false;
+          });
+
+        } else {
+          console.error('Não foi possível criar o usuário', response);
+          this.notificacao.open('Não foi possível cadastrar o usuário', 'Ok', { duration: 2000 });
+          this.criando = false;
+        }
+      }
+    });
   }
 
   checkSenhas(controlName: string, matchingControlName: string) {

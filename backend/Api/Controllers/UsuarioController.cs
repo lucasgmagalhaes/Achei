@@ -32,11 +32,11 @@ namespace Api.Controllers
             try
             {
                 this.usuarioService.Inserir(usuario);
-                return Ok("Criado com sucesso");
+                return Ok(new RequestResponse() { message = "Usuário criado com sucesso", status = "200", data = usuario});
             }
             catch (Exception ex)
             {
-                return BadRequest(ex.Message);
+                return BadRequest(new RequestResponse() { message = ex.Message, status = "400" });
             }
         }
 
@@ -49,7 +49,7 @@ namespace Api.Controllers
                 await this.usuarioService.AtualizarAsync(usuario);
                 return Ok();
             }
-            catch(Exception e)
+            catch (Exception e)
             {
                 return BadRequest(e.Message);
             }
