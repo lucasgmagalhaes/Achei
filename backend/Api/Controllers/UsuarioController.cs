@@ -8,7 +8,6 @@ using Persistencia.Interfaces;
 namespace Api.Controllers
 {
     [ApiController]
-    [Authorize("Bearer")]
     [Route("api/[controller]")]
     public class UsuarioController : ControllerBase
     {
@@ -17,13 +16,6 @@ namespace Api.Controllers
         public UsuarioController(IUsuarioService usuarioService)
         {
             this.usuarioService = usuarioService;
-        }
-
-        // GET: api/<controller>
-        [HttpGet]
-        public string Get()
-        {
-            return "BATATAAAAAAAAA";
         }
 
         // GET api/<controller>/5

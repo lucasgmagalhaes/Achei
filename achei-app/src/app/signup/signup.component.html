@@ -1,20 +1,59 @@
 <mat-card class="form">
-  <mat-card-header>
-    <mat-card-title>Criar conta</mat-card-title>
-  </mat-card-header>
-  <mat-card-content>
-    <mat-form-field class="full-field">
-      <input matInput placeholder="Email">
-    </mat-form-field>
-    <mat-form-field class="full-field">
-      <input matInput placeholder="Senha">
-    </mat-form-field>
-    <mat-form-field class="full-field">
-      <input matInput placeholder="Confirmar Senha">
-    </mat-form-field>
-  </mat-card-content>
-  <mat-card-actions align="end">
-      <button mat-button routerLink="/">Login</button>
-    <button mat-raised-button color="primary">Cadastrar</button>
-  </mat-card-actions>
+  <form [formGroup]="cadastroUsuario" (ngSubmit)="cadastrar()">
+    <mat-card-header>
+      <mat-card-title>Criar conta</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+
+      <div class="form-field">
+        <mat-form-field class="full-field">
+          <input matInput formControlName="nome" placeholder="Nome">
+        </mat-form-field>
+        <mat-error class="error-message" *ngIf="submitted && getForm().nome.hasError('required')">
+          Nome é <strong>obrigatório</strong>
+        </mat-error>
+      </div>
+
+      <div class="form-field">
+        <mat-form-field class="full-field">
+          <input matInput formControlName="email" placeholder="Email">
+        </mat-form-field>
+        <mat-error class="error-message" *ngIf="getForm().email.hasError('email')">
+          Informe um email válido
+        </mat-error>
+        <mat-error class="error-message" *ngIf="submitted && getForm().email.hasError('required')">
+          Email é <strong>obrigatório</strong>
+        </mat-error>
+      </div>
+
+      <div class="form-field">
+        <mat-form-field class="full-field">
+          <input type="password" matInput formControlName="senha" placeholder="Senha">
+        </mat-form-field>
+        <mat-error class="error-message" *ngIf="getForm().senha.hasError('minlength')">
+          Senha precisa ter no mínimo 6 caracteres
+        </mat-error>
+        <mat-error class="error-message" *ngIf="submitted && getForm().senha.hasError('required')">
+          Senha é <strong>obrigatória</strong>
+        </mat-error>
+      </div>
+
+      <div class="form-field">
+        <mat-form-field class="full-field">
+          <input type="password" matInput formControlName="confirmarSenha" placeholder="Confirmar Senha">
+        </mat-form-field>
+        <mat-error class="error-message" *ngIf="getForm().confirmarSenha.hasError('minlength')">
+          Senha precisa ter no mínimo 6 caracteres
+        </mat-error>
+        <mat-error class="error-message" *ngIf="submitted && getForm().confirmarSenha.hasError('required')">
+          Senha é <strong>obrigatória</strong>
+        </mat-error>
+      </div>
+
+    </mat-card-content>
+    <mat-card-actions align="end">
+      <button mat-button routerLink="/">Cancelar</button>
+      <button mat-raised-button color="primary" [disabled]="!cadastroUsuario.valid">Cadastrar</button>
+    </mat-card-actions>
+  </form>
 </mat-card>

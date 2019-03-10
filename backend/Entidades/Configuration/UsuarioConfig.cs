@@ -8,24 +8,52 @@ namespace Entidades.Configuration.Gerencia
     {
         public void Configure(EntityTypeBuilder<Usuario> entity)
         {
-            entity.ToTable("Usuario");
+            entity.ToTable("usuario");
 
-            entity.Property(e => e.Id).ValueGeneratedOnAdd();
+            entity.Property(e => e.Id)
+                .HasColumnName("id")
+                .ValueGeneratedNever();
+
+            entity.Property(e => e.Cidade)
+                .HasColumnName("cidade")
+                .HasMaxLength(100)
+                .IsUnicode(false);
+
+            entity.Property(e => e.DataNascimento)
+                .HasColumnName("data_nascimento")
+                .HasColumnType("date");
 
             entity.Property(e => e.Email)
-                                .IsRequired()
-                                .HasMaxLength(30)
-                                .IsUnicode(false);
+                .IsRequired()
+                .HasColumnName("email")
+                .HasMaxLength(255)
+                .IsUnicode(false);
+
+            entity.Property(e => e.Estado)
+                .HasColumnName("estado")
+                .HasMaxLength(100)
+                .IsUnicode(false);
+
+            entity.Property(e => e.FotoPerfil).HasColumnName("foto_perfil");
 
             entity.Property(e => e.Nome)
                 .IsRequired()
-                .HasMaxLength(50)
+                .HasColumnName("nome")
+                .HasMaxLength(255)
                 .IsUnicode(false);
 
             entity.Property(e => e.Senha)
                 .IsRequired()
-                .HasMaxLength(30)
+                .HasColumnName("senha")
+                .HasMaxLength(255)
                 .IsUnicode(false);
+
+            entity.Property(e => e.Sexo)
+                .HasColumnName("sexo")
+                .HasMaxLength(10)
+                .IsUnicode(false);
+
+            entity.Property(e => e.Telefone).HasColumnName("telefone");
         }
     }
 }
