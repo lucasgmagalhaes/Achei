@@ -17,7 +17,8 @@ export class SignupComponent implements OnInit {
   submitted: boolean;
   criando: boolean;
 
-  constructor(private form: FormBuilder,
+  constructor(
+    private form: FormBuilder,
     private signUpService: SignupService,
     private headerService: HeaderService,
     private route: Router,
@@ -61,13 +62,13 @@ export class SignupComponent implements OnInit {
           this.sessionService.iniciarSessao(email, senha).then(() => {
             this.route.navigate(['/home']);
           })
-          // Não foi possível realizar o login (Não faz sentido isso acontecer logo)
-          // após cadastrar o usuário. Mas...
-          .catch(error => {
-            this.notificacao.open(error, 'Ok', { duration: 2000 });
-            this.submitted = false;
-            this.criando = false;
-          });
+            // Não foi possível realizar o login (Não faz sentido isso acontecer logo)
+            // após cadastrar o usuário. Mas...
+            .catch(error => {
+              this.notificacao.open(error, 'Ok', { duration: 2000 });
+              this.submitted = false;
+              this.criando = false;
+            });
 
         } else {
           console.error('Não foi possível criar o usuário', response);

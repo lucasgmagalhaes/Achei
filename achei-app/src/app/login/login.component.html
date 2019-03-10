@@ -1,18 +1,44 @@
 <mat-card class="form">
-  <mat-card-header>
-    <mat-card-title>Login</mat-card-title>
-  </mat-card-header>
-  <mat-card-content>
-    <mat-form-field class="full-field">
-      <input matInput placeholder="Email">
-    </mat-form-field>
-    <mat-form-field class="full-field">
-      <input matInput placeholder="Senha">
-    </mat-form-field>
-    <a routerLink="/recoverpwd"><span>Esqueceu a senha ?</span></a>
-  </mat-card-content>
-  <mat-card-actions align="end">
-    <button mat-button routerLink="/signup">Criar conta</button>
-    <button mat-raised-button color="primary" routerLink="/home" (click)="login()">Login</button>
-  </mat-card-actions>
+  <form [formGroup]="formLogin" (ngSubmit)="login()">
+
+    <mat-card-header>
+      <mat-card-title>Login</mat-card-title>
+    </mat-card-header>
+
+    <mat-card-content>
+
+      <div class="form-field">
+        <mat-form-field class="full-field">
+          <input type="email" formControlName="email" matInput placeholder="Email">
+        </mat-form-field>
+
+        <mat-error class="error-message" *ngIf="submitted && getForm().email.hasError('required')">
+          Email é <strong>obrigatório</strong>
+        </mat-error>
+
+        <mat-error class="error-message" *ngIf="getForm().email.hasError('email')">
+          Informe um email válido
+        </mat-error>
+      </div>
+
+      <div class="form-field">
+        <mat-form-field class="full-field">
+          <input type="password" formControlName="senha" matInput placeholder="Senha">
+        </mat-form-field>
+
+        <mat-error class="error-message" *ngIf="submitted && getForm().senha.hasError('required')">
+          Senha é <strong>obrigatório</strong>
+        </mat-error>
+      </div>
+
+      <a routerLink="/recoverpwd"><span>Esqueceu a senha ?</span></a>
+
+    </mat-card-content>
+    <mat-card-actions align="end">
+
+      <button mat-button routerLink="/signup">Criar conta</button>
+      <button mat-raised-button color="primary">Login</button>
+
+    </mat-card-actions>
+  </form>
 </mat-card>

@@ -76,9 +76,9 @@ namespace Api.Controllers
                     authenticated = true,
                     created = dataCriacao.ToString("yyyy-MM-dd HH:mm:ss"),
                     expiration = dataExpiracao.ToString("yyyy-MM-dd HH:mm:ss"),
-                    accessToken = token,
+                    token = token,
                     message = "OK",
-                    IdUsuario = usuarioBase.Id
+                    usuario = usuarioBase
                 };
             }
             else

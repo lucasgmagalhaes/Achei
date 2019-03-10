@@ -1,7 +1,7 @@
 export interface RequestResponse {
     message?: string;
     status?: HttpRequestCode;
-    data?: any;
+    usuario?: any;
     token?: string;
     authenticated?: boolean;
 }

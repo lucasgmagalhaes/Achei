@@ -56,8 +56,8 @@ export class SessionService {
     return this.http.post<RequestResponse>(`${environment.apiUrl}/autenticacao`,
       { email: email, senha: senha }).toPromise().then(response => {
         if (response.authenticated) {
-          if (response.data) {
-            const usuario = (<Usuario>response.data);
+          if (response.usuario) {
+            const usuario = (<Usuario>response.usuario);
             localStorage.setItem('nome', usuario.nome);
             this.nome.next(usuario.nome);
 
