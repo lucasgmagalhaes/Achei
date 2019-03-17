@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Threading.Tasks;
 using Entidades.Entidades;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Persistencia.Interfaces;
 
@@ -18,21 +16,44 @@ namespace Api.Controllers
             this.usuarioService = usuarioService;
         }
 
-        // GET api/<controller>/5
+        /// <summary>
+        /// GET api/usuario/5
+        /// </summary>
+        /// <param name="id">Id usuário</param>
+        /// <returns></returns>
         [HttpGet("{id}")]
-        public async Task<Usuario> Get(long id, [FromHeader]object empresa)
+        public IActionResult Get(long id)
         {
-            return await this.usuarioService.BuscarAsync(id);
+            try
+            {
+                Usuario usuario = this.usuarioService.Buscar(id);
+                if (usuario != null)
+                {
+                    return Ok(usuario);
+                }
+                else
+                {
+                    return NotFound("Não existe usuário com o id informado");
+                }
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
         }
 
-        // POST api/<controller>
+        /// <summary>
+        /// POST api/<controller>
+        /// </summary>
+        /// <param name="usuario"></param>
+        /// <returns></returns>
         [HttpPost]
         public IActionResult Post([FromBody]Usuario usuario)
         {
             try
             {
                 this.usuarioService.Inserir(usuario);
-                return Ok(new RequestResponse() { message = "Usuário criado com sucesso", status = "200", data = usuario});
+                return Ok(new RequestResponse() { message = "Usuário criado com sucesso", status = "200", data = usuario });
             }
             catch (Exception ex)
             {
@@ -40,26 +61,34 @@ namespace Api.Controllers
             }
         }
 
-        // PUT api/<controller>
+        /// <summary>
+        /// PUT api/usuario
+        /// </summary>
+        /// <param name="usuario"></param>
+        /// <returns></returns>
         [HttpPut]
-        public async Task<IActionResult> Put([FromBody]Usuario usuario)
+        public IActionResult Atualizar([FromBody]Usuario usuario)
         {
             try
             {
-                await this.usuarioService.AtualizarAsync(usuario);
-                return Ok();
+                this.usuarioService.Atualizar(usuario);
+                return Ok(new RequestResponse() { message = "Usuário Atualizado com sucesso", status = "200" });
             }
-            catch (Exception e)
+            catch (Exception ex)
             {
-                return BadRequest(e.Message);
+                return BadRequest(new RequestResponse() { message = ex.Message, status = "400" });
             }
         }
 
-        // DELETE api/<controller>/5
+        /// <summary>
+        /// DELETE api/<controller>/5
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpDelete("{id}")]
-        public async Task<IActionResult> Delete(long id)
+        public IActionResult Delete(long id)
         {
-            await this.usuarioService.DeletarAsync(id);
+            this.usuarioService.Deletar(id);
             return Ok();
         }
     }

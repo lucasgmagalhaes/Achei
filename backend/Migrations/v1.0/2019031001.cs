@@ -6,7 +6,7 @@ namespace Migrations
 {
     [Migration("2019031001")]
     [DbContext(typeof(ApplicationDbContext))]
-    public class Conversor__2019031001 : Migration
+    public class Conversor_2019031001 : Migration
     {
         protected override void Up(MigrationBuilder migration)
         {

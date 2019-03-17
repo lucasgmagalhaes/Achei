@@ -26,7 +26,7 @@ namespace Entidades.Configuration.Gerencia
             entity.Property(e => e.Email)
                 .IsRequired()
                 .HasColumnName("email")
-                .HasMaxLength(255)
+                .HasMaxLength(50)
                 .IsUnicode(false);
 
             entity.Property(e => e.Estado)
@@ -45,7 +45,7 @@ namespace Entidades.Configuration.Gerencia
             entity.Property(e => e.Senha)
                 .IsRequired()
                 .HasColumnName("senha")
-                .HasMaxLength(255)
+                .HasMaxLength(20)
                 .IsUnicode(false);
 
             entity.Property(e => e.Sexo)
@@ -53,7 +53,11 @@ namespace Entidades.Configuration.Gerencia
                 .HasMaxLength(10)
                 .IsUnicode(false);
 
-            entity.Property(e => e.Telefone).HasColumnName("telefone");
+            entity.Property(e => e.Telefone)
+                .IsRequired()
+                .HasColumnName("telefone")
+                .HasMaxLength(15)
+                .IsUnicode(false);
         }
     }
 }
