@@ -29,7 +29,8 @@ import { MatNativeDateModule } from '@angular/material/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HomeComponent } from './home/home.component';
 import { AuthGuard } from './auth/auth.guard';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { TokenInterceptor } from './auth/token-interceptor.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -62,7 +63,11 @@ import { HttpClientModule } from '@angular/common/http';
     ReactiveFormsModule,
     HttpClientModule,
   ],
-  providers: [MatDatepickerModule, AuthGuard],
-  bootstrap: [AppComponent]
+  providers: [MatDatepickerModule, AuthGuard, {
+    provide: HTTP_INTERCEPTORS,
+    useClass: TokenInterceptor,
+    multi: true
+  }],
+    bootstrap: [AppComponent]
 })
 export class AppModule { }

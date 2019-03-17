@@ -13,8 +13,19 @@
   width: 100%;
 }
 
-.block {
-  display: block;
+.info-block {
+  position: relative;
+  display: inline-block;
+  width: 60%;
+  min-width: 300px;
+}
+
+.img-block {
+  position: absolute;
+  display: inline-block;
+  width: 40%;
+  top: 80px;
+  min-width: 245px;
 }
 
 .form-profile {
@@ -22,10 +33,11 @@
   width: 100%;
   max-width: 800px;
   min-width: 200px;
+  height: 499px;
 }
 
 img {
-  margin-top: -88px;
+  margin-left: 30%;
   cursor: pointer;
 }
 
@@ -57,4 +69,7 @@ img {
 
 .remove-button {
   margin-top: 5px;
+  margin-left: 30%;
+  width: 180px;
+  position: relative;
 }

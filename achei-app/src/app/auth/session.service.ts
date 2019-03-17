@@ -5,7 +5,6 @@ import { HttpClient } from '@angular/common/http';
 import { RequestResponse } from '../interfaces/requestResponse.interface';
 import { environment } from 'src/environments/environment';
 import { Usuario } from '../interfaces/usuario.interface';
-import { StatusAutenticacao } from '../interfaces/statusAutenticacao.interface';
 
 @Injectable({
   providedIn: 'root'
@@ -83,11 +82,24 @@ export class SessionService {
     this.router.navigate(['/']);
   }
 
+  getIdUsuario(): Observable<number> {
+    return this.id.asObservable();
+  }
+
   isLogado(): Observable<boolean> {
     return this.logado.asObservable();
   }
 
   getNomeUsuarioLogado(): Observable<string> {
     return this.nome.asObservable();
+  }
+
+  setNomeUsuario(nome: string) {
+    localStorage.setItem('nome', nome);
+    this.nome.next(nome);
+  }
+
+  getToken(): Observable<string> {
+    return this.token.asObservable();
   }
 }

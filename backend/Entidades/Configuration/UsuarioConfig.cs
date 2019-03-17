@@ -34,7 +34,8 @@ namespace Entidades.Configuration.Gerencia
                 .HasMaxLength(100)
                 .IsUnicode(false);
 
-            entity.Property(e => e.FotoPerfil).HasColumnName("foto_perfil");
+            entity.Property(e => e.FotoPerfil)
+                .HasColumnName("foto_perfil");
 
             entity.Property(e => e.Nome)
                 .IsRequired()

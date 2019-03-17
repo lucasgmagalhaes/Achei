@@ -6,10 +6,8 @@ using System.Security.Principal;
 using Api.Token;
 using Entidades.Entidades;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
-using Persistencia;
 using Persistencia.Interfaces;
 
 namespace Api.Controllers

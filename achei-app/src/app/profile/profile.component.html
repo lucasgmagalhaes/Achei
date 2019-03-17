@@ -1,43 +1,55 @@
 <mat-card class="form-profile">
-  <mat-card-content>
+  <form [formGroup]="formPerfil" (ngSubmit)="salvar(formPerfil.value)">
+    <mat-card-content>
 
-    <mat-grid-list cols="5" rowHeight="400px">
-
-      <mat-grid-tile [colspan]="3" [rowspan]="1">
-        <div class="block">
-
-          <table class="full-width" cellspacing="0">
-            <tr>
-              <td>
-                <mat-form-field class="full-width">
-                  <input type="text" matInput placeholder="Nome">
-                </mat-form-field>
-              </td>
-              <td>
-                <mat-form-field class="full-width">
-                  <input type="text" matInput placeholder="Sobrenome">
-                </mat-form-field>
-              </td>
-            </tr>
-          </table>
-
-          <mat-form-field class="full-field">
-            <input type="email" matInput placeholder="Email">
-          </mat-form-field>
-
-          <mat-form-field class="full-field">
-            <input type="password" matInput placeholder="Senha">
-          </mat-form-field>
+      <div>
+        <div class="info-block">
 
           <mat-form-field class="full-width">
-            <input matInput [matDatepicker]="picker" placeholder="Data Nascimento">
+            <input type="text" formControlName="nome" matInput placeholder="Nome">
+          </mat-form-field>
+
+          <mat-error class="error-message" *ngIf="submitted && getForm().nome.hasError('required')">
+            Nome é <strong>obrigatório</strong>
+          </mat-error>
+
+          <mat-form-field class="full-field">
+            <input type="email" formControlName="email" matInput placeholder="Email">
+          </mat-form-field>
+
+          <mat-error class="error-message" *ngIf="submitted && getForm().email.hasError('required')">
+            Email é <strong>obrigatório</strong>
+          </mat-error>
+
+          <mat-error class="error-message" *ngIf="getForm().email.hasError('email')">
+            Informe um email válido
+          </mat-error>
+
+          <mat-form-field class="full-field">
+            <input type="password" formControlName="senha" matInput placeholder="Senha">
+          </mat-form-field>
+
+          <mat-error class="error-message" *ngIf="submitted && getForm().senha.hasError('required')">
+            Senha é <strong>obrigatório</strong>
+          </mat-error>
+
+          <mat-form-field class="full-field">
+            <input type="password" formControlName="confirmarSenha" matInput placeholder="Confirmar Senha">
+          </mat-form-field>
+
+          <mat-error class="error-message" *ngIf="submitted && getForm().senha.hasError('required')">
+            Senha é <strong>obrigatório</strong>
+          </mat-error>
+
+          <mat-form-field class="full-width">
+            <input matInput formControlName="dataNascimento" [matDatepicker]="picker" placeholder="Data Nascimento">
             <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
             <mat-datepicker #picker></mat-datepicker>
           </mat-form-field>
 
           <mat-form-field class="full-width">
             <span matPrefix>+31 &nbsp;</span>
-            <input type="tel" matInput placeholder="Telefone">
+            <input type="tel" formControlName="telefone" matInput placeholder="Telefone">
             <mat-icon matSuffix>mode_edit</mat-icon>
           </mat-form-field>
 
@@ -46,8 +58,8 @@
               <td>
                 <form class="full-width">
                   <mat-form-field class="full-width">
-                    <input type="text" placeholder="Estado" aria-label="Number" matInput [formControl]="estadoFormControl"
-                      [matAutocomplete]="estadoAuto" (focusout)="setCidades()">
+                    <input type="text" placeholder="Estado" aria-label="Number" matInput
+                      [formControl]="estadoFormControl" [matAutocomplete]="estadoAuto" (focusout)="setCidades()">
                     <mat-autocomplete #estadoAuto="matAutocomplete">
                       <mat-option *ngFor="let estado of estadosFiltrados | async" [value]="estado">
                         {{estado}}
@@ -59,8 +71,8 @@
               <td>
                 <form class="full-width">
                   <mat-form-field class="full-width">
-                    <input type="text" placeholder="Cidade" aria-label="Number" matInput [formControl]="cidadeFormControl"
-                      [matAutocomplete]="cidadeAuto">
+                    <input type="text" [formControl]="cidadeFormControl" placeholder="Cidade" aria-label="Number"
+                      matInput [matAutocomplete]="cidadeAuto">
                     <mat-autocomplete #cidadeAuto="matAutocomplete">
                       <mat-option *ngFor="let cidade of cidadesFiltradas | async" [value]="cidade">
                         {{cidade}}
@@ -73,39 +85,38 @@
           </table>
 
           <section class="section">
-            <label class="radio-margin">Sexo:</label>
-            <mat-radio-group>
-              <mat-radio-button class="radio-margin" color="primary" value="masculino">Maculino</mat-radio-button>
-              <mat-radio-button class="radio-margin" color="primary" value="feminino">Feminino</mat-radio-button>
-              <mat-radio-button class="radio-margin" color="primary" value="outro">Outro</mat-radio-button>
+            <label class="radio-margin">Gênero:</label>
+            <mat-radio-group formControlName="sexo">
+              <mat-radio-button class="radio-margin" color="primary" value="masculino">Maculino
+              </mat-radio-button>
+              <mat-radio-button class="radio-margin" color="primary" value="feminino">Feminino
+              </mat-radio-button>
+              <mat-radio-button class="radio-margin" color="primary" value="outro">Outro
+              </mat-radio-button>
             </mat-radio-group>
           </section>
 
         </div>
-      </mat-grid-tile>
-      <mat-grid-tile [colspan]="2" [rowspan]="1">
 
-        <div class="block">
+        <div class="img-block">
 
           <div class="full-width">
-            <img id="profileimg" height="200" (click)="selectImg()" [src]="url">
+            <img id="profileimg" height="200" (click)="selectImg()" [src]="getForm().fotoPerfil.value">
             <input type="file" id="imgupload" (change)="setFile($event)" style="display:none" />
           </div>
 
           <div class="full-width">
-            <button mat-raised-button color="primary" (click)="removeImg()" *ngIf="url !== baseImg"
-              class="full-width remove-button">Remover Imagem</button>
+            <button mat-raised-button color="primary" (click)="removeImg()"
+              *ngIf="getForm().fotoPerfil.value !== baseImg" class="remove-button">Remover Imagem</button>
           </div>
 
         </div>
-      </mat-grid-tile>
+      </div>
 
-    </mat-grid-list>
+      <div class="row">
+        <button mat-raised-button color="primary" class="button-right" [disabled]="!formPerfil.valid">Salvar</button>
+      </div>
 
-    <div class="row">
-      <button mat-raised-button color="primary" class="button-right">Salvar</button>
-    </div>
-
-  </mat-card-content>
-
+    </mat-card-content>
+  </form>
 </mat-card>

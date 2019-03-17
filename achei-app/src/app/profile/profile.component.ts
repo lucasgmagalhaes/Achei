@@ -1,8 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectorRef } from '@angular/core';
 import { Observable } from 'rxjs';
-import { FormControl } from '@angular/forms';
+import { FormControl, FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { map, startWith } from 'rxjs/operators';
 import regioes from './estados.json';
+import { ProfileService } from './shared/profile.service.js';
+import { Usuario } from '../interfaces/usuario.interface.js';
+import { MatSnackBar } from '@angular/material';
+import { SessionService } from '../auth/session.service.js';
 @Component({
   selector: 'app-profile',
   templateUrl: './profile.component.html',
@@ -22,14 +26,81 @@ export class ProfileComponent implements OnInit {
   estadosFiltrados: Observable<string[]>;
   cidadesFiltradas: Observable<string[]>;
 
-  constructor() { }
+  formPerfil: FormGroup;
+  usuarioId: number;
+
+  constructor(private formBuilder: FormBuilder,
+    private changeDetector: ChangeDetectorRef,
+    private profileService: ProfileService,
+    private notificacao: MatSnackBar,
+    private sessionService: SessionService) { }
 
   ngOnInit() {
+
+    this.formPerfil = this.formBuilder.group({
+      nome: this.formBuilder.control('', [Validators.required]),
+      email: this.formBuilder.control('', [Validators.required, Validators.email]),
+      senha: this.formBuilder.control('', [Validators.required]),
+      confirmarSenha: this.formBuilder.control('', [Validators.required]),
+      dataNascimento: this.formBuilder.control('', [Validators.required]),
+      telefone: this.formBuilder.control('', [Validators.required]),
+      estado: this.estadoFormControl,
+      cidade: this.cidadeFormControl,
+      sexo: this.formBuilder.control(''),
+      fotoPerfil: this.formBuilder.control('')
+    });
+
     this.estadosFiltrados = this.estadoFormControl.valueChanges
       .pipe(
         startWith(''),
         map(value => this._filter(value))
       );
+
+    this.sessionService.getIdUsuario().subscribe(id => {
+
+      this.usuarioId = id;
+
+      this.profileService.buscarPerfil(id).then(usuario => {
+        if (usuario) {
+          if (usuario.email) {
+            this.formPerfil.get('email').setValue(usuario.email);
+          }
+
+          if (usuario.nome) {
+            this.formPerfil.get('nome').setValue(usuario.nome);
+          }
+
+          if (usuario.cidade) {
+            this.formPerfil.get('cidade').setValue(usuario.cidade);
+          }
+
+          if (usuario.estado) {
+            this.formPerfil.get('estado').setValue(usuario.estado);
+          }
+
+          if (usuario.dataNascimento) {
+            this.formPerfil.get('dataNascimento').setValue(usuario.dataNascimento);
+          }
+
+          if (usuario.sexo) {
+            this.formPerfil.get('sexo').setValue(usuario.sexo);
+          }
+
+          if (usuario.telefone) {
+            this.formPerfil.get('telefone').setValue(usuario.telefone);
+          }
+
+          if (usuario.fotoPerfil) {
+            this.formPerfil.get('fotoPerfil').setValue(usuario.fotoPerfil);
+          }
+
+        }
+      }).catch(error => {
+        this.notificacao.open('Não foi possível carregar o perfil', 'Ok', { duration: 2000 });
+        console.error(error);
+      });
+
+    });
   }
 
   private _filter(value: string): string[] {
@@ -77,14 +148,32 @@ export class ProfileComponent implements OnInit {
   }
 
   setFile(event) {
-    if (event.target.files && event.target.files[0]) {
-      const reader = new FileReader();
+    const reader = new FileReader();
 
-      reader.readAsDataURL(event.target.files[0]);
+    if (event.target.files && event.target.files.length) {
+      const [file] = event.target.files;
+      reader.readAsDataURL(file);
 
-      reader.onload = (_event) => {
-        this.url = (<FileReader>_event.target).result.toString();
+      reader.onload = () => {
+        this.formPerfil.get('fotoPerfil').setValue(reader.result.toString());
+        // need to run CD since file load runs outside of zone
+        this.changeDetector.markForCheck();
       };
     }
+  }
+
+  salvar(usuario: Usuario) {
+    usuario.id = this.usuarioId;
+    this.profileService.salvar(usuario).then(() => {
+      this.sessionService.setNomeUsuario(usuario.nome);
+      this.notificacao.open('Perfil salvo', 'Ok', { duration: 2000 });
+    }).catch(error => {
+      this.notificacao.open('Não foi possível salvar o perfil', 'Ok', { duration: 2000 });
+      console.error(error);
+    });
+  }
+
+  getForm() {
+    return this.formPerfil.controls;
   }
 }
