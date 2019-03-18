@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { SignupService } from './signup.service';
-import { HeaderService } from '../header/header.service';
+import { SignupService } from './shared/signup.service';
+import { HeaderService } from '../header/shared/header.service';
 import { Router } from '@angular/router';
 import { MatSnackBar } from '@angular/material';
 import { SessionService } from '../auth/session.service';

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { SessionService } from '../auth/session.service';
-import { HeaderService } from './header.service';
+import { HeaderService } from './shared/header.service';
 
 @Component({
   selector: 'app-header',

@@ -5,8 +5,8 @@ import { SignupComponent } from './signup/signup.component';
 import { LostpwdComponent } from './lostpwd/lostpwd.component';
 import { ProfileComponent } from './profile/profile.component';
 import { HomeComponent } from './home/home.component';
-import { AuthGuard } from './auth/auth.guard';
-import { SignUpGuard } from './auth/sign-up.guard';
+import { AuthGuard } from './auth/guard/auth.guard';
+import { SignUpGuard } from './auth/guard/sign-up.guard';
 
 const routes: Routes = [
   { path: '', component: LoginComponent },
