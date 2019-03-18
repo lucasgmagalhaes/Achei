@@ -7,11 +7,11 @@
 
           <mat-form-field class="full-width">
             <input type="text" formControlName="nome" matInput placeholder="Nome">
-          </mat-form-field>
 
-          <mat-error class="error-message" *ngIf="submitted && getForm().nome.hasError('required')">
-            Nome é <strong>obrigatório</strong>
-          </mat-error>
+            <mat-error class="error-message" *ngIf="submitted && getForm().nome.hasError('required')">
+              Nome é <strong>obrigatório</strong>
+            </mat-error>
+          </mat-form-field>
 
           <mat-form-field class="full-field">
             <input type="email" formControlName="email" matInput placeholder="Email">
@@ -29,12 +29,16 @@
             <input type="password" formControlName="senha" matInput placeholder="Senha">
           </mat-form-field>
 
-          <mat-error class="error-message" *ngIf="submitted && getForm().senha.hasError('required')">
+          <mat-error class="error-message" *ngIf="submitted && getForm().senha.hasError('required', 'password')">
             Senha é <strong>obrigatório</strong>
           </mat-error>
 
           <mat-form-field class="full-field">
-            <input type="password" formControlName="confirmarSenha" matInput placeholder="Confirmar Senha">
+            <input type="password" formControlName="confirmarSenha" matInput placeholder="Confirmar Senha"
+            [errorStateMatcher]="verificador">
+            <mat-error *ngIf="formPerfil.hasError('notSame')">
+              Senhas não batem
+            </mat-error>
           </mat-form-field>
 
           <mat-error class="error-message" *ngIf="submitted && getForm().senha.hasError('required')">

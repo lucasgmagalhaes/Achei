@@ -7,6 +7,7 @@ import { ProfileService } from './shared/profile.service.js';
 import { Usuario } from '../interfaces/usuario.interface.js';
 import { MatSnackBar } from '@angular/material';
 import { SessionService } from '../auth/session.service.js';
+import { checkPasswords, FormErroVerificador } from '../utils/passwordCheck.js';
 @Component({
   selector: 'app-profile',
   templateUrl: './profile.component.html',
@@ -29,6 +30,8 @@ export class ProfileComponent implements OnInit {
   formPerfil: FormGroup;
   usuarioId: number;
 
+  verificador = new FormErroVerificador();
+
   constructor(private formBuilder: FormBuilder,
     private changeDetector: ChangeDetectorRef,
     private profileService: ProfileService,
@@ -41,14 +44,16 @@ export class ProfileComponent implements OnInit {
       nome: this.formBuilder.control('', [Validators.required]),
       email: this.formBuilder.control('', [Validators.required, Validators.email]),
       senha: this.formBuilder.control('', [Validators.required]),
-      confirmarSenha: this.formBuilder.control('', [Validators.required]),
+      confirmarSenha: this.formBuilder.control(''),
       dataNascimento: this.formBuilder.control('', [Validators.required]),
       telefone: this.formBuilder.control('', [Validators.required]),
       estado: this.estadoFormControl,
       cidade: this.cidadeFormControl,
       sexo: this.formBuilder.control(''),
       fotoPerfil: this.formBuilder.control('')
-    });
+    },
+      { validator: checkPasswords }
+    );
 
     this.estadosFiltrados = this.estadoFormControl.valueChanges
       .pipe(
