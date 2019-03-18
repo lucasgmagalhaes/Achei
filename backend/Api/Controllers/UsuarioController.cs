@@ -83,7 +83,7 @@ namespace Api.Controllers
         }
 
         /// <summary>
-        /// DELETE api/<controller>/5
+        /// Deleta um usuário baseado no seu Id
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
