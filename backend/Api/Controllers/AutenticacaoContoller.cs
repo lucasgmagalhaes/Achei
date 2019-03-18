@@ -28,7 +28,7 @@ namespace Api.Controllers
             Usuario usuarioBase = null;
             if (usuario != null && !String.IsNullOrWhiteSpace(usuario.Email))
             {
-                usuarioBase = autenticacaoService.Entity().Where(user => user.Email == usuario.Email).Single();
+                usuarioBase = autenticacaoService.Entity().Where(user => user.Email == usuario.Email).SingleOrDefault();
                 credenciaisValidas = (usuarioBase != null &&
                     usuario.Email == usuarioBase.Email &&
                     usuario.Senha == usuarioBase.Senha);

@@ -6,13 +6,14 @@ import { LostpwdComponent } from './lostpwd/lostpwd.component';
 import { ProfileComponent } from './profile/profile.component';
 import { HomeComponent } from './home/home.component';
 import { AuthGuard } from './auth/auth.guard';
+import { SignUpGuard } from './auth/sign-up.guard';
 
 const routes: Routes = [
   { path: '', component: LoginComponent },
-  { path: 'signup', component: SignupComponent },
+  { path: 'signup', component: SignupComponent, canActivate: [SignUpGuard] },
   { path: 'recoverpwd', component: LostpwdComponent },
   { path: 'profile', component: ProfileComponent, canActivate: [AuthGuard] },
-  { path: 'home', component: HomeComponent }
+  { path: 'home', component: HomeComponent, canActivate: [AuthGuard] }
 ];
 
 @NgModule({
