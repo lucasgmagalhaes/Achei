@@ -87,7 +87,7 @@ namespace Persistencia.Services
             }
             catch (Exception e)
             {
-                throw new Exception("Não é possível criar uma entidade já existente");
+                throw new Exception("Não é possível criar uma entidade já existente. " + e.Message);
             }
         }
 
