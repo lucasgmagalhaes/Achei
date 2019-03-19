@@ -6,7 +6,7 @@ import { SessionService } from '../session.service';
 @Injectable({
   providedIn: 'root'
 })
-export class SignUpGuard implements CanActivate {
+export class LogadoGuard implements CanActivate {
 
   isLogado: boolean;
   constructor(private sessionService: SessionService, private router: Router) {
@@ -20,7 +20,7 @@ export class SignUpGuard implements CanActivate {
     if (!this.isLogado) {
       return true;
     } else {
-      this.router.navigate(['/home']);
+      this.router.navigate(['home']);
       return false;
     }
   }

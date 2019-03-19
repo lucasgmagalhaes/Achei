@@ -36,9 +36,22 @@
   height: 499px;
 }
 
+$rowImgMargin: 28%;
+
 img {
-  margin-left: 30%;
+  margin-left: $rowImgMargin;
   cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 190px;
+  height: 200px;
+}
+
+.remove-button {
+  margin-top: 5px;
+  margin-left: $rowImgMargin + 1;
+  width: 180px;
+  position: relative;
 }
 
 .save {
@@ -65,11 +78,4 @@ img {
 
 .full-width {
   width: 100%;
-}
-
-.remove-button {
-  margin-top: 5px;
-  margin-left: 30%;
-  width: 180px;
-  position: relative;
 }

@@ -105,13 +105,15 @@
         <div class="img-block">
 
           <div class="full-width">
-            <img id="profileimg" height="200" (click)="selectImg()" [src]="getForm().fotoPerfil.value">
+            <img id="profileimg" (click)="selectImg()" [src]="getForm().fotoPerfil.value">
             <input type="file" id="imgupload" (change)="setFile($event)" style="display:none" />
           </div>
 
           <div class="full-width">
             <button mat-raised-button color="primary" (click)="removeImg()"
               *ngIf="getForm().fotoPerfil.value !== baseImg" class="remove-button">Remover Imagem</button>
+            <button mat-raised-button color="primary" (click)="selectImg()"
+              *ngIf="getForm().fotoPerfil.value === baseImg" class="remove-button">Selecionar Imagem</button>
           </div>
 
         </div>

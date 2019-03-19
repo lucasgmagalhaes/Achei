@@ -43,7 +43,7 @@ export class ProfileComponent implements OnInit {
     this.formPerfil = this.formBuilder.group({
       nome: this.formBuilder.control('', [Validators.required]),
       email: this.formBuilder.control('', [Validators.required, Validators.email]),
-      senha: this.formBuilder.control('', [Validators.required]),
+      senha: this.formBuilder.control(''),
       confirmarSenha: this.formBuilder.control(''),
       dataNascimento: this.formBuilder.control('', [Validators.required]),
       telefone: this.formBuilder.control('', [Validators.required]),

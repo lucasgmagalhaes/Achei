@@ -6,12 +6,12 @@ import { LostpwdComponent } from './lostpwd/lostpwd.component';
 import { ProfileComponent } from './profile/profile.component';
 import { HomeComponent } from './home/home.component';
 import { AuthGuard } from './auth/guard/auth.guard';
-import { SignUpGuard } from './auth/guard/sign-up.guard';
+import { LogadoGuard } from './auth/guard/logado.guard';
 
 const routes: Routes = [
-  { path: '', component: LoginComponent },
-  { path: 'signup', component: SignupComponent, canActivate: [SignUpGuard] },
-  { path: 'recoverpwd', component: LostpwdComponent },
+  { path: '', component: LoginComponent, canActivate: [LogadoGuard] },
+  { path: 'signup', component: SignupComponent, canActivate: [LogadoGuard] },
+  { path: 'recoverpwd', component: LostpwdComponent, canActivate: [LogadoGuard] },
   { path: 'profile', component: ProfileComponent, canActivate: [AuthGuard] },
   { path: 'home', component: HomeComponent, canActivate: [AuthGuard] }
 ];
