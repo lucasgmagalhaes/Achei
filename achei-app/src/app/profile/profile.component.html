@@ -1,5 +1,5 @@
 <mat-card class="form-profile">
-  <form [formGroup]="formPerfil" (ngSubmit)="salvar(formPerfil.value)">
+  <form [formGroup]="formPerfil">
     <mat-card-content>
 
       <div>
@@ -35,7 +35,7 @@
 
           <mat-form-field class="full-field">
             <input type="password" formControlName="confirmarSenha" matInput placeholder="Confirmar Senha"
-            [errorStateMatcher]="verificador">
+              [errorStateMatcher]="verificador">
             <mat-error *ngIf="formPerfil.hasError('notSame')">
               Senhas não batem
             </mat-error>
@@ -118,7 +118,8 @@
       </div>
 
       <div class="row">
-        <button mat-raised-button color="primary" class="button-right" [disabled]="!formPerfil.valid">Salvar</button>
+        <button mat-raised-button (click)="salvar(formPerfil.value)" color="primary" class="button-right"
+          [disabled]="!formPerfil.valid">Salvar</button>
       </div>
 
     </mat-card-content>

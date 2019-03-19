@@ -14,6 +14,13 @@ export class HeaderComponent implements OnInit {
   exibirBarra: boolean;
 
   constructor(private sessionService: SessionService, private headerService: HeaderService) {
+  }
+
+  logout() {
+    this.sessionService.logout();
+  }
+
+  ngOnInit() {
     this.sessionService.isLogado().subscribe(logado => {
       this.logado = logado;
       console.log(logado);
@@ -21,11 +28,5 @@ export class HeaderComponent implements OnInit {
     this.sessionService.getNomeUsuarioLogado().subscribe(nome => this.nomeUsuario = nome);
     this.headerService.statusBarraDeProgresso().subscribe(status => this.exibirBarra = status);
   }
-
-  logout() {
-    this.sessionService.logout();
-  }
-
-  ngOnInit() { }
 
 }

@@ -31,6 +31,7 @@ import { HomeComponent } from './home/home.component';
 import { AuthGuard } from './auth/guard/auth.guard';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { TokenInterceptor } from './auth/token-interceptor.service';
+import { SessionService } from './auth/session.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -61,13 +62,13 @@ import { TokenInterceptor } from './auth/token-interceptor.service';
     MatSnackBarModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule,
+    HttpClientModule
   ],
   providers: [MatDatepickerModule, AuthGuard, {
     provide: HTTP_INTERCEPTORS,
     useClass: TokenInterceptor,
     multi: true
   }],
-    bootstrap: [AppComponent]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -3,11 +3,11 @@ import { Observable } from 'rxjs';
 import { FormControl, FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { map, startWith } from 'rxjs/operators';
 import regioes from './estados.json';
-import { ProfileService } from './shared/profile.service.js';
-import { Usuario } from '../interfaces/usuario.interface.js';
+import { ProfileService } from './shared/profile.service';
+import { Usuario } from '../interfaces/usuario.interface';
 import { MatSnackBar } from '@angular/material';
-import { SessionService } from '../auth/session.service.js';
-import { checkPasswords, FormErroVerificador } from '../utils/passwordCheck.js';
+import { SessionService } from '../auth/session.service';
+import { checkPasswords, FormErroVerificador } from '../utils/passwordCheck';
 @Component({
   selector: 'app-profile',
   templateUrl: './profile.component.html',
@@ -95,8 +95,10 @@ export class ProfileComponent implements OnInit {
             this.formPerfil.get('telefone').setValue(usuario.telefone);
           }
 
-          if (usuario.fotoPerfil) {
+          if (usuario.fotoPerfil && usuario.fotoPerfil.trim() !== '') {
             this.formPerfil.get('fotoPerfil').setValue(usuario.fotoPerfil);
+          } else {
+            this.formPerfil.get('fotoPerfil').setValue(this.baseImg);
           }
 
         }
@@ -149,7 +151,7 @@ export class ProfileComponent implements OnInit {
   }
 
   removeImg() {
-    this.url = this.baseImg;
+    this.formPerfil.get('fotoPerfil').setValue(this.baseImg);
   }
 
   setFile(event) {
