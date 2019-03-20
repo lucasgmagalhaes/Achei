@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using Entidades.Entidades;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -7,7 +8,6 @@ using Persistencia.Interfaces;
 namespace Api.Controllers
 {
     [ApiController]
-    [Authorize("Bearer")]
     [Route("api/[controller]")]
     public class UsuarioController : ControllerBase
     {
@@ -24,6 +24,7 @@ namespace Api.Controllers
         /// <param name="id">Id usuário</param>
         /// <returns></returns>
         [HttpGet("{id}")]
+        [Authorize("Bearer")]
         public IActionResult Get(long id)
         {
             try
@@ -54,6 +55,15 @@ namespace Api.Controllers
         {
             try
             {
+                var user = this.usuarioService
+                    .Buscar(_usuario => _usuario.Email == usuario.Email)
+                    .SingleOrDefault();
+
+                if (user != null)
+                {
+                    return BadRequest(new { message = "Já existe um usuário cadastrado com o email informado " });
+                }
+
                 this.usuarioService.Inserir(usuario);
                 return Ok(new RequestResponse() { message = "Usuário criado com sucesso", status = "200", data = usuario });
             }
@@ -69,6 +79,7 @@ namespace Api.Controllers
         /// <param name="usuario"></param>
         /// <returns></returns>
         [HttpPut]
+        [Authorize("Bearer")]
         public IActionResult Atualizar([FromBody]Usuario usuario)
         {
             try
@@ -88,6 +99,7 @@ namespace Api.Controllers
         /// <param name="id"></param>
         /// <returns></returns>
         [HttpDelete("{id}")]
+        [Authorize("Bearer")]
         public IActionResult Delete(long id)
         {
             this.usuarioService.Deletar(id);

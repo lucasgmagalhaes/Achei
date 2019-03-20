@@ -65,7 +65,7 @@ export class SignupComponent implements OnInit {
             // Não foi possível realizar o login (Não faz sentido isso acontecer logo)
             // após cadastrar o usuário. Mas...
             .catch(error => {
-              this.notificacao.open(error, 'Ok', { duration: 2000 });
+              this.notificacao.open(error.message, 'Ok', { duration: 2000 });
               this.submitted = false;
               this.criando = false;
             });
@@ -76,6 +76,9 @@ export class SignupComponent implements OnInit {
           this.criando = false;
         }
       }
+    }).catch(error => {
+      console.error('Não foi possível criar o usuário', error);
+      this.notificacao.open(error.message, 'Ok', { duration: 2000 });
     });
   }
 

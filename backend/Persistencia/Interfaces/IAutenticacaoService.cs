@@ -2,5 +2,8 @@
 
 namespace Persistencia.Interfaces
 {
-    public interface IAutenticacaoService : ICrudService<Usuario> { }
+    public interface IAutenticacaoService : ICrudService<Usuario>
+    {
+        Usuario AutenticarUsuario(string email, string senha);
+    }
 }

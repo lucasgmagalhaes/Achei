@@ -12,7 +12,8 @@ export class SignupService {
   constructor(private http: HttpClient) { }
 
   criarUsuario(usuario: Usuario): Promise<RequestResponse> {
-    console.log(`${environment.apiUrl}/usuario`);
-    return this.http.post<RequestResponse>(`${environment.apiUrl}/usuario`, usuario).toPromise();
+    return this.http.post<RequestResponse>(`${environment.apiUrl}/usuario`, usuario)
+      .toPromise().then(response => Promise.resolve(response))
+      .catch(error => Promise.reject(error));
   }
 }

@@ -62,6 +62,8 @@ export class SessionService {
 
             localStorage.setItem('id', usuario.id.toString());
             this.id.next(usuario.id);
+          } else {
+            Promise.reject('Houve um problema na autenticação do usuário');
           }
 
           localStorage.setItem('token', response.token);

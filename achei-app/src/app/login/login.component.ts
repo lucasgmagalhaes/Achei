@@ -3,6 +3,7 @@ import { SessionService } from '../auth/session.service';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { MatSnackBar } from '@angular/material';
+import { HeaderService } from '../header/shared/header.service';
 
 @Component({
   selector: 'app-login',
@@ -16,7 +17,8 @@ export class LoginComponent implements OnInit {
     private sessionService: SessionService,
     private form: FormBuilder,
     private route: Router,
-    private notificacao: MatSnackBar) { }
+    private notificacao: MatSnackBar,
+    private headerService: HeaderService) { }
 
   ngOnInit() {
     this.formLogin = this.form.group({
@@ -26,10 +28,13 @@ export class LoginComponent implements OnInit {
   }
 
   login() {
+    this.headerService.exibirBarraDeProgresso();
     this.sessionService.iniciarSessao(this.formLogin.get('email').value,
       this.formLogin.get('senha').value)
-      .then(() => this.route.navigate(['/home']))
-      .catch(error => this.notificacao.open(error, 'Ok', { duration: 2000 }));
+      .then(() => {
+        this.headerService.esconderBarraDeProgresso();
+        this.route.navigate(['/home']);
+      }).catch(error => this.notificacao.open(error, 'Ok', { duration: 2000 }));
   }
 
   getForm() {

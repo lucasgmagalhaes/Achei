@@ -8,6 +8,7 @@ import { Usuario } from '../interfaces/usuario.interface';
 import { MatSnackBar } from '@angular/material';
 import { SessionService } from '../auth/session.service';
 import { checkPasswords, FormErroVerificador } from '../utils/passwordCheck';
+import { HeaderService } from '../header/shared/header.service.js';
 @Component({
   selector: 'app-profile',
   templateUrl: './profile.component.html',
@@ -36,7 +37,8 @@ export class ProfileComponent implements OnInit {
     private changeDetector: ChangeDetectorRef,
     private profileService: ProfileService,
     private notificacao: MatSnackBar,
-    private sessionService: SessionService) { }
+    private sessionService: SessionService,
+    private headerService: HeaderService) { }
 
   ngOnInit() {
 
@@ -163,17 +165,21 @@ export class ProfileComponent implements OnInit {
 
       reader.onload = () => {
         this.formPerfil.get('fotoPerfil').setValue(reader.result.toString());
-        // need to run CD since file load runs outside of zone
         this.changeDetector.markForCheck();
       };
     }
   }
 
   salvar(usuario: Usuario) {
+    this.headerService.exibirBarraDeProgresso();
     usuario.id = this.usuarioId;
+
     this.profileService.salvar(usuario).then(() => {
+
       this.sessionService.setNomeUsuario(usuario.nome);
+      this.headerService.esconderBarraDeProgresso();
       this.notificacao.open('Perfil salvo', 'Ok', { duration: 2000 });
+
     }).catch(error => {
       this.notificacao.open('Não foi possível salvar o perfil', 'Ok', { duration: 2000 });
       console.error(error);
