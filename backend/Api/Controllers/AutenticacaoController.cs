@@ -85,7 +85,7 @@ namespace Api.Controllers
                         };
                     }
                 }
-                catch
+                catch(Exception e)
                 {
                     return new { message = "Não foi possível validar o login" };
                 }

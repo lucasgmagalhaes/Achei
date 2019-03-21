@@ -1,4 +1,4 @@
-<mat-card class="form">
+<mat-card class="form fade-in-right">
   <form [formGroup]="formLogin" (ngSubmit)="login()">
 
     <mat-card-header>
@@ -37,7 +37,7 @@
     <mat-card-actions align="end">
 
       <button mat-button routerLink="/signup">Criar conta</button>
-      <button mat-raised-button color="primary">Login</button>
+      <button mat-raised-button color="primary" [disabled]="!formLogin.valid">Login</button>
 
     </mat-card-actions>
   </form>

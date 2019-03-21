@@ -55,7 +55,6 @@ namespace Entidades.Configuration.Gerencia
                 .IsUnicode(false);
 
             entity.Property(e => e.Telefone)
-                .IsRequired()
                 .HasColumnName("telefone")
                 .HasMaxLength(15)
                 .IsUnicode(false);
