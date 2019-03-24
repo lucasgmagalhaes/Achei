@@ -1,6 +1,10 @@
 import { FormGroup, FormGroupDirective, FormControl, NgForm } from '@angular/forms';
 import { ErrorStateMatcher } from '@angular/material';
 
+/**
+ * Verifica se os campos "senha" e "confirmarSenha" são iguais
+ * @param group formulário usuado
+ */
 export function checkPasswords(group: FormGroup) { // here we have the 'passwords' group
     const pass = group.controls.senha.value;
     const confirmPass = group.controls.confirmarSenha.value;

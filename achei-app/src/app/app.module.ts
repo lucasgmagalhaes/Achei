@@ -30,7 +30,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HomeComponent } from './home/home.component';
 import { AuthGuard } from './auth/guard/auth.guard';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
-import { TokenInterceptor } from './auth/token-interceptor.service';
+import { TokenInterceptor } from './http/token-interceptor.service';
 import { SessionService } from './auth/session.service';
 @NgModule({
   declarations: [

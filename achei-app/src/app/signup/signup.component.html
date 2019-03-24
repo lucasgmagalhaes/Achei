@@ -9,7 +9,7 @@
         <mat-form-field class="full-field">
           <input matInput formControlName="nome" placeholder="Nome">
         </mat-form-field>
-        <mat-error class="error-message" *ngIf="submitted && getForm().nome.hasError('required')">
+        <mat-error class="error-message" *ngIf="getForm().nome.touched && getForm().nome.hasError('required')">
           Nome é <strong>obrigatório</strong>
         </mat-error>
       </div>
@@ -40,20 +40,32 @@
 
       <div class="form-field">
         <mat-form-field class="full-field">
-          <input type="password" matInput formControlName="confirmarSenha" placeholder="Confirmar Senha">
+          <input type="password" matInput formControlName="confirmarSenha" placeholder="Confirmar Senha"
+            [errorStateMatcher]="verificador">
         </mat-form-field>
-        <mat-error class="error-message" *ngIf="getForm().confirmarSenha.hasError('minlength')">
+
+        <mat-error class="error-message"
+          *ngIf="getForm().confirmarSenha.hasError('minlength') && getForm().confirmarSenha.dirty">
           Senha precisa ter no mínimo 6 caracteres
         </mat-error>
-        <mat-error class="error-message" *ngIf="submitted && getForm().confirmarSenha.hasError('required')">
+
+        <mat-error class="error-message"
+          *ngIf="submitted && getForm().senha.hasError('required') && getForm().confirmarSenha.dirty">
           Senha é <strong>obrigatória</strong>
+        </mat-error>
+
+        <mat-error
+          *ngIf="cadastroUsuario.hasError('notSame') && getForm().confirmarSenha.dirty &&
+           !getForm().confirmarSenha.hasError('minlength')">
+          Senhas não batem
         </mat-error>
       </div>
 
     </mat-card-content>
     <mat-card-actions align="end">
-      <button mat-button routerLink="/">Cancelar</button>
-      <button id="btnCadastrar" mat-raised-button color="primary" [disabled]="!cadastroUsuario.valid || criando">Cadastrar</button>
+      <button mat-button type="button" routerLink="/">Cancelar</button>
+      <button id="btnCadastrar" mat-raised-button color="primary"
+        [disabled]="!cadastroUsuario.valid || criando">Cadastrar</button>
     </mat-card-actions>
   </form>
 </mat-card>

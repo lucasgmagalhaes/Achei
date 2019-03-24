@@ -5,6 +5,7 @@ import { HeaderService } from '../header/shared/header.service';
 import { Router } from '@angular/router';
 import { MatSnackBar } from '@angular/material';
 import { SessionService } from '../auth/session.service';
+import { checkPasswords, FormErroVerificador } from '../utils/passwordCheck';
 
 @Component({
   selector: 'app-signup',
@@ -16,6 +17,7 @@ export class SignupComponent implements OnInit {
   cadastroUsuario: FormGroup;
   submitted: boolean;
   criando: boolean;
+  verificador = new FormErroVerificador();
 
   constructor(
     private form: FormBuilder,
@@ -32,7 +34,9 @@ export class SignupComponent implements OnInit {
       email: this.form.control('', [Validators.required, Validators.email]),
       senha: this.form.control('', [Validators.required, Validators.minLength(6)]),
       confirmarSenha: this.form.control('', [Validators.required, Validators.minLength(6)])
-    });
+    },
+      { validator: checkPasswords }
+    );
   }
 
   getForm() {
@@ -42,7 +46,7 @@ export class SignupComponent implements OnInit {
   cadastrar() {
     this.submitted = true;
     this.criando = true;
-    this.headerService.esconderBarraDeProgresso();
+    this.headerService.exibirBarraDeProgresso();
 
     this.signUpService.criarUsuario({
       nome: this.cadastroUsuario.get('nome').value,
@@ -52,8 +56,6 @@ export class SignupComponent implements OnInit {
 
       const email = this.cadastroUsuario.get('email').value;
       const senha = this.cadastroUsuario.get('senha').value;
-
-      this.headerService.esconderBarraDeProgresso();
       const status = response.status;
 
       if (status) {
@@ -76,10 +78,13 @@ export class SignupComponent implements OnInit {
           this.criando = false;
         }
       }
-    }).catch(error => {
-      console.error('Não foi possível criar o usuário', error);
-      this.notificacao.open(error.message, 'Ok', { duration: 2000 });
+    }).catch(response => {
+      console.error('Não foi possível criar o usuário', response);
+      this.notificacao.open(response.error.message, 'Ok', { duration: 2000 });
     });
+
+    this.headerService.esconderBarraDeProgresso();
+    this.criando = false;
   }
 
   checkSenhas(controlName: string, matchingControlName: string) {
