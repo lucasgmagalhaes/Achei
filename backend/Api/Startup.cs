@@ -18,6 +18,7 @@ using System;
 using Swashbuckle.AspNetCore.Swagger;
 using System.Reflection;
 using System.IO;
+using Microsoft.AspNet.OData.Extensions;
 
 namespace Api
 {
@@ -39,8 +40,9 @@ namespace Api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddCors();
+            services.AddOData();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
-            
+
             services.AddScoped(typeof(ICrudService<>), typeof(CrudService<>));
             services.AddScoped(typeof(IAutenticacaoService), typeof(AutenticacaoService));
             services.AddScoped(typeof(IUsuarioService), typeof(UsuarioService));
@@ -84,8 +86,6 @@ namespace Api
             }
             else
             {
-                // The default HSTS value is 30 days. You may want to change this for production scenarios,
-                // see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
 
@@ -96,12 +96,16 @@ namespace Api
             // specifying the Swagger JSON endpoint.
             app.UseSwaggerUI(c =>
             {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Achei API V1");
             });
 
             this.UpdateDatabase(app);
             app.UseHttpsRedirection();
-            app.UseMvc();
+            app.UseMvc(routerBuilder =>
+            {
+                routerBuilder.EnableDependencyInjection();
+                routerBuilder.Expand().Filter().Count().OrderBy();
+            });
         }
 
         private void UpdateDatabase(IApplicationBuilder app)
