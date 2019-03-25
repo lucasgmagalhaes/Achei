@@ -32,6 +32,9 @@ import { AuthGuard } from './auth/guard/auth.guard';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { TokenInterceptor } from './http/token-interceptor.service';
 import { MatTabsModule } from '@angular/material/tabs';
+import { MatBadgeModule } from '@angular/material/badge';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatListModule } from '@angular/material/list';
 @NgModule({
   declarations: [
     AppComponent,
@@ -61,6 +64,9 @@ import { MatTabsModule } from '@angular/material/tabs';
     MatProgressBarModule,
     MatSnackBarModule,
     MatTabsModule,
+    MatBadgeModule,
+    MatDividerModule,
+    MatListModule,
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule
