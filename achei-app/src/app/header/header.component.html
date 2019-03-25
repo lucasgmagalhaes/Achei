@@ -2,7 +2,9 @@
   <button mat-button routerLink="home" *ngIf="logado">Home</button>
   <span class="right-align"></span>
   <button mat-button routerLink="/" *ngIf="!logado">Login</button>
-  <button mat-button [matMenuTriggerFor]="menu" *ngIf="logado">{{nomeUsuario}}</button>
+  <button mat-button [matMenuTriggerFor]="menu" *ngIf="logado">{{nomeUsuario}}
+    <mat-icon>arrow_drop_down</mat-icon>
+  </button>
   <mat-menu #menu="matMenu">
     <button mat-menu-item routerLink="/profile">Perfil</button>
     <button mat-menu-item (click)="logout()">Logout</button>

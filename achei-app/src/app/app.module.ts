@@ -31,7 +31,7 @@ import { HomeComponent } from './home/home.component';
 import { AuthGuard } from './auth/guard/auth.guard';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { TokenInterceptor } from './http/token-interceptor.service';
-import { SessionService } from './auth/session.service';
+import { MatTabsModule } from '@angular/material/tabs';
 @NgModule({
   declarations: [
     AppComponent,
@@ -60,6 +60,7 @@ import { SessionService } from './auth/session.service';
     MatAutocompleteModule,
     MatProgressBarModule,
     MatSnackBarModule,
+    MatTabsModule,
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule
