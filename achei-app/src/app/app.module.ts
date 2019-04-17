@@ -35,6 +35,10 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { MatBadgeModule } from '@angular/material/badge';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatListModule } from '@angular/material/list';
+import { MatChipsModule } from '@angular/material/chips';
+import { AchadosComponent } from './achados/achados.component';
+import { ItemComponent } from './item/item.component';
+import { CadastrarItemComponent } from './cadastrar-item/cadastrar-item.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -43,7 +47,10 @@ import { MatListModule } from '@angular/material/list';
     SignupComponent,
     LostpwdComponent,
     ProfileComponent,
-    HomeComponent
+    HomeComponent,
+    AchadosComponent,
+    ItemComponent,
+    CadastrarItemComponent
   ],
   imports: [
     BrowserModule,
@@ -67,6 +74,7 @@ import { MatListModule } from '@angular/material/list';
     MatBadgeModule,
     MatDividerModule,
     MatListModule,
+    MatChipsModule,
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule

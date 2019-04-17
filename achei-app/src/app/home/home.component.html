@@ -1,75 +1,25 @@
-<div class="container mt-lg-3">
+<div class="container">
 
-    <mat-tab-group dynamicHeight>
-        <mat-tab>
-            <ng-template matTabLabel>
-                <span matBadge="5" matBadgeOverlap="false">Meus Achados</span>
-            </ng-template>
+    <div class="itens-container">
 
-            <div class="itens-container">
+        <div class="row">
+            <h3>Items compatíveis com o que você achou e perdeu</h3>
+        </div>
 
-                <mat-card class="full-field item-card">
-                    <div class="info">
-                        <span class="titulo">são gabriel</span>
-                        <div class="subtitulo">
-                            <span>são gabriel</span>
-                        </div>
-                    </div>
+        <app-item></app-item>
 
-                    <div class="buttons">
-                        <button mat-raised-button color="primary">Detalhes</button>
-                    </div>
-                </mat-card>
-
-                <mat-card class="full-field item-card">
-                    <div class="info">
-                        <span class="titulo">são gabriel</span>
-                        <div class="subtitulo">
-                            <span>são gabriel</span>
-                        </div>
-                    </div>
-
-                    <div class="buttons">
-                        <button mat-raised-button color="primary">Detalhes</button>
-                    </div>
-                </mat-card>
+        <mat-card class="full-field item-card item-perdido ">
+            <div class="info">
+                <span class="titulo">Mochila Preta da Nike</span>
+                <div class="subtitulo">
+                    <span>Onde: São Gabriel</span>
+                    <span> - 21/04/2019</span>
+                </div>
             </div>
 
-        </mat-tab>
-        <mat-tab>
-            <ng-template matTabLabel>
-                <span matBadge="10" matBadgeOverlap="false">Meus perdidos</span>
-            </ng-template>
-
-            <div class="itens-container">
-
-                <mat-card class="full-field item-card">
-                    <div class="info">
-                        <span class="titulo">são gabriel</span>
-                        <div class="subtitulo">
-                            <span>são gabriel</span>
-                        </div>
-                    </div>
-
-                    <div class="buttons">
-                        <button mat-raised-button color="primary">Detalhes</button>
-                    </div>
-                </mat-card>
-
-                <mat-card class="full-field item-card">
-                    <div class="info">
-                        <span class="titulo">são gabriel</span>
-                        <div class="subtitulo">
-                            <span>são gabriel</span>
-                        </div>
-                    </div>
-
-                    <div class="buttons">
-                        <button mat-raised-button color="primary">Detalhes</button>
-                    </div>
-                </mat-card>
+            <div class="buttons">
+                <button mat-raised-button color="primary">Detalhes</button>
             </div>
-
-        </mat-tab>
-    </mat-tab-group>
+        </mat-card>
+    </div>
 </div>
