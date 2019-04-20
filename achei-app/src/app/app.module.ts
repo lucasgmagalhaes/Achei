@@ -20,6 +20,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
@@ -36,9 +37,13 @@ import { MatBadgeModule } from '@angular/material/badge';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatListModule } from '@angular/material/list';
 import { MatChipsModule } from '@angular/material/chips';
+import { MatStepperModule } from '@angular/material/stepper';
 import { AchadosComponent } from './achados/achados.component';
 import { ItemComponent } from './item/item.component';
 import { CadastrarItemComponent } from './cadastrar-item/cadastrar-item.component';
+import { AgmCoreModule } from '@agm/core';
+import { NumberOnlyDirective, MinutesValueDirective, HoursValueDirective } from './directives/number-only.directive';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -50,7 +55,10 @@ import { CadastrarItemComponent } from './cadastrar-item/cadastrar-item.componen
     HomeComponent,
     AchadosComponent,
     ItemComponent,
-    CadastrarItemComponent
+    CadastrarItemComponent,
+    NumberOnlyDirective,
+    MinutesValueDirective,
+    HoursValueDirective
   ],
   imports: [
     BrowserModule,
@@ -75,6 +83,11 @@ import { CadastrarItemComponent } from './cadastrar-item/cadastrar-item.componen
     MatDividerModule,
     MatListModule,
     MatChipsModule,
+    MatStepperModule,
+    MatTooltipModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyCD2ayUDqoyxyI4kHdoJVRBP2JomI3Mc7g'
+    }),
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule

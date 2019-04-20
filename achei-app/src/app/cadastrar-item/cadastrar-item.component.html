@@ -1,36 +1,153 @@
-<mat-card class="form-profile scale-up-center">
-  <form>
-    <mat-card-content>
+<div class="form-profile scale-up-center">
+  <mat-horizontal-stepper [linear]="false" #stepper>
 
-      <div class="info-block">
+    <mat-step [stepControl]="itemFormGroup">
+      <form [formGroup]="itemFormGroup" class="form-center">
 
-        <mat-form-field class="full-field">
-          <input type="text" matInput placeholder="titulo">
+        <ng-template matStepLabel>Tipo de ocorrência</ng-template>
 
-          <mat-error class="error-message">
-            Título é <strong>obrigatório</strong>
-          </mat-error>
+        <h3>Você perdeu ou encontrou ?</h3>
+        <div class="block mt-1">
+          <button mat-raised-button color="primary" matStepperNext class="w-100 tipo-botao">Perdi</button>
+          <button mat-raised-button color="primary" matStepperNext class="w-100 mt-3 tipo-botao">Achei</button>
+        </div>
+
+      </form>
+    </mat-step>
+
+    <mat-step [stepControl]="itemFormGroup">
+      <form [formGroup]="itemFormGroup" class="form-center">
+
+        <ng-template matStepLabel>Detalhes</ng-template>
+
+        <h3>Nos conte o que foi</h3>
+        <mat-form-field appearance="outline" class="w-100">
+          <mat-label>Título</mat-label>
+          <input type="text" matInput placeholder="Ex: Encontrado mochila">
         </mat-form-field>
 
-        <mat-form-field class="full-field">
-          <textarea matInput matInput placeholder="Descrição"></textarea>
-        </mat-form-field>
+        <div class="inline">
+          <h3>Etiquetas</h3>
+          <mat-icon
+            matTooltip="Tags servem para especificar o tipo de item que você achou/perdeu, para que seja mais fácil outras pessoas acharem"
+            [matTooltipPosition]="positionOptions">help_outline</mat-icon>
+        </div>
 
-        <mat-form-field class="full-field">
+        <mat-form-field appearance="outline" class="w-100">
           <mat-chip-list #chipList>
-            <mat-chip color="primary" *ngFor="let tag of tags" [selectable]="selectable" [removable]="removable"
-              (removed)="remove(tag)">
+            <mat-chip *ngFor="let tag of tags" [selectable]="selectable" [removable]="removable" (removed)="remove(tag)"
+              [color]="primary">
               {{tag}}
               <mat-icon matChipRemove *ngIf="removable">cancel</mat-icon>
             </mat-chip>
-            <input placeholder="Nova tag" [matChipInputFor]="chipList"
-              [matChipInputSeparatorKeyCodes]="separatorKeysCodes" [matChipInputAddOnBlur]="addOnBlur"
-              (matChipInputTokenEnd)="add($event)">
+            <input [matChipInputFor]="chipList" [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
+              [matChipInputAddOnBlur]="addOnBlur" (matChipInputTokenEnd)="add($event)">
           </mat-chip-list>
         </mat-form-field>
 
-      </div>
+        <h3>Quer colocar mais algum detalhe importante ?</h3>
+        <mat-form-field appearance="outline" class="w-100">
+          <mat-label>Detalhes</mat-label>
+          <textarea type="text" rows="4" #input maxlength="textareaMaxSize" matInput
+            placeholder="Ex: falar mais sobre o item encontrado/perdido"></textarea>
+          <mat-hint align="end">{{input.value?.length || 0}}/{{textareaMaxSize}}</mat-hint>
+        </mat-form-field>
 
-    </mat-card-content>
-  </form>
-</mat-card>
+        <div class="block mt-1 w-100">
+          <button mat-raised-button color="primary" matStepperNext class="w-100 tipo-botao">Continuar</button>
+        </div>
+
+      </form>
+    </mat-step>
+
+    <mat-step [stepControl]="itemFormGroup">
+      <form [formGroup]="itemFormGroup">
+        <ng-template matStepLabel>Local</ng-template>
+
+        <agm-map [latitude]="startlat" [longitude]="startlng" [zoom]="startzoom" [disableDefaultUI]="true"
+          [zoomControl]="false" (mapClick)="mapClicked($event)">
+
+          <agm-marker (markerClick)="clickedMarker(marker.label, i)" [latitude]="marker?.lat" [longitude]="marker.lng"
+            [label]="marker?.label" [markerDraggable]="marker?.draggable" (dragEnd)="markerDragEnd(marker, $event)">
+
+          </agm-marker>
+
+        </agm-map>
+
+        <div class="block mt-2 w-100">
+          <button mat-raised-button color="primary" matStepperNext class="w-100 tipo-botao">Continuar</button>
+        </div>
+
+      </form>
+    </mat-step>
+
+    <mat-step [stepControl]="itemFormGroup">
+      <form [formGroup]="itemFormGroup" class="form-center">
+        <ng-template matStepLabel>Quando</ng-template>
+        <h3>Quando foi mais ou menos ?</h3>
+
+        <div class="inline">
+          <p class="m-1">Entre</p>
+          <mat-form-field class="m-1">
+            <input matInput [matDatepicker]="data1" placeholder="Choose a date">
+            <mat-datepicker-toggle matSuffix [for]="data1"></mat-datepicker-toggle>
+            <mat-datepicker #data1></mat-datepicker>
+          </mat-form-field>
+
+          <p class="m-1">E</p>
+          <mat-form-field class="m-1">
+            <input matInput [matDatepicker]="data2" placeholder="Choose a date">
+            <mat-datepicker-toggle matSuffix [for]="data2"></mat-datepicker-toggle>
+            <mat-datepicker #data2></mat-datepicker>
+          </mat-form-field>
+        </div>
+
+        <h3>Horário</h3>
+
+        <mat-form-field class="time">
+          <input type="text" placeholder="Hora" appHourValue aria-label="Number" matInput [formControl]="horaControl"
+            [matAutocomplete]="autoHora">
+          <mat-autocomplete autoActiveFirstOption #autoHora="matAutocomplete">
+            <mat-option *ngFor="let hora of horasFiltradas | async" [value]="hora">
+              {{hora}}
+            </mat-option>
+          </mat-autocomplete>
+        </mat-form-field>
+
+        <mat-form-field class="time">
+          <input type="text" placeholder="Minuto" appMinuteValue aria-label="Number" matInput
+            [formControl]="minutoControl" [matAutocomplete]="autoMinuto">
+          <mat-autocomplete autoActiveFirstOption #autoMinuto="matAutocomplete">
+            <mat-option *ngFor="let minuto of minutosFiltrados | async" [value]="minuto">
+              {{minuto}}
+            </mat-option>
+          </mat-autocomplete>
+        </mat-form-field>
+
+        <div class="block mt-2 w-100">
+          <button mat-raised-button color="primary" matStepperNext class="w-100 tipo-botao">Continuar</button>
+        </div>
+
+      </form>
+    </mat-step>
+
+    <mat-step [stepControl]="itemFormGroup">
+      <form [formGroup]="itemFormGroup" class="form-center">
+        <ng-template matStepLabel>Imagens</ng-template>
+        <h3>Deseja adicionar alguma imagem ?</h3>
+
+        <div class="block mt-2 w-100">
+          <button mat-raised-button (click)="selectImg()" color="primary" matStepperNext
+            class="w-100 ">Adicionar</button>
+          <input type="file" id="imgupload" (change)="setFile($event)" style="display:none" />
+        </div>
+
+        <div formArrayName="images" (click)="selectImg()" *ngFor="let image of getForm().images.value;">
+          <img id="profileimg" class="image-link" [src]="image">
+        </div>
+
+      </form>
+    </mat-step>
+
+  </mat-horizontal-stepper>
+</div>

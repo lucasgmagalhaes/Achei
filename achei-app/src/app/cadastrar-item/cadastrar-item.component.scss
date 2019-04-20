@@ -1,0 +1,38 @@
+.form-center {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+
+.block {
+  width: 50%;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  display: block;
+}
+
+.tipo-botao {
+  height: 60px;
+}
+
+.inline {
+  display: inline-flex;
+  align-items: center;
+}
+
+agm-map {
+  height: 400px;
+}
+
+.time {
+  width: 62px;
+}
+
+.image-link {
+  margin-top: 5px;
+  height: 200px;
+}
