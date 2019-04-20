@@ -1,9 +1,9 @@
-﻿using System;
-using System.Linq;
-using Entidades.Entidades;
+﻿using Entidades.Entidades;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Persistencia.Interfaces;
+using System;
+using System.Linq;
 
 namespace Api.Controllers
 {
@@ -11,7 +11,7 @@ namespace Api.Controllers
     [Route("api/[controller]")]
     public class UsuarioController : ControllerBase
     {
-        private IUsuarioService usuarioService;
+        private readonly IUsuarioService usuarioService;
 
         public UsuarioController(IUsuarioService usuarioService)
         {
@@ -29,7 +29,7 @@ namespace Api.Controllers
         {
             try
             {
-                Usuario usuario = this.usuarioService.Buscar(id);
+                Usuario usuario = usuarioService.Buscar(id);
                 if (usuario != null)
                 {
                     return Ok(usuario);
@@ -46,7 +46,7 @@ namespace Api.Controllers
         }
 
         /// <summary>
-        /// POST api/<controller>
+        /// POST api/controller
         /// </summary>
         /// <param name="usuario"></param>
         /// <returns></returns>
@@ -55,7 +55,7 @@ namespace Api.Controllers
         {
             try
             {
-                var user = this.usuarioService
+                Usuario user = usuarioService
                     .Buscar(_usuario => _usuario.Email == usuario.Email)
                     .SingleOrDefault();
 
@@ -64,7 +64,7 @@ namespace Api.Controllers
                     return BadRequest(new { message = "Já existe um usuário cadastrado com o email informado " });
                 }
 
-                this.usuarioService.Inserir(usuario);
+                usuarioService.Inserir(usuario);
                 return Ok(new RequestResponse() { message = "Usuário criado com sucesso", status = "200", data = usuario });
             }
             catch (Exception ex)
@@ -84,7 +84,7 @@ namespace Api.Controllers
         {
             try
             {
-                this.usuarioService.Atualizar(usuario);
+                usuarioService.Atualizar(usuario);
                 return Ok(new RequestResponse() { message = "Usuário Atualizado com sucesso", status = "200" });
             }
             catch (Exception ex)
@@ -102,7 +102,7 @@ namespace Api.Controllers
         [Authorize("Bearer")]
         public IActionResult Delete(long id)
         {
-            this.usuarioService.Deletar(id);
+            usuarioService.Deletar(id);
             return Ok();
         }
     }

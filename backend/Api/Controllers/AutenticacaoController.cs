@@ -1,13 +1,13 @@
-﻿using System;
-using System.IdentityModel.Tokens.Jwt;
-using System.Security.Claims;
-using System.Security.Principal;
-using Api.Token;
+﻿using Api.Token;
 using Entidades.Entidades;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
 using Persistencia.Interfaces;
+using System;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
+using System.Security.Principal;
 
 namespace Api.Controllers
 {
@@ -54,8 +54,8 @@ namespace Api.Controllers
                         DateTime dataExpiracao = dataCriacao +
                             TimeSpan.FromSeconds(tokenConfigurations.Seconds);
 
-                        var handler = new JwtSecurityTokenHandler();
-                        var securityToken = handler.CreateToken(new SecurityTokenDescriptor
+                        JwtSecurityTokenHandler handler = new JwtSecurityTokenHandler();
+                        SecurityToken securityToken = handler.CreateToken(new SecurityTokenDescriptor
                         {
                             Issuer = tokenConfigurations.Issuer,
                             Audience = tokenConfigurations.Audience,
@@ -64,7 +64,7 @@ namespace Api.Controllers
                             NotBefore = dataCriacao,
                             Expires = dataExpiracao
                         });
-                        var token = handler.WriteToken(securityToken);
+                        string token = handler.WriteToken(securityToken);
 
                         return new
                         {
@@ -85,7 +85,7 @@ namespace Api.Controllers
                         };
                     }
                 }
-                catch(Exception e)
+                catch (Exception)
                 {
                     return new { message = "Não foi possível validar o login" };
                 }
