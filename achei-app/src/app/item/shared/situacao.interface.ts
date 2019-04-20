@@ -1,6 +1,6 @@
 import { Item } from './item.interface';
 import { Status } from './status.enum';
-import { Usuario } from '../interfaces/usuario.interface';
+import { Usuario } from '../../interfaces/usuario.interface';
 
 export declare interface Situacao {
     id: number;

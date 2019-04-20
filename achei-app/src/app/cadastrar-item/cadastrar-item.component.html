@@ -8,8 +8,10 @@
 
         <h3>Você perdeu ou encontrou ?</h3>
         <div class="block mt-1">
-          <button mat-raised-button color="primary" matStepperNext class="w-100 tipo-botao">Perdi</button>
-          <button mat-raised-button color="primary" matStepperNext class="w-100 mt-3 tipo-botao">Achei</button>
+          <button mat-raised-button color="primary" (click)="tipoSituacao = 'perda'" matStepperNext
+            class="w-100 tipo-botao">Perdi</button>
+          <button mat-raised-button color="primary" (click)="tipoSituacao = 'encontro'" matStepperNext
+            class="w-100 mt-3 tipo-botao">Achei</button>
         </div>
 
       </form>
@@ -23,20 +25,23 @@
         <h3>Nos conte o que foi</h3>
         <mat-form-field appearance="outline" class="w-100">
           <mat-label>Título</mat-label>
-          <input type="text" matInput placeholder="Ex: Encontrado mochila">
+          <input type="text" matInput formControlName="titulo"
+            [placeholder]="tipoSituacao === 'encontro' ? 'Ex: Encontrado mochila' : 'Ex: Perdido mochila'">
         </mat-form-field>
 
         <div class="inline">
           <h3>Etiquetas</h3>
           <mat-icon
-            matTooltip="Tags servem para especificar o tipo de item que você achou/perdeu, para que seja mais fácil outras pessoas acharem"
+            [matTooltip]="tipoSituacao === 'encontro' ? 
+            'Tags servem para especificar o tipo de item que você achou, para que seja mais fácil outras pessoas acharem' : 
+            'Tags servem para especificar o tipo de item que você perdeu, para que seja mais fácil outras pessoas acharem'"
             [matTooltipPosition]="positionOptions">help_outline</mat-icon>
         </div>
 
         <mat-form-field appearance="outline" class="w-100">
           <mat-chip-list #chipList>
-            <mat-chip *ngFor="let tag of tags" [selectable]="selectable" [removable]="removable" (removed)="remove(tag)"
-              [color]="primary">
+            <mat-chip *ngFor="let tag of getForm().tags.value; let i = index" [selectable]="selectable"
+              [removable]="removable" (removed)="remove(i)" [color]="primary">
               {{tag}}
               <mat-icon matChipRemove *ngIf="removable">cancel</mat-icon>
             </mat-chip>
@@ -48,8 +53,10 @@
         <h3>Quer colocar mais algum detalhe importante ?</h3>
         <mat-form-field appearance="outline" class="w-100">
           <mat-label>Detalhes</mat-label>
-          <textarea type="text" rows="4" #input maxlength="textareaMaxSize" matInput
-            placeholder="Ex: falar mais sobre o item encontrado/perdido"></textarea>
+          <textarea formControlName="detalhe" type="text" rows="4" #input maxlength="textareaMaxSize" matInput
+            [placeholder]="tipoSituacao === 'encontro' ?  
+            'Ex: falar mais sobre o item encontrado' : 
+            'Ex: falar mais sobre o item perdido'"></textarea>
           <mat-hint align="end">{{input.value?.length || 0}}/{{textareaMaxSize}}</mat-hint>
         </mat-form-field>
 
@@ -67,8 +74,9 @@
         <agm-map [latitude]="startlat" [longitude]="startlng" [zoom]="startzoom" [disableDefaultUI]="true"
           [zoomControl]="false" (mapClick)="mapClicked($event)">
 
-          <agm-marker (markerClick)="clickedMarker(marker.label, i)" [latitude]="marker?.lat" [longitude]="marker.lng"
-            [label]="marker?.label" [markerDraggable]="marker?.draggable" (dragEnd)="markerDragEnd(marker, $event)">
+          <agm-marker (markerClick)="clickedMarker(marker.label, i)" [latitude]="getForm().latitudeLocal?.value"
+            [longitude]="getForm().longetudeLocal?.value" [label]="marker?.label" [markerDraggable]="marker?.draggable"
+            (dragEnd)="markerDragEnd(marker, $event)">
 
           </agm-marker>
 
@@ -84,19 +92,21 @@
     <mat-step [stepControl]="itemFormGroup">
       <form [formGroup]="itemFormGroup" class="form-center">
         <ng-template matStepLabel>Quando</ng-template>
-        <h3>Quando foi mais ou menos ?</h3>
+        <h3 *ngIf="tipoSituacao === 'encontro'">Quando foi encontrado mais ou menos ?</h3>
+        <h3 *ngIf="tipoSituacao === 'perda'">Quando foi perdido mais ou menos ?</h3>
 
         <div class="inline">
           <p class="m-1">Entre</p>
           <mat-form-field class="m-1">
-            <input matInput [matDatepicker]="data1" placeholder="Choose a date">
-            <mat-datepicker-toggle matSuffix [for]="data1"></mat-datepicker-toggle>
-            <mat-datepicker #data1></mat-datepicker>
+            <input matInput formControlName="dataInicial" (dateInput)="setDefaultDate($event)"
+              [matDatepicker]="dataInicio" placeholder="Choose a date">
+            <mat-datepicker-toggle matSuffix [for]="dataInicio"></mat-datepicker-toggle>
+            <mat-datepicker #dataInicio></mat-datepicker>
           </mat-form-field>
 
           <p class="m-1">E</p>
           <mat-form-field class="m-1">
-            <input matInput [matDatepicker]="data2" placeholder="Choose a date">
+            <input matInput formControlName="dataFinal" [matDatepicker]="data2" placeholder="Choose a date">
             <mat-datepicker-toggle matSuffix [for]="data2"></mat-datepicker-toggle>
             <mat-datepicker #data2></mat-datepicker>
           </mat-form-field>
@@ -105,8 +115,8 @@
         <h3>Horário</h3>
 
         <mat-form-field class="time">
-          <input type="text" placeholder="Hora" appHourValue aria-label="Number" matInput [formControl]="horaControl"
-            [matAutocomplete]="autoHora">
+          <input type="text" formControlName="hora" placeholder="Hora" appHourValue aria-label="Number" matInput
+            [formControl]="horaControl" [matAutocomplete]="autoHora">
           <mat-autocomplete autoActiveFirstOption #autoHora="matAutocomplete">
             <mat-option *ngFor="let hora of horasFiltradas | async" [value]="hora">
               {{hora}}
@@ -115,7 +125,7 @@
         </mat-form-field>
 
         <mat-form-field class="time">
-          <input type="text" placeholder="Minuto" appMinuteValue aria-label="Number" matInput
+          <input type="text" formControlName="minuto" placeholder="Minuto" appMinuteValue aria-label="Number" matInput
             [formControl]="minutoControl" [matAutocomplete]="autoMinuto">
           <mat-autocomplete autoActiveFirstOption #autoMinuto="matAutocomplete">
             <mat-option *ngFor="let minuto of minutosFiltrados | async" [value]="minuto">
@@ -144,6 +154,10 @@
 
         <div formArrayName="images" (click)="selectImg()" *ngFor="let image of getForm().images.value;">
           <img id="profileimg" class="image-link" [src]="image">
+        </div>
+
+        <div class="block mt-2 w-100">
+          <button mat-raised-button color="primary" (click)="registrar()" matStepperNext class="w-100 tipo-botao">Finalizar</button>
         </div>
 
       </form>

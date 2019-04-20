@@ -26,7 +26,7 @@ import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { LostpwdComponent } from './lostpwd/lostpwd.component';
 import { ProfileComponent } from './profile/profile.component';
-import { MatNativeDateModule } from '@angular/material/core';
+import { MatNativeDateModule, DateAdapter } from '@angular/material/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HomeComponent } from './home/home.component';
 import { AuthGuard } from './auth/guard/auth.guard';
@@ -43,6 +43,7 @@ import { ItemComponent } from './item/item.component';
 import { CadastrarItemComponent } from './cadastrar-item/cadastrar-item.component';
 import { AgmCoreModule } from '@agm/core';
 import { NumberOnlyDirective, MinutesValueDirective, HoursValueDirective } from './directives/number-only.directive';
+import { DateFormat } from './shared/datePicker.provider';
 
 @NgModule({
   declarations: [
@@ -96,7 +97,14 @@ import { NumberOnlyDirective, MinutesValueDirective, HoursValueDirective } from 
     provide: HTTP_INTERCEPTORS,
     useClass: TokenInterceptor,
     multi: true
-  }],
+  },
+    { provide: DateAdapter, useClass: DateFormat }
+  ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+
+  constructor(private dateAdapter: DateAdapter<Date>) {
+    this.dateAdapter.setLocale('en-in'); // DD/MM/YYYY
+  }
+}

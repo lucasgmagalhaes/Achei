@@ -1,12 +1,15 @@
 import { Component, OnInit, ChangeDetectorRef } from '@angular/core';
 import { COMMA, ENTER } from '@angular/cdk/keycodes';
-import { MatChipInputEvent } from '@angular/material';
-import { FormBuilder, FormGroup, FormArray } from '@angular/forms';
+import { MatChipInputEvent, MatDatepickerInputEvent, MatSnackBar } from '@angular/material';
+import { FormBuilder, FormGroup, FormArray, Validators } from '@angular/forms';
 import { TooltipPosition } from '@angular/material';
 import { MouseEvent } from '@agm/core';
 import { FormControl } from '@angular/forms';
 import { Observable } from 'rxjs';
 import { map, startWith } from 'rxjs/operators';
+import { ItemService } from '../item/shared/item.service';
+import { SessionService } from '../auth/session.service';
+import { Item, ItemEncontrado, ItemPerdido } from '../item/shared/item.interface';
 
 // just an interface for type safety.
 declare interface Marker {
@@ -15,6 +18,8 @@ declare interface Marker {
   label?: string;
   draggable: boolean;
 }
+
+declare type TipoSituacao = 'perda' | 'encontro';
 
 @Component({
   selector: 'app-cadastrar-item',
@@ -50,7 +55,14 @@ export class CadastrarItemComponent implements OnInit {
   horas: string[] = [];
   minutos: string[] = [];
 
-  constructor(private formBuilder: FormBuilder, private changeDetector: ChangeDetectorRef) {
+  tipoSituacao: TipoSituacao;
+
+  constructor(private formBuilder: FormBuilder,
+    private changeDetector: ChangeDetectorRef,
+    private itemService: ItemService,
+    private sessionService: SessionService,
+    private notificacao: MatSnackBar
+  ) {
     this.marker = { lat: 0, lng: 0, draggable: true };
     this.marker.lat = -11.0234343;
     this.marker.lng = -51.9324519;
@@ -73,8 +85,25 @@ export class CadastrarItemComponent implements OnInit {
 
   ngOnInit() {
 
+    this.tipoSituacao = 'encontro';
+
     this.itemFormGroup = this.formBuilder.group({
-      tags: this.formBuilder.control(''),
+
+      // Página 2
+      titulo: this.formBuilder.control('', Validators.required),
+      tags: this.formBuilder.array([]),
+      detalhe: this.formBuilder.control(''),
+
+      // Página 3
+      latitudeLocal: this.formBuilder.control(0, Validators.required),
+      longetudeLocal: this.formBuilder.control(0, Validators.required),
+
+      // Página 4
+      dataInicial: this.formBuilder.control('', Validators.required),
+      dataFinal: this.formBuilder.control('', Validators.required),
+      hora: this.formBuilder.control('', Validators.required),
+      minuto: this.formBuilder.control('', Validators.required),
+      // Página 5
       images: this.formBuilder.array([])
     });
 
@@ -94,7 +123,8 @@ export class CadastrarItemComponent implements OnInit {
     const value = event.value;
 
     if ((value || '').trim()) {
-      this.tags.push(value.trim());
+      const tags = this.itemFormGroup.get('tags') as FormArray;
+      tags.push(this.createItem(value.trim()));
     }
 
     if (input) {
@@ -102,12 +132,9 @@ export class CadastrarItemComponent implements OnInit {
     }
   }
 
-  remove(tag: string): void {
-    const index = this.tags.indexOf(tag);
-
-    if (index >= 0) {
-      this.tags.splice(index, 1);
-    }
+  remove(tagIndex: number): void {
+    const tags = this.itemFormGroup.get('tags') as FormArray;
+    tags.removeAt(tagIndex);
   }
 
   clickedMarker(label: string, index: number) {
@@ -115,8 +142,8 @@ export class CadastrarItemComponent implements OnInit {
   }
 
   mapClicked($event: MouseEvent) {
-    this.marker.lat = $event.coords.lat;
-    this.marker.lng = $event.coords.lng;
+    this.itemFormGroup.get('latitudeLocal').setValue($event.coords.lat);
+    this.itemFormGroup.get('longetudeLocal').setValue($event.coords.lng);
     this.marker.draggable = true;
   }
 
@@ -153,5 +180,52 @@ export class CadastrarItemComponent implements OnInit {
 
   getForm() {
     return this.itemFormGroup.controls;
+  }
+
+  setDefaultDate(event: MatDatepickerInputEvent<Date>) {
+    console.log(event.value);
+    this.itemFormGroup.get('dataFinal').setValue(event.value);
+  }
+
+  async registrar() {
+    this.sessionService.getIdUsuario().subscribe(id => {
+
+      const item: Item = {
+        titulo: this.itemFormGroup.get('titulo').value,
+        detalhe: this.itemFormGroup.get('detalhe').value,
+        imagens: this.itemFormGroup.get('imagens').value,
+        regiao: {
+          latitude: this.itemFormGroup.get('latitudeLocal').value,
+          longitude: this.itemFormGroup.get('longitudeLocal').value,
+        },
+        tags: this.itemFormGroup.get('tags').value,
+        usuarioId: id
+      };
+
+      if (this.tipoSituacao === 'encontro') {
+        const itemEncontrado: ItemEncontrado = <ItemEncontrado>item;
+        itemEncontrado.devolvido = false;
+
+        this.itemService.cadastrarchado(itemEncontrado).subscribe(() => {
+          this.cadastroOk();
+        }).unsubscribe();
+
+      } else {
+
+        const itemPerdido: ItemPerdido = <ItemPerdido>item;
+        itemPerdido.recuperado = false;
+
+        this.itemService.cadastrarPerdido(itemPerdido).subscribe(() => {
+          this.cadastroOk();
+        }).unsubscribe();
+
+      }
+
+    }).unsubscribe();
+
+  }
+
+  cadastroOk() {
+    this.notificacao.open('Item cadastrado com sucesso!', 'Ok', { duration: 2000 });
   }
 }

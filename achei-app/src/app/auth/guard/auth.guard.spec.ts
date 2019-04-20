@@ -9,7 +9,12 @@ describe('AuthGuard', () => {
     });
   });
 
-  it('should ...', inject([AuthGuard], (guard: AuthGuard) => {
+  it('should Inject', inject([AuthGuard], (guard: AuthGuard) => {
     expect(guard).toBeTruthy();
   }));
+
+  it('Should return true for a logged in user', () => {
+    let authService = {isLoggedIn: () => true };
+    let router = new MockRouter();
+  });
 });
