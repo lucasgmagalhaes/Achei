@@ -27,6 +27,8 @@ namespace Migrations
                 "RegiaoId BIGINT NULL," +
                 "DataInicio DATE NULL," +
                 "DataFim DATE NULL," +
+                "Recuperado bit NULL," +
+                "Devolvido bit NULL," +
                 "Hora VARCHAR(10) NULL," +
                 "FOREIGN KEY(UsuarioId) REFERENCES Usuario(Id)," +
                 "FOREIGN KEY(RegiaoId) REFERENCES Regiao(Id)," +

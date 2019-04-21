@@ -10,6 +10,10 @@ namespace Entidades.Configuration
         {
             builder.ToTable("Item");
 
+            builder.Property(e => e.Id)
+                .HasColumnName("Id")
+                .ValueGeneratedOnAdd();
+
             builder.HasDiscriminator<string>("Tipo")
                 .HasValue<ItemPerdido>("ItemPerdido")
                 .HasValue<ItemAchado>("ItemAchado");

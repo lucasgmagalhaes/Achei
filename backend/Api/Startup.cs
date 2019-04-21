@@ -46,6 +46,10 @@ namespace Api
             services.AddScoped(typeof(ICrudService<>), typeof(CrudService<>));
             services.AddScoped(typeof(IAutenticacaoService), typeof(AutenticacaoService));
             services.AddScoped(typeof(IUsuarioService), typeof(UsuarioService));
+            services.AddScoped(typeof(IItemAchadoService), typeof(ItemAchadoService));
+            services.AddScoped(typeof(IItemPerdidoService), typeof(ItemPerdidoService));
+
+            services.Scan(scan => scan.FromCallingAssembly().AddClasses().AsMatchingInterface());
 
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             services.AddSingleton<IAuthorizationHandler, AuthorizeHandle>();
