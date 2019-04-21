@@ -45,7 +45,6 @@ export class CadastrarItemComponent implements OnInit {
   startlng = -51.9324519;
   marker: Marker;
 
-  itemFormGroup: FormGroup;
   detalhesFormsGroup: FormGroup;
   localFormsGroup: FormGroup;
   horarioFormGroup: FormGroup;
@@ -183,10 +182,6 @@ export class CadastrarItemComponent implements OnInit {
 
   selectImg() {
     document.getElementById('imgupload').click();
-  }
-
-  getForm() {
-    return this.itemFormGroup.controls;
   }
 
   setDefaultDate(event: MatDatepickerInputEvent<Date>) {
