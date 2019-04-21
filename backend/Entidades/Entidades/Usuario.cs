@@ -1,5 +1,6 @@
 ﻿using Entidades.Interfaces;
 using System;
+using System.Collections.Generic;
 
 namespace Entidades.Entidades
 {
@@ -15,5 +16,7 @@ namespace Entidades.Entidades
         public string Telefone { get; set; }
         public string Sexo { get; set; }
         public string Cidade { get; set; }
+        public virtual ICollection<ItemAchado> ItensAchados { get; set; }
+        public virtual ICollection<ItemPerdido> ItensPerdidos { get; set; }
     }
 }

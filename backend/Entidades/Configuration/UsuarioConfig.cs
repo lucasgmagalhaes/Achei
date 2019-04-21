@@ -2,62 +2,71 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace Entidades.Configuration.Gerencia
+namespace Entidades.Configuration
 {
     public class UsuarioConfig : IEntityTypeConfiguration<Usuario>
     {
-        public void Configure(EntityTypeBuilder<Usuario> entity)
+        public void Configure(EntityTypeBuilder<Usuario> builder)
         {
-            entity.ToTable("usuario");
+            builder.ToTable("usuario");
 
-            entity.Property(e => e.Id)
+            builder.Property(e => e.Id)
                 .HasColumnName("id")
                 .ValueGeneratedOnAdd();
 
-            entity.Property(e => e.Cidade)
+            builder.Property(e => e.Cidade)
                 .HasColumnName("cidade")
                 .HasMaxLength(100)
                 .IsUnicode(false);
 
-            entity.Property(e => e.DataNascimento)
+            builder.Property(e => e.DataNascimento)
                 .HasColumnName("data_nascimento")
                 .HasColumnType("date");
 
-            entity.Property(e => e.Email)
+            builder.Property(e => e.Email)
                 .IsRequired()
                 .HasColumnName("email")
                 .HasMaxLength(50)
                 .IsUnicode(false);
 
-            entity.Property(e => e.Estado)
+            builder.Property(e => e.Estado)
                 .HasColumnName("estado")
                 .HasMaxLength(100)
                 .IsUnicode(false);
 
-            entity.Property(e => e.FotoPerfil)
+            builder.Property(e => e.FotoPerfil)
                 .HasColumnName("foto_perfil");
 
-            entity.Property(e => e.Nome)
+            builder.Property(e => e.Nome)
                 .IsRequired()
                 .HasColumnName("nome")
                 .HasMaxLength(255)
                 .IsUnicode(false);
 
-            entity.Property(e => e.Senha)
+            builder.Property(e => e.Senha)
                 .IsRequired()
                 .HasColumnName("senha")
                 .HasMaxLength(20)
                 .IsUnicode(false);
 
-            entity.Property(e => e.Sexo)
+            builder.Property(e => e.Sexo)
                 .HasColumnName("sexo")
                 .HasMaxLength(10)
                 .IsUnicode(false);
 
-            entity.Property(e => e.Telefone)
+            builder.Property(e => e.Telefone)
                 .HasColumnName("telefone")
                 .HasMaxLength(15)
                 .IsUnicode(false);
+
+            builder.HasMany(e => e.ItensAchados)
+                .WithOne(item => item.Usuario)
+                .HasForeignKey(s => s.UsuarioId);
+
+            builder.HasMany(e => e.ItensPerdidos)
+                .WithOne(item => item.Usuario)
+                .HasForeignKey(s => s.UsuarioId);
+
         }
     }
 }

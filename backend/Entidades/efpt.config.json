@@ -1,0 +1,39 @@
+﻿{
+  "ContextClassName": "AcheidbContext",
+  "DefaultDacpacSchema": null,
+  "IdReplace": false,
+  "IncludeConnectionString": true,
+  "OutputPath": "",
+  "ProjectRootNamespace": "Entidades",
+  "SelectedToBeGenerated": 0,
+  "Tables": [
+    {
+      "HasPrimaryKey": true,
+      "Name": "dbo.Item"
+    },
+    {
+      "HasPrimaryKey": true,
+      "Name": "dbo.ItemAchado"
+    },
+    {
+      "HasPrimaryKey": true,
+      "Name": "dbo.ItemPerdido"
+    },
+    {
+      "HasPrimaryKey": true,
+      "Name": "dbo.Regiao"
+    },
+    {
+      "HasPrimaryKey": true,
+      "Name": "dbo.Tag"
+    },
+    {
+      "HasPrimaryKey": true,
+      "Name": "dbo.usuario"
+    }
+  ],
+  "UseDatabaseNames": true,
+  "UseFluentApiOnly": true,
+  "UseHandleBars": true,
+  "UseInflector": false
+}

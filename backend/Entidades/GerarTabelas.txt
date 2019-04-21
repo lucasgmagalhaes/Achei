@@ -1,0 +1,2 @@
+﻿https://docs.microsoft.com/pt-br/ef/core/get-started/aspnetcore/existing-db
+PS: Especifique para quais tabelas você deseja gerar entidades adicionando o argumento -Tables para o comando acima. Por exemplo, -Tables Blog,Post.
