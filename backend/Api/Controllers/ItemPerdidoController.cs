@@ -1,5 +1,4 @@
 ﻿using Entidades.Entidades;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Persistencia.Interfaces;
 using System;
@@ -23,7 +22,7 @@ namespace Api.Controllers
             try
             {
                 itemPerdidoService.Inserir(itemPerdido);
-                return Ok("Sucesso");
+                return Ok(new RequestResponse() { message = "Item cadastrado com sucesso", status = "200" });
             }
             catch (Exception e)
             {

@@ -202,8 +202,8 @@ export class CadastrarItemComponent implements OnInit {
           longitude: this.localFormsGroup.get('longitudeLocal').value,
         },
         usuarioId: id,
-        dataInicio: this.horarioFormGroup.get('dataInicial').value,
-        dataFim: this.horarioFormGroup.get('dataFinal').value,
+        dataInicio: this.horarioFormGroup.get('dataInicial').value.toISOString(),
+        dataFim: this.horarioFormGroup.get('dataFinal').value.toISOString(),
         hora: `${this.horarioFormGroup.get('hora').value}:${this.horarioFormGroup.get('minuto').value}`
       };
 
