@@ -70,24 +70,17 @@ namespace Persistencia.Services
 
         public T Inserir(T entidade)
         {
-            try
-            {
-                bool exists = this.dbService.Set<T>().Any(ent => ent.Id == entidade.Id);
+            bool exists = this.dbService.Set<T>().Any(ent => ent.Id == entidade.Id);
 
-                if (!exists)
-                {
-                    this.dbService.Add(entidade);
-                    this.dbService.SaveChanges();
-                    return entidade;
-                }
-                else
-                {
-                    throw new Exception();
-                }
-            }
-            catch (Exception e)
+            if (!exists)
             {
-                throw new Exception("Não é possível criar uma entidade já existente. " + e.Message);
+                this.dbService.Add(entidade);
+                this.dbService.SaveChanges();
+                return entidade;
+            }
+            else
+            {
+                throw new Exception("Não é possível criar uma entidade já existente. ");
             }
         }
 
