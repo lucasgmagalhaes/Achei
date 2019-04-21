@@ -1,6 +1,6 @@
 import { Component, OnInit, ChangeDetectorRef } from '@angular/core';
 import { COMMA, ENTER } from '@angular/cdk/keycodes';
-import { MatChipInputEvent, MatDatepickerInputEvent, MatSnackBar } from '@angular/material';
+import { MatChipInputEvent, MatDatepickerInputEvent, MatSnackBar, MatStepper } from '@angular/material';
 import { FormBuilder, FormGroup, FormArray, Validators } from '@angular/forms';
 import { TooltipPosition } from '@angular/material';
 import { MouseEvent } from '@agm/core';
@@ -9,7 +9,7 @@ import { Observable } from 'rxjs';
 import { map, startWith } from 'rxjs/operators';
 import { ItemService } from '../item/shared/item.service';
 import { SessionService } from '../auth/session.service';
-import { Item, ItemEncontrado, ItemPerdido } from '../item/shared/item.interface';
+import { Item, ItemEncontrado, ItemPerdido, ItemTag } from '../item/shared/item.interface';
 
 // just an interface for type safety.
 declare interface Marker {
@@ -44,7 +44,12 @@ export class CadastrarItemComponent implements OnInit {
   startlat = -11.0234343;
   startlng = -51.9324519;
   marker: Marker;
+
   itemFormGroup: FormGroup;
+  detalhesFormsGroup: FormGroup;
+  localFormsGroup: FormGroup;
+  horarioFormGroup: FormGroup;
+  imagensFormGroup: FormGroup;
 
   horaControl = new FormControl();
   horasFiltradas: Observable<string[]>;
@@ -87,23 +92,25 @@ export class CadastrarItemComponent implements OnInit {
 
     this.tipoSituacao = 'encontro';
 
-    this.itemFormGroup = this.formBuilder.group({
-
-      // Página 2
+    this.detalhesFormsGroup = this.formBuilder.group({
       titulo: this.formBuilder.control('', Validators.required),
       tags: this.formBuilder.array([]),
-      detalhe: this.formBuilder.control(''),
+      detalhe: this.formBuilder.control('')
+    });
 
-      // Página 3
-      latitudeLocal: this.formBuilder.control(0, Validators.required),
-      longitudeLocal: this.formBuilder.control(0, Validators.required),
+    this.localFormsGroup = this.formBuilder.group({
+      latitudeLocal: this.formBuilder.control('', Validators.required),
+      longitudeLocal: this.formBuilder.control('', Validators.required)
+    });
 
-      // Página 4
+    this.horarioFormGroup = this.formBuilder.group({
       dataInicial: this.formBuilder.control('', Validators.required),
       dataFinal: this.formBuilder.control('', Validators.required),
       hora: this.formBuilder.control('', Validators.required),
-      minuto: this.formBuilder.control('', Validators.required),
-      // Página 5
+      minuto: this.formBuilder.control('', Validators.required)
+    });
+
+    this.imagensFormGroup = this.formBuilder.group({
       images: this.formBuilder.array([])
     });
 
@@ -123,7 +130,7 @@ export class CadastrarItemComponent implements OnInit {
     const value = event.value;
 
     if ((value || '').trim()) {
-      const tags = this.itemFormGroup.get('tags') as FormArray;
+      const tags = this.detalhesFormsGroup.get('tags') as FormArray;
       tags.push(this.createItem(value.trim()));
     }
 
@@ -133,7 +140,7 @@ export class CadastrarItemComponent implements OnInit {
   }
 
   remove(tagIndex: number): void {
-    const tags = this.itemFormGroup.get('tags') as FormArray;
+    const tags = this.detalhesFormsGroup.get('tags') as FormArray;
     tags.removeAt(tagIndex);
   }
 
@@ -142,8 +149,8 @@ export class CadastrarItemComponent implements OnInit {
   }
 
   mapClicked($event: MouseEvent) {
-    this.itemFormGroup.get('latitudeLocal').setValue($event.coords.lat);
-    this.itemFormGroup.get('longitudeLocal').setValue($event.coords.lng);
+    this.localFormsGroup.get('latitudeLocal').setValue($event.coords.lat);
+    this.localFormsGroup.get('longitudeLocal').setValue($event.coords.lng);
     this.marker.draggable = true;
   }
 
@@ -163,7 +170,7 @@ export class CadastrarItemComponent implements OnInit {
       reader.readAsDataURL(file);
 
       reader.onload = () => {
-        const images = this.itemFormGroup.get('images') as FormArray;
+        const images = this.imagensFormGroup.get('images') as FormArray;
         images.push(this.createItem(reader.result.toString()));
         this.changeDetector.markForCheck();
       };
@@ -184,22 +191,25 @@ export class CadastrarItemComponent implements OnInit {
 
   setDefaultDate(event: MatDatepickerInputEvent<Date>) {
     console.log(event.value);
-    this.itemFormGroup.get('dataFinal').setValue(event.value);
+    this.horarioFormGroup.get('dataFinal').setValue(event.value);
   }
 
-  async registrar() {
+  registrar() {
     this.sessionService.getIdUsuario().subscribe(id => {
 
       const item: Item = {
-        titulo: this.itemFormGroup.get('titulo').value,
-        detalhe: this.itemFormGroup.get('detalhe').value,
-        imagens: this.itemFormGroup.get('images').value,
+        titulo: this.detalhesFormsGroup.get('titulo').value,
+        detalhe: this.detalhesFormsGroup.get('detalhe').value,
+        tags: this.getTags(),
+        imagens: this.imagensFormGroup.get('images').value,
         regiao: {
-          latitude: this.itemFormGroup.get('latitudeLocal').value,
-          longitude: this.itemFormGroup.get('longitudeLocal').value,
+          latitude: this.localFormsGroup.get('latitudeLocal').value,
+          longitude: this.localFormsGroup.get('longitudeLocal').value,
         },
-        tags: this.itemFormGroup.get('tags').value,
-        usuarioId: id
+        usuarioId: id,
+        dataInicio: this.horarioFormGroup.get('dataInicial').value,
+        dataFim: this.horarioFormGroup.get('dataFinal').value,
+        hora: `${this.horarioFormGroup.get('hora').value}:${this.horarioFormGroup.get('minuto').value}`
       };
 
       if (this.tipoSituacao === 'encontro') {
@@ -218,14 +228,26 @@ export class CadastrarItemComponent implements OnInit {
         this.itemService.cadastrarPerdido(itemPerdido).then(() => {
           this.cadastroOk();
         });
-
       }
-
     });
-
   }
 
+  getTags(): ItemTag[] {
+    const tags = this.detalhesFormsGroup.get('tags').value as [];
+    const tagsReturn: ItemTag[] = [];
+
+    for (const tag of tags) {
+      tagsReturn.push({ tag: tag });
+    }
+
+    return tagsReturn;
+  }
   cadastroOk() {
     this.notificacao.open('Item cadastrado com sucesso!', 'Ok', { duration: 2000 });
+  }
+
+  goForward(stepper: MatStepper, tipo: TipoSituacao) {
+    this.tipoSituacao = tipo;
+    stepper.next();
   }
 }

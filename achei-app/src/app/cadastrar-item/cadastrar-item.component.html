@@ -1,24 +1,24 @@
 <div class="form-profile scale-up-center">
   <mat-horizontal-stepper [linear]="true" #stepper>
 
-    <mat-step [stepControl]="itemFormGroup">
-      <form [formGroup]="itemFormGroup" class="form-center">
+    <mat-step>
+      <div class="form-center">
 
         <ng-template matStepLabel>Tipo de ocorrência</ng-template>
 
         <h3>Você perdeu ou encontrou ?</h3>
         <div class="block mt-1">
-          <button mat-raised-button color="primary" (click)="tipoSituacao = 'perda'" matStepperNext
+          <button mat-raised-button color="primary" (click)="goForward(stepper, 'perda')" matStepperNext
             class="w-100 tipo-botao">Perdi</button>
-          <button mat-raised-button color="primary" (click)="tipoSituacao = 'encontro'" matStepperNext
+          <button mat-raised-button color="primary" (click)="goForward(stepper, 'encontro')" matStepperNext
             class="w-100 mt-3 tipo-botao">Achei</button>
         </div>
 
-      </form>
+      </div>
     </mat-step>
 
-    <mat-step [stepControl]="itemFormGroup">
-      <form [formGroup]="itemFormGroup" class="form-center">
+    <mat-step [stepControl]="detalhesFormsGroup">
+      <form [formGroup]="detalhesFormsGroup" class="form-center">
 
         <ng-template matStepLabel>Detalhes</ng-template>
 
@@ -40,7 +40,7 @@
 
         <mat-form-field appearance="outline" class="w-100">
           <mat-chip-list #chipList>
-            <mat-chip *ngFor="let tag of getForm().tags.value; let i = index" [selectable]="selectable"
+            <mat-chip *ngFor="let tag of detalhesFormsGroup.get('tags').value; let i = index" [selectable]="selectable"
               [removable]="removable" (removed)="remove(i)" [color]="primary">
               {{tag}}
               <mat-icon matChipRemove *ngIf="removable">cancel</mat-icon>
@@ -61,36 +61,38 @@
         </mat-form-field>
 
         <div class="block mt-1 w-100">
-          <button mat-raised-button color="primary" matStepperNext class="w-100 tipo-botao">Continuar</button>
+          <button mat-raised-button color="primary" matStepperNext class="w-100 tipo-botao"
+            [disabled]="!detalhesFormsGroup.valid">Continuar</button>
         </div>
 
       </form>
     </mat-step>
 
-    <mat-step [stepControl]="itemFormGroup">
-      <form [formGroup]="itemFormGroup">
+    <mat-step [stepControl]="localFormsGroup">
+      <form [formGroup]="localFormsGroup">
         <ng-template matStepLabel>Local</ng-template>
 
         <agm-map [latitude]="startlat" [longitude]="startlng" [zoom]="startzoom" [disableDefaultUI]="true"
           [zoomControl]="false" (mapClick)="mapClicked($event)">
 
-          <agm-marker (markerClick)="clickedMarker(marker.label, i)" [latitude]="getForm().latitudeLocal?.value"
-            [longitude]="getForm().longitudeLocal?.value" [label]="marker?.label" [markerDraggable]="marker?.draggable"
-            (dragEnd)="markerDragEnd(marker, $event)">
+          <agm-marker (markerClick)="clickedMarker(marker.label, i)"
+            [latitude]="localFormsGroup.get('latitudeLocal').value"
+            [longitude]="localFormsGroup.get('longitudeLocal').value" [label]="marker?.label"
+            [markerDraggable]="marker?.draggable" (dragEnd)="markerDragEnd(marker, $event)">
 
           </agm-marker>
 
         </agm-map>
 
         <div class="block mt-2 w-100">
-          <button mat-raised-button color="primary" matStepperNext class="w-100 tipo-botao">Continuar</button>
+          <button mat-raised-button color="primary" matStepperNext class="w-100 tipo-botao" [disabled]="!localFormsGroup.valid">Continuar</button>
         </div>
 
       </form>
     </mat-step>
 
-    <mat-step [stepControl]="itemFormGroup">
-      <form [formGroup]="itemFormGroup" class="form-center">
+    <mat-step [stepControl]="horarioFormGroup">
+      <form [formGroup]="horarioFormGroup" class="form-center">
         <ng-template matStepLabel>Quando</ng-template>
         <h3 *ngIf="tipoSituacao === 'encontro'">Quando foi encontrado mais ou menos ?</h3>
         <h3 *ngIf="tipoSituacao === 'perda'">Quando foi perdido mais ou menos ?</h3>
@@ -116,7 +118,7 @@
 
         <mat-form-field class="time">
           <input type="text" formControlName="hora" placeholder="Hora" appHourValue aria-label="Number" matInput
-            [formControl]="horaControl" [matAutocomplete]="autoHora">
+            [matAutocomplete]="autoHora">
           <mat-autocomplete autoActiveFirstOption #autoHora="matAutocomplete">
             <mat-option *ngFor="let hora of horasFiltradas | async" [value]="hora">
               {{hora}}
@@ -126,7 +128,7 @@
 
         <mat-form-field class="time">
           <input type="text" formControlName="minuto" placeholder="Minuto" appMinuteValue aria-label="Number" matInput
-            [formControl]="minutoControl" [matAutocomplete]="autoMinuto">
+            [matAutocomplete]="autoMinuto">
           <mat-autocomplete autoActiveFirstOption #autoMinuto="matAutocomplete">
             <mat-option *ngFor="let minuto of minutosFiltrados | async" [value]="minuto">
               {{minuto}}
@@ -141,8 +143,8 @@
       </form>
     </mat-step>
 
-    <mat-step [stepControl]="itemFormGroup">
-      <form [formGroup]="itemFormGroup" class="form-center">
+    <mat-step [stepControl]="imagensFormGroup">
+      <form [formGroup]="imagensFormGroup" class="form-center">
         <ng-template matStepLabel>Imagens</ng-template>
         <h3>Deseja adicionar alguma imagem ?</h3>
 
@@ -152,12 +154,13 @@
           <input type="file" id="imgupload" (change)="setFile($event)" style="display:none" />
         </div>
 
-        <div formArrayName="images" (click)="selectImg()" *ngFor="let image of getForm().images.value;">
+        <div formArrayName="images" (click)="selectImg()" *ngFor="let image of imagensFormGroup.get('images').value;">
           <img id="profileimg" class="image-link" [src]="image">
         </div>
 
         <div class="block mt-2 w-100">
-          <button mat-raised-button color="primary" (click)="registrar()" matStepperNext class="w-100 tipo-botao">Finalizar</button>
+          <button mat-raised-button color="primary" (click)="registrar()" matStepperNext
+            class="w-100 tipo-botao">Finalizar</button>
         </div>
 
       </form>

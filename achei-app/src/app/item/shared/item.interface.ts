@@ -1,11 +1,14 @@
 export declare interface Item {
     id?: number;
-    tags: string[];
+    tags: ItemTag[];
     titulo: string;
     detalhe: string;
     imagens: string[];
     regiao: Regiao;
     usuarioId: number;
+    dataInicio: Date;
+    dataFim: Date;
+    hora: string;
 }
 
 export declare interface ItemPerdido extends Item {
@@ -19,4 +22,10 @@ export declare interface ItemEncontrado extends Item {
 export declare interface Regiao {
     longitude: string;
     latitude: string;
+}
+
+export declare interface ItemTag {
+    id?: number;
+    tag: string;
+    item?: Item;
 }
