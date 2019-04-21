@@ -1,5 +1,5 @@
 <div class="form-profile scale-up-center">
-  <mat-horizontal-stepper [linear]="false" #stepper>
+  <mat-horizontal-stepper [linear]="true" #stepper>
 
     <mat-step [stepControl]="itemFormGroup">
       <form [formGroup]="itemFormGroup" class="form-center">
@@ -75,7 +75,7 @@
           [zoomControl]="false" (mapClick)="mapClicked($event)">
 
           <agm-marker (markerClick)="clickedMarker(marker.label, i)" [latitude]="getForm().latitudeLocal?.value"
-            [longitude]="getForm().longetudeLocal?.value" [label]="marker?.label" [markerDraggable]="marker?.draggable"
+            [longitude]="getForm().longitudeLocal?.value" [label]="marker?.label" [markerDraggable]="marker?.draggable"
             (dragEnd)="markerDragEnd(marker, $event)">
 
           </agm-marker>

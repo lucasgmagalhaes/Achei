@@ -11,11 +11,12 @@ export class ItemService {
 
   constructor(private http: HttpClient) { }
 
-  cadastrarPerdido(item: ItemPerdido): Observable<Object> {
-    return this.http.post(`${environment.apiUrl}/itemPerdido`, item);
+  cadastrarPerdido(item: ItemPerdido): Promise<boolean> {
+    return this.http.post<boolean>(`${environment.apiUrl}/itemPerdido`, item).toPromise();
   }
 
-  cadastrarchado(item: ItemEncontrado): Observable<Object> {
-    return this.http.post(`${environment.apiUrl}/itemAchado`, item);
+  cadastrarchado(item: ItemEncontrado): Promise<boolean> {
+    return this.http.post<boolean>(`${environment.apiUrl}/itemAchado`, item).toPromise();
   }
+
 }

@@ -96,7 +96,7 @@ export class CadastrarItemComponent implements OnInit {
 
       // Página 3
       latitudeLocal: this.formBuilder.control(0, Validators.required),
-      longetudeLocal: this.formBuilder.control(0, Validators.required),
+      longitudeLocal: this.formBuilder.control(0, Validators.required),
 
       // Página 4
       dataInicial: this.formBuilder.control('', Validators.required),
@@ -143,7 +143,7 @@ export class CadastrarItemComponent implements OnInit {
 
   mapClicked($event: MouseEvent) {
     this.itemFormGroup.get('latitudeLocal').setValue($event.coords.lat);
-    this.itemFormGroup.get('longetudeLocal').setValue($event.coords.lng);
+    this.itemFormGroup.get('longitudeLocal').setValue($event.coords.lng);
     this.marker.draggable = true;
   }
 
@@ -193,7 +193,7 @@ export class CadastrarItemComponent implements OnInit {
       const item: Item = {
         titulo: this.itemFormGroup.get('titulo').value,
         detalhe: this.itemFormGroup.get('detalhe').value,
-        imagens: this.itemFormGroup.get('imagens').value,
+        imagens: this.itemFormGroup.get('images').value,
         regiao: {
           latitude: this.itemFormGroup.get('latitudeLocal').value,
           longitude: this.itemFormGroup.get('longitudeLocal').value,
@@ -206,22 +206,22 @@ export class CadastrarItemComponent implements OnInit {
         const itemEncontrado: ItemEncontrado = <ItemEncontrado>item;
         itemEncontrado.devolvido = false;
 
-        this.itemService.cadastrarchado(itemEncontrado).subscribe(() => {
+        this.itemService.cadastrarchado(itemEncontrado).then(() => {
           this.cadastroOk();
-        }).unsubscribe();
+        });
 
       } else {
 
         const itemPerdido: ItemPerdido = <ItemPerdido>item;
         itemPerdido.recuperado = false;
 
-        this.itemService.cadastrarPerdido(itemPerdido).subscribe(() => {
+        this.itemService.cadastrarPerdido(itemPerdido).then(() => {
           this.cadastroOk();
-        }).unsubscribe();
+        });
 
       }
 
-    }).unsubscribe();
+    });
 
   }
 
