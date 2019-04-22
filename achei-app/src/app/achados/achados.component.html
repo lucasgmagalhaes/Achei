@@ -4,5 +4,21 @@
 </div>
 
 <div class="row mt-4">
-  <app-item></app-item>
+  <h3>Meus perdidos</h3>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <app-item></app-item>
+      </div>
+      <div class="col-sm-3">
+          <app-item></app-item>
+      </div>
+    </div>
+  </div>
+
+  <h3>Meus Achados</h3>
+  <div *ngFor="let perdido of itensAchados">
+    <app-item></app-item>
+  </div>
 </div>

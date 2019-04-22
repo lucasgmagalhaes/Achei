@@ -1,7 +1,6 @@
 <mat-toolbar color="primary" class="header">
   <button mat-button routerLink="home" *ngIf="logado">Home</button>
-  <button mat-button routerLink="home" *ngIf="logado">Perdidos</button>
-  <button mat-button routerLink="home" *ngIf="logado" routerLink="/achados">Achados</button>
+  <button mat-button routerLink="home" *ngIf="logado"routerLink="/achados">Meus Cadastros</button>
   <span class="right-align"></span>
   <button mat-button routerLink="/" *ngIf="!logado">Login</button>
   <button mat-button [matMenuTriggerFor]="menu" *ngIf="logado">{{nomeUsuario}}
