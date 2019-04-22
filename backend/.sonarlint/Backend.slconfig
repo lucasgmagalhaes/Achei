@@ -1,0 +1,15 @@
+{
+  "ServerUri": "https://sonarcloud.io/",
+  "Organization": {
+    "Key": "ro",
+    "Name": "RoleOne"
+  },
+  "ProjectKey": "webapp",
+  "ProjectName": "webapp",
+  "Profiles": {
+    "CSharp": {
+      "ProfileKey": "AWSqTFNQXvYvXQrbHd53",
+      "ProfileTimestamp": "2019-03-26T02:47:46-03:00"
+    }
+  }
+}

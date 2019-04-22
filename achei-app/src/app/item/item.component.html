@@ -1,14 +1,13 @@
 <mat-card class="full-field item-card item-achado ">
   <div class="info">
-
+    
     <div>
-      <img src="../../assets/undefined_user.png" alt="">
+      <img [src]="item?.imagens?.length !== undefined && item?.imagens.length > 0 ? item.imagens[0] : '../../assets/undefined_user.png'" alt="">
     </div>
 
-    <span class="titulo">Mochila Preta da Nike</span>
+    <span class="titulo">{{ item.titulo }}</span>
     <div class="subtitulo">
-      <span>Onde: São Gabriel</span>
-      <span> - 21/04/2019</span>
+      <span>{{item?.dataInicio}}</span>
     </div>
   </div>
 

@@ -8,11 +8,8 @@
 
   <div class="container">
     <div class="row">
-      <div class="col-sm-3">
-        <app-item></app-item>
-      </div>
-      <div class="col-sm-3">
-          <app-item></app-item>
+      <div *ngFor="let perdido of itensPerdidos" class="col-sm-3">
+        <app-item [item]="perdido"></app-item>
       </div>
     </div>
   </div>

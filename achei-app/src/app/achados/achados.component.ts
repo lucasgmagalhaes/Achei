@@ -10,8 +10,8 @@ import { SessionService } from '../auth/session.service';
 })
 export class AchadosComponent implements OnInit {
 
-  itensAchados: ItemEncontrado[];
-  itensPerdidos: ItemPerdido[];
+  itensAchados: ItemEncontrado[] = [];
+  itensPerdidos: ItemPerdido[] = [];
 
   constructor(private itensService: ItensUsuarioService, private sessionService: SessionService) {
     this.sessionService.getIdUsuario().subscribe(id => {
