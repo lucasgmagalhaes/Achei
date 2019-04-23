@@ -21,6 +21,8 @@ import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatTooltipModule } from '@angular/material/tooltip';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatSelectModule } from '@angular/material/select';
 
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
@@ -44,6 +46,7 @@ import { CadastrarItemComponent } from './cadastrar-item/cadastrar-item.componen
 import { AgmCoreModule } from '@agm/core';
 import { NumberOnlyDirective, MinutesValueDirective, HoursValueDirective } from './directives/number-only.directive';
 import { DateFormat } from './shared/datePicker.provider';
+import { ItemDetalheComponent } from './item-detalhe/item-detalhe.component';
 
 @NgModule({
   declarations: [
@@ -59,7 +62,8 @@ import { DateFormat } from './shared/datePicker.provider';
     CadastrarItemComponent,
     NumberOnlyDirective,
     MinutesValueDirective,
-    HoursValueDirective
+    HoursValueDirective,
+    ItemDetalheComponent
   ],
   imports: [
     BrowserModule,
@@ -86,6 +90,8 @@ import { DateFormat } from './shared/datePicker.provider';
     MatChipsModule,
     MatStepperModule,
     MatTooltipModule,
+    MatDialogModule,
+    MatSelectModule,
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyCD2ayUDqoyxyI4kHdoJVRBP2JomI3Mc7g'
     }),

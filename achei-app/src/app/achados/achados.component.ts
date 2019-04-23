@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { ItensUsuarioService } from './shared/itens-usuario.service';
-import { ItemEncontrado, ItemPerdido } from '../item/shared/item.interface';
+import { ItemEncontrado, ItemPerdido, Item } from '../item/shared/item.interface';
 import { SessionService } from '../auth/session.service';
+import { MatDialog } from '@angular/material';
+import { ItemDetalheComponent } from '../item-detalhe/item-detalhe.component';
 
 @Component({
   selector: 'app-achados',
@@ -13,7 +15,8 @@ export class AchadosComponent implements OnInit {
   itensAchados: ItemEncontrado[] = [ ];
   itensPerdidos: ItemPerdido[] = [];
 
-  constructor(private itensService: ItensUsuarioService, private sessionService: SessionService) {
+  constructor(private itensService: ItensUsuarioService, private sessionService: SessionService,
+    public dialog: MatDialog) {
     this.sessionService.getIdUsuario().subscribe(id => {
       this.itensService.buscarAchados(id).then(achados => this.itensAchados = achados);
       this.itensService.buscarPerdidos(id).then(perdidos => this.itensPerdidos = perdidos);
@@ -23,4 +26,8 @@ export class AchadosComponent implements OnInit {
   ngOnInit() {
   }
 
+  abrirItem(item: Item){
+    const dialogRef = this.dialog.open(ItemDetalheComponent, {
+    });
+  }
 }

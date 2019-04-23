@@ -9,8 +9,9 @@
   <div class="container">
     <div class="row">
       <div *ngFor="let perdido of itensPerdidos" class="col-sm-3">
-        <app-item [item]="perdido"></app-item>
+        <app-item [item]="perdido" (click)="abrirItem(perdido)"></app-item>
       </div>
+      <app-item (click)="abrirItem(undefined)"></app-item>
     </div>
   </div>
 
