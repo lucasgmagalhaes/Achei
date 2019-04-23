@@ -12,7 +12,7 @@ import { ItemDetalheComponent } from '../item-detalhe/item-detalhe.component';
 })
 export class AchadosComponent implements OnInit {
 
-  itensAchados: ItemEncontrado[] = [ ];
+  itensAchados: ItemEncontrado[] = [];
   itensPerdidos: ItemPerdido[] = [];
 
   constructor(private itensService: ItensUsuarioService, private sessionService: SessionService,
@@ -21,13 +21,14 @@ export class AchadosComponent implements OnInit {
       this.itensService.buscarAchados(id).then(achados => this.itensAchados = achados);
       this.itensService.buscarPerdidos(id).then(perdidos => this.itensPerdidos = perdidos);
     });
-   }
+  }
 
   ngOnInit() {
   }
 
-  abrirItem(item: Item){
+  abrirItem(item: Item) {
     const dialogRef = this.dialog.open(ItemDetalheComponent, {
+      width: '250px'
     });
   }
 }

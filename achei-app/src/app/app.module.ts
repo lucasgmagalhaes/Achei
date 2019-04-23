@@ -23,6 +23,7 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatSelectModule } from '@angular/material/select';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
@@ -92,6 +93,7 @@ import { ItemDetalheComponent } from './item-detalhe/item-detalhe.component';
     MatTooltipModule,
     MatDialogModule,
     MatSelectModule,
+    MatSlideToggleModule,
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyCD2ayUDqoyxyI4kHdoJVRBP2JomI3Mc7g'
     }),
@@ -106,7 +108,8 @@ import { ItemDetalheComponent } from './item-detalhe/item-detalhe.component';
   },
     { provide: DateAdapter, useClass: DateFormat }
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [ItemDetalheComponent]
 })
 export class AppModule {
 

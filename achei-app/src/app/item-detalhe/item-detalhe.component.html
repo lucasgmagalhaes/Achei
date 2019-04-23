@@ -1,17 +1,38 @@
-<mat-card>
-  <div class="example-container">
-    <mat-form-field>
-      <input matInput placeholder="Input">
-    </mat-form-field>
+<div class="container">
 
-    <mat-form-field>
-      <textarea matInput placeholder="Textarea"></textarea>
-    </mat-form-field>
+  <div class="row position-relative">
+    <mat-slide-toggle class="right mr-2" [color]="primary">Encontrado ?</mat-slide-toggle>
+  </div>
 
-    <mat-form-field>
-      <mat-select placeholder="Select">
-        <mat-option value="option">Option</mat-option>
-      </mat-select>
+  <div class="row">
+    <mat-form-field class="w-100">
+      <input matInput placeholder="Titulo">
     </mat-form-field>
   </div>
-</mat-card>
+
+  <div class="row">
+    <mat-form-field class="w-100">
+      <mat-chip-list #chipList>
+        <mat-chip [selectable]="selectable" *ngFor="let tag of item?.tags" [removable]="removable" (removed)="remove(i)" [color]="primary">
+          {{tag.tag}}
+          <mat-icon matChipRemove *ngIf="removable">cancel</mat-icon>
+        </mat-chip>
+        <input [matChipInputFor]="chipList" [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
+          [matChipInputAddOnBlur]="addOnBlur" (matChipInputTokenEnd)="add($event)">
+      </mat-chip-list>
+    </mat-form-field>
+  </div>
+
+  <div class="row">
+    <mat-form-field class="w-100">
+      <textarea matInput placeholder="Detalhe"></textarea>
+    </mat-form-field>
+  </div>
+
+  <div class="row">
+    <div class="right">
+      <button mat-raised-button color="primary" class="mr-2">Cancelar</button>
+      <button mat-raised-button color="warn">Salvar</button>
+    </div>
+  </div>
+</div>

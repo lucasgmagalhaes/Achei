@@ -9,14 +9,15 @@ import { Item } from '../item/shared/item.interface';
 })
 export class ItemDetalheComponent implements OnInit {
 
-  constructor(public dialogRef: MatDialogRef<ItemDetalheComponent>,
-    @Inject(MAT_DIALOG_DATA) public data: Item) { }
+  // constructor(public dialogRef: MatDialogRef<ItemDetalheComponent>,
+  //   @Inject(MAT_DIALOG_DATA) public item: Item) { }
 
+  constructor(){}
   ngOnInit() {
   }
 
   onNoClick(): void {
-    this.dialogRef.close();
+    // this.dialogRef.close();
   }
 
 }

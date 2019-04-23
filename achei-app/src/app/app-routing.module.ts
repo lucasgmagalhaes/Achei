@@ -9,6 +9,7 @@ import { HomeComponent } from './home/home.component';
 import { AuthGuard } from './auth/guard/auth.guard';
 import { LogadoGuard } from './auth/guard/logado.guard';
 import { CadastrarItemComponent } from './cadastrar-item/cadastrar-item.component';
+import { ItemDetalheComponent } from './item-detalhe/item-detalhe.component';
 
 const routes: Routes = [
   { path: '', component: LoginComponent, canActivate: [LogadoGuard] },
@@ -17,6 +18,7 @@ const routes: Routes = [
   { path: 'profile', component: ProfileComponent, canActivate: [AuthGuard] },
   { path: 'home', component: HomeComponent, canActivate: [AuthGuard] },
   { path: 'achados', component: AchadosComponent },
+  { path: 'itemDetalhe', component: ItemDetalheComponent },
   { path: 'achados/cadastrarachado', component: CadastrarItemComponent, canActivate: [AuthGuard] },
 ];
 
