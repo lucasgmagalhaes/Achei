@@ -1,38 +1,81 @@
 <div class="container">
 
-  <div class="row position-relative">
-    <mat-slide-toggle class="right mr-2" [color]="primary">Encontrado ?</mat-slide-toggle>
-  </div>
+  <form [formGroup]="itemForm">
 
-  <div class="row">
-    <mat-form-field class="w-100">
-      <input matInput placeholder="Titulo">
-    </mat-form-field>
-  </div>
-
-  <div class="row">
-    <mat-form-field class="w-100">
-      <mat-chip-list #chipList>
-        <mat-chip [selectable]="selectable" *ngFor="let tag of item?.tags" [removable]="removable" (removed)="remove(i)" [color]="primary">
-          {{tag.tag}}
-          <mat-icon matChipRemove *ngIf="removable">cancel</mat-icon>
-        </mat-chip>
-        <input [matChipInputFor]="chipList" [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
-          [matChipInputAddOnBlur]="addOnBlur" (matChipInputTokenEnd)="add($event)">
-      </mat-chip-list>
-    </mat-form-field>
-  </div>
-
-  <div class="row">
-    <mat-form-field class="w-100">
-      <textarea matInput placeholder="Detalhe"></textarea>
-    </mat-form-field>
-  </div>
-
-  <div class="row">
-    <div class="right">
-      <button mat-raised-button color="primary" class="mr-2">Cancelar</button>
-      <button mat-raised-button color="warn">Salvar</button>
+    <div class="row position-relative">
+      <mat-slide-toggle class="right mr-2" [color]="primary">Encontrado ?</mat-slide-toggle>
     </div>
-  </div>
+
+    <div class="row">
+      <mat-form-field class="w-100">
+        <input matInput formControlName="titulo" placeholder="Titulo">
+      </mat-form-field>
+    </div>
+
+    <div class="row">
+      <mat-form-field class="w-100">
+        <mat-chip-list #chipList>
+          <mat-chip [selectable]="selectable" *ngFor="let tag of itemForm.get('tags').value" [removable]="removable"
+            (removed)="remove(i)" [color]="primary">
+            {{tag.tag}}
+            <mat-icon matChipRemove *ngIf="removable">cancel</mat-icon>
+          </mat-chip>
+          <input [matChipInputFor]="chipList" [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
+            [matChipInputAddOnBlur]="addOnBlur" (matChipInputTokenEnd)="add($event)">
+        </mat-chip-list>
+      </mat-form-field>
+    </div>
+
+    <div class="row">
+      <mat-form-field class="w-100">
+        <textarea matInput formControlName="detalhe" placeholder="Detalhe"></textarea>
+      </mat-form-field>
+    </div>
+
+    <div class="row">
+      <agm-map [latitude]="itemForm.get('latitudeLocal').value"
+        [longitude]="itemForm.get('longitudeLocal').value" [zoom]="startzoom" [disableDefaultUI]="true"
+        [zoomControl]="false" (mapClick)="mapClicked($event)">
+
+        <agm-marker (markerClick)="clickedMarker(marker.label, i)" [latitude]="itemForm.get('latitudeLocal').value"
+          [longitude]="itemForm.get('longitudeLocal').value" [label]="marker?.label"
+          [markerDraggable]="marker?.draggable" (dragEnd)="markerDragEnd(marker, $event)">
+
+        </agm-marker>
+
+      </agm-map>
+    </div>
+
+    <div class="row">
+      <div class="inline">
+        <p class="m-1">Entre</p>
+        <mat-form-field class="m-1">
+          <input matInput formControlName="dataInicial" (dateInput)="setDefaultDate($event)"
+            [matDatepicker]="dataInicio" placeholder="Choose a date">
+          <mat-datepicker-toggle matSuffix [for]="dataInicio"></mat-datepicker-toggle>
+          <mat-datepicker #dataInicio></mat-datepicker>
+        </mat-form-field>
+
+        <p class="m-1">E</p>
+        <mat-form-field class="m-1">
+          <input matInput formControlName="dataFinal" [matDatepicker]="data2" placeholder="Choose a date">
+          <mat-datepicker-toggle matSuffix [for]="data2"></mat-datepicker-toggle>
+          <mat-datepicker #data2></mat-datepicker>
+        </mat-form-field>
+      </div>
+    </div>
+
+    <div class="row">
+      <input type="text" placeholder="Hora" formControlName="hora" appHourValue aria-label="Number" matInput>
+      <input type="text" placeholder="Minuto" formControlName="minuto" appHourValue aria-label="Number" matInput>
+    </div>
+
+    <div class="row">
+      <div class="right">
+        <button mat-raised-button color="primary" class="mr-2">Cancelar</button>
+        <button mat-raised-button color="warn">Salvar</button>
+      </div>
+    </div>
+
+  </form>
 </div>

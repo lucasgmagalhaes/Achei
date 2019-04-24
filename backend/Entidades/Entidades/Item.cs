@@ -17,11 +17,11 @@ namespace Entidades.Entidades
         public virtual Regiao Regiao { get; set; }
         public long UsuarioId { get; set; }
         public virtual Usuario Usuario { get; set; }
-        public virtual ICollection<Tag> Tag { get; set; }
+        public virtual List<Tag> Tags { get; set; }
 
         public Item()
         {
-            Tag = new HashSet<Tag>();
+            Tags = new List<Tag>();
         }
     }
 }

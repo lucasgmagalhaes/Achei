@@ -1,4 +1,5 @@
 ﻿using Entidades.Entidades;
+using Microsoft.EntityFrameworkCore;
 using Persistencia.Contexts.Application;
 using Persistencia.Interfaces;
 using System.Collections.Generic;
@@ -13,6 +14,12 @@ namespace Persistencia.Services
         public List<ItemPerdido> BuscarPorIdUsuario(long id)
         {
             return base.Buscar(perdido => perdido.UsuarioId == id).ToList();
+        }
+
+        public ItemPerdido BuscarComTags(long id)
+        {
+            return base.Buscar(perdido => perdido.Id == id, result => result.Include(perdido => perdido.Tags))
+                .SingleOrDefault();
         }
     }
 }

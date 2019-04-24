@@ -18,7 +18,7 @@ const routes: Routes = [
   { path: 'profile', component: ProfileComponent, canActivate: [AuthGuard] },
   { path: 'home', component: HomeComponent, canActivate: [AuthGuard] },
   { path: 'achados', component: AchadosComponent },
-  { path: 'itemDetalhe', component: ItemDetalheComponent },
+  { path: 'achados/item-detalhe/:tipo/:id', component: ItemDetalheComponent },
   { path: 'achados/cadastrarachado', component: CadastrarItemComponent, canActivate: [AuthGuard] },
 ];
 

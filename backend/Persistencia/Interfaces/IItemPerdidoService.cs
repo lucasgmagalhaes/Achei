@@ -11,5 +11,12 @@ namespace Persistencia.Interfaces
         /// <param name="id"></param>
         /// <returns></returns>
         List<ItemPerdido> BuscarPorIdUsuario(long id);
+
+        /// <summary>
+        /// Busca um Item perdido carregando as tags referentes a ele
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        ItemPerdido BuscarComTags(long id);
     }
 }

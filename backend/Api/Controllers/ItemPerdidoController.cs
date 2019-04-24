@@ -18,12 +18,12 @@ namespace Api.Controllers
         }
 
         [HttpGet("{id}")]
-        public IActionResult BuscarPerdidos(long id)
+        public IActionResult BuscarPerdido(long id)
         {
             try
             {
-                List<ItemPerdido> perdidos = this.itemPerdidoService.BuscarPorIdUsuario(id);
-                return Ok(perdidos);
+                ItemPerdido perdido = this.itemPerdidoService.BuscarComTags(id);
+                return Ok(perdido);
             }
             catch (Exception e)
             {

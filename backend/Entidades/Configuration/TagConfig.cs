@@ -23,7 +23,7 @@ namespace Entidades.Configuration
                 .IsUnicode(false);
 
             builder.HasOne(d => d.Item)
-                .WithMany(p => p.Tag)
+                .WithMany(p => p.Tags)
                 .HasForeignKey(d => d.ItemId)
                 .HasConstraintName("FK__TAG__ItemId__68487DD7");
         }

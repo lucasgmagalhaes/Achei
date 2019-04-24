@@ -19,4 +19,21 @@ export class ItemService {
     return this.http.post<boolean>(`${environment.apiUrl}/itemAchado`, item).toPromise();
   }
 
+  /**
+   * Busca um item **Perdido** baseado no seu *Id*
+   * @async
+   * @param id Id do item
+   */
+  buscarPerdido(id: number): Promise<ItemPerdido> {
+    return this.http.get<ItemPerdido>(`${environment.apiUrl}/itemPerdido/${id}`).toPromise();
+  }
+
+  /**
+   * Busca um item **Achado** baseado no seu *Id*
+   * @param id Id do item
+   */
+  buscarAchado(id: number): Promise<ItemPerdido> {
+    return this.http.get<ItemPerdido>(`${environment.apiUrl}/itemAchado/${id}`).toPromise();
+  }
+
 }

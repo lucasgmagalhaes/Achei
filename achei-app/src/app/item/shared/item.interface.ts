@@ -1,6 +1,6 @@
 export declare interface Item {
     id?: number;
-    tags: ItemTag[];
+    tags: Tag[];
     titulo: string;
     detalhe: string;
     imagens: string[];
@@ -24,8 +24,9 @@ export declare interface Regiao {
     latitude: string;
 }
 
-export declare interface ItemTag {
+export declare interface Tag {
     id?: number;
-    tag: string;
-    item?: Item;
+    nome: string;
 }
+
+export declare type tipoItem = 'achado' | 'perdido';

@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Persistencia.Interfaces;
 using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace Api.Controllers
@@ -104,6 +105,34 @@ namespace Api.Controllers
         {
             usuarioService.Deletar(id);
             return Ok();
+        }
+
+        [HttpGet("{usuarioId}/itensAchados")]
+        public IActionResult BuscarItensAchados(long usuarioId, [FromServices] IItemAchadoService itemAchadoService)
+        {
+            try
+            {
+                List<ItemAchado> perdidos = itemAchadoService.BuscarPorIdUsuario(usuarioId);
+                return Ok(perdidos);
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e);
+            }
+        }
+
+        [HttpGet("{usuarioId}/itensPerdidos")]
+        public IActionResult BuscarItensPerdidos(long usuarioId, [FromServices] IItemPerdidoService itemPerdidoService)
+        {
+            try
+            {
+                List<ItemPerdido> perdidos = itemPerdidoService.BuscarPorIdUsuario(usuarioId);
+                return Ok(perdidos);
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e);
+            }
         }
     }
 }

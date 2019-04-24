@@ -9,7 +9,7 @@ import { Observable } from 'rxjs';
 import { map, startWith } from 'rxjs/operators';
 import { ItemService } from '../item/shared/item.service';
 import { SessionService } from '../auth/session.service';
-import { Item, ItemEncontrado, ItemPerdido, ItemTag } from '../item/shared/item.interface';
+import { Item, ItemEncontrado, ItemPerdido, Tag } from '../item/shared/item.interface';
 
 // just an interface for type safety.
 declare interface Marker {
@@ -227,12 +227,13 @@ export class CadastrarItemComponent implements OnInit {
     });
   }
 
-  getTags(): ItemTag[] {
+  getTags(): Tag[] {
     const tags = this.detalhesFormsGroup.get('tags').value as [];
-    const tagsReturn: ItemTag[] = [];
+    const tagsReturn: Tag[] = [];
 
     for (const tag of tags) {
-      tagsReturn.push({ tag: tag });
+      console.log(tag);
+      tagsReturn.push({ nome: tag });
     }
 
     return tagsReturn;
