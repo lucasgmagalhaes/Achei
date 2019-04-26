@@ -1,1 +1,1 @@
-backend/sonar/ export-ignore
+*.pb export-ignore
