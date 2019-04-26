@@ -1,0 +1,19 @@
+
+³Persistencia.Contexts.Application.ApplicationDbContext.ApplicationDbContext(Microsoft.EntityFrameworkCore.DbContextOptions<Persistencia.Contexts.Application.ApplicationDbContext>)X
+ND:\git\Achei\backend\Persistencia\Contexts\Application\ApplicationDbContext.cs	 	(g"0*Ë
+0À
+½
+X
+ND:\git\Achei\backend\Persistencia\Contexts\Application\ApplicationDbContext.cs	T 	(c
+
+%0void"aMicrosoft.EntityFrameworkCore.DbContext.DbContext(Microsoft.EntityFrameworkCore.DbContextOptions)*+)
+'Microsoft.EntityFrameworkCore.DbContext*E
+C
+options8Microsoft.EntityFrameworkCore.DbContextOptions<TContext>*
+1*t
+1"o
+X
+ND:\git\Achei\backend\Persistencia\Contexts\Application\ApplicationDbContext.cs	f 	(g
+implicit return:C
+options8Microsoft.EntityFrameworkCore.DbContextOptions<TContext>B:8
+6Persistencia.Contexts.Application.ApplicationDbContext

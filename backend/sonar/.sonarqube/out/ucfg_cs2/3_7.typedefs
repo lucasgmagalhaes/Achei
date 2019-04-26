@@ -1,0 +1,7 @@
+‰
+Api.Token.SigningConfigurationsobjectR
+SigningConfigurations()7Api.Token.SigningConfigurations.SigningConfigurations()2
+Key.get'Api.Token.SigningConfigurations.Key.get2
+Key.set'Api.Token.SigningConfigurations.Key.setP
+SigningCredentials.get6Api.Token.SigningConfigurations.SigningCredentials.getP
+SigningCredentials.set6Api.Token.SigningConfigurations.SigningCredentials.set

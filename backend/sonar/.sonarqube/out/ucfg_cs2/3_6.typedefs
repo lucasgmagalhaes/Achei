@@ -1,0 +1,5 @@
+É
+$Api.Controllers.ItemAchadoController'Microsoft.AspNetCore.Mvc.ControllerBaseobject©
+@ItemAchadoController(Persistencia.Interfaces.IItemAchadoService)eApi.Controllers.ItemAchadoController.ItemAchadoController(Persistencia.Interfaces.IItemAchadoService)M
+BuscarAchado(long)7Api.Controllers.ItemAchadoController.BuscarAchado(long)u
+&Salvar(Entidades.Entidades.ItemAchado)KApi.Controllers.ItemAchadoController.Salvar(Entidades.Entidades.ItemAchado)

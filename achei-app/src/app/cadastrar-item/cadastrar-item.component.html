@@ -6,10 +6,10 @@
 
         <ng-template matStepLabel>Tipo de ocorrência</ng-template>
 
-        <h3>Você perdeu ou encontrou ?</h3>
+        <h3>Você perdeu ou achou ?</h3>
         <div class="block mt-1">
           <button mat-raised-button color="primary" (click)="goForward(stepper, 'perda')" matStepperNext
-            class="w-100 tipo-botao">Perdi</button>
+            class="w-100 tipo-botao botao-margin">Perdi</button>
           <button mat-raised-button color="primary" (click)="goForward(stepper, 'encontro')" matStepperNext
             class="w-100 mt-3 tipo-botao">Achei</button>
         </div>
@@ -154,8 +154,8 @@
           <input type="file" id="imgupload" (change)="setFile($event)" style="display:none" />
         </div>
 
-        <div formArrayName="images" (click)="selectImg()" *ngFor="let image of imagensFormGroup.get('images').value;">
-          <img id="profileimg" class="image-link" [src]="image">
+        <div (click)="selectImg()">
+          <img id="profileimg" class="image-link" [src]="imagensFormGroup.get('imagem').value">
         </div>
 
         <div class="block mt-2 w-100">

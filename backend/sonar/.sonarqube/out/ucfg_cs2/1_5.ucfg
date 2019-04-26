@@ -1,0 +1,25 @@
+
+uPersistencia.Services.AutenticacaoService.AutenticacaoService(Persistencia.Contexts.Application.ApplicationDbContext)K
+AD:\git\Achei\backend\Persistencia\Services\AutenticacaoService.cs
+ 
+(T"0*±
+0¦
+£
+K
+AD:\git\Achei\backend\Persistencia\Services\AutenticacaoService.cs
+A 
+(P
+
+%0void"YPersistencia.Services.CrudService<T>.CrudService(Microsoft.EntityFrameworkCore.DbContext)*(&
+$Persistencia.Services.CrudService<T>*C
+A
+context6Persistencia.Contexts.Application.ApplicationDbContext*
+1*g
+1"b
+K
+AD:\git\Achei\backend\Persistencia\Services\AutenticacaoService.cs
+S 
+(T
+implicit return:A
+context6Persistencia.Contexts.Application.ApplicationDbContextB-+
+)Persistencia.Services.AutenticacaoService

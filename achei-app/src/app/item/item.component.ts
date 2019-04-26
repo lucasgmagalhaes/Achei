@@ -11,6 +11,9 @@ export class ItemComponent implements OnInit {
   @Input()
   item: Item;
 
+  @Input()
+  texto:string;
+
   constructor() { }
 
   ngOnInit() {

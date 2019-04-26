@@ -1,0 +1,29 @@
+
+<Persistencia.Services.ItemPerdidoService.BuscarComTags(long)J
+@D:\git\Achei\backend\Persistencia\Services\ItemPerdidoService.cs (	"0*ˆ
+0ƒ
+€
+J
+@D:\git\Achei\backend\Persistencia\Services\ItemPerdidoService.cs (n
+%0System.Linq.IQueryable<T>"ÒPersistencia.Services.CrudService<T>.Buscar(System.Linq.Expressions.Expression<System.Func<T, bool>>, System.Func<System.Linq.IQueryable<T>, Microsoft.EntityFrameworkCore.Query.IIncludableQueryable<T, object>>)*,*
+(Persistencia.Services.ItemPerdidoService*
+""*
+""…
+‚
+J
+@D:\git\Achei\backend\Persistencia\Services\ItemPerdidoService.cs ("%
+%1Entidades.Entidades.ItemPerdido"OSystem.Linq.Queryable.SingleOrDefault<TSource>(System.Linq.IQueryable<TSource>)*"
+System.Linq.Queryable*!
+
+%0System.Linq.IQueryable<T>"u
+J
+@D:\git\Achei\backend\Persistencia\Services\ItemPerdidoService.cs (#'
+%
+%1Entidades.Entidades.ItemPerdido*f
+1"a
+J
+@D:\git\Achei\backend\Persistencia\Services\ItemPerdidoService.cs (	
+implicit return:
+
+idlongB,*
+(Persistencia.Services.ItemPerdidoService

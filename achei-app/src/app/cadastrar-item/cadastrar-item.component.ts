@@ -110,7 +110,7 @@ export class CadastrarItemComponent implements OnInit {
     });
 
     this.imagensFormGroup = this.formBuilder.group({
-      images: this.formBuilder.array([])
+      imagem:  this.formBuilder.control('')
     });
 
     this.horasFiltradas = this.horaControl.valueChanges.pipe(
@@ -169,8 +169,7 @@ export class CadastrarItemComponent implements OnInit {
       reader.readAsDataURL(file);
 
       reader.onload = () => {
-        const images = this.imagensFormGroup.get('images') as FormArray;
-        images.push(this.createItem(reader.result.toString()));
+        this.imagensFormGroup.get('imagem').setValue(reader.result.toString());
         this.changeDetector.markForCheck();
       };
     }
@@ -196,7 +195,7 @@ export class CadastrarItemComponent implements OnInit {
         titulo: this.detalhesFormsGroup.get('titulo').value,
         detalhe: this.detalhesFormsGroup.get('detalhe').value,
         tags: this.getTags(),
-        imagens: this.imagensFormGroup.get('images').value,
+        imagem: this.imagensFormGroup.get('imagem').value,
         regiao: {
           latitude: this.localFormsGroup.get('latitudeLocal').value,
           longitude: this.localFormsGroup.get('longitudeLocal').value,

@@ -1,10 +1,11 @@
 <mat-card class="full-field item-card item-achado ">
+  <span class="badge">{{texto}}</span>
   <div class="info">
-    <div *ngIf="item?.imagens && item?.imagens.length > 0">
-      <img [src]="item?.imagens[0]" alt="" />
+    <div *ngIf="item.imagem !== ''">
+      <img [src]="item.imagem" alt="" />
     </div>
 
-    <div *ngIf="item?.imagens === undefined || item?.imagens.length === 0">
+    <div *ngIf="item.imagem === '' && item.image === undefined">
       <img src="../../assets/undefined_user.png" alt="" />
     </div>
 

@@ -4,19 +4,24 @@
 </div>
 
 <div class="row mt-4">
-  <h3>Meus perdidos</h3>
+  <h3 *ngIf="itensPerdidos.length > 0">Meus perdidos</h3>
 
   <div class="container">
     <div class="row">
       <div *ngFor="let perdido of itensPerdidos" class="col-sm-3">
-        <app-item [item]="perdido" [routerLink]="['item-detalhe', 'perdido', perdido.id]"></app-item>
+        <app-item [item]="perdido" [texto]="'Não encontrado'" [routerLink]="['item-detalhe', 'perdido', perdido.id]"></app-item>
       </div>
-      <app-item></app-item>
     </div>
   </div>
 
-  <h3>Meus Achados</h3>
-  <div *ngFor="let perdido of itensAchados">
-    <app-item></app-item>
+  <h3 *ngIf="itensAchados.length > 0">Meus Achados</h3>
+
+  <div class="container">
+    <div class="row">
+      <div *ngFor="let perdido of itensAchados" class="col-sm-3">
+        <app-item [item]="perdido" [texto]="'Não entregue'" [routerLink]="['item-detalhe', 'perdido', perdido.id]"></app-item>
+      </div>
+    </div>
   </div>
+
 </div>

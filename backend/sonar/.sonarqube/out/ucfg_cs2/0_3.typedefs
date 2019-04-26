@@ -1,0 +1,4 @@
+È
+!Entidades.Configuration.TagConfigobjectÜ
+[Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<Entidades.Tag>)}Entidades.Configuration.TagConfig.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<Entidades.Tag>)<
+TagConfig()-Entidades.Configuration.TagConfig.TagConfig()

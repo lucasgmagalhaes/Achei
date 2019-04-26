@@ -1,0 +1,31 @@
+
+2Persistencia.Services.CrudService<T>.BuscarAsync()C
+9D:\git\Achei\backend\Persistencia\Services\CrudService.csk n(	"0*Ä
+0ß
+Ü
+C
+9D:\git\Achei\backend\Persistencia\Services\CrudService.csm m('-
+%0'Microsoft.EntityFrameworkCore.DbContext"__id*`*^&
+$Persistencia.Services.CrudService<T>"4
+	dbService'Microsoft.EntityFrameworkCore.DbContextõò
+C
+9D:\git\Achei\backend\Persistencia\Services\CrudService.csm m(02
+%1,Microsoft.EntityFrameworkCore.DbSet<TEntity>"6Microsoft.EntityFrameworkCore.DbContext.Set<TEntity>()*/
+-
+%0'Microsoft.EntityFrameworkCore.DbContext2Set<TEntity>()•
+’
+C
+9D:\git\Achei\backend\Persistencia\Services\CrudService.csm m(>*
+%2$System.Threading.Tasks.Task<TResult>"šMicrosoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync<TSource>(System.Linq.IQueryable<TSource>, System.Threading.CancellationToken)*D"B
+@Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions*4
+2
+%1,Microsoft.EntityFrameworkCore.DbSet<TEntity>*
+"""M
+C
+9D:\git\Achei\backend\Persistencia\Services\CrudService.csm m(?
+""*_
+1"Z
+C
+9D:\git\Achei\backend\Persistencia\Services\CrudService.csn n(	
+implicit returnB(&
+$Persistencia.Services.CrudService<T>

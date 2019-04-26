@@ -1,0 +1,15 @@
+C
+:D:\git\Achei\backend\Entidades\Configuration\ItemConfig.csutf-8E
+<D:\git\Achei\backend\Entidades\Configuration\RegiaoConfig.csutf-8B
+9D:\git\Achei\backend\Entidades\Configuration\TagConfig.csutf-8F
+=D:\git\Achei\backend\Entidades\Configuration\UsuarioConfig.csutf-86
+-D:\git\Achei\backend\Entidades\Dto\ItemDto.csutf-89
+0D:\git\Achei\backend\Entidades\Entidades\Item.csutf-8?
+6D:\git\Achei\backend\Entidades\Entidades\ItemAchado.csutf-8@
+7D:\git\Achei\backend\Entidades\Entidades\ItemPerdido.csutf-8;
+2D:\git\Achei\backend\Entidades\Entidades\Regiao.csutf-88
+/D:\git\Achei\backend\Entidades\Entidades\Tag.csutf-8<
+3D:\git\Achei\backend\Entidades\Entidades\Usuario.csutf-8=
+4D:\git\Achei\backend\Entidades\Interfaces\IEntity.csutf-8[
+PC:\Users\Lucas\AppData\Local\Temp\.NETCoreApp,Version=v2.2.AssemblyAttributes.csutf-8[
+PD:\git\Achei\backend\Entidades\obj\Debug\netcoreapp2.2\Entidades.AssemblyInfo.csutf-8

@@ -14,6 +14,7 @@ namespace Entidades.Entidades
         public DateTime? DataInicio { get; set; }
         public DateTime? DataFim { get; set; }
         public string Hora { get; set; }
+        public string Imagem { get; set; }
         public virtual Regiao Regiao { get; set; }
         public long UsuarioId { get; set; }
         public virtual Usuario Usuario { get; set; }

@@ -3,7 +3,7 @@ export declare interface Item {
     tags: Tag[];
     titulo: string;
     detalhe: string;
-    imagens: string[];
+    imagem: string;
     regiao: Regiao;
     usuarioId: number;
     dataInicio: Date;

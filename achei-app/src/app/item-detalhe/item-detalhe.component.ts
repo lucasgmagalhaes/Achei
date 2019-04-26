@@ -27,7 +27,7 @@ export class ItemDetalheComponent implements OnInit {
       dataFinal: this.formBuilder.control('', Validators.required),
       hora: this.formBuilder.control('', Validators.required),
       minuto: this.formBuilder.control('', Validators.required),
-      imagens: this.formBuilder.array([])
+      imagem: this.formBuilder.control('')
     });
 
     const id = this.activeRoute.snapshot.params['id'];
@@ -40,7 +40,7 @@ export class ItemDetalheComponent implements OnInit {
     }
   }
 
-  preencherForm(item: Item) {
+  preencherForm(item: ItemPerdido) {
     this.itemForm.get('titulo').setValue(item.titulo);
     this.itemForm.get('detalhe').setValue(item.detalhe);
 
@@ -56,14 +56,8 @@ export class ItemDetalheComponent implements OnInit {
     this.itemForm.get('hora').setValue(item.hora.split(':')[0]);
     this.itemForm.get('minuto').setValue(item.hora.split(':')[1]);
 
-    const imagens = this.itemForm.get('imagens') as FormArray;
-    item.imagens.forEach(imagem => imagens.push(new FormControl(imagem)));
+    this.itemForm.get('imagem').setValue(item.imagem);
 
-    if (item as ItemEncontrado !== undefined)  {
-
-    } else {
-
-    }
   }
 
   ngOnInit() {

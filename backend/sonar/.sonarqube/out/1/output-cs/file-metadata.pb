@@ -1,0 +1,16 @@
+>
+5D:\git\Achei\backend\Persistencia\ConnectionString.csutf-8W
+ND:\git\Achei\backend\Persistencia\Contexts\Application\ApplicationDbContext.csutf-8`
+WD:\git\Achei\backend\Persistencia\Contexts\Application\ApplicationDbContext.DataSets.csutf-8M
+DD:\git\Achei\backend\Persistencia\Interfaces\IAutenticacaoService.csutf-8E
+<D:\git\Achei\backend\Persistencia\Interfaces\ICrudService.csutf-8K
+BD:\git\Achei\backend\Persistencia\Interfaces\IITemAchadoService.csutf-8L
+CD:\git\Achei\backend\Persistencia\Interfaces\IItemPerdidoService.csutf-8H
+?D:\git\Achei\backend\Persistencia\Interfaces\IUsuarioService.csutf-8J
+AD:\git\Achei\backend\Persistencia\Services\AutenticacaoService.csutf-8B
+9D:\git\Achei\backend\Persistencia\Services\CrudService.csutf-8H
+?D:\git\Achei\backend\Persistencia\Services\ItemAchadoService.csutf-8I
+@D:\git\Achei\backend\Persistencia\Services\ItemPerdidoService.csutf-8E
+<D:\git\Achei\backend\Persistencia\Services\UsuarioService.csutf-8[
+PC:\Users\Lucas\AppData\Local\Temp\.NETCoreApp,Version=v2.2.AssemblyAttributes.csutf-8a
+VD:\git\Achei\backend\Persistencia\obj\Debug\netcoreapp2.2\Persistencia.AssemblyInfo.csutf-8

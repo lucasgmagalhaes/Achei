@@ -1,0 +1,32 @@
+
+1Persistencia.Services.CrudService<T>.Buscar(long)C
+9D:\git\Achei\backend\Persistencia\Services\CrudService.cs3 6(	"0*œ
+0ß
+Ü
+C
+9D:\git\Achei\backend\Persistencia\Services\CrudService.cs5 5(!-
+%0'Microsoft.EntityFrameworkCore.DbContext"__id*`*^&
+$Persistencia.Services.CrudService<T>"4
+	dbService'Microsoft.EntityFrameworkCore.DbContextõò
+C
+9D:\git\Achei\backend\Persistencia\Services\CrudService.cs5 5(*2
+%1,Microsoft.EntityFrameworkCore.DbSet<TEntity>"6Microsoft.EntityFrameworkCore.DbContext.Set<TEntity>()*/
+-
+%0'Microsoft.EntityFrameworkCore.DbContext2Set<TEntity>()êç
+C
+9D:\git\Achei\backend\Persistencia\Services\CrudService.cs5 5(3
+%2T"BMicrosoft.EntityFrameworkCore.DbSet<TEntity>.Find(params object[])*4
+2
+%1,Microsoft.EntityFrameworkCore.DbSet<TEntity>*
+""2Find(params object[])"P
+C
+9D:\git\Achei\backend\Persistencia\Services\CrudService.cs5 5(4	
+
+%2T*_
+1"Z
+C
+9D:\git\Achei\backend\Persistencia\Services\CrudService.cs6 6(	
+implicit return:
+
+idlongB(&
+$Persistencia.Services.CrudService<T>

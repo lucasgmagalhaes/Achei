@@ -37,7 +37,7 @@ namespace Api.Controllers
             try
             {
                 itemAchadoService.Inserir(itemAchado);
-                return Ok("Sucesso");
+                return Ok(new RequestResponse() { message = "Item cadastrado com sucesso", status = "200" });
             }
             catch (Exception e)
             {

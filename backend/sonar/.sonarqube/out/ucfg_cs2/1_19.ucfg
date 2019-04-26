@@ -1,0 +1,46 @@
+
+/Persistencia.Services.CrudService<T>.Deletar(T)C
+9D:\git\Achei\backend\Persistencia\Services\CrudService.cs8 <(	"0*¥
+0ß
+Ü
+C
+9D:\git\Achei\backend\Persistencia\Services\CrudService.cs:% :(3-
+%0'Microsoft.EntityFrameworkCore.DbContext"__id*`*^&
+$Persistencia.Services.CrudService<T>"4
+	dbService'Microsoft.EntityFrameworkCore.DbContextõò
+C
+9D:\git\Achei\backend\Persistencia\Services\CrudService.cs:% :(<2
+%1,Microsoft.EntityFrameworkCore.DbSet<TEntity>"6Microsoft.EntityFrameworkCore.DbContext.Set<TEntity>()*/
+-
+%0'Microsoft.EntityFrameworkCore.DbContext2Set<TEntity>()§¤
+C
+9D:\git\Achei\backend\Persistencia\Services\CrudService.cs:% :(MG
+%2AMicrosoft.EntityFrameworkCore.ChangeTracking.EntityEntry<TEntity>"<Microsoft.EntityFrameworkCore.DbSet<TEntity>.Remove(TEntity)*4
+2
+%1,Microsoft.EntityFrameworkCore.DbSet<TEntity>*
+
+entidadeT2Remove(TEntity)ç
+ä
+C
+9D:\git\Achei\backend\Persistencia\Services\CrudService.cs: :(ML
+retornoAMicrosoft.EntityFrameworkCore.ChangeTracking.EntityEntry<TEntity>"__id*I
+G
+%2AMicrosoft.EntityFrameworkCore.ChangeTracking.EntityEntry<TEntity>ß
+Ü
+C
+9D:\git\Achei\backend\Persistencia\Services\CrudService.cs; ;(-
+%3'Microsoft.EntityFrameworkCore.DbContext"__id*`*^&
+$Persistencia.Services.CrudService<T>"4
+	dbService'Microsoft.EntityFrameworkCore.DbContextÊÇ
+C
+9D:\git\Achei\backend\Persistencia\Services\CrudService.cs; ;(#	
+%4int"5Microsoft.EntityFrameworkCore.DbContext.SaveChanges()*/
+-
+%3'Microsoft.EntityFrameworkCore.DbContext2SaveChanges()*
+1*_
+1"Z
+C
+9D:\git\Achei\backend\Persistencia\Services\CrudService.cs< <(	
+implicit return:
+entidadeTB(&
+$Persistencia.Services.CrudService<T>
