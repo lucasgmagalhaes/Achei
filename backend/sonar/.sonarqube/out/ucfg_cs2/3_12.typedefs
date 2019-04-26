@@ -1,9 +1,11 @@
-¯
-!Api.Controllers.UsuarioController'Microsoft.AspNetCore.Mvc.ControllerBaseobjectš
-:UsuarioController(Persistencia.Interfaces.IUsuarioService)\Api.Controllers.UsuarioController.UsuarioController(Persistencia.Interfaces.IUsuarioService)8
-	Get(long)+Api.Controllers.UsuarioController.Get(long)h
-!Post(Entidades.Entidades.Usuario)CApi.Controllers.UsuarioController.Post(Entidades.Entidades.Usuario)r
-&Atualizar(Entidades.Entidades.Usuario)HApi.Controllers.UsuarioController.Atualizar(Entidades.Entidades.Usuario)>
-Delete(long).Api.Controllers.UsuarioController.Delete(long)®
-DBuscarItensAchados(long, Persistencia.Interfaces.IItemAchadoService)fApi.Controllers.UsuarioController.BuscarItensAchados(long, Persistencia.Interfaces.IItemAchadoService)²
-FBuscarItensPerdidos(long, Persistencia.Interfaces.IItemPerdidoService)hApi.Controllers.UsuarioController.BuscarItensPerdidos(long, Persistencia.Interfaces.IItemPerdidoService)
+Ñ
+Api.Token.TokenConfigurationsobjectL
+TokenConfigurations()3Api.Token.TokenConfigurations.TokenConfigurations():
+Audience.get*Api.Token.TokenConfigurations.Audience.get:
+Audience.set*Api.Token.TokenConfigurations.Audience.set6
+
+Issuer.get(Api.Token.TokenConfigurations.Issuer.get6
+
+Issuer.set(Api.Token.TokenConfigurations.Issuer.set8
+Seconds.get)Api.Token.TokenConfigurations.Seconds.get8
+Seconds.set)Api.Token.TokenConfigurations.Seconds.set

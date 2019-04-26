@@ -4,6 +4,6 @@ namespace Persistencia.Interfaces
 {
     public interface IUsuarioService : ICrudService<Usuario>
     {
-       
+
     }
 }

@@ -65,7 +65,7 @@ yApi.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder, Microso
 ""Ø
 Õ
 -
-#D:\git\Achei\backend\Api\Startup.csj j($
+#D:\git\Achei\backend\Api\Startup.csj j(
 
 %7void"LApi.Startup.UpdateDatabase(Microsoft.AspNetCore.Builder.IApplicationBuilder)*
 Api.Startup*9

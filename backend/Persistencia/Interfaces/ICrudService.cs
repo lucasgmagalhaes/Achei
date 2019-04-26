@@ -72,28 +72,28 @@ namespace Persistencia.Interfaces
         Task<List<T>> BuscarAsync();
 
         Task<T> BuscarAsync(long id);
-        
+
         /// <summary>
         /// Deleta um objeto de uma entidade no banco de dados,
         /// com base na entidade
         /// </summary>
         /// <param name="entidade"></param>
         void Deletar(T entidade);
-        
+
         /// <summary>
         /// Deleta um objeto de uma entidade no banco de dados,
         /// com base no id da entidade
         /// </summary>
         /// <param name="id"></param>
         void Deletar(long id);
-        
+
         /// <summary>
         /// Deleta um objeto de uma entidade no banco de dados de forma assíncrona,
         /// com na própria entidade
         /// </summary>
         /// <param name="entidade"></param>
         Task DeletarAsync(T entidade);
-        
+
         /// <summary>
         /// Deleta um objeto de uma entidade no banco de dados de forma assíncrona,
         /// com base no id dessa entidade
@@ -101,21 +101,21 @@ namespace Persistencia.Interfaces
         /// <param name="entidade"></param>
         /// <returns></returns>
         Task DeletarAsync(long id);
-        
+
         /// <summary>
         /// Persiste um objeto de uma entidade no banco de dados
         /// </summary>
         /// <param name="entidade"></param>
         /// <returns></returns>
         T Inserir(T entidade);
-        
+
         /// <summary>
         /// Persiste um objeto de uma entidade no banco de dados de forma assíncrona
         /// </summary>
         /// <param name="entidade"></param>
         /// <returns></returns>
         Task<T> InserirAsync(T entidade);
-        
+
         /// <summary>
         /// Retorna o dataSet da entide definida neste serviço
         /// </summary>

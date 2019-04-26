@@ -1,66 +1,26 @@
 
-7Api.Controllers.ItemAchadoController.BuscarAchado(long)F
-<D:\git\Achei\backend\Api\Controllers\ItemAchadoController.cs  (	"5*
-0*	
-1
-2
-3*¡
-2ð
-í
+eApi.Controllers.ItemAchadoController.ItemAchadoController(Persistencia.Interfaces.IItemAchadoService)F
+<D:\git\Achei\backend\Api\Controllers\ItemAchadoController.cs (	"2*Š
+0ÿ
+ü
 F
-<D:\git\Achei\backend\Api\Controllers\ItemAchadoController.cs$ (:0
-%0*Persistencia.Interfaces.IItemAchadoService"__id*k*i&
+<D:\git\Achei\backend\Api\Controllers\ItemAchadoController.cs (6i&
 $Api.Controllers.ItemAchadoController"?
-itemAchadoService*Persistencia.Interfaces.IItemAchadoServiceñî
+itemAchadoService*Persistencia.Interfaces.IItemAchadoService"__id*A
+?
+itemAchadoService*Persistencia.Interfaces.IItemAchadoService*
+1*b
+1"]
 F
-<D:\git\Achei\backend\Api\Controllers\ItemAchadoController.cs$ (E$
-%1Entidades.Entidades.ItemAchado"4Persistencia.Interfaces.ICrudService<T>.Buscar(long)*2
-0
-%0*Persistencia.Interfaces.IItemAchadoService*
-""2Buscar(long)£
- 
+<D:\git\Achei\backend\Api\Controllers\ItemAchadoController.cs (	
+implicit return*­
+2¢
+Ÿ
 F
-<D:\git\Achei\backend\Api\Controllers\ItemAchadoController.cs (E(
-achadoEntidades.Entidades.ItemAchado"__id*&
-$
-%1Entidades.Entidades.ItemAchado“
-F
-<D:\git\Achei\backend\Api\Controllers\ItemAchadoController.cs (!-
-%2'Microsoft.AspNetCore.Mvc.OkObjectResult"2Microsoft.AspNetCore.Mvc.ControllerBase.Ok(object)*+)
-'Microsoft.AspNetCore.Mvc.ControllerBase**
-(
-achadoEntidades.Entidades.ItemAchado2
-Ok(object)"y
-F
-<D:\git\Achei\backend\Api\Controllers\ItemAchadoController.cs ("/
--
-%2'Microsoft.AspNetCore.Mvc.OkObjectResult*
-4*	
-1
-3
-3*¢
-1˜•
-F
-<D:\git\Achei\backend\Api\Controllers\ItemAchadoController.cs ($5
-%3/Microsoft.AspNetCore.Mvc.BadRequestObjectResult":Microsoft.AspNetCore.Mvc.ControllerBase.BadRequest(object)*+)
-'Microsoft.AspNetCore.Mvc.ControllerBase*
-
-eSystem.Exception2BadRequest(object)"
-F
-<D:\git\Achei\backend\Api\Controllers\ItemAchadoController.cs (%7
-5
-%3/Microsoft.AspNetCore.Mvc.BadRequestObjectResult*b
-3"]
-F
-<D:\git\Achei\backend\Api\Controllers\ItemAchadoController.cs   (	
-implicit return*p
-5f
-d
-F
-<D:\git\Achei\backend\Api\Controllers\ItemAchadoController.cs ()
-%4"__entrypoint*
-""*
-0:
-
-idlongB(&
+<D:\git\Achei\backend\Api\Controllers\ItemAchadoController.cs (#
+%0"__entrypoint*A
+?
+itemAchadoService*Persistencia.Interfaces.IItemAchadoService*
+0:?
+itemAchadoService*Persistencia.Interfaces.IItemAchadoServiceB(&
 $Api.Controllers.ItemAchadoController

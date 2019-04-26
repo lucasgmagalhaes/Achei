@@ -10,7 +10,7 @@ namespace Persistencia.Services
         public AutenticacaoService(ApplicationDbContext context) : base(context) { }
 
         public Usuario AutenticarUsuario(string email, string senha)
-        { 
+        {
             return base.Buscar(usuario => usuario.Email == email).SingleOrDefault();
         }
     }

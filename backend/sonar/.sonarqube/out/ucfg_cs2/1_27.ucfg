@@ -1,16 +1,16 @@
 
 4Persistencia.Services.CrudService<T>.DeletarAsync(T)C
-9D:\git\Achei\backend\Persistencia\Services\CrudService.csu y(	"0*¬
+9D:\git\Achei\backend\Persistencia\Services\CrudService.csw {(	"0*¬
 
 0ß
 Ü
 C
-9D:\git\Achei\backend\Persistencia\Services\CrudService.csw% w(3-
+9D:\git\Achei\backend\Persistencia\Services\CrudService.csy% y(.-
 %0'Microsoft.EntityFrameworkCore.DbContext"__id*`*^&
 $Persistencia.Services.CrudService<T>"4
 	dbService'Microsoft.EntityFrameworkCore.DbContext¯¬
 C
-9D:\git\Achei\backend\Persistencia\Services\CrudService.csw% w(DG
+9D:\git\Achei\backend\Persistencia\Services\CrudService.csy% y(?G
 %1AMicrosoft.EntityFrameworkCore.ChangeTracking.EntityEntry<TEntity>"@Microsoft.EntityFrameworkCore.DbContext.Remove<TEntity>(TEntity)*/
 -
 %0'Microsoft.EntityFrameworkCore.DbContext*
@@ -18,18 +18,18 @@ C
 entidadeT2Remove<TEntity>(TEntity)ç
 ä
 C
-9D:\git\Achei\backend\Persistencia\Services\CrudService.csw w(DL
+9D:\git\Achei\backend\Persistencia\Services\CrudService.csy y(?L
 retornoAMicrosoft.EntityFrameworkCore.ChangeTracking.EntityEntry<TEntity>"__id*I
 G
 %1AMicrosoft.EntityFrameworkCore.ChangeTracking.EntityEntry<TEntity>ß
 Ü
 C
-9D:\git\Achei\backend\Persistencia\Services\CrudService.csx x(-
+9D:\git\Achei\backend\Persistencia\Services\CrudService.csz z(-
 %2'Microsoft.EntityFrameworkCore.DbContext"__id*`*^&
 $Persistencia.Services.CrudService<T>"4
 	dbService'Microsoft.EntityFrameworkCore.DbContextÁ¾
 C
-9D:\git\Achei\backend\Persistencia\Services\CrudService.csx x(.*
+9D:\git\Achei\backend\Persistencia\Services\CrudService.csz z(.*
 %3$System.Threading.Tasks.Task<TResult>"\Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(System.Threading.CancellationToken)*/
 -
 %2'Microsoft.EntityFrameworkCore.DbContext*
@@ -37,7 +37,7 @@ C
 1*_
 1"Z
 C
-9D:\git\Achei\backend\Persistencia\Services\CrudService.csy y(	
+9D:\git\Achei\backend\Persistencia\Services\CrudService.cs{ {(	
 implicit return:
 entidadeTB(&
 $Persistencia.Services.CrudService<T>

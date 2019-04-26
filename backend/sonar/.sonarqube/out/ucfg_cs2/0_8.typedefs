@@ -1,5 +1,4 @@
-ý
-Entidades.Entidades.ItemAchadoEntidades.Entidades.Itemobject;
-ItemAchado()+Entidades.Entidades.ItemAchado.ItemAchado()=
-Devolvido.get,Entidades.Entidades.ItemAchado.Devolvido.get=
-Devolvido.set,Entidades.Entidades.ItemAchado.Devolvido.set
+ä
+"Entidades.Configuration.ItemConfigobjectô
+fConfigure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<Entidades.Entidades.Item>)‰Entidades.Configuration.ItemConfig.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<Entidades.Entidades.Item>)?
+ItemConfig()/Entidades.Configuration.ItemConfig.ItemConfig()

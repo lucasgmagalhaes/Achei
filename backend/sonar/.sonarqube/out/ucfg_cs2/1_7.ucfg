@@ -1,19 +1,29 @@
 
-qPersistencia.Services.ItemAchadoService.ItemAchadoService(Persistencia.Contexts.Application.ApplicationDbContext)I
-?D:\git\Achei\backend\Persistencia\Services\ItemAchadoService.cs (V"0*±
-0¦
-£
-I
-?D:\git\Achei\backend\Persistencia\Services\ItemAchadoService.csA (R
+APersistencia.Services.ItemPerdidoService.BuscarPorIdUsuario(long)J
+@D:\git\Achei\backend\Persistencia\Services\ItemPerdidoService.cs (	"0*—
+0ƒ
+€
+J
+@D:\git\Achei\backend\Persistencia\Services\ItemPerdidoService.cs (B
+%0System.Linq.IQueryable<T>"ÒPersistencia.Services.CrudService<T>.Buscar(System.Linq.Expressions.Expression<System.Func<T, bool>>, System.Func<System.Linq.IQueryable<T>, Microsoft.EntityFrameworkCore.Query.IIncludableQueryable<T, object>>)*,*
+(Persistencia.Services.ItemPerdidoService*
+""*
+""‘
+Ž
+J
+@D:\git\Achei\backend\Persistencia\Services\ItemPerdidoService.cs (K(
+%1"System.Collections.Generic.List<T>"WSystem.Linq.Enumerable.ToList<TSource>(System.Collections.Generic.IEnumerable<TSource>)*"
+System.Linq.Enumerable*!
+
+%0System.Linq.IQueryable<T>"x
+J
+@D:\git\Achei\backend\Persistencia\Services\ItemPerdidoService.cs (L*
+(
+%1"System.Collections.Generic.List<T>*f
+1"a
+J
+@D:\git\Achei\backend\Persistencia\Services\ItemPerdidoService.cs (	
+implicit return:
 
-%0void"YPersistencia.Services.CrudService<T>.CrudService(Microsoft.EntityFrameworkCore.DbContext)*(&
-$Persistencia.Services.CrudService<T>*E
-C
-	dbContext6Persistencia.Contexts.Application.ApplicationDbContext*
-1*e
-1"`
-I
-?D:\git\Achei\backend\Persistencia\Services\ItemAchadoService.csU (V
-implicit return:C
-	dbContext6Persistencia.Contexts.Application.ApplicationDbContextB+)
-'Persistencia.Services.ItemAchadoService
+idlongB,*
+(Persistencia.Services.ItemPerdidoService

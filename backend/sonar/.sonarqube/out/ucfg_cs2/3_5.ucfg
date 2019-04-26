@@ -1,26 +1,28 @@
 
-hApi.Controllers.ItemPerdidoController.ItemPerdidoController(Persistencia.Interfaces.IItemPerdidoService)G
-=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.cs (	"2*ê
-0Ö
-Ç
-G
-=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.cs (8l'
-%Api.Controllers.ItemPerdidoController"A
-itemPerdidoService+Persistencia.Interfaces.IItemPerdidoService"__id*C
-A
-itemPerdidoService+Persistencia.Interfaces.IItemPerdidoService*
-1*c
-1"^
-G
-=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.cs (	
-implicit return*∞
-2•
-¢
-G
-=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.cs ($
-%0"__entrypoint*C
-A
-itemPerdidoService+Persistencia.Interfaces.IItemPerdidoService*
-0:A
-itemPerdidoService+Persistencia.Interfaces.IItemPerdidoServiceB)'
-%Api.Controllers.ItemPerdidoController
+*Api.Program.CreateWebHostBuilder(string[])-
+#D:\git\Achei\backend\Api\Program.cs (	"0*ö
+0Ÿ
+÷
+-
+#D:\git\Achei\backend\Api\Program.cs (52
+%0,Microsoft.AspNetCore.Hosting.IWebHostBuilder";Microsoft.AspNetCore.WebHost.CreateDefaultBuilder(string[])* "
+Microsoft.AspNetCore.WebHost*
+
+argsstring[]—
+Œ
+-
+#D:\git\Achei\backend\Api\Program.cs (K2
+%1,Microsoft.AspNetCore.Hosting.IWebHostBuilder"xMicrosoft.AspNetCore.Hosting.WebHostBuilderExtensions.UseStartup<TStartup>(Microsoft.AspNetCore.Hosting.IWebHostBuilder)*9"7
+5Microsoft.AspNetCore.Hosting.WebHostBuilderExtensions*4
+2
+%0,Microsoft.AspNetCore.Hosting.IWebHostBuilder"e
+-
+#D:\git\Achei\backend\Api\Program.cs (L4
+2
+%1,Microsoft.AspNetCore.Hosting.IWebHostBuilder*I
+1"D
+-
+#D:\git\Achei\backend\Api\Program.cs (	
+implicit return:
+argsstring[]B"
+Api.Program

@@ -1,14 +1,14 @@
 {
   "ServerUri": "https://sonarcloud.io/",
   "Organization": {
-    "Key": "ro",
-    "Name": "RoleOne"
+    "Key": "lucasgmagalhaes-github",
+    "Name": "Lucas Gomes"
   },
-  "ProjectKey": "webapp",
-  "ProjectName": "webapp",
+  "ProjectKey": "lucasgmagalhaes_Achei",
+  "ProjectName": "Achei",
   "Profiles": {
     "CSharp": {
-      "ProfileKey": "AWSqTFNQXvYvXQrbHd53",
+      "ProfileKey": "AWSqS74Kr5pnsk0fp_74",
       "ProfileTimestamp": "2019-03-26T02:47:46-03:00"
     }
   }

@@ -1,10 +1,11 @@
 Å
 :D:\git\Achei\backend\Entidades\Configuration\ItemConfig.cs (08@HR 0=1;5=0;10=0;20=0;30=0;60=0;90=0Z1=1;2=0;4=0;6=0;8=0;10=0;12=0r&	
-!"#$&'()+,.012‚!&'(+.±
-<D:\git\Achei\backend\Entidades\Configuration\RegiaoConfig.cs (08@HR 0=1;5=0;10=0;20=0;30=0;60=0;90=0Z1=1;2=0;4=0;6=0;8=0;10=0;12=0r	
-‚²
-9D:\git\Achei\backend\Entidades\Configuration\TagConfig.cs (08@HR 0=1;5=0;10=0;20=0;30=0;60=0;90=0Z1=1;2=0;4=0;6=0;8=0;10=0;12=0r	
-‚à
+!"#$&'()+,.012‚!&'(+.®
+<D:\git\Achei\backend\Entidades\Configuration\RegiaoConfig.cs (08@HR 0=1;5=0;10=0;20=0;30=0;60=0;90=0Z1=1;2=0;4=0;6=0;8=0;10=0;12=0r	
+‚®
+9D:\git\Achei\backend\Entidades\Configuration\TagConfig.cs (08@HR 0=1;5=0;10=0;20=0;30=0;60=0;90=0Z1=1;2=0;4=0;6=0;8=0;10=0;12=0r	
+‚
+à
 =D:\git\Achei\backend\Entidades\Configuration\UsuarioConfig.cs (08@HR 0=1;5=0;10=0;20=0;30=0;60=0;90=0Z1=1;2=0;4=0;6=0;8=0;10=0;12=0r:	
  !"#%&()*+,./01245679:;<>?@BCDFGH‚ %(.49>?@BCD”
 -D:\git\Achei\backend\Entidades\Dto\ItemDto.cs (08@HR 0=0;5=0;10=0;20=1;30=0;60=0;90=0Z1=22;2=0;4=0;6=0;8=0;10=0;12=0r	

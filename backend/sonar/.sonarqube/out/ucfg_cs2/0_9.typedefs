@@ -1,5 +1,4 @@
-‡
-Entidades.Entidades.ItemPerdidoEntidades.Entidades.Itemobject>
-ItemPerdido()-Entidades.Entidades.ItemPerdido.ItemPerdido()@
-Recuperado.get.Entidades.Entidades.ItemPerdido.Recuperado.get@
-Recuperado.set.Entidades.Entidades.ItemPerdido.Recuperado.set
+È
+!Entidades.Configuration.TagConfigobjectÜ
+[Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<Entidades.Tag>)}Entidades.Configuration.TagConfig.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<Entidades.Tag>)<
+TagConfig()-Entidades.Configuration.TagConfig.TagConfig()

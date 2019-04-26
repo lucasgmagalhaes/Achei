@@ -1,5 +1,9 @@
-…
-$Api.Controllers.ItemAchadoController'Microsoft.AspNetCore.Mvc.ControllerBaseobject©
-@ItemAchadoController(Persistencia.Interfaces.IItemAchadoService)eApi.Controllers.ItemAchadoController.ItemAchadoController(Persistencia.Interfaces.IItemAchadoService)M
-BuscarAchado(long)7Api.Controllers.ItemAchadoController.BuscarAchado(long)u
-&Salvar(Entidades.Entidades.ItemAchado)KApi.Controllers.ItemAchadoController.Salvar(Entidades.Entidades.ItemAchado)
+Ó
+Api.StartupobjectÑ
+:Startup(Microsoft.Extensions.Configuration.IConfiguration)FApi.Startup.Startup(Microsoft.Extensions.Configuration.IConfiguration)¨
+NConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)ZApi.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)Í
+mConfigure(Microsoft.AspNetCore.Builder.IApplicationBuilder, Microsoft.AspNetCore.Hosting.IHostingEnvironment)yApi.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder, Microsoft.AspNetCore.Hosting.IHostingEnvironment)ê
+@UpdateDatabase(Microsoft.AspNetCore.Builder.IApplicationBuilder)LApi.Startup.UpdateDatabase(Microsoft.AspNetCore.Builder.IApplicationBuilder)∏
+TConfigureAuthentication(Microsoft.Extensions.DependencyInjection.IServiceCollection)`Api.Startup.ConfigureAuthentication(Microsoft.Extensions.DependencyInjection.IServiceCollection)2
+Configuration.getApi.Startup.Configuration.get2
+Configuration.setApi.Startup.Configuration.set

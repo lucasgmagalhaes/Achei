@@ -3,23 +3,23 @@ _Api.AuthorizeHandle.HandleAsync(Microsoft.AspNetCore.Authorization.Authorizatio
 +D:\git\Achei\backend\Api\AuthorizeHandle.cs	 (	"0*­
 0ˆ…
 5
-+D:\git\Achei\backend\Api\AuthorizeHandle.cs ($,
++D:\git\Achei\backend\Api\AuthorizeHandle.cs (',
 %0&System.Security.Claims.ClaimsPrincipal"GMicrosoft.AspNetCore.Authorization.AuthorizationHandlerContext.User.get*K
 I
 context>Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext2User.getØÕ
 5
-+D:\git\Achei\backend\Api\AuthorizeHandle.cs (-)
++D:\git\Achei\backend\Api\AuthorizeHandle.cs (0)
 %1#System.Security.Principal.IIdentity"3System.Security.Claims.ClaimsPrincipal.Identity.get*.
 ,
 %0&System.Security.Claims.ClaimsPrincipal2Identity.get­ª
 5
-+D:\git\Achei\backend\Api\AuthorizeHandle.cs (2
++D:\git\Achei\backend\Api\AuthorizeHandle.cs (5
 %2string",System.Security.Principal.IIdentity.Name.get*+
 )
 %1#System.Security.Principal.IIdentity2Name.get`
 ^
 5
-+D:\git\Achei\backend\Api\AuthorizeHandle.cs (2
++D:\git\Achei\backend\Api\AuthorizeHandle.cs (5
 emailstring"__id*
 
 %2stringˆ…

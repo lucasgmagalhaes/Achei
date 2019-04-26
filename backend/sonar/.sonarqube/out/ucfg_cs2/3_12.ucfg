@@ -1,53 +1,27 @@
 
-#Api.Session.IsUsuarioLogado(string)-
-#D:\git\Achei\backend\Api\Session.cs (	"0*
-0*
-1
-2*û
-2Ç
+Api.Session.Session()-
+#D:\git\Achei\backend\Api\Session.cs (	"0*·
+0¢Ÿ
+-
+#D:\git\Achei\backend\Api\Session.cs (79
+%03System.Collections.Generic.Dictionary<TKey, TValue>"3System.Collections.Generic.Dictionary<TKey, TValue>½
+º
+-
+#D:\git\Achei\backend\Api\Session.cs (5
+
+%1void"@System.Collections.Generic.Dictionary<TKey, TValue>.Dictionary()*;
+9
+%03System.Collections.Generic.Dictionary<TKey, TValue>Ç
 Ä
 -
-#D:\git\Achei\backend\Api\Session.cs ('9
-%03System.Collections.Generic.Dictionary<TKey, TValue>"__id*R*P
+#D:\git\Achei\backend\Api\Session.cs (7P
 Api.Session"?
-usuarios3System.Collections.Generic.Dictionary<TKey, TValue>œ
-™
--
-#D:\git\Achei\backend\Api\Session.cs (.
-%1string"
-__arrayGet*;
+usuarios3System.Collections.Generic.Dictionary<TKey, TValue>"__id*;
 9
-%03System.Collections.Generic.Dictionary<TKey, TValue>*
-
-emailstringX
-V
+%03System.Collections.Generic.Dictionary<TKey, TValue>*
+1*I
+1"D
 -
-#D:\git\Achei\backend\Api\Session.cs (.
-bancostring"__id*
-
-%1stringz
-x
--
-#D:\git\Achei\backend\Api\Session.cs (3
-
-%2bool"string.IsNullOrEmpty(string)*
-"
-string*
-
-bancostring"7
--
-#D:\git\Achei\backend\Api\Session.cs (4
-""*
-3*
-1
-4*<
-1"7
--
-#D:\git\Achei\backend\Api\Session.cs (
-""*I
-4"D
--
-#D:\git\Achei\backend\Api\Session.cs (	
-implicit return:
-emailstringB"
+#D:\git\Achei\backend\Api\Session.cs (	
+implicit returnB"
 Api.Session

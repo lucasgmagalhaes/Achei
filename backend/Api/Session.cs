@@ -6,7 +6,7 @@ namespace Api
 {
     public static class Session
     {
-        private static Dictionary<string, string> usuarios;
+        private static readonly Dictionary<string, string> usuarios;
 
         static Session()
         {

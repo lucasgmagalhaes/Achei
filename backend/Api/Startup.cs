@@ -1,4 +1,5 @@
 ﻿using Api.Token;
+using Microsoft.AspNet.OData.Extensions;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
@@ -14,11 +15,10 @@ using Persistencia;
 using Persistencia.Contexts.Application;
 using Persistencia.Interfaces;
 using Persistencia.Services;
-using System;
 using Swashbuckle.AspNetCore.Swagger;
-using System.Reflection;
+using System;
 using System.IO;
-using Microsoft.AspNet.OData.Extensions;
+using System.Reflection;
 
 namespace Api
 {
@@ -56,15 +56,15 @@ namespace Api
 
             services.AddDbContext<ApplicationDbContext>();
 
-            this.ConfigureAuthentication(services);
+            ConfigureAuthentication(services);
 
             // Register the Swagger generator, defining 1 or more Swagger documents
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new Info { Title = "My API", Version = "v1" });
 
-                var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
-                var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
+                string xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+                string xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
                 c.IncludeXmlComments(xmlPath);
             });
         }
@@ -103,7 +103,7 @@ namespace Api
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "Achei API V1");
             });
 
-            this.UpdateDatabase(app);
+            UpdateDatabase(app);
             app.UseHttpsRedirection();
             app.UseMvc(routerBuilder =>
             {
@@ -114,9 +114,9 @@ namespace Api
 
         private void UpdateDatabase(IApplicationBuilder app)
         {
-            using (var serviceScope = app.ApplicationServices.GetRequiredService<IServiceScopeFactory>().CreateScope())
+            using (IServiceScope serviceScope = app.ApplicationServices.GetRequiredService<IServiceScopeFactory>().CreateScope())
             {
-                using (var context = serviceScope.ServiceProvider.GetService<ApplicationDbContext>())
+                using (ApplicationDbContext context = serviceScope.ServiceProvider.GetService<ApplicationDbContext>())
                 {
                     context.Database.Migrate();
                 }
@@ -125,10 +125,10 @@ namespace Api
 
         private void ConfigureAuthentication(IServiceCollection services)
         {
-            var signingConfigurations = new SigningConfigurations();
+            SigningConfigurations signingConfigurations = new SigningConfigurations();
             services.AddSingleton(signingConfigurations);
 
-            var tokenConfigurations = new TokenConfigurations();
+            TokenConfigurations tokenConfigurations = new TokenConfigurations();
             new ConfigureFromConfigurationOptions<TokenConfigurations>(
                 Configuration.GetSection("TokenConfigurations"))
                     .Configure(tokenConfigurations);
@@ -141,7 +141,7 @@ namespace Api
                 authOptions.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
             }).AddJwtBearer(bearerOptions =>
             {
-                var paramsValidation = bearerOptions.TokenValidationParameters;
+                Microsoft.IdentityModel.Tokens.TokenValidationParameters paramsValidation = bearerOptions.TokenValidationParameters;
                 paramsValidation.IssuerSigningKey = signingConfigurations.Key;
                 paramsValidation.ValidAudience = tokenConfigurations.Audience;
                 paramsValidation.ValidIssuer = tokenConfigurations.Issuer;

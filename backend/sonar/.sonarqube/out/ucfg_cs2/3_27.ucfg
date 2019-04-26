@@ -1,47 +1,47 @@
 
 LApi.Startup.UpdateDatabase(Microsoft.AspNetCore.Builder.IApplicationBuilder)-
-#D:\git\Achei\backend\Api\Startup.css |(	"0*∑
+#D:\git\Achei\backend\Api\Startup.css |(	"0*π
 0ÔÏ
 -
-#D:\git\Achei\backend\Api\Startup.csu& u(=
+#D:\git\Achei\backend\Api\Startup.csu0 u(G
 %0System.IServiceProvider"HMicrosoft.AspNetCore.Builder.IApplicationBuilder.ApplicationServices.get*9
 7
 app0Microsoft.AspNetCore.Builder.IApplicationBuilder2ApplicationServices.get·
 ﬁ
 -
-#D:\git\Achei\backend\Api\Startup.csu& u(hC
+#D:\git\Achei\backend\Api\Startup.csu0 u(rC
 %1=Microsoft.Extensions.DependencyInjection.IServiceScopeFactory"xMicrosoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<T>(System.IServiceProvider)*M"K
 IMicrosoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions*
 
-%0System.IServiceProviderìê
--
-#D:\git\Achei\backend\Api\Startup.csu& u(v<
+%0System.IServiceProviderîë
+.
+#D:\git\Achei\backend\Api\Startup.csu0 u(Ä<
 %26Microsoft.Extensions.DependencyInjection.IServiceScope"KMicrosoft.Extensions.DependencyInjection.IServiceScopeFactory.CreateScope()*E
 C
-%1=Microsoft.Extensions.DependencyInjection.IServiceScopeFactory2CreateScope()¿
-Ω
--
-#D:\git\Achei\backend\Api\Startup.csu u(vF
+%1=Microsoft.Extensions.DependencyInjection.IServiceScopeFactory2CreateScope()¡
+æ
+.
+#D:\git\Achei\backend\Api\Startup.csu! u(ÄF
 serviceScope6Microsoft.Extensions.DependencyInjection.IServiceScope"__id*>
 <
 %26Microsoft.Extensions.DependencyInjection.IServiceScope*
 1*ö
 1¸˘
 -
-#D:\git\Achei\backend\Api\Startup.csw% w(A
+#D:\git\Achei\backend\Api\Startup.csw6 w(R
 %3System.IServiceProvider"JMicrosoft.Extensions.DependencyInjection.IServiceScope.ServiceProvider.get*H
 F
 serviceScope6Microsoft.Extensions.DependencyInjection.IServiceScope2ServiceProvider.get“
 œ
 -
-#D:\git\Achei\backend\Api\Startup.csw% w(d<
+#D:\git\Achei\backend\Api\Startup.csw6 w(u<
 %46Persistencia.Contexts.Application.ApplicationDbContext"pMicrosoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetService<T>(System.IServiceProvider)*M"K
 IMicrosoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions*
 
 %3System.IServiceProviderª
 ∏
 -
-#D:\git\Achei\backend\Api\Startup.csw w(dA
+#D:\git\Achei\backend\Api\Startup.csw, w(uA
 context6Persistencia.Contexts.Application.ApplicationDbContext"__id*>
 <
 %46Persistencia.Contexts.Application.ApplicationDbContext*

@@ -1,25 +1,92 @@
 
-uPersistencia.Services.AutenticacaoService.AutenticacaoService(Persistencia.Contexts.Application.ApplicationDbContext)K
-AD:\git\Achei\backend\Persistencia\Services\AutenticacaoService.cs
- 
-(T"0*±
-0¦
-£
-K
-AD:\git\Achei\backend\Persistencia\Services\AutenticacaoService.cs
-A 
-(P
+-Persistencia.ConnectionString.GetConnection()?
+5D:\git\Achei\backend\Persistencia\ConnectionString.cs (	"0*¦
+0Ÿ
+œ
+?
+5D:\git\Achei\backend\Persistencia\ConnectionString.cs (%
+%0string"(Persistencia.ConnectionString.Server.get*!"
+Persistencia.ConnectionStrings
+q
+?
+5D:\git\Achei\backend\Persistencia\ConnectionString.cs (%
+%1string"__concat*
+""*
+
+%0strings
+q
+?
+5D:\git\Achei\backend\Persistencia\ConnectionString.cs (4
+%2string"__concat*
+
+%1string*
+""¡
+ž
+?
+5D:\git\Achei\backend\Persistencia\ConnectionString.cs7 (?
+%3string"*Persistencia.ConnectionString.Database.get*!"
+Persistencia.ConnectionString{
+y
+?
+5D:\git\Achei\backend\Persistencia\ConnectionString.cs (?
+%4string"__concat*
+
+%2string*
+
+%3strings
+q
+?
+5D:\git\Achei\backend\Persistencia\ConnectionString.cs (
+%5string"__concat*
+
+%4string*
+""Ÿ
+œ
+?
+5D:\git\Achei\backend\Persistencia\ConnectionString.cs  (&
+%6string"(Persistencia.ConnectionString.UserId.get*!"
+Persistencia.ConnectionString{
+y
+?
+5D:\git\Achei\backend\Persistencia\ConnectionString.cs (&
+%7string"__concat*
+
+%5string*
+
+%6strings
+q
+?
+5D:\git\Achei\backend\Persistencia\ConnectionString.cs (5
+%8string"__concat*
+
+%7string*
+""¡
+ž
+?
+5D:\git\Achei\backend\Persistencia\ConnectionString.cs8 (@
+%9string"*Persistencia.ConnectionString.Password.get*!"
+Persistencia.ConnectionString|
+z
+?
+5D:\git\Achei\backend\Persistencia\ConnectionString.cs (@
+%10string"__concat*
+
+%8string*
+
+%9stringu
+s
+?
+5D:\git\Achei\backend\Persistencia\ConnectionString.cs (F
+%11string"__concat*
 
-%0void"YPersistencia.Services.CrudService<T>.CrudService(Microsoft.EntityFrameworkCore.DbContext)*(&
-$Persistencia.Services.CrudService<T>*C
-A
-context6Persistencia.Contexts.Application.ApplicationDbContext*
-1*g
-1"b
-K
-AD:\git\Achei\backend\Persistencia\Services\AutenticacaoService.cs
-S 
-(T
-implicit return:A
-context6Persistencia.Contexts.Application.ApplicationDbContextB-+
-)Persistencia.Services.AutenticacaoService
+%10string*
+"""R
+?
+5D:\git\Achei\backend\Persistencia\ConnectionString.cs (G
+
+%11string*[
+1"V
+?
+5D:\git\Achei\backend\Persistencia\ConnectionString.cs (	
+implicit returnB!"
+Persistencia.ConnectionString

@@ -1,29 +1,31 @@
 
-@Persistencia.Services.ItemAchadoService.BuscarPorIdUsuario(long)I
-?D:\git\Achei\backend\Persistencia\Services\ItemAchadoService.cs (	"0*ì
-0Å
-˛
-I
-?D:\git\Achei\backend\Persistencia\Services\ItemAchadoService.cs (B
-%0System.Linq.IQueryable<T>"“Persistencia.Services.CrudService<T>.Buscar(System.Linq.Expressions.Expression<System.Func<T, bool>>, System.Func<System.Linq.IQueryable<T>, Microsoft.EntityFrameworkCore.Query.IIncludableQueryable<T, object>>)*+)
-'Persistencia.Services.ItemAchadoService*
-""*
-""ê
-ç
-I
-?D:\git\Achei\backend\Persistencia\Services\ItemAchadoService.cs (K(
-%1"System.Collections.Generic.List<T>"WSystem.Linq.Enumerable.ToList<TSource>(System.Collections.Generic.IEnumerable<TSource>)*"
-System.Linq.Enumerable*!
-
-%0System.Linq.IQueryable<T>"w
-I
-?D:\git\Achei\backend\Persistencia\Services\ItemAchadoService.cs (L*
+-Persistencia.Services.CrudService<T>.Buscar()C
+9D:\git\Achei\backend\Persistencia\Services\CrudService.cs# &(	"0*
+0ﬂ
+‹
+C
+9D:\git\Achei\backend\Persistencia\Services\CrudService.cs% %(-
+%0'Microsoft.EntityFrameworkCore.DbContext"__id*`*^&
+$Persistencia.Services.CrudService<T>"4
+	dbService'Microsoft.EntityFrameworkCore.DbContextıÚ
+C
+9D:\git\Achei\backend\Persistencia\Services\CrudService.cs% %(%2
+%1,Microsoft.EntityFrameworkCore.DbSet<TEntity>"6Microsoft.EntityFrameworkCore.DbContext.Set<TEntity>()*/
+-
+%0'Microsoft.EntityFrameworkCore.DbContext2Set<TEntity>()ù
+ö
+C
+9D:\git\Achei\backend\Persistencia\Services\CrudService.cs% %(.(
+%2"System.Collections.Generic.List<T>"WSystem.Linq.Enumerable.ToList<TSource>(System.Collections.Generic.IEnumerable<TSource>)*"
+System.Linq.Enumerable*4
+2
+%1,Microsoft.EntityFrameworkCore.DbSet<TEntity>"q
+C
+9D:\git\Achei\backend\Persistencia\Services\CrudService.cs% %(/*
 (
-%1"System.Collections.Generic.List<T>*e
-1"`
-I
-?D:\git\Achei\backend\Persistencia\Services\ItemAchadoService.cs (	
-implicit return:
-
-idlongB+)
-'Persistencia.Services.ItemAchadoService
+%2"System.Collections.Generic.List<T>*_
+1"Z
+C
+9D:\git\Achei\backend\Persistencia\Services\CrudService.cs& &(	
+implicit returnB(&
+$Persistencia.Services.CrudService<T>

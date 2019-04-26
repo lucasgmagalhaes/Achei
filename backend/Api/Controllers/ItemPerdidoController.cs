@@ -2,7 +2,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Persistencia.Interfaces;
 using System;
-using System.Collections.Generic;
 
 namespace Api.Controllers
 {
@@ -22,7 +21,7 @@ namespace Api.Controllers
         {
             try
             {
-                ItemPerdido perdido = this.itemPerdidoService.BuscarComTags(id);
+                ItemPerdido perdido = itemPerdidoService.BuscarComTags(id);
                 return Ok(perdido);
             }
             catch (Exception e)

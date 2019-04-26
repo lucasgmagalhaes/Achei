@@ -1,27 +1,26 @@
 
-&Api.Controllers.StatusController.Get()B
-8D:\git\Achei\backend\Api\Controllers\StatusController.cs	 (	"2*Ë
-0ÎË
-B
-8D:\git\Achei\backend\Api\Controllers\StatusController.cs ()-
-%0'Microsoft.AspNetCore.Mvc.OkObjectResult"2Microsoft.AspNetCore.Mvc.ControllerBase.Ok(object)*+)
-'Microsoft.AspNetCore.Mvc.ControllerBase*
-""2
-Ok(object)"u
-B
-8D:\git\Achei\backend\Api\Controllers\StatusController.cs (*/
--
-%0'Microsoft.AspNetCore.Mvc.OkObjectResult*^
-1"Y
-B
-8D:\git\Achei\backend\Api\Controllers\StatusController.cs (	
-implicit return*d
-2Z
-X
-B
-8D:\git\Achei\backend\Api\Controllers\StatusController.cs
- 
-( 
-%1"__entrypoint*
-0B$"
- Api.Controllers.StatusController
+hApi.Controllers.ItemPerdidoController.ItemPerdidoController(Persistencia.Interfaces.IItemPerdidoService)G
+=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.cs (	"2*ê
+0Ö
+Ç
+G
+=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.cs (8l'
+%Api.Controllers.ItemPerdidoController"A
+itemPerdidoService+Persistencia.Interfaces.IItemPerdidoService"__id*C
+A
+itemPerdidoService+Persistencia.Interfaces.IItemPerdidoService*
+1*c
+1"^
+G
+=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.cs (	
+implicit return*∞
+2•
+¢
+G
+=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.cs ($
+%0"__entrypoint*C
+A
+itemPerdidoService+Persistencia.Interfaces.IItemPerdidoService*
+0:A
+itemPerdidoService+Persistencia.Interfaces.IItemPerdidoServiceB)'
+%Api.Controllers.ItemPerdidoController

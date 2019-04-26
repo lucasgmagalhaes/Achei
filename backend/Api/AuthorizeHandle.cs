@@ -8,7 +8,7 @@ namespace Api
     {
         public Task HandleAsync(AuthorizationHandlerContext context)
         {
-            var email = context.User.Identity.Name;
+            string email = context.User.Identity.Name;
             if (context.User.Identity.IsAuthenticated)
             {
                 string database = Session.BuscarBancoDoUsuario(email);

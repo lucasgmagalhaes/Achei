@@ -22,9 +22,9 @@ CD:\git\Achei\backend\Persistencia\Interfaces\IItemPerdidoService.cs(0R 0=1;
 ë
 ?D:\git\Achei\backend\Persistencia\Interfaces\IUsuarioService.cs(0R 0=1;5=0;10=0;20=0;30=0;60=0;90=0Z1=0;2=0;4=0;6=0;8=0;10=0;12=0r	©
 AD:\git\Achei\backend\Persistencia\Services\AutenticacaoService.cs (08@HR 0=1;5=0;10=0;20=0;30=0;60=0;90=0Z1=2;2=0;4=0;6=0;8=0;10=0;12=0r	
-Ç˜
-9D:\git\Achei\backend\Persistencia\Services\CrudService.cs0 (08@HR 0=0;5=0;10=0;20=1;30=0;60=0;90=0Z1=13;2=4;4=0;6=0;8=0;10=0;12=0r©	
- !#$%&()*+-.01345689:;<>?@BCDEGHIKLMNOPQRSTUWXYZ[\]^_`acefghiklmnpqrsuvwxy{|}ÄÅÇÑÖÜáàäãåçéèêëíìîïñóòôöõùûü†°¢xÇ9 %+-.05:;BCDIKMNOSY[\`ghmrwxÄÅàäåçéíìòôü®
+Ç˚
+9D:\git\Achei\backend\Persistencia\Services\CrudService.cs0 (08@HR 0=0;5=0;10=0;20=1;30=0;60=0;90=0Z1=13;2=4;4=0;6=0;8=0;10=0;12=0r¨	
+ !#$%&()*+-./0235678:;<=>@ABDEFGIJKMNOPQRSTUVWYZ[\]^_`abceghijkmnoprstuwxyz{}~ÅÇÉÑÜáàâäåçéèêëíìîïñóòôöõúùü†°¢£§xÇ: %+-/27<=DEFKMOPQU[]^bijotyzÅÇÉäåéèêîïöõ°®
 ?D:\git\Achei\backend\Persistencia\Services\ItemAchadoService.cs (08@HR 0=1;5=0;10=0;20=0;30=0;60=0;90=0Z1=2;2=0;4=0;6=0;8=0;10=0;12=0r	
 Ç∞
 @D:\git\Achei\backend\Persistencia\Services\ItemPerdidoService.cs (08@HR 0=1;5=0;10=0;20=0;30=0;60=0;90=0Z1=3;2=0;4=0;6=0;8=0;10=0;12=0r	

@@ -1,13 +1,35 @@
-Õ
-Entidades.Tagobject
-Tag()Entidades.Tag.Tag()
-Id.getEntidades.Tag.Id.get
-Id.setEntidades.Tag.Id.set"
-Nome.getEntidades.Tag.Nome.get"
-Nome.setEntidades.Tag.Nome.set&
+ƒ
+Entidades.Entidades.Itemobject)
+Item()Entidades.Entidades.Item.Item())
+Id.getEntidades.Entidades.Item.Id.get)
+Id.setEntidades.Entidades.Item.Id.set1
 
-ItemId.getEntidades.Tag.ItemId.get&
+Titulo.get#Entidades.Entidades.Item.Titulo.get1
 
-ItemId.setEntidades.Tag.ItemId.set"
-Item.getEntidades.Tag.Item.get"
-Item.setEntidades.Tag.Item.set
+Titulo.set#Entidades.Entidades.Item.Titulo.set3
+Detalhe.get$Entidades.Entidades.Item.Detalhe.get3
+Detalhe.set$Entidades.Entidades.Item.Detalhe.set-
+Tipo.get!Entidades.Entidades.Item.Tipo.get-
+Tipo.set!Entidades.Entidades.Item.Tipo.set5
+RegiaoId.get%Entidades.Entidades.Item.RegiaoId.get5
+RegiaoId.set%Entidades.Entidades.Item.RegiaoId.set9
+DataInicio.get'Entidades.Entidades.Item.DataInicio.get9
+DataInicio.set'Entidades.Entidades.Item.DataInicio.set3
+DataFim.get$Entidades.Entidades.Item.DataFim.get3
+DataFim.set$Entidades.Entidades.Item.DataFim.set-
+Hora.get!Entidades.Entidades.Item.Hora.get-
+Hora.set!Entidades.Entidades.Item.Hora.set1
+
+Imagem.get#Entidades.Entidades.Item.Imagem.get1
+
+Imagem.set#Entidades.Entidades.Item.Imagem.set1
+
+Regiao.get#Entidades.Entidades.Item.Regiao.get1
+
+Regiao.set#Entidades.Entidades.Item.Regiao.set7
+UsuarioId.get&Entidades.Entidades.Item.UsuarioId.get7
+UsuarioId.set&Entidades.Entidades.Item.UsuarioId.set3
+Usuario.get$Entidades.Entidades.Item.Usuario.get3
+Usuario.set$Entidades.Entidades.Item.Usuario.set-
+Tags.get!Entidades.Entidades.Item.Tags.get-
+Tags.set!Entidades.Entidades.Item.Tags.set

@@ -1,28 +1,27 @@
 
-*Api.Program.CreateWebHostBuilder(string[])-
-#D:\git\Achei\backend\Api\Program.cs (	"0*š
-0Ù
-Ö
+&Api.Controllers.StatusController.Get()B
+8D:\git\Achei\backend\Api\Controllers\StatusController.cs	 (	"2*è
+0ëè
+B
+8D:\git\Achei\backend\Api\Controllers\StatusController.cs ()-
+%0'Microsoft.AspNetCore.Mvc.OkObjectResult"2Microsoft.AspNetCore.Mvc.ControllerBase.Ok(object)*+)
+'Microsoft.AspNetCore.Mvc.ControllerBase*
+""2
+Ok(object)"u
+B
+8D:\git\Achei\backend\Api\Controllers\StatusController.cs (*/
 -
-#D:\git\Achei\backend\Api\Program.cs (52
-%0,Microsoft.AspNetCore.Hosting.IWebHostBuilder";Microsoft.AspNetCore.WebHost.CreateDefaultBuilder(string[])* "
-Microsoft.AspNetCore.WebHost*
-
-argsstring[]Ñ
-Î
--
-#D:\git\Achei\backend\Api\Program.cs (K2
-%1,Microsoft.AspNetCore.Hosting.IWebHostBuilder"xMicrosoft.AspNetCore.Hosting.WebHostBuilderExtensions.UseStartup<TStartup>(Microsoft.AspNetCore.Hosting.IWebHostBuilder)*9"7
-5Microsoft.AspNetCore.Hosting.WebHostBuilderExtensions*4
-2
-%0,Microsoft.AspNetCore.Hosting.IWebHostBuilder"e
--
-#D:\git\Achei\backend\Api\Program.cs (L4
-2
-%1,Microsoft.AspNetCore.Hosting.IWebHostBuilder*I
-1"D
--
-#D:\git\Achei\backend\Api\Program.cs (	
-implicit return:
-argsstring[]B"
-Api.Program
+%0'Microsoft.AspNetCore.Mvc.OkObjectResult*^
+1"Y
+B
+8D:\git\Achei\backend\Api\Controllers\StatusController.cs (	
+implicit return*d
+2Z
+X
+B
+8D:\git\Achei\backend\Api\Controllers\StatusController.cs
+ 
+( 
+%1"__entrypoint*
+0B$"
+ Api.Controllers.StatusController

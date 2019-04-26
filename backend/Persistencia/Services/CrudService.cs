@@ -22,40 +22,42 @@ namespace Persistencia.Services
 
         public void Atualizar(T entidade)
         {
-            this.dbService.Update(entidade);
-            this.dbService.SaveChanges();
+            dbService.Update(entidade);
+            dbService.SaveChanges();
         }
 
         public void Atualizar(List<T> entidades)
         {
-            this.dbService.Update(entidades);
-            this.dbService.SaveChanges();
+            dbService.Update(entidades);
+            dbService.SaveChanges();
         }
 
         public List<T> Buscar()
         {
-            return this.dbService.Set<T>().ToList();
+            return dbService.Set<T>().ToList();
         }
 
         public IQueryable<T> Buscar(Expression<Func<T, bool>> predicate, Func<IQueryable<T>,
             IIncludableQueryable<T, object>> include = null)
         {
-            IQueryable<T> result = this.dbService.Set<T>().Where(predicate);
+            IQueryable<T> result = dbService.Set<T>().Where(predicate);
 
             if (include != null)
+            {
                 result = include(result);
+            }
 
             return result.AsQueryable();
         }
 
         public T Buscar(long id)
         {
-            return this.dbService.Set<T>().Find(id);
+            return dbService.Set<T>().Find(id);
         }
 
         public void Deletar(T entidade)
         {
-            EntityEntry<T> retorno = this.dbService.Set<T>().Remove(entidade);
+            dbService.Set<T>().Remove(entidade);
             dbService.SaveChanges();
         }
 
@@ -63,19 +65,19 @@ namespace Persistencia.Services
         {
             IEntity obj = new T() { Id = id };
 
-            this.dbService.Attach(obj);
-            this.dbService.Remove(obj);
-            this.dbService.SaveChanges();
+            dbService.Attach(obj);
+            dbService.Remove(obj);
+            dbService.SaveChanges();
         }
 
         public T Inserir(T entidade)
         {
-            bool exists = this.dbService.Set<T>().Any(ent => ent.Id == entidade.Id);
+            bool exists = dbService.Set<T>().Any(ent => ent.Id == entidade.Id);
 
             if (!exists)
             {
-                this.dbService.Add(entidade);
-                this.dbService.SaveChanges();
+                dbService.Add(entidade);
+                dbService.SaveChanges();
                 return entidade;
             }
             else
@@ -86,10 +88,10 @@ namespace Persistencia.Services
 
         public async Task AtualizarAsync(T entidade)
         {
-            if (this.dbService.Set<T>().Any(ent => ent.Id == entidade.Id))
+            if (dbService.Set<T>().Any(ent => ent.Id == entidade.Id))
             {
-                this.dbService.Update(entidade);
-                await this.dbService.SaveChangesAsync();
+                dbService.Update(entidade);
+                await dbService.SaveChangesAsync();
             }
             else
             {
@@ -100,23 +102,23 @@ namespace Persistencia.Services
 
         public async Task AtualizarAsync(List<T> entidades)
         {
-            this.dbService.Update(entidades);
-            await this.dbService.SaveChangesAsync();
+            dbService.Update(entidades);
+            await dbService.SaveChangesAsync();
         }
 
         public async Task<List<T>> BuscarAsync()
         {
-            return await this.dbService.Set<T>().ToListAsync();
+            return await dbService.Set<T>().ToListAsync();
         }
 
         public async Task<T> BuscarAsync(long id)
         {
-            return await this.dbService.FindAsync<T>(id);
+            return await dbService.FindAsync<T>(id);
         }
 
         public async Task DeletarAsync(T entidade)
         {
-            EntityEntry<T> retorno = this.dbService.Remove(entidade);
+            EntityEntry<T> retorno = dbService.Remove(entidade);
             await dbService.SaveChangesAsync();
         }
 
@@ -124,21 +126,21 @@ namespace Persistencia.Services
         {
             IEntity obj = new T() { Id = id };
 
-            this.dbService.Attach(obj);
-            this.dbService.Remove(obj);
-            await this.dbService.SaveChangesAsync();
+            dbService.Attach(obj);
+            dbService.Remove(obj);
+            await dbService.SaveChangesAsync();
         }
 
         public async Task<T> InserirAsync(T entidade)
         {
             try
             {
-                bool exists = this.dbService.Set<T>().Any(ent => ent.Id == entidade.Id);
+                bool exists = dbService.Set<T>().Any(ent => ent.Id == entidade.Id);
 
                 if (!exists)
                 {
-                    await this.dbService.AddAsync(entidade);
-                    await this.dbService.SaveChangesAsync();
+                    await dbService.AddAsync(entidade);
+                    await dbService.SaveChangesAsync();
                     return entidade;
                 }
                 else
@@ -156,7 +158,7 @@ namespace Persistencia.Services
 
         public DbSet<T> Entity()
         {
-            return this.dbService.Set<T>();
+            return dbService.Set<T>();
         }
     }
 }

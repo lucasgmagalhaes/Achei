@@ -1,4 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<RuleSet Name="SonarQube - webapp Sonar way" ToolsVersion="15.0">
-  <Include Path="..\.sonarlint\webappcsharp.ruleset" Action="Default" />
+<RuleSet Name="SonarQube - webapp Sonar way" ToolsVersion="16.0">
+  <Include Path="..\.sonarlint\lucasgmagalhaes_acheicsharp.ruleset" Action="Default" />
 </RuleSet>
