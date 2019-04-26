@@ -1,1 +1,1 @@
-*.pb export-ignore
+*.pb linguist-detectable=false
