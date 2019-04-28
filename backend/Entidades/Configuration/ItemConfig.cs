@@ -38,12 +38,12 @@ namespace Entidades.Configuration
             builder.HasOne(d => d.Regiao)
                 .WithMany(p => p.Item)
                 .HasForeignKey(d => d.RegiaoId)
-                .HasConstraintName("FK__Item__RegiaoId__5FB337D6");
+                .HasConstraintName("FK__Item__RegiaoId__5FB337D6").OnDelete(DeleteBehavior.Cascade);
 
             builder.Property(e => e.UsuarioId)
                 .HasColumnName("UsuarioId");
 
-            builder.HasMany(e => e.Tags).WithOne(tag => tag.Item).HasForeignKey(e => e.ItemId);
+            builder.HasMany(e => e.Tags).WithOne(tag => tag.Item).HasForeignKey(e => e.ItemId).OnDelete(DeleteBehavior.Cascade);
 
         }
     }

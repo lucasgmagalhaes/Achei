@@ -20,6 +20,8 @@ namespace Entidades.Configuration
 
             builder.Property(e => e.ItemId)
                 .HasColumnName("ItemId");
+
+            builder.HasOne(e => e.Item).WithMany(e => e.Tags).HasForeignKey(e => e.ItemId).OnDelete(DeleteBehavior.Cascade);
         }
     }
 }

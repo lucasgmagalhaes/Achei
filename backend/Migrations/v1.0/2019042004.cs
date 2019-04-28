@@ -30,8 +30,8 @@ namespace Migrations
                 "Recuperado bit NULL," +
                 "Devolvido bit NULL," +
                 "Hora VARCHAR(10) NULL," +
-                "FOREIGN KEY(UsuarioId) REFERENCES Usuario(Id)," +
-                "FOREIGN KEY(RegiaoId) REFERENCES Regiao(Id)," +
+                "FOREIGN KEY(UsuarioId) REFERENCES Usuario(Id) ON DELETE CASCADE," +
+                "FOREIGN KEY(RegiaoId) REFERENCES Regiao(Id) ON DELETE CASCADE," +
                 "PRIMARY KEY(Id)" +
                 ");"
              );
@@ -40,7 +40,7 @@ namespace Migrations
                 "Id BIGINT IDENTITY(1, 1)," +
                 "Nome VARCHAR(30) NOT NULL," +
                 "ItemId BIGINT NULL," +
-                "FOREIGN KEY(ItemId) REFERENCES Item(Id)," +
+                "FOREIGN KEY(ItemId) REFERENCES Item(Id) ON DELETE CASCADE," +
                 "PRIMARY KEY(Id)" +
                 ");"
             );

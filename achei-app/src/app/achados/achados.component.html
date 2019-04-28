@@ -9,7 +9,7 @@
   <div class="container">
     <div class="row">
       <div *ngFor="let perdido of itensPerdidos" class="col-sm-3">
-        <app-item [item]="perdido" [texto]="'Não encontrado'" [routerLink]="['item-detalhe', 'perdido', perdido.id]"></app-item>
+        <app-item [item]="perdido" [texto]="perdido.recuperado ? 'encontrado' : 'não encontrado'" [routerLink]="['item-detalhe', 'perdido', perdido.id]"></app-item>
       </div>
     </div>
   </div>
@@ -18,8 +18,8 @@
 
   <div class="container">
     <div class="row">
-      <div *ngFor="let perdido of itensAchados" class="col-sm-3">
-        <app-item [item]="perdido" [texto]="'Não entregue'" [routerLink]="['item-detalhe', 'perdido', perdido.id]"></app-item>
+      <div *ngFor="let achado of itensAchados" class="col-sm-3">
+        <app-item [item]="achado" [texto]="achado.devolvido ? 'entregue' : 'não entregue'" [routerLink]="['item-detalhe', 'achado', achado.id]"></app-item>
       </div>
     </div>
   </div>
