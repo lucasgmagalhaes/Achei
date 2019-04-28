@@ -77,7 +77,6 @@ export class CadastrarItemComponent implements OnInit {
   }
 
   private addToArray(array: string[], value: number) {
-    array.push('00');
     for (let i = 0; i < value + 1; i++) {
       if (i < 9) {
         array.push(`0${i}`);
@@ -110,7 +109,7 @@ export class CadastrarItemComponent implements OnInit {
     });
 
     this.imagensFormGroup = this.formBuilder.group({
-      imagem:  this.formBuilder.control('')
+      imagem: this.formBuilder.control('')
     });
 
     this.horasFiltradas = this.horaControl.valueChanges.pipe(
@@ -237,6 +236,7 @@ export class CadastrarItemComponent implements OnInit {
 
     return tagsReturn;
   }
+
   cadastroOk() {
     this.notificacao.open('Item cadastrado com sucesso!', 'Ok', { duration: 2000 });
   }

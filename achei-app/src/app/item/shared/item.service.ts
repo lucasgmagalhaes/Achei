@@ -18,6 +18,22 @@ export class ItemService {
     return this.http.post<boolean>(`${environment.apiUrl}/itemAchado`, item).toPromise();
   }
 
+  atualizarAchado(item: ItemEncontrado): Promise<boolean> {
+    return this.http.put<boolean>(`${environment.apiUrl}/itemAchado`, item).toPromise();
+  }
+
+  atualizarPerdido(item: ItemPerdido): Promise<boolean> {
+    return this.http.put<boolean>(`${environment.apiUrl}/itemPerdido`, item).toPromise();
+  }
+
+  excluirPerdido(id: number): Promise<boolean> {
+    return this.http.delete<boolean>(`${environment.apiUrl}/itemPerdido/${id}`).toPromise();
+  }
+
+  excluirAchado(id: number): Promise<boolean> {
+    return this.http.delete<boolean>(`${environment.apiUrl}/itemAchado/${id}`).toPromise();
+  }
+
   /**
    * Busca um item **Perdido** baseado no seu *Id*
    * @async

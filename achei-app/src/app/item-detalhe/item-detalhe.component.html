@@ -3,22 +3,22 @@
   <form [formGroup]="itemForm">
 
     <div class="row position-relative">
-      <mat-slide-toggle class="right mr-2" [color]="primary">Encontrado ?</mat-slide-toggle>
+      <mat-slide-toggle formControlName="marcado" class="right mr-2" color="primary">Encontrado ?</mat-slide-toggle>
     </div>
 
     <div class="row">
-      <mat-form-field class="w-100">
+      <mat-form-field appearance="outline" class="w-100">
         <input matInput formControlName="titulo" placeholder="Titulo">
       </mat-form-field>
     </div>
 
     <div class="row">
-      <mat-form-field class="w-100">
+      <mat-form-field appearance="outline" class="w-100">
         <mat-chip-list #chipList>
-          <mat-chip [selectable]="selectable" *ngFor="let tag of itemForm.get('tags').value" [removable]="removable"
+          <mat-chip *ngFor="let tag of itemForm.get('tags').value; let i = index" [selectable]="true" [removable]="true"
             (removed)="remove(i)" [color]="primary">
             {{tag.nome}}
-            <mat-icon matChipRemove *ngIf="removable">cancel</mat-icon>
+            <mat-icon matChipRemove>cancel</mat-icon>
           </mat-chip>
           <input [matChipInputFor]="chipList" [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
             [matChipInputAddOnBlur]="addOnBlur" (matChipInputTokenEnd)="add($event)">
@@ -27,53 +27,69 @@
     </div>
 
     <div class="row">
-      <mat-form-field class="w-100">
+      <mat-form-field appearance="outline" class="w-100">
         <textarea matInput formControlName="detalhe" placeholder="Detalhe"></textarea>
       </mat-form-field>
     </div>
 
+    <div class="row ">
+      <p class="m-1">Data</p>
+      <div class="d-inline-flex align-items-center">
+        <mat-form-field class="m-1">
+          <input matInput formControlName="dataInicial" (dateInput)="setDefaultDate($event)"
+            [matDatepicker]="dataInicio" placeholder="Data inicio">
+          <mat-datepicker-toggle matSuffix [for]="dataInicio"></mat-datepicker-toggle>
+          <mat-datepicker #dataInicio></mat-datepicker>
+        </mat-form-field>
+
+        <p class="m-1">E</p>
+        <mat-form-field class="m-1">
+          <input matInput formControlName="dataFinal" [matDatepicker]="data2" placeholder="Data Fim">
+          <mat-datepicker-toggle matSuffix [for]="data2"></mat-datepicker-toggle>
+          <mat-datepicker #data2></mat-datepicker>
+        </mat-form-field>
+
+      </div>
+    </div>
+
     <div class="row">
-      <agm-map [latitude]="itemForm.get('latitudeLocal').value"
-        [longitude]="itemForm.get('longitudeLocal').value" [zoom]="startzoom" [disableDefaultUI]="true"
+      <mat-form-field class="time">
+        <input type="text" formControlName="hora" placeholder="Hora" appHourValue aria-label="Number" matInput
+          [matAutocomplete]="autoHora">
+        <mat-autocomplete autoActiveFirstOption #autoHora="matAutocomplete">
+          <mat-option *ngFor="let hora of horasFiltradas | async" [value]="hora">
+            {{hora}}
+          </mat-option>
+        </mat-autocomplete>
+      </mat-form-field>
+
+      <mat-form-field class="time">
+        <input type="text" formControlName="minuto" placeholder="Minuto" appMinuteValue aria-label="Number" matInput
+          [matAutocomplete]="autoMinuto">
+        <mat-autocomplete autoActiveFirstOption #autoMinuto="matAutocomplete">
+          <mat-option *ngFor="let minuto of minutosFiltrados | async" [value]="minuto">
+            {{minuto}}
+          </mat-option>
+        </mat-autocomplete>
+      </mat-form-field>
+    </div>
+
+    <div class="row">
+      <agm-map [latitude]="-11.0234343" [longitude]="-11.0234343" [zoom]="8" [disableDefaultUI]="true"
         [zoomControl]="false" (mapClick)="mapClicked($event)">
 
-        <agm-marker (markerClick)="clickedMarker(marker.label, i)" [latitude]="itemForm.get('latitudeLocal').value"
-          [longitude]="itemForm.get('longitudeLocal').value" [label]="marker?.label"
-          [markerDraggable]="marker?.draggable" (dragEnd)="markerDragEnd(marker, $event)">
-
+        <agm-marker (markerClick)="clickedMarker(marker.label, i)" [latitude]="-11.0234343" [longitude]="-11.0234343"
+          [label]="false" [markerDraggable]="true" [label]="''" (dragEnd)="markerDragEnd(marker, $event)">
         </agm-marker>
 
       </agm-map>
     </div>
 
     <div class="row">
-      <div class="inline">
-        <p class="m-1">Entre</p>
-        <mat-form-field class="m-1 d-inline">
-          <input matInput formControlName="dataInicial" (dateInput)="setDefaultDate($event)"
-            [matDatepicker]="dataInicio" placeholder="Choose a date">
-          <mat-datepicker-toggle matSuffix [for]="dataInicio"></mat-datepicker-toggle>
-          <mat-datepicker #dataInicio></mat-datepicker>
-        </mat-form-field>
-
-        <p class="m-1">E</p>
-        <mat-form-field class="m-1 d-inline">
-          <input matInput formControlName="dataFinal" [matDatepicker]="data2" placeholder="Choose a date">
-          <mat-datepicker-toggle matSuffix [for]="data2"></mat-datepicker-toggle>
-          <mat-datepicker #data2></mat-datepicker>
-        </mat-form-field>
-      </div>
-    </div>
-
-    <div class="row">
-      <input type="text" placeholder="Hora" formControlName="hora" appHourValue aria-label="Number" matInput>
-      <input type="text" placeholder="Minuto" formControlName="minuto" appHourValue aria-label="Number" matInput>
-    </div>
-
-    <div class="row">
       <div class="right">
-        <button mat-raised-button color="primary" class="m-2">Cancelar</button>
-        <button mat-raised-button color="warn" class="m-2">Salvar</button>
+        <button mat-raised-button class="m-2" routerLink="/achados">Cancelar</button>
+        <button mat-raised-button color="warn" class="m-2" (click)="excluir()">Deletar</button>
+        <button mat-raised-button color="primary" (click)="salvar()" class="m-2">Salvar</button>
       </div>
     </div>
 

@@ -37,6 +37,39 @@ namespace Api.Controllers
             }
         }
 
+        /// <summary>
+        /// PUT api/usuario
+        /// </summary>
+        /// <param name="itemPerdido"></param>
+        /// <returns></returns>
+        [HttpPut]
+        public IActionResult Atualizar([FromBody]ItemPerdido itemPerdido)
+        {
+            try
+            {
+                itemPerdidoService.Atualizar(itemPerdido);
+                return Ok(new RequestResponse() { message = "Item Atualizado com sucesso", status = "200" });
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new RequestResponse() { message = ex.Message, status = "400" });
+            }
+        }
+
+        [HttpDelete("{id}")]
+        public IActionResult Excluir(long id)
+        {
+            try
+            {
+                itemPerdidoService.Deletar(id);
+                return Ok(new RequestResponse() { message = "Item deletado com sucesso", status = "200" });
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new RequestResponse() { message = ex.Message, status = "400" });
+            }
+        }
+
         [HttpGet("{id}/regiao")]
         public IActionResult BuscarRegiaoItemPerdido(long id, [FromServices] IRegiaoService regiaoService)
         {
