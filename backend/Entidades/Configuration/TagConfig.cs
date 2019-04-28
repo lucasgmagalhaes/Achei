@@ -18,10 +18,8 @@ namespace Entidades.Configuration
                 .HasMaxLength(30)
                 .IsUnicode(false);
 
-            builder.HasOne(d => d.Item)
-                .WithMany(p => p.Tags)
-                .HasForeignKey(d => d.ItemId)
-                .HasConstraintName("FK__TAG__ItemId__68487DD7");
+            builder.Property(e => e.ItemId)
+                .HasColumnName("ItemId");
         }
     }
 }

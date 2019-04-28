@@ -43,7 +43,7 @@ namespace Entidades.Configuration
             builder.Property(e => e.UsuarioId)
                 .HasColumnName("UsuarioId");
 
-            builder.HasMany(e => e.Tags).WithOne(tag => tag.Item).HasForeignKey(e => e.Id);
+            builder.HasMany(e => e.Tags).WithOne(tag => tag.Item).HasForeignKey(e => e.ItemId);
 
         }
     }

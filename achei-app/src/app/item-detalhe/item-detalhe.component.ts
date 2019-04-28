@@ -40,15 +40,20 @@ export class ItemDetalheComponent implements OnInit {
     }
   }
 
-  preencherForm(item: ItemPerdido) {
+  async preencherForm(item: ItemPerdido) {
     this.itemForm.get('titulo').setValue(item.titulo);
     this.itemForm.get('detalhe').setValue(item.detalhe);
 
     const tags = this.itemForm.get('tags') as FormArray;
-    item.tags.forEach(tag => tags.push(new FormControl(tag)));
+    const itemTags = await this.itemService.buscarTagPorItemPerdidoId(item.id);
+    itemTags.forEach(tag => tags.push(new FormControl(tag)));
 
-    this.itemForm.get('latitudeLocal').setValue(item.regiao.latitude);
-    this.itemForm.get('longitudeLocal').setValue(item.regiao.longitude);
+    const regiao = await this.itemService.buscarRegiaoPorItemPerdidoId(item.id);
+    this.itemForm.get('latitudeLocal').setValue(regiao.latitude);
+    this.itemForm.get('longitudeLocal').setValue(regiao.longitude);
+
+    item.tags = itemTags;
+    item.regiao = regiao;
 
     this.itemForm.get('dataInicial').setValue(item.dataInicio);
     this.itemForm.get('dataFinal').setValue(item.dataFim);

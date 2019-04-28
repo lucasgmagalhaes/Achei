@@ -1,4 +1,7 @@
 ﻿using Api.Token;
+using AutoMapper;
+using Entidades.Dto;
+using Entidades.Entidades;
 using Microsoft.AspNet.OData.Extensions;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
@@ -48,6 +51,8 @@ namespace Api
             services.AddScoped(typeof(IUsuarioService), typeof(UsuarioService));
             services.AddScoped(typeof(IItemAchadoService), typeof(ItemAchadoService));
             services.AddScoped(typeof(IItemPerdidoService), typeof(ItemPerdidoService));
+            services.AddScoped(typeof(IRegiaoService), typeof(RegiaoService));
+            services.AddScoped(typeof(ITagService), typeof(TagService));
 
             services.Scan(scan => scan.FromCallingAssembly().AddClasses().AsMatchingInterface());
 
@@ -55,6 +60,19 @@ namespace Api
             services.AddSingleton<IAuthorizationHandler, AuthorizeHandle>();
 
             services.AddDbContext<ApplicationDbContext>();
+
+            // Auto Mapper Configurations
+            var mappingConfig = new MapperConfiguration(mc =>
+            {
+                mc.CreateMap<Tag, TagDto>();
+                mc.CreateMap<Item, TagDto>();
+                mc.CreateMap<ItemPerdido, ItemPerdidoDto>();
+                mc.CreateMap<ItemAchado, ItemAchadoDto>();
+                mc.CreateMap<Regiao, RegiaoDto>();
+            });
+
+            IMapper mapper = mappingConfig.CreateMapper();
+            services.AddSingleton(mapper);
 
             ConfigureAuthentication(services);
 
@@ -67,6 +85,7 @@ namespace Api
                 string xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
                 c.IncludeXmlComments(xmlPath);
             });
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

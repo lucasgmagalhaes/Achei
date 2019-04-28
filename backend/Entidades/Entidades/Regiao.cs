@@ -8,12 +8,11 @@ namespace Entidades.Entidades
         public long Id { get; set; }
         public string Longitude { get; set; }
         public string Latitude { get; set; }
-
-        public virtual ICollection<Item> Item { get; set; }
+        public virtual List<Item> Item { get; set; }
 
         public Regiao()
         {
-            Item = new HashSet<Item>();
+            Item = new List<Item>();
         }
     }
 }

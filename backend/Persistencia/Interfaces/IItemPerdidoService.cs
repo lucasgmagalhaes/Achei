@@ -18,5 +18,7 @@ namespace Persistencia.Interfaces
         /// <param name="id"></param>
         /// <returns></returns>
         ItemPerdido BuscarComTags(long id);
+
+        ItemPerdido BuscarComEagerLoading(long id);
     }
 }

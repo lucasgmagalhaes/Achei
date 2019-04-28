@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Entidades.Dto;
+using System;
 using System.Collections.Generic;
 
 namespace Entidades.Entidades
@@ -13,8 +14,7 @@ namespace Entidades.Entidades
         public DateTime? DataFim { get; set; }
         public string Hora { get; set; }
         public string Imagem { get; set; }
-        public Regiao Regiao { get; set; }
         public long UsuarioId { get; set; }
-        public List<Tag> Tags { get; set; }
+        public List<TagDto> Tags { get; set; }
     }
 }

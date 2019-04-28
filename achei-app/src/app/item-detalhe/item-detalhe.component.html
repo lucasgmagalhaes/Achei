@@ -17,7 +17,7 @@
         <mat-chip-list #chipList>
           <mat-chip [selectable]="selectable" *ngFor="let tag of itemForm.get('tags').value" [removable]="removable"
             (removed)="remove(i)" [color]="primary">
-            {{tag.tag}}
+            {{tag.nome}}
             <mat-icon matChipRemove *ngIf="removable">cancel</mat-icon>
           </mat-chip>
           <input [matChipInputFor]="chipList" [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
@@ -49,7 +49,7 @@
     <div class="row">
       <div class="inline">
         <p class="m-1">Entre</p>
-        <mat-form-field class="m-1">
+        <mat-form-field class="m-1 d-inline">
           <input matInput formControlName="dataInicial" (dateInput)="setDefaultDate($event)"
             [matDatepicker]="dataInicio" placeholder="Choose a date">
           <mat-datepicker-toggle matSuffix [for]="dataInicio"></mat-datepicker-toggle>
@@ -57,7 +57,7 @@
         </mat-form-field>
 
         <p class="m-1">E</p>
-        <mat-form-field class="m-1">
+        <mat-form-field class="m-1 d-inline">
           <input matInput formControlName="dataFinal" [matDatepicker]="data2" placeholder="Choose a date">
           <mat-datepicker-toggle matSuffix [for]="data2"></mat-datepicker-toggle>
           <mat-datepicker #data2></mat-datepicker>
@@ -72,8 +72,8 @@
 
     <div class="row">
       <div class="right">
-        <button mat-raised-button color="primary" class="mr-2">Cancelar</button>
-        <button mat-raised-button color="warn">Salvar</button>
+        <button mat-raised-button color="primary" class="m-2">Cancelar</button>
+        <button mat-raised-button color="warn" class="m-2">Salvar</button>
       </div>
     </div>
 

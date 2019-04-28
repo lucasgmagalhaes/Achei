@@ -12,7 +12,7 @@ export class ItemComponent implements OnInit {
   item: Item;
 
   @Input()
-  texto:string;
+  texto: string;
 
   constructor() { }
 

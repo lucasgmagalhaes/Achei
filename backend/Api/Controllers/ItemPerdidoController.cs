@@ -1,7 +1,11 @@
-﻿using Entidades.Entidades;
+﻿using AutoMapper;
+using Entidades;
+using Entidades.Dto;
+using Entidades.Entidades;
 using Microsoft.AspNetCore.Mvc;
 using Persistencia.Interfaces;
 using System;
+using System.Collections.Generic;
 
 namespace Api.Controllers
 {
@@ -10,10 +14,12 @@ namespace Api.Controllers
     public class ItemPerdidoController : ControllerBase
     {
         private readonly IItemPerdidoService itemPerdidoService;
+        private readonly IMapper mapper;
 
-        public ItemPerdidoController(IItemPerdidoService itemPerdidoService)
+        public ItemPerdidoController(IItemPerdidoService itemPerdidoService, IMapper mapper)
         {
             this.itemPerdidoService = itemPerdidoService;
+            this.mapper = mapper;
         }
 
         [HttpGet("{id}")]
@@ -21,8 +27,39 @@ namespace Api.Controllers
         {
             try
             {
-                ItemPerdido perdido = itemPerdidoService.BuscarComTags(id);
-                return Ok(perdido);
+                ItemPerdido perdido = itemPerdidoService.Buscar(id);
+                ItemPerdidoDto itemDto = mapper.Map<ItemPerdidoDto>(perdido);
+                return Ok(itemDto);
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e);
+            }
+        }
+
+        [HttpGet("{id}/regiao")]
+        public IActionResult BuscarRegiaoItemPerdido(long id, [FromServices] IRegiaoService regiaoService)
+        {
+            try
+            {
+                Regiao regiao = regiaoService.BuscarPorItemId(id);
+                RegiaoDto dto = mapper.Map<RegiaoDto>(regiao);
+                return Ok(dto);
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e);
+            }
+        }
+
+        [HttpGet("{id}/tags")]
+        public IActionResult BuscarTagItemPerdido(long id, [FromServices] ITagService tagService)
+        {
+            try
+            {
+                List<Tag> tags = tagService.BuscarPorItemId(id);
+                List<TagDto> dtos = mapper.Map<List<TagDto>>(tags);
+                return Ok(dtos);
             }
             catch (Exception e)
             {

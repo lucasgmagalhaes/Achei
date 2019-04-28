@@ -1,8 +1,9 @@
 ﻿using Entidades.Entidades;
+using Entidades.Interfaces;
 
 namespace Entidades
 {
-    public class Tag
+    public class Tag : IEntity
     {
         public long Id { get; set; }
         public string Nome { get; set; }

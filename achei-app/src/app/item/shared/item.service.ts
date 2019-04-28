@@ -1,8 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { ItemPerdido, ItemEncontrado } from './item.interface';
+import { ItemPerdido, ItemEncontrado, Tag, Regiao } from './item.interface';
 import { environment } from 'src/environments/environment';
-import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -36,4 +35,19 @@ export class ItemService {
     return this.http.get<ItemPerdido>(`${environment.apiUrl}/itemAchado/${id}`).toPromise();
   }
 
+  buscarTagPorItemPerdidoId(id: number): Promise<Tag[]> {
+    return this.http.get<Tag[]>(`${environment.apiUrl}/itemPerdido/${id}/tags`).toPromise();
+  }
+
+  buscarTagPorItemAchadoId(id: number): Promise<Tag[]> {
+    return this.http.get<Tag[]>(`${environment.apiUrl}/itemAchado/${id}/tags`).toPromise();
+  }
+
+  buscarRegiaoPorItemPerdidoId(id: number): Promise<Regiao> {
+    return this.http.get<Regiao>(`${environment.apiUrl}/itemPerdido/${id}/regiao`).toPromise();
+  }
+
+  buscarRegiaoPorItemAchadoId(id: number): Promise<Regiao> {
+    return this.http.get<Regiao>(`${environment.apiUrl}/itemAchado/${id}/regiao`).toPromise();
+  }
 }

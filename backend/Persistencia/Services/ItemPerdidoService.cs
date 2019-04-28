@@ -21,5 +21,13 @@ namespace Persistencia.Services
             return base.Buscar(perdido => perdido.Id == id, result => result.Include(perdido => perdido.Tags))
                 .SingleOrDefault();
         }
+
+        public ItemPerdido BuscarComEagerLoading(long id)
+        {
+            return base.Entity()
+                .Include(item => item.Regiao)
+                .Include(item => item.Tags)
+                .Single(item => item.Id == id);
+        }
     }
 }
