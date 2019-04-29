@@ -1,5 +1,4 @@
-﻿using Entidades.Dto;
-using Entidades.Interfaces;
+﻿using Entidades.Interfaces;
 using System;
 using System.Collections.Generic;
 

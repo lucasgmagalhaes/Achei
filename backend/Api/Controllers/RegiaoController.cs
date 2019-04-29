@@ -1,14 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using AutoMapper;
-using Entidades;
+﻿using AutoMapper;
 using Entidades.Dto;
 using Entidades.Entidades;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Persistencia.Interfaces;
+using System;
 
 namespace Api.Controllers
 {
@@ -30,7 +25,7 @@ namespace Api.Controllers
         {
             try
             {
-                Regiao tag = this.regiaoService.Buscar(id);
+                Regiao tag = regiaoService.Buscar(id);
                 TagDto dto = mapper.Map<TagDto>(tag);
                 return Ok(dto);
             }

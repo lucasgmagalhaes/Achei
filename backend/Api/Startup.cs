@@ -62,7 +62,7 @@ namespace Api
             services.AddDbContext<ApplicationDbContext>();
 
             // Auto Mapper Configurations
-            var mappingConfig = new MapperConfiguration(mc =>
+            MapperConfiguration mappingConfig = new MapperConfiguration(mc =>
             {
                 mc.CreateMap<Tag, TagDto>();
                 mc.CreateMap<Item, TagDto>();

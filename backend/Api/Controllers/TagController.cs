@@ -1,13 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using AutoMapper;
+﻿using AutoMapper;
 using Entidades;
 using Entidades.Dto;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Persistencia.Interfaces;
+using System;
 
 namespace Api.Controllers
 {
@@ -28,7 +24,7 @@ namespace Api.Controllers
         {
             try
             {
-                Tag tag = this.tagService.Buscar(id);
+                Tag tag = tagService.Buscar(id);
                 TagDto dto = mapper.Map<TagDto>(tag);
                 return Ok(dto);
             }

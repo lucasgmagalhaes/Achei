@@ -1,7 +1,4 @@
-﻿using Entidades.Entidades;
-using System.Collections.Generic;
-
-namespace Entidades.Dto
+﻿namespace Entidades.Dto
 {
     public class RegiaoDto
     {

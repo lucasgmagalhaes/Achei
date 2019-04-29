@@ -1,7 +1,6 @@
 ﻿using Entidades.Entidades;
 using Persistencia.Contexts.Application;
 using Persistencia.Interfaces;
-using System.Collections.Generic;
 using System.Linq;
 
 namespace Persistencia.Services
