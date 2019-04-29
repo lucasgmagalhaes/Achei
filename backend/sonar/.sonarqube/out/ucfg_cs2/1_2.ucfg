@@ -1,19 +1,19 @@
 
-kPersistencia.Services.UsuarioService.UsuarioService(Persistencia.Contexts.Application.ApplicationDbContext)F
-<D:\git\Achei\backend\Persistencia\Services\UsuarioService.cs	 	(S"0*®
-0£
- 
-F
-<D:\git\Achei\backend\Persistencia\Services\UsuarioService.cs	> 	(O
+cPersistencia.Services.TagService.TagService(Persistencia.Contexts.Application.ApplicationDbContext)B
+8D:\git\Achei\backend\Persistencia\Services\TagService.cs (O"0*ª
+0Ÿ
+œ
+B
+8D:\git\Achei\backend\Persistencia\Services\TagService.cs: (K
 
 %0void"YPersistencia.Services.CrudService<T>.CrudService(Microsoft.EntityFrameworkCore.DbContext)*(&
 $Persistencia.Services.CrudService<T>*E
 C
 	dbContext6Persistencia.Contexts.Application.ApplicationDbContext*
-1*b
-1"]
-F
-<D:\git\Achei\backend\Persistencia\Services\UsuarioService.cs	R 	(S
+1*^
+1"Y
+B
+8D:\git\Achei\backend\Persistencia\Services\TagService.csN (O
 implicit return:C
-	dbContext6Persistencia.Contexts.Application.ApplicationDbContextB(&
-$Persistencia.Services.UsuarioService
+	dbContext6Persistencia.Contexts.Application.ApplicationDbContextB$"
+ Persistencia.Services.TagService

@@ -1,81 +1,40 @@
 
-/Persistencia.Services.CrudService<T>.Inserir(T)C
-9D:\git\Achei\backend\Persistencia\Services\CrudService.csI W(	"0*ˆ
+/Persistencia.Services.CrudService<T>.Deletar(T)C
+9D:\git\Achei\backend\Persistencia\Services\CrudService.cs: >(	"0*»	
 0ß
 Ü
 C
-9D:\git\Achei\backend\Persistencia\Services\CrudService.csK K(#-
+9D:\git\Achei\backend\Persistencia\Services\CrudService.cs< <(-
 %0'Microsoft.EntityFrameworkCore.DbContext"__id*`*^&
 $Persistencia.Services.CrudService<T>"4
 	dbService'Microsoft.EntityFrameworkCore.DbContextõò
 C
-9D:\git\Achei\backend\Persistencia\Services\CrudService.csK K(,2
+9D:\git\Achei\backend\Persistencia\Services\CrudService.cs< <(2
 %1,Microsoft.EntityFrameworkCore.DbSet<TEntity>"6Microsoft.EntityFrameworkCore.DbContext.Set<TEntity>()*/
 -
-%0'Microsoft.EntityFrameworkCore.DbContext2Set<TEntity>()³
-°
+%0'Microsoft.EntityFrameworkCore.DbContext2Set<TEntity>()§¤
 C
-9D:\git\Achei\backend\Persistencia\Services\CrudService.csK K(N
-
-%2bool"ƒSystem.Linq.Queryable.Any<TSource>(System.Linq.IQueryable<TSource>, System.Linq.Expressions.Expression<System.Func<TSource, bool>>)*"
-System.Linq.Queryable*4
+9D:\git\Achei\backend\Persistencia\Services\CrudService.cs< <(/G
+%2AMicrosoft.EntityFrameworkCore.ChangeTracking.EntityEntry<TEntity>"<Microsoft.EntityFrameworkCore.DbSet<TEntity>.Remove(TEntity)*4
 2
-%1,Microsoft.EntityFrameworkCore.DbSet<TEntity>*
-""k
-i
-C
-9D:\git\Achei\backend\Persistencia\Services\CrudService.csK K(N
-existsbool"__id*
+%1,Microsoft.EntityFrameworkCore.DbSet<TEntity>*
 
-
-%2bool*
-1
-2*˜
-1ß
+entidadeT2Remove(TEntity)ß
 Ü
 C
-9D:\git\Achei\backend\Persistencia\Services\CrudService.csO O(-
+9D:\git\Achei\backend\Persistencia\Services\CrudService.cs= =(-
 %3'Microsoft.EntityFrameworkCore.DbContext"__id*`*^&
-$Persistencia.Services.CrudService<T>"4
-	dbService'Microsoft.EntityFrameworkCore.DbContext©¦
-C
-9D:\git\Achei\backend\Persistencia\Services\CrudService.csO O('G
-%4AMicrosoft.EntityFrameworkCore.ChangeTracking.EntityEntry<TEntity>"=Microsoft.EntityFrameworkCore.DbContext.Add<TEntity>(TEntity)*/
--
-%3'Microsoft.EntityFrameworkCore.DbContext*
-
-entidadeT2Add<TEntity>(TEntity)ß
-Ü
-C
-9D:\git\Achei\backend\Persistencia\Services\CrudService.csP P(-
-%5'Microsoft.EntityFrameworkCore.DbContext"__id*`*^&
 $Persistencia.Services.CrudService<T>"4
 	dbService'Microsoft.EntityFrameworkCore.DbContextÊÇ
 C
-9D:\git\Achei\backend\Persistencia\Services\CrudService.csP P('	
-%6int"5Microsoft.EntityFrameworkCore.DbContext.SaveChanges()*/
+9D:\git\Achei\backend\Persistencia\Services\CrudService.cs= =(#	
+%4int"5Microsoft.EntityFrameworkCore.DbContext.SaveChanges()*/
 -
-%5'Microsoft.EntityFrameworkCore.DbContext2SaveChanges()"V
+%3'Microsoft.EntityFrameworkCore.DbContext2SaveChanges()*
+1*_
+1"Z
 C
-9D:\git\Achei\backend\Persistencia\Services\CrudService.csQ Q( 
-
-entidadeT*˜
-2qo
-C
-9D:\git\Achei\backend\Persistencia\Services\CrudService.csU U(W
-%7System.Exception"System.Exceptionš
-—
-C
-9D:\git\Achei\backend\Persistencia\Services\CrudService.csU U(#
-
-%8void""System.Exception.Exception(string)*
-
-%7System.Exception*
-""*
-3*_
-3"Z
-C
-9D:\git\Achei\backend\Persistencia\Services\CrudService.csW W(	
+9D:\git\Achei\backend\Persistencia\Services\CrudService.cs> >(	
 implicit return:
 entidadeTB(&
 $Persistencia.Services.CrudService<T>

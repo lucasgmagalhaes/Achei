@@ -1,83 +1,116 @@
 
-FApi.Startup.Startup(Microsoft.Extensions.Configuration.IConfiguration)-
-#D:\git\Achei\backend\Api\Startup.cs %(	"0*Î
-0¥
-±
--
-#D:\git\Achei\backend\Api\Startup.cs ()
+KApi.Controllers.ItemAchadoController.Salvar(Entidades.Entidades.ItemAchado)F
+<D:\git\Achei\backend\Api\Controllers\ItemAchadoController.csH T(	"5*
+0*	
+1
+2
+3*¡
+2
+Ì
+F
+<D:\git\Achei\backend\Api\Controllers\ItemAchadoController.csM M(!0
+%0*Persistencia.Interfaces.IItemAchadoService"__id*k*i&
+$Api.Controllers.ItemAchadoController"?
+itemAchadoService*Persistencia.Interfaces.IItemAchadoServiceïí
+F
+<D:\git\Achei\backend\Api\Controllers\ItemAchadoController.csM M(5$
+%1Entidades.Entidades.ItemAchado"2Persistencia.Interfaces.ICrudService<T>.Inserir(T)*2
+0
+%0*Persistencia.Interfaces.IItemAchadoService*.
+,
 
-%0void"Api.Startup.Configuration.set*
-Api.Startup*D
-B
-configuration1Microsoft.Extensions.Configuration.IConfiguration…
-∆
--
-#D:\git\Achei\backend\Api\Startup.cs!& !(_
-%1string"}Microsoft.Extensions.Configuration.ConfigurationBinder.GetValue<T>(Microsoft.Extensions.Configuration.IConfiguration, string)*:"8
-6Microsoft.Extensions.Configuration.ConfigurationBinder*D
-B
-configuration1Microsoft.Extensions.Configuration.IConfiguration*
-""õ
+itemAchadoEntidades.Entidades.ItemAchado2
+Inserir(T)zx
+F
+<D:\git\Achei\backend\Api\Controllers\ItemAchadoController.csN N(k
+%2Api.RequestResponse"Api.RequestResponseõ
 ò
--
-#D:\git\Achei\backend\Api\Startup.cs! !(_
+F
+<D:\git\Achei\backend\Api\Controllers\ItemAchadoController.csN N(-
 
-%2void"(Persistencia.ConnectionString.Server.set*!"
-Persistencia.ConnectionString*
-
-%1string…
-∆
+%3void"%Api.RequestResponse.RequestResponse()*
+
+%2Api.RequestResponseâ
+Ü
+F
+<D:\git\Achei\backend\Api\Controllers\ItemAchadoController.csN2 N(Y.
+
+%2Api.RequestResponse"
+messagestring"__id*
+""à
+Ö
+F
+<D:\git\Achei\backend\Api\Controllers\ItemAchadoController.csN[ N(i-
+
+%2Api.RequestResponse"
+statusstring"__id*
+""ÑÅ
+F
+<D:\git\Achei\backend\Api\Controllers\ItemAchadoController.csN N(l-
+%4'Microsoft.AspNetCore.Mvc.OkObjectResult"2Microsoft.AspNetCore.Mvc.ControllerBase.Ok(object)*+)
+'Microsoft.AspNetCore.Mvc.ControllerBase*
+
+%2Api.RequestResponse2
+Ok(object)"y
+F
+<D:\git\Achei\backend\Api\Controllers\ItemAchadoController.csN N(m/
 -
-#D:\git\Achei\backend\Api\Startup.cs"( "(c
-%3string"}Microsoft.Extensions.Configuration.ConfigurationBinder.GetValue<T>(Microsoft.Extensions.Configuration.IConfiguration, string)*:"8
-6Microsoft.Extensions.Configuration.ConfigurationBinder*D
-B
-configuration1Microsoft.Extensions.Configuration.IConfiguration*
-""ù
-ö
--
-#D:\git\Achei\backend\Api\Startup.cs" "(c
+%4'Microsoft.AspNetCore.Mvc.OkObjectResult*
+4*	
+1
+3
+3*¢
+1òï
+F
+<D:\git\Achei\backend\Api\Controllers\ItemAchadoController.csR R($5
+%5/Microsoft.AspNetCore.Mvc.BadRequestObjectResult":Microsoft.AspNetCore.Mvc.ControllerBase.BadRequest(object)*+)
+'Microsoft.AspNetCore.Mvc.ControllerBase*
+
+eSystem.Exception2BadRequest(object)"Å
+F
+<D:\git\Achei\backend\Api\Controllers\ItemAchadoController.csR R(%7
+5
+%5/Microsoft.AspNetCore.Mvc.BadRequestObjectResult*b
+3"]
+F
+<D:\git\Achei\backend\Api\Controllers\ItemAchadoController.csT T(	
+implicit return*‹
+5è
+å
+F
+<D:\git\Achei\backend\Api\Controllers\ItemAchadoController.csI I(#
+%6"__entrypoint*.
+,
 
-%4void"*Persistencia.ConnectionString.Database.set*!"
-Persistencia.ConnectionString*
-
-%3string…
-∆
--
-#D:\git\Achei\backend\Api\Startup.cs#& #(_
-%5string"}Microsoft.Extensions.Configuration.ConfigurationBinder.GetValue<T>(Microsoft.Extensions.Configuration.IConfiguration, string)*:"8
-6Microsoft.Extensions.Configuration.ConfigurationBinder*D
-B
-configuration1Microsoft.Extensions.Configuration.IConfiguration*
-""õ
-ò
--
-#D:\git\Achei\backend\Api\Startup.cs# #(_
+itemAchadoEntidades.Entidades.ItemAchado—
+Œ
+F
+<D:\git\Achei\backend\Api\Controllers\ItemAchadoController.csI% I(-
+%7"
+__annotate*B@
+>Microsoft.AspNetCore.Mvc.FromBodyAttribute.FromBodyAttribute()*.
+,
 
-%6void"(Persistencia.ConnectionString.UserId.set*!"
-Persistencia.ConnectionString*
-
-%5string…
-∆
--
-#D:\git\Achei\backend\Api\Startup.cs$( $(c
-%7string"}Microsoft.Extensions.Configuration.ConfigurationBinder.GetValue<T>(Microsoft.Extensions.Configuration.IConfiguration, string)*:"8
-6Microsoft.Extensions.Configuration.ConfigurationBinder*D
-B
-configuration1Microsoft.Extensions.Configuration.IConfiguration*
-""ù
-ö
--
-#D:\git\Achei\backend\Api\Startup.cs$ $(c
+itemAchadoEntidades.Entidades.ItemAchado—
+Œ
+F
+<D:\git\Achei\backend\Api\Controllers\ItemAchadoController.csH	 H(
+%8"
+__annotate*B@
+>Microsoft.AspNetCore.Mvc.HttpPostAttribute.HttpPostAttribute()*.
+,
 
-%8void"*Persistencia.ConnectionString.Password.set*!"
-Persistencia.ConnectionString*
-
-%7string*
-1*I
-1"D
--
-#D:\git\Achei\backend\Api\Startup.cs% %(	
-implicit return:B
-configuration1Microsoft.Extensions.Configuration.IConfigurationB
-Api.Startup
+itemAchadoEntidades.Entidades.ItemAchadoó
+î
+F
+<D:\git\Achei\backend\Api\Controllers\ItemAchadoController.csI$ I(C,
+
+itemAchadoEntidades.Entidades.ItemAchado"__annotation*
+
+%7*
+
+%8*
+0:,
+
+itemAchadoEntidades.Entidades.ItemAchadoB(&
+$Api.Controllers.ItemAchadoController

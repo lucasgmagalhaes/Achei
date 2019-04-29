@@ -1,18 +1,9 @@
 
-]Migrations.Conversor_2019031003.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)<
-2D:\git\Achei\backend\Migrations\v1.0\2019031003.cs (	"0*ç
-0ÜÙ
+_Migrations.Conversor_2019031003.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)<
+2D:\git\Achei\backend\Migrations\v1.0\2019031003.cs (	"0*X
+0"S
 <
-2D:\git\Achei\backend\Migrations\v1.0\2019031003.cs (V_
-%0YMicrosoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder<TOperation>"KMicrosoft.EntityFrameworkCore.Migrations.MigrationBuilder.Sql(string, bool)*H
-F
-	migration9Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder*
-""*
-""2Sql(string, bool)*
-1*X
-1"S
-<
-2D:\git\Achei\backend\Migrations\v1.0\2019031003.cs (	
-implicit return:F
-	migration9Microsoft.EntityFrameworkCore.Migrations.MigrationBuilderB#!
+2D:\git\Achei\backend\Migrations\v1.0\2019031003.cs (	
+implicit return:M
+migrationBuilder9Microsoft.EntityFrameworkCore.Migrations.MigrationBuilderB#!
 Migrations.Conversor_2019031003

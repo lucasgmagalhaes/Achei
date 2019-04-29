@@ -1,13 +1,27 @@
-’
-Entidades.Tagobject
-Tag()Entidades.Tag.Tag()
-Id.getEntidades.Tag.Id.get
-Id.setEntidades.Tag.Id.set"
-Nome.getEntidades.Tag.Nome.get"
-Nome.setEntidades.Tag.Nome.set&
+ù	
+Entidades.Entidades.ItemDtoobject2
+	ItemDto()%Entidades.Entidades.ItemDto.ItemDto(),
+Id.get"Entidades.Entidades.ItemDto.Id.get,
+Id.set"Entidades.Entidades.ItemDto.Id.set4
 
-ItemId.getEntidades.Tag.ItemId.get&
+Titulo.get&Entidades.Entidades.ItemDto.Titulo.get4
 
-ItemId.setEntidades.Tag.ItemId.set"
-Item.getEntidades.Tag.Item.get"
-Item.setEntidades.Tag.Item.set
+Titulo.set&Entidades.Entidades.ItemDto.Titulo.set6
+Detalhe.get'Entidades.Entidades.ItemDto.Detalhe.get6
+Detalhe.set'Entidades.Entidades.ItemDto.Detalhe.set8
+RegiaoId.get(Entidades.Entidades.ItemDto.RegiaoId.get8
+RegiaoId.set(Entidades.Entidades.ItemDto.RegiaoId.set<
+DataInicio.get*Entidades.Entidades.ItemDto.DataInicio.get<
+DataInicio.set*Entidades.Entidades.ItemDto.DataInicio.set6
+DataFim.get'Entidades.Entidades.ItemDto.DataFim.get6
+DataFim.set'Entidades.Entidades.ItemDto.DataFim.set0
+Hora.get$Entidades.Entidades.ItemDto.Hora.get0
+Hora.set$Entidades.Entidades.ItemDto.Hora.set4
+
+Imagem.get&Entidades.Entidades.ItemDto.Imagem.get4
+
+Imagem.set&Entidades.Entidades.ItemDto.Imagem.set:
+UsuarioId.get)Entidades.Entidades.ItemDto.UsuarioId.get:
+UsuarioId.set)Entidades.Entidades.ItemDto.UsuarioId.set0
+Tags.get$Entidades.Entidades.ItemDto.Tags.get0
+Tags.set$Entidades.Entidades.ItemDto.Tags.set

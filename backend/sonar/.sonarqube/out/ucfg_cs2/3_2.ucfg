@@ -1,88 +1,95 @@
 
-7Api.Token.SigningConfigurations.SigningConfigurations()A
-7D:\git\Achei\backend\Api\Token\SigningConfigurations.cs (	"0*†
-0º·
-A
-7D:\git\Achei\backend\Api\Token\SigningConfigurations.cs7 (Y;
-%05System.Security.Cryptography.RSACryptoServiceProvider"5System.Security.Cryptography.RSACryptoServiceProviderí
-ê
-A
-7D:\git\Achei\backend\Api\Token\SigningConfigurations.cs; (S
+_Api.AuthorizeHandle.HandleAsync(Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext)5
++D:\git\Achei\backend\Api\AuthorizeHandle.cs	 (	"0*­
+0ˆ…
+5
++D:\git\Achei\backend\Api\AuthorizeHandle.cs (',
+%0&System.Security.Claims.ClaimsPrincipal"GMicrosoft.AspNetCore.Authorization.AuthorizationHandlerContext.User.get*K
+I
+context>Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext2User.getØÕ
+5
++D:\git\Achei\backend\Api\AuthorizeHandle.cs (0)
+%1#System.Security.Principal.IIdentity"3System.Security.Claims.ClaimsPrincipal.Identity.get*.
+,
+%0&System.Security.Claims.ClaimsPrincipal2Identity.get­ª
+5
++D:\git\Achei\backend\Api\AuthorizeHandle.cs (5
+%2string",System.Security.Principal.IIdentity.Name.get*+
+)
+%1#System.Security.Principal.IIdentity2Name.get`
+^
+5
++D:\git\Achei\backend\Api\AuthorizeHandle.cs (5
+emailstring"__id*
+
+%2stringˆ…
+5
++D:\git\Achei\backend\Api\AuthorizeHandle.cs (,
+%3&System.Security.Claims.ClaimsPrincipal"GMicrosoft.AspNetCore.Authorization.AuthorizationHandlerContext.User.get*K
+I
+context>Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext2User.getØÕ
+5
++D:\git\Achei\backend\Api\AuthorizeHandle.cs (%)
+%4#System.Security.Principal.IIdentity"3System.Security.Claims.ClaimsPrincipal.Identity.get*.
+,
+%3&System.Security.Claims.ClaimsPrincipal2Identity.getÁ¾
+5
++D:\git\Achei\backend\Api\AuthorizeHandle.cs (5
 
-%1void"SSystem.Security.Cryptography.RSACryptoServiceProvider.RSACryptoServiceProvider(int)*=
-;
-%05System.Security.Cryptography.RSACryptoServiceProvider*2€Î
-Ë
-A
-7D:\git\Achei\backend\Api\Token\SigningConfigurations.cs, (YA
-provider5System.Security.Cryptography.RSACryptoServiceProvider"__id*=
-;
-%05System.Security.Cryptography.RSACryptoServiceProvider*
-1*Ï
-1“
-
-A
-7D:\git\Achei\backend\Api\Token\SigningConfigurations.cs) (H0
-%2*System.Security.Cryptography.RSAParameters"LSystem.Security.Cryptography.RSACryptoServiceProvider.ExportParameters(bool)*C
-A
-provider5System.Security.Cryptography.RSACryptoServiceProvider*
-""ª§
-A
-7D:\git\Achei\backend\Api\Token\SigningConfigurations.cs (I3
-%3-Microsoft.IdentityModel.Tokens.RsaSecurityKey"-Microsoft.IdentityModel.Tokens.RsaSecurityKey§
-¤
-A
-7D:\git\Achei\backend\Api\Token\SigningConfigurations.cs ((
+%5bool"7System.Security.Principal.IIdentity.IsAuthenticated.get*+
+)
+%4#System.Security.Principal.IIdentity2IsAuthenticated.get*
+1
+2* 
+1–
+“
+5
++D:\git\Achei\backend\Api\AuthorizeHandle.cs" (E
+%6string"(Api.Session.BuscarBancoDoUsuario(string)*"
+Api.Session*
+
+emailstringc
+a
+5
++D:\git\Achei\backend\Api\AuthorizeHandle.cs (E
+databasestring"__id*
+
+%6string”
+‘
+5
++D:\git\Achei\backend\Api\AuthorizeHandle.cs ("
 
-%4void"hMicrosoft.IdentityModel.Tokens.RsaSecurityKey.RsaSecurityKey(System.Security.Cryptography.RSAParameters)*5
-3
-%3-Microsoft.IdentityModel.Tokens.RsaSecurityKey*2
-0
-%2*System.Security.Cryptography.RSAParameters×
-Ô
-A
-7D:\git\Achei\backend\Api\Token\SigningConfigurations.cs (I
+%7bool""string.operator !=(string, string)*
+"
+string*
+
+databasestring*
+""*
+3
+2*¶
+3«
+¨
+5
++D:\git\Achei\backend\Api\AuthorizeHandle.cs (8
 
-%5void"'Api.Token.SigningConfigurations.Key.set*#!
-Api.Token.SigningConfigurations*5
-3
-%3-Microsoft.IdentityModel.Tokens.RsaSecurityKey*
-2*•
-2Æ
-Ã
-A
-7D:\git\Achei\backend\Api\Token\SigningConfigurations.cs (0
-%6*Microsoft.IdentityModel.Tokens.SecurityKey"'Api.Token.SigningConfigurations.Key.get*#!
-Api.Token.SigningConfigurationsY
-W
-A
-7D:\git\Achei\backend\Api\Token\SigningConfigurations.cs (:
-%7"__id*
-""²¯
-A
-7D:\git\Achei\backend\Api\Token\SigningConfigurations.cs! (;7
-%81Microsoft.IdentityModel.Tokens.SigningCredentials"1Microsoft.IdentityModel.Tokens.SigningCredentialsÃ
-À
-A
-7D:\git\Achei\backend\Api\Token\SigningConfigurations.cs% (7
-
-%9void"xMicrosoft.IdentityModel.Tokens.SigningCredentials.SigningCredentials(Microsoft.IdentityModel.Tokens.SecurityKey, string)*9
-7
-%81Microsoft.IdentityModel.Tokens.SigningCredentials*2
-0
-%6*Microsoft.IdentityModel.Tokens.SecurityKey*
-
-%7ë
-è
-A
-7D:\git\Achei\backend\Api\Token\SigningConfigurations.cs (;
-%10void"6Api.Token.SigningConfigurations.SigningCredentials.set*#!
-Api.Token.SigningConfigurations*9
-7
-%81Microsoft.IdentityModel.Tokens.SigningCredentials*
-3*]
-3"X
-A
-7D:\git\Achei\backend\Api\Token\SigningConfigurations.cs (	
-implicit returnB#!
-Api.Token.SigningConfigurations
+%8void"*Persistencia.ConnectionString.Database.set*!"
+Persistencia.ConnectionString*
+
+databasestring*
+2*‘
+2­
+ª
+5
++D:\git\Achei\backend\Api\AuthorizeHandle.cs (%!
+%9System.Threading.Tasks.Task"-System.Threading.Tasks.Task.CompletedTask.get*"
+System.Threading.Tasks.Task"\
+5
++D:\git\Achei\backend\Api\AuthorizeHandle.cs (&#
+!
+%9System.Threading.Tasks.Task*Q
+4"L
+5
++D:\git\Achei\backend\Api\AuthorizeHandle.cs (	
+implicit return:I
+context>Microsoft.AspNetCore.Authorization.AuthorizationHandlerContextB
+Api.AuthorizeHandle

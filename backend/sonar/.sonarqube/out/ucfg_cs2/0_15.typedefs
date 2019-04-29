@@ -1,0 +1,31 @@
+­
+Entidades.Entidades.Usuarioobject2
+	Usuario()%Entidades.Entidades.Usuario.Usuario(),
+Id.get"Entidades.Entidades.Usuario.Id.get,
+Id.set"Entidades.Entidades.Usuario.Id.set0
+Nome.get$Entidades.Entidades.Usuario.Nome.get0
+Nome.set$Entidades.Entidades.Usuario.Nome.set2
+	Email.get%Entidades.Entidades.Usuario.Email.get2
+	Email.set%Entidades.Entidades.Usuario.Email.set2
+	Senha.get%Entidades.Entidades.Usuario.Senha.get2
+	Senha.set%Entidades.Entidades.Usuario.Senha.set<
+FotoPerfil.get*Entidades.Entidades.Usuario.FotoPerfil.get<
+FotoPerfil.set*Entidades.Entidades.Usuario.FotoPerfil.set4
+
+Estado.get&Entidades.Entidades.Usuario.Estado.get4
+
+Estado.set&Entidades.Entidades.Usuario.Estado.setD
+DataNascimento.get.Entidades.Entidades.Usuario.DataNascimento.getD
+DataNascimento.set.Entidades.Entidades.Usuario.DataNascimento.set8
+Telefone.get(Entidades.Entidades.Usuario.Telefone.get8
+Telefone.set(Entidades.Entidades.Usuario.Telefone.set0
+Sexo.get$Entidades.Entidades.Usuario.Sexo.get0
+Sexo.set$Entidades.Entidades.Usuario.Sexo.set4
+
+Cidade.get&Entidades.Entidades.Usuario.Cidade.get4
+
+Cidade.set&Entidades.Entidades.Usuario.Cidade.set@
+ItensAchados.get,Entidades.Entidades.Usuario.ItensAchados.get@
+ItensAchados.set,Entidades.Entidades.Usuario.ItensAchados.setB
+ItensPerdidos.get-Entidades.Entidades.Usuario.ItensPerdidos.getB
+ItensPerdidos.set-Entidades.Entidades.Usuario.ItensPerdidos.set

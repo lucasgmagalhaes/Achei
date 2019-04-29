@@ -1,61 +1,107 @@
 
-(Api.Session.BuscarBancoDoUsuario(string)-
-#D:\git\Achei\backend\Api\Session.cs7 F(	"0*
-0*
+jApi.Controllers.ItemAchadoController.BuscarRegiaoItemPerdido(long, Persistencia.Interfaces.IRegiaoService)F
+<D:\git\Achei\backend\Api\Controllers\ItemAchadoController.csV c(	"5*
+0*	
 1
-2* 
-2«
-ƒ
--
-#D:\git\Achei\backend\Api\Session.cs; ;('9
-%03System.Collections.Generic.Dictionary<TKey, TValue>"__id*R*P
-Api.Session"?
-usuarios3System.Collections.Generic.Dictionary<TKey, TValue>ú
-ô
--
-#D:\git\Achei\backend\Api\Session.cs; ;(.
-%1string"
-__arrayGet*;
-9
-%03System.Collections.Generic.Dictionary<TKey, TValue>*
-
-emailstringX
-V
--
-#D:\git\Achei\backend\Api\Session.cs; ;(.
-bancostring"__id*
-
-%1stringz
-x
--
-#D:\git\Achei\backend\Api\Session.cs< <(0
+2
+3*˜
 
-%2bool"string.IsNullOrEmpty(string)*
-"
-string*
-
-bancostring*
-3
-4*G
-3"B
+2ÖÇ
+F
+<D:\git\Achei\backend\Api\Controllers\ItemAchadoController.cs[  [(A 
+%0Entidades.Entidades.Regiao"<Persistencia.Interfaces.IRegiaoService.BuscarPorItemId(long)*9
+7
+regiaoService&Persistencia.Interfaces.IRegiaoService*
+""2BuscarPorItemId(long)õ
+ò
+F
+<D:\git\Achei\backend\Api\Controllers\ItemAchadoController.cs[ [(A$
+regiaoEntidades.Entidades.Regiao"__id*"
+ 
+%0Entidades.Entidades.Regiaoµ
+≤
+F
+<D:\git\Achei\backend\Api\Controllers\ItemAchadoController.cs\  \(&
+%1AutoMapper.IMapper"__id*H*F&
+$Api.Controllers.ItemAchadoController"
+mapperAutoMapper.IMapper˜Ù
+F
+<D:\git\Achei\backend\Api\Controllers\ItemAchadoController.cs\  \(=
+%2Entidades.Dto.RegiaoDto",AutoMapper.IMapper.Map<TDestination>(object)*
+
+%1AutoMapper.IMapper*&
+$
+regiaoEntidades.Entidades.Regiao2Map<TDestination>(object)í
+è
+F
+<D:\git\Achei\backend\Api\Controllers\ItemAchadoController.cs\ \(=
+dtoEntidades.Dto.RegiaoDto"__id*
+
+%2Entidades.Dto.RegiaoDtoâÜ
+F
+<D:\git\Achei\backend\Api\Controllers\ItemAchadoController.cs] ](-
+%3'Microsoft.AspNetCore.Mvc.OkObjectResult"2Microsoft.AspNetCore.Mvc.ControllerBase.Ok(object)*+)
+'Microsoft.AspNetCore.Mvc.ControllerBase* 
+
+dtoEntidades.Dto.RegiaoDto2
+Ok(object)"y
+F
+<D:\git\Achei\backend\Api\Controllers\ItemAchadoController.cs] ](/
 -
-#D:\git\Achei\backend\Api\Session.cs> >(!
-
-bancostring*<
-4"7
--
-#D:\git\Achei\backend\Api\Session.cs@ @(
-""*
-5*
+%3'Microsoft.AspNetCore.Mvc.OkObjectResult*
+4*	
 1
-6*<
-1"7
--
-#D:\git\Achei\backend\Api\Session.csD D(
-""*I
-6"D
--
-#D:\git\Achei\backend\Api\Session.csF F(	
-implicit return:
-emailstringB"
-Api.Session
+3
+3*¢
+1òï
+F
+<D:\git\Achei\backend\Api\Controllers\ItemAchadoController.csa a($5
+%4/Microsoft.AspNetCore.Mvc.BadRequestObjectResult":Microsoft.AspNetCore.Mvc.ControllerBase.BadRequest(object)*+)
+'Microsoft.AspNetCore.Mvc.ControllerBase*
+
+eSystem.Exception2BadRequest(object)"Å
+F
+<D:\git\Achei\backend\Api\Controllers\ItemAchadoController.csa a(%7
+5
+%4/Microsoft.AspNetCore.Mvc.BadRequestObjectResult*b
+3"]
+F
+<D:\git\Achei\backend\Api\Controllers\ItemAchadoController.csc c(	
+implicit return*ú
+5¢
+ü
+F
+<D:\git\Achei\backend\Api\Controllers\ItemAchadoController.csW W(4
+%5"__entrypoint*
+""*9
+7
+regiaoService&Persistencia.Interfaces.IRegiaoService‰
+·
+F
+<D:\git\Achei\backend\Api\Controllers\ItemAchadoController.csW? W(K
+%6"
+__annotate*JH
+FMicrosoft.AspNetCore.Mvc.FromServicesAttribute.FromServicesAttribute()*9
+7
+regiaoService&Persistencia.Interfaces.IRegiaoService‡
+›
+F
+<D:\git\Achei\backend\Api\Controllers\ItemAchadoController.csV	 V(
+%7"
+__annotate*FD
+BMicrosoft.AspNetCore.Mvc.HttpGetAttribute.HttpGetAttribute(string)*9
+7
+regiaoService&Persistencia.Interfaces.IRegiaoService¢
+ü
+F
+<D:\git\Achei\backend\Api\Controllers\ItemAchadoController.csW> W(i7
+regiaoService&Persistencia.Interfaces.IRegiaoService"__annotation*
+
+%6*
+
+%7*
+0:
+
+idlong:7
+regiaoService&Persistencia.Interfaces.IRegiaoServiceB(&
+$Api.Controllers.ItemAchadoController

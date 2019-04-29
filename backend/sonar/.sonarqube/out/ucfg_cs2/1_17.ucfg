@@ -1,29 +1,19 @@
 
-<Persistencia.Services.ItemPerdidoService.BuscarComTags(long)J
-@D:\git\Achei\backend\Persistencia\Services\ItemPerdidoService.cs (	"0*ˆ
-0ƒ
-€
+sPersistencia.Services.ItemPerdidoService.ItemPerdidoService(Persistencia.Contexts.Application.ApplicationDbContext)J
+@D:\git\Achei\backend\Persistencia\Services\ItemPerdidoService.cs (W"0*²
+0§
+¤
 J
-@D:\git\Achei\backend\Persistencia\Services\ItemPerdidoService.cs (n
-%0System.Linq.IQueryable<T>"ÒPersistencia.Services.CrudService<T>.Buscar(System.Linq.Expressions.Expression<System.Func<T, bool>>, System.Func<System.Linq.IQueryable<T>, Microsoft.EntityFrameworkCore.Query.IIncludableQueryable<T, object>>)*,*
-(Persistencia.Services.ItemPerdidoService*
-""*
-""…
-‚
-J
-@D:\git\Achei\backend\Persistencia\Services\ItemPerdidoService.cs ("%
-%1Entidades.Entidades.ItemPerdido"OSystem.Linq.Queryable.SingleOrDefault<TSource>(System.Linq.IQueryable<TSource>)*"
-System.Linq.Queryable*!
-
-%0System.Linq.IQueryable<T>"u
-J
-@D:\git\Achei\backend\Persistencia\Services\ItemPerdidoService.cs (#'
-%
-%1Entidades.Entidades.ItemPerdido*f
+@D:\git\Achei\backend\Persistencia\Services\ItemPerdidoService.csB (S
+
+%0void"YPersistencia.Services.CrudService<T>.CrudService(Microsoft.EntityFrameworkCore.DbContext)*(&
+$Persistencia.Services.CrudService<T>*E
+C
+	dbContext6Persistencia.Contexts.Application.ApplicationDbContext*
+1*f
 1"a
 J
-@D:\git\Achei\backend\Persistencia\Services\ItemPerdidoService.cs (	
-implicit return:
-
-idlongB,*
+@D:\git\Achei\backend\Persistencia\Services\ItemPerdidoService.csV (W
+implicit return:C
+	dbContext6Persistencia.Contexts.Application.ApplicationDbContextB,*
 (Persistencia.Services.ItemPerdidoService

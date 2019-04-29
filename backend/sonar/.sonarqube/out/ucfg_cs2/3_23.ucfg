@@ -1,151 +1,27 @@
 
-HApi.Controllers.UsuarioController.Atualizar(Entidades.Entidades.Usuario)C
-9D:\git\Achei\backend\Api\Controllers\UsuarioController.csR _(	"5*
-0*	
-1
-2
-3*þ
-
-2á
-Þ
-C
-9D:\git\Achei\backend\Api\Controllers\UsuarioController.csX X(-
-%0'Persistencia.Interfaces.IUsuarioService"__id*b*`#
-!Api.Controllers.UsuarioController"9
-usuarioService'Persistencia.Interfaces.IUsuarioServiceóð
-C
-9D:\git\Achei\backend\Api\Controllers\UsuarioController.csX X(1
-
-%1void"4Persistencia.Interfaces.ICrudService<T>.Atualizar(T)*/
+&Api.Controllers.StatusController.Get()B
+8D:\git\Achei\backend\Api\Controllers\StatusController.cs	 (	"2*è
+0ëè
+B
+8D:\git\Achei\backend\Api\Controllers\StatusController.cs ()-
+%0'Microsoft.AspNetCore.Mvc.OkObjectResult"2Microsoft.AspNetCore.Mvc.ControllerBase.Ok(object)*+)
+'Microsoft.AspNetCore.Mvc.ControllerBase*
+""2
+Ok(object)"u
+B
+8D:\git\Achei\backend\Api\Controllers\StatusController.cs (*/
 -
-%0'Persistencia.Interfaces.IUsuarioService*(
-&
-usuarioEntidades.Entidades.Usuario2Atualizar(T)wu
-C
-9D:\git\Achei\backend\Api\Controllers\UsuarioController.csY Y(n
-%2Api.RequestResponse"Api.RequestResponse˜
-•
-C
-9D:\git\Achei\backend\Api\Controllers\UsuarioController.csY Y(-
-
-%3void"%Api.RequestResponse.RequestResponse()*
-
-%2Api.RequestResponse†
-ƒ
-C
-9D:\git\Achei\backend\Api\Controllers\UsuarioController.csY2 Y(\.
-
-%2Api.RequestResponse"
-messagestring"__id*
-""…
-‚
-C
-9D:\git\Achei\backend\Api\Controllers\UsuarioController.csY^ Y(l-
-
-%2Api.RequestResponse"
-statusstring"__id*
-""þ
-C
-9D:\git\Achei\backend\Api\Controllers\UsuarioController.csY Y(o-
-%4'Microsoft.AspNetCore.Mvc.OkObjectResult"2Microsoft.AspNetCore.Mvc.ControllerBase.Ok(object)*+)
-'Microsoft.AspNetCore.Mvc.ControllerBase*
-
-%2Api.RequestResponse2
-Ok(object)"v
-C
-9D:\git\Achei\backend\Api\Controllers\UsuarioController.csY Y(p/
--
-%4'Microsoft.AspNetCore.Mvc.OkObjectResult*
-4*	
-1
-3
-3*ê
-1wu
-C
-9D:\git\Achei\backend\Api\Controllers\UsuarioController.cs]" ](`
-%5Api.RequestResponse"Api.RequestResponse˜
-•
-C
-9D:\git\Achei\backend\Api\Controllers\UsuarioController.cs]& ](5
-
-%6void"%Api.RequestResponse.RequestResponse()*
-
-%5Api.RequestResponse›˜
-C
-9D:\git\Achei\backend\Api\Controllers\UsuarioController.cs]D ](N
-%7string"System.Exception.Message.get*
-
-exSystem.Exception2Message.getŽ
-‹
-C
-9D:\git\Achei\backend\Api\Controllers\UsuarioController.cs]: ](N.
-
-%5Api.RequestResponse"
-messagestring"__id*
-
-%7string…
-‚
-C
-9D:\git\Achei\backend\Api\Controllers\UsuarioController.cs]P ](^-
-
-%5Api.RequestResponse"
-statusstring"__id*
-""™–
-C
-9D:\git\Achei\backend\Api\Controllers\UsuarioController.cs] ](a5
-%8/Microsoft.AspNetCore.Mvc.BadRequestObjectResult":Microsoft.AspNetCore.Mvc.ControllerBase.BadRequest(object)*+)
-'Microsoft.AspNetCore.Mvc.ControllerBase*
-
-%5Api.RequestResponse2BadRequest(object)"~
-C
-9D:\git\Achei\backend\Api\Controllers\UsuarioController.cs] ](b7
-5
-%8/Microsoft.AspNetCore.Mvc.BadRequestObjectResult*_
-3"Z
-C
-9D:\git\Achei\backend\Api\Controllers\UsuarioController.cs_ _(	
-implicit return*¡
-5†
-ƒ
-C
-9D:\git\Achei\backend\Api\Controllers\UsuarioController.csT T(&
-%9"__entrypoint*(
-&
-usuarioEntidades.Entidades.UsuarioÉ
-Æ
-C
-9D:\git\Achei\backend\Api\Controllers\UsuarioController.csT( T(0
-%10"
-__annotate*B@
->Microsoft.AspNetCore.Mvc.FromBodyAttribute.FromBodyAttribute()*(
-&
-usuarioEntidades.Entidades.UsuarioÇ
-Ä
-C
-9D:\git\Achei\backend\Api\Controllers\UsuarioController.csR	 R(
-%11"
-__annotate*@>
-<Microsoft.AspNetCore.Mvc.HttpPutAttribute.HttpPutAttribute()*(
-&
-usuarioEntidades.Entidades.UsuarioÛ
-Ø
-C
-9D:\git\Achei\backend\Api\Controllers\UsuarioController.csS	 S(
-%12"
-__annotate*TR
-PMicrosoft.AspNetCore.Authorization.AuthorizeAttribute.AuthorizeAttribute(string)*(
-&
-usuarioEntidades.Entidades.Usuario™
-–
-C
-9D:\git\Achei\backend\Api\Controllers\UsuarioController.csT' T(@&
-usuarioEntidades.Entidades.Usuario"__annotation*
-
-%10*
-
-%11*
-
-%12*
-0:&
-usuarioEntidades.Entidades.UsuarioB%#
-!Api.Controllers.UsuarioController
+%0'Microsoft.AspNetCore.Mvc.OkObjectResult*^
+1"Y
+B
+8D:\git\Achei\backend\Api\Controllers\StatusController.cs (	
+implicit return*d
+2Z
+X
+B
+8D:\git\Achei\backend\Api\Controllers\StatusController.cs
+ 
+( 
+%1"__entrypoint*
+0B$"
+ Api.Controllers.StatusController

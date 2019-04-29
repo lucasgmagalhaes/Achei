@@ -1,26 +1,28 @@
 
-eApi.Controllers.ItemAchadoController.ItemAchadoController(Persistencia.Interfaces.IItemAchadoService)F
-<D:\git\Achei\backend\Api\Controllers\ItemAchadoController.cs (	"2*Š
-0ÿ
-ü
-F
-<D:\git\Achei\backend\Api\Controllers\ItemAchadoController.cs (6i&
-$Api.Controllers.ItemAchadoController"?
-itemAchadoService*Persistencia.Interfaces.IItemAchadoService"__id*A
-?
-itemAchadoService*Persistencia.Interfaces.IItemAchadoService*
-1*b
-1"]
-F
-<D:\git\Achei\backend\Api\Controllers\ItemAchadoController.cs (	
-implicit return*­
-2¢
-Ÿ
-F
-<D:\git\Achei\backend\Api\Controllers\ItemAchadoController.cs (#
-%0"__entrypoint*A
-?
-itemAchadoService*Persistencia.Interfaces.IItemAchadoService*
-0:?
-itemAchadoService*Persistencia.Interfaces.IItemAchadoServiceB(&
-$Api.Controllers.ItemAchadoController
+*Api.Program.CreateWebHostBuilder(string[])-
+#D:\git\Achei\backend\Api\Program.cs (	"0*š
+0Ù
+Ö
+-
+#D:\git\Achei\backend\Api\Program.cs (52
+%0,Microsoft.AspNetCore.Hosting.IWebHostBuilder";Microsoft.AspNetCore.WebHost.CreateDefaultBuilder(string[])* "
+Microsoft.AspNetCore.WebHost*
+
+argsstring[]Ñ
+Î
+-
+#D:\git\Achei\backend\Api\Program.cs (K2
+%1,Microsoft.AspNetCore.Hosting.IWebHostBuilder"xMicrosoft.AspNetCore.Hosting.WebHostBuilderExtensions.UseStartup<TStartup>(Microsoft.AspNetCore.Hosting.IWebHostBuilder)*9"7
+5Microsoft.AspNetCore.Hosting.WebHostBuilderExtensions*4
+2
+%0,Microsoft.AspNetCore.Hosting.IWebHostBuilder"e
+-
+#D:\git\Achei\backend\Api\Program.cs (L4
+2
+%1,Microsoft.AspNetCore.Hosting.IWebHostBuilder*I
+1"D
+-
+#D:\git\Achei\backend\Api\Program.cs (	
+implicit return:
+argsstring[]B"
+Api.Program

@@ -1,39 +1,27 @@
 
-.Api.Controllers.UsuarioController.Delete(long)C
-9D:\git\Achei\backend\Api\Controllers\UsuarioController.csf l(	"2*„
-0á
-Þ
-C
-9D:\git\Achei\backend\Api\Controllers\UsuarioController.csj j(-
-%0'Persistencia.Interfaces.IUsuarioService"__id*b*`#
-!Api.Controllers.UsuarioController"9
-usuarioService'Persistencia.Interfaces.IUsuarioServiceÓÐ
-C
-9D:\git\Achei\backend\Api\Controllers\UsuarioController.csj j(&
-
-%1void"5Persistencia.Interfaces.ICrudService<T>.Deletar(long)*/
+Api.Session.Session()-
+#D:\git\Achei\backend\Api\Session.cs (	"0*·
+0¢Ÿ
 -
-%0'Persistencia.Interfaces.IUsuarioService*
-""2Deletar(long)ÒÏ
-C
-9D:\git\Achei\backend\Api\Controllers\UsuarioController.csk k('
-%2!Microsoft.AspNetCore.Mvc.OkResult",Microsoft.AspNetCore.Mvc.ControllerBase.Ok()*+)
-'Microsoft.AspNetCore.Mvc.ControllerBase2Ok()"p
-C
-9D:\git\Achei\backend\Api\Controllers\UsuarioController.csk k()
-'
-%2!Microsoft.AspNetCore.Mvc.OkResult*_
-1"Z
-C
-9D:\git\Achei\backend\Api\Controllers\UsuarioController.csl l(	
-implicit return*m
-2c
-a
-C
-9D:\git\Achei\backend\Api\Controllers\UsuarioController.csh h(#
-%3"__entrypoint*
-""*
-0:
+#D:\git\Achei\backend\Api\Session.cs (79
+%03System.Collections.Generic.Dictionary<TKey, TValue>"3System.Collections.Generic.Dictionary<TKey, TValue>½
+º
+-
+#D:\git\Achei\backend\Api\Session.cs (5
 
-idlongB%#
-!Api.Controllers.UsuarioController
+%1void"@System.Collections.Generic.Dictionary<TKey, TValue>.Dictionary()*;
+9
+%03System.Collections.Generic.Dictionary<TKey, TValue>Ç
+Ä
+-
+#D:\git\Achei\backend\Api\Session.cs (7P
+Api.Session"?
+usuarios3System.Collections.Generic.Dictionary<TKey, TValue>"__id*;
+9
+%03System.Collections.Generic.Dictionary<TKey, TValue>*
+1*I
+1"D
+-
+#D:\git\Achei\backend\Api\Session.cs (	
+implicit returnB"
+Api.Session

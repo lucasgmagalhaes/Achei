@@ -1,40 +1,29 @@
 
-/Persistencia.Services.CrudService<T>.Deletar(T)C
-9D:\git\Achei\backend\Persistencia\Services\CrudService.cs: >(	"0*»	
-0ß
-Ü
-C
-9D:\git\Achei\backend\Persistencia\Services\CrudService.cs< <(-
-%0'Microsoft.EntityFrameworkCore.DbContext"__id*`*^&
-$Persistencia.Services.CrudService<T>"4
-	dbService'Microsoft.EntityFrameworkCore.DbContextõò
-C
-9D:\git\Achei\backend\Persistencia\Services\CrudService.cs< <(2
-%1,Microsoft.EntityFrameworkCore.DbSet<TEntity>"6Microsoft.EntityFrameworkCore.DbContext.Set<TEntity>()*/
--
-%0'Microsoft.EntityFrameworkCore.DbContext2Set<TEntity>()§¤
-C
-9D:\git\Achei\backend\Persistencia\Services\CrudService.cs< <(/G
-%2AMicrosoft.EntityFrameworkCore.ChangeTracking.EntityEntry<TEntity>"<Microsoft.EntityFrameworkCore.DbSet<TEntity>.Remove(TEntity)*4
-2
-%1,Microsoft.EntityFrameworkCore.DbSet<TEntity>*
-
-entidadeT2Remove(TEntity)ß
-Ü
-C
-9D:\git\Achei\backend\Persistencia\Services\CrudService.cs= =(-
-%3'Microsoft.EntityFrameworkCore.DbContext"__id*`*^&
-$Persistencia.Services.CrudService<T>"4
-	dbService'Microsoft.EntityFrameworkCore.DbContextÊÇ
-C
-9D:\git\Achei\backend\Persistencia\Services\CrudService.cs= =(#	
-%4int"5Microsoft.EntityFrameworkCore.DbContext.SaveChanges()*/
--
-%3'Microsoft.EntityFrameworkCore.DbContext2SaveChanges()*
-1*_
-1"Z
-C
-9D:\git\Achei\backend\Persistencia\Services\CrudService.cs> >(	
+APersistencia.Services.ItemPerdidoService.BuscarPorIdUsuario(long)J
+@D:\git\Achei\backend\Persistencia\Services\ItemPerdidoService.cs (	"0*—
+0ƒ
+€
+J
+@D:\git\Achei\backend\Persistencia\Services\ItemPerdidoService.cs (B
+%0System.Linq.IQueryable<T>"ÒPersistencia.Services.CrudService<T>.Buscar(System.Linq.Expressions.Expression<System.Func<T, bool>>, System.Func<System.Linq.IQueryable<T>, Microsoft.EntityFrameworkCore.Query.IIncludableQueryable<T, object>>)*,*
+(Persistencia.Services.ItemPerdidoService*
+""*
+""‘
+Ž
+J
+@D:\git\Achei\backend\Persistencia\Services\ItemPerdidoService.cs (K(
+%1"System.Collections.Generic.List<T>"WSystem.Linq.Enumerable.ToList<TSource>(System.Collections.Generic.IEnumerable<TSource>)*"
+System.Linq.Enumerable*!
+
+%0System.Linq.IQueryable<T>"x
+J
+@D:\git\Achei\backend\Persistencia\Services\ItemPerdidoService.cs (L*
+(
+%1"System.Collections.Generic.List<T>*f
+1"a
+J
+@D:\git\Achei\backend\Persistencia\Services\ItemPerdidoService.cs (	
 implicit return:
-entidadeTB(&
-$Persistencia.Services.CrudService<T>
+
+idlongB,*
+(Persistencia.Services.ItemPerdidoService

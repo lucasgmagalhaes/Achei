@@ -678,7 +678,7 @@ ItemAchado 
 )3 4
 ;4 5
 } 
-} ∫
+} ≈
 CD:\git\Achei\backend\Persistencia\Interfaces\IItemPerdidoService.cs
 	namespace 	
 Persistencia
@@ -713,9 +713,89 @@ Interfaces !
 long" &
 id' )
 )) *
-;* +
-} 
-} Û
+;* +
+ItemPerdido !
+BuscarComEagerLoading )
+() *
+long* .
+id/ 1
+)1 2
+;2 3
+} 
+} 
+>D:\git\Achei\backend\Persistencia\Interfaces\IRegiaoService.cs
+	namespace 	
+Persistencia
+ 
+. 
+
+Interfaces !
+{ 
+public 
+
+	interface 
+IRegiaoService #
+:$ %
+ICrudService& 2
+<2 3
+Regiao3 9
+>9 :
+{		 
+Regiao
+
+ 
+BuscarPorItemId
+
+ 
+(
+
+ 
+long
+
+ #
+id
+
+$ &
+)
+
+& '
+;
+
+' (
+} 
+} î
+;D:\git\Achei\backend\Persistencia\Interfaces\ITagService.cs
+	namespace 	
+Persistencia
+ 
+. 
+
+Interfaces !
+{ 
+public 
+
+	interface 
+ITagService  
+:! "
+ICrudService# /
+</ 0
+Tag0 3
+>3 4
+{ 
+List 
+< 
+Tag 
+> 
+BuscarPorItemId !
+(! "
+long" &
+id' )
+)) *
+;* +
+}		 
+}
+
+ Û
 ?D:\git\Achei\backend\Persistencia\Interfaces\IUsuarioService.cs
 	namespace 	
 Persistencia
@@ -1791,7 +1871,7 @@ ItemAchado 
 ;K L
 } 	
 } 
-} ¯
+} Ä
 @D:\git\Achei\backend\Persistencia\Services\ItemPerdidoService.cs
 	namespace 	
 Persistencia
@@ -1913,9 +1993,199 @@ ItemAchado 
 (  !
 )! "
 ;" #
-} 	
-} 
-} è
+} 	
+public 
+ItemPerdido !
+BuscarComEagerLoading 0
+(0 1
+long1 5
+id6 8
+)8 9
+{ 	
+return 
+base 
+. 
+Entity 
+( 
+)  
+. 
+Include 
+( 
+item 
+=>  
+item! %
+.% &
+Regiao& ,
+), -
+. 
+Include 
+( 
+item 
+=>  
+item! %
+.% &
+Tags& *
+)* +
+. 
+Single 
+( 
+item 
+=> 
+item  $
+.$ %
+Id% '
+==( *
+id+ -
+)- .
+;. /
+} 	
+}   
+}!! Æ
+
+;D:\git\Achei\backend\Persistencia\Services\RegiaoService.cs
+	namespace 	
+Persistencia
+ 
+. 
+Services 
+{ 
+public		 
+
+class		 
+RegiaoService		 
+:		  
+CrudService		! ,
+<		, -
+Regiao		- 3
+>		3 4
+,		4 5
+IRegiaoService		6 D
+{
+
+ 
+public 
+RegiaoService 
+(  
+ApplicationDbContext 1
+	dbContext2 ;
+); <
+:= >
+base? C
+(C D
+	dbContextD M
+)M N
+{O P
+}Q R
+public 
+Regiao 
+BuscarPorItemId %
+(% &
+long& *
+id+ -
+)- .
+{ 	
+return 
+base 
+. 
+Entity 
+( 
+)  
+.  !
+Where! &
+(& '
+regiao' -
+=>. 0
+regiao1 7
+.7 8
+Item8 <
+.< =
+Any= @
+(@ A
+itemA E
+=>F H
+itemI M
+.M N
+IdN P
+==Q S
+idT V
+)V W
+)W X
+.X Y
+SingleY _
+(_ `
+)` a
+;a b
+} 	
+} 
+} ˜
+8D:\git\Achei\backend\Persistencia\Services\TagService.cs
+	namespace 	
+Persistencia
+ 
+. 
+Services 
+{ 
+public		 
+
+class		 
+
+TagService		 
+:		 
+CrudService		 )
+<		) *
+Tag		* -
+>		- .
+,		. /
+ITagService		0 ;
+{
+
+ 
+public 
+
+TagService 
+(  
+ApplicationDbContext .
+	dbContext/ 8
+)8 9
+:: ;
+base< @
+(@ A
+	dbContextA J
+)J K
+{L M
+}N O
+public 
+List 
+< 
+Tag 
+> 
+BuscarPorItemId (
+(( )
+long) -
+id. 0
+)0 1
+{ 	
+return 
+base 
+. 
+Buscar 
+( 
+tag "
+=># %
+tag& )
+.) *
+ItemId* 0
+==1 3
+id4 6
+)6 7
+.7 8
+ToList8 >
+(> ?
+)? @
+;@ A
+} 	
+} 
+} è
 <D:\git\Achei\backend\Persistencia\Services\UsuarioService.cs
 	namespace 	
 Persistencia

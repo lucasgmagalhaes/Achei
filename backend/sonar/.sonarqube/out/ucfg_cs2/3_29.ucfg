@@ -1,116 +1,60 @@
 
-`Api.Startup.ConfigureAuthentication(Microsoft.Extensions.DependencyInjection.IServiceCollection).
-#D:\git\Achei\backend\Api\Startup.cs~ ©(	"0*û%
-0{y
-/
-#D:\git\Achei\backend\Api\Startup.csÄ: Ä(U%
-%0Api.Token.SigningConfigurations"Api.Token.SigningConfigurations¢
-ü
-/
-#D:\git\Achei\backend\Api\Startup.csÄ> Ä(S
+0Api.Session.GetQuantidadeUsuariosLogados(string)-
+#D:\git\Achei\backend\Api\Session.cs $(	"0*á
+0z
+x
+-
+#D:\git\Achei\backend\Api\Session.cs (,
 
-%1void"7Api.Token.SigningConfigurations.SigningConfigurations()*'
-%
-%0Api.Token.SigningConfigurationsù
-ö
+%0bool"string.IsNullOrEmpty(string)*
+"
+string*
+
+bancostring*
+1
+2*≠
+1«
+ƒ
+-
+#D:\git\Achei\backend\Api\Session.cs! !(9
+%13System.Collections.Generic.Dictionary<TKey, TValue>"__id*R*P
+Api.Session"?
+usuarios3System.Collections.Generic.Dictionary<TKey, TValue>∏
+µ
+-
+#D:\git\Achei\backend\Api\Session.cs! !(H/
+%2)System.Collections.Generic.IEnumerable<T>"rSystem.Linq.Enumerable.Where<TSource>(System.Collections.Generic.IEnumerable<TSource>, System.Func<TSource, bool>)*"
+System.Linq.Enumerable*;
+9
+%13System.Collections.Generic.Dictionary<TKey, TValue>*
+""‰
+·
+-
+#D:\git\Achei\backend\Api\Session.cs! !(P	
+%3int"VSystem.Linq.Enumerable.Count<TSource>(System.Collections.Generic.IEnumerable<TSource>)*"
+System.Linq.Enumerable*1
 /
-#D:\git\Achei\backend\Api\Startup.csÄ" Ä(U8
-signingConfigurationsApi.Token.SigningConfigurations"__id*'
-%
-%0Api.Token.SigningConfigurations˚
-¯
-/
-#D:\git\Achei\backend\Api\Startup.csÅ Å(8A
-%2;Microsoft.Extensions.DependencyInjection.IServiceCollection"©Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton<TService>(Microsoft.Extensions.DependencyInjection.IServiceCollection, TService)*O"M
-KMicrosoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions*I
-G
-services;Microsoft.Extensions.DependencyInjection.IServiceCollection*:
-8
-signingConfigurationsApi.Token.SigningConfigurationswu
-/
-#D:\git\Achei\backend\Api\Startup.csÉ6 É(O#
-%3Api.Token.TokenConfigurations"Api.Token.TokenConfigurationsú
-ô
-/
-#D:\git\Achei\backend\Api\Startup.csÉ: É(M
+%2)System.Collections.Generic.IEnumerable<T>"<
+-
+#D:\git\Achei\backend\Api\Session.cs! !(Q
+	
+%3int*Ï
+2[Y
+-
+#D:\git\Achei\backend\Api\Session.cs# #(K
+%4System.Exception"System.ExceptionÑ
+Å
+-
+#D:\git\Achei\backend\Api\Session.cs# #(
 
-%4void"3Api.Token.TokenConfigurations.TokenConfigurations()*%
-#
-%3Api.Token.TokenConfigurationsó
-î
-/
-#D:\git\Achei\backend\Api\Startup.csÉ  É(O4
-tokenConfigurationsApi.Token.TokenConfigurations"__id*%
-#
-%3Api.Token.TokenConfigurationsù
-ö
-/
-#D:\git\Achei\backend\Api\Startup.csÖ Ö(7
-%51Microsoft.Extensions.Configuration.IConfiguration"Api.Startup.Configuration.get*
-Api.Startupëé
-/
-#D:\git\Achei\backend\Api\Startup.csÖ Ö(?>
-%68Microsoft.Extensions.Configuration.IConfigurationSection"DMicrosoft.Extensions.Configuration.IConfiguration.GetSection(string)*9
-7
-%51Microsoft.Extensions.Configuration.IConfiguration*
-""2GetSection(string)ŒÀ
-/
-#D:\git\Achei\backend\Api\Startup.csÑ Ö(@N
-%7HMicrosoft.Extensions.Options.ConfigureFromConfigurationOptions<TOptions>"HMicrosoft.Extensions.Options.ConfigureFromConfigurationOptions<TOptions>Ù
-Ò
-/
-#D:\git\Achei\backend\Api\Startup.csÑ Ñ(F
-
-%8void"ùMicrosoft.Extensions.Options.ConfigureFromConfigurationOptions<TOptions>.ConfigureFromConfigurationOptions(Microsoft.Extensions.Configuration.IConfiguration)*P
-N
-%7HMicrosoft.Extensions.Options.ConfigureFromConfigurationOptions<TOptions>*@
->
-%68Microsoft.Extensions.Configuration.IConfigurationSection¨©
-/
-#D:\git\Achei\backend\Api\Startup.csÑ Ü(3
-
-%9void"KMicrosoft.Extensions.Options.ConfigureOptions<TOptions>.Configure(TOptions)*P
-N
-%7HMicrosoft.Extensions.Options.ConfigureFromConfigurationOptions<TOptions>*6
-4
-tokenConfigurationsApi.Token.TokenConfigurations2Configure(TOptions)¯
-ı
-/
-#D:\git\Achei\backend\Api\Startup.csá á(6B
-%10;Microsoft.Extensions.DependencyInjection.IServiceCollection"©Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton<TService>(Microsoft.Extensions.DependencyInjection.IServiceCollection, TService)*O"M
-KMicrosoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions*I
-G
-services;Microsoft.Extensions.DependencyInjection.IServiceCollection*6
-4
-tokenConfigurationsApi.Token.TokenConfigurationsè
-å
-/
-#D:\git\Achei\backend\Api\Startup.csä é(@
-%119Microsoft.AspNetCore.Authentication.AuthenticationBuilder"ÎMicrosoft.Extensions.DependencyInjection.AuthenticationServiceCollectionExtensions.AddAuthentication(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Action<Microsoft.AspNetCore.Authentication.AuthenticationOptions>)*V"T
-RMicrosoft.Extensions.DependencyInjection.AuthenticationServiceCollectionExtensions*I
-G
-services;Microsoft.Extensions.DependencyInjection.IServiceCollection*
-""⁄
-◊
-/
-#D:\git\Achei\backend\Api\Startup.csä ü(@
-%129Microsoft.AspNetCore.Authentication.AuthenticationBuilder"”Microsoft.Extensions.DependencyInjection.JwtBearerExtensions.AddJwtBearer(Microsoft.AspNetCore.Authentication.AuthenticationBuilder, System.Action<Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerOptions>)*@">
-<Microsoft.Extensions.DependencyInjection.JwtBearerExtensions*B
-@
-%119Microsoft.AspNetCore.Authentication.AuthenticationBuilder*
-""å
-â
-/
-#D:\git\Achei\backend\Api\Startup.cs£ ®(B
-%13;Microsoft.Extensions.DependencyInjection.IServiceCollection"ÁMicrosoft.Extensions.DependencyInjection.AuthorizationServiceCollectionExtensions.AddAuthorization(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Action<Microsoft.AspNetCore.Authorization.AuthorizationOptions>)*U"S
-QMicrosoft.Extensions.DependencyInjection.AuthorizationServiceCollectionExtensions*I
-G
-services;Microsoft.Extensions.DependencyInjection.IServiceCollection*
+%5void""System.Exception.Exception(string)*
+
+%4System.Exception*
 ""*
-1*K
-1"F
-/
-#D:\git\Achei\backend\Api\Startup.cs© ©(	
-implicit return:G
-services;Microsoft.Extensions.DependencyInjection.IServiceCollectionB
-Api.Startup
+3*I
+3"D
+-
+#D:\git\Achei\backend\Api\Session.cs$ $(	
+implicit return:
+bancostringB"
+Api.Session

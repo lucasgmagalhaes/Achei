@@ -1,29 +1,29 @@
 
-APersistencia.Services.ItemPerdidoService.BuscarPorIdUsuario(long)J
-@D:\git\Achei\backend\Persistencia\Services\ItemPerdidoService.cs (	"0*—
-0ƒ
-€
-J
-@D:\git\Achei\backend\Persistencia\Services\ItemPerdidoService.cs (B
-%0System.Linq.IQueryable<T>"ÒPersistencia.Services.CrudService<T>.Buscar(System.Linq.Expressions.Expression<System.Func<T, bool>>, System.Func<System.Linq.IQueryable<T>, Microsoft.EntityFrameworkCore.Query.IIncludableQueryable<T, object>>)*,*
-(Persistencia.Services.ItemPerdidoService*
+6Persistencia.Services.TagService.BuscarPorItemId(long)B
+8D:\git\Achei\backend\Persistencia\Services\TagService.cs (	"0*÷
+0ó
+ð
+B
+8D:\git\Achei\backend\Persistencia\Services\TagService.cs (7
+%0System.Linq.IQueryable<T>"ÒPersistencia.Services.CrudService<T>.Buscar(System.Linq.Expressions.Expression<System.Func<T, bool>>, System.Func<System.Linq.IQueryable<T>, Microsoft.EntityFrameworkCore.Query.IIncludableQueryable<T, object>>)*$"
+ Persistencia.Services.TagService*
 ""*
-""‘
-Ž
-J
-@D:\git\Achei\backend\Persistencia\Services\ItemPerdidoService.cs (K(
+""‰
+†
+B
+8D:\git\Achei\backend\Persistencia\Services\TagService.cs (@(
 %1"System.Collections.Generic.List<T>"WSystem.Linq.Enumerable.ToList<TSource>(System.Collections.Generic.IEnumerable<TSource>)*"
 System.Linq.Enumerable*!
 
-%0System.Linq.IQueryable<T>"x
-J
-@D:\git\Achei\backend\Persistencia\Services\ItemPerdidoService.cs (L*
+%0System.Linq.IQueryable<T>"p
+B
+8D:\git\Achei\backend\Persistencia\Services\TagService.cs (A*
 (
-%1"System.Collections.Generic.List<T>*f
-1"a
-J
-@D:\git\Achei\backend\Persistencia\Services\ItemPerdidoService.cs (	
+%1"System.Collections.Generic.List<T>*^
+1"Y
+B
+8D:\git\Achei\backend\Persistencia\Services\TagService.cs (	
 implicit return:
 
-idlongB,*
-(Persistencia.Services.ItemPerdidoService
+idlongB$"
+ Persistencia.Services.TagService
