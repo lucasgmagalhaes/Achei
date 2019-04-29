@@ -65,11 +65,9 @@
 DD  DD$ %M
 3D:\git\Achei\backend\Entidades\Dto\ItemAchadoDto.cs
 
- 
+ 
 
-
-
- ³
+ ³
 -D:\git\Achei\backend\Entidades\Dto\ItemDto.cs
 
  
@@ -97,22 +95,18 @@
   N
 4D:\git\Achei\backend\Entidades\Dto\ItemPerdidoDto.cs
 
- 
+ 
 
-
-
- a
+ a
 /D:\git\Achei\backend\Entidades\Dto\RegiaoDto.cs
 
- 
+ 
 
- 
+ 
 
-		 
+ 
 
-
-
- ^
+ ^
 ,D:\git\Achei\backend\Entidades\Dto\TagDto.cs
 
  
@@ -124,36 +118,36 @@
  ð
 0D:\git\Achei\backend\Entidades\Entidades\Item.cs
 
- 
+ 
+
+		 
 
 
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
- 
+ #
 
- #
+  
 
-  
+ 
 
- 
+ 
 
- 
+ $
 
- $
+ 
 
- 
+ &
+! % 
 
- &
-! % 
-
- P
+ P
 6D:\git\Achei\backend\Entidades\Entidades\ItemAchado.cs
 
  

@@ -9,13 +9,13 @@
 <D:\git\Achei\backend\Api\Controllers\ItemAchadoController.cs (08@HR 0=0;5=1;10=0;20=0;30=0;60=0;90=0Z1=7;2=0;4=0;6=0;8=0;10=0;12=0j'()*+rg
  !"#$%,-./012345678:;<=>?@ABCDEFHIJKLMNOPQRSTVWXYZ[\]^_`abcefghijklmnopqrstxÇ#126?@DMNR[\]ajklpù
 =D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.cs (08@HR 0=0;5=1;10=0;20=0;30=0;60=0;90=0Z1=7;2=0;4=0;6=0;8=0;10=0;12=0j()*+,rh
- !"#$%&-./0123456789;<=>?@ABCDEFGIJKLMNOPQRSTUVXYZ[\]^_`abcdeghijklmnopqrstuxÇ $237@AENOPT]^_clmq¿
-8D:\git\Achei\backend\Api\Controllers\RegiaoController.cs (08@HR 0=1;5=0;10=0;20=0;30=0;60=0;90=0Z1=2;2=0;4=0;6=0;8=0;10=0;12=0r(	
- !"#$%&'()*+xÇ!"#'ü
+ !"#$%&-./0123456789;<=>?@ABCDEFGIJKLMNOPQRSTUVXYZ[\]^_`abcdeghijklmnopqrstuxÇ $237@AENOPT]^_clmqª
+8D:\git\Achei\backend\Api\Controllers\RegiaoController.cs (08@HR 0=1;5=0;10=0;20=0;30=0;60=0;90=0Z1=2;2=0;4=0;6=0;8=0;10=0;12=0r#	
+ !"#$%&xÇ"ü
 8D:\git\Achei\backend\Api\Controllers\StatusController.cs (08@HR 0=1;5=0;10=0;20=0;30=0;60=0;90=0Z1=1;2=0;4=0;6=0;8=0;10=0;12=0r	
-Çº
-5D:\git\Achei\backend\Api\Controllers\TagController.cs (08@HR 0=1;5=0;10=0;20=0;30=0;60=0;90=0Z1=2;2=0;4=0;6=0;8=0;10=0;12=0r'	
- !"#$%&'()xÇ !%ª
+Ç∏
+5D:\git\Achei\backend\Api\Controllers\TagController.cs (08@HR 0=1;5=0;10=0;20=0;30=0;60=0;90=0Z1=2;2=0;4=0;6=0;8=0;10=0;12=0r#	
+ !"#$%xÇ!ª
 9D:\git\Achei\backend\Api\Controllers\UsuarioController.cs (08	@	H	R 0=0;5=1;10=0;20=0;30=0;60=0;90=0Z1=5;2=2;4=0;6=0;8=0;10=0;12=0j12345MNOPQabcderw	
  !"#$%&'()*+,-./6789:;<=?@ABDEFGHIJKRSTUVWXYZ[\]^_fghijklnopqrstuvwxyz|}~ÄÅÇÉÑÖÜáàâäxÇ!"$(-;<?ADEIXY]jkstxÅÇÜç
 #D:\git\Achei\backend\Api\Program.cs (08@HR 0=1;5=0;10=0;20=0;30=0;60=0;90=0Z1=2;2=0;4=0;6=0;8=0;10=0;12=0r	

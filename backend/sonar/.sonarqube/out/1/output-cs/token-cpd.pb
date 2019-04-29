@@ -724,46 +724,32 @@ Interfaces !
 } 
 } ð
 >D:\git\Achei\backend\Persistencia\Interfaces\IRegiaoService.cs
-	namespace 	
-Persistencia
+	namespace 	
+Persistencia
  
-. 
+. 
 
-Interfaces !
-{ 
-public 
+Interfaces !
+{ 
+public 
 
-	interface 
-IRegiaoService #
-:$ %
-ICrudService& 2
-<2 3
-Regiao3 9
->9 :
-{		 
-Regiao
-
- 
-BuscarPorItemId
-
- 
-(
-
- 
-long
-
- #
-id
-
-$ &
-)
-
-& '
-;
-
-' (
-} 
-} ”
+	interface 
+IRegiaoService #
+:$ %
+ICrudService& 2
+<2 3
+Regiao3 9
+>9 :
+{ 
+Regiao 
+BuscarPorItemId 
+( 
+long #
+id$ &
+)& '
+;' (
+} 
+}		 ”
 ;D:\git\Achei\backend\Persistencia\Interfaces\ITagService.cs
 	namespace 	
 Persistencia
@@ -2043,81 +2029,105 @@ ItemAchado 
 }!! ®
 
 ;D:\git\Achei\backend\Persistencia\Services\RegiaoService.cs
-	namespace 	
-Persistencia
+	namespace 	
+Persistencia
  
-. 
-Services 
-{ 
-public		 
+. 
+Services 
+{ 
+public 
 
-class		 
-RegiaoService		 
-:		  
-CrudService		! ,
-<		, -
-Regiao		- 3
->		3 4
-,		4 5
-IRegiaoService		6 D
+class 
+RegiaoService 
+:  
+CrudService! ,
+<, -
+Regiao- 3
+>3 4
+,4 5
+IRegiaoService6 D
+{		 
+public
+
+ 
+RegiaoService
+
+ 
+(
+
+  
+ApplicationDbContext
+
+ 1
+	dbContext
+
+2 ;
+)
+
+; <
+:
+
+= >
+base
+
+? C
+(
+
+C D
+	dbContext
+
+D M
+)
+
+M N
 {
 
- 
-public 
-RegiaoService 
-(  
-ApplicationDbContext 1
-	dbContext2 ;
-); <
-:= >
-base? C
-(C D
-	dbContextD M
-)M N
-{O P
-}Q R
-public 
-Regiao 
-BuscarPorItemId %
-(% &
-long& *
-id+ -
-)- .
-{ 	
-return 
-base 
-. 
-Entity 
-( 
-)  
-.  !
-Where! &
-(& '
-regiao' -
-=>. 0
-regiao1 7
-.7 8
-Item8 <
-.< =
-Any= @
-(@ A
-itemA E
-=>F H
-itemI M
-.M N
-IdN P
-==Q S
-idT V
-)V W
-)W X
-.X Y
-SingleY _
-(_ `
-)` a
-;a b
-} 	
-} 
-} ÷
+O P
+}
+
+Q R
+public 
+Regiao 
+BuscarPorItemId %
+(% &
+long& *
+id+ -
+)- .
+{ 	
+return 
+base 
+. 
+Entity 
+( 
+)  
+.  !
+Where! &
+(& '
+regiao' -
+=>. 0
+regiao1 7
+.7 8
+Item8 <
+.< =
+Any= @
+(@ A
+itemA E
+=>F H
+itemI M
+.M N
+IdN P
+==Q S
+idT V
+)V W
+)W X
+.X Y
+SingleY _
+(_ `
+)` a
+;a b
+} 	
+} 
+} ÷
 8D:\git\Achei\backend\Persistencia\Services\TagService.cs
 	namespace 	
 Persistencia

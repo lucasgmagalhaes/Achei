@@ -1,4 +1,4 @@
-‰
-"Entidades.Configuration.ItemConfigobjectÙ
-fConfigure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<Entidades.Entidades.Item>)âEntidades.Configuration.ItemConfig.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<Entidades.Entidades.Item>)?
-ItemConfig()/Entidades.Configuration.ItemConfig.ItemConfig()
+˘
+%Entidades.Configuration.UsuarioConfigobject˝
+iConfigure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<Entidades.Entidades.Usuario>)èEntidades.Configuration.UsuarioConfig.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<Entidades.Entidades.Usuario>)H
+UsuarioConfig()5Entidades.Configuration.UsuarioConfig.UsuarioConfig()

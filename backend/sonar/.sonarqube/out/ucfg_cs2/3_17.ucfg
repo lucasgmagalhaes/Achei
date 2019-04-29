@@ -1,112 +1,27 @@
 
-eApi.Controllers.ItemPerdidoController.BuscarTagItemPerdido(long, Persistencia.Interfaces.ITagService)G
-=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.csX e(	"5*
-0*	
-1
-2
-3*¿
-2ÖÇ
-G
-=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.cs]! ](?(
-%0"System.Collections.Generic.List<T>"9Persistencia.Interfaces.ITagService.BuscarPorItemId(long)*3
-1
-
-tagService#Persistencia.Interfaces.ITagService*
-""2BuscarPorItemId(long)™
-ß
-G
-=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.cs] ](?*
-tags"System.Collections.Generic.List<T>"__id**
-(
-%0"System.Collections.Generic.List<T>∑
-¥
-G
-=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.cs^$ ^(*
-%1AutoMapper.IMapper"__id*I*G'
-%Api.Controllers.ItemPerdidoController"
-mapperAutoMapper.IMapperâÜ
-G
-=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.cs^$ ^(B(
-%2"System.Collections.Generic.List<T>",AutoMapper.IMapper.Map<TDestination>(object)*
-
-%1AutoMapper.IMapper*,
-*
-tags"System.Collections.Generic.List<T>2Map<TDestination>(object)™
-ß
-G
-=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.cs^ ^(B*
-dtos"System.Collections.Generic.List<T>"__id**
-(
-%2"System.Collections.Generic.List<T>ñì
-G
-=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.cs_ _(-
-%3'Microsoft.AspNetCore.Mvc.OkObjectResult"2Microsoft.AspNetCore.Mvc.ControllerBase.Ok(object)*+)
-'Microsoft.AspNetCore.Mvc.ControllerBase*,
-*
-dtos"System.Collections.Generic.List<T>2
-Ok(object)"z
-G
-=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.cs_ _( /
+&Api.Controllers.StatusController.Get()B
+8D:\git\Achei\backend\Api\Controllers\StatusController.cs	 (	"2*Ë
+0ÎË
+B
+8D:\git\Achei\backend\Api\Controllers\StatusController.cs ()-
+%0'Microsoft.AspNetCore.Mvc.OkObjectResult"2Microsoft.AspNetCore.Mvc.ControllerBase.Ok(object)*+)
+'Microsoft.AspNetCore.Mvc.ControllerBase*
+""2
+Ok(object)"u
+B
+8D:\git\Achei\backend\Api\Controllers\StatusController.cs (*/
 -
-%3'Microsoft.AspNetCore.Mvc.OkObjectResult*
-4*	
-1
-3
-3*§
-1ôñ
-G
-=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.csc c($5
-%4/Microsoft.AspNetCore.Mvc.BadRequestObjectResult":Microsoft.AspNetCore.Mvc.ControllerBase.BadRequest(object)*+)
-'Microsoft.AspNetCore.Mvc.ControllerBase*
-
-eSystem.Exception2BadRequest(object)"Ç
-G
-=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.csc c(%7
-5
-%4/Microsoft.AspNetCore.Mvc.BadRequestObjectResult*c
-3"^
-G
-=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.cse e(	
-implicit return*à
-5ù
-ö
-G
-=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.csY Y(1
-%5"__entrypoint*
-""*3
-1
-
-tagService#Persistencia.Interfaces.ITagServiceﬂ
-‹
-G
-=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.csY< Y(H
-%6"
-__annotate*JH
-FMicrosoft.AspNetCore.Mvc.FromServicesAttribute.FromServicesAttribute()*3
-1
-
-tagService#Persistencia.Interfaces.ITagService€
-ÿ
-G
-=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.csX	 X(
-%7"
-__annotate*FD
-BMicrosoft.AspNetCore.Mvc.HttpGetAttribute.HttpGetAttribute(string)*3
-1
-
-tagService#Persistencia.Interfaces.ITagServiceù
-ö
-G
-=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.csY; Y(`1
-
-tagService#Persistencia.Interfaces.ITagService"__annotation*
-
-%6*
-
-%7*
-0:
-
-idlong:1
-
-tagService#Persistencia.Interfaces.ITagServiceB)'
-%Api.Controllers.ItemPerdidoController
+%0'Microsoft.AspNetCore.Mvc.OkObjectResult*^
+1"Y
+B
+8D:\git\Achei\backend\Api\Controllers\StatusController.cs (	
+implicit return*d
+2Z
+X
+B
+8D:\git\Achei\backend\Api\Controllers\StatusController.cs
+ 
+( 
+%1"__entrypoint*
+0B$"
+ Api.Controllers.StatusController

@@ -1,9 +1,11 @@
-¥
-%Api.Controllers.ItemPerdidoController'Microsoft.AspNetCore.Mvc.ControllerBaseobjectÖ
-VItemPerdidoController(Persistencia.Interfaces.IItemPerdidoService, AutoMapper.IMapper)|Api.Controllers.ItemPerdidoController.ItemPerdidoController(Persistencia.Interfaces.IItemPerdidoService, AutoMapper.IMapper)P
-BuscarPerdido(long)9Api.Controllers.ItemPerdidoController.BuscarPerdido(long)~
-*Atualizar(Entidades.Entidades.ItemPerdido)PApi.Controllers.ItemPerdidoController.Atualizar(Entidades.Entidades.ItemPerdido)D
-Excluir(long)3Api.Controllers.ItemPerdidoController.Excluir(long)´
-EBuscarRegiaoItemPerdido(long, Persistencia.Interfaces.IRegiaoService)kApi.Controllers.ItemPerdidoController.BuscarRegiaoItemPerdido(long, Persistencia.Interfaces.IRegiaoService)¨
-?BuscarTagItemPerdido(long, Persistencia.Interfaces.ITagService)eApi.Controllers.ItemPerdidoController.BuscarTagItemPerdido(long, Persistencia.Interfaces.ITagService)x
-'Salvar(Entidades.Entidades.ItemPerdido)MApi.Controllers.ItemPerdidoController.Salvar(Entidades.Entidades.ItemPerdido)
+Ñ
+Api.Token.TokenConfigurationsobjectL
+TokenConfigurations()3Api.Token.TokenConfigurations.TokenConfigurations():
+Audience.get*Api.Token.TokenConfigurations.Audience.get:
+Audience.set*Api.Token.TokenConfigurations.Audience.set6
+
+Issuer.get(Api.Token.TokenConfigurations.Issuer.get6
+
+Issuer.set(Api.Token.TokenConfigurations.Issuer.set8
+Seconds.get)Api.Token.TokenConfigurations.Seconds.get8
+Seconds.set)Api.Token.TokenConfigurations.Seconds.set

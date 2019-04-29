@@ -1,115 +1,28 @@
 
-3Api.Controllers.ItemPerdidoController.Excluir(long)G
-=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.cs; G(	"5*
-0*	
-1
-2
-3*í
-2ı
-Ú
-G
-=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.cs@ @("1
-%0+Persistencia.Interfaces.IItemPerdidoService"__id*n*l'
-%Api.Controllers.ItemPerdidoController"A
-itemPerdidoService+Persistencia.Interfaces.IItemPerdidoService€ÿ
-G
-=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.cs@ @(.
-
-%1void"5Persistencia.Interfaces.ICrudService<T>.Deletar(long)*3
-1
-%0+Persistencia.Interfaces.IItemPerdidoService*
-""2Deletar(long){y
-G
-=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.csA A(i
-%2Api.RequestResponse"Api.RequestResponseú
-ô
-G
-=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.csA A(-
-
-%3void"%Api.RequestResponse.RequestResponse()*
-
-%2Api.RequestResponseä
-á
-G
-=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.csA2 A(W.
-
-%2Api.RequestResponse"
-messagestring"__id*
-""â
-Ü
-G
-=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.csAY A(g-
-
-%2Api.RequestResponse"
-statusstring"__id*
-""ÖÇ
-G
-=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.csA A(j-
-%4'Microsoft.AspNetCore.Mvc.OkObjectResult"2Microsoft.AspNetCore.Mvc.ControllerBase.Ok(object)*+)
-'Microsoft.AspNetCore.Mvc.ControllerBase*
-
-%2Api.RequestResponse2
-Ok(object)"z
-G
-=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.csA A(k/
+*Api.Program.CreateWebHostBuilder(string[])-
+#D:\git\Achei\backend\Api\Program.cs (	"0*ö
+0Ÿ
+÷
 -
-%4'Microsoft.AspNetCore.Mvc.OkObjectResult*
-4*	
-1
-3
-3*á	
-1{y
-G
-=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.csE" E(`
-%5Api.RequestResponse"Api.RequestResponseú
-ô
-G
-=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.csE& E(5
-
-%6void"%Api.RequestResponse.RequestResponse()*
-
-%5Api.RequestResponseüú
-G
-=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.csED E(N
-%7string"System.Exception.Message.get*
-
-exSystem.Exception2Message.getí
-è
-G
-=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.csE: E(N.
-
-%5Api.RequestResponse"
-messagestring"__id*
-
-%7stringâ
-Ü
-G
-=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.csEP E(^-
-
-%5Api.RequestResponse"
-statusstring"__id*
-""ùö
-G
-=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.csE E(a5
-%8/Microsoft.AspNetCore.Mvc.BadRequestObjectResult":Microsoft.AspNetCore.Mvc.ControllerBase.BadRequest(object)*+)
-'Microsoft.AspNetCore.Mvc.ControllerBase*
-
-%5Api.RequestResponse2BadRequest(object)"Ç
-G
-=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.csE E(b7
-5
-%8/Microsoft.AspNetCore.Mvc.BadRequestObjectResult*c
-3"^
-G
-=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.csG G(	
-implicit return*q
-5g
-e
-G
-=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.cs< <($
-%9"__entrypoint*
-""*
-0:
-
-idlongB)'
-%Api.Controllers.ItemPerdidoController
+#D:\git\Achei\backend\Api\Program.cs (52
+%0,Microsoft.AspNetCore.Hosting.IWebHostBuilder";Microsoft.AspNetCore.WebHost.CreateDefaultBuilder(string[])* "
+Microsoft.AspNetCore.WebHost*
+
+argsstring[]—
+Œ
+-
+#D:\git\Achei\backend\Api\Program.cs (K2
+%1,Microsoft.AspNetCore.Hosting.IWebHostBuilder"xMicrosoft.AspNetCore.Hosting.WebHostBuilderExtensions.UseStartup<TStartup>(Microsoft.AspNetCore.Hosting.IWebHostBuilder)*9"7
+5Microsoft.AspNetCore.Hosting.WebHostBuilderExtensions*4
+2
+%0,Microsoft.AspNetCore.Hosting.IWebHostBuilder"e
+-
+#D:\git\Achei\backend\Api\Program.cs (L4
+2
+%1,Microsoft.AspNetCore.Hosting.IWebHostBuilder*I
+1"D
+-
+#D:\git\Achei\backend\Api\Program.cs (	
+implicit return:
+argsstring[]B"
+Api.Program

@@ -1,31 +1,26 @@
 
-2Persistencia.Services.CrudService<T>.BuscarAsync()C
-9D:\git\Achei\backend\Persistencia\Services\CrudService.csm p(	"0*Ä
+6Persistencia.Services.CrudService<T>.BuscarAsync(long)C
+9D:\git\Achei\backend\Persistencia\Services\CrudService.csr u(	"0*Ö
 0ß
 Ü
 C
-9D:\git\Achei\backend\Persistencia\Services\CrudService.cso o("-
+9D:\git\Achei\backend\Persistencia\Services\CrudService.cst t("-
 %0'Microsoft.EntityFrameworkCore.DbContext"__id*`*^&
 $Persistencia.Services.CrudService<T>"4
-	dbService'Microsoft.EntityFrameworkCore.DbContextõò
+	dbService'Microsoft.EntityFrameworkCore.DbContextŸœ
 C
-9D:\git\Achei\backend\Persistencia\Services\CrudService.cso o(+2
-%1,Microsoft.EntityFrameworkCore.DbSet<TEntity>"6Microsoft.EntityFrameworkCore.DbContext.Set<TEntity>()*/
+9D:\git\Achei\backend\Persistencia\Services\CrudService.cst t(3*
+%1$System.Threading.Tasks.Task<TResult>"KMicrosoft.EntityFrameworkCore.DbContext.FindAsync<TEntity>(params object[])*/
 -
-%0'Microsoft.EntityFrameworkCore.DbContext2Set<TEntity>()•
-’
+%0'Microsoft.EntityFrameworkCore.DbContext*
+""2#FindAsync<TEntity>(params object[])"M
 C
-9D:\git\Achei\backend\Persistencia\Services\CrudService.cso o(9*
-%2$System.Threading.Tasks.Task<TResult>"šMicrosoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync<TSource>(System.Linq.IQueryable<TSource>, System.Threading.CancellationToken)*D"B
-@Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions*4
-2
-%1,Microsoft.EntityFrameworkCore.DbSet<TEntity>*
-"""M
-C
-9D:\git\Achei\backend\Persistencia\Services\CrudService.cso o(:
+9D:\git\Achei\backend\Persistencia\Services\CrudService.cst t(4
 ""*_
 1"Z
 C
-9D:\git\Achei\backend\Persistencia\Services\CrudService.csp p(	
-implicit returnB(&
+9D:\git\Achei\backend\Persistencia\Services\CrudService.csu u(	
+implicit return:
+
+idlongB(&
 $Persistencia.Services.CrudService<T>

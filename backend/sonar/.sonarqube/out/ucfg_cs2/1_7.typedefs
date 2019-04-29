@@ -1,4 +1,4 @@
-Í
- Persistencia.Services.TagService$Persistencia.Services.CrudService<T>object©
-BTagService(Persistencia.Contexts.Application.ApplicationDbContext)cPersistencia.Services.TagService.TagService(Persistencia.Contexts.Application.ApplicationDbContext)O
-BuscarPorItemId(long)6Persistencia.Services.TagService.BuscarPorItemId(long)
+ö
+'Persistencia.Services.ItemAchadoService$Persistencia.Services.CrudService<T>object¾
+IItemAchadoService(Persistencia.Contexts.Application.ApplicationDbContext)qPersistencia.Services.ItemAchadoService.ItemAchadoService(Persistencia.Contexts.Application.ApplicationDbContext)\
+BuscarPorIdUsuario(long)@Persistencia.Services.ItemAchadoService.BuscarPorIdUsuario(long)

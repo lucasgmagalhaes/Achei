@@ -1,28 +1,43 @@
 
-<Persistencia.Services.ItemPerdidoService.BuscarComTags(long)J
-@D:\git\Achei\backend\Persistencia\Services\ItemPerdidoService.cs (	"0*ˆ
-0ƒ
-€
+DPersistencia.Services.ItemPerdidoService.BuscarComEagerLoading(long)J
+@D:\git\Achei\backend\Persistencia\Services\ItemPerdidoService.cs (	"0*Ö
+0à
+Ý
 J
-@D:\git\Achei\backend\Persistencia\Services\ItemPerdidoService.cs (n
-%0System.Linq.IQueryable<T>"ÒPersistencia.Services.CrudService<T>.Buscar(System.Linq.Expressions.Expression<System.Func<T, bool>>, System.Func<System.Linq.IQueryable<T>, Microsoft.EntityFrameworkCore.Query.IIncludableQueryable<T, object>>)*,*
-(Persistencia.Services.ItemPerdidoService*
-""*
-""…
-‚
+@D:\git\Achei\backend\Persistencia\Services\ItemPerdidoService.cs ( 2
+%0,Microsoft.EntityFrameworkCore.DbSet<TEntity>"-Persistencia.Services.CrudService<T>.Entity()*,*
+(Persistencia.Services.ItemPerdidoServiceì
+é
 J
-@D:\git\Achei\backend\Persistencia\Services\ItemPerdidoService.cs ("%
-%1Entidades.Entidades.ItemPerdido"OSystem.Linq.Queryable.SingleOrDefault<TSource>(System.Linq.IQueryable<TSource>)*"
-System.Linq.Queryable*!
-
-%0System.Linq.IQueryable<T>"u
+@D:\git\Achei\backend\Persistencia\Services\ItemPerdidoService.cs (-R
+%1LMicrosoft.EntityFrameworkCore.Query.IIncludableQueryable<TEntity, TProperty>"ÂMicrosoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.Include<TEntity, TProperty>(System.Linq.IQueryable<TEntity>, System.Linq.Expressions.Expression<System.Func<TEntity, TProperty>>)*D"B
+@Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions*4
+2
+%0,Microsoft.EntityFrameworkCore.DbSet<TEntity>*
+""Œ
+‰
 J
-@D:\git\Achei\backend\Persistencia\Services\ItemPerdidoService.cs (#'
+@D:\git\Achei\backend\Persistencia\Services\ItemPerdidoService.cs (+R
+%2LMicrosoft.EntityFrameworkCore.Query.IIncludableQueryable<TEntity, TProperty>"ÂMicrosoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.Include<TEntity, TProperty>(System.Linq.IQueryable<TEntity>, System.Linq.Expressions.Expression<System.Func<TEntity, TProperty>>)*D"B
+@Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions*T
+R
+%1LMicrosoft.EntityFrameworkCore.Query.IIncludableQueryable<TEntity, TProperty>*
+""ø
+õ
+J
+@D:\git\Achei\backend\Persistencia\Services\ItemPerdidoService.cs (.%
+%3Entidades.Entidades.ItemPerdido"†System.Linq.Queryable.Single<TSource>(System.Linq.IQueryable<TSource>, System.Linq.Expressions.Expression<System.Func<TSource, bool>>)*"
+System.Linq.Queryable*T
+R
+%2LMicrosoft.EntityFrameworkCore.Query.IIncludableQueryable<TEntity, TProperty>*
+"""u
+J
+@D:\git\Achei\backend\Persistencia\Services\ItemPerdidoService.cs (/'
 %
-%1Entidades.Entidades.ItemPerdido*f
+%3Entidades.Entidades.ItemPerdido*f
 1"a
 J
-@D:\git\Achei\backend\Persistencia\Services\ItemPerdidoService.cs (	
+@D:\git\Achei\backend\Persistencia\Services\ItemPerdidoService.cs (	
 implicit return:
 
 idlongB,*

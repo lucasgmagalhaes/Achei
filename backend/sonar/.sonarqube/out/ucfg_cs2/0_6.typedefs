@@ -1,13 +1,4 @@
-’
-Entidades.Tagobject
-Tag()Entidades.Tag.Tag()
-Id.getEntidades.Tag.Id.get
-Id.setEntidades.Tag.Id.set"
-Nome.getEntidades.Tag.Nome.get"
-Nome.setEntidades.Tag.Nome.set&
-
-ItemId.getEntidades.Tag.ItemId.get&
-
-ItemId.setEntidades.Tag.ItemId.set"
-Item.getEntidades.Tag.Item.get"
-Item.setEntidades.Tag.Item.set
+Ú
+$Entidades.Configuration.RegiaoConfigobject˙
+hConfigure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<Entidades.Entidades.Regiao>)çEntidades.Configuration.RegiaoConfig.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<Entidades.Entidades.Regiao>)E
+RegiaoConfig()3Entidades.Configuration.RegiaoConfig.RegiaoConfig()

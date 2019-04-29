@@ -141,15 +141,11 @@ CD:\git\Achei\backend\Persistencia\Interfaces\IItemPerdidoService.cs
 / 1d
 >D:\git\Achei\backend\Persistencia\Interfaces\IRegiaoService.cs
 
- #
+ #
 
-
-
- 
+ 
 
-
-
-$ &a
+$ &a
 ;D:\git\Achei\backend\Persistencia\Interfaces\ITagService.cs
 
   
@@ -305,15 +301,21 @@ AD:\git\Achei\backend\Persistencia\Services\AutenticacaoService.cs
    $¹
 ;D:\git\Achei\backend\Persistencia\Services\RegiaoService.cs
 
-		 
+ 
 
- 
-2 ;D M
+
+
+ 
+
+
+2 ;
+
+D M
 
- %
-+ -T V
-' -1 7
-A EI M 
+ %
++ -T V
+' -1 7
+A EI M 
 8D:\git\Achei\backend\Persistencia\Services\TagService.cs
 
 		 

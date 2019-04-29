@@ -1,19 +1,19 @@
 
-³Persistencia.Contexts.Application.ApplicationDbContext.ApplicationDbContext(Microsoft.EntityFrameworkCore.DbContextOptions<Persistencia.Contexts.Application.ApplicationDbContext>)X
-ND:\git\Achei\backend\Persistencia\Contexts\Application\ApplicationDbContext.cs	 	(g"0*Ë
-0À
-½
-X
-ND:\git\Achei\backend\Persistencia\Contexts\Application\ApplicationDbContext.cs	T 	(c
+cPersistencia.Services.TagService.TagService(Persistencia.Contexts.Application.ApplicationDbContext)B
+8D:\git\Achei\backend\Persistencia\Services\TagService.cs (O"0*ª
+0Ÿ
+œ
+B
+8D:\git\Achei\backend\Persistencia\Services\TagService.cs: (K
 
-%0void"aMicrosoft.EntityFrameworkCore.DbContext.DbContext(Microsoft.EntityFrameworkCore.DbContextOptions)*+)
-'Microsoft.EntityFrameworkCore.DbContext*E
+%0void"YPersistencia.Services.CrudService<T>.CrudService(Microsoft.EntityFrameworkCore.DbContext)*(&
+$Persistencia.Services.CrudService<T>*E
 C
-options8Microsoft.EntityFrameworkCore.DbContextOptions<TContext>*
-1*t
-1"o
-X
-ND:\git\Achei\backend\Persistencia\Contexts\Application\ApplicationDbContext.cs	f 	(g
+	dbContext6Persistencia.Contexts.Application.ApplicationDbContext*
+1*^
+1"Y
+B
+8D:\git\Achei\backend\Persistencia\Services\TagService.csN (O
 implicit return:C
-options8Microsoft.EntityFrameworkCore.DbContextOptions<TContext>B:8
-6Persistencia.Contexts.Application.ApplicationDbContext
+	dbContext6Persistencia.Contexts.Application.ApplicationDbContextB$"
+ Persistencia.Services.TagService

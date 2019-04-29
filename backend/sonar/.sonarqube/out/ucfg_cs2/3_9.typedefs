@@ -1,4 +1,4 @@
-Ô
- Api.Controllers.RegiaoController'Microsoft.AspNetCore.Mvc.ControllerBaseobject½
-LRegiaoController(Persistencia.Interfaces.IRegiaoService, AutoMapper.IMapper)mApi.Controllers.RegiaoController.RegiaoController(Persistencia.Interfaces.IRegiaoService, AutoMapper.IMapper)?
-GetById(long).Api.Controllers.RegiaoController.GetById(long)
+½
+Api.Controllers.TagController'Microsoft.AspNetCore.Mvc.ControllerBaseobject®
+FTagController(Persistencia.Interfaces.ITagService, AutoMapper.IMapper)dApi.Controllers.TagController.TagController(Persistencia.Interfaces.ITagService, AutoMapper.IMapper):
+GetTag(long)*Api.Controllers.TagController.GetTag(long)

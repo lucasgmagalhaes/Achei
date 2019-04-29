@@ -1,4 +1,4 @@
-ö
-'Persistencia.Services.ItemAchadoService$Persistencia.Services.CrudService<T>object¾
-IItemAchadoService(Persistencia.Contexts.Application.ApplicationDbContext)qPersistencia.Services.ItemAchadoService.ItemAchadoService(Persistencia.Contexts.Application.ApplicationDbContext)\
-BuscarPorIdUsuario(long)@Persistencia.Services.ItemAchadoService.BuscarPorIdUsuario(long)
+’
+)Persistencia.Services.AutenticacaoService$Persistencia.Services.CrudService<T>objectÄ
+KAutenticacaoService(Persistencia.Contexts.Application.ApplicationDbContext)uPersistencia.Services.AutenticacaoService.AutenticacaoService(Persistencia.Contexts.Application.ApplicationDbContext)p
+!AutenticarUsuario(string, string)KPersistencia.Services.AutenticacaoService.AutenticarUsuario(string, string)

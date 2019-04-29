@@ -7,6 +7,8 @@
 
 # dependencies
 /node_modules
+/.scannerwork/css-bundle/node_modules
+/.scannerwork/sonarts-bundle/node_modules
 
 # profiling files
 chrome-profiler-events.json

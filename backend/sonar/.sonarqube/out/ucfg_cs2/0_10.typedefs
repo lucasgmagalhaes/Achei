@@ -1,4 +1,13 @@
-ù
-%Entidades.Configuration.UsuarioConfigobjectı
-iConfigure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<Entidades.Entidades.Usuario>)Entidades.Configuration.UsuarioConfig.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<Entidades.Entidades.Usuario>)H
-UsuarioConfig()5Entidades.Configuration.UsuarioConfig.UsuarioConfig()
+Õ
+Entidades.Tagobject
+Tag()Entidades.Tag.Tag()
+Id.getEntidades.Tag.Id.get
+Id.setEntidades.Tag.Id.set"
+Nome.getEntidades.Tag.Nome.get"
+Nome.setEntidades.Tag.Nome.set&
+
+ItemId.getEntidades.Tag.ItemId.get&
+
+ItemId.setEntidades.Tag.ItemId.set"
+Item.getEntidades.Tag.Item.get"
+Item.setEntidades.Tag.Item.set

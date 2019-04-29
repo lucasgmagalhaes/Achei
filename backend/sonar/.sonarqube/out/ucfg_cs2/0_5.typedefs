@@ -1,11 +1,4 @@
-Ë
-Entidades.Dto.TagDtoobject)
-TagDto()Entidades.Dto.TagDto.TagDto()%
-Id.getEntidades.Dto.TagDto.Id.get%
-Id.setEntidades.Dto.TagDto.Id.set)
-Nome.getEntidades.Dto.TagDto.Nome.get)
-Nome.setEntidades.Dto.TagDto.Nome.set-
-
-ItemId.getEntidades.Dto.TagDto.ItemId.get-
-
-ItemId.setEntidades.Dto.TagDto.ItemId.set
+ä
+"Entidades.Configuration.ItemConfigobjectô
+fConfigure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<Entidades.Entidades.Item>)‰Entidades.Configuration.ItemConfig.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<Entidades.Entidades.Item>)?
+ItemConfig()/Entidades.Configuration.ItemConfig.ItemConfig()

@@ -1,103 +1,55 @@
 
-2Api.Session.AdicionarSessaoUsuario(string, string)-
-#D:\git\Achei\backend\Api\Session.cs& 5(	"0*á
-0z
-x
--
-#D:\git\Achei\backend\Api\Session.cs( ((+
-
-%0bool"string.IsNullOrEmpty(string)*
-"
-string*
-
-emailstring*
-1
-2*á
-2z
-x
--
-#D:\git\Achei\backend\Api\Session.cs(/ ((J
-
-%1bool"string.IsNullOrEmpty(string)*
-"
-string*
-
-bancostring*
-1
-3*á
-1z
-x
--
-#D:\git\Achei\backend\Api\Session.cs* *(/
-
-%2bool"string.IsNullOrEmpty(string)*
-"
-string*
-
-emailstring*
-4
-5*Ï
-4[Y
--
-#D:\git\Achei\backend\Api\Session.cs, ,(R
-%3System.Exception"System.ExceptionÑ
-Å
--
-#D:\git\Achei\backend\Api\Session.cs, ,('
-
-%4void""System.Exception.Exception(string)*
-
-%3System.Exception*
-""*
-6*á
-5z
-x
--
-#D:\git\Achei\backend\Api\Session.cs/ /(/
-
-%5bool"string.IsNullOrEmpty(string)*
-"
-string*
-
-bancostring*
-7
-3*Ï
-7[Y
--
-#D:\git\Achei\backend\Api\Session.cs1 1(R
-%6System.Exception"System.ExceptionÑ
-Å
--
-#D:\git\Achei\backend\Api\Session.cs1 1('
-
-%7void""System.Exception.Exception(string)*
-
-%6System.Exception*
-""*
-6*Ω
-3«
+#Api.Session.FinalizarSessao(string)-
+#D:\git\Achei\backend\Api\Session.csH O(	"0*®
+0«
 ƒ
 -
-#D:\git\Achei\backend\Api\Session.cs4 4(9
-%83System.Collections.Generic.Dictionary<TKey, TValue>"__id*R*P
+#D:\git\Achei\backend\Api\Session.csJ J(9
+%03System.Collections.Generic.Dictionary<TKey, TValue>"__id*R*P
 Api.Session"?
-usuarios3System.Collections.Generic.Dictionary<TKey, TValue>Ë
-Â
+usuarios3System.Collections.Generic.Dictionary<TKey, TValue>–
+Õ
 -
-#D:\git\Achei\backend\Api\Session.cs4 4(&
+#D:\git\Achei\backend\Api\Session.csJ J('
 
-%9void"ESystem.Collections.Generic.Dictionary<TKey, TValue>.Add(TKey, TValue)*;
+%1bool"@System.Collections.Generic.Dictionary<TKey, TValue>.Remove(TKey)*;
 9
-%83System.Collections.Generic.Dictionary<TKey, TValue>*
+%03System.Collections.Generic.Dictionary<TKey, TValue>*
 
-emailstring*
-
-bancostring*
-6*I
-6"D
+tokenstring*
+1
+2*Ω
+1d
+b
 -
-#D:\git\Achei\backend\Api\Session.cs5 5(	
+#D:\git\Achei\backend\Api\Session.csL$ L(S
+%2string"__concat*
+""*
+
+tokenstringa
+_
+-
+#D:\git\Achei\backend\Api\Session.csL$ M(9
+%3string"__concat*
+
+%2string*
+""[Y
+-
+#D:\git\Achei\backend\Api\Session.csL M(:
+%4System.Exception"System.Exceptionå
+â
+-
+#D:\git\Achei\backend\Api\Session.csL L(#
+
+%5void""System.Exception.Exception(string)*
+
+%4System.Exception*
+
+%3string*
+2*I
+2"D
+-
+#D:\git\Achei\backend\Api\Session.csO O(	
 implicit return:
-emailstring:
-bancostringB"
+tokenstringB"
 Api.Session

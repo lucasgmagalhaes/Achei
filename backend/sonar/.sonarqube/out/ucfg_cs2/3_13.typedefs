@@ -1,9 +1,9 @@
-Ø
-!Api.Controllers.UsuarioController'Microsoft.AspNetCore.Mvc.ControllerBaseobjectö
-:UsuarioController(Persistencia.Interfaces.IUsuarioService)\Api.Controllers.UsuarioController.UsuarioController(Persistencia.Interfaces.IUsuarioService)8
-	Get(long)+Api.Controllers.UsuarioController.Get(long)h
-!Post(Entidades.Entidades.Usuario)CApi.Controllers.UsuarioController.Post(Entidades.Entidades.Usuario)r
-&Atualizar(Entidades.Entidades.Usuario)HApi.Controllers.UsuarioController.Atualizar(Entidades.Entidades.Usuario)>
-Delete(long).Api.Controllers.UsuarioController.Delete(long)Æ
-DBuscarItensAchados(long, Persistencia.Interfaces.IItemAchadoService)fApi.Controllers.UsuarioController.BuscarItensAchados(long, Persistencia.Interfaces.IItemAchadoService)≤
-FBuscarItensPerdidos(long, Persistencia.Interfaces.IItemPerdidoService)hApi.Controllers.UsuarioController.BuscarItensPerdidos(long, Persistencia.Interfaces.IItemPerdidoService)
+Ó
+Api.StartupobjectÑ
+:Startup(Microsoft.Extensions.Configuration.IConfiguration)FApi.Startup.Startup(Microsoft.Extensions.Configuration.IConfiguration)¨
+NConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)ZApi.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)Í
+mConfigure(Microsoft.AspNetCore.Builder.IApplicationBuilder, Microsoft.AspNetCore.Hosting.IHostingEnvironment)yApi.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder, Microsoft.AspNetCore.Hosting.IHostingEnvironment)ê
+@UpdateDatabase(Microsoft.AspNetCore.Builder.IApplicationBuilder)LApi.Startup.UpdateDatabase(Microsoft.AspNetCore.Builder.IApplicationBuilder)∏
+TConfigureAuthentication(Microsoft.Extensions.DependencyInjection.IServiceCollection)`Api.Startup.ConfigureAuthentication(Microsoft.Extensions.DependencyInjection.IServiceCollection)2
+Configuration.getApi.Startup.Configuration.get2
+Configuration.setApi.Startup.Configuration.set

@@ -1,75 +1,57 @@
 
-“Persistencia.Services.CrudService<T>.Buscar(System.Linq.Expressions.Expression<System.Func<T, bool>>, System.Func<System.Linq.IQueryable<T>, Microsoft.EntityFrameworkCore.Query.IIncludableQueryable<T, object>>)C
-9D:\git\Achei\backend\Persistencia\Services\CrudService.cs( 3(	"0*˜
-0ﬂ
+2Persistencia.Services.CrudService<T>.Deletar(long)C
+9D:\git\Achei\backend\Persistencia\Services\CrudService.cs@ G(	"0*‰
+0SQ
+C
+9D:\git\Achei\backend\Persistencia\Services\CrudService.csB" B(-
+%0T"TÅ
+
+C
+9D:\git\Achei\backend\Persistencia\Services\CrudService.csB B(-#
+objEntidades.Interfaces.IEntity"__id*
+	{unknown}ﬂ
 ‹
 C
-9D:\git\Achei\backend\Persistencia\Services\CrudService.cs+# +(,-
-%0'Microsoft.EntityFrameworkCore.DbContext"__id*`*^&
+9D:\git\Achei\backend\Persistencia\Services\CrudService.csD D(-
+%1'Microsoft.EntityFrameworkCore.DbContext"__id*`*^&
 $Persistencia.Services.CrudService<T>"4
-	dbService'Microsoft.EntityFrameworkCore.DbContextıÚ
+	dbService'Microsoft.EntityFrameworkCore.DbContext≈¬
 C
-9D:\git\Achei\backend\Persistencia\Services\CrudService.cs+# +(52
-%1,Microsoft.EntityFrameworkCore.DbSet<TEntity>"6Microsoft.EntityFrameworkCore.DbContext.Set<TEntity>()*/
+9D:\git\Achei\backend\Persistencia\Services\CrudService.csD D(!G
+%2AMicrosoft.EntityFrameworkCore.ChangeTracking.EntityEntry<TEntity>"@Microsoft.EntityFrameworkCore.DbContext.Attach<TEntity>(TEntity)*/
 -
-%0'Microsoft.EntityFrameworkCore.DbContext2Set<TEntity>()Ä
-˝
+%1'Microsoft.EntityFrameworkCore.DbContext*%
+#
+objEntidades.Interfaces.IEntity2Attach<TEntity>(TEntity)ﬂ
+‹
 C
-9D:\git\Achei\backend\Persistencia\Services\CrudService.cs+# +(F
-%2System.Linq.IQueryable<T>"ÖSystem.Linq.Queryable.Where<TSource>(System.Linq.IQueryable<TSource>, System.Linq.Expressions.Expression<System.Func<TSource, bool>>)*"
-System.Linq.Queryable*4
-2
-%1,Microsoft.EntityFrameworkCore.DbSet<TEntity>*<
-:
-	predicate-System.Linq.Expressions.Expression<TDelegate>ñ
-ì
+9D:\git\Achei\backend\Persistencia\Services\CrudService.csE E(-
+%3'Microsoft.EntityFrameworkCore.DbContext"__id*`*^&
+$Persistencia.Services.CrudService<T>"4
+	dbService'Microsoft.EntityFrameworkCore.DbContext≈¬
 C
-9D:\git\Achei\backend\Persistencia\Services\CrudService.cs+ +(F#
-resultSystem.Linq.IQueryable<T>"__id*!
-
-%2System.Linq.IQueryable<T>Û
-
+9D:\git\Achei\backend\Persistencia\Services\CrudService.csE E(!G
+%4AMicrosoft.EntityFrameworkCore.ChangeTracking.EntityEntry<TEntity>"@Microsoft.EntityFrameworkCore.DbContext.Remove<TEntity>(TEntity)*/
+-
+%3'Microsoft.EntityFrameworkCore.DbContext*%
+#
+objEntidades.Interfaces.IEntity2Remove<TEntity>(TEntity)ﬂ
+‹
 C
-9D:\git\Achei\backend\Persistencia\Services\CrudService.cs- -(
+9D:\git\Achei\backend\Persistencia\Services\CrudService.csF F(-
+%5'Microsoft.EntityFrameworkCore.DbContext"__id*`*^&
+$Persistencia.Services.CrudService<T>"4
+	dbService'Microsoft.EntityFrameworkCore.DbContext «
+C
+9D:\git\Achei\backend\Persistencia\Services\CrudService.csF F(#	
+%6int"5Microsoft.EntityFrameworkCore.DbContext.SaveChanges()*/
+-
+%5'Microsoft.EntityFrameworkCore.DbContext2SaveChanges()*
+1*_
+1"Z
+C
+9D:\git\Achei\backend\Persistencia\Services\CrudService.csG G(	
+implicit return:
 
-%3bool"—System.Func<System.Linq.IQueryable<T>, Microsoft.EntityFrameworkCore.Query.IIncludableQueryable<T, object>>.operator !=(System.Func<System.Linq.IQueryable<T>, Microsoft.EntityFrameworkCore.Query.IIncludableQueryable<T, object>>, System.Func<System.Linq.IQueryable<T>, Microsoft.EntityFrameworkCore.Query.IIncludableQueryable<T, object>>)*"
-System.Func<T, TResult>*$
-"
-includeSystem.Func<T, TResult>*
-""*
-1
-2*⁄
-1É
-Ä
-C
-9D:\git\Achei\backend\Persistencia\Services\CrudService.cs/ /((R
-%4LMicrosoft.EntityFrameworkCore.Query.IIncludableQueryable<TEntity, TProperty>"!System.Func<T, TResult>.Invoke(T)*
-System.Func<T, TResult>*%
-#
-resultSystem.Linq.IQueryable<T>…
-∆
-C
-9D:\git\Achei\backend\Persistencia\Services\CrudService.cs/ /((#
-resultSystem.Linq.IQueryable<T>"__id*T
-R
-%4LMicrosoft.EntityFrameworkCore.Query.IIncludableQueryable<TEntity, TProperty>*
-2*˙
-2ä
-á
-C
-9D:\git\Achei\backend\Persistencia\Services\CrudService.cs2 2('
-%5System.Linq.IQueryable<T>"]System.Linq.Queryable.AsQueryable<TElement>(System.Collections.Generic.IEnumerable<TElement>)*"
-System.Linq.Queryable*%
-#
-resultSystem.Linq.IQueryable<T>"h
-C
-9D:\git\Achei\backend\Persistencia\Services\CrudService.cs2 2((!
-
-%5System.Linq.IQueryable<T>*_
-3"Z
-C
-9D:\git\Achei\backend\Persistencia\Services\CrudService.cs3 3(	
-implicit return::
-	predicate-System.Linq.Expressions.Expression<TDelegate>:"
-includeSystem.Func<T, TResult>B(&
+idlongB(&
 $Persistencia.Services.CrudService<T>
