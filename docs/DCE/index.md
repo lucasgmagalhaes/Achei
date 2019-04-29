@@ -1,1 +1,0 @@
-- [Diagrama de Classe MVC](https://docs.google.com/document/d/1ZUSzTlPLYgsEnEvXeh9WudoOS0GynfZf5T7Yxa8aiAw/edit?usp=sharing)
