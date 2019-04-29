@@ -2,8 +2,12 @@ C
 :D:\git\Achei\backend\Entidades\Configuration\ItemConfig.csutf-8E
 <D:\git\Achei\backend\Entidades\Configuration\RegiaoConfig.csutf-8B
 9D:\git\Achei\backend\Entidades\Configuration\TagConfig.csutf-8F
-=D:\git\Achei\backend\Entidades\Configuration\UsuarioConfig.csutf-86
--D:\git\Achei\backend\Entidades\Dto\ItemDto.csutf-89
+=D:\git\Achei\backend\Entidades\Configuration\UsuarioConfig.csutf-8<
+3D:\git\Achei\backend\Entidades\Dto\ItemAchadoDto.csutf-86
+-D:\git\Achei\backend\Entidades\Dto\ItemDto.csutf-8=
+4D:\git\Achei\backend\Entidades\Dto\ItemPerdidoDto.csutf-88
+/D:\git\Achei\backend\Entidades\Dto\RegiaoDto.csutf-85
+,D:\git\Achei\backend\Entidades\Dto\TagDto.csutf-89
 0D:\git\Achei\backend\Entidades\Entidades\Item.csutf-8?
 6D:\git\Achei\backend\Entidades\Entidades\ItemAchado.csutf-8@
 7D:\git\Achei\backend\Entidades\Entidades\ItemPerdido.csutf-8;

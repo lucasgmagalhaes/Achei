@@ -1,5 +1,9 @@
-‡
-Entidades.Entidades.ItemPerdidoEntidades.Entidades.Itemobject>
-ItemPerdido()-Entidades.Entidades.ItemPerdido.ItemPerdido()@
-Recuperado.get.Entidades.Entidades.ItemPerdido.Recuperado.get@
-Recuperado.set.Entidades.Entidades.ItemPerdido.Recuperado.set
+…
+Entidades.Dto.RegiaoDtoobject2
+RegiaoDto()#Entidades.Dto.RegiaoDto.RegiaoDto()(
+Id.getEntidades.Dto.RegiaoDto.Id.get(
+Id.setEntidades.Dto.RegiaoDto.Id.set6
+Longitude.get%Entidades.Dto.RegiaoDto.Longitude.get6
+Longitude.set%Entidades.Dto.RegiaoDto.Longitude.set4
+Latitude.get$Entidades.Dto.RegiaoDto.Latitude.get4
+Latitude.set$Entidades.Dto.RegiaoDto.Latitude.set

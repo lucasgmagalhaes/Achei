@@ -1,11 +1,13 @@
-ù
-Entidades.Entidades.Regiaoobject/
-Regiao()#Entidades.Entidades.Regiao.Regiao()+
-Id.get!Entidades.Entidades.Regiao.Id.get+
-Id.set!Entidades.Entidades.Regiao.Id.set9
-Longitude.get(Entidades.Entidades.Regiao.Longitude.get9
-Longitude.set(Entidades.Entidades.Regiao.Longitude.set7
-Latitude.get'Entidades.Entidades.Regiao.Latitude.get7
-Latitude.set'Entidades.Entidades.Regiao.Latitude.set/
-Item.get#Entidades.Entidades.Regiao.Item.get/
-Item.set#Entidades.Entidades.Regiao.Item.set
+Õ
+Entidades.Tagobject
+Tag()Entidades.Tag.Tag()
+Id.getEntidades.Tag.Id.get
+Id.setEntidades.Tag.Id.set"
+Nome.getEntidades.Tag.Nome.get"
+Nome.setEntidades.Tag.Nome.set&
+
+ItemId.getEntidades.Tag.ItemId.get&
+
+ItemId.setEntidades.Tag.ItemId.set"
+Item.getEntidades.Tag.Item.get"
+Item.setEntidades.Tag.Item.set

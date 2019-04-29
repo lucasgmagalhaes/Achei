@@ -1,71 +1,86 @@
 
-LApi.Startup.UpdateDatabase(Microsoft.AspNetCore.Builder.IApplicationBuilder)-
-#D:\git\Achei\backend\Api\Startup.css |(	"0*¹
-0ïì
--
-#D:\git\Achei\backend\Api\Startup.csu0 u(G
-%0System.IServiceProvider"HMicrosoft.AspNetCore.Builder.IApplicationBuilder.ApplicationServices.get*9
-7
-app0Microsoft.AspNetCore.Builder.IApplicationBuilder2ApplicationServices.getá
-Þ
--
-#D:\git\Achei\backend\Api\Startup.csu0 u(rC
-%1=Microsoft.Extensions.DependencyInjection.IServiceScopeFactory"xMicrosoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<T>(System.IServiceProvider)*M"K
-IMicrosoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions*
-
-%0System.IServiceProvider”‘
-.
-#D:\git\Achei\backend\Api\Startup.csu0 u(€<
-%26Microsoft.Extensions.DependencyInjection.IServiceScope"KMicrosoft.Extensions.DependencyInjection.IServiceScopeFactory.CreateScope()*E
-C
-%1=Microsoft.Extensions.DependencyInjection.IServiceScopeFactory2CreateScope()Á
-¾
-.
-#D:\git\Achei\backend\Api\Startup.csu! u(€F
-serviceScope6Microsoft.Extensions.DependencyInjection.IServiceScope"__id*>
-<
-%26Microsoft.Extensions.DependencyInjection.IServiceScope*
-1*š
-1üù
--
-#D:\git\Achei\backend\Api\Startup.csw6 w(R
-%3System.IServiceProvider"JMicrosoft.Extensions.DependencyInjection.IServiceScope.ServiceProvider.get*H
-F
-serviceScope6Microsoft.Extensions.DependencyInjection.IServiceScope2ServiceProvider.getÒ
-Ï
--
-#D:\git\Achei\backend\Api\Startup.csw6 w(u<
-%46Persistencia.Contexts.Application.ApplicationDbContext"pMicrosoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetService<T>(System.IServiceProvider)*M"K
-IMicrosoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions*
-
-%3System.IServiceProvider»
-¸
--
-#D:\git\Achei\backend\Api\Startup.csw, w(uA
-context6Persistencia.Contexts.Application.ApplicationDbContext"__id*>
-<
-%46Persistencia.Contexts.Application.ApplicationDbContext*
-2*Ý
-2þû
--
-#D:\git\Achei\backend\Api\Startup.csy y($A
-%5;Microsoft.EntityFrameworkCore.Infrastructure.DatabaseFacade"4Microsoft.EntityFrameworkCore.DbContext.Database.get*C
-A
-context6Persistencia.Contexts.Application.ApplicationDbContext2Database.getÑ
-Î
--
-#D:\git\Achei\backend\Api\Startup.csy y(.
+*Api.Controllers.TagController.GetTag(long)?
+5D:\git\Achei\backend\Api\Controllers\TagController.cs '(	"5*
+0*	
+1
+2
+3*¨
+2Í
+Ê
+?
+5D:\git\Achei\backend\Api\Controllers\TagController.cs ())
+%0#Persistencia.Interfaces.ITagService"__id*V*T
+Api.Controllers.TagController"1
 
-%6void"…Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.Migrate(Microsoft.EntityFrameworkCore.Infrastructure.DatabaseFacade)*D"B
-@Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions*C
-A
-%5;Microsoft.EntityFrameworkCore.Infrastructure.DatabaseFacade*
-3*
-3*
-4*I
-4"D
+tagService#Persistencia.Interfaces.ITagServiceÒÏ
+?
+5D:\git\Achei\backend\Api\Controllers\TagController.cs (4
+%1Entidades.Tag"4Persistencia.Interfaces.ICrudService<T>.Buscar(long)*+
+)
+%0#Persistencia.Interfaces.ITagService*
+""2Buscar(long)v
+t
+?
+5D:\git\Achei\backend\Api\Controllers\TagController.cs (4
+tagEntidades.Tag"__id*
+
+%1Entidades.Tag§
+¤
+?
+5D:\git\Achei\backend\Api\Controllers\TagController.cs   (#
+%2AutoMapper.IMapper"__id*A*?
+Api.Controllers.TagController"
+mapperAutoMapper.IMapperÝÚ
+?
+5D:\git\Achei\backend\Api\Controllers\TagController.cs   (4
+%3Entidades.Dto.TagDto",AutoMapper.IMapper.Map<TDestination>(object)*
+
+%2AutoMapper.IMapper*
+
+tagEntidades.Tag2Map<TDestination>(object)…
+‚
+?
+5D:\git\Achei\backend\Api\Controllers\TagController.cs   (4
+dtoEntidades.Dto.TagDto"__id*
+
+%3Entidades.Dto.TagDtoÿü
+?
+5D:\git\Achei\backend\Api\Controllers\TagController.cs! !(-
+%4'Microsoft.AspNetCore.Mvc.OkObjectResult"2Microsoft.AspNetCore.Mvc.ControllerBase.Ok(object)*+)
+'Microsoft.AspNetCore.Mvc.ControllerBase*
+
+dtoEntidades.Dto.TagDto2
+Ok(object)"r
+?
+5D:\git\Achei\backend\Api\Controllers\TagController.cs! !(/
 -
-#D:\git\Achei\backend\Api\Startup.cs| |(	
-implicit return:7
-app0Microsoft.AspNetCore.Builder.IApplicationBuilderB
-Api.Startup
+%4'Microsoft.AspNetCore.Mvc.OkObjectResult*
+4*	
+1
+3
+3*“
+1‘Ž
+?
+5D:\git\Achei\backend\Api\Controllers\TagController.cs% %($5
+%5/Microsoft.AspNetCore.Mvc.BadRequestObjectResult":Microsoft.AspNetCore.Mvc.ControllerBase.BadRequest(object)*+)
+'Microsoft.AspNetCore.Mvc.ControllerBase*
+
+eSystem.Exception2BadRequest(object)"z
+?
+5D:\git\Achei\backend\Api\Controllers\TagController.cs% %(%7
+5
+%5/Microsoft.AspNetCore.Mvc.BadRequestObjectResult*[
+3"V
+?
+5D:\git\Achei\backend\Api\Controllers\TagController.cs' '(	
+implicit return*i
+5_
+]
+?
+5D:\git\Achei\backend\Api\Controllers\TagController.cs (#
+%6"__entrypoint*
+""*
+0:
+
+idlongB!
+Api.Controllers.TagController

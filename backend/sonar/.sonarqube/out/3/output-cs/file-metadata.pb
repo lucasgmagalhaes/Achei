@@ -4,7 +4,9 @@
 >D:\git\Achei\backend\Api\Controllers\AutenticacaoController.csutf-8E
 <D:\git\Achei\backend\Api\Controllers\ItemAchadoController.csutf-8F
 =D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.csutf-8A
-8D:\git\Achei\backend\Api\Controllers\StatusController.csutf-8B
+8D:\git\Achei\backend\Api\Controllers\RegiaoController.csutf-8A
+8D:\git\Achei\backend\Api\Controllers\StatusController.csutf-8>
+5D:\git\Achei\backend\Api\Controllers\TagController.csutf-8B
 9D:\git\Achei\backend\Api\Controllers\UsuarioController.csutf-8,
 #D:\git\Achei\backend\Api\Program.csutf-84
 +D:\git\Achei\backend\Api\RequestResponse.csutf-8,

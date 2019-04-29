@@ -123,7 +123,7 @@ BD:\git\Achei\backend\Persistencia\Interfaces\IITemAchadoService.cs
 
  +
 
-1 3
+1 3™
 CD:\git\Achei\backend\Persistencia\Interfaces\IItemPerdidoService.cs
 
  (
@@ -134,7 +134,29 @@ CD:\git\Achei\backend\Persistencia\Interfaces\IItemPerdidoService.cs
 
  !
 
-' )M
+' )
+
+ )
+
+/ 1d
+>D:\git\Achei\backend\Persistencia\Interfaces\IRegiaoService.cs
+
+ #
+
+
+
+ 
+
+
+
+$ &a
+;D:\git\Achei\backend\Persistencia\Interfaces\ITagService.cs
+
+  
+
+ !
+
+' )M
 ?D:\git\Achei\backend\Persistencia\Interfaces\IUsuarioService.cs
 
  $µ
@@ -256,7 +278,7 @@ AD:\git\Achei\backend\Persistencia\Services\AutenticacaoService.cs
 
   2
 8 :? A
- &* 1Œ
+ &* 1ð
 @D:\git\Achei\backend\Persistencia\Services\ItemPerdidoService.cs
 
 
@@ -274,7 +296,34 @@ AD:\git\Achei\backend\Persistencia\Services\AutenticacaoService.cs
 . 08 :
  &* 1
 < BF L
-U \` gl
+U \` g
+
+ 0
+6 8+ -
+ ! %
+ ! %
+   $¹
+;D:\git\Achei\backend\Persistencia\Services\RegiaoService.cs
+
+		 
+
+ 
+2 ;D M
+
+ %
++ -T V
+' -1 7
+A EI M 
+8D:\git\Achei\backend\Persistencia\Services\TagService.cs
+
+		 
+
+ 
+/ 8A J
+
+ (
+. 04 6
+ "& )l
 <D:\git\Achei\backend\Persistencia\Services\UsuarioService.cs
 
  

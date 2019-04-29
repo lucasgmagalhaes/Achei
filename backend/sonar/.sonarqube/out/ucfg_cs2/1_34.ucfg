@@ -1,0 +1,24 @@
+
+-Persistencia.Services.CrudService<T>.Entity()E
+9D:\git\Achei\backend\Persistencia\Services\CrudService.csŸ ¢(	"0*à
+0á
+Þ
+E
+9D:\git\Achei\backend\Persistencia\Services\CrudService.cs¡ ¡(-
+%0'Microsoft.EntityFrameworkCore.DbContext"__id*`*^&
+$Persistencia.Services.CrudService<T>"4
+	dbService'Microsoft.EntityFrameworkCore.DbContext÷ô
+E
+9D:\git\Achei\backend\Persistencia\Services\CrudService.cs¡ ¡(%2
+%1,Microsoft.EntityFrameworkCore.DbSet<TEntity>"6Microsoft.EntityFrameworkCore.DbContext.Set<TEntity>()*/
+-
+%0'Microsoft.EntityFrameworkCore.DbContext2Set<TEntity>()"}
+E
+9D:\git\Achei\backend\Persistencia\Services\CrudService.cs¡ ¡(&4
+2
+%1,Microsoft.EntityFrameworkCore.DbSet<TEntity>*a
+1"\
+E
+9D:\git\Achei\backend\Persistencia\Services\CrudService.cs¢ ¢(	
+implicit returnB(&
+$Persistencia.Services.CrudService<T>

@@ -1,0 +1,96 @@
+
+yApi.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder, Microsoft.AspNetCore.Hosting.IHostingEnvironment).
+#D:\git\Achei\backend\Api\Startup.cs\ „(	"0*ÿ
+0»
+¸
+-
+#D:\git\Achei\backend\Api\Startup.cs^ e(6
+%00Microsoft.AspNetCore.Builder.IApplicationBuilder"ÛMicrosoft.AspNetCore.Builder.UseExtensions.Use(Microsoft.AspNetCore.Builder.IApplicationBuilder, System.Func<Microsoft.AspNetCore.Http.HttpContext, System.Func<System.Threading.Tasks.Task>, System.Threading.Tasks.Task>)*.",
+*Microsoft.AspNetCore.Builder.UseExtensions*9
+7
+app0Microsoft.AspNetCore.Builder.IApplicationBuilder*
+""³
+°
+-
+#D:\git\Achei\backend\Api\Startup.csg g(#
+
+%1bool"yMicrosoft.AspNetCore.Hosting.HostingEnvironmentExtensions.IsDevelopment(Microsoft.AspNetCore.Hosting.IHostingEnvironment)*=";
+9Microsoft.AspNetCore.Hosting.HostingEnvironmentExtensions*9
+7
+env0Microsoft.AspNetCore.Hosting.IHostingEnvironment*
+1
+2*§
+1ô
+ñ
+-
+#D:\git\Achei\backend\Api\Startup.csi i(/6
+%20Microsoft.AspNetCore.Builder.IApplicationBuilder"‰Microsoft.AspNetCore.Builder.DeveloperExceptionPageExtensions.UseDeveloperExceptionPage(Microsoft.AspNetCore.Builder.IApplicationBuilder)*A"?
+=Microsoft.AspNetCore.Builder.DeveloperExceptionPageExtensions*9
+7
+app0Microsoft.AspNetCore.Builder.IApplicationBuilder¥
+¢
+-
+#D:\git\Achei\backend\Api\Startup.csj l("6
+%30Microsoft.AspNetCore.Builder.IApplicationBuilder"ºMicrosoft.AspNetCore.Builder.CorsMiddlewareExtensions.UseCors(Microsoft.AspNetCore.Builder.IApplicationBuilder, System.Action<Microsoft.AspNetCore.Cors.Infrastructure.CorsPolicyBuilder>)*9"7
+5Microsoft.AspNetCore.Builder.CorsMiddlewareExtensions*9
+7
+app0Microsoft.AspNetCore.Builder.IApplicationBuilder*
+""*
+3*Ö
+2Ë
+È
+-
+#D:\git\Achei\backend\Api\Startup.csp p(6
+%40Microsoft.AspNetCore.Builder.IApplicationBuilder"lMicrosoft.AspNetCore.Builder.HstsBuilderExtensions.UseHsts(Microsoft.AspNetCore.Builder.IApplicationBuilder)*6"4
+2Microsoft.AspNetCore.Builder.HstsBuilderExtensions*9
+7
+app0Microsoft.AspNetCore.Builder.IApplicationBuilder*
+3*·
+3›
+˜
+-
+#D:\git\Achei\backend\Api\Startup.cst t(6
+%50Microsoft.AspNetCore.Builder.IApplicationBuilder"°Microsoft.AspNetCore.Builder.SwaggerBuilderExtensions.UseSwagger(Microsoft.AspNetCore.Builder.IApplicationBuilder, System.Action<Swashbuckle.AspNetCore.Swagger.SwaggerOptions>)*9"7
+5Microsoft.AspNetCore.Builder.SwaggerBuilderExtensions*9
+7
+app0Microsoft.AspNetCore.Builder.IApplicationBuilder*
+""¥
+¢
+-
+#D:\git\Achei\backend\Api\Startup.csx {(6
+%60Microsoft.AspNetCore.Builder.IApplicationBuilder"¸Microsoft.AspNetCore.Builder.SwaggerUIBuilderExtensions.UseSwaggerUI(Microsoft.AspNetCore.Builder.IApplicationBuilder, System.Action<Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIOptions>)*;"9
+7Microsoft.AspNetCore.Builder.SwaggerUIBuilderExtensions*9
+7
+app0Microsoft.AspNetCore.Builder.IApplicationBuilder*
+""Ø
+Õ
+-
+#D:\git\Achei\backend\Api\Startup.cs} }(
+
+%7void"LApi.Startup.UpdateDatabase(Microsoft.AspNetCore.Builder.IApplicationBuilder)*
+Api.Startup*9
+7
+app0Microsoft.AspNetCore.Builder.IApplicationBuilderå
+â
+-
+#D:\git\Achei\backend\Api\Startup.cs~ ~(%6
+%80Microsoft.AspNetCore.Builder.IApplicationBuilder"Microsoft.AspNetCore.Builder.HttpsPolicyBuilderExtensions.UseHttpsRedirection(Microsoft.AspNetCore.Builder.IApplicationBuilder)*=";
+9Microsoft.AspNetCore.Builder.HttpsPolicyBuilderExtensions*9
+7
+app0Microsoft.AspNetCore.Builder.IApplicationBuilder£
+ 
+.
+#D:\git\Achei\backend\Api\Startup.cs ƒ(6
+%90Microsoft.AspNetCore.Builder.IApplicationBuilder"°Microsoft.AspNetCore.Builder.MvcApplicationBuilderExtensions.UseMvc(Microsoft.AspNetCore.Builder.IApplicationBuilder, System.Action<Microsoft.AspNetCore.Routing.IRouteBuilder>)*@">
+<Microsoft.AspNetCore.Builder.MvcApplicationBuilderExtensions*9
+7
+app0Microsoft.AspNetCore.Builder.IApplicationBuilder*
+""*
+4*K
+4"F
+/
+#D:\git\Achei\backend\Api\Startup.cs„ „(	
+implicit return:7
+app0Microsoft.AspNetCore.Builder.IApplicationBuilder:7
+env0Microsoft.AspNetCore.Hosting.IHostingEnvironmentB
+Api.Startup

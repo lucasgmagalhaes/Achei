@@ -1,19 +1,31 @@
 
-qPersistencia.Services.ItemAchadoService.ItemAchadoService(Persistencia.Contexts.Application.ApplicationDbContext)I
-?D:\git\Achei\backend\Persistencia\Services\ItemAchadoService.cs (V"0*±
-0¶
-£
-I
-?D:\git\Achei\backend\Persistencia\Services\ItemAchadoService.csA (R
-
-%0void"YPersistencia.Services.CrudService<T>.CrudService(Microsoft.EntityFrameworkCore.DbContext)*(&
-$Persistencia.Services.CrudService<T>*E
+-Persistencia.Services.CrudService<T>.Buscar()C
+9D:\git\Achei\backend\Persistencia\Services\CrudService.cs# &(	"0*
+0ﬂ
+‹
 C
-	dbContext6Persistencia.Contexts.Application.ApplicationDbContext*
-1*e
-1"`
-I
-?D:\git\Achei\backend\Persistencia\Services\ItemAchadoService.csU (V
-implicit return:C
-	dbContext6Persistencia.Contexts.Application.ApplicationDbContextB+)
-'Persistencia.Services.ItemAchadoService
+9D:\git\Achei\backend\Persistencia\Services\CrudService.cs% %(-
+%0'Microsoft.EntityFrameworkCore.DbContext"__id*`*^&
+$Persistencia.Services.CrudService<T>"4
+	dbService'Microsoft.EntityFrameworkCore.DbContextıÚ
+C
+9D:\git\Achei\backend\Persistencia\Services\CrudService.cs% %(%2
+%1,Microsoft.EntityFrameworkCore.DbSet<TEntity>"6Microsoft.EntityFrameworkCore.DbContext.Set<TEntity>()*/
+-
+%0'Microsoft.EntityFrameworkCore.DbContext2Set<TEntity>()ù
+ö
+C
+9D:\git\Achei\backend\Persistencia\Services\CrudService.cs% %(.(
+%2"System.Collections.Generic.List<T>"WSystem.Linq.Enumerable.ToList<TSource>(System.Collections.Generic.IEnumerable<TSource>)*"
+System.Linq.Enumerable*4
+2
+%1,Microsoft.EntityFrameworkCore.DbSet<TEntity>"q
+C
+9D:\git\Achei\backend\Persistencia\Services\CrudService.cs% %(/*
+(
+%2"System.Collections.Generic.List<T>*_
+1"Z
+C
+9D:\git\Achei\backend\Persistencia\Services\CrudService.cs& &(	
+implicit returnB(&
+$Persistencia.Services.CrudService<T>

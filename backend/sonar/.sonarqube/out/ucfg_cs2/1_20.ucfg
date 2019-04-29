@@ -1,57 +1,35 @@
 
-2Persistencia.Services.CrudService<T>.Deletar(long)C
-9D:\git\Achei\backend\Persistencia\Services\CrudService.cs@ G(	"0*‰
-0SQ
-C
-9D:\git\Achei\backend\Persistencia\Services\CrudService.csB" B(-
-%0T"TÅ
-
-C
-9D:\git\Achei\backend\Persistencia\Services\CrudService.csB B(-#
-objEntidades.Interfaces.IEntity"__id*
-	{unknown}ﬂ
-‹
-C
-9D:\git\Achei\backend\Persistencia\Services\CrudService.csD D(-
-%1'Microsoft.EntityFrameworkCore.DbContext"__id*`*^&
-$Persistencia.Services.CrudService<T>"4
-	dbService'Microsoft.EntityFrameworkCore.DbContext≈¬
-C
-9D:\git\Achei\backend\Persistencia\Services\CrudService.csD D(!G
-%2AMicrosoft.EntityFrameworkCore.ChangeTracking.EntityEntry<TEntity>"@Microsoft.EntityFrameworkCore.DbContext.Attach<TEntity>(TEntity)*/
--
-%1'Microsoft.EntityFrameworkCore.DbContext*%
-#
-objEntidades.Interfaces.IEntity2Attach<TEntity>(TEntity)ﬂ
-‹
-C
-9D:\git\Achei\backend\Persistencia\Services\CrudService.csE E(-
-%3'Microsoft.EntityFrameworkCore.DbContext"__id*`*^&
-$Persistencia.Services.CrudService<T>"4
-	dbService'Microsoft.EntityFrameworkCore.DbContext≈¬
-C
-9D:\git\Achei\backend\Persistencia\Services\CrudService.csE E(!G
-%4AMicrosoft.EntityFrameworkCore.ChangeTracking.EntityEntry<TEntity>"@Microsoft.EntityFrameworkCore.DbContext.Remove<TEntity>(TEntity)*/
--
-%3'Microsoft.EntityFrameworkCore.DbContext*%
-#
-objEntidades.Interfaces.IEntity2Remove<TEntity>(TEntity)ﬂ
-‹
-C
-9D:\git\Achei\backend\Persistencia\Services\CrudService.csF F(-
-%5'Microsoft.EntityFrameworkCore.DbContext"__id*`*^&
-$Persistencia.Services.CrudService<T>"4
-	dbService'Microsoft.EntityFrameworkCore.DbContext «
-C
-9D:\git\Achei\backend\Persistencia\Services\CrudService.csF F(#	
-%6int"5Microsoft.EntityFrameworkCore.DbContext.SaveChanges()*/
--
-%5'Microsoft.EntityFrameworkCore.DbContext2SaveChanges()*
-1*_
-1"Z
-C
-9D:\git\Achei\backend\Persistencia\Services\CrudService.csG G(	
+9Persistencia.Services.RegiaoService.BuscarPorItemId(long)E
+;D:\git\Achei\backend\Persistencia\Services\RegiaoService.cs (	"0*ç
+0÷
+”
+E
+;D:\git\Achei\backend\Persistencia\Services\RegiaoService.cs ( 2
+%0,Microsoft.EntityFrameworkCore.DbSet<TEntity>"-Persistencia.Services.CrudService<T>.Entity()*'%
+#Persistencia.Services.RegiaoServiceÃ
+…
+E
+;D:\git\Achei\backend\Persistencia\Services\RegiaoService.cs (X
+%1System.Linq.IQueryable<T>"ÖSystem.Linq.Queryable.Where<TSource>(System.Linq.IQueryable<TSource>, System.Linq.Expressions.Expression<System.Func<TSource, bool>>)*"
+System.Linq.Queryable*4
+2
+%0,Microsoft.EntityFrameworkCore.DbSet<TEntity>*
+""Ú
+Ô
+E
+;D:\git\Achei\backend\Persistencia\Services\RegiaoService.cs (a 
+%2Entidades.Entidades.Regiao"FSystem.Linq.Queryable.Single<TSource>(System.Linq.IQueryable<TSource>)*"
+System.Linq.Queryable*!
+
+%1System.Linq.IQueryable<T>"k
+E
+;D:\git\Achei\backend\Persistencia\Services\RegiaoService.cs (b"
+ 
+%2Entidades.Entidades.Regiao*a
+1"\
+E
+;D:\git\Achei\backend\Persistencia\Services\RegiaoService.cs (	
 implicit return:
 
-idlongB(&
-$Persistencia.Services.CrudService<T>
+idlongB'%
+#Persistencia.Services.RegiaoService
