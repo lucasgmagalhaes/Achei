@@ -25,7 +25,7 @@ namespace Api.Controllers
         /// <summary>
         /// PUT api/[controller]/
         /// </summary>
-        /// <param name="entidade">entidade a ser atualizada</param>
+        /// <param name="entity">entidade a ser atualizada</param>
         /// <returns></returns>
         [HttpPut]
         public abstract IActionResult Put([FromBody]T entity);

@@ -12,9 +12,34 @@ namespace Persistencia.Interfaces
     /// <summary>
     /// Contrato básico de entidades para realização das operações do CRUD.
     /// </summary>
-    /// <typeparam name="T"></typeparam>
-    public interface ICrudService<T> where T : class, IEntity, new()
+    /// <typeparam name="T">Entidade a ser usada nas operações. A mesma deve estar registrada na lista de entidades do DbContext</typeparam>
+    public interface ICrudService<T> : IDisposable where T : class, IEntity, new()
     {
+        /// <summary>
+        /// Executa um commando sql direto no banco, criando um LINQ para o mesmo.
+        /// <para>
+        /// Para maiores detalhes sobre o commando, use crudService.Entity().FromSql();
+        /// O commando fromSql direto do dbContext possui mais informações.
+        /// </para>
+        /// 
+        /// </summary>
+        /// <param name="sql">Quey a ser criada</param>
+        /// <returns>Linq da query executada</returns>
+        IQueryable<T> FromSql(string sql);
+
+        /// <summary>
+        ///  Executa um commando sql direto no banco, criando um LINQ para o mesmo.
+        /// <para>
+        /// Para maiores detalhes sobre o commando, use crudService.Entity().FromSql();
+        /// O commando fromSql direto do dbContext possui mais informações.
+        /// </para>
+        /// 
+        /// </summary>
+        /// <param name="sql">Quey a ser criada</param>
+        /// <param name="obj">Parâmetros da Query</param>
+        /// <returns></returns>
+        IQueryable<T> FromSql(string sql, params object[] obj);
+
         /// <summary>
         /// Persiste mudanças feitas em uma entidade
         /// </summary>
@@ -69,8 +94,17 @@ namespace Persistencia.Interfaces
         /// <returns></returns>
         IQueryable<T> Buscar(Expression<Func<T, bool>> predicate, Func<IQueryable<T>, IIncludableQueryable<T, object>> include = null);
 
+        /// <summary>
+        /// Executa uma busca assíncrona no banco por todos os registros de uma entidade específica
+        /// </summary>
+        /// <returns>Lista de todas as entidades</returns>
         Task<List<T>> BuscarAsync();
 
+        /// <summary>
+        /// Executa uma busca assíncrona no banco por uma entidade de id específico
+        /// </summary>
+        /// <param name="id">Id da entidade existente</param>
+        /// <returns>Entidade procurada</returns>
         Task<T> BuscarAsync(long id);
 
         /// <summary>

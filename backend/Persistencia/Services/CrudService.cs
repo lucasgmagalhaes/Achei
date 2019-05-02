@@ -1,6 +1,6 @@
 ﻿using Entidades.Interfaces;
+using Exceptions.Entity;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.ChangeTracking;
 using Microsoft.EntityFrameworkCore.Query;
 using Persistencia.Interfaces;
 using System;
@@ -18,6 +18,27 @@ namespace Persistencia.Services
         public CrudService(DbContext dbService)
         {
             this.dbService = dbService;
+        }
+
+        public void Dispose()
+        {
+            Dispose(true);
+            GC.SuppressFinalize(this);
+        }
+
+        protected virtual void Dispose(bool disposing)
+        {
+            dbService.Dispose();
+        }
+
+        public IQueryable<T> FromSql(string sql)
+        {
+            return dbService.Set<T>().FromSql(sql);
+        }
+
+        public IQueryable<T> FromSql(string sql, params object[] obj)
+        {
+            return dbService.Set<T>().FromSql(sql, obj);
         }
 
         public void Atualizar(T entidade)
@@ -82,7 +103,7 @@ namespace Persistencia.Services
             }
             else
             {
-                throw new Exception("Não é possível criar uma entidade já existente. ");
+                throw new EntityAlreadyExistsException("Não é possível criar uma entidade já existente. ");
             }
         }
 
@@ -95,7 +116,7 @@ namespace Persistencia.Services
             }
             else
             {
-                throw new Exception("Entidade não existe no banco de dados para ser atualizada");
+                throw new EntityNotFoundException("Entidade não existe no banco de dados para ser atualizada");
             }
 
         }
@@ -118,7 +139,7 @@ namespace Persistencia.Services
 
         public async Task DeletarAsync(T entidade)
         {
-            EntityEntry<T> retorno = dbService.Remove(entidade);
+            dbService.Remove(entidade);
             await dbService.SaveChangesAsync();
         }
 
@@ -146,13 +167,13 @@ namespace Persistencia.Services
                 else
                 {
                     System.Diagnostics.Debug.WriteLine(entidade.GetType() + "de Id:" + entidade.Id + "já foi cadastrada");
-                    throw new Exception("Entidade já foi cadastrada");
+                    throw new EntityAlreadyExistsException("Entidade já foi cadastrada");
                 }
             }
             catch (Exception e)
             {
                 System.Diagnostics.Debug.WriteLine(e.Message);
-                throw new Exception("Não é possível criar uma entidade já existente");
+                throw new EntityAlreadyExistsException("Não é possível criar uma entidade já existente");
             }
         }
 

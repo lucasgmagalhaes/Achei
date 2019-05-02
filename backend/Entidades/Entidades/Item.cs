@@ -20,7 +20,7 @@ namespace Entidades.Entidades
         public virtual Usuario Usuario { get; set; }
         public virtual List<Tag> Tags { get; set; }
 
-        public Item()
+        protected Item()
         {
             Tags = new List<Tag>();
         }

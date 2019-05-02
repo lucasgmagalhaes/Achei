@@ -61,7 +61,6 @@ namespace Api
 
             services.AddDbContext<ApplicationDbContext>();
 
-            // Auto Mapper Configurations
             MapperConfiguration mappingConfig = new MapperConfiguration(mc =>
             {
                 mc.CreateMap<Tag, TagDto>();
@@ -76,7 +75,6 @@ namespace Api
 
             ConfigureAuthentication(services);
 
-            // Register the Swagger generator, defining 1 or more Swagger documents
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new Info { Title = "My API", Version = "v1" });
@@ -112,22 +110,24 @@ namespace Api
                 app.UseHsts();
             }
 
-            // Enable middleware to serve generated Swagger as a JSON endpoint.
-            app.UseSwagger();
-
-            // Enable middleware to serve swagger-ui (HTML, JS, CSS, etc.), 
-            // specifying the Swagger JSON endpoint.
-            app.UseSwaggerUI(c =>
-            {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Achei API V1");
-            });
-
+            ConfigureSwagger(app);
             UpdateDatabase(app);
+
             app.UseHttpsRedirection();
             app.UseMvc(routerBuilder =>
             {
                 routerBuilder.EnableDependencyInjection();
                 routerBuilder.Expand().Filter().Count().OrderBy();
+            });
+        }
+
+        private void ConfigureSwagger(IApplicationBuilder app)
+        {
+            app.UseSwagger();
+
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Achei API V1");
             });
         }
 
@@ -164,21 +164,11 @@ namespace Api
                 paramsValidation.IssuerSigningKey = signingConfigurations.Key;
                 paramsValidation.ValidAudience = tokenConfigurations.Audience;
                 paramsValidation.ValidIssuer = tokenConfigurations.Issuer;
-
-                // Valida a assinatura de um token recebido
                 paramsValidation.ValidateIssuerSigningKey = true;
-
-                // Verifica se um token recebido ainda é válido
                 paramsValidation.ValidateLifetime = true;
-
-                // Tempo de tolerância para a expiração de um token (utilizado
-                // caso haja problemas de sincronismo de horário entre diferentes
-                // computadores envolvidos no processo de comunicação)
                 paramsValidation.ClockSkew = TimeSpan.Zero;
             });
 
-            // Ativa o uso do token como forma de autorizar o acesso
-            // a recursos deste projeto
             services.AddAuthorization(auth =>
             {
                 auth.AddPolicy("Bearer", new AuthorizationPolicyBuilder()
