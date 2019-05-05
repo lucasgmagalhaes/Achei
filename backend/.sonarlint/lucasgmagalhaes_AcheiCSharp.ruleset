@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<RuleSet Name="SonarQube - Achei Sonar way" Description="This rule set was automatically generated from SonarQube.&#xD;&#xA;https://sonarcloud.io/profiles/show?key=AWSqS74Kr5pnsk0fp_74" ToolsVersion="16.0">
+<RuleSet Name="SonarQube - lucasgmagalhaes_Achei Sonar way" Description="This rule set was automatically generated from SonarQube.&#xD;&#xA;https://sonarcloud.io/profiles/show?key=AWSqS74Kr5pnsk0fp_74" ToolsVersion="16.0">
   <Rules AnalyzerId="SonarAnalyzer.CSharp" RuleNamespace="SonarAnalyzer.CSharp">
     <Rule Id="S100" Action="None" />
     <Rule Id="S1006" Action="Warning" />
