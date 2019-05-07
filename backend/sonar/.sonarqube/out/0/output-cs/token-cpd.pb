@@ -1,5 +1,5 @@
 Î%
-:D:\git\Achei\backend\Entidades\Configuration\ItemConfig.cs
+:E:\Git\Achei\backend\Entidades\Configuration\ItemConfig.cs
 	namespace 	
 	Entidades
  
@@ -281,7 +281,7 @@ IsRequired"" 
 }00 	
 }11 
 }22 ü
-<D:\git\Achei\backend\Entidades\Configuration\RegiaoConfig.cs
+<E:\Git\Achei\backend\Entidades\Configuration\RegiaoConfig.cs
 	namespace 	
 	Entidades
  
@@ -383,7 +383,7 @@ IsRequired"" 
 } 	
 } 
 } º
-9D:\git\Achei\backend\Entidades\Configuration\TagConfig.cs
+9E:\Git\Achei\backend\Entidades\Configuration\TagConfig.cs
 	namespace 	
 	Entidades
  
@@ -533,7 +533,7 @@ IsRequired 
 } 	
 } 
 } µ/
-=D:\git\Achei\backend\Entidades\Configuration\UsuarioConfig.cs
+=E:\Git\Achei\backend\Entidades\Configuration\UsuarioConfig.cs
 	namespace 	
 	Entidades
  
@@ -886,7 +886,7 @@ IsRequired// 
 }FF 	
 }GG 
 }HH º
-3D:\git\Achei\backend\Entidades\Dto\ItemAchadoDto.cs
+3E:\Git\Achei\backend\Entidades\Dto\ItemAchadoDto.cs
 	namespace 	
 	Entidades
  
@@ -911,7 +911,7 @@ IsRequired// 
 }* +
 } 
 }		 ×
--D:\git\Achei\backend\Entidades\Dto\ItemDto.cs
+-E:\Git\Achei\backend\Entidades\Dto\ItemDto.cs
 	namespace 	
 	Entidades
  
@@ -1040,7 +1040,7 @@ DataInicio #
 }- .
 } 
 } ½
-4D:\git\Achei\backend\Entidades\Dto\ItemPerdidoDto.cs
+4E:\Git\Achei\backend\Entidades\Dto\ItemPerdidoDto.cs
 	namespace 	
 	Entidades
  
@@ -1066,7 +1066,7 @@ Recuperado 
 }+ ,
 } 
 }		 À
-/D:\git\Achei\backend\Entidades\Dto\RegiaoDto.cs
+/E:\Git\Achei\backend\Entidades\Dto\RegiaoDto.cs
 	namespace 	
 	Entidades
  
@@ -1107,7 +1107,7 @@ Recuperado 
 }+ ,
 } 
 }		 À
-,D:\git\Achei\backend\Entidades\Dto\TagDto.cs
+,E:\Git\Achei\backend\Entidades\Dto\TagDto.cs
 	namespace 	
 	Entidades
  
@@ -1148,8 +1148,8 @@ Recuperado 
 ;& '
 }( )
 } 
-}		 
-0D:\git\Achei\backend\Entidades\Entidades\Item.cs
+}		  
+0E:\Git\Achei\backend\Entidades\Entidades\Item.cs
 	namespace 	
 	Entidades
  
@@ -1308,11 +1308,11 @@ DataInicio #
 ;+ ,
 set- 0
 ;0 1
-}2 3
-public 
-Item 
-( 
-) 
+}2 3
+	protected 
+Item 
+( 
+) 
 { 	
 Tags 
 = 
@@ -1327,7 +1327,7 @@ DataInicio #
 } 	
 } 
 } ½
-6D:\git\Achei\backend\Entidades\Entidades\ItemAchado.cs
+6E:\Git\Achei\backend\Entidades\Entidades\ItemAchado.cs
 	namespace 	
 	Entidades
  
@@ -1353,7 +1353,7 @@ ItemAchado 
 }* +
 } 
 } À
-7D:\git\Achei\backend\Entidades\Entidades\ItemPerdido.cs
+7E:\Git\Achei\backend\Entidades\Entidades\ItemPerdido.cs
 	namespace 	
 	Entidades
  
@@ -1379,7 +1379,7 @@ Recuperado 
 }+ ,
 } 
 } Ê	
-2D:\git\Achei\backend\Entidades\Entidades\Regiao.cs
+2E:\Git\Achei\backend\Entidades\Entidades\Regiao.cs
 	namespace 	
 	Entidades
  
@@ -1469,7 +1469,7 @@ Recuperado 
 } 	
 } 
 } ï
-/D:\git\Achei\backend\Entidades\Entidades\Tag.cs
+/E:\Git\Achei\backend\Entidades\Entidades\Tag.cs
 	namespace 	
 	Entidades
  
@@ -1541,7 +1541,7 @@ Recuperado 
 }- .
 } 
 } ­
-3D:\git\Achei\backend\Entidades\Entidades\Usuario.cs
+3E:\Git\Achei\backend\Entidades\Entidades\Usuario.cs
 	namespace 	
 	Entidades
  
@@ -1695,7 +1695,7 @@ ItemAchado# -
 }J K
 } 
 } 
-4D:\git\Achei\backend\Entidades\Interfaces\IEntity.cs
+4E:\Git\Achei\backend\Entidades\Interfaces\IEntity.cs
 	namespace 	
 	Entidades
  

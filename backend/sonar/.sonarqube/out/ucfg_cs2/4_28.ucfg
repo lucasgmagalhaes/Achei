@@ -1,0 +1,53 @@
+
+#Api.Session.IsUsuarioLogado(string)-
+#E:\Git\Achei\backend\Api\Session.cs (*"0*
+0*
+1
+2*û
+2Ç
+Ä
+-
+#E:\Git\Achei\backend\Api\Session.cs ('9
+%03System.Collections.Generic.Dictionary<TKey, TValue>"__id*R*P
+Api.Session"?
+usuarios3System.Collections.Generic.Dictionary<TKey, TValue>œ
+™
+-
+#E:\Git\Achei\backend\Api\Session.cs (.
+%1string"
+__arrayGet*;
+9
+%03System.Collections.Generic.Dictionary<TKey, TValue>*
+
+emailstringX
+V
+-
+#E:\Git\Achei\backend\Api\Session.cs (.
+bancostring"__id*
+
+%1stringz
+x
+-
+#E:\Git\Achei\backend\Api\Session.cs (3
+
+%2bool"string.IsNullOrEmpty(string)*
+"
+string*
+
+bancostring"7
+-
+#E:\Git\Achei\backend\Api\Session.cs (4
+""*
+3*
+1
+4*<
+1"7
+-
+#E:\Git\Achei\backend\Api\Session.cs (
+""*I
+4"D
+-
+#E:\Git\Achei\backend\Api\Session.cs (	
+implicit return:
+emailstringB"
+Api.Session

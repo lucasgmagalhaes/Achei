@@ -1,0 +1,55 @@
+
+#Api.Session.FinalizarSessao(string)-
+#E:\Git\Achei\backend\Api\Session.csH H(*"0*¨
+0Ç
+Ä
+-
+#E:\Git\Achei\backend\Api\Session.csJ J(9
+%03System.Collections.Generic.Dictionary<TKey, TValue>"__id*R*P
+Api.Session"?
+usuarios3System.Collections.Generic.Dictionary<TKey, TValue>Ð
+Í
+-
+#E:\Git\Achei\backend\Api\Session.csJ J('
+
+%1bool"@System.Collections.Generic.Dictionary<TKey, TValue>.Remove(TKey)*;
+9
+%03System.Collections.Generic.Dictionary<TKey, TValue>*
+
+tokenstring*
+1
+2*½
+1d
+b
+-
+#E:\Git\Achei\backend\Api\Session.csL$ L(S
+%2string"__concat*
+""*
+
+tokenstringa
+_
+-
+#E:\Git\Achei\backend\Api\Session.csL$ M(9
+%3string"__concat*
+
+%2string*
+""[Y
+-
+#E:\Git\Achei\backend\Api\Session.csL M(:
+%4System.Exception"System.ExceptionŒ
+‰
+-
+#E:\Git\Achei\backend\Api\Session.csL L(#
+
+%5void""System.Exception.Exception(string)*
+
+%4System.Exception*
+
+%3string*
+2*I
+2"D
+-
+#E:\Git\Achei\backend\Api\Session.csO O(	
+implicit return:
+tokenstringB"
+Api.Session

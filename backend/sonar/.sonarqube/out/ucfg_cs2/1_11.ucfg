@@ -1,35 +1,0 @@
-
-1Persistencia.Services.CrudService<T>.Atualizar(T)C
-9D:\git\Achei\backend\Persistencia\Services\CrudService.cs (	"0*Ë
-0ß
-Ü
-C
-9D:\git\Achei\backend\Persistencia\Services\CrudService.cs (-
-%0'Microsoft.EntityFrameworkCore.DbContext"__id*`*^&
-$Persistencia.Services.CrudService<T>"4
-	dbService'Microsoft.EntityFrameworkCore.DbContext¯¬
-C
-9D:\git\Achei\backend\Persistencia\Services\CrudService.cs (&G
-%1AMicrosoft.EntityFrameworkCore.ChangeTracking.EntityEntry<TEntity>"@Microsoft.EntityFrameworkCore.DbContext.Update<TEntity>(TEntity)*/
--
-%0'Microsoft.EntityFrameworkCore.DbContext*
-
-entidadeT2Update<TEntity>(TEntity)ß
-Ü
-C
-9D:\git\Achei\backend\Persistencia\Services\CrudService.cs (-
-%2'Microsoft.EntityFrameworkCore.DbContext"__id*`*^&
-$Persistencia.Services.CrudService<T>"4
-	dbService'Microsoft.EntityFrameworkCore.DbContextÊÇ
-C
-9D:\git\Achei\backend\Persistencia\Services\CrudService.cs (#	
-%3int"5Microsoft.EntityFrameworkCore.DbContext.SaveChanges()*/
--
-%2'Microsoft.EntityFrameworkCore.DbContext2SaveChanges()*
-1*_
-1"Z
-C
-9D:\git\Achei\backend\Persistencia\Services\CrudService.cs (	
-implicit return:
-entidadeTB(&
-$Persistencia.Services.CrudService<T>

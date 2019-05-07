@@ -1,123 +1,0 @@
-
-rPersistencia.Contexts.Application.ApplicationDbContext.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)X
-ND:\git\Achei\backend\Persistencia\Contexts\Application\ApplicationDbContext.cs #(	"0*é3
-0∆√
-X
-ND:\git\Achei\backend\Persistencia\Contexts\Application\ApplicationDbContext.cs (A0
-%0*Microsoft.EntityFrameworkCore.ModelBuilder"HMicrosoft.EntityFrameworkCore.ModelBuilder.HasAnnotation(string, object)*<
-:
-modelBuilder*Microsoft.EntityFrameworkCore.ModelBuilder*
-""*
-""2HasAnnotation(string, object)±Æ
-X
-ND:\git\Achei\backend\Persistencia\Contexts\Application\ApplicationDbContext.cs, (?+
-%1%Entidades.Configuration.UsuarioConfig"%Entidades.Configuration.UsuarioConfigœ
-Ã
-X
-ND:\git\Achei\backend\Persistencia\Contexts\Application\ApplicationDbContext.cs0 (=
-
-%2void"5Entidades.Configuration.UsuarioConfig.UsuarioConfig()*-
-+
-%1%Entidades.Configuration.UsuarioConfig‰·
-X
-ND:\git\Achei\backend\Persistencia\Contexts\Application\ApplicationDbContext.cs (@0
-%3*Microsoft.EntityFrameworkCore.ModelBuilder"áMicrosoft.EntityFrameworkCore.ModelBuilder.ApplyConfiguration<TEntity>(Microsoft.EntityFrameworkCore.IEntityTypeConfiguration<TEntity>)*<
-:
-modelBuilder*Microsoft.EntityFrameworkCore.ModelBuilder*-
-+
-%1%Entidades.Configuration.UsuarioConfig2\ApplyConfiguration<TEntity>(Microsoft.EntityFrameworkCore.IEntityTypeConfiguration<TEntity>)´®
-X
-ND:\git\Achei\backend\Persistencia\Contexts\Application\ApplicationDbContext.cs, (<(
-%4"Entidades.Configuration.ItemConfig""Entidades.Configuration.ItemConfig∆
-√
-X
-ND:\git\Achei\backend\Persistencia\Contexts\Application\ApplicationDbContext.cs0 (:
-
-%5void"/Entidades.Configuration.ItemConfig.ItemConfig()**
-(
-%4"Entidades.Configuration.ItemConfig·ﬁ
-X
-ND:\git\Achei\backend\Persistencia\Contexts\Application\ApplicationDbContext.cs (=0
-%6*Microsoft.EntityFrameworkCore.ModelBuilder"áMicrosoft.EntityFrameworkCore.ModelBuilder.ApplyConfiguration<TEntity>(Microsoft.EntityFrameworkCore.IEntityTypeConfiguration<TEntity>)*<
-:
-modelBuilder*Microsoft.EntityFrameworkCore.ModelBuilder**
-(
-%4"Entidades.Configuration.ItemConfig2\ApplyConfiguration<TEntity>(Microsoft.EntityFrameworkCore.IEntityTypeConfiguration<TEntity>)©¶
-X
-ND:\git\Achei\backend\Persistencia\Contexts\Application\ApplicationDbContext.cs, (;'
-%7!Entidades.Configuration.TagConfig"!Entidades.Configuration.TagConfig√
-¿
-X
-ND:\git\Achei\backend\Persistencia\Contexts\Application\ApplicationDbContext.cs0 (9
-
-%8void"-Entidades.Configuration.TagConfig.TagConfig()*)
-'
-%7!Entidades.Configuration.TagConfig‡›
-X
-ND:\git\Achei\backend\Persistencia\Contexts\Application\ApplicationDbContext.cs (<0
-%9*Microsoft.EntityFrameworkCore.ModelBuilder"áMicrosoft.EntityFrameworkCore.ModelBuilder.ApplyConfiguration<TEntity>(Microsoft.EntityFrameworkCore.IEntityTypeConfiguration<TEntity>)*<
-:
-modelBuilder*Microsoft.EntityFrameworkCore.ModelBuilder*)
-'
-%7!Entidades.Configuration.TagConfig2\ApplyConfiguration<TEntity>(Microsoft.EntityFrameworkCore.IEntityTypeConfiguration<TEntity>)∞≠
-X
-ND:\git\Achei\backend\Persistencia\Contexts\Application\ApplicationDbContext.cs, (>+
-%10$Entidades.Configuration.RegiaoConfig"$Entidades.Configuration.RegiaoConfigŒ
-À
-X
-ND:\git\Achei\backend\Persistencia\Contexts\Application\ApplicationDbContext.cs0 (<
-%11void"3Entidades.Configuration.RegiaoConfig.RegiaoConfig()*-
-+
-%10$Entidades.Configuration.RegiaoConfigÂ‚
-X
-ND:\git\Achei\backend\Persistencia\Contexts\Application\ApplicationDbContext.cs (?1
-%12*Microsoft.EntityFrameworkCore.ModelBuilder"áMicrosoft.EntityFrameworkCore.ModelBuilder.ApplyConfiguration<TEntity>(Microsoft.EntityFrameworkCore.IEntityTypeConfiguration<TEntity>)*<
-:
-modelBuilder*Microsoft.EntityFrameworkCore.ModelBuilder*-
-+
-%10$Entidades.Configuration.RegiaoConfig2\ApplyConfiguration<TEntity>(Microsoft.EntityFrameworkCore.IEntityTypeConfiguration<TEntity>)øº
-X
-ND:\git\Achei\backend\Persistencia\Contexts\Application\ApplicationDbContext.cs (.Q
-%13JMicrosoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<TEntity>"<Microsoft.EntityFrameworkCore.ModelBuilder.Entity<TEntity>()*<
-:
-modelBuilder*Microsoft.EntityFrameworkCore.ModelBuilder2Entity<TEntity>()çä
-X
-ND:\git\Achei\backend\Persistencia\Contexts\Application\ApplicationDbContext.cs (+Q
-%14JMicrosoft.EntityFrameworkCore.Metadata.Builders.PropertyBuilder<TProperty>"£Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<TEntity>.Property<TProperty>(System.Linq.Expressions.Expression<System.Func<TEntity, TProperty>>)*S
-Q
-%13JMicrosoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<TEntity>*
-""2XProperty<TProperty>(System.Linq.Expressions.Expression<System.Func<TEntity, TProperty>>)Ö
-Ç
-X
-ND:\git\Achei\backend\Persistencia\Contexts\Application\ApplicationDbContext.cs (+Q
-%15JMicrosoft.EntityFrameworkCore.Metadata.Builders.PropertyBuilder<TProperty>"ÆMicrosoft.EntityFrameworkCore.RelationalPropertyBuilderExtensions.HasColumnName<TProperty>(Microsoft.EntityFrameworkCore.Metadata.Builders.PropertyBuilder<TProperty>, string)*E"C
-AMicrosoft.EntityFrameworkCore.RelationalPropertyBuilderExtensions*S
-Q
-%14JMicrosoft.EntityFrameworkCore.Metadata.Builders.PropertyBuilder<TProperty>*
-""øº
-X
-ND:\git\Achei\backend\Persistencia\Contexts\Application\ApplicationDbContext.cs   (-Q
-%16JMicrosoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<TEntity>"<Microsoft.EntityFrameworkCore.ModelBuilder.Entity<TEntity>()*<
-:
-modelBuilder*Microsoft.EntityFrameworkCore.ModelBuilder2Entity<TEntity>()çä
-X
-ND:\git\Achei\backend\Persistencia\Contexts\Application\ApplicationDbContext.cs  !(+Q
-%17JMicrosoft.EntityFrameworkCore.Metadata.Builders.PropertyBuilder<TProperty>"£Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<TEntity>.Property<TProperty>(System.Linq.Expressions.Expression<System.Func<TEntity, TProperty>>)*S
-Q
-%16JMicrosoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<TEntity>*
-""2XProperty<TProperty>(System.Linq.Expressions.Expression<System.Func<TEntity, TProperty>>)Ö
-Ç
-X
-ND:\git\Achei\backend\Persistencia\Contexts\Application\ApplicationDbContext.cs  "(+Q
-%18JMicrosoft.EntityFrameworkCore.Metadata.Builders.PropertyBuilder<TProperty>"ÆMicrosoft.EntityFrameworkCore.RelationalPropertyBuilderExtensions.HasColumnName<TProperty>(Microsoft.EntityFrameworkCore.Metadata.Builders.PropertyBuilder<TProperty>, string)*E"C
-AMicrosoft.EntityFrameworkCore.RelationalPropertyBuilderExtensions*S
-Q
-%17JMicrosoft.EntityFrameworkCore.Metadata.Builders.PropertyBuilder<TProperty>*
-""*
-1*t
-1"o
-X
-ND:\git\Achei\backend\Persistencia\Contexts\Application\ApplicationDbContext.cs# #(	
-implicit return::
-modelBuilder*Microsoft.EntityFrameworkCore.ModelBuilderB:8
-6Persistencia.Contexts.Application.ApplicationDbContext

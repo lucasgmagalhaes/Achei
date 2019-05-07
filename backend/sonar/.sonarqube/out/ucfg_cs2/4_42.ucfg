@@ -1,0 +1,116 @@
+
+`Api.Startup.ConfigureAuthentication(Microsoft.Extensions.DependencyInjection.IServiceCollection)/
+#E:\Git\Achei\backend\Api\Startup.csë ë(,"0*û%
+0{y
+/
+#E:\Git\Achei\backend\Api\Startup.csì: ì(U%
+%0Api.Token.SigningConfigurations"Api.Token.SigningConfigurations¢
+ü
+/
+#E:\Git\Achei\backend\Api\Startup.csì> ì(S
+
+%1void"7Api.Token.SigningConfigurations.SigningConfigurations()*'
+%
+%0Api.Token.SigningConfigurationsù
+ö
+/
+#E:\Git\Achei\backend\Api\Startup.csì" ì(U8
+signingConfigurationsApi.Token.SigningConfigurations"__id*'
+%
+%0Api.Token.SigningConfigurations˚
+¯
+/
+#E:\Git\Achei\backend\Api\Startup.csî î(8A
+%2;Microsoft.Extensions.DependencyInjection.IServiceCollection"©Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton<TService>(Microsoft.Extensions.DependencyInjection.IServiceCollection, TService)*O"M
+KMicrosoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions*I
+G
+services;Microsoft.Extensions.DependencyInjection.IServiceCollection*:
+8
+signingConfigurationsApi.Token.SigningConfigurationswu
+/
+#E:\Git\Achei\backend\Api\Startup.csñ6 ñ(O#
+%3Api.Token.TokenConfigurations"Api.Token.TokenConfigurationsú
+ô
+/
+#E:\Git\Achei\backend\Api\Startup.csñ: ñ(M
+
+%4void"3Api.Token.TokenConfigurations.TokenConfigurations()*%
+#
+%3Api.Token.TokenConfigurationsó
+î
+/
+#E:\Git\Achei\backend\Api\Startup.csñ  ñ(O4
+tokenConfigurationsApi.Token.TokenConfigurations"__id*%
+#
+%3Api.Token.TokenConfigurationsù
+ö
+/
+#E:\Git\Achei\backend\Api\Startup.csò ò(7
+%51Microsoft.Extensions.Configuration.IConfiguration"Api.Startup.Configuration.get*
+Api.Startupëé
+/
+#E:\Git\Achei\backend\Api\Startup.csò ò(?>
+%68Microsoft.Extensions.Configuration.IConfigurationSection"DMicrosoft.Extensions.Configuration.IConfiguration.GetSection(string)*9
+7
+%51Microsoft.Extensions.Configuration.IConfiguration*
+""2GetSection(string)ŒÀ
+/
+#E:\Git\Achei\backend\Api\Startup.csó ò(@N
+%7HMicrosoft.Extensions.Options.ConfigureFromConfigurationOptions<TOptions>"HMicrosoft.Extensions.Options.ConfigureFromConfigurationOptions<TOptions>Ù
+Ò
+/
+#E:\Git\Achei\backend\Api\Startup.csó ó(F
+
+%8void"ùMicrosoft.Extensions.Options.ConfigureFromConfigurationOptions<TOptions>.ConfigureFromConfigurationOptions(Microsoft.Extensions.Configuration.IConfiguration)*P
+N
+%7HMicrosoft.Extensions.Options.ConfigureFromConfigurationOptions<TOptions>*@
+>
+%68Microsoft.Extensions.Configuration.IConfigurationSection¨©
+/
+#E:\Git\Achei\backend\Api\Startup.csó ô(3
+
+%9void"KMicrosoft.Extensions.Options.ConfigureOptions<TOptions>.Configure(TOptions)*P
+N
+%7HMicrosoft.Extensions.Options.ConfigureFromConfigurationOptions<TOptions>*6
+4
+tokenConfigurationsApi.Token.TokenConfigurations2Configure(TOptions)¯
+ı
+/
+#E:\Git\Achei\backend\Api\Startup.csö ö(6B
+%10;Microsoft.Extensions.DependencyInjection.IServiceCollection"©Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton<TService>(Microsoft.Extensions.DependencyInjection.IServiceCollection, TService)*O"M
+KMicrosoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions*I
+G
+services;Microsoft.Extensions.DependencyInjection.IServiceCollection*6
+4
+tokenConfigurationsApi.Token.TokenConfigurationsè
+å
+/
+#E:\Git\Achei\backend\Api\Startup.csù °(@
+%119Microsoft.AspNetCore.Authentication.AuthenticationBuilder"ÎMicrosoft.Extensions.DependencyInjection.AuthenticationServiceCollectionExtensions.AddAuthentication(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Action<Microsoft.AspNetCore.Authentication.AuthenticationOptions>)*V"T
+RMicrosoft.Extensions.DependencyInjection.AuthenticationServiceCollectionExtensions*I
+G
+services;Microsoft.Extensions.DependencyInjection.IServiceCollection*
+""⁄
+◊
+/
+#E:\Git\Achei\backend\Api\Startup.csù ™(@
+%129Microsoft.AspNetCore.Authentication.AuthenticationBuilder"”Microsoft.Extensions.DependencyInjection.JwtBearerExtensions.AddJwtBearer(Microsoft.AspNetCore.Authentication.AuthenticationBuilder, System.Action<Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerOptions>)*@">
+<Microsoft.Extensions.DependencyInjection.JwtBearerExtensions*B
+@
+%119Microsoft.AspNetCore.Authentication.AuthenticationBuilder*
+""å
+â
+/
+#E:\Git\Achei\backend\Api\Startup.cs¨ ±(B
+%13;Microsoft.Extensions.DependencyInjection.IServiceCollection"ÁMicrosoft.Extensions.DependencyInjection.AuthorizationServiceCollectionExtensions.AddAuthorization(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Action<Microsoft.AspNetCore.Authorization.AuthorizationOptions>)*U"S
+QMicrosoft.Extensions.DependencyInjection.AuthorizationServiceCollectionExtensions*I
+G
+services;Microsoft.Extensions.DependencyInjection.IServiceCollection*
+""*
+1*K
+1"F
+/
+#E:\Git\Achei\backend\Api\Startup.cs≤ ≤(	
+implicit return:G
+services;Microsoft.Extensions.DependencyInjection.IServiceCollectionB
+Api.Startup

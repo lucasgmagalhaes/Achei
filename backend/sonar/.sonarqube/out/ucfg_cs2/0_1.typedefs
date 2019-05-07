@@ -1,5 +1,13 @@
-„
-Entidades.Dto.ItemPerdidoDtoEntidades.Entidades.ItemDtoobjectA
-ItemPerdidoDto()-Entidades.Dto.ItemPerdidoDto.ItemPerdidoDto()=
-Recuperado.get+Entidades.Dto.ItemPerdidoDto.Recuperado.get=
-Recuperado.set+Entidades.Dto.ItemPerdidoDto.Recuperado.set
+Õ
+Entidades.Tagobject
+Tag()Entidades.Tag.Tag()
+Id.getEntidades.Tag.Id.get
+Id.setEntidades.Tag.Id.set"
+Nome.getEntidades.Tag.Nome.get"
+Nome.setEntidades.Tag.Nome.set&
+
+ItemId.getEntidades.Tag.ItemId.get&
+
+ItemId.setEntidades.Tag.ItemId.set"
+Item.getEntidades.Tag.Item.get"
+Item.setEntidades.Tag.Item.set

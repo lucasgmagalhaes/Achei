@@ -1,115 +1,102 @@
 
-2Api.Controllers.ItemAchadoController.Excluir(long)F
-<D:\git\Achei\backend\Api\Controllers\ItemAchadoController.cs: F(	"5*
-0*	
-1
-2
-3*…
-2ð
-í
+]Migrations.Conversor_2019031001.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)<
+2E:\Git\Achei\backend\Migrations\v1.0\2019031001.cs  (""0*„
+0`
+^
+<
+2E:\Git\Achei\backend\Migrations\v1.0\2019031001.cs (-
+%0"__concat*
+""*
+""`
+^
+<
+2E:\Git\Achei\backend\Migrations\v1.0\2019031001.cs (0
+%1"__concat*
+
+%0*
+""`
+^
+<
+2E:\Git\Achei\backend\Migrations\v1.0\2019031001.cs (1
+%2"__concat*
+
+%1*
+""`
+^
+<
+2E:\Git\Achei\backend\Migrations\v1.0\2019031001.cs (1
+%3"__concat*
+
+%2*
+""`
+^
+<
+2E:\Git\Achei\backend\Migrations\v1.0\2019031001.cs (5
+%4"__concat*
+
+%3*
+""`
+^
+<
+2E:\Git\Achei\backend\Migrations\v1.0\2019031001.cs (.
+%5"__concat*
+
+%4*
+""`
+^
+<
+2E:\Git\Achei\backend\Migrations\v1.0\2019031001.cs (/
+%6"__concat*
+
+%5*
+""`
+^
+<
+2E:\Git\Achei\backend\Migrations\v1.0\2019031001.cs ('
+%7"__concat*
+
+%6*
+""`
+^
+<
+2E:\Git\Achei\backend\Migrations\v1.0\2019031001.cs (+
+%8"__concat*
+
+%7*
+""`
+^
+<
+2E:\Git\Achei\backend\Migrations\v1.0\2019031001.cs (.
+%9"__concat*
+
+%8*
+""a
+_
+<
+2E:\Git\Achei\backend\Migrations\v1.0\2019031001.cs ($
+%10"__concat*
+
+%9*
+""b
+`
+<
+2E:\Git\Achei\backend\Migrations\v1.0\2019031001.cs (
+%11"__concat*
+
+%10*
+""ÞÛ
+<
+2E:\Git\Achei\backend\Migrations\v1.0\2019031001.cs (`
+%12YMicrosoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder<TOperation>"KMicrosoft.EntityFrameworkCore.Migrations.MigrationBuilder.Sql(string, bool)*H
 F
-<D:\git\Achei\backend\Api\Controllers\ItemAchadoController.cs? ?(!0
-%0*Persistencia.Interfaces.IItemAchadoService"__id*k*i&
-$Api.Controllers.ItemAchadoController"?
-itemAchadoService*Persistencia.Interfaces.IItemAchadoServiceÙÖ
-F
-<D:\git\Achei\backend\Api\Controllers\ItemAchadoController.cs? ?(-
-
-%1void"5Persistencia.Interfaces.ICrudService<T>.Deletar(long)*2
-0
-%0*Persistencia.Interfaces.IItemAchadoService*
-""2Deletar(long)zx
-F
-<D:\git\Achei\backend\Api\Controllers\ItemAchadoController.cs@ @(i
-%2Api.RequestResponse"Api.RequestResponse›
-˜
-F
-<D:\git\Achei\backend\Api\Controllers\ItemAchadoController.cs@ @(-
-
-%3void"%Api.RequestResponse.RequestResponse()*
-
-%2Api.RequestResponse‰
-†
-F
-<D:\git\Achei\backend\Api\Controllers\ItemAchadoController.cs@2 @(W.
-
-%2Api.RequestResponse"
-messagestring"__id*
-""ˆ
-…
-F
-<D:\git\Achei\backend\Api\Controllers\ItemAchadoController.cs@Y @(g-
-
-%2Api.RequestResponse"
-statusstring"__id*
-""„
-F
-<D:\git\Achei\backend\Api\Controllers\ItemAchadoController.cs@ @(j-
-%4'Microsoft.AspNetCore.Mvc.OkObjectResult"2Microsoft.AspNetCore.Mvc.ControllerBase.Ok(object)*+)
-'Microsoft.AspNetCore.Mvc.ControllerBase*
-
-%2Api.RequestResponse2
-Ok(object)"y
-F
-<D:\git\Achei\backend\Api\Controllers\ItemAchadoController.cs@ @(k/
--
-%4'Microsoft.AspNetCore.Mvc.OkObjectResult*
-4*	
-1
-3
-3*€	
-1zx
-F
-<D:\git\Achei\backend\Api\Controllers\ItemAchadoController.csD" D(`
-%5Api.RequestResponse"Api.RequestResponse›
-˜
-F
-<D:\git\Achei\backend\Api\Controllers\ItemAchadoController.csD& D(5
-
-%6void"%Api.RequestResponse.RequestResponse()*
-
-%5Api.RequestResponsež›
-F
-<D:\git\Achei\backend\Api\Controllers\ItemAchadoController.csDD D(N
-%7string"System.Exception.Message.get*
-
-exSystem.Exception2Message.get‘
-Ž
-F
-<D:\git\Achei\backend\Api\Controllers\ItemAchadoController.csD: D(N.
-
-%5Api.RequestResponse"
-messagestring"__id*
-
-%7stringˆ
-…
-F
-<D:\git\Achei\backend\Api\Controllers\ItemAchadoController.csDP D(^-
-
-%5Api.RequestResponse"
-statusstring"__id*
-""œ™
-F
-<D:\git\Achei\backend\Api\Controllers\ItemAchadoController.csD D(a5
-%8/Microsoft.AspNetCore.Mvc.BadRequestObjectResult":Microsoft.AspNetCore.Mvc.ControllerBase.BadRequest(object)*+)
-'Microsoft.AspNetCore.Mvc.ControllerBase*
-
-%5Api.RequestResponse2BadRequest(object)"
-F
-<D:\git\Achei\backend\Api\Controllers\ItemAchadoController.csD D(b7
-5
-%8/Microsoft.AspNetCore.Mvc.BadRequestObjectResult*b
-3"]
-F
-<D:\git\Achei\backend\Api\Controllers\ItemAchadoController.csF F(	
-implicit return*p
-5f
-d
-F
-<D:\git\Achei\backend\Api\Controllers\ItemAchadoController.cs; ;($
-%9"__entrypoint*
-""*
-0:
-
-idlongB(&
-$Api.Controllers.ItemAchadoController
+	migration9Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder*
+
+%11*
+""2Sql(string, bool)*
+1*X
+1"S
+<
+2E:\Git\Achei\backend\Migrations\v1.0\2019031001.cs (	
+implicit return:F
+	migration9Microsoft.EntityFrameworkCore.Migrations.MigrationBuilderB#!
+Migrations.Conversor_2019031001

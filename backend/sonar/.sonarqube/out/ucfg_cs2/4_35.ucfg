@@ -1,0 +1,27 @@
+
+NApi.Startup.ConfigureSwagger(Microsoft.AspNetCore.Builder.IApplicationBuilder)-
+#E:\Git\Achei\backend\Api\Startup.cs| |(%"0*Ð
+0›
+˜
+-
+#E:\Git\Achei\backend\Api\Startup.cs~ ~(6
+%00Microsoft.AspNetCore.Builder.IApplicationBuilder"°Microsoft.AspNetCore.Builder.SwaggerBuilderExtensions.UseSwagger(Microsoft.AspNetCore.Builder.IApplicationBuilder, System.Action<Swashbuckle.AspNetCore.Swagger.SwaggerOptions>)*9"7
+5Microsoft.AspNetCore.Builder.SwaggerBuilderExtensions*9
+7
+app0Microsoft.AspNetCore.Builder.IApplicationBuilder*
+""§
+¤
+/
+#E:\Git\Achei\backend\Api\Startup.cs€ ƒ(6
+%10Microsoft.AspNetCore.Builder.IApplicationBuilder"¸Microsoft.AspNetCore.Builder.SwaggerUIBuilderExtensions.UseSwaggerUI(Microsoft.AspNetCore.Builder.IApplicationBuilder, System.Action<Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIOptions>)*;"9
+7Microsoft.AspNetCore.Builder.SwaggerUIBuilderExtensions*9
+7
+app0Microsoft.AspNetCore.Builder.IApplicationBuilder*
+""*
+1*K
+1"F
+/
+#E:\Git\Achei\backend\Api\Startup.cs„ „(	
+implicit return:7
+app0Microsoft.AspNetCore.Builder.IApplicationBuilderB
+Api.Startup

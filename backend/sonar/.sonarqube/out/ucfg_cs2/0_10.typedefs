@@ -1,13 +1,11 @@
-Õ
-Entidades.Tagobject
-Tag()Entidades.Tag.Tag()
-Id.getEntidades.Tag.Id.get
-Id.setEntidades.Tag.Id.set"
-Nome.getEntidades.Tag.Nome.get"
-Nome.setEntidades.Tag.Nome.set&
+Ë
+Entidades.Dto.TagDtoobject)
+TagDto()Entidades.Dto.TagDto.TagDto()%
+Id.getEntidades.Dto.TagDto.Id.get%
+Id.setEntidades.Dto.TagDto.Id.set)
+Nome.getEntidades.Dto.TagDto.Nome.get)
+Nome.setEntidades.Dto.TagDto.Nome.set-
 
-ItemId.getEntidades.Tag.ItemId.get&
+ItemId.getEntidades.Dto.TagDto.ItemId.get-
 
-ItemId.setEntidades.Tag.ItemId.set"
-Item.getEntidades.Tag.Item.get"
-Item.setEntidades.Tag.Item.set
+ItemId.setEntidades.Dto.TagDto.ItemId.set

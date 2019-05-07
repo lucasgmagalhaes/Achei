@@ -1,34 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AnalysisConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.sonarsource.com/msbuild/integration/2015/1">
-  <SonarConfigDir>D:\git\Achei\backend\sonar\.sonarqube\conf</SonarConfigDir>
-  <SonarOutputDir>D:\git\Achei\backend\sonar\.sonarqube\out</SonarOutputDir>
-  <SonarBinDir>D:\git\Achei\backend\sonar\.sonarqube\bin</SonarBinDir>
-  <SonarScannerWorkingDirectory>D:\git\Achei\backend\sonar</SonarScannerWorkingDirectory>
+  <SonarConfigDir>E:\Git\Achei\backend\sonar\.sonarqube\conf</SonarConfigDir>
+  <SonarOutputDir>E:\Git\Achei\backend\sonar\.sonarqube\out</SonarOutputDir>
+  <SonarBinDir>E:\Git\Achei\backend\sonar\.sonarqube\bin</SonarBinDir>
+  <SonarScannerWorkingDirectory>E:\Git\Achei\backend\sonar</SonarScannerWorkingDirectory>
   <HasBeginStepCommandLineCredentials>true</HasBeginStepCommandLineCredentials>
   <SonarQubeHostUrl>https://sonarcloud.io</SonarQubeHostUrl>
-  <SonarQubeVersion>7.8.0.23906</SonarQubeVersion>
+  <SonarQubeVersion>7.8.0.24676</SonarQubeVersion>
   <SonarProjectKey>lucasgmagalhaes_Achei</SonarProjectKey>
   <AdditionalConfig>
     <ConfigSetting Id="BuildUri" />
     <ConfigSetting Id="TfsUri" />
-    <ConfigSetting Id="settings.file.path" Value="C:\Users\Lucas\.dotnet\tools\.store\dotnet-sonarscanner\4.6.0\dotnet-sonarscanner\4.6.0\tools\netcoreapp2.1\any\SonarQube.Analysis.xml" />
+    <ConfigSetting Id="settings.file.path" Value="C:\Users\lucas.magalhaes\.dotnet\tools\.store\dotnet-sonarscanner\4.6.0\dotnet-sonarscanner\4.6.0\tools\netcoreapp2.1\any\SonarQube.Analysis.xml" />
   </AdditionalConfig>
   <ServerSettings>
-    <Property Name="sonaranalyzer-cs.nuget.packageVersion">7.13.0.8313</Property>
-    <Property Name="sonaranalyzer.security.cs.pluginVersion">7.7.0.4011</Property>
+    <Property Name="sonaranalyzer-cs.nuget.packageVersion">7.14.0.8411</Property>
+    <Property Name="sonaranalyzer.security.cs.pluginVersion">7.8.0.4451</Property>
     <Property Name="sonar.cs.ignoreHeaderComments">true</Property>
     <Property Name="sonar.cfamily.useSema">true</Property>
     <Property Name="sonar.c.file.suffixes">.c,.h</Property>
     <Property Name="sonar.typescript.file.suffixes">.ts,.tsx</Property>
     <Property Name="sonar.cobol.dialect">ibm-enterprise-cobol</Property>
-    <Property Name="email.fromName">SonarQube</Property>
+    <Property Name="email.fromName">SonarCloud</Property>
     <Property Name="sonar.python.xunit.skipDetails">false</Property>
     <Property Name="sonar.plsql.jdbc.driver.class">oracle.jdbc.OracleDriver</Property>
     <Property Name="sonar.go.exclusions">**/vendor/**</Property>
     <Property Name="sonar.forceAuthentication">false</Property>
     <Property Name="sonar.notifications.delay">60</Property>
     <Property Name="sonar.cpp.file.suffixes">.cc,.cpp,.cxx,.c++,.hh,.hpp,.hxx,.h++,.ipp</Property>
-    <Property Name="sonaranalyzer.security.cs.nuget.packageVersion">7.7.0.4011</Property>
+    <Property Name="sonaranalyzer.security.cs.nuget.packageVersion">7.8.0.4451</Property>
     <Property Name="sonaranalyzer-cs.ruleNamespace">SonarAnalyzer.CSharp</Property>
     <Property Name="sonar.builtInQualityProfiles.disableNotificationOnUpdate">false</Property>
     <Property Name="sonar.css.file.suffixes">.css,.less,.scss</Property>
@@ -68,7 +68,7 @@
     <Property Name="sonar.plsql.file.suffixes">sql,tab,pkb</Property>
     <Property Name="sonaranalyzer.security.cs.ruleNamespace">SonarAnalyzer.Security</Property>
     <Property Name="sonar.cobol.tab.width">8</Property>
-    <Property Name="sonaranalyzer-vbnet.staticResourceName">SonarAnalyzer-7.13.0.8313.zip</Property>
+    <Property Name="sonaranalyzer-vbnet.staticResourceName">SonarAnalyzer-7.14.0.8411.zip</Property>
     <Property Name="sonar.java.file.suffixes">.java,.jav</Property>
     <Property Name="sonar.kotlin.file.suffixes">.kt</Property>
     <Property Name="sonar.php.file.suffixes">php,php3,php4,php5,phtml,inc</Property>
@@ -77,11 +77,12 @@
     <Property Name="sonar.auth.bitbucket.allowUsersToSignUp">true</Property>
     <Property Name="sonar.python.coverage.reportPaths">coverage-reports/*coverage-*.xml</Property>
     <Property Name="sonar.javascript.jQueryObjectAliases">$, jQuery</Property>
-    <Property Name="sonaranalyzer-vbnet.nuget.packageVersion">7.13.0.8313</Property>
+    <Property Name="sonaranalyzer-vbnet.nuget.packageVersion">7.14.0.8411</Property>
     <Property Name="sonar.go.file.suffixes">.go</Property>
     <Property Name="sonar.cpd.cobol.minimumLines">30</Property>
     <Property Name="sonar.cobol.exec.recoveryMode">true</Property>
     <Property Name="sonar.dbcleaner.weeksBeforeKeepingOnlyAnalysesWithVersion">104</Property>
+    <Property Name="sonar.php.exclusions">**/vendor/**</Property>
     <Property Name="sonar.swift.file.suffixes">.swift</Property>
     <Property Name="sonar.vbnet.roslyn.ignoreIssues">false</Property>
     <Property Name="sonar.plsql.ignoreHeaderComments">false</Property>
@@ -94,7 +95,7 @@
     <Property Name="sonar.javascript.exclusions">**/node_modules/**,**/bower_components/**</Property>
     <Property Name="sonaranalyzer-vbnet.nuget.packageId">SonarAnalyzer.VisualBasic</Property>
     <Property Name="email.from">noreply@sonarcloud.io</Property>
-    <Property Name="sonaranalyzer-vbnet.pluginVersion">7.13.0.8313</Property>
+    <Property Name="sonaranalyzer-vbnet.pluginVersion">7.14.0.8411</Property>
     <Property Name="sonaranalyzer.security.cs.analyzerId">SonarAnalyzer.Security</Property>
     <Property Name="sonar.typescript.node">node</Property>
     <Property Name="sonar.dbcleaner.weeksBeforeKeepingOnlyOneSnapshotByWeek">1</Property>
@@ -109,7 +110,7 @@
     <Property Name="sonar.branch.longLivedBranches.regex">(branch|release)-.*</Property>
     <Property Name="sonar.objc.file.suffixes">.m</Property>
     <Property Name="sonar.ruby.coverage.reportPaths">coverage/.resultset.json</Property>
-    <Property Name="sonaranalyzer-cs.staticResourceName">SonarAnalyzer-7.13.0.8313.zip</Property>
+    <Property Name="sonaranalyzer-cs.staticResourceName">SonarAnalyzer-7.14.0.8411.zip</Property>
     <Property Name="sonar.cpd.cobol.ignoreLiteral">true</Property>
     <Property Name="sonaranalyzer-cs.nuget.packageId">SonarAnalyzer.CSharp</Property>
     <Property Name="sonar.authenticator.downcase">false</Property>
@@ -117,8 +118,8 @@
     <Property Name="sonar.organizations.anyoneCanCreate">true</Property>
     <Property Name="sonar.technicalDebt.ratingGrid">0.05,0.1,0.2,0.5</Property>
     <Property Name="sonar.lf.enableGravatar">true</Property>
-    <Property Name="sonaranalyzer-cs.pluginVersion">7.13.0.8313</Property>
-    <Property Name="sonaranalyzer.security.cs.staticResourceName">SonarAnalyzer.Security-7.7.0.4011.zip</Property>
+    <Property Name="sonaranalyzer-cs.pluginVersion">7.14.0.8411</Property>
+    <Property Name="sonaranalyzer.security.cs.staticResourceName">SonarAnalyzer.Security-7.8.0.4451.zip</Property>
     <Property Name="sonar.javascript.file.suffixes">.js,.jsx,.vue</Property>
     <Property Name="sonar.cpd.abap.minimumLines">20</Property>
     <Property Name="sonaranalyzer-vbnet.pluginKey">vbnet</Property>
@@ -139,7 +140,7 @@ Select your &lt;a href="https://about.sonarcloud.io"&gt;plan&lt;/a&gt; and start
   &lt;/div&gt;
 &lt;/div&gt;</Property>
     <Property Name="sonar.core.id">BD367519-AWHW8ct9-T_TB3XqouNu</Property>
-    <Property Name="sonar.core.startTime">18/04/2019 04:51:11</Property>
+    <Property Name="sonar.core.startTime">07/05/2019 11:59:50</Property>
   </ServerSettings>
   <LocalSettings>
     <Property Name="sonar.host.url">https://sonarcloud.io</Property>
@@ -148,56 +149,56 @@ Select your &lt;a href="https://about.sonarcloud.io"&gt;plan&lt;/a&gt; and start
   <AnalyzersSettings>
     <AnalyzerSettings>
       <Language>cs</Language>
-      <RuleSetFilePath>D:\git\Achei\backend\sonar\.sonarqube\conf\SonarQubeRoslyn-cs.ruleset</RuleSetFilePath>
-      <TestProjectRuleSetFilePath>D:\git\Achei\backend\sonar\.sonarqube\conf\SonarQubeRoslyn-cs-test.ruleset</TestProjectRuleSetFilePath>
+      <RuleSetFilePath>E:\Git\Achei\backend\sonar\.sonarqube\conf\SonarQubeRoslyn-cs.ruleset</RuleSetFilePath>
+      <TestProjectRuleSetFilePath>E:\Git\Achei\backend\sonar\.sonarqube\conf\SonarQubeRoslyn-cs-test.ruleset</TestProjectRuleSetFilePath>
       <AnalyzerPlugins>
-        <AnalyzerPlugin Key="csharp" Version="7.13.0.8313" StaticResourceName="SonarAnalyzer-7.13.0.8313.zip">
+        <AnalyzerPlugin Key="csharp" Version="7.14.0.8411" StaticResourceName="SonarAnalyzer-7.14.0.8411.zip">
           <AssemblyPaths>
-            <Path>C:\Users\Lucas\AppData\Local\Temp\.sonarqube\resources\0\Google.Protobuf.dll</Path>
-            <Path>C:\Users\Lucas\AppData\Local\Temp\.sonarqube\resources\0\SonarAnalyzer.CSharp.dll</Path>
-            <Path>C:\Users\Lucas\AppData\Local\Temp\.sonarqube\resources\0\SonarAnalyzer.dll</Path>
+            <Path>C:\Users\lucas.magalhaes\AppData\Local\Temp\.sonarqube\resources\0\Google.Protobuf.dll</Path>
+            <Path>C:\Users\lucas.magalhaes\AppData\Local\Temp\.sonarqube\resources\0\SonarAnalyzer.CSharp.dll</Path>
+            <Path>C:\Users\lucas.magalhaes\AppData\Local\Temp\.sonarqube\resources\0\SonarAnalyzer.dll</Path>
           </AssemblyPaths>
         </AnalyzerPlugin>
-        <AnalyzerPlugin Key="vbnet" Version="7.13.0.8313" StaticResourceName="SonarAnalyzer-7.13.0.8313.zip">
+        <AnalyzerPlugin Key="vbnet" Version="7.14.0.8411" StaticResourceName="SonarAnalyzer-7.14.0.8411.zip">
           <AssemblyPaths>
-            <Path>C:\Users\Lucas\AppData\Local\Temp\.sonarqube\resources\1\Google.Protobuf.dll</Path>
-            <Path>C:\Users\Lucas\AppData\Local\Temp\.sonarqube\resources\1\SonarAnalyzer.dll</Path>
-            <Path>C:\Users\Lucas\AppData\Local\Temp\.sonarqube\resources\1\SonarAnalyzer.VisualBasic.dll</Path>
+            <Path>C:\Users\lucas.magalhaes\AppData\Local\Temp\.sonarqube\resources\1\Google.Protobuf.dll</Path>
+            <Path>C:\Users\lucas.magalhaes\AppData\Local\Temp\.sonarqube\resources\1\SonarAnalyzer.dll</Path>
+            <Path>C:\Users\lucas.magalhaes\AppData\Local\Temp\.sonarqube\resources\1\SonarAnalyzer.VisualBasic.dll</Path>
           </AssemblyPaths>
         </AnalyzerPlugin>
-        <AnalyzerPlugin Key="securitycsharpfrontend" Version="7.7.0.4011" StaticResourceName="SonarAnalyzer.Security-7.7.0.4011.zip">
+        <AnalyzerPlugin Key="securitycsharpfrontend" Version="7.8.0.4451" StaticResourceName="SonarAnalyzer.Security-7.8.0.4451.zip">
           <AssemblyPaths>
-            <Path>C:\Users\Lucas\AppData\Local\Temp\.sonarqube\resources\2\analyzers\dotnet\cs\Google.Protobuf.dll</Path>
-            <Path>C:\Users\Lucas\AppData\Local\Temp\.sonarqube\resources\2\analyzers\dotnet\cs\SonarAnalyzer.Security.dll</Path>
+            <Path>C:\Users\lucas.magalhaes\AppData\Local\Temp\.sonarqube\resources\2\analyzers\dotnet\cs\Google.Protobuf.dll</Path>
+            <Path>C:\Users\lucas.magalhaes\AppData\Local\Temp\.sonarqube\resources\2\analyzers\dotnet\cs\SonarAnalyzer.Security.dll</Path>
           </AssemblyPaths>
         </AnalyzerPlugin>
       </AnalyzerPlugins>
       <AdditionalFilePaths>
-        <Path>D:\git\Achei\backend\sonar\.sonarqube\conf\cs\SonarLint.xml</Path>
+        <Path>E:\Git\Achei\backend\sonar\.sonarqube\conf\cs\SonarLint.xml</Path>
       </AdditionalFilePaths>
     </AnalyzerSettings>
     <AnalyzerSettings>
       <Language>vbnet</Language>
-      <RuleSetFilePath>D:\git\Achei\backend\sonar\.sonarqube\conf\SonarQubeRoslyn-vbnet.ruleset</RuleSetFilePath>
-      <TestProjectRuleSetFilePath>D:\git\Achei\backend\sonar\.sonarqube\conf\SonarQubeRoslyn-vbnet-test.ruleset</TestProjectRuleSetFilePath>
+      <RuleSetFilePath>E:\Git\Achei\backend\sonar\.sonarqube\conf\SonarQubeRoslyn-vbnet.ruleset</RuleSetFilePath>
+      <TestProjectRuleSetFilePath>E:\Git\Achei\backend\sonar\.sonarqube\conf\SonarQubeRoslyn-vbnet-test.ruleset</TestProjectRuleSetFilePath>
       <AnalyzerPlugins>
-        <AnalyzerPlugin Key="csharp" Version="7.13.0.8313" StaticResourceName="SonarAnalyzer-7.13.0.8313.zip">
+        <AnalyzerPlugin Key="csharp" Version="7.14.0.8411" StaticResourceName="SonarAnalyzer-7.14.0.8411.zip">
           <AssemblyPaths>
-            <Path>C:\Users\Lucas\AppData\Local\Temp\.sonarqube\resources\0\Google.Protobuf.dll</Path>
-            <Path>C:\Users\Lucas\AppData\Local\Temp\.sonarqube\resources\0\SonarAnalyzer.CSharp.dll</Path>
-            <Path>C:\Users\Lucas\AppData\Local\Temp\.sonarqube\resources\0\SonarAnalyzer.dll</Path>
+            <Path>C:\Users\lucas.magalhaes\AppData\Local\Temp\.sonarqube\resources\0\Google.Protobuf.dll</Path>
+            <Path>C:\Users\lucas.magalhaes\AppData\Local\Temp\.sonarqube\resources\0\SonarAnalyzer.CSharp.dll</Path>
+            <Path>C:\Users\lucas.magalhaes\AppData\Local\Temp\.sonarqube\resources\0\SonarAnalyzer.dll</Path>
           </AssemblyPaths>
         </AnalyzerPlugin>
-        <AnalyzerPlugin Key="vbnet" Version="7.13.0.8313" StaticResourceName="SonarAnalyzer-7.13.0.8313.zip">
+        <AnalyzerPlugin Key="vbnet" Version="7.14.0.8411" StaticResourceName="SonarAnalyzer-7.14.0.8411.zip">
           <AssemblyPaths>
-            <Path>C:\Users\Lucas\AppData\Local\Temp\.sonarqube\resources\1\Google.Protobuf.dll</Path>
-            <Path>C:\Users\Lucas\AppData\Local\Temp\.sonarqube\resources\1\SonarAnalyzer.dll</Path>
-            <Path>C:\Users\Lucas\AppData\Local\Temp\.sonarqube\resources\1\SonarAnalyzer.VisualBasic.dll</Path>
+            <Path>C:\Users\lucas.magalhaes\AppData\Local\Temp\.sonarqube\resources\1\Google.Protobuf.dll</Path>
+            <Path>C:\Users\lucas.magalhaes\AppData\Local\Temp\.sonarqube\resources\1\SonarAnalyzer.dll</Path>
+            <Path>C:\Users\lucas.magalhaes\AppData\Local\Temp\.sonarqube\resources\1\SonarAnalyzer.VisualBasic.dll</Path>
           </AssemblyPaths>
         </AnalyzerPlugin>
       </AnalyzerPlugins>
       <AdditionalFilePaths>
-        <Path>D:\git\Achei\backend\sonar\.sonarqube\conf\vbnet\SonarLint.xml</Path>
+        <Path>E:\Git\Achei\backend\sonar\.sonarqube\conf\vbnet\SonarLint.xml</Path>
       </AdditionalFilePaths>
     </AnalyzerSettings>
   </AnalyzersSettings>

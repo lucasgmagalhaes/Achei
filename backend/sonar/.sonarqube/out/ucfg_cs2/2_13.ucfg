@@ -1,0 +1,29 @@
+
+KPersistencia.Services.AutenticacaoService.AutenticarUsuario(string, string)K
+AE:\Git\Achei\backend\Persistencia\Services\AutenticacaoService.cs (("0*„
+0…
+‚
+K
+AE:\Git\Achei\backend\Persistencia\Services\AutenticacaoService.cs (A
+%0System.Linq.IQueryable<T>"ÒPersistencia.Services.CrudService<T>.Buscar(System.Linq.Expressions.Expression<System.Func<T, bool>>, System.Func<System.Linq.IQueryable<T>, Microsoft.EntityFrameworkCore.Query.IIncludableQueryable<T, object>>)*-+
+)Persistencia.Services.AutenticacaoService*
+""*
+""‚
+ÿ
+K
+AE:\Git\Achei\backend\Persistencia\Services\AutenticacaoService.cs (S!
+%1Entidades.Entidades.Usuario"OSystem.Linq.Queryable.SingleOrDefault<TSource>(System.Linq.IQueryable<TSource>)*"
+System.Linq.Queryable*!
+
+%0System.Linq.IQueryable<T>"r
+K
+AE:\Git\Achei\backend\Persistencia\Services\AutenticacaoService.cs (T#
+!
+%1Entidades.Entidades.Usuario*g
+1"b
+K
+AE:\Git\Achei\backend\Persistencia\Services\AutenticacaoService.cs (	
+implicit return:
+emailstring:
+senhastringB-+
+)Persistencia.Services.AutenticacaoService

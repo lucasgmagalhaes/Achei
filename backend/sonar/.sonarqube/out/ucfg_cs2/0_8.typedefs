@@ -1,4 +1,5 @@
-˘
-%Entidades.Configuration.UsuarioConfigobject˝
-iConfigure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<Entidades.Entidades.Usuario>)èEntidades.Configuration.UsuarioConfig.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<Entidades.Entidades.Usuario>)H
-UsuarioConfig()5Entidades.Configuration.UsuarioConfig.UsuarioConfig()
+Ñ
+Entidades.Dto.ItemPerdidoDtoEntidades.Entidades.ItemDtoobjectA
+ItemPerdidoDto()-Entidades.Dto.ItemPerdidoDto.ItemPerdidoDto()=
+Recuperado.get+Entidades.Dto.ItemPerdidoDto.Recuperado.get=
+Recuperado.set+Entidades.Dto.ItemPerdidoDto.Recuperado.set

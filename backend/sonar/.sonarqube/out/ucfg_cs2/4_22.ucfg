@@ -1,0 +1,110 @@
+
+MApi.Controllers.ItemPerdidoController.Salvar(Entidades.Entidades.ItemPerdido)G
+=E:\Git\Achei\backend\Api\Controllers\ItemPerdidoController.csh h(#"5*
+0*	
+1
+2
+3*Ñ
+2õ
+ò
+G
+=E:\Git\Achei\backend\Api\Controllers\ItemPerdidoController.csl l("1
+%0+Persistencia.Interfaces.IItemPerdidoService"__id*n*l'
+%Api.Controllers.ItemPerdidoController"A
+itemPerdidoService+Persistencia.Interfaces.IItemPerdidoServiceš—
+G
+=E:\Git\Achei\backend\Api\Controllers\ItemPerdidoController.csl l(7%
+%1Entidades.Entidades.ItemPerdido"2Persistencia.Interfaces.ICrudService<T>.Inserir(T)*3
+1
+%0+Persistencia.Interfaces.IItemPerdidoService*0
+.
+itemPerdidoEntidades.Entidades.ItemPerdido2
+Inserir(T){y
+G
+=E:\Git\Achei\backend\Api\Controllers\ItemPerdidoController.csm m(k
+%2Api.RequestResponse"Api.RequestResponseœ
+™
+G
+=E:\Git\Achei\backend\Api\Controllers\ItemPerdidoController.csm m(-
+
+%3void"%Api.RequestResponse.RequestResponse()*
+
+%2Api.RequestResponseŠ
+‡
+G
+=E:\Git\Achei\backend\Api\Controllers\ItemPerdidoController.csm2 m(Y.
+
+%2Api.RequestResponse"
+messagestring"__id*
+""‰
+†
+G
+=E:\Git\Achei\backend\Api\Controllers\ItemPerdidoController.csm[ m(i-
+
+%2Api.RequestResponse"
+statusstring"__id*
+""…‚
+G
+=E:\Git\Achei\backend\Api\Controllers\ItemPerdidoController.csm m(l-
+%4'Microsoft.AspNetCore.Mvc.OkObjectResult"2Microsoft.AspNetCore.Mvc.ControllerBase.Ok(object)*+)
+'Microsoft.AspNetCore.Mvc.ControllerBase*
+
+%2Api.RequestResponse2
+Ok(object)"z
+G
+=E:\Git\Achei\backend\Api\Controllers\ItemPerdidoController.csm m(m/
+-
+%4'Microsoft.AspNetCore.Mvc.OkObjectResult*
+4*	
+1
+3
+3*¤
+1™–
+G
+=E:\Git\Achei\backend\Api\Controllers\ItemPerdidoController.csq q($5
+%5/Microsoft.AspNetCore.Mvc.BadRequestObjectResult":Microsoft.AspNetCore.Mvc.ControllerBase.BadRequest(object)*+)
+'Microsoft.AspNetCore.Mvc.ControllerBase*
+
+eSystem.Exception2BadRequest(object)"‚
+G
+=E:\Git\Achei\backend\Api\Controllers\ItemPerdidoController.csq q(%7
+5
+%5/Microsoft.AspNetCore.Mvc.BadRequestObjectResult*c
+3"^
+G
+=E:\Git\Achei\backend\Api\Controllers\ItemPerdidoController.css s(	
+implicit return*è
+5’
+
+G
+=E:\Git\Achei\backend\Api\Controllers\ItemPerdidoController.csh h(#
+%6"__entrypoint*0
+.
+itemPerdidoEntidades.Entidades.ItemPerdidoÔ
+Ñ
+G
+=E:\Git\Achei\backend\Api\Controllers\ItemPerdidoController.csh% h(-
+%7"
+__annotate*B@
+>Microsoft.AspNetCore.Mvc.FromBodyAttribute.FromBodyAttribute()*0
+.
+itemPerdidoEntidades.Entidades.ItemPerdidoÔ
+Ñ
+G
+=E:\Git\Achei\backend\Api\Controllers\ItemPerdidoController.csg	 g(
+%8"
+__annotate*B@
+>Microsoft.AspNetCore.Mvc.HttpPostAttribute.HttpPostAttribute()*0
+.
+itemPerdidoEntidades.Entidades.ItemPerdidoš
+—
+G
+=E:\Git\Achei\backend\Api\Controllers\ItemPerdidoController.csh$ h(E.
+itemPerdidoEntidades.Entidades.ItemPerdido"__annotation*
+
+%7*
+
+%8*
+0:.
+itemPerdidoEntidades.Entidades.ItemPerdidoB)'
+%Api.Controllers.ItemPerdidoController

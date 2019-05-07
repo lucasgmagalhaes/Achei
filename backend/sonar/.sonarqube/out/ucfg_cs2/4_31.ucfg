@@ -1,0 +1,103 @@
+
+2Api.Session.AdicionarSessaoUsuario(string, string)-
+#E:\Git\Achei\backend\Api\Session.cs& &(1"0*á
+0z
+x
+-
+#E:\Git\Achei\backend\Api\Session.cs( ((+
+
+%0bool"string.IsNullOrEmpty(string)*
+"
+string*
+
+emailstring*
+1
+2*á
+2z
+x
+-
+#E:\Git\Achei\backend\Api\Session.cs(/ ((J
+
+%1bool"string.IsNullOrEmpty(string)*
+"
+string*
+
+bancostring*
+1
+3*á
+1z
+x
+-
+#E:\Git\Achei\backend\Api\Session.cs* *(/
+
+%2bool"string.IsNullOrEmpty(string)*
+"
+string*
+
+emailstring*
+4
+5*Ï
+4[Y
+-
+#E:\Git\Achei\backend\Api\Session.cs, ,(R
+%3System.Exception"System.ExceptionÑ
+Å
+-
+#E:\Git\Achei\backend\Api\Session.cs, ,('
+
+%4void""System.Exception.Exception(string)*
+
+%3System.Exception*
+""*
+6*á
+5z
+x
+-
+#E:\Git\Achei\backend\Api\Session.cs/ /(/
+
+%5bool"string.IsNullOrEmpty(string)*
+"
+string*
+
+bancostring*
+7
+3*Ï
+7[Y
+-
+#E:\Git\Achei\backend\Api\Session.cs1 1(R
+%6System.Exception"System.ExceptionÑ
+Å
+-
+#E:\Git\Achei\backend\Api\Session.cs1 1('
+
+%7void""System.Exception.Exception(string)*
+
+%6System.Exception*
+""*
+6*Ω
+3«
+ƒ
+-
+#E:\Git\Achei\backend\Api\Session.cs4 4(9
+%83System.Collections.Generic.Dictionary<TKey, TValue>"__id*R*P
+Api.Session"?
+usuarios3System.Collections.Generic.Dictionary<TKey, TValue>Ë
+Â
+-
+#E:\Git\Achei\backend\Api\Session.cs4 4(&
+
+%9void"ESystem.Collections.Generic.Dictionary<TKey, TValue>.Add(TKey, TValue)*;
+9
+%83System.Collections.Generic.Dictionary<TKey, TValue>*
+
+emailstring*
+
+bancostring*
+6*I
+6"D
+-
+#E:\Git\Achei\backend\Api\Session.cs5 5(	
+implicit return:
+emailstring:
+bancostringB"
+Api.Session

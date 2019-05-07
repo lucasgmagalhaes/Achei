@@ -1,0 +1,19 @@
+
+sPersistencia.Services.ItemPerdidoService.ItemPerdidoService(Persistencia.Contexts.Application.ApplicationDbContext)J
+@E:\Git\Achei\backend\Persistencia\Services\ItemPerdidoService.cs (!"0*²
+0§
+¤
+J
+@E:\Git\Achei\backend\Persistencia\Services\ItemPerdidoService.csB (S
+
+%0void"YPersistencia.Services.CrudService<T>.CrudService(Microsoft.EntityFrameworkCore.DbContext)*(&
+$Persistencia.Services.CrudService<T>*E
+C
+	dbContext6Persistencia.Contexts.Application.ApplicationDbContext*
+1*f
+1"a
+J
+@E:\Git\Achei\backend\Persistencia\Services\ItemPerdidoService.csV (W
+implicit return:C
+	dbContext6Persistencia.Contexts.Application.ApplicationDbContextB,*
+(Persistencia.Services.ItemPerdidoService

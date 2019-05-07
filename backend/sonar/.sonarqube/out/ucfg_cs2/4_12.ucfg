@@ -1,0 +1,115 @@
+
+2Api.Controllers.ItemAchadoController.Excluir(long)F
+<E:\Git\Achei\backend\Api\Controllers\ItemAchadoController.cs; ;($"5*
+0*	
+1
+2
+3*…
+2ð
+í
+F
+<E:\Git\Achei\backend\Api\Controllers\ItemAchadoController.cs? ?(!0
+%0*Persistencia.Interfaces.IItemAchadoService"__id*k*i&
+$Api.Controllers.ItemAchadoController"?
+itemAchadoService*Persistencia.Interfaces.IItemAchadoServiceÙÖ
+F
+<E:\Git\Achei\backend\Api\Controllers\ItemAchadoController.cs? ?(-
+
+%1void"5Persistencia.Interfaces.ICrudService<T>.Deletar(long)*2
+0
+%0*Persistencia.Interfaces.IItemAchadoService*
+""2Deletar(long)zx
+F
+<E:\Git\Achei\backend\Api\Controllers\ItemAchadoController.cs@ @(i
+%2Api.RequestResponse"Api.RequestResponse›
+˜
+F
+<E:\Git\Achei\backend\Api\Controllers\ItemAchadoController.cs@ @(-
+
+%3void"%Api.RequestResponse.RequestResponse()*
+
+%2Api.RequestResponse‰
+†
+F
+<E:\Git\Achei\backend\Api\Controllers\ItemAchadoController.cs@2 @(W.
+
+%2Api.RequestResponse"
+messagestring"__id*
+""ˆ
+…
+F
+<E:\Git\Achei\backend\Api\Controllers\ItemAchadoController.cs@Y @(g-
+
+%2Api.RequestResponse"
+statusstring"__id*
+""„
+F
+<E:\Git\Achei\backend\Api\Controllers\ItemAchadoController.cs@ @(j-
+%4'Microsoft.AspNetCore.Mvc.OkObjectResult"2Microsoft.AspNetCore.Mvc.ControllerBase.Ok(object)*+)
+'Microsoft.AspNetCore.Mvc.ControllerBase*
+
+%2Api.RequestResponse2
+Ok(object)"y
+F
+<E:\Git\Achei\backend\Api\Controllers\ItemAchadoController.cs@ @(k/
+-
+%4'Microsoft.AspNetCore.Mvc.OkObjectResult*
+4*	
+1
+3
+3*€	
+1zx
+F
+<E:\Git\Achei\backend\Api\Controllers\ItemAchadoController.csD" D(`
+%5Api.RequestResponse"Api.RequestResponse›
+˜
+F
+<E:\Git\Achei\backend\Api\Controllers\ItemAchadoController.csD& D(5
+
+%6void"%Api.RequestResponse.RequestResponse()*
+
+%5Api.RequestResponsež›
+F
+<E:\Git\Achei\backend\Api\Controllers\ItemAchadoController.csDD D(N
+%7string"System.Exception.Message.get*
+
+exSystem.Exception2Message.get‘
+Ž
+F
+<E:\Git\Achei\backend\Api\Controllers\ItemAchadoController.csD: D(N.
+
+%5Api.RequestResponse"
+messagestring"__id*
+
+%7stringˆ
+…
+F
+<E:\Git\Achei\backend\Api\Controllers\ItemAchadoController.csDP D(^-
+
+%5Api.RequestResponse"
+statusstring"__id*
+""œ™
+F
+<E:\Git\Achei\backend\Api\Controllers\ItemAchadoController.csD D(a5
+%8/Microsoft.AspNetCore.Mvc.BadRequestObjectResult":Microsoft.AspNetCore.Mvc.ControllerBase.BadRequest(object)*+)
+'Microsoft.AspNetCore.Mvc.ControllerBase*
+
+%5Api.RequestResponse2BadRequest(object)"
+F
+<E:\Git\Achei\backend\Api\Controllers\ItemAchadoController.csD D(b7
+5
+%8/Microsoft.AspNetCore.Mvc.BadRequestObjectResult*b
+3"]
+F
+<E:\Git\Achei\backend\Api\Controllers\ItemAchadoController.csF F(	
+implicit return*p
+5f
+d
+F
+<E:\Git\Achei\backend\Api\Controllers\ItemAchadoController.cs; ;($
+%9"__entrypoint*
+""*
+0:
+
+idlongB(&
+$Api.Controllers.ItemAchadoController

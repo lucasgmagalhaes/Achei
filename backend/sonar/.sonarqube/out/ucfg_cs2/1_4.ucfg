@@ -1,46 +1,19 @@
 
-KPersistencia.ConnectionString.SetConnection(string, string, string, string)?
-5D:\git\Achei\backend\Persistencia\ConnectionString.cs (	"0*à
-0±
-®
-?
-5D:\git\Achei\backend\Persistencia\ConnectionString.cs (,
+SExceptions.Entity.EntityAlreadyExistsException.EntityAlreadyExistsException(string)P
+FE:\Git\Achei\backend\Exceptions\Entity\EntityAlreadyExistsException.cs (+"0*»
+0°
+­
+P
+FE:\Git\Achei\backend\Exceptions\Entity\EntityAlreadyExistsException.cs< (K
 
-%0void"(Persistencia.ConnectionString.Server.set*!"
-Persistencia.ConnectionString*
-
-serverstringµ
-²
-?
-5D:\git\Achei\backend\Persistencia\ConnectionString.cs (0
-
-%1void"*Persistencia.ConnectionString.Database.set*!"
-Persistencia.ConnectionString*
-
-databasestring±
-®
-?
-5D:\git\Achei\backend\Persistencia\ConnectionString.cs (,
-
-%2void"(Persistencia.ConnectionString.UserId.set*!"
-Persistencia.ConnectionString*
-
-userIdstringµ
-²
-?
-5D:\git\Achei\backend\Persistencia\ConnectionString.cs (0
-
-%3void"*Persistencia.ConnectionString.Password.set*!"
-Persistencia.ConnectionString*
-
-passwordstring*
-1*[
-1"V
-?
-5D:\git\Achei\backend\Persistencia\ConnectionString.cs (	
-implicit return:
-serverstring:
-databasestring:
-userIdstring:
-passwordstringB!"
-Persistencia.ConnectionString
+%0void""System.Exception.Exception(string)*
+System.Exception*
+
+messagestring*
+1*l
+1"g
+P
+FE:\Git\Achei\backend\Exceptions\Entity\EntityAlreadyExistsException.csN (O
+implicit return:
+messagestringB20
+.Exceptions.Entity.EntityAlreadyExistsException
