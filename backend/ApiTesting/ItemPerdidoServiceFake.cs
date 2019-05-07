@@ -34,12 +34,17 @@ namespace ApiTesting
 
         public void Atualizar(ItemPerdido entidade)
         {
-            throw new NotImplementedException();
+            ItemPerdido itemPerdido = this.items.SingleOrDefault(_entidade => _entidade.Id = entidade.Id);
+            itemPerdido = entidade;
         }
 
         public void Atualizar(List<ItemPerdido> entidades)
         {
-            throw new NotImplementedException();
+            entidades.ForEach(_entidade =>
+            {
+                ItemPerdido itemPerdido = this.items.SingleOrDefault(item => item.Id == _entidade.Id);
+                itemPerdido = _entidade;
+            });
         }
 
         public Task AtualizarAsync(ItemPerdido entidade)

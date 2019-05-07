@@ -1,15 +1,15 @@
 .item-card {
   margin-top: 6px;
   display: flex;
+  border-radius: 5px;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
+  -webkit-transition: 0.4s; /* For Safari 3.1 to 6.0 */
+  transition: 0.4s;
+  cursor: pointer;
 }
 
-.item-achado {
-  border: 1px solid #007bff;
-  box-shadow: none;
-
-  button {
-    background: #007bff;
-  }
+.item-card:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .item-perdido {
@@ -36,7 +36,6 @@
 }
 
 .info {
-  margin: 0 16px;
   flex-grow: 1;
   display: inline-block;
   text-align: center;
@@ -48,16 +47,20 @@
 }
 
 img {
-  height: 80%;
-  width: 80%;
+  height: 100%;
+  width: 100%;
+}
+
+.texto {
+  padding: 12px;
 }
 
 .badge {
   background: #673ab7;
   height: 22px;
   position: absolute;
-  top: -12px;
-  right: -17px;
+  top: -2px;
+  right: 0px;
   padding: 2px 4px;
   border-radius: 21px;
   text-align: center;

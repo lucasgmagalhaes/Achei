@@ -1,4 +1,4 @@
-<mat-card class="full-field item-card item-achado ">
+<div class="full-field item-card item-achado ">
   <span class="badge">{{texto}}</span>
   <div class="info">
     <div *ngIf="item?.imagem !== ''">
@@ -9,13 +9,15 @@
       <img src="../../assets/undefined_user.png" alt="" />
     </div>
 
-    <span class="titulo">{{ item?.titulo }}</span>
-    <div class="subtitulo">
-      <span>{{ item?.dataInicio }}</span>
+    <div class="texto">
+      <span class="titulo">{{ item?.titulo }}</span>
+      <div class="subtitulo">
+        <span>{{ item?.dataInicio }}</span>
+      </div>
     </div>
   </div>
 
   <!-- <div class="buttons">
     <button mat-raised-button color="primary">Detalhes</button>
   </div> -->
-</mat-card>
+</div>

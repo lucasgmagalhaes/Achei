@@ -15,11 +15,16 @@ export class AchadosComponent implements OnInit {
   itensAchados: ItemEncontrado[] = [];
   itensPerdidos: ItemPerdido[] = [];
 
+  next: boolean;
+
   constructor(private itensService: ItensUsuarioService, private sessionService: SessionService,
     public dialog: MatDialog) {
     this.sessionService.getIdUsuario().subscribe(id => {
       this.itensService.buscarAchados(id).then(achados => this.itensAchados = achados);
-      this.itensService.buscarPerdidos(id).then(perdidos => this.itensPerdidos = perdidos);
+      this.itensService.buscarPerdidos(id).then(perdidos => {
+        console.log(perdidos);
+        this.itensPerdidos = perdidos;
+      });
     });
   }
 
@@ -30,5 +35,9 @@ export class AchadosComponent implements OnInit {
     const dialogRef = this.dialog.open(ItemDetalheComponent, {
       width: '250px'
     });
+  }
+
+  nextList() {
+    this.next = true;
   }
 }
