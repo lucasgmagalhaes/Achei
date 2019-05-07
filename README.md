@@ -15,6 +15,19 @@ Projeto do 6º período de Sistemas de Informação para busca e informação de
 [![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=lucasgmagalhaes_Achei&metric=sqale_index)](https://sonarcloud.io/dashboard?id=lucasgmagalhaes_Achei)
 [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=lucasgmagalhaes_Achei&metric=vulnerabilities)](https://sonarcloud.io/dashboard?id=lucasgmagalhaes_Achei)
 
+## Frontend
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=acheiFront&metric=bugs)](https://sonarcloud.io/dashboard?id=acheiFront)
+[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=acheiFront&metric=code_smells)](https://sonarcloud.io/dashboard?id=acheiFront)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=acheiFront&metric=coverage)](https://sonarcloud.io/dashboard?id=acheiFront)
+[![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=acheiFront&metric=duplicated_lines_density)](https://sonarcloud.io/dashboard?id=acheiFront)
+[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=acheiFront&metric=ncloc)](https://sonarcloud.io/dashboard?id=acheiFront)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=acheiFront&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=acheiFront)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=acheiFront&metric=alert_status)](https://sonarcloud.io/dashboard?id=acheiFront)
+[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=acheiFront&metric=reliability_rating)](https://sonarcloud.io/dashboard?id=acheiFront)
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=acheiFront&metric=security_rating)](https://sonarcloud.io/dashboard?id=acheiFront)
+[![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=acheiFront&metric=sqale_index)](https://sonarcloud.io/dashboard?id=acheiFront)
+[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=acheiFront&metric=vulnerabilities)](https://sonarcloud.io/dashboard?id=acheiFront)
+
 ## Ferramentas
 
 [EF Core Power Tools](https://marketplace.visualstudio.com/items?itemName=ErikEJ.EFCorePowerTools)
