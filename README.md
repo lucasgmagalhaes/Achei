@@ -1,6 +1,21 @@
 # Achei
 Projeto do 6º período de Sistemas de Informação para busca e informação de itens perdidos
 
+## Backend
+___
+
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=lucasgmagalhaes_Achei&metric=bugs)](https://sonarcloud.io/dashboard?id=lucasgmagalhaes_Achei)
+[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=lucasgmagalhaes_Achei&metric=code_smells)](https://sonarcloud.io/dashboard?id=lucasgmagalhaes_Achei)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=lucasgmagalhaes_Achei&metric=coverage)](https://sonarcloud.io/dashboard?id=lucasgmagalhaes_Achei)
+[![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=lucasgmagalhaes_Achei&metric=duplicated_lines_density)](https://sonarcloud.io/dashboard?id=lucasgmagalhaes_Achei)
+[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=lucasgmagalhaes_Achei&metric=ncloc)](https://sonarcloud.io/dashboard?id=lucasgmagalhaes_Achei)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=lucasgmagalhaes_Achei&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=lucasgmagalhaes_Achei)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=lucasgmagalhaes_Achei&metric=alert_status)](https://sonarcloud.io/dashboard?id=lucasgmagalhaes_Achei)
+[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=lucasgmagalhaes_Achei&metric=reliability_rating)](https://sonarcloud.io/dashboard?id=lucasgmagalhaes_Achei)
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=lucasgmagalhaes_Achei&metric=security_rating)](https://sonarcloud.io/dashboard?id=lucasgmagalhaes_Achei)
+[![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=lucasgmagalhaes_Achei&metric=sqale_index)](https://sonarcloud.io/dashboard?id=lucasgmagalhaes_Achei)
+[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=lucasgmagalhaes_Achei&metric=vulnerabilities)](https://sonarcloud.io/dashboard?id=lucasgmagalhaes_Achei)
+
 ## Ferramentas
 
 [EF Core Power Tools](https://marketplace.visualstudio.com/items?itemName=ErikEJ.EFCorePowerTools)
