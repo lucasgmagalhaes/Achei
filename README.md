@@ -2,7 +2,6 @@
 Projeto do 6º período de Sistemas de Informação para busca e informação de itens perdidos
 
 ## Backend
-___
 
 [![Bugs](https://sonarcloud.io/api/project_badges/measure?project=lucasgmagalhaes_Achei&metric=bugs)](https://sonarcloud.io/dashboard?id=lucasgmagalhaes_Achei)
 [![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=lucasgmagalhaes_Achei&metric=code_smells)](https://sonarcloud.io/dashboard?id=lucasgmagalhaes_Achei)
