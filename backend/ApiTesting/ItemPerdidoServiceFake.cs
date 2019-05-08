@@ -1,3 +1,4 @@
+using Entidades;
 using Entidades.Entidades;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Query;
@@ -13,23 +14,11 @@ namespace ApiTesting
 {
     public class ItemPerdidoServiceFake : IItemPerdidoService
     {
-        private readonly List<ItemPerdido> items;
+        private readonly List<ItemPerdido> itens;
 
         public ItemPerdidoServiceFake()
         {
-            items = new List<ItemPerdido>()
-            {
-                new ItemPerdido() {Id = 1, DataFim = new DateTime(), DataInicio = new DateTime(), Detalhe = "Item 1", Hora = "01", Imagem = "", Recuperado = true, Regiao = new Regiao() { Id = 1, Item = null, Latitude = "123", Longitude = "321"}},
-                new ItemPerdido() {Id = 2, DataFim = new DateTime(), DataInicio = new DateTime(), Detalhe = "Item 2", Hora = "01", Imagem = "", Recuperado = false, Regiao = new Regiao() { Id = 2, Item = null, Latitude = "123", Longitude = "321"}},
-                new ItemPerdido() {Id = 3, DataFim = new DateTime(), DataInicio = new DateTime(), Detalhe = "Item 3", Hora = "01", Imagem = "", Recuperado = true, Regiao = new Regiao() { Id = 3, Item = null, Latitude = "123", Longitude = "321"}},
-                new ItemPerdido() {Id = 4, DataFim = new DateTime(), DataInicio = new DateTime(), Detalhe = "Item 4", Hora = "01", Imagem = "", Recuperado = false, Regiao = new Regiao() { Id = 4, Item = null, Latitude = "123", Longitude = "321"}},
-                new ItemPerdido() {Id = 5, DataFim = new DateTime(), DataInicio = new DateTime(), Detalhe = "Item 5", Hora = "01", Imagem = "", Recuperado = true, Regiao = new Regiao() { Id = 5, Item = null, Latitude = "123", Longitude = "321"}},
-                new ItemPerdido() {Id = 6, DataFim = new DateTime(), DataInicio = new DateTime(), Detalhe = "Item 6", Hora = "01", Imagem = "", Recuperado = false, Regiao = new Regiao() { Id = 6, Item = null, Latitude = "123", Longitude = "321"}},
-                new ItemPerdido() {Id = 7, DataFim = new DateTime(), DataInicio = new DateTime(), Detalhe = "Item 7", Hora = "01", Imagem = "", Recuperado = true, Regiao = new Regiao() { Id = 7, Item = null, Latitude = "123", Longitude = "321"}},
-                new ItemPerdido() {Id = 8, DataFim = new DateTime(), DataInicio = new DateTime(), Detalhe = "Item 8", Hora = "01", Imagem = "", Recuperado = true, Regiao = new Regiao() { Id = 8, Item = null, Latitude = "123", Longitude = "321"}},
-                new ItemPerdido() {Id = 9, DataFim = new DateTime(), DataInicio = new DateTime(), Detalhe = "Item 9", Hora = "01", Imagem = "", Recuperado = true, Regiao = new Regiao() { Id = 9, Item = null, Latitude = "123", Longitude = "321"}},
-                new ItemPerdido() {Id = 10, DataFim = new DateTime(), DataInicio = new DateTime(), Detalhe = "Item 10", Hora = "01", Imagem = "", Recuperado = true, Regiao = new Regiao() { Id = 10, Item = null, Latitude = "123", Longitude = "321"}}
-            };
+            itens = GeradorMocks.GetItensPerdidos();
         }
 
         public void Atualizar(ItemPerdido entidade)
