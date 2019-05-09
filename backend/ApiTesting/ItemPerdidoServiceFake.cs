@@ -21,6 +21,13 @@ namespace ApiTesting
             itens = GeradorMocks.GetItensPerdidos();
         }
 
+        private void DefinirAssociacoesComoNull(ItemPerdido item)
+        {
+            item.Regiao = null;
+            item.Tags = new List<Tag>();
+            item.Usuario = null;
+        }
+
         public void Atualizar(ItemPerdido entidade)
         {
             ItemPerdido itemPerdido = this.itens.SingleOrDefault(_entidade => _entidade.Id == entidade.Id);
@@ -54,17 +61,30 @@ namespace ApiTesting
 
         public List<ItemPerdido> Buscar()
         {
-            throw new NotImplementedException();
+            List<ItemPerdido> itensRetorno = new List<ItemPerdido>();
+            this.itens.ForEach(item =>
+            {
+                ItemPerdido itemCopia = new ItemPerdido();
+                item.CopiarPropriedadesPara(itemCopia);
+                this.DefinirAssociacoesComoNull(itemCopia);
+                itensRetorno.Add(itemCopia);
+            });
+            return itensRetorno;
         }
 
         public ItemPerdido Buscar(long id)
         {
-            throw new NotImplementedException();
+            ItemPerdido itemPerdido = this.itens.SingleOrDefault(item => item.Id == id);
+            ItemPerdido retorno = new ItemPerdido();
+            itemPerdido.CopiarPropriedadesPara(retorno);
+
+            DefinirAssociacoesComoNull(retorno); 
+            return retorno;
         }
 
         public IQueryable<ItemPerdido> Buscar(Expression<Func<ItemPerdido, bool>> predicate, Func<IQueryable<ItemPerdido>, IIncludableQueryable<ItemPerdido, object>> include = null)
         {
-            throw new NotImplementedException();
+            return this.itens.Where(predicate.Compile()).AsQueryable();
         }
 
         public Task<List<ItemPerdido>> BuscarAsync()
@@ -79,7 +99,7 @@ namespace ApiTesting
 
         public ItemPerdido BuscarComEagerLoading(long id)
         {
-            throw new NotImplementedException();
+            return this.itens.SingleOrDefault(item => item.Id == id);
         }
 
         public ItemPerdido BuscarComTags(long id)
