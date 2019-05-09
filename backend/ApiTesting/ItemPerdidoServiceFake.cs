@@ -1,5 +1,6 @@
 using Entidades;
 using Entidades.Entidades;
+using Extensions;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Query;
 using Persistencia.Interfaces;
@@ -8,7 +9,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
-using Xunit;
 
 namespace ApiTesting
 {
@@ -23,16 +23,22 @@ namespace ApiTesting
 
         public void Atualizar(ItemPerdido entidade)
         {
-            ItemPerdido itemPerdido = this.items.SingleOrDefault(_entidade => _entidade.Id = entidade.Id);
-            itemPerdido = entidade;
+            ItemPerdido itemPerdido = this.itens.SingleOrDefault(_entidade => _entidade.Id == entidade.Id);
+            if (itemPerdido != null)
+            {
+                entidade.CopiarPropriedadesPara(itemPerdido);
+            }
         }
 
         public void Atualizar(List<ItemPerdido> entidades)
         {
             entidades.ForEach(_entidade =>
             {
-                ItemPerdido itemPerdido = this.items.SingleOrDefault(item => item.Id == _entidade.Id);
-                itemPerdido = _entidade;
+                ItemPerdido itemPerdido = this.itens.SingleOrDefault(item => item.Id == _entidade.Id);
+                if (itemPerdido != null)
+                {
+                    _entidade.CopiarPropriedadesPara(itemPerdido);
+                }
             });
         }
 
