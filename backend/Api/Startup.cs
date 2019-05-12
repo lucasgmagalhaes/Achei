@@ -14,6 +14,7 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
+using Microsoft.Extensions.PlatformAbstractions;
 using Persistencia;
 using Persistencia.Contexts.Application;
 using Persistencia.Interfaces;
@@ -77,11 +78,25 @@ namespace Api
 
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new Info { Title = "My API", Version = "v1" });
+                c.SwaggerDoc("v1",
+                    new Info
+                    {
+                        Title = "Achei API",
+                        Version = "v1",
+                        Description = "Sistema de procura e cadastro de achados e perdidos",
+                        Contact = new Contact
+                        {
+                            Name = "Lucas Gomes",
+                            Url = "https://github.com/lucasgmagalhaes/Achei"
+                        }
+                    });
 
-                string xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
-                string xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
-                c.IncludeXmlComments(xmlPath);
+                string caminhoAplicacao = PlatformServices.Default.Application.ApplicationBasePath;
+                string nomeAplicacao = PlatformServices.Default.Application.ApplicationName;
+                string caminhoXmlDoc =
+                    Path.Combine(caminhoAplicacao, $"{nomeAplicacao}.xml");
+
+                c.IncludeXmlComments(caminhoXmlDoc);
             });
 
         }
@@ -124,10 +139,9 @@ namespace Api
         private void ConfigureSwagger(IApplicationBuilder app)
         {
             app.UseSwagger();
-
             app.UseSwaggerUI(c =>
             {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Achei API V1");
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Achei API");
             });
         }
 

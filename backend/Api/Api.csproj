@@ -8,6 +8,7 @@
   <ItemGroup>
     <PackageReference Include="Autofac" Version="4.9.1" />
     <PackageReference Include="Microsoft.AspNetCore.OData" Version="7.1.0" />
+    <PackageReference Include="Microsoft.Extensions.PlatformAbstractions" Version="1.1.0" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.3" />
     <PackageReference Include="Scrutor" Version="3.0.2" />
     <PackageReference Include="SonarAnalyzer.CSharp" Version="7.13.0.8313">
@@ -29,6 +30,8 @@
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <CodeAnalysisRuleSet>Api.ruleset</CodeAnalysisRuleSet>
+    <DocumentationFile>bin\Debug\netcoreapp2.2\Api.xml</DocumentationFile>
+    <OutputPath>bin\Debug\netcoreapp2.2\</OutputPath>
   </PropertyGroup>
 
   <ItemGroup>
