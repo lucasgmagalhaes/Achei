@@ -1,0 +1,146 @@
+
+NApi.Controllers.ItemAchadoController.Atualizar(Entidades.Entidades.ItemAchado)F
+<E:\Git\Achei\backend\Api\Controllers\ItemAchadoController.cs- -(&"5*
+0*	
+1
+2
+3*«
+2ð
+í
+F
+<E:\Git\Achei\backend\Api\Controllers\ItemAchadoController.cs1 1(!0
+%0*Persistencia.Interfaces.IItemAchadoService"__id*k*i&
+$Api.Controllers.ItemAchadoController"?
+itemAchadoService*Persistencia.Interfaces.IItemAchadoServiceÿü
+F
+<E:\Git\Achei\backend\Api\Controllers\ItemAchadoController.cs1 1(7
+
+%1void"4Persistencia.Interfaces.ICrudService<T>.Atualizar(T)*2
+0
+%0*Persistencia.Interfaces.IItemAchadoService*.
+,
+
+itemAchadoEntidades.Entidades.ItemAchado2Atualizar(T)zx
+F
+<E:\Git\Achei\backend\Api\Controllers\ItemAchadoController.cs2 2(k
+%2Api.RequestResponse"Api.RequestResponse›
+˜
+F
+<E:\Git\Achei\backend\Api\Controllers\ItemAchadoController.cs2 2(-
+
+%3void"%Api.RequestResponse.RequestResponse()*
+
+%2Api.RequestResponse‰
+†
+F
+<E:\Git\Achei\backend\Api\Controllers\ItemAchadoController.cs22 2(Y.
+
+%2Api.RequestResponse"
+messagestring"__id*
+""ˆ
+…
+F
+<E:\Git\Achei\backend\Api\Controllers\ItemAchadoController.cs2[ 2(i-
+
+%2Api.RequestResponse"
+statusstring"__id*
+""„
+F
+<E:\Git\Achei\backend\Api\Controllers\ItemAchadoController.cs2 2(l-
+%4'Microsoft.AspNetCore.Mvc.OkObjectResult"2Microsoft.AspNetCore.Mvc.ControllerBase.Ok(object)*+)
+'Microsoft.AspNetCore.Mvc.ControllerBase*
+
+%2Api.RequestResponse2
+Ok(object)"y
+F
+<E:\Git\Achei\backend\Api\Controllers\ItemAchadoController.cs2 2(m/
+-
+%4'Microsoft.AspNetCore.Mvc.OkObjectResult*
+4*	
+1
+3
+3*€	
+1zx
+F
+<E:\Git\Achei\backend\Api\Controllers\ItemAchadoController.cs6" 6(`
+%5Api.RequestResponse"Api.RequestResponse›
+˜
+F
+<E:\Git\Achei\backend\Api\Controllers\ItemAchadoController.cs6& 6(5
+
+%6void"%Api.RequestResponse.RequestResponse()*
+
+%5Api.RequestResponsež›
+F
+<E:\Git\Achei\backend\Api\Controllers\ItemAchadoController.cs6D 6(N
+%7string"System.Exception.Message.get*
+
+exSystem.Exception2Message.get‘
+Ž
+F
+<E:\Git\Achei\backend\Api\Controllers\ItemAchadoController.cs6: 6(N.
+
+%5Api.RequestResponse"
+messagestring"__id*
+
+%7stringˆ
+…
+F
+<E:\Git\Achei\backend\Api\Controllers\ItemAchadoController.cs6P 6(^-
+
+%5Api.RequestResponse"
+statusstring"__id*
+""œ™
+F
+<E:\Git\Achei\backend\Api\Controllers\ItemAchadoController.cs6 6(a5
+%8/Microsoft.AspNetCore.Mvc.BadRequestObjectResult":Microsoft.AspNetCore.Mvc.ControllerBase.BadRequest(object)*+)
+'Microsoft.AspNetCore.Mvc.ControllerBase*
+
+%5Api.RequestResponse2BadRequest(object)"
+F
+<E:\Git\Achei\backend\Api\Controllers\ItemAchadoController.cs6 6(b7
+5
+%8/Microsoft.AspNetCore.Mvc.BadRequestObjectResult*b
+3"]
+F
+<E:\Git\Achei\backend\Api\Controllers\ItemAchadoController.cs8 8(	
+implicit return*Þ
+5
+Œ
+F
+<E:\Git\Achei\backend\Api\Controllers\ItemAchadoController.cs- -(&
+%9"__entrypoint*.
+,
+
+itemAchadoEntidades.Entidades.ItemAchadoÒ
+Ï
+F
+<E:\Git\Achei\backend\Api\Controllers\ItemAchadoController.cs-( -(0
+%10"
+__annotate*B@
+>Microsoft.AspNetCore.Mvc.FromBodyAttribute.FromBodyAttribute()*.
+,
+
+itemAchadoEntidades.Entidades.ItemAchadoÐ
+Í
+F
+<E:\Git\Achei\backend\Api\Controllers\ItemAchadoController.cs,	 ,(
+%11"
+__annotate*@>
+<Microsoft.AspNetCore.Mvc.HttpPutAttribute.HttpPutAttribute()*.
+,
+
+itemAchadoEntidades.Entidades.ItemAchado™
+–
+F
+<E:\Git\Achei\backend\Api\Controllers\ItemAchadoController.cs-' -(F,
+
+itemAchadoEntidades.Entidades.ItemAchado"__annotation*
+
+%10*
+
+%11*
+0:,
+
+itemAchadoEntidades.Entidades.ItemAchadoB(&
+$Api.Controllers.ItemAchadoController

@@ -1,58 +1,0 @@
-
-7Persistencia.Services.CrudService<T>.DeletarAsync(long)D
-9D:\git\Achei\backend\Persistencia\Services\CrudService.cs} Ñ(	"0*Á
-0SQ
-C
-9D:\git\Achei\backend\Persistencia\Services\CrudService.cs" (-
-%0T"TÅ
-
-C
-9D:\git\Achei\backend\Persistencia\Services\CrudService.cs (-#
-objEntidades.Interfaces.IEntity"__id*
-	{unknown}·
-ﬁ
-E
-9D:\git\Achei\backend\Persistencia\Services\CrudService.csÅ Å(-
-%1'Microsoft.EntityFrameworkCore.DbContext"__id*`*^&
-$Persistencia.Services.CrudService<T>"4
-	dbService'Microsoft.EntityFrameworkCore.DbContext«ƒ
-E
-9D:\git\Achei\backend\Persistencia\Services\CrudService.csÅ Å(!G
-%2AMicrosoft.EntityFrameworkCore.ChangeTracking.EntityEntry<TEntity>"@Microsoft.EntityFrameworkCore.DbContext.Attach<TEntity>(TEntity)*/
--
-%1'Microsoft.EntityFrameworkCore.DbContext*%
-#
-objEntidades.Interfaces.IEntity2Attach<TEntity>(TEntity)·
-ﬁ
-E
-9D:\git\Achei\backend\Persistencia\Services\CrudService.csÇ Ç(-
-%3'Microsoft.EntityFrameworkCore.DbContext"__id*`*^&
-$Persistencia.Services.CrudService<T>"4
-	dbService'Microsoft.EntityFrameworkCore.DbContext«ƒ
-E
-9D:\git\Achei\backend\Persistencia\Services\CrudService.csÇ Ç(!G
-%4AMicrosoft.EntityFrameworkCore.ChangeTracking.EntityEntry<TEntity>"@Microsoft.EntityFrameworkCore.DbContext.Remove<TEntity>(TEntity)*/
--
-%3'Microsoft.EntityFrameworkCore.DbContext*%
-#
-objEntidades.Interfaces.IEntity2Remove<TEntity>(TEntity)·
-ﬁ
-E
-9D:\git\Achei\backend\Persistencia\Services\CrudService.csÉ É(-
-%5'Microsoft.EntityFrameworkCore.DbContext"__id*`*^&
-$Persistencia.Services.CrudService<T>"4
-	dbService'Microsoft.EntityFrameworkCore.DbContext√¿
-E
-9D:\git\Achei\backend\Persistencia\Services\CrudService.csÉ É(.*
-%6$System.Threading.Tasks.Task<TResult>"\Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(System.Threading.CancellationToken)*/
--
-%5'Microsoft.EntityFrameworkCore.DbContext*
-""24SaveChangesAsync(System.Threading.CancellationToken)*
-1*a
-1"\
-E
-9D:\git\Achei\backend\Persistencia\Services\CrudService.csÑ Ñ(	
-implicit return:
-
-idlongB(&
-$Persistencia.Services.CrudService<T>

@@ -1,71 +1,0 @@
-
-LApi.Startup.UpdateDatabase(Microsoft.AspNetCore.Builder.IApplicationBuilder)/
-#D:\git\Achei\backend\Api\Startup.csÜ è(	"0*¡
-0ÒÓ
-/
-#D:\git\Achei\backend\Api\Startup.csà0 à(G
-%0System.IServiceProvider"HMicrosoft.AspNetCore.Builder.IApplicationBuilder.ApplicationServices.get*9
-7
-app0Microsoft.AspNetCore.Builder.IApplicationBuilder2ApplicationServices.get„
-‡
-/
-#D:\git\Achei\backend\Api\Startup.csà0 à(rC
-%1=Microsoft.Extensions.DependencyInjection.IServiceScopeFactory"xMicrosoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService<T>(System.IServiceProvider)*M"K
-IMicrosoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions*
-
-%0System.IServiceProviderñì
-0
-#D:\git\Achei\backend\Api\Startup.csà0 à(Ä<
-%26Microsoft.Extensions.DependencyInjection.IServiceScope"KMicrosoft.Extensions.DependencyInjection.IServiceScopeFactory.CreateScope()*E
-C
-%1=Microsoft.Extensions.DependencyInjection.IServiceScopeFactory2CreateScope()√
-¿
-0
-#D:\git\Achei\backend\Api\Startup.csà! à(ÄF
-serviceScope6Microsoft.Extensions.DependencyInjection.IServiceScope"__id*>
-<
-%26Microsoft.Extensions.DependencyInjection.IServiceScope*
-1*†
-1˛˚
-/
-#D:\git\Achei\backend\Api\Startup.csä6 ä(R
-%3System.IServiceProvider"JMicrosoft.Extensions.DependencyInjection.IServiceScope.ServiceProvider.get*H
-F
-serviceScope6Microsoft.Extensions.DependencyInjection.IServiceScope2ServiceProvider.get‘
-—
-/
-#D:\git\Achei\backend\Api\Startup.csä6 ä(u<
-%46Persistencia.Contexts.Application.ApplicationDbContext"pMicrosoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetService<T>(System.IServiceProvider)*M"K
-IMicrosoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions*
-
-%3System.IServiceProviderΩ
-∫
-/
-#D:\git\Achei\backend\Api\Startup.csä, ä(uA
-context6Persistencia.Contexts.Application.ApplicationDbContext"__id*>
-<
-%46Persistencia.Contexts.Application.ApplicationDbContext*
-2*·
-2Ä˝
-/
-#D:\git\Achei\backend\Api\Startup.cså å($A
-%5;Microsoft.EntityFrameworkCore.Infrastructure.DatabaseFacade"4Microsoft.EntityFrameworkCore.DbContext.Database.get*C
-A
-context6Persistencia.Contexts.Application.ApplicationDbContext2Database.get”
-–
-/
-#D:\git\Achei\backend\Api\Startup.cså å(.
-
-%6void"ÖMicrosoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.Migrate(Microsoft.EntityFrameworkCore.Infrastructure.DatabaseFacade)*D"B
-@Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions*C
-A
-%5;Microsoft.EntityFrameworkCore.Infrastructure.DatabaseFacade*
-3*
-3*
-4*K
-4"F
-/
-#D:\git\Achei\backend\Api\Startup.csè è(	
-implicit return:7
-app0Microsoft.AspNetCore.Builder.IApplicationBuilderB
-Api.Startup

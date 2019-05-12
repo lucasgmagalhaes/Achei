@@ -1,9 +1,19 @@
 
-_Migrations.Conversor_2019031001.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)<
-2D:\git\Achei\backend\Migrations\v1.0\2019031001.cs (	"0*X
-0"S
-<
-2D:\git\Achei\backend\Migrations\v1.0\2019031001.cs (	
-implicit return:M
-migrationBuilder9Microsoft.EntityFrameworkCore.Migrations.MigrationBuilderB#!
-Migrations.Conversor_2019031001
+cPersistencia.Services.TagService.TagService(Persistencia.Contexts.Application.ApplicationDbContext)B
+8E:\Git\Achei\backend\Persistencia\Services\TagService.cs ("0*ª
+0Ÿ
+œ
+B
+8E:\Git\Achei\backend\Persistencia\Services\TagService.cs: (K
+
+%0void"YPersistencia.Services.CrudService<T>.CrudService(Microsoft.EntityFrameworkCore.DbContext)*(&
+$Persistencia.Services.CrudService<T>*E
+C
+	dbContext6Persistencia.Contexts.Application.ApplicationDbContext*
+1*^
+1"Y
+B
+8E:\Git\Achei\backend\Persistencia\Services\TagService.csN (O
+implicit return:C
+	dbContext6Persistencia.Contexts.Application.ApplicationDbContextB$"
+ Persistencia.Services.TagService

@@ -1,0 +1,35 @@
+
+RPersistencia.Services.CrudService<T>.Atualizar(System.Collections.Generic.List<T>)C
+9E:\Git\Achei\backend\Persistencia\Services\CrudService.cs2 2("0*í
+0ß
+Ü
+C
+9E:\Git\Achei\backend\Persistencia\Services\CrudService.cs4 4(-
+%0'Microsoft.EntityFrameworkCore.DbContext"__id*`*^&
+$Persistencia.Services.CrudService<T>"4
+	dbService'Microsoft.EntityFrameworkCore.DbContextÑÎ
+C
+9E:\Git\Achei\backend\Persistencia\Services\CrudService.cs4 4('G
+%1AMicrosoft.EntityFrameworkCore.ChangeTracking.EntityEntry<TEntity>"@Microsoft.EntityFrameworkCore.DbContext.Update<TEntity>(TEntity)*/
+-
+%0'Microsoft.EntityFrameworkCore.DbContext*1
+/
+	entidades"System.Collections.Generic.List<T>2Update<TEntity>(TEntity)ß
+Ü
+C
+9E:\Git\Achei\backend\Persistencia\Services\CrudService.cs5 5(-
+%2'Microsoft.EntityFrameworkCore.DbContext"__id*`*^&
+$Persistencia.Services.CrudService<T>"4
+	dbService'Microsoft.EntityFrameworkCore.DbContextÊÇ
+C
+9E:\Git\Achei\backend\Persistencia\Services\CrudService.cs5 5(#	
+%3int"5Microsoft.EntityFrameworkCore.DbContext.SaveChanges()*/
+-
+%2'Microsoft.EntityFrameworkCore.DbContext2SaveChanges()*
+1*_
+1"Z
+C
+9E:\Git\Achei\backend\Persistencia\Services\CrudService.cs6 6(	
+implicit return:/
+	entidades"System.Collections.Generic.List<T>B(&
+$Persistencia.Services.CrudService<T>

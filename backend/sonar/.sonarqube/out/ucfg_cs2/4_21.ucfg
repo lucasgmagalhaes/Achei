@@ -1,0 +1,40 @@
+
+dApi.Controllers.TagController.TagController(Persistencia.Interfaces.ITagService, AutoMapper.IMapper)?
+5E:\Git\Achei\backend\Api\Controllers\TagController.cs ("2*Ž
+0Õ
+Ò
+?
+5E:\Git\Achei\backend\Api\Controllers\TagController.cs ((T
+Api.Controllers.TagController"1
+
+tagService#Persistencia.Interfaces.ITagService"__id*3
+1
+
+tagService#Persistencia.Interfaces.ITagService«
+¨
+?
+5E:\Git\Achei\backend\Api\Controllers\TagController.cs ( ?
+Api.Controllers.TagController"
+mapperAutoMapper.IMapper"__id*
+
+mapperAutoMapper.IMapper*
+1*[
+1"V
+?
+5E:\Git\Achei\backend\Api\Controllers\TagController.cs (	
+implicit return*¸
+2­
+ª
+?
+5E:\Git\Achei\backend\Api\Controllers\TagController.cs (
+%0"__entrypoint*3
+1
+
+tagService#Persistencia.Interfaces.ITagService*
+
+mapperAutoMapper.IMapper*
+0:1
+
+tagService#Persistencia.Interfaces.ITagService:
+mapperAutoMapper.IMapperB!
+Api.Controllers.TagController

@@ -1,18 +1,0 @@
-
-YPersistencia.Services.CrudService<T>.CrudService(Microsoft.EntityFrameworkCore.DbContext)C
-9D:\git\Achei\backend\Persistencia\Services\CrudService.cs (	"0*ñ
-0æ
-ã
-C
-9D:\git\Achei\backend\Persistencia\Services\CrudService.cs (&^&
-$Persistencia.Services.CrudService<T>"4
-	dbService'Microsoft.EntityFrameworkCore.DbContext"__id*6
-4
-	dbService'Microsoft.EntityFrameworkCore.DbContext*
-1*_
-1"Z
-C
-9D:\git\Achei\backend\Persistencia\Services\CrudService.cs (	
-implicit return:4
-	dbService'Microsoft.EntityFrameworkCore.DbContextB(&
-$Persistencia.Services.CrudService<T>

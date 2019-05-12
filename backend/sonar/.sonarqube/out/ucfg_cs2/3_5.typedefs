@@ -1,9 +1,5 @@
-“
-$Api.Controllers.ItemAchadoController'Microsoft.AspNetCore.Mvc.ControllerBaseobjectÑ
-TItemAchadoController(Persistencia.Interfaces.IItemAchadoService, AutoMapper.IMapper)yApi.Controllers.ItemAchadoController.ItemAchadoController(Persistencia.Interfaces.IItemAchadoService, AutoMapper.IMapper)M
-BuscarAchado(long)7Api.Controllers.ItemAchadoController.BuscarAchado(long){
-)Atualizar(Entidades.Entidades.ItemAchado)NApi.Controllers.ItemAchadoController.Atualizar(Entidades.Entidades.ItemAchado)C
-Excluir(long)2Api.Controllers.ItemAchadoController.Excluir(long)u
-&Salvar(Entidades.Entidades.ItemAchado)KApi.Controllers.ItemAchadoController.Salvar(Entidades.Entidades.ItemAchado)³
-EBuscarRegiaoItemPerdido(long, Persistencia.Interfaces.IRegiaoService)jApi.Controllers.ItemAchadoController.BuscarRegiaoItemPerdido(long, Persistencia.Interfaces.IRegiaoService)§
-?BuscarTagItemPerdido(long, Persistencia.Interfaces.ITagService)dApi.Controllers.ItemAchadoController.BuscarTagItemPerdido(long, Persistencia.Interfaces.ITagService)
+õ
+Migrations.Conversor_20190310022Microsoft.EntityFrameworkCore.Migrations.Migrationobjectž
+=Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)]Migrations.Conversor_2019031002.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)¢
+?Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)_Migrations.Conversor_2019031002.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)P
+Conversor_2019031002()6Migrations.Conversor_2019031002.Conversor_2019031002()

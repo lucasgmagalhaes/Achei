@@ -1,0 +1,39 @@
+
+.Api.Controllers.UsuarioController.Delete(long)C
+9E:\Git\Achei\backend\Api\Controllers\UsuarioController.csh h(#"2*„
+0á
+Þ
+C
+9E:\Git\Achei\backend\Api\Controllers\UsuarioController.csj j(-
+%0'Persistencia.Interfaces.IUsuarioService"__id*b*`#
+!Api.Controllers.UsuarioController"9
+usuarioService'Persistencia.Interfaces.IUsuarioServiceÓÐ
+C
+9E:\Git\Achei\backend\Api\Controllers\UsuarioController.csj j(&
+
+%1void"5Persistencia.Interfaces.ICrudService<T>.Deletar(long)*/
+-
+%0'Persistencia.Interfaces.IUsuarioService*
+""2Deletar(long)ÒÏ
+C
+9E:\Git\Achei\backend\Api\Controllers\UsuarioController.csk k('
+%2!Microsoft.AspNetCore.Mvc.OkResult",Microsoft.AspNetCore.Mvc.ControllerBase.Ok()*+)
+'Microsoft.AspNetCore.Mvc.ControllerBase2Ok()"p
+C
+9E:\Git\Achei\backend\Api\Controllers\UsuarioController.csk k()
+'
+%2!Microsoft.AspNetCore.Mvc.OkResult*_
+1"Z
+C
+9E:\Git\Achei\backend\Api\Controllers\UsuarioController.csl l(	
+implicit return*m
+2c
+a
+C
+9E:\Git\Achei\backend\Api\Controllers\UsuarioController.csh h(#
+%3"__entrypoint*
+""*
+0:
+
+idlongB%#
+!Api.Controllers.UsuarioController

@@ -1,0 +1,44 @@
+
+DPersistencia.Services.ItemPerdidoService.BuscarComEagerLoading(long)J
+@E:\Git\Achei\backend\Persistencia\Services\ItemPerdidoService.cs (0"0*Ö
+0à
+Ý
+J
+@E:\Git\Achei\backend\Persistencia\Services\ItemPerdidoService.cs ( 2
+%0,Microsoft.EntityFrameworkCore.DbSet<TEntity>"-Persistencia.Services.CrudService<T>.Entity()*,*
+(Persistencia.Services.ItemPerdidoServiceì
+é
+J
+@E:\Git\Achei\backend\Persistencia\Services\ItemPerdidoService.cs (-R
+%1LMicrosoft.EntityFrameworkCore.Query.IIncludableQueryable<TEntity, TProperty>"ÂMicrosoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.Include<TEntity, TProperty>(System.Linq.IQueryable<TEntity>, System.Linq.Expressions.Expression<System.Func<TEntity, TProperty>>)*D"B
+@Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions*4
+2
+%0,Microsoft.EntityFrameworkCore.DbSet<TEntity>*
+""Œ
+‰
+J
+@E:\Git\Achei\backend\Persistencia\Services\ItemPerdidoService.cs (+R
+%2LMicrosoft.EntityFrameworkCore.Query.IIncludableQueryable<TEntity, TProperty>"ÂMicrosoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.Include<TEntity, TProperty>(System.Linq.IQueryable<TEntity>, System.Linq.Expressions.Expression<System.Func<TEntity, TProperty>>)*D"B
+@Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions*T
+R
+%1LMicrosoft.EntityFrameworkCore.Query.IIncludableQueryable<TEntity, TProperty>*
+""ø
+õ
+J
+@E:\Git\Achei\backend\Persistencia\Services\ItemPerdidoService.cs (.%
+%3Entidades.Entidades.ItemPerdido"†System.Linq.Queryable.Single<TSource>(System.Linq.IQueryable<TSource>, System.Linq.Expressions.Expression<System.Func<TSource, bool>>)*"
+System.Linq.Queryable*T
+R
+%2LMicrosoft.EntityFrameworkCore.Query.IIncludableQueryable<TEntity, TProperty>*
+"""u
+J
+@E:\Git\Achei\backend\Persistencia\Services\ItemPerdidoService.cs (/'
+%
+%3Entidades.Entidades.ItemPerdido*f
+1"a
+J
+@E:\Git\Achei\backend\Persistencia\Services\ItemPerdidoService.cs (	
+implicit return:
+
+idlongB,*
+(Persistencia.Services.ItemPerdidoService

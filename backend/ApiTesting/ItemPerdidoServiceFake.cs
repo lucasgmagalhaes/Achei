@@ -1,4 +1,6 @@
+using Entidades;
 using Entidades.Entidades;
+using Extensions;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Query;
 using Persistencia.Interfaces;
@@ -7,39 +9,44 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
-using Xunit;
 
 namespace ApiTesting
 {
     public class ItemPerdidoServiceFake : IItemPerdidoService
     {
-        private readonly List<ItemPerdido> items;
+        private readonly List<ItemPerdido> itens;
 
         public ItemPerdidoServiceFake()
         {
-            items = new List<ItemPerdido>()
-            {
-                new ItemPerdido() {Id = 1, DataFim = new DateTime(), DataInicio = new DateTime(), Detalhe = "Item 1", Hora = "01", Imagem = "", Recuperado = true, Regiao = new Regiao() { Id = 1, Item = null, Latitude = "123", Longitude = "321"}},
-                new ItemPerdido() {Id = 2, DataFim = new DateTime(), DataInicio = new DateTime(), Detalhe = "Item 2", Hora = "01", Imagem = "", Recuperado = false, Regiao = new Regiao() { Id = 2, Item = null, Latitude = "123", Longitude = "321"}},
-                new ItemPerdido() {Id = 3, DataFim = new DateTime(), DataInicio = new DateTime(), Detalhe = "Item 3", Hora = "01", Imagem = "", Recuperado = true, Regiao = new Regiao() { Id = 3, Item = null, Latitude = "123", Longitude = "321"}},
-                new ItemPerdido() {Id = 4, DataFim = new DateTime(), DataInicio = new DateTime(), Detalhe = "Item 4", Hora = "01", Imagem = "", Recuperado = false, Regiao = new Regiao() { Id = 4, Item = null, Latitude = "123", Longitude = "321"}},
-                new ItemPerdido() {Id = 5, DataFim = new DateTime(), DataInicio = new DateTime(), Detalhe = "Item 5", Hora = "01", Imagem = "", Recuperado = true, Regiao = new Regiao() { Id = 5, Item = null, Latitude = "123", Longitude = "321"}},
-                new ItemPerdido() {Id = 6, DataFim = new DateTime(), DataInicio = new DateTime(), Detalhe = "Item 6", Hora = "01", Imagem = "", Recuperado = false, Regiao = new Regiao() { Id = 6, Item = null, Latitude = "123", Longitude = "321"}},
-                new ItemPerdido() {Id = 7, DataFim = new DateTime(), DataInicio = new DateTime(), Detalhe = "Item 7", Hora = "01", Imagem = "", Recuperado = true, Regiao = new Regiao() { Id = 7, Item = null, Latitude = "123", Longitude = "321"}},
-                new ItemPerdido() {Id = 8, DataFim = new DateTime(), DataInicio = new DateTime(), Detalhe = "Item 8", Hora = "01", Imagem = "", Recuperado = true, Regiao = new Regiao() { Id = 8, Item = null, Latitude = "123", Longitude = "321"}},
-                new ItemPerdido() {Id = 9, DataFim = new DateTime(), DataInicio = new DateTime(), Detalhe = "Item 9", Hora = "01", Imagem = "", Recuperado = true, Regiao = new Regiao() { Id = 9, Item = null, Latitude = "123", Longitude = "321"}},
-                new ItemPerdido() {Id = 10, DataFim = new DateTime(), DataInicio = new DateTime(), Detalhe = "Item 10", Hora = "01", Imagem = "", Recuperado = true, Regiao = new Regiao() { Id = 10, Item = null, Latitude = "123", Longitude = "321"}}
-            };
+            itens = GeradorMocks.GetItensPerdidos();
+        }
+
+        private void DefinirAssociacoesComoNull(ItemPerdido item)
+        {
+            item.Regiao = null;
+            item.Tags = new List<Tag>();
+            item.Usuario = null;
         }
 
         public void Atualizar(ItemPerdido entidade)
         {
-            throw new NotImplementedException();
+            ItemPerdido itemPerdido = this.itens.SingleOrDefault(_entidade => _entidade.Id == entidade.Id);
+            if (itemPerdido != null)
+            {
+                entidade.CopiarPropriedadesPara(itemPerdido);
+            }
         }
 
         public void Atualizar(List<ItemPerdido> entidades)
         {
-            throw new NotImplementedException();
+            entidades.ForEach(_entidade =>
+            {
+                ItemPerdido itemPerdido = this.itens.SingleOrDefault(item => item.Id == _entidade.Id);
+                if (itemPerdido != null)
+                {
+                    _entidade.CopiarPropriedadesPara(itemPerdido);
+                }
+            });
         }
 
         public Task AtualizarAsync(ItemPerdido entidade)
@@ -54,17 +61,30 @@ namespace ApiTesting
 
         public List<ItemPerdido> Buscar()
         {
-            throw new NotImplementedException();
+            List<ItemPerdido> itensRetorno = new List<ItemPerdido>();
+            this.itens.ForEach(item =>
+            {
+                ItemPerdido itemCopia = new ItemPerdido();
+                item.CopiarPropriedadesPara(itemCopia);
+                this.DefinirAssociacoesComoNull(itemCopia);
+                itensRetorno.Add(itemCopia);
+            });
+            return itensRetorno;
         }
 
         public ItemPerdido Buscar(long id)
         {
-            throw new NotImplementedException();
+            ItemPerdido itemPerdido = this.itens.SingleOrDefault(item => item.Id == id);
+            ItemPerdido retorno = new ItemPerdido();
+            itemPerdido.CopiarPropriedadesPara(retorno);
+
+            DefinirAssociacoesComoNull(retorno); 
+            return retorno;
         }
 
         public IQueryable<ItemPerdido> Buscar(Expression<Func<ItemPerdido, bool>> predicate, Func<IQueryable<ItemPerdido>, IIncludableQueryable<ItemPerdido, object>> include = null)
         {
-            throw new NotImplementedException();
+            return this.itens.Where(predicate.Compile()).AsQueryable();
         }
 
         public Task<List<ItemPerdido>> BuscarAsync()
@@ -79,7 +99,7 @@ namespace ApiTesting
 
         public ItemPerdido BuscarComEagerLoading(long id)
         {
-            throw new NotImplementedException();
+            return this.itens.SingleOrDefault(item => item.Id == id);
         }
 
         public ItemPerdido BuscarComTags(long id)

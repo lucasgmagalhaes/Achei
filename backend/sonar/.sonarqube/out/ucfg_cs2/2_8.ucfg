@@ -1,18 +1,25 @@
 
-]Migrations.Conversor_2019031003.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)<
-2D:\git\Achei\backend\Migrations\v1.0\2019031003.cs (	"0*ç
-0ÜÙ
-<
-2D:\git\Achei\backend\Migrations\v1.0\2019031003.cs (V_
-%0YMicrosoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder<TOperation>"KMicrosoft.EntityFrameworkCore.Migrations.MigrationBuilder.Sql(string, bool)*H
-F
-	migration9Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder*
-""*
-""2Sql(string, bool)*
-1*X
-1"S
-<
-2D:\git\Achei\backend\Migrations\v1.0\2019031003.cs (	
-implicit return:F
-	migration9Microsoft.EntityFrameworkCore.Migrations.MigrationBuilderB#!
-Migrations.Conversor_2019031003
+uPersistencia.Services.AutenticacaoService.AutenticacaoService(Persistencia.Contexts.Application.ApplicationDbContext)K
+AE:\Git\Achei\backend\Persistencia\Services\AutenticacaoService.cs
+ 
+(""0*±
+0¦
+£
+K
+AE:\Git\Achei\backend\Persistencia\Services\AutenticacaoService.cs
+A 
+(P
+
+%0void"YPersistencia.Services.CrudService<T>.CrudService(Microsoft.EntityFrameworkCore.DbContext)*(&
+$Persistencia.Services.CrudService<T>*C
+A
+context6Persistencia.Contexts.Application.ApplicationDbContext*
+1*g
+1"b
+K
+AE:\Git\Achei\backend\Persistencia\Services\AutenticacaoService.cs
+S 
+(T
+implicit return:A
+context6Persistencia.Contexts.Application.ApplicationDbContextB-+
+)Persistencia.Services.AutenticacaoService

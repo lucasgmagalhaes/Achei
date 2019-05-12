@@ -1,26 +1,18 @@
 
-\Api.Controllers.UsuarioController.UsuarioController(Persistencia.Interfaces.IUsuarioService)C
-9D:\git\Achei\backend\Api\Controllers\UsuarioController.cs (	"2*ø
-0í
-ê
-C
-9D:\git\Achei\backend\Api\Controllers\UsuarioController.cs (0`#
-!Api.Controllers.UsuarioController"9
-usuarioService'Persistencia.Interfaces.IUsuarioService"__id*;
-9
-usuarioService'Persistencia.Interfaces.IUsuarioService*
-1*_
-1"Z
-C
-9D:\git\Achei\backend\Api\Controllers\UsuarioController.cs (	
-implicit return*¤
-2™
-–
-C
-9D:\git\Achei\backend\Api\Controllers\UsuarioController.cs ( 
-%0"__entrypoint*;
-9
-usuarioService'Persistencia.Interfaces.IUsuarioService*
-0:9
-usuarioService'Persistencia.Interfaces.IUsuarioServiceB%#
-!Api.Controllers.UsuarioController
+]Migrations.Conversor_2019042005.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)<
+2E:\Git\Achei\backend\Migrations\v1.0\2019042005.cs  (""0*ç
+0ÜÙ
+<
+2E:\Git\Achei\backend\Migrations\v1.0\2019042005.cs (J_
+%0YMicrosoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder<TOperation>"KMicrosoft.EntityFrameworkCore.Migrations.MigrationBuilder.Sql(string, bool)*H
+F
+	migration9Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder*
+""*
+""2Sql(string, bool)*
+1*X
+1"S
+<
+2E:\Git\Achei\backend\Migrations\v1.0\2019042005.cs (	
+implicit return:F
+	migration9Microsoft.EntityFrameworkCore.Migrations.MigrationBuilderB#!
+Migrations.Conversor_2019042005

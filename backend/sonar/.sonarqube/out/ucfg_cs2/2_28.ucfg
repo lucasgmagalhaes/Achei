@@ -1,0 +1,29 @@
+
+@Persistencia.Services.ItemAchadoService.BuscarPorIdUsuario(long)I
+?E:\Git\Achei\backend\Persistencia\Services\ItemAchadoService.cs  (2"0*ì
+0Å
+˛
+I
+?E:\Git\Achei\backend\Persistencia\Services\ItemAchadoService.cs (B
+%0System.Linq.IQueryable<T>"“Persistencia.Services.CrudService<T>.Buscar(System.Linq.Expressions.Expression<System.Func<T, bool>>, System.Func<System.Linq.IQueryable<T>, Microsoft.EntityFrameworkCore.Query.IIncludableQueryable<T, object>>)*+)
+'Persistencia.Services.ItemAchadoService*
+""*
+""ê
+ç
+I
+?E:\Git\Achei\backend\Persistencia\Services\ItemAchadoService.cs (K(
+%1"System.Collections.Generic.List<T>"WSystem.Linq.Enumerable.ToList<TSource>(System.Collections.Generic.IEnumerable<TSource>)*"
+System.Linq.Enumerable*!
+
+%0System.Linq.IQueryable<T>"w
+I
+?E:\Git\Achei\backend\Persistencia\Services\ItemAchadoService.cs (L*
+(
+%1"System.Collections.Generic.List<T>*e
+1"`
+I
+?E:\Git\Achei\backend\Persistencia\Services\ItemAchadoService.cs (	
+implicit return:
+
+idlongB+)
+'Persistencia.Services.ItemAchadoService

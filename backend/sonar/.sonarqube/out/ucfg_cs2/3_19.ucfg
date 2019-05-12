@@ -1,85 +1,0 @@
-
-.Api.Controllers.RegiaoController.GetById(long)B
-8D:\git\Achei\backend\Api\Controllers\RegiaoController.cs $(	"5*
-0*	
-1
-2
-3*ˆ
-2Ü
-Ù
-B
-8D:\git\Achei\backend\Api\Controllers\RegiaoController.cs (*,
-%0&Persistencia.Interfaces.IRegiaoService"__id*_*]"
- Api.Controllers.RegiaoController"7
-regiaoService&Persistencia.Interfaces.IRegiaoServiceåâ
-B
-8D:\git\Achei\backend\Api\Controllers\RegiaoController.cs (5 
-%1Entidades.Entidades.Regiao"4Persistencia.Interfaces.ICrudService<T>.Buscar(long)*.
-,
-%0&Persistencia.Interfaces.IRegiaoService*
-""2Buscar(long)”
-‘
-B
-8D:\git\Achei\backend\Api\Controllers\RegiaoController.cs (5!
-tagEntidades.Entidades.Regiao"__id*"
- 
-%1Entidades.Entidades.Regiao­
-ª
-B
-8D:\git\Achei\backend\Api\Controllers\RegiaoController.cs (#
-%2AutoMapper.IMapper"__id*D*B"
- Api.Controllers.RegiaoController"
-mapperAutoMapper.IMapperíê
-B
-8D:\git\Achei\backend\Api\Controllers\RegiaoController.cs (4
-%3Entidades.Dto.TagDto",AutoMapper.IMapper.Map<TDestination>(object)*
-
-%2AutoMapper.IMapper*#
-!
-tagEntidades.Entidades.Regiao2Map<TDestination>(object)ˆ
-…
-B
-8D:\git\Achei\backend\Api\Controllers\RegiaoController.cs (4
-dtoEntidades.Dto.TagDto"__id*
-
-%3Entidades.Dto.TagDto‚ÿ
-B
-8D:\git\Achei\backend\Api\Controllers\RegiaoController.cs (-
-%4'Microsoft.AspNetCore.Mvc.OkObjectResult"2Microsoft.AspNetCore.Mvc.ControllerBase.Ok(object)*+)
-'Microsoft.AspNetCore.Mvc.ControllerBase*
-
-dtoEntidades.Dto.TagDto2
-Ok(object)"u
-B
-8D:\git\Achei\backend\Api\Controllers\RegiaoController.cs (/
--
-%4'Microsoft.AspNetCore.Mvc.OkObjectResult*
-4*	
-1
-3
-3*™
-1”‘
-B
-8D:\git\Achei\backend\Api\Controllers\RegiaoController.cs" "($5
-%5/Microsoft.AspNetCore.Mvc.BadRequestObjectResult":Microsoft.AspNetCore.Mvc.ControllerBase.BadRequest(object)*+)
-'Microsoft.AspNetCore.Mvc.ControllerBase*
-
-eSystem.Exception2BadRequest(object)"}
-B
-8D:\git\Achei\backend\Api\Controllers\RegiaoController.cs" "(%7
-5
-%5/Microsoft.AspNetCore.Mvc.BadRequestObjectResult*^
-3"Y
-B
-8D:\git\Achei\backend\Api\Controllers\RegiaoController.cs$ $(	
-implicit return*l
-5b
-`
-B
-8D:\git\Achei\backend\Api\Controllers\RegiaoController.cs ($
-%6"__entrypoint*
-""*
-0:
-
-idlongB$"
- Api.Controllers.RegiaoController

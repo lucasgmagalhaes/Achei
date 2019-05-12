@@ -1,5 +1,3 @@
-õ
-Migrations.Conversor_20190420052Microsoft.EntityFrameworkCore.Migrations.Migrationobjectž
-=Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)]Migrations.Conversor_2019042005.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)¢
-?Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)_Migrations.Conversor_2019042005.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)P
-Conversor_2019042005()6Migrations.Conversor_2019042005.Conversor_2019042005()
+Œ
+$Persistencia.Services.UsuarioService$Persistencia.Services.CrudService<T>objectµ
+FUsuarioService(Persistencia.Contexts.Application.ApplicationDbContext)kPersistencia.Services.UsuarioService.UsuarioService(Persistencia.Contexts.Application.ApplicationDbContext)

@@ -1,18 +1,46 @@
 
-]Migrations.Conversor_2019042005.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)<
-2D:\git\Achei\backend\Migrations\v1.0\2019042005.cs (	"0*ç
-0ÜÙ
-<
-2D:\git\Achei\backend\Migrations\v1.0\2019042005.cs (J_
-%0YMicrosoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder<TOperation>"KMicrosoft.EntityFrameworkCore.Migrations.MigrationBuilder.Sql(string, bool)*H
-F
-	migration9Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder*
-""*
-""2Sql(string, bool)*
-1*X
-1"S
-<
-2D:\git\Achei\backend\Migrations\v1.0\2019042005.cs (	
-implicit return:F
-	migration9Microsoft.EntityFrameworkCore.Migrations.MigrationBuilderB#!
-Migrations.Conversor_2019042005
+KPersistencia.ConnectionString.SetConnection(string, string, string, string)?
+5E:\Git\Achei\backend\Persistencia\ConnectionString.cs (("0*à
+0±
+®
+?
+5E:\Git\Achei\backend\Persistencia\ConnectionString.cs (,
+
+%0void"(Persistencia.ConnectionString.Server.set*!"
+Persistencia.ConnectionString*
+
+serverstringµ
+²
+?
+5E:\Git\Achei\backend\Persistencia\ConnectionString.cs (0
+
+%1void"*Persistencia.ConnectionString.Database.set*!"
+Persistencia.ConnectionString*
+
+databasestring±
+®
+?
+5E:\Git\Achei\backend\Persistencia\ConnectionString.cs (,
+
+%2void"(Persistencia.ConnectionString.UserId.set*!"
+Persistencia.ConnectionString*
+
+userIdstringµ
+²
+?
+5E:\Git\Achei\backend\Persistencia\ConnectionString.cs (0
+
+%3void"*Persistencia.ConnectionString.Password.set*!"
+Persistencia.ConnectionString*
+
+passwordstring*
+1*[
+1"V
+?
+5E:\Git\Achei\backend\Persistencia\ConnectionString.cs (	
+implicit return:
+serverstring:
+databasestring:
+userIdstring:
+passwordstringB!"
+Persistencia.ConnectionString
