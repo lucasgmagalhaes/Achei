@@ -26,7 +26,7 @@ namespace Api.Controllers
         /// <returns></returns>
         [HttpGet("{id}")]
         [Authorize("Bearer")]
-        public IActionResult Get(long id)
+        public ActionResult Get(long id)
         {
             try
             {
@@ -52,7 +52,7 @@ namespace Api.Controllers
         /// <param name="usuario"></param>
         /// <returns></returns>
         [HttpPost]
-        public IActionResult Post([FromBody]Usuario usuario)
+        public ActionResult Post([FromBody]Usuario usuario)
         {
             try
             {
@@ -81,7 +81,7 @@ namespace Api.Controllers
         /// <returns></returns>
         [HttpPut]
         [Authorize("Bearer")]
-        public IActionResult Atualizar([FromBody]Usuario usuario)
+        public ActionResult Atualizar([FromBody]Usuario usuario)
         {
             try
             {
@@ -101,14 +101,14 @@ namespace Api.Controllers
         /// <returns></returns>
         [HttpDelete("{id}")]
         [Authorize("Bearer")]
-        public IActionResult Delete(long id)
+        public ActionResult Delete(long id)
         {
             usuarioService.Deletar(id);
             return Ok();
         }
 
         [HttpGet("{usuarioId}/itensAchados")]
-        public IActionResult BuscarItensAchados(long usuarioId, [FromServices] IItemAchadoService itemAchadoService)
+        public ActionResult BuscarItensAchados(long usuarioId, [FromServices] IItemAchadoService itemAchadoService)
         {
             try
             {
@@ -122,7 +122,7 @@ namespace Api.Controllers
         }
 
         [HttpGet("{usuarioId}/itensPerdidos")]
-        public IActionResult BuscarItensPerdidos(long usuarioId, [FromServices] IItemPerdidoService itemPerdidoService)
+        public ActionResult BuscarItensPerdidos(long usuarioId, [FromServices] IItemPerdidoService itemPerdidoService)
         {
             try
             {

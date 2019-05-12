@@ -21,7 +21,7 @@ namespace Api.Controllers
         }
 
         [HttpGet("{id}")]
-        public IActionResult GetById(long id)
+        public ActionResult GetById(long id)
         {
             try
             {

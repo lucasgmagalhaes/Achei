@@ -1,0 +1,173 @@
+﻿using Entidades.Interfaces;
+using Extensions;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Query;
+using Persistencia.Interfaces;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Linq.Expressions;
+using System.Threading.Tasks;
+
+namespace ApiTesting.Services
+{
+    public class CrudServiceFake<T> : ICrudService<T> where T : class, IEntity, new()
+    {
+        private readonly List<T> entidades;
+
+        public CrudServiceFake(List<T> entidades)
+        {
+            this.entidades = entidades;
+        }
+
+        public void Atualizar(T entidade)
+        {
+            IEntity itemPerdido = this.entidades.Find(_entidade => _entidade.Id == entidade.Id);
+            if (itemPerdido != null)
+            {
+                entidade.CopiarPropriedadesPara(itemPerdido);
+            }
+        }
+
+        public void Atualizar(List<T> entidades)
+        {
+            entidades.ForEach(_entidade =>
+            {
+                T itemPerdido = this.entidades.SingleOrDefault(item => item.Id == _entidade.Id);
+                if (itemPerdido != null)
+                {
+                    _entidade.CopiarPropriedadesPara(itemPerdido);
+                }
+            });
+        }
+
+        public Task AtualizarAsync(T entidade)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task AtualizarAsync(List<T> entidades)
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<T> Buscar()
+        {
+            List<T> itensRetorno = new List<T>();
+            this.entidades.ForEach(item =>
+            {
+                T itemCopia = new T();
+                item.CopiarPropriedadesPara(itemCopia);
+                itensRetorno.Add(itemCopia);
+            });
+            return itensRetorno;
+        }
+
+        public T Buscar(long id)
+        {
+            T itemPerdido = this.entidades.SingleOrDefault(item => item.Id == id);
+            T retorno = new T();
+            itemPerdido.CopiarPropriedadesPara(retorno);
+            return retorno;
+        }
+
+        public IQueryable<T> Buscar(Expression<Func<T, bool>> predicate, Func<IQueryable<T>, IIncludableQueryable<T, object>> include = null)
+        {
+            return this.entidades.Where(predicate.Compile()).AsQueryable();
+        }
+
+        public Task<List<T>> BuscarAsync()
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<T> BuscarAsync(long id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Deletar(T entidade)
+        {
+            Remover(entidade.Id);
+        }
+
+        public void Deletar(long id)
+        {
+            Remover(id);
+        }
+
+        private void Remover(long id)
+        {
+            T itemPerdido = this.entidades.SingleOrDefault(item => item.Id == id);
+            if (itemPerdido != null)
+            {
+                this.entidades.Remove(itemPerdido);
+            }
+        }
+
+        public Task DeletarAsync(T entidade)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task DeletarAsync(long id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public DbSet<T> Entity()
+        {
+            throw new NotImplementedException();
+        }
+
+        public IQueryable<T> FromSql(string sql)
+        {
+            throw new NotImplementedException();
+        }
+
+        public IQueryable<T> FromSql(string sql, params object[] obj)
+        {
+            throw new NotImplementedException();
+        }
+
+        public T Inserir(T entidade)
+        {
+            Random random = new Random();
+            entidade.Id = random.Next(9999);
+            this.entidades.Add(entidade);
+            return entidade;
+        }
+
+        public Task<T> InserirAsync(T entidade)
+        {
+            throw new NotImplementedException();
+        }
+
+        #region IDisposable Support
+        private bool disposedValue = false; // Para detectar chamadas redundantes
+
+        protected virtual void Dispose(bool disposing)
+        {
+            if (!disposedValue)
+            {
+                if (disposing)
+                {
+                    this.entidades.Clear();
+                }
+                disposedValue = true;
+            }
+        }
+
+        ~CrudServiceFake()
+        {
+            Dispose(false);
+        }
+
+        public void Dispose()
+        {
+            Dispose(true);
+            GC.SuppressFinalize(this);
+        }
+        #endregion
+    }
+}

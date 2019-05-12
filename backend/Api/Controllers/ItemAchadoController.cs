@@ -23,7 +23,7 @@ namespace Api.Controllers
         }
 
         [HttpGet("{id}")]
-        public IActionResult BuscarAchado(long id)
+        public ActionResult BuscarAchado(long id)
         {
             try
             {
@@ -42,7 +42,7 @@ namespace Api.Controllers
         /// <param name="itemAchado"></param>
         /// <returns></returns>
         [HttpPut]
-        public IActionResult Atualizar([FromBody]ItemAchado itemAchado)
+        public ActionResult Atualizar([FromBody]ItemAchado itemAchado)
         {
             try
             {
@@ -56,7 +56,7 @@ namespace Api.Controllers
         }
 
         [HttpDelete("{id}")]
-        public IActionResult Excluir(long id)
+        public ActionResult Excluir(long id)
         {
             try
             {
@@ -70,7 +70,7 @@ namespace Api.Controllers
         }
 
         [HttpPost]
-        public IActionResult Salvar([FromBody]ItemAchado itemAchado)
+        public ActionResult Salvar([FromBody]ItemAchado itemAchado)
         {
             try
             {
@@ -84,7 +84,7 @@ namespace Api.Controllers
         }
 
         [HttpGet("{id}/regiao")]
-        public IActionResult BuscarRegiaoItemPerdido(long id, [FromServices] IRegiaoService regiaoService)
+        public ActionResult BuscarRegiaoItemPerdido(long id, [FromServices] IRegiaoService regiaoService)
         {
             try
             {
@@ -99,7 +99,7 @@ namespace Api.Controllers
         }
 
         [HttpGet("{id}/tags")]
-        public IActionResult BuscarTagItemPerdido(long id, [FromServices] ITagService tagService)
+        public ActionResult BuscarTagItemPerdido(long id, [FromServices] ITagService tagService)
         {
             try
             {

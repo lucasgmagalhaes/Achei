@@ -12,7 +12,7 @@ namespace Api.Controllers
         /// </summary>
         /// <returns></returns>
         [HttpGet("{id}")]
-        public abstract IActionResult Get();
+        public abstract ActionResult Get();
 
         /// <summary>
         /// GET api/[controller]/{id}
@@ -20,7 +20,7 @@ namespace Api.Controllers
         /// <param name="id">Id da entidade a ser buscada</param>
         /// <returns></returns>
         [HttpGet("{id}")]
-        public abstract IActionResult Get(long id);
+        public abstract ActionResult Get(long id);
 
         /// <summary>
         /// PUT api/[controller]/
@@ -28,7 +28,7 @@ namespace Api.Controllers
         /// <param name="entity">entidade a ser atualizada</param>
         /// <returns></returns>
         [HttpPut]
-        public abstract IActionResult Put([FromBody]T entity);
+        public abstract ActionResult Put([FromBody]T entity);
 
         /// <summary>
         /// POST api/[controller]/
@@ -36,7 +36,7 @@ namespace Api.Controllers
         /// <param name="entidade">entidade a ser criada</param>
         /// <returns></returns>
         [HttpPost]
-        public abstract IActionResult Post([FromBody]T entidade);
+        public abstract ActionResult Post([FromBody]T entidade);
 
         /// <summary>
         /// DELETE api/[controller]/{id}
@@ -44,6 +44,6 @@ namespace Api.Controllers
         /// <param name="id">Id da entidade a ser deletada</param>
         /// <returns></returns>
         [HttpDelete("{id}")]
-        public abstract IActionResult Delete(long id);
+        public abstract ActionResult Delete(long id);
     }
 }

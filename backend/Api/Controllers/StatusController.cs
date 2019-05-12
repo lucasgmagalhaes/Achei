@@ -7,7 +7,7 @@ namespace Api.Controllers
     public class StatusController : ControllerBase
     {
         [HttpGet()]
-        public IActionResult Get()
+        public ActionResult Get()
         {
             return Ok("Api funcionando!");
         }

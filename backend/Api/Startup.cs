@@ -62,17 +62,7 @@ namespace Api
 
             services.AddDbContext<ApplicationDbContext>();
 
-            MapperConfiguration mappingConfig = new MapperConfiguration(mc =>
-            {
-                mc.CreateMap<Tag, TagDto>();
-                mc.CreateMap<Item, TagDto>();
-                mc.CreateMap<ItemPerdido, ItemPerdidoDto>();
-                mc.CreateMap<ItemAchado, ItemAchadoDto>();
-                mc.CreateMap<Regiao, RegiaoDto>();
-            });
-
-            IMapper mapper = mappingConfig.CreateMapper();
-            services.AddSingleton(mapper);
+            services.AddSingleton(Mapeamento.Criar());
 
             ConfigureAuthentication(services);
 

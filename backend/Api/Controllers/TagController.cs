@@ -20,7 +20,7 @@ namespace Api.Controllers
         }
 
         [HttpGet("{id}")]
-        public IActionResult GetTag(long id)
+        public ActionResult GetTag(long id)
         {
             try
             {

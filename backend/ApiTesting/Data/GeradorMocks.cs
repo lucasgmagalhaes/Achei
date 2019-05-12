@@ -9,7 +9,7 @@ namespace ApiTesting
     /// <summary>
     /// Classe auxiliar para criação da lista de itens
     /// </summary>
-    public static class GeradorMocks
+    internal static class GeradorMocks
     {
         public static List<ItemPerdido> GetItensPerdidos()
         {

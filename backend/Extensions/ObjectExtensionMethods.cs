@@ -24,17 +24,17 @@ namespace Extensions
         ///  
         /// <param name="self">Objeto que está chamando o método</param>
         /// <param name="parent">Objeto que terá as propriedades copiadas</param>
-        public static void CopiarPropriedadesDe(this object self, object parent)
+        public static void CopiarPropriedadesDe(this object to, object from)
         {
-            if (parent == null)
+            if (from == null)
             {
-                throw new ArgumentNullException("parent", "Objeto a ser copiado não pode nulo");
+                throw new ArgumentNullException("from", "Objeto a ser copiado não pode nulo");
             }
 
-            var fromProperties = parent.GetType().GetProperties();
-            var toProperties = self.GetType().GetProperties();
+            var fromProperties = from.GetType().GetProperties();
+            var toProperties = to.GetType().GetProperties();
 
-            IniciarCopia(toProperties, fromProperties, self, parent);
+            IniciarCopia(toProperties, fromProperties, to, from);
         }
 
         /// <summary>
@@ -53,17 +53,17 @@ namespace Extensions
         /// 
         /// <param name="self">Objeto que está chamando o método</param>
         /// <param name="parent">Objeto que receberá as propriedades</param>
-        public static void CopiarPropriedadesPara(this object self, object parent)
+        public static void CopiarPropriedadesPara(this object from, object to)
         {
-            if (parent == null)
+            if (to == null)
             {
-                throw new ArgumentNullException("parent", "Objeto a ser copiado não pode nulo");
+                throw new ArgumentNullException("to", "Objeto a ser copiado não pode nulo");
             }
 
-            var toProperties = parent.GetType().GetProperties();
-            var fromProperties = self.GetType().GetProperties();
+            var toProperties = to.GetType().GetProperties();
+            var fromProperties = from.GetType().GetProperties();
 
-            IniciarCopia(toProperties, fromProperties, self, parent);
+            IniciarCopia(toProperties, fromProperties, to, from);
         }
 
         /// <summary>
@@ -78,7 +78,24 @@ namespace Extensions
         /// <param name="from">Objeto que receberá os valores</param>
         private static void IniciarCopia(PropertyInfo[] toProperties, PropertyInfo[] fromProperties, object to, object from)
         {
-            if(toProperties == null)
+            ValidarParametros(toProperties, fromProperties, to, from);
+
+            foreach (var fromProperty in fromProperties)
+            {
+                foreach (var toProperty in toProperties)
+                {
+                    if (fromProperty.Name == toProperty.Name && fromProperty.PropertyType == toProperty.PropertyType)
+                    {
+                        toProperty.SetValue(to, fromProperty.GetValue(from));
+                        break;
+                    }
+                }
+            }
+        }
+
+        private static void ValidarParametros(PropertyInfo[] toProperties, PropertyInfo[] fromProperties, object to, object from)
+        {
+            if (toProperties == null)
             {
                 throw new ArgumentNullException("toProperties", "Propriedades do objeto não pode ser nula");
             }
@@ -93,18 +110,6 @@ namespace Extensions
             else if (from == null)
             {
                 throw new ArgumentNullException("from", "Objeto que receberá os valores não pode ser nulo");
-            }
-
-            foreach (var fromProperty in fromProperties)
-            {
-                foreach (var toProperty in toProperties)
-                {
-                    if (fromProperty.Name == toProperty.Name && fromProperty.PropertyType == toProperty.PropertyType)
-                    {
-                        toProperty.SetValue(to, fromProperty.GetValue(from));
-                        break;
-                    }
-                }
             }
         }
     }
