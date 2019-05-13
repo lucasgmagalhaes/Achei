@@ -11,6 +11,14 @@ using System.Threading.Tasks;
 
 namespace Persistencia.Services
 {
+    enum TipoOperacao
+    {
+        Insert = ,
+        Update,
+        Delete,
+        Select
+    }
+
     public class CrudService<T> : ICrudService<T> where T : class, IEntity, new()
     {
         private readonly DbContext dbService;
@@ -43,13 +51,35 @@ namespace Persistencia.Services
 
         public void Atualizar(T entidade)
         {
-            dbService.Update(entidade);
-            dbService.SaveChanges();
+            if (dbService.Set<T>().Any(ent => ent.Id == entidade.Id))
+            {
+                dbService.Update(entidade);
+                dbService.SaveChanges();
+            }
+            else
+            {
+                throw new EntityNotFoundException("Entidade não existe no banco de dados para ser atualizada");
+            }
         }
 
         public void Atualizar(List<T> entidades)
         {
-            dbService.Update(entidades);
+            if (entidades == null)
+            {
+                throw new ArgumentNullException("entidades", "Lista de entidades não pode ser nula");
+            }
+
+            for (int i = 0; i < entidades.Count; i++)
+            {
+                if (dbService.Set<T>().Any(ent => ent.Id == entidades[i].Id))
+                {
+                    dbService.Update(entidades[i]);
+                }
+                else
+                {
+                    throw new EntityNotFoundException($"Entidade no index: '{i}' não encontrada");
+                }
+            }
             dbService.SaveChanges();
         }
 
@@ -78,6 +108,11 @@ namespace Persistencia.Services
 
         public void Deletar(T entidade)
         {
+            if (entidade == null)
+            {
+                throw new ArgumentNullException("entidade", "Não é possível remover uma entidade nulla");
+            }
+
             dbService.Set<T>().Remove(entidade);
             dbService.SaveChanges();
         }
@@ -93,6 +128,11 @@ namespace Persistencia.Services
 
         public T Inserir(T entidade)
         {
+            if (entidade == null)
+            {
+                throw new ArgumentNullException("entidade", "Não é possível inserir uma entidade nula");
+            }
+
             bool exists = dbService.Set<T>().Any(ent => ent.Id == entidade.Id);
 
             if (!exists)
@@ -107,8 +147,43 @@ namespace Persistencia.Services
             }
         }
 
+        private void ValidarEntidadeNulla(T entidade)
+        {
+            if (entidade == null)
+            {
+                throw new ArgumentNullException("entidade", "Não é possível atualizar uma entidade nula");
+            }
+        }
+
+        private void ValidarEntidadesNulla(List<T> entidade, TipoOperacao tipoOperacao)
+        {
+            if (entidade == null)
+            {
+                string tipo = string.Empty;
+                switch (tipoOperacao)
+                {
+                    case TipoOperacao.Insert:
+                        tipo = "inserir";
+                        break;
+                    case TipoOperacao.Select:
+                        tipo = "buscar";
+                        break;
+                    case TipoOperacao.Update:
+                        tipo = "atualizar";
+                        break;
+                    case TipoOperacao.Delete:
+                        tipo = "deletar";
+                        break;
+                }
+
+                throw new ArgumentNullException("entidade", "Não é possível atualizar uma entidade nula");
+            }
+        }
+
         public async Task AtualizarAsync(T entidade)
         {
+            ValidarEntidadeNulla(entidade);
+
             if (dbService.Set<T>().Any(ent => ent.Id == entidade.Id))
             {
                 dbService.Update(entidade);
@@ -123,8 +198,24 @@ namespace Persistencia.Services
 
         public async Task AtualizarAsync(List<T> entidades)
         {
-            dbService.Update(entidades);
+            ValidarEntidadesNulla(entidades);
+            AtualizarEntidades(entidades);
             await dbService.SaveChangesAsync();
+        }
+
+        private void AtualizarEntidades(List<T> entidades)
+        {
+            for (int i = 0; i < entidades.Count; i++)
+            {
+                if (dbService.Set<T>().Any(ent => ent.Id == entidades[i].Id))
+                {
+                    dbService.Update(entidades[i]);
+                }
+                else
+                {
+                    throw new EntityNotFoundException($"Entidade no index: '{i}' não encontrada");
+                }
+            }
         }
 
         public async Task<List<T>> BuscarAsync()

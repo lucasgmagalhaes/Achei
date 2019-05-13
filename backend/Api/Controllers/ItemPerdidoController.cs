@@ -2,6 +2,7 @@
 using Entidades;
 using Entidades.Dto;
 using Entidades.Entidades;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Persistencia.Interfaces;
 using System;
@@ -27,13 +28,24 @@ namespace Api.Controllers
         {
             try
             {
+                if (id <= 0)
+                {
+                    return BadRequest("Id inválido");
+                }
+
                 ItemPerdido perdido = itemPerdidoService.Buscar(id);
+
+                if (perdido == null)
+                {
+                    return NotFound("Item não existe");
+                }
+
                 ItemPerdidoDto itemDto = mapper.Map<ItemPerdidoDto>(perdido);
                 return Ok(itemDto);
             }
             catch (Exception e)
             {
-                return BadRequest(e);
+                return StatusCode(StatusCodes.Status500InternalServerError, e);
             }
         }
 
@@ -47,12 +59,17 @@ namespace Api.Controllers
         {
             try
             {
+                if (itemPerdido == null)
+                {
+                    return BadRequest("Item não informado");
+                }
+
                 itemPerdidoService.Atualizar(itemPerdido);
                 return Ok(new RequestResponse() { message = "Item Atualizado com sucesso", status = "200" });
             }
             catch (Exception ex)
             {
-                return BadRequest(new RequestResponse() { message = ex.Message, status = "400" });
+                return StatusCode(StatusCodes.Status500InternalServerError, ex);
             }
         }
 
@@ -61,12 +78,17 @@ namespace Api.Controllers
         {
             try
             {
+                if (id <= 0)
+                {
+                    return BadRequest("Id inválido");
+                }
+
                 itemPerdidoService.Deletar(id);
                 return Ok(new RequestResponse() { message = "Item deletado com sucesso", status = "200" });
             }
             catch (Exception ex)
             {
-                return BadRequest(new RequestResponse() { message = ex.Message, status = "400" });
+                return StatusCode(StatusCodes.Status500InternalServerError, ex);
             }
         }
 
@@ -81,7 +103,7 @@ namespace Api.Controllers
             }
             catch (Exception e)
             {
-                return BadRequest(e);
+                return StatusCode(StatusCodes.Status500InternalServerError, e);
             }
         }
 
@@ -96,7 +118,7 @@ namespace Api.Controllers
             }
             catch (Exception e)
             {
-                return BadRequest(e);
+                return StatusCode(StatusCodes.Status500InternalServerError, e);
             }
         }
 
@@ -110,7 +132,7 @@ namespace Api.Controllers
             }
             catch (Exception e)
             {
-                return BadRequest(e);
+                return StatusCode(StatusCodes.Status500InternalServerError, e);
             }
         }
     }

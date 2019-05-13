@@ -65,9 +65,15 @@ namespace ApiTesting.Services
 
         public T Buscar(long id)
         {
-            T itemPerdido = this.entidades.SingleOrDefault(item => item.Id == id);
+            T entidade = this.entidades.SingleOrDefault(item => item.Id == id);
+
+            if (entidade == null)
+            {
+                return null;
+            }
+
             T retorno = new T();
-            itemPerdido.CopiarPropriedadesPara(retorno);
+            entidade.CopiarPropriedadesPara(retorno);
             return retorno;
         }
 
@@ -88,7 +94,10 @@ namespace ApiTesting.Services
 
         public void Deletar(T entidade)
         {
-            Remover(entidade.Id);
+            if (entidade != null)
+            {
+                Remover(entidade.Id);
+            }
         }
 
         public void Deletar(long id)
@@ -132,10 +141,14 @@ namespace ApiTesting.Services
 
         public T Inserir(T entidade)
         {
-            Random random = new Random();
-            entidade.Id = random.Next(9999);
-            this.entidades.Add(entidade);
-            return entidade;
+            if (entidade != null)
+            {
+                Random random = new Random();
+                entidade.Id = random.Next(9999);
+                this.entidades.Add(entidade);
+                return entidade;
+            }
+            return null;
         }
 
         public Task<T> InserirAsync(T entidade)
