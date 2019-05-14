@@ -155,31 +155,6 @@ namespace Persistencia.Services
             }
         }
 
-        private void ValidarEntidadesNulla(List<T> entidade, TipoOperacao tipoOperacao)
-        {
-            if (entidade == null)
-            {
-                string tipo = string.Empty;
-                switch (tipoOperacao)
-                {
-                    case TipoOperacao.Insert:
-                        tipo = "inserir";
-                        break;
-                    case TipoOperacao.Select:
-                        tipo = "buscar";
-                        break;
-                    case TipoOperacao.Update:
-                        tipo = "atualizar";
-                        break;
-                    case TipoOperacao.Delete:
-                        tipo = "deletar";
-                        break;
-                }
-
-                throw new ArgumentNullException("entidade", "Não é possível atualizar uma entidade nula");
-            }
-        }
-
         public async Task AtualizarAsync(T entidade)
         {
             ValidarEntidadeNulla(entidade);
@@ -193,29 +168,12 @@ namespace Persistencia.Services
             {
                 throw new EntityNotFoundException("Entidade não existe no banco de dados para ser atualizada");
             }
-
         }
 
         public async Task AtualizarAsync(List<T> entidades)
         {
-            ValidarEntidadesNulla(entidades);
-            AtualizarEntidades(entidades);
+            dbService.Update(entidades);
             await dbService.SaveChangesAsync();
-        }
-
-        private void AtualizarEntidades(List<T> entidades)
-        {
-            for (int i = 0; i < entidades.Count; i++)
-            {
-                if (dbService.Set<T>().Any(ent => ent.Id == entidades[i].Id))
-                {
-                    dbService.Update(entidades[i]);
-                }
-                else
-                {
-                    throw new EntityNotFoundException($"Entidade no index: '{i}' não encontrada");
-                }
-            }
         }
 
         public async Task<List<T>> BuscarAsync()
