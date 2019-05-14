@@ -18,7 +18,6 @@ steps:
     versionSpec: '10.x'
   displayName: 'Install Node.js'
 - script: |
-    cd ..
     cd achei-app
     npm install -g @angular/cli
     npm install
