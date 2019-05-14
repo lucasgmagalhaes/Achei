@@ -1,6 +1,8 @@
 # Achei
 Projeto do 6º período de Sistemas de Informação para busca e informação de itens perdidos
 
+[![Build Status](https://dev.azure.com/lucasgsm88/Achei/_apis/build/status/lucasgmagalhaes.Achei?branchName=master)](https://dev.azure.com/lucasgsm88/Achei/_build/latest?definitionId=2&branchName=master)
+
 ## Backend
 
 [![Bugs](https://sonarcloud.io/api/project_badges/measure?project=lucasgmagalhaes_Achei&metric=bugs)](https://sonarcloud.io/dashboard?id=lucasgmagalhaes_Achei)
