@@ -11,13 +11,6 @@ using System.Threading.Tasks;
 
 namespace Persistencia.Services
 {
-    enum TipoOperacao
-    {
-        Insert = ,
-        Update,
-        Delete,
-        Select
-    }
 
     public class CrudService<T> : ICrudService<T> where T : class, IEntity, new()
     {
