@@ -1,4 +1,5 @@
 ﻿using Entidades.Interfaces;
+using Exceptions.Entity;
 using Extensions;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Query;
@@ -26,6 +27,10 @@ namespace ApiTesting.Services
             if (itemPerdido != null)
             {
                 entidade.CopiarPropriedadesPara(itemPerdido);
+            }
+            else
+            {
+                throw new EntityNotFoundException();
             }
         }
 
