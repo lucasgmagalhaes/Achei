@@ -110,6 +110,28 @@ namespace Persistencia.Services
             dbService.SaveChanges();
         }
 
+        public void Deletar(List<T> entidades)
+        {
+            if (entidades == null)
+            {
+                throw new ArgumentNullException("entidades", "Não é possível remover uma entidade nulla");
+            }
+
+            for (int i = 0; i < entidades.Count; i++)
+            {
+                if (entidades[i] != null)
+                {
+                    dbService.Set<T>().Remove(entidades[i]);
+                }
+                else
+                {
+                    throw new NullReferenceException("Não é possível remover uma entidade nulla no índice: " + i);
+                }
+            }
+
+            dbService.SaveChanges();
+        }
+
         public void Deletar(long id)
         {
             IEntity obj = new T() { Id = id };

@@ -65,7 +65,12 @@ namespace Persistencia.Interfaces
         /// </summary>
         Task AtualizarAsync(List<T> entidades);
 
+        /// <summary>
+        /// Busca todas as entidades de um repositório
+        /// </summary>
+        /// <returns>Entidades do tipo T</returns>
         List<T> Buscar();
+
         /// <summary>
         /// Busca uma entidade baseada no seu id
         /// </summary>
@@ -113,6 +118,13 @@ namespace Persistencia.Interfaces
         /// </summary>
         /// <param name="entidade"></param>
         void Deletar(T entidade);
+
+        /// <summary>
+        /// Deleta uma lista objetos de uma entidade no banco de dados.
+        /// com base na entidade
+        /// </summary>
+        /// <param name="entidade"></param>
+        void Deletar(List<T> entidades);
 
         /// <summary>
         /// Deleta um objeto de uma entidade no banco de dados,

@@ -31,11 +31,25 @@ namespace Exceptions.Entity
     [Serializable]
     public class EntityNotFoundException : Exception
     {
+        /// <summary>
+        /// Inicializa um erro que ocorre quando é tentando buscar uma entidade que não existe.
+        /// Possui como mensagem padrão: "Entidade não encontrada no repositório de dados".
+        /// </summary>
         public EntityNotFoundException() : base("Entidade não encontrada no repositório de dados") { }
 
+        /// <summary>
+        /// Inicializa um erro que ocorre quando é tentando buscar uma entidade que não existe com uma mensagem específica
+        /// </summary>
+        /// <param name="message">Mensagem a ser lançada na exceção</param>
         public EntityNotFoundException(string message) : base(message) { }
 
-        public EntityNotFoundException(string message, System.Exception inner) : base(message, inner) { }
+        /// <summary>
+        /// Inicializa um erro que ocorre quando é tentando buscar uma entidade que não existe com uma mensagem específica
+        /// e a exceção que raiz que levou a esta
+        /// </summary>
+        /// <param name="message">Mensagem a ser lançada na exceção</param>
+        /// <param name="inner">Inner Exception que gerou esta exceção</param>
+        public EntityNotFoundException(string message, Exception inner) : base(message, inner) { }
 
         protected EntityNotFoundException(SerializationInfo info, StreamingContext context) : base(info, context) { }
     }
