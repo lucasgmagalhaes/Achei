@@ -186,6 +186,11 @@ namespace ApiTesting.Services
             Dispose(true);
             GC.SuppressFinalize(this);
         }
+
+        public void Deletar(List<T> entidades)
+        {
+            throw new NotImplementedException();
+        }
         #endregion
     }
 }
