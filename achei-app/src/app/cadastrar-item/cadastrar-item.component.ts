@@ -142,10 +142,6 @@ export class CadastrarItemComponent implements OnInit {
     tags.removeAt(tagIndex);
   }
 
-  clickedMarker(label: string, index: number) {
-    console.log(`clicked the marker: ${label || index}`);
-  }
-
   mapClicked($event: MouseEvent) {
     this.localFormsGroup.get('latitudeLocal').setValue($event.coords.lat);
     this.localFormsGroup.get('longitudeLocal').setValue($event.coords.lng);

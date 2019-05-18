@@ -10,6 +10,14 @@ import { MatChipInputEvent, MatDatepickerInputEvent, MatSnackBar, MatStepper } f
 import { COMMA, ENTER } from '@angular/cdk/keycodes';
 import { SessionService } from '../auth/session.service';
 import { Route } from '@angular/compiler/src/core';
+
+declare interface Marker {
+  lat: number;
+  lng: number;
+  label?: string;
+  draggable: boolean;
+}
+
 @Component({
   selector: 'app-item-detalhe',
   templateUrl: './item-detalhe.component.html',
@@ -28,6 +36,9 @@ export class ItemDetalheComponent implements OnInit {
 
   tipoItem: tipoItem;
   id: number;
+
+  addOnBlur = true;
+  marker: Marker;
 
   readonly separatorKeysCodes: number[] = [ENTER, COMMA];
 
@@ -209,4 +220,14 @@ export class ItemDetalheComponent implements OnInit {
       });
     }
   }
+
+  setDefaultDate(event: MatDatepickerInputEvent<Date>) {
+    console.log(event.value);
+    this.itemForm.get('dataFinal').setValue(event.value);
+  }
+
+  markerDragEnd(m: Marker, $event: MouseEvent) {
+    console.log('dragEnd', m, $event);
+  }
+
 }

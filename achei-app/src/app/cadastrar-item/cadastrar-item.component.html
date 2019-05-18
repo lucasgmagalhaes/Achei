@@ -75,7 +75,7 @@
         <agm-map [latitude]="startlat" [longitude]="startlng" [zoom]="startzoom" [disableDefaultUI]="true"
           [zoomControl]="false" (mapClick)="mapClicked($event)">
 
-          <agm-marker (markerClick)="clickedMarker(marker.label, i)"
+          <agm-marker
             [latitude]="localFormsGroup.get('latitudeLocal').value"
             [longitude]="localFormsGroup.get('longitudeLocal').value" [label]="marker?.label"
             [markerDraggable]="marker?.draggable" (dragEnd)="markerDragEnd(marker, $event)">

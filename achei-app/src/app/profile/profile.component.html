@@ -8,7 +8,7 @@
           <mat-form-field class="full-width">
             <input type="text" formControlName="nome" matInput placeholder="Nome">
 
-            <mat-error class="error-message" *ngIf="submitted && getForm().nome.hasError('required')">
+            <mat-error class="error-message" *ngIf="getForm().nome.hasError('required')">
               Nome é <strong>obrigatório</strong>
             </mat-error>
           </mat-form-field>
@@ -17,7 +17,7 @@
             <input type="email" formControlName="email" matInput placeholder="Email">
           </mat-form-field>
 
-          <mat-error class="error-message" *ngIf="submitted && getForm().email.hasError('required')">
+          <mat-error class="error-message" *ngIf="getForm().email.hasError('required')">
             Email é <strong>obrigatório</strong>
           </mat-error>
 
@@ -29,7 +29,7 @@
             <input type="password" formControlName="senha" matInput placeholder="Senha">
           </mat-form-field>
 
-          <mat-error class="error-message" *ngIf="submitted && getForm().senha.hasError('required', 'password')">
+          <mat-error class="error-message" *ngIf="getForm().senha.hasError('required')">
             Senha é <strong>obrigatório</strong>
           </mat-error>
 
@@ -41,7 +41,7 @@
             </mat-error>
           </mat-form-field>
 
-          <mat-error class="error-message" *ngIf="submitted && getForm().senha.hasError('required')">
+          <mat-error class="error-message" *ngIf="getForm().senha.hasError('required')">
             Senha é <strong>obrigatório</strong>
           </mat-error>
 

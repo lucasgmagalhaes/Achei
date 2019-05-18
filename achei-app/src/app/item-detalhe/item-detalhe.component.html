@@ -78,7 +78,7 @@
       <agm-map [latitude]="-11.0234343" [longitude]="-11.0234343" [zoom]="8" [disableDefaultUI]="true"
         [zoomControl]="false" (mapClick)="mapClicked($event)">
 
-        <agm-marker (markerClick)="clickedMarker(marker.label, i)" [latitude]="-11.0234343" [longitude]="-11.0234343"
+        <agm-marker [latitude]="-11.0234343" [longitude]="-11.0234343"
           [label]="false" [markerDraggable]="true" [label]="''" (dragEnd)="markerDragEnd(marker, $event)">
         </agm-marker>
 
