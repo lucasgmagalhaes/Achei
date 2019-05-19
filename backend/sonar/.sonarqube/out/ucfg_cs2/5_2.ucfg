@@ -1,0 +1,95 @@
+
+_Api.AuthorizeHandle.HandleAsync(Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext)5
++D:\git\Achei\backend\Api\AuthorizeHandle.cs	 	("0*­
+0ˆ…
+5
++D:\git\Achei\backend\Api\AuthorizeHandle.cs (',
+%0&System.Security.Claims.ClaimsPrincipal"GMicrosoft.AspNetCore.Authorization.AuthorizationHandlerContext.User.get*K
+I
+context>Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext2User.getØÕ
+5
++D:\git\Achei\backend\Api\AuthorizeHandle.cs (0)
+%1#System.Security.Principal.IIdentity"3System.Security.Claims.ClaimsPrincipal.Identity.get*.
+,
+%0&System.Security.Claims.ClaimsPrincipal2Identity.get­ª
+5
++D:\git\Achei\backend\Api\AuthorizeHandle.cs (5
+%2string",System.Security.Principal.IIdentity.Name.get*+
+)
+%1#System.Security.Principal.IIdentity2Name.get`
+^
+5
++D:\git\Achei\backend\Api\AuthorizeHandle.cs (5
+emailstring"__id*
+
+%2stringˆ…
+5
++D:\git\Achei\backend\Api\AuthorizeHandle.cs (,
+%3&System.Security.Claims.ClaimsPrincipal"GMicrosoft.AspNetCore.Authorization.AuthorizationHandlerContext.User.get*K
+I
+context>Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext2User.getØÕ
+5
++D:\git\Achei\backend\Api\AuthorizeHandle.cs (%)
+%4#System.Security.Principal.IIdentity"3System.Security.Claims.ClaimsPrincipal.Identity.get*.
+,
+%3&System.Security.Claims.ClaimsPrincipal2Identity.getÁ¾
+5
++D:\git\Achei\backend\Api\AuthorizeHandle.cs (5
+
+%5bool"7System.Security.Principal.IIdentity.IsAuthenticated.get*+
+)
+%4#System.Security.Principal.IIdentity2IsAuthenticated.get*
+1
+2* 
+1–
+“
+5
++D:\git\Achei\backend\Api\AuthorizeHandle.cs" (E
+%6string"(Api.Session.BuscarBancoDoUsuario(string)*"
+Api.Session*
+
+emailstringc
+a
+5
++D:\git\Achei\backend\Api\AuthorizeHandle.cs (E
+databasestring"__id*
+
+%6string”
+‘
+5
++D:\git\Achei\backend\Api\AuthorizeHandle.cs ("
+
+%7bool""string.operator !=(string, string)*
+"
+string*
+
+databasestring*
+""*
+3
+2*¶
+3«
+¨
+5
++D:\git\Achei\backend\Api\AuthorizeHandle.cs (8
+
+%8void"*Persistencia.ConnectionString.Database.set*!"
+Persistencia.ConnectionString*
+
+databasestring*
+2*‘
+2­
+ª
+5
++D:\git\Achei\backend\Api\AuthorizeHandle.cs (%!
+%9System.Threading.Tasks.Task"-System.Threading.Tasks.Task.CompletedTask.get*"
+System.Threading.Tasks.Task"\
+5
++D:\git\Achei\backend\Api\AuthorizeHandle.cs (&#
+!
+%9System.Threading.Tasks.Task*Q
+4"L
+5
++D:\git\Achei\backend\Api\AuthorizeHandle.cs (	
+implicit return:I
+context>Microsoft.AspNetCore.Authorization.AuthorizationHandlerContextB
+Api.AuthorizeHandle

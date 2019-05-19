@@ -1,0 +1,22 @@
+
+ Exceptions.Entity.EntityNotFoundException.EntityNotFoundException(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)K
+AD:\git\Achei\backend\Exceptions\Entity\EntityNotFoundException.cs6 6()"0*î
+0ã
+à
+K
+AD:\git\Achei\backend\Exceptions\Entity\EntityNotFoundException.cs6\ 6(q
+
+%0void"ySystem.Exception.Exception(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)*
+System.Exception*8
+6
+info.System.Runtime.Serialization.SerializationInfo*:
+8
+context-System.Runtime.Serialization.StreamingContext*
+1*g
+1"b
+K
+AD:\git\Achei\backend\Exceptions\Entity\EntityNotFoundException.cs6t 6(u
+implicit return:6
+info.System.Runtime.Serialization.SerializationInfo:8
+context-System.Runtime.Serialization.StreamingContextB-+
+)Exceptions.Entity.EntityNotFoundException

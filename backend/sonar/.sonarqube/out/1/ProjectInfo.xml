@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ProjectInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.sonarsource.com/msbuild/integration/2015/1">
-  <ProjectName>Exceptions</ProjectName>
+  <ProjectName>Extensions</ProjectName>
   <ProjectLanguage>C#</ProjectLanguage>
   <ProjectType>Product</ProjectType>
-  <ProjectGuid>3fb5f8b7-6385-4bb1-aa12-0c88bf97bfb2</ProjectGuid>
-  <FullPath>E:\Git\Achei\backend\Exceptions\Exceptions.csproj</FullPath>
+  <ProjectGuid>d747f04d-68fe-4905-9331-44db9fe4dbee</ProjectGuid>
+  <FullPath>D:\git\Achei\backend\Extensions\Extensions.csproj</FullPath>
   <IsExcluded>false</IsExcluded>
   <AnalysisResults>
-    <AnalysisResult Id="FilesToAnalyze" Location="E:\Git\Achei\backend\sonar\.sonarqube\out\1\FilesToAnalyze.txt" />
+    <AnalysisResult Id="FilesToAnalyze" Location="D:\git\Achei\backend\sonar\.sonarqube\out\1\FilesToAnalyze.txt" />
   </AnalysisResults>
   <AnalysisSettings>
-    <Property Name="sonar.cs.roslyn.reportFilePath">E:\Git\Achei\backend\Exceptions\bin\Debug\netcoreapp2.2\Exceptions.dll.RoslynCA.json|E:\Git\Achei\backend\Exceptions\bin\Debug\netcoreapp2.2\Exceptions.dll.RoslynCA.json</Property>
-    <Property Name="sonar.cs.analyzer.projectOutPath">E:\Git\Achei\backend\sonar\.sonarqube\out\1</Property>
+    <Property Name="sonar.cs.roslyn.reportFilePath">D:\git\Achei\backend\Extensions\bin\Debug\netcoreapp2.2\Extensions.dll.RoslynCA.json|D:\git\Achei\backend\Extensions\bin\Debug\netcoreapp2.2\Extensions.dll.RoslynCA.json</Property>
+    <Property Name="sonar.cs.analyzer.projectOutPath">D:\git\Achei\backend\sonar\.sonarqube\out\1</Property>
   </AnalysisSettings>
   <Configuration>Debug</Configuration>
   <Platform>AnyCPU</Platform>

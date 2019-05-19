@@ -1,26 +1,0 @@
-
-6Persistencia.Services.CrudService<T>.BuscarAsync(long)E
-9E:\Git\Achei\backend\Persistencia\Services\CrudService.cs‡ ‡(("0*Ü
-0á
-Þ
-E
-9E:\Git\Achei\backend\Persistencia\Services\CrudService.cs‰ ‰("-
-%0'Microsoft.EntityFrameworkCore.DbContext"__id*`*^&
-$Persistencia.Services.CrudService<T>"4
-	dbService'Microsoft.EntityFrameworkCore.DbContext¡ž
-E
-9E:\Git\Achei\backend\Persistencia\Services\CrudService.cs‰ ‰(3*
-%1$System.Threading.Tasks.Task<TResult>"KMicrosoft.EntityFrameworkCore.DbContext.FindAsync<TEntity>(params object[])*/
--
-%0'Microsoft.EntityFrameworkCore.DbContext*
-""2#FindAsync<TEntity>(params object[])"O
-E
-9E:\Git\Achei\backend\Persistencia\Services\CrudService.cs‰ ‰(4
-""*a
-1"\
-E
-9E:\Git\Achei\backend\Persistencia\Services\CrudService.csŠ Š(	
-implicit return:
-
-idlongB(&
-$Persistencia.Services.CrudService<T>

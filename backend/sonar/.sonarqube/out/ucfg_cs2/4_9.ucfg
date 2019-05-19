@@ -1,85 +1,18 @@
 
-9Api.Controllers.ItemPerdidoController.BuscarPerdido(long)G
-=E:\Git\Achei\backend\Api\Controllers\ItemPerdidoController.cs (*"5*
-0*	
-1
-2
-3*í
-2ı
-Ú
-G
-=E:\Git\Achei\backend\Api\Controllers\ItemPerdidoController.cs& (81
-%0+Persistencia.Interfaces.IItemPerdidoService"__id*n*l'
-%Api.Controllers.ItemPerdidoController"A
-itemPerdidoService+Persistencia.Interfaces.IItemPerdidoServiceÙÒ
-G
-=E:\Git\Achei\backend\Api\Controllers\ItemPerdidoController.cs& (C%
-%1Entidades.Entidades.ItemPerdido"4Persistencia.Interfaces.ICrudService<T>.Buscar(long)*3
-1
-%0+Persistencia.Interfaces.IItemPerdidoService*
-""2Buscar(long)ß
-§
-G
-=E:\Git\Achei\backend\Api\Controllers\ItemPerdidoController.cs (C*
-perdidoEntidades.Entidades.ItemPerdido"__id*'
-%
-%1Entidades.Entidades.ItemPerdido∑
-¥
-G
-=E:\Git\Achei\backend\Api\Controllers\ItemPerdidoController.cs) (/
-%2AutoMapper.IMapper"__id*I*G'
-%Api.Controllers.ItemPerdidoController"
-mapperAutoMapper.IMapperÉÄ
-G
-=E:\Git\Achei\backend\Api\Controllers\ItemPerdidoController.cs) (L"
-%3Entidades.Dto.ItemPerdidoDto",AutoMapper.IMapper.Map<TDestination>(object)*
-
-%2AutoMapper.IMapper*,
-*
-perdidoEntidades.Entidades.ItemPerdido2Map<TDestination>(object)°
-û
-G
-=E:\Git\Achei\backend\Api\Controllers\ItemPerdidoController.cs (L'
-itemDtoEntidades.Dto.ItemPerdidoDto"__id*$
-"
-%3Entidades.Dto.ItemPerdidoDtoìê
-G
-=E:\Git\Achei\backend\Api\Controllers\ItemPerdidoController.cs   ("-
-%4'Microsoft.AspNetCore.Mvc.OkObjectResult"2Microsoft.AspNetCore.Mvc.ControllerBase.Ok(object)*+)
-'Microsoft.AspNetCore.Mvc.ControllerBase*)
-'
-itemDtoEntidades.Dto.ItemPerdidoDto2
-Ok(object)"z
-G
-=E:\Git\Achei\backend\Api\Controllers\ItemPerdidoController.cs   (#/
--
-%4'Microsoft.AspNetCore.Mvc.OkObjectResult*
-4*	
-1
-3
-3*§
-1ôñ
-G
-=E:\Git\Achei\backend\Api\Controllers\ItemPerdidoController.cs$ $($5
-%5/Microsoft.AspNetCore.Mvc.BadRequestObjectResult":Microsoft.AspNetCore.Mvc.ControllerBase.BadRequest(object)*+)
-'Microsoft.AspNetCore.Mvc.ControllerBase*
-
-eSystem.Exception2BadRequest(object)"Ç
-G
-=E:\Git\Achei\backend\Api\Controllers\ItemPerdidoController.cs$ $(%7
-5
-%5/Microsoft.AspNetCore.Mvc.BadRequestObjectResult*c
-3"^
-G
-=E:\Git\Achei\backend\Api\Controllers\ItemPerdidoController.cs& &(	
-implicit return*q
-5g
-e
-G
-=E:\Git\Achei\backend\Api\Controllers\ItemPerdidoController.cs (*
-%6"__entrypoint*
-""*
-0:
-
-idlongB)'
-%Api.Controllers.ItemPerdidoController
+]Migrations.Conversor_2019031003.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)<
+2D:\git\Achei\backend\Migrations\v1.0\2019031003.cs  (""0*Á
+0‹Ÿ
+<
+2D:\git\Achei\backend\Migrations\v1.0\2019031003.cs (V_
+%0YMicrosoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder<TOperation>"KMicrosoft.EntityFrameworkCore.Migrations.MigrationBuilder.Sql(string, bool)*H
+F
+	migration9Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder*
+""*
+""2Sql(string, bool)*
+1*X
+1"S
+<
+2D:\git\Achei\backend\Migrations\v1.0\2019031003.cs (	
+implicit return:F
+	migration9Microsoft.EntityFrameworkCore.Migrations.MigrationBuilderB#!
+Migrations.Conversor_2019031003

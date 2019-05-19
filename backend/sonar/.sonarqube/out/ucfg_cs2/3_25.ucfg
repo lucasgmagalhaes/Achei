@@ -1,0 +1,71 @@
+
+1Persistencia.Services.CrudService<T>.Atualizar(T)C
+9D:\git\Achei\backend\Persistencia\Services\CrudService.cs- -("0*›
+0ß
+Ü
+C
+9D:\git\Achei\backend\Persistencia\Services\CrudService.cs/ /(-
+%0'Microsoft.EntityFrameworkCore.DbContext"__id*`*^&
+$Persistencia.Services.CrudService<T>"4
+	dbService'Microsoft.EntityFrameworkCore.DbContextõò
+C
+9D:\git\Achei\backend\Persistencia\Services\CrudService.cs/ /("2
+%1,Microsoft.EntityFrameworkCore.DbSet<TEntity>"6Microsoft.EntityFrameworkCore.DbContext.Set<TEntity>()*/
+-
+%0'Microsoft.EntityFrameworkCore.DbContext2Set<TEntity>()³
+°
+C
+9D:\git\Achei\backend\Persistencia\Services\CrudService.cs/ /(D
+
+%2bool"ƒSystem.Linq.Queryable.Any<TSource>(System.Linq.IQueryable<TSource>, System.Linq.Expressions.Expression<System.Func<TSource, bool>>)*"
+System.Linq.Queryable*4
+2
+%1,Microsoft.EntityFrameworkCore.DbSet<TEntity>*
+""*
+1
+2*Ë
+1ß
+Ü
+C
+9D:\git\Achei\backend\Persistencia\Services\CrudService.cs1 1(-
+%3'Microsoft.EntityFrameworkCore.DbContext"__id*`*^&
+$Persistencia.Services.CrudService<T>"4
+	dbService'Microsoft.EntityFrameworkCore.DbContext¯¬
+C
+9D:\git\Achei\backend\Persistencia\Services\CrudService.cs1 1(*G
+%4AMicrosoft.EntityFrameworkCore.ChangeTracking.EntityEntry<TEntity>"@Microsoft.EntityFrameworkCore.DbContext.Update<TEntity>(TEntity)*/
+-
+%3'Microsoft.EntityFrameworkCore.DbContext*
+
+entidadeT2Update<TEntity>(TEntity)ß
+Ü
+C
+9D:\git\Achei\backend\Persistencia\Services\CrudService.cs2 2(-
+%5'Microsoft.EntityFrameworkCore.DbContext"__id*`*^&
+$Persistencia.Services.CrudService<T>"4
+	dbService'Microsoft.EntityFrameworkCore.DbContextÊÇ
+C
+9D:\git\Achei\backend\Persistencia\Services\CrudService.cs2 2('	
+%6int"5Microsoft.EntityFrameworkCore.DbContext.SaveChanges()*/
+-
+%5'Microsoft.EntityFrameworkCore.DbContext2SaveChanges()*
+3*Œ
+2¤¡
+C
+9D:\git\Achei\backend\Persistencia\Services\CrudService.cs6 6(n/
+%7)Exceptions.Entity.EntityNotFoundException")Exceptions.Entity.EntityNotFoundExceptionÚ
+×
+C
+9D:\git\Achei\backend\Persistencia\Services\CrudService.cs6 6(1
+
+%8void"IExceptions.Entity.EntityNotFoundException.EntityNotFoundException(string)*1
+/
+%7)Exceptions.Entity.EntityNotFoundException*
+""*
+3*_
+3"Z
+C
+9D:\git\Achei\backend\Persistencia\Services\CrudService.cs8 8(	
+implicit return:
+entidadeTB(&
+$Persistencia.Services.CrudService<T>

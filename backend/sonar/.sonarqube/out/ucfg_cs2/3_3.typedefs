@@ -1,5 +1,27 @@
-ı
-Migrations.Conversor_20190310012Microsoft.EntityFrameworkCore.Migrations.Migrationobjectû
-=Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)]Migrations.Conversor_2019031001.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)¢
-?Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)_Migrations.Conversor_2019031001.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)P
-Conversor_2019031001()6Migrations.Conversor_2019031001.Conversor_2019031001()
+Ô
+$Persistencia.Services.CrudService<T>objectë
+4CrudService(Microsoft.EntityFrameworkCore.DbContext)YPersistencia.Services.CrudService<T>.CrudService(Microsoft.EntityFrameworkCore.DbContext);
+	Dispose().Persistencia.Services.CrudService<T>.Dispose()C
+Dispose(bool)2Persistencia.Services.CrudService<T>.Dispose(bool)G
+FromSql(string)4Persistencia.Services.CrudService<T>.FromSql(string)i
+ FromSql(string, params object[])EPersistencia.Services.CrudService<T>.FromSql(string, params object[])A
+Atualizar(T)1Persistencia.Services.CrudService<T>.Atualizar(T)É
+-Atualizar(System.Collections.Generic.List<T>)RPersistencia.Services.CrudService<T>.Atualizar(System.Collections.Generic.List<T>)9
+Buscar()-Persistencia.Services.CrudService<T>.Buscar()Ö
+≠Buscar(System.Linq.Expressions.Expression<System.Func<T, bool>>, System.Func<System.Linq.IQueryable<T>, Microsoft.EntityFrameworkCore.Query.IIncludableQueryable<T, object>>)“Persistencia.Services.CrudService<T>.Buscar(System.Linq.Expressions.Expression<System.Func<T, bool>>, System.Func<System.Linq.IQueryable<T>, Microsoft.EntityFrameworkCore.Query.IIncludableQueryable<T, object>>)A
+Buscar(long)1Persistencia.Services.CrudService<T>.Buscar(long)=
+
+Deletar(T)/Persistencia.Services.CrudService<T>.Deletar(T)
++Deletar(System.Collections.Generic.List<T>)PPersistencia.Services.CrudService<T>.Deletar(System.Collections.Generic.List<T>)C
+Deletar(long)2Persistencia.Services.CrudService<T>.Deletar(long)=
+
+Inserir(T)/Persistencia.Services.CrudService<T>.Inserir(T)W
+ValidarEntidadeNulla(T)<Persistencia.Services.CrudService<T>.ValidarEntidadeNulla(T)K
+AtualizarAsync(T)6Persistencia.Services.CrudService<T>.AtualizarAsync(T)ç
+2AtualizarAsync(System.Collections.Generic.List<T>)WPersistencia.Services.CrudService<T>.AtualizarAsync(System.Collections.Generic.List<T>)C
+BuscarAsync()2Persistencia.Services.CrudService<T>.BuscarAsync()K
+BuscarAsync(long)6Persistencia.Services.CrudService<T>.BuscarAsync(long)G
+DeletarAsync(T)4Persistencia.Services.CrudService<T>.DeletarAsync(T)M
+DeletarAsync(long)7Persistencia.Services.CrudService<T>.DeletarAsync(long)G
+InserirAsync(T)4Persistencia.Services.CrudService<T>.InserirAsync(T)9
+Entity()-Persistencia.Services.CrudService<T>.Entity()

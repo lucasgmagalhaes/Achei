@@ -1,0 +1,57 @@
+
+2Persistencia.Services.CrudService<T>.Deletar(long)E
+9D:\git\Achei\backend\Persistencia\Services\CrudService.csá á("0*ı
+0US
+E
+9D:\git\Achei\backend\Persistencia\Services\CrudService.csâ" â(-
+%0T"TÑ
+Å
+E
+9D:\git\Achei\backend\Persistencia\Services\CrudService.csâ â(-#
+objEntidades.Interfaces.IEntity"__id*
+	{unknown}·
+ﬁ
+E
+9D:\git\Achei\backend\Persistencia\Services\CrudService.csã ã(-
+%1'Microsoft.EntityFrameworkCore.DbContext"__id*`*^&
+$Persistencia.Services.CrudService<T>"4
+	dbService'Microsoft.EntityFrameworkCore.DbContext«ƒ
+E
+9D:\git\Achei\backend\Persistencia\Services\CrudService.csã ã(!G
+%2AMicrosoft.EntityFrameworkCore.ChangeTracking.EntityEntry<TEntity>"@Microsoft.EntityFrameworkCore.DbContext.Attach<TEntity>(TEntity)*/
+-
+%1'Microsoft.EntityFrameworkCore.DbContext*%
+#
+objEntidades.Interfaces.IEntity2Attach<TEntity>(TEntity)·
+ﬁ
+E
+9D:\git\Achei\backend\Persistencia\Services\CrudService.cså å(-
+%3'Microsoft.EntityFrameworkCore.DbContext"__id*`*^&
+$Persistencia.Services.CrudService<T>"4
+	dbService'Microsoft.EntityFrameworkCore.DbContext«ƒ
+E
+9D:\git\Achei\backend\Persistencia\Services\CrudService.cså å(!G
+%4AMicrosoft.EntityFrameworkCore.ChangeTracking.EntityEntry<TEntity>"@Microsoft.EntityFrameworkCore.DbContext.Remove<TEntity>(TEntity)*/
+-
+%3'Microsoft.EntityFrameworkCore.DbContext*%
+#
+objEntidades.Interfaces.IEntity2Remove<TEntity>(TEntity)·
+ﬁ
+E
+9D:\git\Achei\backend\Persistencia\Services\CrudService.csç ç(-
+%5'Microsoft.EntityFrameworkCore.DbContext"__id*`*^&
+$Persistencia.Services.CrudService<T>"4
+	dbService'Microsoft.EntityFrameworkCore.DbContextÃ…
+E
+9D:\git\Achei\backend\Persistencia\Services\CrudService.csç ç(#	
+%6int"5Microsoft.EntityFrameworkCore.DbContext.SaveChanges()*/
+-
+%5'Microsoft.EntityFrameworkCore.DbContext2SaveChanges()*
+1*a
+1"\
+E
+9D:\git\Achei\backend\Persistencia\Services\CrudService.csé é(	
+implicit return:
+
+idlongB(&
+$Persistencia.Services.CrudService<T>

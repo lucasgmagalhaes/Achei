@@ -1,0 +1,9 @@
+=
+4D:\git\Achei\backend\ApiTesting\Data\GeradorMocks.csutf-8D
+;D:\git\Achei\backend\ApiTesting\Services\CrudServiceFake.csutf-8K
+BD:\git\Achei\backend\ApiTesting\Services\ItemPerdidoServiceFake.csutf-8F
+=D:\git\Achei\backend\ApiTesting\Services\RegiaoServiceFake.csutf-8K
+BD:\git\Achei\backend\ApiTesting\Tests\ItemPerdidoControllerTest.csutf-8[
+PC:\Users\Lucas\AppData\Local\Temp\.NETCoreApp,Version=v2.2.AssemblyAttributes.csutf-8Y
+MD:\git\Achei\backend\ApiTesting\obj\Debug\netcoreapp2.2\ApiTesting.Program.csutf-16]
+RD:\git\Achei\backend\ApiTesting\obj\Debug\netcoreapp2.2\ApiTesting.AssemblyInfo.csutf-8

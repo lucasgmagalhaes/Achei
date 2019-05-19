@@ -1,36 +1,102 @@
 
-|Api.Controllers.ItemPerdidoController.ItemPerdidoController(Persistencia.Interfaces.IItemPerdidoService, AutoMapper.IMapper)G
-=E:\Git\Achei\backend\Api\Controllers\ItemPerdidoController.cs ($"2*Î
-0…
-‚
-G
-=E:\Git\Achei\backend\Api\Controllers\ItemPerdidoController.cs (8l'
-%Api.Controllers.ItemPerdidoController"A
-itemPerdidoService+Persistencia.Interfaces.IItemPerdidoService"__id*C
-A
-itemPerdidoService+Persistencia.Interfaces.IItemPerdidoService»
-¸
-G
-=E:\Git\Achei\backend\Api\Controllers\ItemPerdidoController.cs ( G'
-%Api.Controllers.ItemPerdidoController"
-mapperAutoMapper.IMapper"__id*
-
-mapperAutoMapper.IMapper*
-1*c
-1"^
-G
-=E:\Git\Achei\backend\Api\Controllers\ItemPerdidoController.cs (	
-implicit return*Ð
-2Å
-Â
-G
-=E:\Git\Achei\backend\Api\Controllers\ItemPerdidoController.cs ($
-%0"__entrypoint*C
-A
-itemPerdidoService+Persistencia.Interfaces.IItemPerdidoService*
-
-mapperAutoMapper.IMapper*
-0:A
-itemPerdidoService+Persistencia.Interfaces.IItemPerdidoService:
-mapperAutoMapper.IMapperB)'
-%Api.Controllers.ItemPerdidoController
+]Migrations.Conversor_2019031001.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)<
+2D:\git\Achei\backend\Migrations\v1.0\2019031001.cs  (""0*„
+0`
+^
+<
+2D:\git\Achei\backend\Migrations\v1.0\2019031001.cs (-
+%0"__concat*
+""*
+""`
+^
+<
+2D:\git\Achei\backend\Migrations\v1.0\2019031001.cs (0
+%1"__concat*
+
+%0*
+""`
+^
+<
+2D:\git\Achei\backend\Migrations\v1.0\2019031001.cs (1
+%2"__concat*
+
+%1*
+""`
+^
+<
+2D:\git\Achei\backend\Migrations\v1.0\2019031001.cs (1
+%3"__concat*
+
+%2*
+""`
+^
+<
+2D:\git\Achei\backend\Migrations\v1.0\2019031001.cs (5
+%4"__concat*
+
+%3*
+""`
+^
+<
+2D:\git\Achei\backend\Migrations\v1.0\2019031001.cs (.
+%5"__concat*
+
+%4*
+""`
+^
+<
+2D:\git\Achei\backend\Migrations\v1.0\2019031001.cs (/
+%6"__concat*
+
+%5*
+""`
+^
+<
+2D:\git\Achei\backend\Migrations\v1.0\2019031001.cs ('
+%7"__concat*
+
+%6*
+""`
+^
+<
+2D:\git\Achei\backend\Migrations\v1.0\2019031001.cs (+
+%8"__concat*
+
+%7*
+""`
+^
+<
+2D:\git\Achei\backend\Migrations\v1.0\2019031001.cs (.
+%9"__concat*
+
+%8*
+""a
+_
+<
+2D:\git\Achei\backend\Migrations\v1.0\2019031001.cs ($
+%10"__concat*
+
+%9*
+""b
+`
+<
+2D:\git\Achei\backend\Migrations\v1.0\2019031001.cs (
+%11"__concat*
+
+%10*
+""ÞÛ
+<
+2D:\git\Achei\backend\Migrations\v1.0\2019031001.cs (`
+%12YMicrosoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder<TOperation>"KMicrosoft.EntityFrameworkCore.Migrations.MigrationBuilder.Sql(string, bool)*H
+F
+	migration9Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder*
+
+%11*
+""2Sql(string, bool)*
+1*X
+1"S
+<
+2D:\git\Achei\backend\Migrations\v1.0\2019031001.cs (	
+implicit return:F
+	migration9Microsoft.EntityFrameworkCore.Migrations.MigrationBuilderB#!
+Migrations.Conversor_2019031001

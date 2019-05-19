@@ -1,5 +1,4 @@
-O
-FE:\Git\Achei\backend\Exceptions\Entity\EntityAlreadyExistsException.csutf-8J
-AE:\Git\Achei\backend\Exceptions\Entity\EntityNotFoundException.csutf-8e
-ZC:\Users\lucas.magalhaes\AppData\Local\Temp\.NETCoreApp,Version=v2.2.AssemblyAttributes.csutf-8]
-RE:\Git\Achei\backend\Exceptions\obj\Debug\netcoreapp2.2\Exceptions.AssemblyInfo.csutf-8
+B
+9D:\git\Achei\backend\Extensions\ObjectExtensionMethods.csutf-8[
+PC:\Users\Lucas\AppData\Local\Temp\.NETCoreApp,Version=v2.2.AssemblyAttributes.csutf-8]
+RD:\git\Achei\backend\Extensions\obj\Debug\netcoreapp2.2\Extensions.AssemblyInfo.csutf-8

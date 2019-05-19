@@ -1,9 +1,29 @@
 
-_Migrations.Conversor_2019031001.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)<
-2E:\Git\Achei\backend\Migrations\v1.0\2019031001.cs  ($"0*X
-0"S
-<
-2E:\Git\Achei\backend\Migrations\v1.0\2019031001.cs (	
-implicit return:M
-migrationBuilder9Microsoft.EntityFrameworkCore.Migrations.MigrationBuilderB#!
-Migrations.Conversor_2019031001
+KPersistencia.Services.AutenticacaoService.AutenticarUsuario(string, string)K
+AD:\git\Achei\backend\Persistencia\Services\AutenticacaoService.cs (("0*„
+0…
+‚
+K
+AD:\git\Achei\backend\Persistencia\Services\AutenticacaoService.cs (A
+%0System.Linq.IQueryable<T>"ÒPersistencia.Services.CrudService<T>.Buscar(System.Linq.Expressions.Expression<System.Func<T, bool>>, System.Func<System.Linq.IQueryable<T>, Microsoft.EntityFrameworkCore.Query.IIncludableQueryable<T, object>>)*-+
+)Persistencia.Services.AutenticacaoService*
+""*
+""‚
+ÿ
+K
+AD:\git\Achei\backend\Persistencia\Services\AutenticacaoService.cs (S!
+%1Entidades.Entidades.Usuario"OSystem.Linq.Queryable.SingleOrDefault<TSource>(System.Linq.IQueryable<TSource>)*"
+System.Linq.Queryable*!
+
+%0System.Linq.IQueryable<T>"r
+K
+AD:\git\Achei\backend\Persistencia\Services\AutenticacaoService.cs (T#
+!
+%1Entidades.Entidades.Usuario*g
+1"b
+K
+AD:\git\Achei\backend\Persistencia\Services\AutenticacaoService.cs (	
+implicit return:
+emailstring:
+senhastringB-+
+)Persistencia.Services.AutenticacaoService

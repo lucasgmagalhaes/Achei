@@ -1,36 +1,0 @@
-
-mApi.Controllers.RegiaoController.RegiaoController(Persistencia.Interfaces.IRegiaoService, AutoMapper.IMapper)B
-8E:\Git\Achei\backend\Api\Controllers\RegiaoController.cs ("2*¦
-0ç
-ä
-B
-8E:\Git\Achei\backend\Api\Controllers\RegiaoController.cs (.]"
- Api.Controllers.RegiaoController"7
-regiaoService&Persistencia.Interfaces.IRegiaoService"__id*9
-7
-regiaoService&Persistencia.Interfaces.IRegiaoService±
-®
-B
-8E:\Git\Achei\backend\Api\Controllers\RegiaoController.cs ( B"
- Api.Controllers.RegiaoController"
-mapperAutoMapper.IMapper"__id*
-
-mapperAutoMapper.IMapper*
-1*^
-1"Y
-B
-8E:\Git\Achei\backend\Api\Controllers\RegiaoController.cs (	
-implicit return*Á
-2¶
-³
-B
-8E:\Git\Achei\backend\Api\Controllers\RegiaoController.cs (
-%0"__entrypoint*9
-7
-regiaoService&Persistencia.Interfaces.IRegiaoService*
-
-mapperAutoMapper.IMapper*
-0:7
-regiaoService&Persistencia.Interfaces.IRegiaoService:
-mapperAutoMapper.IMapperB$"
- Api.Controllers.RegiaoController

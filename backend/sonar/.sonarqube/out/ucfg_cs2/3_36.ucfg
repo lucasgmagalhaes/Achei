@@ -1,0 +1,80 @@
+
+6Persistencia.Services.CrudService<T>.AtualizarAsync(T)E
+9D:\git\Achei\backend\Persistencia\Services\CrudService.cs≠ ≠(("0*Û
+0œ
+Ã
+E
+9D:\git\Achei\backend\Persistencia\Services\CrudService.csØ Ø(*
+
+%0void"<Persistencia.Services.CrudService<T>.ValidarEntidadeNulla(T)*(&
+$Persistencia.Services.CrudService<T>*
+
+entidadeT·
+ﬁ
+E
+9D:\git\Achei\backend\Persistencia\Services\CrudService.cs± ±(-
+%1'Microsoft.EntityFrameworkCore.DbContext"__id*`*^&
+$Persistencia.Services.CrudService<T>"4
+	dbService'Microsoft.EntityFrameworkCore.DbContext˜Ù
+E
+9D:\git\Achei\backend\Persistencia\Services\CrudService.cs± ±("2
+%2,Microsoft.EntityFrameworkCore.DbSet<TEntity>"6Microsoft.EntityFrameworkCore.DbContext.Set<TEntity>()*/
+-
+%1'Microsoft.EntityFrameworkCore.DbContext2Set<TEntity>()µ
+≤
+E
+9D:\git\Achei\backend\Persistencia\Services\CrudService.cs± ±(D
+
+%3bool"ÉSystem.Linq.Queryable.Any<TSource>(System.Linq.IQueryable<TSource>, System.Linq.Expressions.Expression<System.Func<TSource, bool>>)*"
+System.Linq.Queryable*4
+2
+%2,Microsoft.EntityFrameworkCore.DbSet<TEntity>*
+""*
+1
+2* 
+1·
+ﬁ
+E
+9D:\git\Achei\backend\Persistencia\Services\CrudService.cs≥ ≥(-
+%4'Microsoft.EntityFrameworkCore.DbContext"__id*`*^&
+$Persistencia.Services.CrudService<T>"4
+	dbService'Microsoft.EntityFrameworkCore.DbContext±Æ
+E
+9D:\git\Achei\backend\Persistencia\Services\CrudService.cs≥ ≥(*G
+%5AMicrosoft.EntityFrameworkCore.ChangeTracking.EntityEntry<TEntity>"@Microsoft.EntityFrameworkCore.DbContext.Update<TEntity>(TEntity)*/
+-
+%4'Microsoft.EntityFrameworkCore.DbContext*
+
+entidadeT2Update<TEntity>(TEntity)·
+ﬁ
+E
+9D:\git\Achei\backend\Persistencia\Services\CrudService.cs¥ ¥(-
+%6'Microsoft.EntityFrameworkCore.DbContext"__id*`*^&
+$Persistencia.Services.CrudService<T>"4
+	dbService'Microsoft.EntityFrameworkCore.DbContext√¿
+E
+9D:\git\Achei\backend\Persistencia\Services\CrudService.cs¥ ¥(2*
+%7$System.Threading.Tasks.Task<TResult>"\Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(System.Threading.CancellationToken)*/
+-
+%6'Microsoft.EntityFrameworkCore.DbContext*
+""24SaveChangesAsync(System.Threading.CancellationToken)*
+3*ê
+2¶£
+E
+9D:\git\Achei\backend\Persistencia\Services\CrudService.cs∏ ∏(n/
+%8)Exceptions.Entity.EntityNotFoundException")Exceptions.Entity.EntityNotFoundException‹
+Ÿ
+E
+9D:\git\Achei\backend\Persistencia\Services\CrudService.cs∏ ∏(1
+
+%9void"IExceptions.Entity.EntityNotFoundException.EntityNotFoundException(string)*1
+/
+%8)Exceptions.Entity.EntityNotFoundException*
+""*
+3*a
+3"\
+E
+9D:\git\Achei\backend\Persistencia\Services\CrudService.cs∫ ∫(	
+implicit return:
+entidadeTB(&
+$Persistencia.Services.CrudService<T>

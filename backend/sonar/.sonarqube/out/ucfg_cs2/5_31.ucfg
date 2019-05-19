@@ -1,0 +1,61 @@
+
+(Api.Session.BuscarBancoDoUsuario(string)-
+#D:\git\Achei\backend\Api\Session.cs7 7(1"0*
+0*
+1
+2*Ê
+2Ç
+Ä
+-
+#D:\git\Achei\backend\Api\Session.cs; ;('9
+%03System.Collections.Generic.Dictionary<TKey, TValue>"__id*R*P
+Api.Session"?
+usuarios3System.Collections.Generic.Dictionary<TKey, TValue>œ
+™
+-
+#D:\git\Achei\backend\Api\Session.cs; ;(.
+%1string"
+__arrayGet*;
+9
+%03System.Collections.Generic.Dictionary<TKey, TValue>*
+
+emailstringX
+V
+-
+#D:\git\Achei\backend\Api\Session.cs; ;(.
+bancostring"__id*
+
+%1stringz
+x
+-
+#D:\git\Achei\backend\Api\Session.cs< <(0
+
+%2bool"string.IsNullOrEmpty(string)*
+"
+string*
+
+bancostring*
+3
+4*G
+3"B
+-
+#D:\git\Achei\backend\Api\Session.cs> >(!
+
+bancostring*<
+4"7
+-
+#D:\git\Achei\backend\Api\Session.cs@ @(
+""*
+5*
+1
+6*<
+1"7
+-
+#D:\git\Achei\backend\Api\Session.csD D(
+""*I
+6"D
+-
+#D:\git\Achei\backend\Api\Session.csF F(	
+implicit return:
+emailstringB"
+Api.Session

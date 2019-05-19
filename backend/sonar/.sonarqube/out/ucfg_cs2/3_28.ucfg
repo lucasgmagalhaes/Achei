@@ -1,0 +1,67 @@
+
+/Persistencia.Services.CrudService<T>.Deletar(T)C
+9D:\git\Achei\backend\Persistencia\Services\CrudService.csf f("0*´
+0ù
+ö
+C
+9D:\git\Achei\backend\Persistencia\Services\CrudService.csh h( 
+
+%0bool""object.operator ==(object, object)*
+"
+object*
+
+entidadeT*
+""*
+1
+2*Ê
+1äá
+C
+9D:\git\Achei\backend\Persistencia\Services\CrudService.csj j(h"
+%1System.ArgumentNullException"System.ArgumentNullExceptionŒ
+À
+C
+9D:\git\Achei\backend\Persistencia\Services\CrudService.csj j(/
+
+%2void"BSystem.ArgumentNullException.ArgumentNullException(string, string)*$
+"
+%1System.ArgumentNullException*
+""*
+""*
+3*ª	
+2ﬂ
+‹
+C
+9D:\git\Achei\backend\Persistencia\Services\CrudService.csm m(-
+%3'Microsoft.EntityFrameworkCore.DbContext"__id*`*^&
+$Persistencia.Services.CrudService<T>"4
+	dbService'Microsoft.EntityFrameworkCore.DbContextıÚ
+C
+9D:\git\Achei\backend\Persistencia\Services\CrudService.csm m(2
+%4,Microsoft.EntityFrameworkCore.DbSet<TEntity>"6Microsoft.EntityFrameworkCore.DbContext.Set<TEntity>()*/
+-
+%3'Microsoft.EntityFrameworkCore.DbContext2Set<TEntity>()ß§
+C
+9D:\git\Achei\backend\Persistencia\Services\CrudService.csm m(/G
+%5AMicrosoft.EntityFrameworkCore.ChangeTracking.EntityEntry<TEntity>"<Microsoft.EntityFrameworkCore.DbSet<TEntity>.Remove(TEntity)*4
+2
+%4,Microsoft.EntityFrameworkCore.DbSet<TEntity>*
+
+entidadeT2Remove(TEntity)ﬂ
+‹
+C
+9D:\git\Achei\backend\Persistencia\Services\CrudService.csn n(-
+%6'Microsoft.EntityFrameworkCore.DbContext"__id*`*^&
+$Persistencia.Services.CrudService<T>"4
+	dbService'Microsoft.EntityFrameworkCore.DbContext «
+C
+9D:\git\Achei\backend\Persistencia\Services\CrudService.csn n(#	
+%7int"5Microsoft.EntityFrameworkCore.DbContext.SaveChanges()*/
+-
+%6'Microsoft.EntityFrameworkCore.DbContext2SaveChanges()*
+3*_
+3"Z
+C
+9D:\git\Achei\backend\Persistencia\Services\CrudService.cso o(	
+implicit return:
+entidadeTB(&
+$Persistencia.Services.CrudService<T>

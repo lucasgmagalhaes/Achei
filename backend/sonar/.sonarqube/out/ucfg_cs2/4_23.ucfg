@@ -1,33 +1,0 @@
-
-Api.Program.Main(string[])-
-#E:\Git\Achei\backend\Api\Program.cs ("0*˜
-0·
-´
--
-#E:\Git\Achei\backend\Api\Program.cs	 	(&2
-%0,Microsoft.AspNetCore.Hosting.IWebHostBuilder"*Api.Program.CreateWebHostBuilder(string[])*"
-Api.Program*
-
-argsstring[]ÔÑ
--
-#E:\Git\Achei\backend\Api\Program.cs	 	(.+
-%1%Microsoft.AspNetCore.Hosting.IWebHost"4Microsoft.AspNetCore.Hosting.IWebHostBuilder.Build()*4
-2
-%0,Microsoft.AspNetCore.Hosting.IWebHostBuilder2Build()ü
-ù
--
-#E:\Git\Achei\backend\Api\Program.cs	 	(4
-
-%2void"YMicrosoft.AspNetCore.Hosting.WebHostExtensions.Run(Microsoft.AspNetCore.Hosting.IWebHost)*2"0
-.Microsoft.AspNetCore.Hosting.WebHostExtensions*-
-+
-%1%Microsoft.AspNetCore.Hosting.IWebHost*
-1*I
-1"D
--
-#E:\Git\Achei\backend\Api\Program.cs
- 
-(	
-implicit return:
-argsstring[]B"
-Api.Program

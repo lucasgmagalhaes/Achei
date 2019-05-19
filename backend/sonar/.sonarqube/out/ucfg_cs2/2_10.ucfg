@@ -1,23 +1,0 @@
-
-.Persistencia.Services.CrudService<T>.Dispose()C
-9E:\Git\Achei\backend\Persistencia\Services\CrudService.cs ("0*ˆ
-0ÉÆ
-C
-9E:\Git\Achei\backend\Persistencia\Services\CrudService.cs (
-
-%0void"2Persistencia.Services.CrudService<T>.Dispose(bool)*(&
-$Persistencia.Services.CrudService<T>*
-""2Dispose(bool)±
-®
-C
-9E:\Git\Achei\backend\Persistencia\Services\CrudService.cs (%
-
-%1void""System.GC.SuppressFinalize(object)*"
-	System.GC*(&
-$Persistencia.Services.CrudService<T>*
-1*_
-1"Z
-C
-9E:\Git\Achei\backend\Persistencia\Services\CrudService.cs (	
-implicit returnB(&
-$Persistencia.Services.CrudService<T>

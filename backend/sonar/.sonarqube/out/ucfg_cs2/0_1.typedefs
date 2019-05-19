@@ -1,13 +1,6 @@
-Õ
-Entidades.Tagobject
-Tag()Entidades.Tag.Tag()
-Id.getEntidades.Tag.Id.get
-Id.setEntidades.Tag.Id.set"
-Nome.getEntidades.Tag.Nome.get"
-Nome.setEntidades.Tag.Nome.set&
-
-ItemId.getEntidades.Tag.ItemId.get&
-
-ItemId.setEntidades.Tag.ItemId.set"
-Item.getEntidades.Tag.Item.get"
-Item.setEntidades.Tag.Item.set
+‡
+.Exceptions.Entity.EntityAlreadyExistsExceptionSystem.Exceptionobjecto
+EntityAlreadyExistsException()MExceptions.Entity.EntityAlreadyExistsException.EntityAlreadyExistsException(){
+$EntityAlreadyExistsException(string)SExceptions.Entity.EntityAlreadyExistsException.EntityAlreadyExistsException(string)Ÿ
+6EntityAlreadyExistsException(string, System.Exception)eExceptions.Entity.EntityAlreadyExistsException.EntityAlreadyExistsException(string, System.Exception)ª
+{EntityAlreadyExistsException(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)ªExceptions.Entity.EntityAlreadyExistsException.EntityAlreadyExistsException(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)

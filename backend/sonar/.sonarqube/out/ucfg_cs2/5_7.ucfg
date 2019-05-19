@@ -1,0 +1,38 @@
+
+Api.Mapeamento.Criar(),
+"D:\git\Achei\backend\Api\Mapper.cs
+ 
+(#"0*Ë
+0vt
+,
+"D:\git\Achei\backend\Api\Mapper.cs0 ($
+%0AutoMapper.MapperConfiguration"AutoMapper.MapperConfiguration€
+ÿ
+,
+"D:\git\Achei\backend\Api\Mapper.cs4 (G
+
+%1void"lAutoMapper.MapperConfiguration.MapperConfiguration(System.Action<AutoMapper.IMapperConfigurationExpression>)*&
+$
+%0AutoMapper.MapperConfiguration*
+""ê
+ç
+,
+"D:\git\Achei\backend\Api\Mapper.cs  (/
+mappingConfigAutoMapper.MapperConfiguration"__id*&
+$
+%0AutoMapper.MapperConfiguration≠
+™
+,
+"D:\git\Achei\backend\Api\Mapper.cs (/
+%2AutoMapper.IMapper"-AutoMapper.MapperConfiguration.CreateMapper()*1
+/
+mappingConfigAutoMapper.MapperConfiguration"J
+,
+"D:\git\Achei\backend\Api\Mapper.cs (0
+
+%2AutoMapper.IMapper*H
+1"C
+,
+"D:\git\Achei\backend\Api\Mapper.cs (	
+implicit returnB"
+Api.Mapeamento

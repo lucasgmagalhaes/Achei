@@ -1,5 +1,6 @@
-õ
-Migrations.Conversor_20190310022Microsoft.EntityFrameworkCore.Migrations.Migrationobjectž
-=Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)]Migrations.Conversor_2019031002.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)¢
-?Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)_Migrations.Conversor_2019031002.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)P
-Conversor_2019031002()6Migrations.Conversor_2019031002.Conversor_2019031002()
+µ
+(Persistencia.Services.ItemPerdidoService$Persistencia.Services.CrudService<T>objectÁ
+JItemPerdidoService(Persistencia.Contexts.Application.ApplicationDbContext)sPersistencia.Services.ItemPerdidoService.ItemPerdidoService(Persistencia.Contexts.Application.ApplicationDbContext)]
+BuscarPorIdUsuario(long)APersistencia.Services.ItemPerdidoService.BuscarPorIdUsuario(long)S
+BuscarComTags(long)<Persistencia.Services.ItemPerdidoService.BuscarComTags(long)c
+BuscarComEagerLoading(long)DPersistencia.Services.ItemPerdidoService.BuscarComEagerLoading(long)

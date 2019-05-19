@@ -1,8 +1,119 @@
 
-CExceptions.Entity.EntityNotFoundException.EntityNotFoundException()K
-AE:\Git\Achei\backend\Exceptions\Entity\EntityNotFoundException.cs (&"0*g
-0"b
-K
-AE:\Git\Achei\backend\Exceptions\Entity\EntityNotFoundException.cs+ (,
-implicit returnB-+
-)Exceptions.Entity.EntityNotFoundException
+‡Extensions.ObjectExtensionMethods.ValidarParametros(System.Reflection.PropertyInfo[], System.Reflection.PropertyInfo[], object, object)C
+9D:\git\Achei\backend\Extensions\ObjectExtensionMethods.cs` `(-"0*Î
+0À
+½
+C
+9D:\git\Achei\backend\Extensions\ObjectExtensionMethods.csb b($
+
+%0bool""object.operator ==(object, object)*
+"
+object*2
+0
+toProperties System.Reflection.PropertyInfo[]*
+""*
+1
+2*æ
+1Š‡
+C
+9D:\git\Achei\backend\Extensions\ObjectExtensionMethods.csd d(k"
+%1System.ArgumentNullException"System.ArgumentNullExceptionÎ
+Ë
+C
+9D:\git\Achei\backend\Extensions\ObjectExtensionMethods.csd d(/
+
+%2void"BSystem.ArgumentNullException.ArgumentNullException(string, string)*$
+"
+%1System.ArgumentNullException*
+""*
+""*
+3*Ð
+2Â
+¿
+C
+9D:\git\Achei\backend\Extensions\ObjectExtensionMethods.csf f(+
+
+%3bool""object.operator ==(object, object)*
+"
+object*4
+2
+fromProperties System.Reflection.PropertyInfo[]*
+""*
+4
+5*æ
+4Š‡
+C
+9D:\git\Achei\backend\Extensions\ObjectExtensionMethods.csh h(m"
+%4System.ArgumentNullException"System.ArgumentNullExceptionÎ
+Ë
+C
+9D:\git\Achei\backend\Extensions\ObjectExtensionMethods.csh h(/
+
+%5void"BSystem.ArgumentNullException.ArgumentNullException(string, string)*$
+"
+%4System.ArgumentNullException*
+""*
+""*
+3*ª
+5œ
+™
+C
+9D:\git\Achei\backend\Extensions\ObjectExtensionMethods.csj j(
+
+%6bool""object.operator ==(object, object)*
+"
+object*
+
+toobject*
+""*
+6
+7*æ
+6Š‡
+C
+9D:\git\Achei\backend\Extensions\ObjectExtensionMethods.csl l(i"
+%7System.ArgumentNullException"System.ArgumentNullExceptionÎ
+Ë
+C
+9D:\git\Achei\backend\Extensions\ObjectExtensionMethods.csl l(/
+
+%8void"BSystem.ArgumentNullException.ArgumentNullException(string, string)*$
+"
+%7System.ArgumentNullException*
+""*
+""*
+3*¬
+7ž
+›
+C
+9D:\git\Achei\backend\Extensions\ObjectExtensionMethods.csn n(!
+
+%9bool""object.operator ==(object, object)*
+"
+object*
+
+fromobject*
+""*
+8
+3*é
+8‹ˆ
+C
+9D:\git\Achei\backend\Extensions\ObjectExtensionMethods.csp p(k#
+%10System.ArgumentNullException"System.ArgumentNullExceptionÐ
+Í
+C
+9D:\git\Achei\backend\Extensions\ObjectExtensionMethods.csp p(/
+%11void"BSystem.ArgumentNullException.ArgumentNullException(string, string)*%
+#
+%10System.ArgumentNullException*
+""*
+""*
+3*_
+3"Z
+C
+9D:\git\Achei\backend\Extensions\ObjectExtensionMethods.csr r(	
+implicit return:0
+toProperties System.Reflection.PropertyInfo[]:2
+fromProperties System.Reflection.PropertyInfo[]:
+toobject:
+fromobjectB%"#
+!Extensions.ObjectExtensionMethods

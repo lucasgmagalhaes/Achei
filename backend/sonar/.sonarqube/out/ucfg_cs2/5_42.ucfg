@@ -1,0 +1,88 @@
+
+yApi.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder, Microsoft.AspNetCore.Hosting.IHostingEnvironment)-
+#D:\git\Achei\backend\Api\Startup.cs_ _("0*ÿ
+0»
+¸
+-
+#D:\git\Achei\backend\Api\Startup.csa h(6
+%00Microsoft.AspNetCore.Builder.IApplicationBuilder"ÛMicrosoft.AspNetCore.Builder.UseExtensions.Use(Microsoft.AspNetCore.Builder.IApplicationBuilder, System.Func<Microsoft.AspNetCore.Http.HttpContext, System.Func<System.Threading.Tasks.Task>, System.Threading.Tasks.Task>)*.",
+*Microsoft.AspNetCore.Builder.UseExtensions*9
+7
+app0Microsoft.AspNetCore.Builder.IApplicationBuilder*
+""³
+°
+-
+#D:\git\Achei\backend\Api\Startup.csj j(#
+
+%1bool"yMicrosoft.AspNetCore.Hosting.HostingEnvironmentExtensions.IsDevelopment(Microsoft.AspNetCore.Hosting.IHostingEnvironment)*=";
+9Microsoft.AspNetCore.Hosting.HostingEnvironmentExtensions*9
+7
+env0Microsoft.AspNetCore.Hosting.IHostingEnvironment*
+1
+2*§
+1ô
+ñ
+-
+#D:\git\Achei\backend\Api\Startup.csl l(/6
+%20Microsoft.AspNetCore.Builder.IApplicationBuilder"‰Microsoft.AspNetCore.Builder.DeveloperExceptionPageExtensions.UseDeveloperExceptionPage(Microsoft.AspNetCore.Builder.IApplicationBuilder)*A"?
+=Microsoft.AspNetCore.Builder.DeveloperExceptionPageExtensions*9
+7
+app0Microsoft.AspNetCore.Builder.IApplicationBuilder¥
+¢
+-
+#D:\git\Achei\backend\Api\Startup.csm o("6
+%30Microsoft.AspNetCore.Builder.IApplicationBuilder"ºMicrosoft.AspNetCore.Builder.CorsMiddlewareExtensions.UseCors(Microsoft.AspNetCore.Builder.IApplicationBuilder, System.Action<Microsoft.AspNetCore.Cors.Infrastructure.CorsPolicyBuilder>)*9"7
+5Microsoft.AspNetCore.Builder.CorsMiddlewareExtensions*9
+7
+app0Microsoft.AspNetCore.Builder.IApplicationBuilder*
+""*
+3*Ö
+2Ë
+È
+-
+#D:\git\Achei\backend\Api\Startup.css s(6
+%40Microsoft.AspNetCore.Builder.IApplicationBuilder"lMicrosoft.AspNetCore.Builder.HstsBuilderExtensions.UseHsts(Microsoft.AspNetCore.Builder.IApplicationBuilder)*6"4
+2Microsoft.AspNetCore.Builder.HstsBuilderExtensions*9
+7
+app0Microsoft.AspNetCore.Builder.IApplicationBuilder*
+3*Í	
+3Ú
+×
+-
+#D:\git\Achei\backend\Api\Startup.csv v(!
+
+%5void"NApi.Startup.ConfigureSwagger(Microsoft.AspNetCore.Builder.IApplicationBuilder)*
+Api.Startup*9
+7
+app0Microsoft.AspNetCore.Builder.IApplicationBuilderØ
+Õ
+-
+#D:\git\Achei\backend\Api\Startup.csw w(
+
+%6void"LApi.Startup.UpdateDatabase(Microsoft.AspNetCore.Builder.IApplicationBuilder)*
+Api.Startup*9
+7
+app0Microsoft.AspNetCore.Builder.IApplicationBuilderå
+â
+-
+#D:\git\Achei\backend\Api\Startup.csy y(%6
+%70Microsoft.AspNetCore.Builder.IApplicationBuilder"Microsoft.AspNetCore.Builder.HttpsPolicyBuilderExtensions.UseHttpsRedirection(Microsoft.AspNetCore.Builder.IApplicationBuilder)*=";
+9Microsoft.AspNetCore.Builder.HttpsPolicyBuilderExtensions*9
+7
+app0Microsoft.AspNetCore.Builder.IApplicationBuilder¢
+Ÿ
+-
+#D:\git\Achei\backend\Api\Startup.csz ~(6
+%80Microsoft.AspNetCore.Builder.IApplicationBuilder"°Microsoft.AspNetCore.Builder.MvcApplicationBuilderExtensions.UseMvc(Microsoft.AspNetCore.Builder.IApplicationBuilder, System.Action<Microsoft.AspNetCore.Routing.IRouteBuilder>)*@">
+<Microsoft.AspNetCore.Builder.MvcApplicationBuilderExtensions*9
+7
+app0Microsoft.AspNetCore.Builder.IApplicationBuilder*
+""*
+4*I
+4"D
+-
+#D:\git\Achei\backend\Api\Startup.cs (	
+implicit return:7
+app0Microsoft.AspNetCore.Builder.IApplicationBuilder:7
+env0Microsoft.AspNetCore.Hosting.IHostingEnvironmentB
+Api.Startup

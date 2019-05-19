@@ -1,27 +1,17 @@
 
-Entidades.Entidades.Item.Item():
-0E:\Git\Achei\backend\Entidades\Entidades\Item.cs ("0*Ç
-0çä
-:
-0E:\Git\Achei\backend\Entidades\Entidades\Item.cs ("(
-%0"System.Collections.Generic.List<T>""System.Collections.Generic.List<T>¢
-ü
-:
-0E:\Git\Achei\backend\Entidades\Entidades\Item.cs ( 
+MExceptions.Entity.EntityAlreadyExistsException.EntityAlreadyExistsException()P
+FD:\git\Achei\backend\Exceptions\Entity\EntityAlreadyExistsException.cs, ,(+"0*Æ
+0£
+†
+P
+FD:\git\Achei\backend\Exceptions\Entity\EntityAlreadyExistsException.cs,. ,(W
 
-%1void")System.Collections.Generic.List<T>.List()**
-(
-%0"System.Collections.Generic.List<T>¬ø
-:
-0E:\Git\Achei\backend\Entidades\Entidades\Item.cs ("
-
-%2void"!Entidades.Entidades.Item.Tags.set*
-Entidades.Entidades.Item**
-(
-%0"System.Collections.Generic.List<T>2Tags.set*
-1*V
-1"Q
-:
-0E:\Git\Achei\backend\Entidades\Entidades\Item.cs (	
-implicit returnB
-Entidades.Entidades.Item
+%0void""System.Exception.Exception(string)*
+System.Exception*
+""*
+1*l
+1"g
+P
+FD:\git\Achei\backend\Exceptions\Entity\EntityAlreadyExistsException.cs,Z ,([
+implicit returnB20
+.Exceptions.Entity.EntityAlreadyExistsException

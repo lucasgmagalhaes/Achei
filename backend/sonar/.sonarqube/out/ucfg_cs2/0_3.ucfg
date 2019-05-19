@@ -1,72 +1,19 @@
 
-çEntidades.Configuration.RegiaoConfig.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<Entidades.Entidades.Regiao>)F
-<E:\Git\Achei\backend\Entidades\Configuration\RegiaoConfig.cs	 	("0*â"
-0Ú
-Ô
-F
-<E:\Git\Achei\backend\Entidades\Configuration\RegiaoConfig.cs (%P
-%0JMicrosoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<TEntity>"®Microsoft.EntityFrameworkCore.RelationalEntityTypeBuilderExtensions.ToTable<TEntity>(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<TEntity>, string)*G"E
-CMicrosoft.EntityFrameworkCore.RelationalEntityTypeBuilderExtensions*W
-U
-builderJMicrosoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<TEntity>*
-""˛˚
-F
-<E:\Git\Achei\backend\Entidades\Configuration\RegiaoConfig.cs ('P
-%1JMicrosoft.EntityFrameworkCore.Metadata.Builders.PropertyBuilder<TProperty>"£Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<TEntity>.Property<TProperty>(System.Linq.Expressions.Expression<System.Func<TEntity, TProperty>>)*W
-U
-builderJMicrosoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<TEntity>*
-""2XProperty<TProperty>(System.Linq.Expressions.Expression<System.Func<TEntity, TProperty>>)Ò
-Ó
-F
-<E:\Git\Achei\backend\Entidades\Configuration\RegiaoConfig.cs ($P
-%2JMicrosoft.EntityFrameworkCore.Metadata.Builders.PropertyBuilder<TProperty>"ÆMicrosoft.EntityFrameworkCore.RelationalPropertyBuilderExtensions.HasColumnName<TProperty>(Microsoft.EntityFrameworkCore.Metadata.Builders.PropertyBuilder<TProperty>, string)*E"C
-AMicrosoft.EntityFrameworkCore.RelationalPropertyBuilderExtensions*R
+SExceptions.Entity.EntityAlreadyExistsException.EntityAlreadyExistsException(string)P
+FD:\git\Achei\backend\Exceptions\Entity\EntityAlreadyExistsException.cs2 2(+"0*ª
+0∞
+≠
 P
-%1JMicrosoft.EntityFrameworkCore.Metadata.Builders.PropertyBuilder<TProperty>*
-""ÍÁ
-F
-<E:\Git\Achei\backend\Entidades\Configuration\RegiaoConfig.cs (&P
-%3JMicrosoft.EntityFrameworkCore.Metadata.Builders.PropertyBuilder<TProperty>"`Microsoft.EntityFrameworkCore.Metadata.Builders.PropertyBuilder<TProperty>.ValueGeneratedOnAdd()*R
+FD:\git\Achei\backend\Exceptions\Entity\EntityAlreadyExistsException.cs2< 2(K
+
+%0void""System.Exception.Exception(string)*
+System.Exception*
+
+messagestring*
+1*l
+1"g
 P
-%2JMicrosoft.EntityFrameworkCore.Metadata.Builders.PropertyBuilder<TProperty>2ValueGeneratedOnAdd()˛˚
-F
-<E:\Git\Achei\backend\Entidades\Configuration\RegiaoConfig.cs (-P
-%4JMicrosoft.EntityFrameworkCore.Metadata.Builders.PropertyBuilder<TProperty>"£Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<TEntity>.Property<TProperty>(System.Linq.Expressions.Expression<System.Func<TEntity, TProperty>>)*W
-U
-builderJMicrosoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<TEntity>*
-""2XProperty<TProperty>(System.Linq.Expressions.Expression<System.Func<TEntity, TProperty>>)ËÂ
-F
-<E:\Git\Achei\backend\Entidades\Configuration\RegiaoConfig.cs (!P
-%5JMicrosoft.EntityFrameworkCore.Metadata.Builders.PropertyBuilder<TProperty>"\Microsoft.EntityFrameworkCore.Metadata.Builders.PropertyBuilder<TProperty>.HasMaxLength(int)*R
-P
-%4JMicrosoft.EntityFrameworkCore.Metadata.Builders.PropertyBuilder<TProperty>*22HasMaxLength(int)Ê„
-F
-<E:\Git\Achei\backend\Entidades\Configuration\RegiaoConfig.cs (!P
-%6JMicrosoft.EntityFrameworkCore.Metadata.Builders.PropertyBuilder<TProperty>"ZMicrosoft.EntityFrameworkCore.Metadata.Builders.PropertyBuilder<TProperty>.IsUnicode(bool)*R
-P
-%5JMicrosoft.EntityFrameworkCore.Metadata.Builders.PropertyBuilder<TProperty>*
-""2IsUnicode(bool)˛˚
-F
-<E:\Git\Achei\backend\Entidades\Configuration\RegiaoConfig.cs (.P
-%7JMicrosoft.EntityFrameworkCore.Metadata.Builders.PropertyBuilder<TProperty>"£Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<TEntity>.Property<TProperty>(System.Linq.Expressions.Expression<System.Func<TEntity, TProperty>>)*W
-U
-builderJMicrosoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<TEntity>*
-""2XProperty<TProperty>(System.Linq.Expressions.Expression<System.Func<TEntity, TProperty>>)ËÂ
-F
-<E:\Git\Achei\backend\Entidades\Configuration\RegiaoConfig.cs (!P
-%8JMicrosoft.EntityFrameworkCore.Metadata.Builders.PropertyBuilder<TProperty>"\Microsoft.EntityFrameworkCore.Metadata.Builders.PropertyBuilder<TProperty>.HasMaxLength(int)*R
-P
-%7JMicrosoft.EntityFrameworkCore.Metadata.Builders.PropertyBuilder<TProperty>*22HasMaxLength(int)Ê„
-F
-<E:\Git\Achei\backend\Entidades\Configuration\RegiaoConfig.cs (!P
-%9JMicrosoft.EntityFrameworkCore.Metadata.Builders.PropertyBuilder<TProperty>"ZMicrosoft.EntityFrameworkCore.Metadata.Builders.PropertyBuilder<TProperty>.IsUnicode(bool)*R
-P
-%8JMicrosoft.EntityFrameworkCore.Metadata.Builders.PropertyBuilder<TProperty>*
-""2IsUnicode(bool)*
-1*b
-1"]
-F
-<E:\Git\Achei\backend\Entidades\Configuration\RegiaoConfig.cs (	
-implicit return:U
-builderJMicrosoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<TEntity>B(&
-$Entidades.Configuration.RegiaoConfig
+FD:\git\Achei\backend\Exceptions\Entity\EntityAlreadyExistsException.cs2N 2(O
+implicit return:
+messagestringB20
+.Exceptions.Entity.EntityAlreadyExistsException

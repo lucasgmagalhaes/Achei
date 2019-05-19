@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ProjectInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.sonarsource.com/msbuild/integration/2015/1">
-  <ProjectName>Persistencia</ProjectName>
+  <ProjectName>Entidades</ProjectName>
   <ProjectLanguage>C#</ProjectLanguage>
   <ProjectType>Product</ProjectType>
-  <ProjectGuid>01e7b37b-dce2-425a-bcab-93d20baa6811</ProjectGuid>
-  <FullPath>E:\Git\Achei\backend\Persistencia\Persistencia.csproj</FullPath>
+  <ProjectGuid>6bf78d7d-8d96-4a77-8de7-d9f5caa7b2dd</ProjectGuid>
+  <FullPath>D:\git\Achei\backend\Entidades\Entidades.csproj</FullPath>
   <IsExcluded>false</IsExcluded>
   <AnalysisResults>
-    <AnalysisResult Id="FilesToAnalyze" Location="E:\Git\Achei\backend\sonar\.sonarqube\out\2\FilesToAnalyze.txt" />
+    <AnalysisResult Id="FilesToAnalyze" Location="D:\git\Achei\backend\sonar\.sonarqube\out\2\FilesToAnalyze.txt" />
   </AnalysisResults>
   <AnalysisSettings>
-    <Property Name="sonar.cs.roslyn.reportFilePath">E:\Git\Achei\backend\Persistencia\bin\Debug\netcoreapp2.2\Persistencia.dll.RoslynCA.json|E:\Git\Achei\backend\Persistencia\bin\Debug\netcoreapp2.2\Persistencia.dll.RoslynCA.json</Property>
-    <Property Name="sonar.cs.analyzer.projectOutPath">E:\Git\Achei\backend\sonar\.sonarqube\out\2</Property>
+    <Property Name="sonar.cs.roslyn.reportFilePath">D:\git\Achei\backend\Entidades\bin\Debug\netcoreapp2.2\Entidades.dll.RoslynCA.json|D:\git\Achei\backend\Entidades\bin\Debug\netcoreapp2.2\Entidades.dll.RoslynCA.json</Property>
+    <Property Name="sonar.cs.analyzer.projectOutPath">D:\git\Achei\backend\sonar\.sonarqube\out\2</Property>
   </AnalysisSettings>
   <Configuration>Debug</Configuration>
   <Platform>AnyCPU</Platform>

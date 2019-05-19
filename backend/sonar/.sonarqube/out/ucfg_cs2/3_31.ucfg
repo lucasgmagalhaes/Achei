@@ -1,0 +1,36 @@
+
+<Persistencia.Services.CrudService<T>.ValidarEntidadeNulla(T)E
+9D:\git\Achei\backend\Persistencia\Services\CrudService.cs¥ ¥()"0*­
+0Ÿ
+œ
+E
+9D:\git\Achei\backend\Persistencia\Services\CrudService.cs§ §( 
+
+%0bool""object.operator ==(object, object)*
+"
+object*
+
+entidadeT*
+""*
+1
+2*ê
+1Œ‰
+E
+9D:\git\Achei\backend\Persistencia\Services\CrudService.cs© ©(i"
+%1System.ArgumentNullException"System.ArgumentNullExceptionÐ
+Í
+E
+9D:\git\Achei\backend\Persistencia\Services\CrudService.cs© ©(/
+
+%2void"BSystem.ArgumentNullException.ArgumentNullException(string, string)*$
+"
+%1System.ArgumentNullException*
+""*
+""*
+2*a
+2"\
+E
+9D:\git\Achei\backend\Persistencia\Services\CrudService.cs« «(	
+implicit return:
+entidadeTB(&
+$Persistencia.Services.CrudService<T>

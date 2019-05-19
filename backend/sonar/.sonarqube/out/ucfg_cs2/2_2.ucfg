@@ -1,19 +1,27 @@
 
-cPersistencia.Services.TagService.TagService(Persistencia.Contexts.Application.ApplicationDbContext)B
-8E:\Git\Achei\backend\Persistencia\Services\TagService.cs ("0*™
-0ü
-ú
-B
-8E:\Git\Achei\backend\Persistencia\Services\TagService.cs: (K
+Entidades.Entidades.Item.Item():
+0D:\git\Achei\backend\Entidades\Entidades\Item.cs ("0*Ç
+0çä
+:
+0D:\git\Achei\backend\Entidades\Entidades\Item.cs ("(
+%0"System.Collections.Generic.List<T>""System.Collections.Generic.List<T>¢
+ü
+:
+0D:\git\Achei\backend\Entidades\Entidades\Item.cs ( 
 
-%0void"YPersistencia.Services.CrudService<T>.CrudService(Microsoft.EntityFrameworkCore.DbContext)*(&
-$Persistencia.Services.CrudService<T>*E
-C
-	dbContext6Persistencia.Contexts.Application.ApplicationDbContext*
-1*^
-1"Y
-B
-8E:\Git\Achei\backend\Persistencia\Services\TagService.csN (O
-implicit return:C
-	dbContext6Persistencia.Contexts.Application.ApplicationDbContextB$"
- Persistencia.Services.TagService
+%1void")System.Collections.Generic.List<T>.List()**
+(
+%0"System.Collections.Generic.List<T>¬ø
+:
+0D:\git\Achei\backend\Entidades\Entidades\Item.cs ("
+
+%2void"!Entidades.Entidades.Item.Tags.set*
+Entidades.Entidades.Item**
+(
+%0"System.Collections.Generic.List<T>2Tags.set*
+1*V
+1"Q
+:
+0D:\git\Achei\backend\Entidades\Entidades\Item.cs (	
+implicit returnB
+Entidades.Entidades.Item

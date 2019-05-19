@@ -1,19 +1,27 @@
 
-kPersistencia.Services.UsuarioService.UsuarioService(Persistencia.Contexts.Application.ApplicationDbContext)F
-<E:\Git\Achei\backend\Persistencia\Services\UsuarioService.cs	 	("0*®
-0£
- 
-F
-<E:\Git\Achei\backend\Persistencia\Services\UsuarioService.cs	> 	(O
+#Entidades.Entidades.Regiao.Regiao()<
+2D:\git\Achei\backend\Entidades\Entidades\Regiao.cs ("0*Œ
+0Œ
+<
+2D:\git\Achei\backend\Entidades\Entidades\Regiao.cs (#(
+%0"System.Collections.Generic.List<T>""System.Collections.Generic.List<T>¤
+¡
+<
+2D:\git\Achei\backend\Entidades\Entidades\Regiao.cs (!
 
-%0void"YPersistencia.Services.CrudService<T>.CrudService(Microsoft.EntityFrameworkCore.DbContext)*(&
-$Persistencia.Services.CrudService<T>*E
-C
-	dbContext6Persistencia.Contexts.Application.ApplicationDbContext*
-1*b
-1"]
-F
-<E:\Git\Achei\backend\Persistencia\Services\UsuarioService.cs	R 	(S
-implicit return:C
-	dbContext6Persistencia.Contexts.Application.ApplicationDbContextB(&
-$Persistencia.Services.UsuarioService
+%1void")System.Collections.Generic.List<T>.List()**
+(
+%0"System.Collections.Generic.List<T>ÈÅ
+<
+2D:\git\Achei\backend\Entidades\Entidades\Regiao.cs (#
+
+%2void"#Entidades.Entidades.Regiao.Item.set*
+Entidades.Entidades.Regiao**
+(
+%0"System.Collections.Generic.List<T>2Item.set*
+1*X
+1"S
+<
+2D:\git\Achei\backend\Entidades\Entidades\Regiao.cs (	
+implicit returnB
+Entidades.Entidades.Regiao

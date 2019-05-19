@@ -1,36 +1,9 @@
 
-yApi.Controllers.ItemAchadoController.ItemAchadoController(Persistencia.Interfaces.IItemAchadoService, AutoMapper.IMapper)F
-<E:\Git\Achei\backend\Api\Controllers\ItemAchadoController.cs (#"2*Æ
-0ÿ
-ü
-F
-<E:\Git\Achei\backend\Api\Controllers\ItemAchadoController.cs (6i&
-$Api.Controllers.ItemAchadoController"?
-itemAchadoService*Persistencia.Interfaces.IItemAchadoService"__id*A
-?
-itemAchadoService*Persistencia.Interfaces.IItemAchadoService¹
-¶
-F
-<E:\Git\Achei\backend\Api\Controllers\ItemAchadoController.cs ( F&
-$Api.Controllers.ItemAchadoController"
-mapperAutoMapper.IMapper"__id*
-
-mapperAutoMapper.IMapper*
-1*b
-1"]
-F
-<E:\Git\Achei\backend\Api\Controllers\ItemAchadoController.cs (	
-implicit return*Í
-2Â
-¿
-F
-<E:\Git\Achei\backend\Api\Controllers\ItemAchadoController.cs (#
-%0"__entrypoint*A
-?
-itemAchadoService*Persistencia.Interfaces.IItemAchadoService*
-
-mapperAutoMapper.IMapper*
-0:?
-itemAchadoService*Persistencia.Interfaces.IItemAchadoService:
-mapperAutoMapper.IMapperB(&
-$Api.Controllers.ItemAchadoController
+_Migrations.Conversor_2019031001.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)<
+2D:\git\Achei\backend\Migrations\v1.0\2019031001.cs  ($"0*X
+0"S
+<
+2D:\git\Achei\backend\Migrations\v1.0\2019031001.cs (	
+implicit return:M
+migrationBuilder9Microsoft.EntityFrameworkCore.Migrations.MigrationBuilderB#!
+Migrations.Conversor_2019031001

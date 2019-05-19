@@ -1,0 +1,28 @@
+
+*Api.Program.CreateWebHostBuilder(string[])-
+#D:\git\Achei\backend\Api\Program.cs& (:"0*š
+0Ù
+Ö
+-
+#D:\git\Achei\backend\Api\Program.cs (52
+%0,Microsoft.AspNetCore.Hosting.IWebHostBuilder";Microsoft.AspNetCore.WebHost.CreateDefaultBuilder(string[])* "
+Microsoft.AspNetCore.WebHost*
+
+argsstring[]Ñ
+Î
+-
+#D:\git\Achei\backend\Api\Program.cs (K2
+%1,Microsoft.AspNetCore.Hosting.IWebHostBuilder"xMicrosoft.AspNetCore.Hosting.WebHostBuilderExtensions.UseStartup<TStartup>(Microsoft.AspNetCore.Hosting.IWebHostBuilder)*9"7
+5Microsoft.AspNetCore.Hosting.WebHostBuilderExtensions*4
+2
+%0,Microsoft.AspNetCore.Hosting.IWebHostBuilder"e
+-
+#D:\git\Achei\backend\Api\Program.cs (L4
+2
+%1,Microsoft.AspNetCore.Hosting.IWebHostBuilder*I
+1"D
+-
+#D:\git\Achei\backend\Api\Program.cs (	
+implicit return:
+argsstring[]B"
+Api.Program

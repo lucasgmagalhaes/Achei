@@ -1,0 +1,105 @@
+
+3Api.Controllers.ItemPerdidoController.Excluir(long)G
+=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.csM M(#"7*
+0*	
+1
+2
+3*
+2*
+4
+5*“
+4ˆ…
+G
+=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.csS S(45
+%0/Microsoft.AspNetCore.Mvc.BadRequestObjectResult":Microsoft.AspNetCore.Mvc.ControllerBase.BadRequest(object)*+)
+'Microsoft.AspNetCore.Mvc.ControllerBase*
+""2BadRequest(object)"‚
+G
+=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.csS S(57
+5
+%0/Microsoft.AspNetCore.Mvc.BadRequestObjectResult*’
+5õ
+ò
+G
+=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.csV V("1
+%1+Persistencia.Interfaces.IItemPerdidoService"__id*n*l'
+%Api.Controllers.ItemPerdidoController"A
+itemPerdidoService+Persistencia.Interfaces.IItemPerdidoServiceÛØ
+G
+=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.csV V(.
+
+%2void"5Persistencia.Interfaces.ICrudService<T>.Deletar(long)*3
+1
+%1+Persistencia.Interfaces.IItemPerdidoService*
+""2Deletar(long){y
+G
+=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.csW W(i
+%3Api.RequestResponse"Api.RequestResponseœ
+™
+G
+=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.csW W(-
+
+%4void"%Api.RequestResponse.RequestResponse()*
+
+%3Api.RequestResponseŠ
+‡
+G
+=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.csW2 W(W.
+
+%3Api.RequestResponse"
+messagestring"__id*
+""‰
+†
+G
+=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.csWY W(g-
+
+%3Api.RequestResponse"
+statusstring"__id*
+""…‚
+G
+=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.csW W(j-
+%5'Microsoft.AspNetCore.Mvc.OkObjectResult"2Microsoft.AspNetCore.Mvc.ControllerBase.Ok(object)*+)
+'Microsoft.AspNetCore.Mvc.ControllerBase*
+
+%3Api.RequestResponse2
+Ok(object)"z
+G
+=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.csW W(k/
+-
+%5'Microsoft.AspNetCore.Mvc.OkObjectResult*
+6*	
+1
+3
+3*ƒ
+1_
+]
+G
+=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.cs[" [(J
+%6"__id*
+""¢Ÿ
+G
+=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.cs[ [(O+
+%7%Microsoft.AspNetCore.Mvc.ObjectResult"?Microsoft.AspNetCore.Mvc.ControllerBase.StatusCode(int, object)*+)
+'Microsoft.AspNetCore.Mvc.ControllerBase*
+
+%6*
+
+exSystem.Exception2StatusCode(int, object)"x
+G
+=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.cs[ [(P-
++
+%7%Microsoft.AspNetCore.Mvc.ObjectResult*c
+3"^
+G
+=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.cs] ](	
+implicit return*q
+7g
+e
+G
+=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.csM M(#
+%8"__entrypoint*
+""*
+0:
+
+idlongB)'
+%Api.Controllers.ItemPerdidoController

@@ -1,0 +1,19 @@
+
+qPersistencia.Services.ItemAchadoService.ItemAchadoService(Persistencia.Contexts.Application.ApplicationDbContext)I
+?D:\git\Achei\backend\Persistencia\Services\ItemAchadoService.cs ( "0*±
+0¦
+£
+I
+?D:\git\Achei\backend\Persistencia\Services\ItemAchadoService.csA (R
+
+%0void"YPersistencia.Services.CrudService<T>.CrudService(Microsoft.EntityFrameworkCore.DbContext)*(&
+$Persistencia.Services.CrudService<T>*E
+C
+	dbContext6Persistencia.Contexts.Application.ApplicationDbContext*
+1*e
+1"`
+I
+?D:\git\Achei\backend\Persistencia\Services\ItemAchadoService.csU (V
+implicit return:C
+	dbContext6Persistencia.Contexts.Application.ApplicationDbContextB+)
+'Persistencia.Services.ItemAchadoService

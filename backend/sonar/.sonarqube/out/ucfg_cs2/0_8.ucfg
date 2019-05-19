@@ -1,0 +1,22 @@
+
+ªExceptions.Entity.EntityAlreadyExistsException.EntityAlreadyExistsException(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)P
+FD:\git\Achei\backend\Exceptions\Entity\EntityAlreadyExistsException.cs< <(."0*ó
+0è
+å
+P
+FD:\git\Achei\backend\Exceptions\Entity\EntityAlreadyExistsException.cs<a <(v
+
+%0void"ySystem.Exception.Exception(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)*
+System.Exception*8
+6
+info.System.Runtime.Serialization.SerializationInfo*:
+8
+context-System.Runtime.Serialization.StreamingContext*
+1*l
+1"g
+P
+FD:\git\Achei\backend\Exceptions\Entity\EntityAlreadyExistsException.cs<y <(z
+implicit return:6
+info.System.Runtime.Serialization.SerializationInfo:8
+context-System.Runtime.Serialization.StreamingContextB20
+.Exceptions.Entity.EntityAlreadyExistsException

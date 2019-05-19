@@ -1,0 +1,4 @@
+Ñ
+&Api.Controllers.AutenticacaoController'Microsoft.AspNetCore.Mvc.ControllerBaseobjectÀ
+èPost(Entidades.Entidades.Usuario, Persistencia.Interfaces.IAutenticacaoService, Api.Token.SigningConfigurations, Api.Token.TokenConfigurations)∂Api.Controllers.AutenticacaoController.Post(Entidades.Entidades.Usuario, Persistencia.Interfaces.IAutenticacaoService, Api.Token.SigningConfigurations, Api.Token.TokenConfigurations)[
+AutenticacaoController()?Api.Controllers.AutenticacaoController.AutenticacaoController()

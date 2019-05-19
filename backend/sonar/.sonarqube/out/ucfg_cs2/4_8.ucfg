@@ -1,83 +1,9 @@
 
-FApi.Startup.Startup(Microsoft.Extensions.Configuration.IConfiguration)-
-#E:\Git\Achei\backend\Api\Startup.cs   ("0*Î
-0¥
-±
--
-#E:\Git\Achei\backend\Api\Startup.cs" "()
-
-%0void"Api.Startup.Configuration.set*
-Api.Startup*D
-B
-configuration1Microsoft.Extensions.Configuration.IConfiguration…
-∆
--
-#E:\Git\Achei\backend\Api\Startup.cs$& $(_
-%1string"}Microsoft.Extensions.Configuration.ConfigurationBinder.GetValue<T>(Microsoft.Extensions.Configuration.IConfiguration, string)*:"8
-6Microsoft.Extensions.Configuration.ConfigurationBinder*D
-B
-configuration1Microsoft.Extensions.Configuration.IConfiguration*
-""õ
-ò
--
-#E:\Git\Achei\backend\Api\Startup.cs$ $(_
-
-%2void"(Persistencia.ConnectionString.Server.set*!"
-Persistencia.ConnectionString*
-
-%1string…
-∆
--
-#E:\Git\Achei\backend\Api\Startup.cs%( %(c
-%3string"}Microsoft.Extensions.Configuration.ConfigurationBinder.GetValue<T>(Microsoft.Extensions.Configuration.IConfiguration, string)*:"8
-6Microsoft.Extensions.Configuration.ConfigurationBinder*D
-B
-configuration1Microsoft.Extensions.Configuration.IConfiguration*
-""ù
-ö
--
-#E:\Git\Achei\backend\Api\Startup.cs% %(c
-
-%4void"*Persistencia.ConnectionString.Database.set*!"
-Persistencia.ConnectionString*
-
-%3string…
-∆
--
-#E:\Git\Achei\backend\Api\Startup.cs&& &(_
-%5string"}Microsoft.Extensions.Configuration.ConfigurationBinder.GetValue<T>(Microsoft.Extensions.Configuration.IConfiguration, string)*:"8
-6Microsoft.Extensions.Configuration.ConfigurationBinder*D
-B
-configuration1Microsoft.Extensions.Configuration.IConfiguration*
-""õ
-ò
--
-#E:\Git\Achei\backend\Api\Startup.cs& &(_
-
-%6void"(Persistencia.ConnectionString.UserId.set*!"
-Persistencia.ConnectionString*
-
-%5string…
-∆
--
-#E:\Git\Achei\backend\Api\Startup.cs'( '(c
-%7string"}Microsoft.Extensions.Configuration.ConfigurationBinder.GetValue<T>(Microsoft.Extensions.Configuration.IConfiguration, string)*:"8
-6Microsoft.Extensions.Configuration.ConfigurationBinder*D
-B
-configuration1Microsoft.Extensions.Configuration.IConfiguration*
-""ù
-ö
--
-#E:\Git\Achei\backend\Api\Startup.cs' '(c
-
-%8void"*Persistencia.ConnectionString.Password.set*!"
-Persistencia.ConnectionString*
-
-%7string*
-1*I
-1"D
--
-#E:\Git\Achei\backend\Api\Startup.cs( ((	
-implicit return:B
-configuration1Microsoft.Extensions.Configuration.IConfigurationB
-Api.Startup
+_Migrations.Conversor_2019042004.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)<
+2D:\git\Achei\backend\Migrations\v1.0\2019042004.cs1  1($"0*X
+0"S
+<
+2D:\git\Achei\backend\Migrations\v1.0\2019042004.cs3 3(	
+implicit return:M
+migrationBuilder9Microsoft.EntityFrameworkCore.Migrations.MigrationBuilderB#!
+Migrations.Conversor_2019042004

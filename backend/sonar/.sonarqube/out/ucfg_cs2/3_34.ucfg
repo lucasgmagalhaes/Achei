@@ -1,0 +1,36 @@
+
+WPersistencia.Services.CrudService<T>.AtualizarAsync(System.Collections.Generic.List<T>)E
+9D:\git\Achei\backend\Persistencia\Services\CrudService.cs¼ ¼(("0*ì
+0á
+Þ
+E
+9D:\git\Achei\backend\Persistencia\Services\CrudService.cs¾ ¾(-
+%0'Microsoft.EntityFrameworkCore.DbContext"__id*`*^&
+$Persistencia.Services.CrudService<T>"4
+	dbService'Microsoft.EntityFrameworkCore.DbContextÓÐ
+E
+9D:\git\Achei\backend\Persistencia\Services\CrudService.cs¾ ¾('G
+%1AMicrosoft.EntityFrameworkCore.ChangeTracking.EntityEntry<TEntity>"@Microsoft.EntityFrameworkCore.DbContext.Update<TEntity>(TEntity)*/
+-
+%0'Microsoft.EntityFrameworkCore.DbContext*1
+/
+	entidades"System.Collections.Generic.List<T>2Update<TEntity>(TEntity)á
+Þ
+E
+9D:\git\Achei\backend\Persistencia\Services\CrudService.cs¿ ¿(-
+%2'Microsoft.EntityFrameworkCore.DbContext"__id*`*^&
+$Persistencia.Services.CrudService<T>"4
+	dbService'Microsoft.EntityFrameworkCore.DbContextÃÀ
+E
+9D:\git\Achei\backend\Persistencia\Services\CrudService.cs¿ ¿(.*
+%3$System.Threading.Tasks.Task<TResult>"\Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(System.Threading.CancellationToken)*/
+-
+%2'Microsoft.EntityFrameworkCore.DbContext*
+""24SaveChangesAsync(System.Threading.CancellationToken)*
+1*a
+1"\
+E
+9D:\git\Achei\backend\Persistencia\Services\CrudService.csÀ À(	
+implicit return:/
+	entidades"System.Collections.Generic.List<T>B(&
+$Persistencia.Services.CrudService<T>

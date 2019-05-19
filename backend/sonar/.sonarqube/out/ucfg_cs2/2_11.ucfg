@@ -1,23 +1,0 @@
-
-2Persistencia.Services.CrudService<T>.Dispose(bool)C
-9E:\Git\Achei\backend\Persistencia\Services\CrudService.cs (&"0*°
-0ß
-Ü
-C
-9E:\Git\Achei\backend\Persistencia\Services\CrudService.cs (-
-%0'Microsoft.EntityFrameworkCore.DbContext"__id*`*^&
-$Persistencia.Services.CrudService<T>"4
-	dbService'Microsoft.EntityFrameworkCore.DbContextÃÀ
-C
-9E:\Git\Achei\backend\Persistencia\Services\CrudService.cs (
-
-%1void"1Microsoft.EntityFrameworkCore.DbContext.Dispose()*/
--
-%0'Microsoft.EntityFrameworkCore.DbContext2	Dispose()*
-1*_
-1"Z
-C
-9E:\Git\Achei\backend\Persistencia\Services\CrudService.cs   (	
-implicit return:
-	disposingboolB(&
-$Persistencia.Services.CrudService<T>

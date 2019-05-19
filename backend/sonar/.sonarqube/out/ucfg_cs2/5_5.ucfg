@@ -1,0 +1,36 @@
+
+yApi.Controllers.ItemAchadoController.ItemAchadoController(Persistencia.Interfaces.IItemAchadoService, AutoMapper.IMapper)F
+<D:\git\Achei\backend\Api\Controllers\ItemAchadoController.cs (#"2*Æ
+0ÿ
+ü
+F
+<D:\git\Achei\backend\Api\Controllers\ItemAchadoController.cs (6i&
+$Api.Controllers.ItemAchadoController"?
+itemAchadoService*Persistencia.Interfaces.IItemAchadoService"__id*A
+?
+itemAchadoService*Persistencia.Interfaces.IItemAchadoService¹
+¶
+F
+<D:\git\Achei\backend\Api\Controllers\ItemAchadoController.cs ( F&
+$Api.Controllers.ItemAchadoController"
+mapperAutoMapper.IMapper"__id*
+
+mapperAutoMapper.IMapper*
+1*b
+1"]
+F
+<D:\git\Achei\backend\Api\Controllers\ItemAchadoController.cs (	
+implicit return*Í
+2Â
+¿
+F
+<D:\git\Achei\backend\Api\Controllers\ItemAchadoController.cs (#
+%0"__entrypoint*A
+?
+itemAchadoService*Persistencia.Interfaces.IItemAchadoService*
+
+mapperAutoMapper.IMapper*
+0:?
+itemAchadoService*Persistencia.Interfaces.IItemAchadoService:
+mapperAutoMapper.IMapperB(&
+$Api.Controllers.ItemAchadoController

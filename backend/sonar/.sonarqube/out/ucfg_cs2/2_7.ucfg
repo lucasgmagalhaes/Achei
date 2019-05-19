@@ -1,29 +1,0 @@
-
-6Persistencia.Services.TagService.BuscarPorItemId(long)B
-8E:\Git\Achei\backend\Persistencia\Services\TagService.cs (("0*÷
-0ó
-ð
-B
-8E:\Git\Achei\backend\Persistencia\Services\TagService.cs (7
-%0System.Linq.IQueryable<T>"ÒPersistencia.Services.CrudService<T>.Buscar(System.Linq.Expressions.Expression<System.Func<T, bool>>, System.Func<System.Linq.IQueryable<T>, Microsoft.EntityFrameworkCore.Query.IIncludableQueryable<T, object>>)*$"
- Persistencia.Services.TagService*
-""*
-""‰
-†
-B
-8E:\Git\Achei\backend\Persistencia\Services\TagService.cs (@(
-%1"System.Collections.Generic.List<T>"WSystem.Linq.Enumerable.ToList<TSource>(System.Collections.Generic.IEnumerable<TSource>)*"
-System.Linq.Enumerable*!
-
-%0System.Linq.IQueryable<T>"p
-B
-8E:\Git\Achei\backend\Persistencia\Services\TagService.cs (A*
-(
-%1"System.Collections.Generic.List<T>*^
-1"Y
-B
-8E:\Git\Achei\backend\Persistencia\Services\TagService.cs (	
-implicit return:
-
-idlongB$"
- Persistencia.Services.TagService

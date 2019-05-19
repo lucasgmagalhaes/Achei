@@ -1,0 +1,170 @@
+
+ZApi.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)-
+#D:\git\Achei\backend\Api\Startup.cs, ,(%"0*ÈA
+0û
+õ
+-
+#D:\git\Achei\backend\Api\Startup.cs. .(A
+%0;Microsoft.Extensions.DependencyInjection.IServiceCollection"çMicrosoft.Extensions.DependencyInjection.CorsServiceCollectionExtensions.AddCors(Microsoft.Extensions.DependencyInjection.IServiceCollection)*L"J
+HMicrosoft.Extensions.DependencyInjection.CorsServiceCollectionExtensions*I
+G
+services;Microsoft.Extensions.DependencyInjection.IServiceCollectioná
+Ñ
+-
+#D:\git\Achei\backend\Api\Startup.cs/ /(5
+%1/Microsoft.AspNet.OData.Interfaces.IODataBuilder"àMicrosoft.AspNet.OData.Extensions.ODataServiceCollectionExtensions.AddOData(Microsoft.Extensions.DependencyInjection.IServiceCollection)*F"D
+BMicrosoft.AspNet.OData.Extensions.ODataServiceCollectionExtensions*I
+G
+services;Microsoft.Extensions.DependencyInjection.IServiceCollectionî
+ë
+-
+#D:\git\Achei\backend\Api\Startup.cs0 0(:
+%24Microsoft.Extensions.DependencyInjection.IMvcBuilder"ãMicrosoft.Extensions.DependencyInjection.MvcServiceCollectionExtensions.AddMvc(Microsoft.Extensions.DependencyInjection.IServiceCollection)*K"I
+GMicrosoft.Extensions.DependencyInjection.MvcServiceCollectionExtensions*I
+G
+services;Microsoft.Extensions.DependencyInjection.IServiceCollectionE
+C
+-
+#D:\git\Achei\backend\Api\Startup.cs06 0(V
+%3"__id*
+""¬
+ø
+-
+#D:\git\Achei\backend\Api\Startup.cs0 0(W:
+%44Microsoft.Extensions.DependencyInjection.IMvcBuilder"¡Microsoft.Extensions.DependencyInjection.MvcCoreMvcBuilderExtensions.SetCompatibilityVersion(Microsoft.Extensions.DependencyInjection.IMvcBuilder, Microsoft.AspNetCore.Mvc.CompatibilityVersion)*H"F
+DMicrosoft.Extensions.DependencyInjection.MvcCoreMvcBuilderExtensions*<
+:
+%24Microsoft.Extensions.DependencyInjection.IMvcBuilder*
+
+%3–
+Õ
+-
+#D:\git\Achei\backend\Api\Startup.cs2 2(MA
+%5;Microsoft.Extensions.DependencyInjection.IServiceCollection"¨Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddScoped(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Type, System.Type)*O"M
+KMicrosoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions*I
+G
+services;Microsoft.Extensions.DependencyInjection.IServiceCollection*
+""*
+""–
+Õ
+-
+#D:\git\Achei\backend\Api\Startup.cs3 3(YA
+%6;Microsoft.Extensions.DependencyInjection.IServiceCollection"¨Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddScoped(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Type, System.Type)*O"M
+KMicrosoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions*I
+G
+services;Microsoft.Extensions.DependencyInjection.IServiceCollection*
+""*
+""–
+Õ
+-
+#D:\git\Achei\backend\Api\Startup.cs4 4(OA
+%7;Microsoft.Extensions.DependencyInjection.IServiceCollection"¨Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddScoped(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Type, System.Type)*O"M
+KMicrosoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions*I
+G
+services;Microsoft.Extensions.DependencyInjection.IServiceCollection*
+""*
+""–
+Õ
+-
+#D:\git\Achei\backend\Api\Startup.cs5 5(UA
+%8;Microsoft.Extensions.DependencyInjection.IServiceCollection"¨Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddScoped(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Type, System.Type)*O"M
+KMicrosoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions*I
+G
+services;Microsoft.Extensions.DependencyInjection.IServiceCollection*
+""*
+""–
+Õ
+-
+#D:\git\Achei\backend\Api\Startup.cs6 6(WA
+%9;Microsoft.Extensions.DependencyInjection.IServiceCollection"¨Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddScoped(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Type, System.Type)*O"M
+KMicrosoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions*I
+G
+services;Microsoft.Extensions.DependencyInjection.IServiceCollection*
+""*
+""—
+Œ
+-
+#D:\git\Achei\backend\Api\Startup.cs7 7(MB
+%10;Microsoft.Extensions.DependencyInjection.IServiceCollection"¨Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddScoped(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Type, System.Type)*O"M
+KMicrosoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions*I
+G
+services;Microsoft.Extensions.DependencyInjection.IServiceCollection*
+""*
+""—
+Œ
+-
+#D:\git\Achei\backend\Api\Startup.cs8 8(GB
+%11;Microsoft.Extensions.DependencyInjection.IServiceCollection"¨Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddScoped(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Type, System.Type)*O"M
+KMicrosoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions*I
+G
+services;Microsoft.Extensions.DependencyInjection.IServiceCollection*
+""*
+""»
+≈
+-
+#D:\git\Achei\backend\Api\Startup.cs: :(`B
+%12;Microsoft.Extensions.DependencyInjection.IServiceCollection"≤Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.Scan(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Action<Scrutor.ITypeSourceSelector>)*H"F
+DMicrosoft.Extensions.DependencyInjection.ServiceCollectionExtensions*I
+G
+services;Microsoft.Extensions.DependencyInjection.IServiceCollection*
+""≈
+¬
+-
+#D:\git\Achei\backend\Api\Startup.cs< <(NB
+%13;Microsoft.Extensions.DependencyInjection.IServiceCollection"∞Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton<TService, TImplementation>(Microsoft.Extensions.DependencyInjection.IServiceCollection)*O"M
+KMicrosoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions*I
+G
+services;Microsoft.Extensions.DependencyInjection.IServiceCollection≈
+¬
+-
+#D:\git\Achei\backend\Api\Startup.cs= =(KB
+%14;Microsoft.Extensions.DependencyInjection.IServiceCollection"∞Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton<TService, TImplementation>(Microsoft.Extensions.DependencyInjection.IServiceCollection)*O"M
+KMicrosoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions*I
+G
+services;Microsoft.Extensions.DependencyInjection.IServiceCollectionñ
+ì
+-
+#D:\git\Achei\backend\Api\Startup.cs? ?(9B
+%15;Microsoft.Extensions.DependencyInjection.IServiceCollection"·Microsoft.Extensions.DependencyInjection.EntityFrameworkServiceCollectionExtensions.AddDbContext<TContext>(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Action<Microsoft.EntityFrameworkCore.DbContextOptionsBuilder>, Microsoft.Extensions.DependencyInjection.ServiceLifetime, Microsoft.Extensions.DependencyInjection.ServiceLifetime)*W"U
+SMicrosoft.Extensions.DependencyInjection.EntityFrameworkServiceCollectionExtensions*I
+G
+services;Microsoft.Extensions.DependencyInjection.IServiceCollection*
+""*
+""*
+""x
+v
+-
+#D:\git\Achei\backend\Api\Startup.csA" A(4
+%16AutoMapper.IMapper"Api.Mapeamento.Criar()*"
+Api.Mapeamento€
+ÿ
+-
+#D:\git\Achei\backend\Api\Startup.csA A(5B
+%17;Microsoft.Extensions.DependencyInjection.IServiceCollection"©Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton<TService>(Microsoft.Extensions.DependencyInjection.IServiceCollection, TService)*O"M
+KMicrosoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions*I
+G
+services;Microsoft.Extensions.DependencyInjection.IServiceCollection*
+
+%16AutoMapper.IMapper˝
+˙
+-
+#D:\git\Achei\backend\Api\Startup.csC C(-
+%18void"`Api.Startup.ConfigureAuthentication(Microsoft.Extensions.DependencyInjection.IServiceCollection)*
+Api.Startup*I
+G
+services;Microsoft.Extensions.DependencyInjection.IServiceCollection˝
+˙
+-
+#D:\git\Achei\backend\Api\Startup.csE Z(B
+%19;Microsoft.Extensions.DependencyInjection.IServiceCollection"›Microsoft.Extensions.DependencyInjection.SwaggerGenServiceCollectionExtensions.AddSwaggerGen(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Action<Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenOptions>)*R"P
+NMicrosoft.Extensions.DependencyInjection.SwaggerGenServiceCollectionExtensions*I
+G
+services;Microsoft.Extensions.DependencyInjection.IServiceCollection*
+""*
+1*I
+1"D
+-
+#D:\git\Achei\backend\Api\Startup.cs\ \(	
+implicit return:G
+services;Microsoft.Extensions.DependencyInjection.IServiceCollectionB
+Api.Startup

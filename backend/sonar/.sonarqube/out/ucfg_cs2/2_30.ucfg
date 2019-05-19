@@ -1,57 +1,0 @@
-
-2Persistencia.Services.CrudService<T>.Deletar(long)C
-9E:\Git\Achei\backend\Persistencia\Services\CrudService.csU U("0*‰
-0SQ
-C
-9E:\Git\Achei\backend\Persistencia\Services\CrudService.csW" W(-
-%0T"TÅ
-
-C
-9E:\Git\Achei\backend\Persistencia\Services\CrudService.csW W(-#
-objEntidades.Interfaces.IEntity"__id*
-	{unknown}ﬂ
-‹
-C
-9E:\Git\Achei\backend\Persistencia\Services\CrudService.csY Y(-
-%1'Microsoft.EntityFrameworkCore.DbContext"__id*`*^&
-$Persistencia.Services.CrudService<T>"4
-	dbService'Microsoft.EntityFrameworkCore.DbContext≈¬
-C
-9E:\Git\Achei\backend\Persistencia\Services\CrudService.csY Y(!G
-%2AMicrosoft.EntityFrameworkCore.ChangeTracking.EntityEntry<TEntity>"@Microsoft.EntityFrameworkCore.DbContext.Attach<TEntity>(TEntity)*/
--
-%1'Microsoft.EntityFrameworkCore.DbContext*%
-#
-objEntidades.Interfaces.IEntity2Attach<TEntity>(TEntity)ﬂ
-‹
-C
-9E:\Git\Achei\backend\Persistencia\Services\CrudService.csZ Z(-
-%3'Microsoft.EntityFrameworkCore.DbContext"__id*`*^&
-$Persistencia.Services.CrudService<T>"4
-	dbService'Microsoft.EntityFrameworkCore.DbContext≈¬
-C
-9E:\Git\Achei\backend\Persistencia\Services\CrudService.csZ Z(!G
-%4AMicrosoft.EntityFrameworkCore.ChangeTracking.EntityEntry<TEntity>"@Microsoft.EntityFrameworkCore.DbContext.Remove<TEntity>(TEntity)*/
--
-%3'Microsoft.EntityFrameworkCore.DbContext*%
-#
-objEntidades.Interfaces.IEntity2Remove<TEntity>(TEntity)ﬂ
-‹
-C
-9E:\Git\Achei\backend\Persistencia\Services\CrudService.cs[ [(-
-%5'Microsoft.EntityFrameworkCore.DbContext"__id*`*^&
-$Persistencia.Services.CrudService<T>"4
-	dbService'Microsoft.EntityFrameworkCore.DbContext «
-C
-9E:\Git\Achei\backend\Persistencia\Services\CrudService.cs[ [(#	
-%6int"5Microsoft.EntityFrameworkCore.DbContext.SaveChanges()*/
--
-%5'Microsoft.EntityFrameworkCore.DbContext2SaveChanges()*
-1*_
-1"Z
-C
-9E:\Git\Achei\backend\Persistencia\Services\CrudService.cs\ \(	
-implicit return:
-
-idlongB(&
-$Persistencia.Services.CrudService<T>
