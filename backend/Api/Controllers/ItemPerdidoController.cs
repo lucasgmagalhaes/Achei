@@ -2,6 +2,7 @@
 using Entidades;
 using Entidades.Dto;
 using Entidades.Entidades;
+using Exceptions.Entity;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Persistencia.Interfaces;
@@ -66,6 +67,10 @@ namespace Api.Controllers
 
                 itemPerdidoService.Atualizar(itemPerdido);
                 return Ok(new RequestResponse() { message = "Item Atualizado com sucesso", status = "200" });
+            }
+            catch(EntityNotFoundException ex)
+            {
+                return NotFound(ex.Message);
             }
             catch (Exception ex)
             {
