@@ -37,7 +37,4 @@ export class AchadosComponent implements OnInit {
     });
   }
 
-  nextList() {
-    this.next = true;
-  }
 }
