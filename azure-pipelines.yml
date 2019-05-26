@@ -16,8 +16,7 @@ steps:
 - script: |
     cd backend
     cd sonar
-    ls
-    sonar-analise.sh
+    sonar-analise.bat
   displayName: 'Backend SonarLint'
 
 - task: NodeTool@0
