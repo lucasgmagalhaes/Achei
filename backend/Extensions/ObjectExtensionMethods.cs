@@ -31,8 +31,8 @@ namespace Extensions
                 throw new ArgumentNullException("from", "Objeto a ser copiado não pode nulo");
             }
 
-            var fromProperties = from.GetType().GetProperties();
-            var toProperties = to.GetType().GetProperties();
+            PropertyInfo[] fromProperties = from.GetType().GetProperties();
+            PropertyInfo[] toProperties = to.GetType().GetProperties();
 
             IniciarCopia(toProperties, fromProperties, to, from);
         }
@@ -60,8 +60,8 @@ namespace Extensions
                 throw new ArgumentNullException("to", "Objeto a ser copiado não pode nulo");
             }
 
-            var toProperties = to.GetType().GetProperties();
-            var fromProperties = from.GetType().GetProperties();
+            PropertyInfo[] toProperties = to.GetType().GetProperties();
+            PropertyInfo[] fromProperties = from.GetType().GetProperties();
 
             IniciarCopia(toProperties, fromProperties, to, from);
         }
@@ -80,9 +80,9 @@ namespace Extensions
         {
             ValidarParametros(toProperties, fromProperties, to, from);
 
-            foreach (var fromProperty in fromProperties)
+            foreach (PropertyInfo fromProperty in fromProperties)
             {
-                foreach (var toProperty in toProperties)
+                foreach (PropertyInfo toProperty in toProperties)
                 {
                     if (fromProperty.Name == toProperty.Name && fromProperty.PropertyType == toProperty.PropertyType)
                     {

@@ -23,7 +23,7 @@ namespace ApiTesting.Services
 
         public void Atualizar(T entidade)
         {
-            IEntity itemPerdido = this.entidades.Find(_entidade => _entidade.Id == entidade.Id);
+            IEntity itemPerdido = entidades.Find(_entidade => _entidade.Id == entidade.Id);
             if (itemPerdido != null)
             {
                 entidade.CopiarPropriedadesPara(itemPerdido);
@@ -59,7 +59,7 @@ namespace ApiTesting.Services
         public List<T> Buscar()
         {
             List<T> itensRetorno = new List<T>();
-            this.entidades.ForEach(item =>
+            entidades.ForEach(item =>
             {
                 T itemCopia = new T();
                 item.CopiarPropriedadesPara(itemCopia);
@@ -70,7 +70,7 @@ namespace ApiTesting.Services
 
         public T Buscar(long id)
         {
-            T entidade = this.entidades.SingleOrDefault(item => item.Id == id);
+            T entidade = entidades.SingleOrDefault(item => item.Id == id);
 
             if (entidade == null)
             {
@@ -84,7 +84,7 @@ namespace ApiTesting.Services
 
         public IQueryable<T> Buscar(Expression<Func<T, bool>> predicate, Func<IQueryable<T>, IIncludableQueryable<T, object>> include = null)
         {
-            return this.entidades.Where(predicate.Compile()).AsQueryable();
+            return entidades.Where(predicate.Compile()).AsQueryable();
         }
 
         public Task<List<T>> BuscarAsync()
@@ -112,10 +112,10 @@ namespace ApiTesting.Services
 
         private void Remover(long id)
         {
-            T itemPerdido = this.entidades.SingleOrDefault(item => item.Id == id);
+            T itemPerdido = entidades.SingleOrDefault(item => item.Id == id);
             if (itemPerdido != null)
             {
-                this.entidades.Remove(itemPerdido);
+                entidades.Remove(itemPerdido);
             }
         }
 
@@ -150,7 +150,7 @@ namespace ApiTesting.Services
             {
                 Random random = new Random();
                 entidade.Id = random.Next(9999);
-                this.entidades.Add(entidade);
+                entidades.Add(entidade);
                 return entidade;
             }
             return null;
@@ -170,7 +170,7 @@ namespace ApiTesting.Services
             {
                 if (disposing)
                 {
-                    this.entidades.Clear();
+                    entidades.Clear();
                 }
                 disposedValue = true;
             }

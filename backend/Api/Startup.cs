@@ -1,7 +1,4 @@
 ﻿using Api.Token;
-using AutoMapper;
-using Entidades.Dto;
-using Entidades.Entidades;
 using Microsoft.AspNet.OData.Extensions;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
@@ -22,7 +19,6 @@ using Persistencia.Services;
 using Swashbuckle.AspNetCore.Swagger;
 using System;
 using System.IO;
-using System.Reflection;
 
 namespace Api
 {

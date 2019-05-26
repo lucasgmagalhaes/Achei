@@ -68,7 +68,7 @@ namespace Api.Controllers
                 itemPerdidoService.Atualizar(itemPerdido);
                 return Ok(new RequestResponse() { message = "Item Atualizado com sucesso", status = "200" });
             }
-            catch(EntityNotFoundException ex)
+            catch (EntityNotFoundException ex)
             {
                 return NotFound(ex.Message);
             }
