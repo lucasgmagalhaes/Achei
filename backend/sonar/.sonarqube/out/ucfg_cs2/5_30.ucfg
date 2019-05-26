@@ -1,60 +1,117 @@
 
-0Api.Session.GetQuantidadeUsuariosLogados(string)-
-#D:\git\Achei\backend\Api\Session.cs (6"0*‡
-0z
-x
--
-#D:\git\Achei\backend\Api\Session.cs (,
-
-%0bool"string.IsNullOrEmpty(string)*
-"
-string*
-
-bancostring*
+MApi.Controllers.ItemPerdidoController.Salvar(Entidades.Entidades.ItemPerdido)I
+=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.csƒ ƒ(""5*
+0*	
 1
-2*­
-1Ç
-Ä
--
-#D:\git\Achei\backend\Api\Session.cs! !(9
-%13System.Collections.Generic.Dictionary<TKey, TValue>"__id*R*P
-Api.Session"?
-usuarios3System.Collections.Generic.Dictionary<TKey, TValue>¸
-µ
--
-#D:\git\Achei\backend\Api\Session.cs! !(H/
-%2)System.Collections.Generic.IEnumerable<T>"rSystem.Linq.Enumerable.Where<TSource>(System.Collections.Generic.IEnumerable<TSource>, System.Func<TSource, bool>)*"
-System.Linq.Enumerable*;
-9
-%13System.Collections.Generic.Dictionary<TKey, TValue>*
-""ä
-á
--
-#D:\git\Achei\backend\Api\Session.cs! !(P	
-%3int"VSystem.Linq.Enumerable.Count<TSource>(System.Collections.Generic.IEnumerable<TSource>)*"
-System.Linq.Enumerable*1
-/
-%2)System.Collections.Generic.IEnumerable<T>"<
--
-#D:\git\Achei\backend\Api\Session.cs! !(Q
-	
-%3int*ì
-2[Y
--
-#D:\git\Achei\backend\Api\Session.cs# #(K
-%4System.Exception"System.Exception„
-
--
-#D:\git\Achei\backend\Api\Session.cs# #(
+2
+3*á
+2÷
+ô
+I
+=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.cs‡ ‡("1
+%0+Persistencia.Interfaces.IItemPerdidoService"__id*n*l'
+%Api.Controllers.ItemPerdidoController"A
+itemPerdidoService+Persistencia.Interfaces.IItemPerdidoServiceœ™
+I
+=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.cs‡ ‡(7%
+%1Entidades.Entidades.ItemPerdido"2Persistencia.Interfaces.ICrudService<T>.Inserir(T)*3
+1
+%0+Persistencia.Interfaces.IItemPerdidoService*0
+.
+itemPerdidoEntidades.Entidades.ItemPerdido2
+Inserir(T)}{
+I
+=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.csˆ ˆ(k
+%2Api.RequestResponse"Api.RequestResponsež
+›
+I
+=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.csˆ ˆ(-
 
-%5void""System.Exception.Exception(string)*
-
-%4System.Exception*
-""*
-3*I
-3"D
+%3void"%Api.RequestResponse.RequestResponse()*
+
+%2Api.RequestResponseŒ
+‰
+I
+=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.csˆ2 ˆ(Y.
+
+%2Api.RequestResponse"
+messagestring"__id*
+""‹
+ˆ
+I
+=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.csˆ[ ˆ(i-
+
+%2Api.RequestResponse"
+statusstring"__id*
+""‡„
+I
+=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.csˆ ˆ(l-
+%4'Microsoft.AspNetCore.Mvc.OkObjectResult"2Microsoft.AspNetCore.Mvc.ControllerBase.Ok(object)*+)
+'Microsoft.AspNetCore.Mvc.ControllerBase*
+
+%2Api.RequestResponse2
+Ok(object)"|
+I
+=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.csˆ ˆ(m/
 -
-#D:\git\Achei\backend\Api\Session.cs$ $(	
-implicit return:
-bancostringB"
-Api.Session
+%4'Microsoft.AspNetCore.Mvc.OkObjectResult*
+4*	
+1
+3
+3*ˆ
+1a
+_
+I
+=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.csŒ" Œ(J
+%5"__id*
+""£ 
+I
+=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.csŒ Œ(N+
+%6%Microsoft.AspNetCore.Mvc.ObjectResult"?Microsoft.AspNetCore.Mvc.ControllerBase.StatusCode(int, object)*+)
+'Microsoft.AspNetCore.Mvc.ControllerBase*
+
+%5*
+
+eSystem.Exception2StatusCode(int, object)"z
+I
+=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.csŒ Œ(O-
++
+%6%Microsoft.AspNetCore.Mvc.ObjectResult*e
+3"`
+I
+=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.csŽ Ž(	
+implicit return*ð
+5”
+‘
+I
+=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.csƒ ƒ("
+%7"__entrypoint*0
+.
+itemPerdidoEntidades.Entidades.ItemPerdidoÖ
+Ó
+I
+=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.csƒ$ ƒ(,
+%8"
+__annotate*B@
+>Microsoft.AspNetCore.Mvc.FromBodyAttribute.FromBodyAttribute()*0
+.
+itemPerdidoEntidades.Entidades.ItemPerdidoÖ
+Ó
+I
+=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.cs‚	 ‚(
+%9"
+__annotate*B@
+>Microsoft.AspNetCore.Mvc.HttpPostAttribute.HttpPostAttribute()*0
+.
+itemPerdidoEntidades.Entidades.ItemPerdidoœ
+™
+I
+=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.csƒ# ƒ(D.
+itemPerdidoEntidades.Entidades.ItemPerdido"__annotation*
+
+%8*
+
+%9*
+0:.
+itemPerdidoEntidades.Entidades.ItemPerdidoB)'
+%Api.Controllers.ItemPerdidoController

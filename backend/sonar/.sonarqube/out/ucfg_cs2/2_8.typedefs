@@ -1,11 +1,6 @@
-Ë
-Entidades.Dto.TagDtoobject)
-TagDto()Entidades.Dto.TagDto.TagDto()%
-Id.getEntidades.Dto.TagDto.Id.get%
-Id.setEntidades.Dto.TagDto.Id.set)
-Nome.getEntidades.Dto.TagDto.Nome.get)
-Nome.setEntidades.Dto.TagDto.Nome.set-
-
-ItemId.getEntidades.Dto.TagDto.ItemId.get-
-
-ItemId.setEntidades.Dto.TagDto.ItemId.set
+µ
+(Persistencia.Services.ItemPerdidoService$Persistencia.Services.CrudService<T>objectÁ
+JItemPerdidoService(Persistencia.Contexts.Application.ApplicationDbContext)sPersistencia.Services.ItemPerdidoService.ItemPerdidoService(Persistencia.Contexts.Application.ApplicationDbContext)]
+BuscarPorIdUsuario(long)APersistencia.Services.ItemPerdidoService.BuscarPorIdUsuario(long)S
+BuscarComTags(long)<Persistencia.Services.ItemPerdidoService.BuscarComTags(long)c
+BuscarComEagerLoading(long)DPersistencia.Services.ItemPerdidoService.BuscarComEagerLoading(long)

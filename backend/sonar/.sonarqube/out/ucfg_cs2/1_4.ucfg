@@ -1,90 +1,27 @@
 
-HExtensions.ObjectExtensionMethods.CopiarPropriedadesPara(object, object)C
-9D:\git\Achei\backend\Extensions\ObjectExtensionMethods.cs8 8(1"0*ª
-0œ
-™
-C
-9D:\git\Achei\backend\Extensions\ObjectExtensionMethods.cs: :(
+-Entidades.Entidades.ItemPerdido.ItemPerdido()A
+7D:\git\Achei\backend\Entidades\Entidades\ItemPerdido.cs ("0*¿
+0”‘
+A
+7D:\git\Achei\backend\Entidades\Entidades\ItemPerdido.cs  (6(
+%0"System.Collections.Generic.List<T>""System.Collections.Generic.List<T>©
+¦
+A
+7D:\git\Achei\backend\Entidades\Entidades\ItemPerdido.cs$ (4
 
-%0bool""object.operator ==(object, object)*
-"
-object*
-
-toobject*
-""*
-1
-2*æ
-1Š‡
-C
-9D:\git\Achei\backend\Extensions\ObjectExtensionMethods.cs< <(["
-%1System.ArgumentNullException"System.ArgumentNullExceptionÎ
-Ë
-C
-9D:\git\Achei\backend\Extensions\ObjectExtensionMethods.cs< <(/
+%1void")System.Collections.Generic.List<T>.List()**
+(
+%0"System.Collections.Generic.List<T>ñî
+A
+7D:\git\Achei\backend\Entidades\Entidades\ItemPerdido.cs (6
 
-%2void"BSystem.ArgumentNullException.ArgumentNullException(string, string)*$
-"
-%1System.ArgumentNullException*
-""*
-""*
-3*»
-
-2|
-z
-C
-9D:\git\Achei\backend\Extensions\ObjectExtensionMethods.cs? ?(+
-%3System.Type"object.GetType()*
-
-toobject¢
-Ÿ
-C
-9D:\git\Achei\backend\Extensions\ObjectExtensionMethods.cs? ?(;&
-%4 System.Reflection.PropertyInfo[]"System.Type.GetProperties()*
-
-%3System.Typeª
-§
-C
-9D:\git\Achei\backend\Extensions\ObjectExtensionMethods.cs? ?(;0
-toProperties System.Reflection.PropertyInfo[]"__id*(
-&
-%4 System.Reflection.PropertyInfo[]~
-|
-C
-9D:\git\Achei\backend\Extensions\ObjectExtensionMethods.cs@! @(/
-%5System.Type"object.GetType()*
-
-fromobject¢
-Ÿ
-C
-9D:\git\Achei\backend\Extensions\ObjectExtensionMethods.cs@! @(?&
-%6 System.Reflection.PropertyInfo[]"System.Type.GetProperties()*
-
-%5System.Type¬
-©
-C
-9D:\git\Achei\backend\Extensions\ObjectExtensionMethods.cs@ @(?2
-fromProperties System.Reflection.PropertyInfo[]"__id*(
-&
-%6 System.Reflection.PropertyInfo[]Œ
-‰
-C
-9D:\git\Achei\backend\Extensions\ObjectExtensionMethods.csB B(@
-
-%7void"‚Extensions.ObjectExtensionMethods.IniciarCopia(System.Reflection.PropertyInfo[], System.Reflection.PropertyInfo[], object, object)*%"#
-!Extensions.ObjectExtensionMethods*2
-0
-toProperties System.Reflection.PropertyInfo[]*4
-2
-fromProperties System.Reflection.PropertyInfo[]*
-
-toobject*
-
-fromobject*
-3*_
-3"Z
-C
-9D:\git\Achei\backend\Extensions\ObjectExtensionMethods.csC C(	
-implicit return:
-fromobject:
-toobjectB%"#
-!Extensions.ObjectExtensionMethods
+%2void"5Entidades.Entidades.ItemPerdido.ItensAchadosMatch.set*#!
+Entidades.Entidades.ItemPerdido**
+(
+%0"System.Collections.Generic.List<T>2ItensAchadosMatch.set*
+1*]
+1"X
+A
+7D:\git\Achei\backend\Entidades\Entidades\ItemPerdido.cs (	
+implicit returnB#!
+Entidades.Entidades.ItemPerdido

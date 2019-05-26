@@ -1,0 +1,101 @@
+
+rPersistencia.Contexts.Application.ApplicationDbContext.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)X
+ND:\git\Achei\backend\Persistencia\Contexts\Application\ApplicationDbContext.cs  (/"0*ä$
+0ÆÃ
+X
+ND:\git\Achei\backend\Persistencia\Contexts\Application\ApplicationDbContext.cs (A0
+%0*Microsoft.EntityFrameworkCore.ModelBuilder"HMicrosoft.EntityFrameworkCore.ModelBuilder.HasAnnotation(string, object)*<
+:
+modelBuilder*Microsoft.EntityFrameworkCore.ModelBuilder*
+""*
+""2HasAnnotation(string, object)±®
+X
+ND:\git\Achei\backend\Persistencia\Contexts\Application\ApplicationDbContext.cs, (?+
+%1%Entidades.Configuration.UsuarioConfig"%Entidades.Configuration.UsuarioConfigÏ
+Ì
+X
+ND:\git\Achei\backend\Persistencia\Contexts\Application\ApplicationDbContext.cs0 (=
+
+%2void"5Entidades.Configuration.UsuarioConfig.UsuarioConfig()*-
++
+%1%Entidades.Configuration.UsuarioConfigäá
+X
+ND:\git\Achei\backend\Persistencia\Contexts\Application\ApplicationDbContext.cs (@0
+%3*Microsoft.EntityFrameworkCore.ModelBuilder"‡Microsoft.EntityFrameworkCore.ModelBuilder.ApplyConfiguration<TEntity>(Microsoft.EntityFrameworkCore.IEntityTypeConfiguration<TEntity>)*<
+:
+modelBuilder*Microsoft.EntityFrameworkCore.ModelBuilder*-
++
+%1%Entidades.Configuration.UsuarioConfig2\ApplyConfiguration<TEntity>(Microsoft.EntityFrameworkCore.IEntityTypeConfiguration<TEntity>)«¨
+X
+ND:\git\Achei\backend\Persistencia\Contexts\Application\ApplicationDbContext.cs, (<(
+%4"Entidades.Configuration.ItemConfig""Entidades.Configuration.ItemConfigÆ
+Ã
+X
+ND:\git\Achei\backend\Persistencia\Contexts\Application\ApplicationDbContext.cs0 (:
+
+%5void"/Entidades.Configuration.ItemConfig.ItemConfig()**
+(
+%4"Entidades.Configuration.ItemConfigáÞ
+X
+ND:\git\Achei\backend\Persistencia\Contexts\Application\ApplicationDbContext.cs (=0
+%6*Microsoft.EntityFrameworkCore.ModelBuilder"‡Microsoft.EntityFrameworkCore.ModelBuilder.ApplyConfiguration<TEntity>(Microsoft.EntityFrameworkCore.IEntityTypeConfiguration<TEntity>)*<
+:
+modelBuilder*Microsoft.EntityFrameworkCore.ModelBuilder**
+(
+%4"Entidades.Configuration.ItemConfig2\ApplyConfiguration<TEntity>(Microsoft.EntityFrameworkCore.IEntityTypeConfiguration<TEntity>)©¦
+X
+ND:\git\Achei\backend\Persistencia\Contexts\Application\ApplicationDbContext.cs, (;'
+%7!Entidades.Configuration.TagConfig"!Entidades.Configuration.TagConfigÃ
+À
+X
+ND:\git\Achei\backend\Persistencia\Contexts\Application\ApplicationDbContext.cs0 (9
+
+%8void"-Entidades.Configuration.TagConfig.TagConfig()*)
+'
+%7!Entidades.Configuration.TagConfigàÝ
+X
+ND:\git\Achei\backend\Persistencia\Contexts\Application\ApplicationDbContext.cs (<0
+%9*Microsoft.EntityFrameworkCore.ModelBuilder"‡Microsoft.EntityFrameworkCore.ModelBuilder.ApplyConfiguration<TEntity>(Microsoft.EntityFrameworkCore.IEntityTypeConfiguration<TEntity>)*<
+:
+modelBuilder*Microsoft.EntityFrameworkCore.ModelBuilder*)
+'
+%7!Entidades.Configuration.TagConfig2\ApplyConfiguration<TEntity>(Microsoft.EntityFrameworkCore.IEntityTypeConfiguration<TEntity>)°­
+X
+ND:\git\Achei\backend\Persistencia\Contexts\Application\ApplicationDbContext.cs, (>+
+%10$Entidades.Configuration.RegiaoConfig"$Entidades.Configuration.RegiaoConfigÎ
+Ë
+X
+ND:\git\Achei\backend\Persistencia\Contexts\Application\ApplicationDbContext.cs0 (<
+%11void"3Entidades.Configuration.RegiaoConfig.RegiaoConfig()*-
++
+%10$Entidades.Configuration.RegiaoConfigåâ
+X
+ND:\git\Achei\backend\Persistencia\Contexts\Application\ApplicationDbContext.cs (?1
+%12*Microsoft.EntityFrameworkCore.ModelBuilder"‡Microsoft.EntityFrameworkCore.ModelBuilder.ApplyConfiguration<TEntity>(Microsoft.EntityFrameworkCore.IEntityTypeConfiguration<TEntity>)*<
+:
+modelBuilder*Microsoft.EntityFrameworkCore.ModelBuilder*-
++
+%10$Entidades.Configuration.RegiaoConfig2\ApplyConfiguration<TEntity>(Microsoft.EntityFrameworkCore.IEntityTypeConfiguration<TEntity>)º·
+X
+ND:\git\Achei\backend\Persistencia\Contexts\Application\ApplicationDbContext.cs, (C0
+%13)Entidades.Configuration.ItemPerdidoConfig")Entidades.Configuration.ItemPerdidoConfigÝ
+Ú
+X
+ND:\git\Achei\backend\Persistencia\Contexts\Application\ApplicationDbContext.cs0 (A
+%14void"=Entidades.Configuration.ItemPerdidoConfig.ItemPerdidoConfig()*2
+0
+%13)Entidades.Configuration.ItemPerdidoConfigêç
+X
+ND:\git\Achei\backend\Persistencia\Contexts\Application\ApplicationDbContext.cs (D1
+%15*Microsoft.EntityFrameworkCore.ModelBuilder"‡Microsoft.EntityFrameworkCore.ModelBuilder.ApplyConfiguration<TEntity>(Microsoft.EntityFrameworkCore.IEntityTypeConfiguration<TEntity>)*<
+:
+modelBuilder*Microsoft.EntityFrameworkCore.ModelBuilder*2
+0
+%13)Entidades.Configuration.ItemPerdidoConfig2\ApplyConfiguration<TEntity>(Microsoft.EntityFrameworkCore.IEntityTypeConfiguration<TEntity>)*
+1*t
+1"o
+X
+ND:\git\Achei\backend\Persistencia\Contexts\Application\ApplicationDbContext.cs (	
+implicit return::
+modelBuilder*Microsoft.EntityFrameworkCore.ModelBuilderB:8
+6Persistencia.Contexts.Application.ApplicationDbContext

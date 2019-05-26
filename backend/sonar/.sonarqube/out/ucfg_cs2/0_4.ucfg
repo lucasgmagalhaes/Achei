@@ -1,22 +1,19 @@
 
-eExceptions.Entity.EntityAlreadyExistsException.EntityAlreadyExistsException(string, System.Exception)P
-FD:\git\Achei\backend\Exceptions\Entity\EntityAlreadyExistsException.cs: :(+"0*ê
-0ß
-Ü
-P
-FD:\git\Achei\backend\Exceptions\Entity\EntityAlreadyExistsException.cs:M :(c
+IExceptions.Entity.EntityNotFoundException.EntityNotFoundException(string)K
+AD:\git\Achei\backend\Exceptions\Entity\EntityNotFoundException.cs, ,(&"0*¶
+0«
+¨
+K
+AD:\git\Achei\backend\Exceptions\Entity\EntityNotFoundException.cs,7 ,(F
 
-%0void"4System.Exception.Exception(string, System.Exception)*
+%0void""System.Exception.Exception(string)*
 System.Exception*
 
-messagestring*
-
-innerSystem.Exception*
-1*l
-1"g
-P
-FD:\git\Achei\backend\Exceptions\Entity\EntityAlreadyExistsException.cs:f :(g
+messagestring*
+1*g
+1"b
+K
+AD:\git\Achei\backend\Exceptions\Entity\EntityNotFoundException.cs,I ,(J
 implicit return:
-messagestring:
-innerSystem.ExceptionB20
-.Exceptions.Entity.EntityAlreadyExistsException
+messagestringB-+
+)Exceptions.Entity.EntityNotFoundException

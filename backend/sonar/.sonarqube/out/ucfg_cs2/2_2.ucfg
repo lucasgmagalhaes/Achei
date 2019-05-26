@@ -1,27 +1,19 @@
 
-Entidades.Entidades.Item.Item():
-0D:\git\Achei\backend\Entidades\Entidades\Item.cs ("0*Ç
-0çä
-:
-0D:\git\Achei\backend\Entidades\Entidades\Item.cs ("(
-%0"System.Collections.Generic.List<T>""System.Collections.Generic.List<T>¢
-ü
-:
-0D:\git\Achei\backend\Entidades\Entidades\Item.cs ( 
+≥Persistencia.Contexts.Application.ApplicationDbContext.ApplicationDbContext(Microsoft.EntityFrameworkCore.DbContextOptions<Persistencia.Contexts.Application.ApplicationDbContext>)X
+ND:\git\Achei\backend\Persistencia\Contexts\Application\ApplicationDbContext.cs (#"0*À
+0¿
+Ω
+X
+ND:\git\Achei\backend\Persistencia\Contexts\Application\ApplicationDbContext.csT (c
 
-%1void")System.Collections.Generic.List<T>.List()**
-(
-%0"System.Collections.Generic.List<T>¬ø
-:
-0D:\git\Achei\backend\Entidades\Entidades\Item.cs ("
-
-%2void"!Entidades.Entidades.Item.Tags.set*
-Entidades.Entidades.Item**
-(
-%0"System.Collections.Generic.List<T>2Tags.set*
-1*V
-1"Q
-:
-0D:\git\Achei\backend\Entidades\Entidades\Item.cs (	
-implicit returnB
-Entidades.Entidades.Item
+%0void"aMicrosoft.EntityFrameworkCore.DbContext.DbContext(Microsoft.EntityFrameworkCore.DbContextOptions)*+)
+'Microsoft.EntityFrameworkCore.DbContext*E
+C
+options8Microsoft.EntityFrameworkCore.DbContextOptions<TContext>*
+1*t
+1"o
+X
+ND:\git\Achei\backend\Persistencia\Contexts\Application\ApplicationDbContext.csf (g
+implicit return:C
+options8Microsoft.EntityFrameworkCore.DbContextOptions<TContext>B:8
+6Persistencia.Contexts.Application.ApplicationDbContext

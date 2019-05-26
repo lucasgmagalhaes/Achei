@@ -1,4 +1,90 @@
-Ÿ
+’
+4D:\git\Achei\backend\Migrations\v.3.0\20192505001.cs
+	namespace 	
+
+Migrations
+ 
+{ 
+[ 
+	Migration 
+( 
+$str 
+) 
+] 
+[		 
+	DbContext		 
+(		 
+typeof		 
+(		  
+ApplicationDbContext		 *
+)		* +
+)		+ ,
+]		, -
+public
+
+ 
+
+class
+
+  
+Conversor20192505001
+
+ %
+:
+
+& '
+	Migration
+
+( 1
+{ 
+	protected 
+override 
+void 
+Up  "
+(" #
+MigrationBuilder# 3
+migrationBuilder4 D
+)D E
+{ 	
+migrationBuilder 
+. %
+CreateForeignKeyWithIndex 6
+(6 7
+$str7 =
+,= >
+$str? E
+,E F
+$strG [
+,[ \
+$str] a
+)a b
+;b c
+migrationBuilder 
+. %
+CreateForeignKeyWithIndex 6
+(6 7
+$str7 =
+,= >
+$str? E
+,E F
+$strG Z
+,Z [
+$str\ `
+)` a
+;a b
+} 	
+	protected 
+override 
+void 
+Down  $
+($ %
+MigrationBuilder% 5
+migrationBuilder6 F
+)F G
+{ 	
+} 	
+} 
+} Ÿ
 2D:\git\Achei\backend\Migrations\v1.0\2019031001.cs
 	namespace 	
 

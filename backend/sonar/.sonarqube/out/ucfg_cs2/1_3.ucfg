@@ -1,90 +1,27 @@
 
-FExtensions.ObjectExtensionMethods.CopiarPropriedadesDe(object, object)C
-9D:\git\Achei\backend\Extensions\ObjectExtensionMethods.cs (/"0*¬
-0ž
-›
-C
-9D:\git\Achei\backend\Extensions\ObjectExtensionMethods.cs (
+#Entidades.Entidades.Regiao.Regiao()<
+2D:\git\Achei\backend\Entidades\Entidades\Regiao.cs ("0*Œ
+0Œ
+<
+2D:\git\Achei\backend\Entidades\Entidades\Regiao.cs (#(
+%0"System.Collections.Generic.List<T>""System.Collections.Generic.List<T>¤
+¡
+<
+2D:\git\Achei\backend\Entidades\Entidades\Regiao.cs (!
 
-%0bool""object.operator ==(object, object)*
-"
-object*
-
-fromobject*
-""*
-1
-2*æ
-1Š‡
-C
-9D:\git\Achei\backend\Extensions\ObjectExtensionMethods.cs (]"
-%1System.ArgumentNullException"System.ArgumentNullExceptionÎ
-Ë
-C
-9D:\git\Achei\backend\Extensions\ObjectExtensionMethods.cs (/
+%1void")System.Collections.Generic.List<T>.List()**
+(
+%0"System.Collections.Generic.List<T>ÈÅ
+<
+2D:\git\Achei\backend\Entidades\Entidades\Regiao.cs (#
 
-%2void"BSystem.ArgumentNullException.ArgumentNullException(string, string)*$
-"
-%1System.ArgumentNullException*
-""*
-""*
-3*»
-
-2~
-|
-C
-9D:\git\Achei\backend\Extensions\ObjectExtensionMethods.cs"! "(/
-%3System.Type"object.GetType()*
-
-fromobject¢
-Ÿ
-C
-9D:\git\Achei\backend\Extensions\ObjectExtensionMethods.cs"! "(?&
-%4 System.Reflection.PropertyInfo[]"System.Type.GetProperties()*
-
-%3System.Type¬
-©
-C
-9D:\git\Achei\backend\Extensions\ObjectExtensionMethods.cs" "(?2
-fromProperties System.Reflection.PropertyInfo[]"__id*(
-&
-%4 System.Reflection.PropertyInfo[]|
-z
-C
-9D:\git\Achei\backend\Extensions\ObjectExtensionMethods.cs# #(+
-%5System.Type"object.GetType()*
-
-toobject¢
-Ÿ
-C
-9D:\git\Achei\backend\Extensions\ObjectExtensionMethods.cs# #(;&
-%6 System.Reflection.PropertyInfo[]"System.Type.GetProperties()*
-
-%5System.Typeª
-§
-C
-9D:\git\Achei\backend\Extensions\ObjectExtensionMethods.cs# #(;0
-toProperties System.Reflection.PropertyInfo[]"__id*(
-&
-%6 System.Reflection.PropertyInfo[]Œ
-‰
-C
-9D:\git\Achei\backend\Extensions\ObjectExtensionMethods.cs% %(@
-
-%7void"‚Extensions.ObjectExtensionMethods.IniciarCopia(System.Reflection.PropertyInfo[], System.Reflection.PropertyInfo[], object, object)*%"#
-!Extensions.ObjectExtensionMethods*2
-0
-toProperties System.Reflection.PropertyInfo[]*4
-2
-fromProperties System.Reflection.PropertyInfo[]*
-
-toobject*
-
-fromobject*
-3*_
-3"Z
-C
-9D:\git\Achei\backend\Extensions\ObjectExtensionMethods.cs& &(	
-implicit return:
-toobject:
-fromobjectB%"#
-!Extensions.ObjectExtensionMethods
+%2void"#Entidades.Entidades.Regiao.Item.set*
+Entidades.Entidades.Regiao**
+(
+%0"System.Collections.Generic.List<T>2Item.set*
+1*X
+1"S
+<
+2D:\git\Achei\backend\Entidades\Entidades\Regiao.cs (	
+implicit returnB
+Entidades.Entidades.Regiao

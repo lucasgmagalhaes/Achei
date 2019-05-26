@@ -1,0 +1,4 @@
+Ž
+(Entidades.Configuration.ItemAchadoConfigobject†
+lConfigure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<Entidades.Entidades.ItemAchado>)•Entidades.Configuration.ItemAchadoConfig.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<Entidades.Entidades.ItemAchado>)Q
+ItemAchadoConfig();Entidades.Configuration.ItemAchadoConfig.ItemAchadoConfig()

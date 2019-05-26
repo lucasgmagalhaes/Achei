@@ -1,11 +1,4 @@
-Ñ
-Api.Token.TokenConfigurationsobjectL
-TokenConfigurations()3Api.Token.TokenConfigurations.TokenConfigurations():
-Audience.get*Api.Token.TokenConfigurations.Audience.get:
-Audience.set*Api.Token.TokenConfigurations.Audience.set6
-
-Issuer.get(Api.Token.TokenConfigurations.Issuer.get6
-
-Issuer.set(Api.Token.TokenConfigurations.Issuer.set8
-Seconds.get)Api.Token.TokenConfigurations.Seconds.get8
-Seconds.set)Api.Token.TokenConfigurations.Seconds.set
+½
+Api.Controllers.TagController'Microsoft.AspNetCore.Mvc.ControllerBaseobject®
+FTagController(Persistencia.Interfaces.ITagService, AutoMapper.IMapper)dApi.Controllers.TagController.TagController(Persistencia.Interfaces.ITagService, AutoMapper.IMapper):
+GetTag(long)*Api.Controllers.TagController.GetTag(long)

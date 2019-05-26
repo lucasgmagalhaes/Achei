@@ -1,7 +1,7 @@
 organization=lucasgmagalhaes-github
 projectKey=lucasgmagalhaes_Achei
 serverUrl=https://sonarcloud.io
-serverVersion=7.8.0.25122
+serverVersion=7.8.0.25269
 dashboardUrl=https://sonarcloud.io/dashboard?id=lucasgmagalhaes_Achei
-ceTaskId=AWrMinJyQJPBg5fHxKNr
-ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AWrMinJyQJPBg5fHxKNr
+ceTaskId=AWrya2OZ1j-PIqXcsMlp
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AWrya2OZ1j-PIqXcsMlp

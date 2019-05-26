@@ -13,12 +13,6 @@ steps:
     dotnet build --configuration $(buildConfiguration)
   displayName: 'dotnet build $(buildConfiguration)'
 
-- script: |
-    cd backend
-    cd sonar
-    sonar-analise.bat
-  displayName: 'Backend SonarLint'
-
 - task: NodeTool@0
   inputs:
     versionSpec: '10.x'
@@ -29,3 +23,10 @@ steps:
     npm install
     ng build --prod
   displayName: 'npm install and build'
+
+- script: |
+    cd backend
+    cd sonar
+    chmod +x sonar-analise.bat
+    ./sonar-analise.bat
+  displayName: 'Backend SonarLint'

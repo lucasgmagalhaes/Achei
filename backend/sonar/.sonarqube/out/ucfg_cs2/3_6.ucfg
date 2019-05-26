@@ -1,38 +1,182 @@
 
-{Persistencia.Contexts.Application.ApplicationDbContext.OnConfiguring(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder)X
-ND:\git\Achei\backend\Persistencia\Contexts\Application\ApplicationDbContext.cs  (-"0*π
-0Á‰
-X
-ND:\git\Achei\backend\Persistencia\Contexts\Application\ApplicationDbContext.cs (7;
-%05Microsoft.EntityFrameworkCore.DbContextOptionsBuilder"VMicrosoft.EntityFrameworkCore.DbContextOptionsBuilder.EnableSensitiveDataLogging(bool)*I
-G
-optionsBuilder5Microsoft.EntityFrameworkCore.DbContextOptionsBuilder*
-""2 EnableSensitiveDataLogging(bool)Ω
-∫
-X
-ND:\git\Achei\backend\Persistencia\Contexts\Application\ApplicationDbContext.cs (>
-%1string"-Persistencia.ConnectionString.GetConnection()*!"
-Persistencia.ConnectionString≤
-Ø
-X
-ND:\git\Achei\backend\Persistencia\Contexts\Application\ApplicationDbContext.cs (h;
-%25Microsoft.EntityFrameworkCore.DbContextOptionsBuilder"ÎMicrosoft.EntityFrameworkCore.SqlServerDbContextOptionsExtensions.UseSqlServer(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder, string, System.Action<Microsoft.EntityFrameworkCore.Infrastructure.SqlServerDbContextOptionsBuilder>)*E"C
-AMicrosoft.EntityFrameworkCore.SqlServerDbContextOptionsExtensions*I
-G
-optionsBuilder5Microsoft.EntityFrameworkCore.DbContextOptionsBuilder*
+ùExtensions.EF.Migrations.CreateForeignKeyWithIndex(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder, string, string, string, string, string, string):
+0D:\git\Achei\backend\Extensions\EF\Migrations.cs< <(4"0*°
+0ˆÛ
+:
+0D:\git\Achei\backend\Extensions\EF\Migrations.cs? B(_
+%0YMicrosoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder<TOperation>"ûMicrosoft.EntityFrameworkCore.Migrations.MigrationBuilder.AddColumn<T>(string, string, string, bool?, int?, bool, string, bool, object, string, string, bool?)*O
+M
+migrationBuilder9Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder*
+
+	newColumnstring*
+
+	baseTablestring*
+""*
+""*
+""*
+""*
+""*
+""*
+""*
+""*
+""*
+""2dAddColumn<T>(string, string, string, bool?, int?, bool, string, bool, object, string, string, bool?)ö
+ó
+:
+0D:\git\Achei\backend\Extensions\EF\Migrations.csD D(!
+
+%1bool""string.operator ==(string, string)*
+"
+string*
+
+	indexNamestring*
+""*
+1
+2*Ÿ
+1u
+s
+:
+0D:\git\Achei\backend\Extensions\EF\Migrations.csF F(9
+%2string"__concat*
+""*
+
+	baseTablestringn
+l
+:
+0D:\git\Achei\backend\Extensions\EF\Migrations.csF F(9
+%3string"__concat*
 
-%1string*
-""œÃ
-X
-ND:\git\Achei\backend\Persistencia\Contexts\Application\ApplicationDbContext.cs (';
-%35Microsoft.EntityFrameworkCore.DbContextOptionsBuilder"PMicrosoft.EntityFrameworkCore.DbContextOptionsBuilder.EnableDetailedErrors(bool)*=
-;
-%25Microsoft.EntityFrameworkCore.DbContextOptionsBuilder*
-""2EnableDetailedErrors(bool)*
-1*t
-1"o
-X
-ND:\git\Achei\backend\Persistencia\Contexts\Application\ApplicationDbContext.cs (	
-implicit return:G
-optionsBuilder5Microsoft.EntityFrameworkCore.DbContextOptionsBuilderB:8
-6Persistencia.Contexts.Application.ApplicationDbContext
+%2string*
+""}
+{
+:
+0D:\git\Achei\backend\Extensions\EF\Migrations.csF F(9
+%4string"__concat*
+
+%3string*
+
+	newColumnstringi
+g
+:
+0D:\git\Achei\backend\Extensions\EF\Migrations.csF F(9
+	indexNamestring"__id*
+
+%4string*
+2*¶
+2˛˚
+:
+0D:\git\Achei\backend\Extensions\EF\Migrations.csI L("_
+%5YMicrosoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder<TOperation>"sMicrosoft.EntityFrameworkCore.Migrations.MigrationBuilder.CreateIndex(string, string, string, string, bool, string)*O
+M
+migrationBuilder9Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder*
+
+	indexNamestring*
+
+	baseTablestring*
+
+	newColumnstring*
+""*
+""*
+""29CreateIndex(string, string, string, string, bool, string)ó
+î
+:
+0D:\git\Achei\backend\Extensions\EF\Migrations.csN N(
+
+%6bool""string.operator ==(string, string)*
+"
+string*
+
+fkNamestring*
+""*
+3
+4*Õ
+3u
+s
+:
+0D:\git\Achei\backend\Extensions\EF\Migrations.csP P(E
+%7string"__concat*
+""*
+
+	baseTablestringn
+l
+:
+0D:\git\Achei\backend\Extensions\EF\Migrations.csP P(E
+%8string"__concat*
+
+%7string*
+""Ä
+~
+:
+0D:\git\Achei\backend\Extensions\EF\Migrations.csP P(E
+%9string"__concat*
+
+%8string*
+
+foreignTablestringo
+m
+:
+0D:\git\Achei\backend\Extensions\EF\Migrations.csP P(E
+%10string"__concat*
+
+%9string*
+""
+}
+:
+0D:\git\Achei\backend\Extensions\EF\Migrations.csP P(E
+%11string"__concat*
+
+%10string*
+
+	newColumnstringg
+e
+:
+0D:\git\Achei\backend\Extensions\EF\Migrations.csP P(E
+fkNamestring"__id*
+
+%11string*
+4*Ç
+4S
+Q
+:
+0D:\git\Achei\backend\Extensions\EF\Migrations.csY Y(4
+%12"__id*
+""S
+Q
+:
+0D:\git\Achei\backend\Extensions\EF\Migrations.csZ Z(4
+%13"__id*
+""Õ 
+:
+0D:\git\Achei\backend\Extensions\EF\Migrations.csS Z(5`
+%14YMicrosoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder<TOperation>"˜Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder.AddForeignKey(string, string, string, string, string, string, string, Microsoft.EntityFrameworkCore.Migrations.ReferentialAction, Microsoft.EntityFrameworkCore.Migrations.ReferentialAction)*O
+M
+migrationBuilder9Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder*
+
+fkNamestring*
+
+	baseTablestring*
+
+	newColumnstring*
+
+foreignTablestring*
+""*
+""*!
+
+foreignTableReferencestring*
+
+%13*
+
+%122ΩAddForeignKey(string, string, string, string, string, string, string, Microsoft.EntityFrameworkCore.Migrations.ReferentialAction, Microsoft.EntityFrameworkCore.Migrations.ReferentialAction)*
+5*V
+5"Q
+:
+0D:\git\Achei\backend\Extensions\EF\Migrations.cs[ [(	
+implicit return:M
+migrationBuilder9Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder:
+	baseTablestring:
+foreignTablestring:
+	newColumnstring:
+foreignTableReferencestring:
+	indexNamestring:
+fkNamestringB"
+Extensions.EF.Migrations

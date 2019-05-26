@@ -1,9 +1,9 @@
-¯
-!Api.Controllers.UsuarioController'Microsoft.AspNetCore.Mvc.ControllerBaseobjectš
-:UsuarioController(Persistencia.Interfaces.IUsuarioService)\Api.Controllers.UsuarioController.UsuarioController(Persistencia.Interfaces.IUsuarioService)8
-	Get(long)+Api.Controllers.UsuarioController.Get(long)h
-!Post(Entidades.Entidades.Usuario)CApi.Controllers.UsuarioController.Post(Entidades.Entidades.Usuario)r
-&Atualizar(Entidades.Entidades.Usuario)HApi.Controllers.UsuarioController.Atualizar(Entidades.Entidades.Usuario)>
-Delete(long).Api.Controllers.UsuarioController.Delete(long)®
-DBuscarItensAchados(long, Persistencia.Interfaces.IItemAchadoService)fApi.Controllers.UsuarioController.BuscarItensAchados(long, Persistencia.Interfaces.IItemAchadoService)²
-FBuscarItensPerdidos(long, Persistencia.Interfaces.IItemPerdidoService)hApi.Controllers.UsuarioController.BuscarItensPerdidos(long, Persistencia.Interfaces.IItemPerdidoService)
+“
+$Api.Controllers.ItemAchadoController'Microsoft.AspNetCore.Mvc.ControllerBaseobjectÑ
+TItemAchadoController(Persistencia.Interfaces.IItemAchadoService, AutoMapper.IMapper)yApi.Controllers.ItemAchadoController.ItemAchadoController(Persistencia.Interfaces.IItemAchadoService, AutoMapper.IMapper)M
+BuscarAchado(long)7Api.Controllers.ItemAchadoController.BuscarAchado(long){
+)Atualizar(Entidades.Entidades.ItemAchado)NApi.Controllers.ItemAchadoController.Atualizar(Entidades.Entidades.ItemAchado)C
+Excluir(long)2Api.Controllers.ItemAchadoController.Excluir(long)u
+&Salvar(Entidades.Entidades.ItemAchado)KApi.Controllers.ItemAchadoController.Salvar(Entidades.Entidades.ItemAchado)³
+EBuscarRegiaoItemPerdido(long, Persistencia.Interfaces.IRegiaoService)jApi.Controllers.ItemAchadoController.BuscarRegiaoItemPerdido(long, Persistencia.Interfaces.IRegiaoService)§
+?BuscarTagItemPerdido(long, Persistencia.Interfaces.ITagService)dApi.Controllers.ItemAchadoController.BuscarTagItemPerdido(long, Persistencia.Interfaces.ITagService)

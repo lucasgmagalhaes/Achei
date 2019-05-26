@@ -1,119 +1,27 @@
 
-áExtensions.ObjectExtensionMethods.ValidarParametros(System.Reflection.PropertyInfo[], System.Reflection.PropertyInfo[], object, object)C
-9D:\git\Achei\backend\Extensions\ObjectExtensionMethods.cs` `(-"0*Œ
-0¿
-Ω
-C
-9D:\git\Achei\backend\Extensions\ObjectExtensionMethods.csb b($
+Entidades.Entidades.Item.Item():
+0D:\git\Achei\backend\Entidades\Entidades\Item.cs ("0*Ç
+0çä
+:
+0D:\git\Achei\backend\Entidades\Entidades\Item.cs ("(
+%0"System.Collections.Generic.List<T>""System.Collections.Generic.List<T>¢
+ü
+:
+0D:\git\Achei\backend\Entidades\Entidades\Item.cs ( 
 
-%0bool""object.operator ==(object, object)*
-"
-object*2
-0
-toProperties System.Reflection.PropertyInfo[]*
-""*
-1
-2*Ê
-1äá
-C
-9D:\git\Achei\backend\Extensions\ObjectExtensionMethods.csd d(k"
-%1System.ArgumentNullException"System.ArgumentNullExceptionŒ
-À
-C
-9D:\git\Achei\backend\Extensions\ObjectExtensionMethods.csd d(/
+%1void")System.Collections.Generic.List<T>.List()**
+(
+%0"System.Collections.Generic.List<T>¬ø
+:
+0D:\git\Achei\backend\Entidades\Entidades\Item.cs ("
 
-%2void"BSystem.ArgumentNullException.ArgumentNullException(string, string)*$
-"
-%1System.ArgumentNullException*
-""*
-""*
-3*–
-2¬
-ø
-C
-9D:\git\Achei\backend\Extensions\ObjectExtensionMethods.csf f(+
-
-%3bool""object.operator ==(object, object)*
-"
-object*4
-2
-fromProperties System.Reflection.PropertyInfo[]*
-""*
-4
-5*Ê
-4äá
-C
-9D:\git\Achei\backend\Extensions\ObjectExtensionMethods.csh h(m"
-%4System.ArgumentNullException"System.ArgumentNullExceptionŒ
-À
-C
-9D:\git\Achei\backend\Extensions\ObjectExtensionMethods.csh h(/
-
-%5void"BSystem.ArgumentNullException.ArgumentNullException(string, string)*$
-"
-%4System.ArgumentNullException*
-""*
-""*
-3*™
-5ú
-ô
-C
-9D:\git\Achei\backend\Extensions\ObjectExtensionMethods.csj j(
-
-%6bool""object.operator ==(object, object)*
-"
-object*
-
-toobject*
-""*
-6
-7*Ê
-6äá
-C
-9D:\git\Achei\backend\Extensions\ObjectExtensionMethods.csl l(i"
-%7System.ArgumentNullException"System.ArgumentNullExceptionŒ
-À
-C
-9D:\git\Achei\backend\Extensions\ObjectExtensionMethods.csl l(/
-
-%8void"BSystem.ArgumentNullException.ArgumentNullException(string, string)*$
-"
-%7System.ArgumentNullException*
-""*
-""*
-3*¨
-7û
-õ
-C
-9D:\git\Achei\backend\Extensions\ObjectExtensionMethods.csn n(!
-
-%9bool""object.operator ==(object, object)*
-"
-object*
-
-fromobject*
-""*
-8
-3*È
-8ãà
-C
-9D:\git\Achei\backend\Extensions\ObjectExtensionMethods.csp p(k#
-%10System.ArgumentNullException"System.ArgumentNullException–
-Õ
-C
-9D:\git\Achei\backend\Extensions\ObjectExtensionMethods.csp p(/
-%11void"BSystem.ArgumentNullException.ArgumentNullException(string, string)*%
-#
-%10System.ArgumentNullException*
-""*
-""*
-3*_
-3"Z
-C
-9D:\git\Achei\backend\Extensions\ObjectExtensionMethods.csr r(	
-implicit return:0
-toProperties System.Reflection.PropertyInfo[]:2
-fromProperties System.Reflection.PropertyInfo[]:
-toobject:
-fromobjectB%"#
-!Extensions.ObjectExtensionMethods
+%2void"!Entidades.Entidades.Item.Tags.set*
+Entidades.Entidades.Item**
+(
+%0"System.Collections.Generic.List<T>2Tags.set*
+1*V
+1"Q
+:
+0D:\git\Achei\backend\Entidades\Entidades\Item.cs (	
+implicit returnB
+Entidades.Entidades.Item

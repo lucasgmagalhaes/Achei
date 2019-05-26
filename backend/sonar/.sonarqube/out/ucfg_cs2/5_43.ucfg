@@ -1,170 +1,116 @@
 
-ZApi.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)-
-#D:\git\Achei\backend\Api\Startup.cs, ,(%"0*ÈA
-0û
-õ
--
-#D:\git\Achei\backend\Api\Startup.cs. .(A
-%0;Microsoft.Extensions.DependencyInjection.IServiceCollection"çMicrosoft.Extensions.DependencyInjection.CorsServiceCollectionExtensions.AddCors(Microsoft.Extensions.DependencyInjection.IServiceCollection)*L"J
-HMicrosoft.Extensions.DependencyInjection.CorsServiceCollectionExtensions*I
-G
-services;Microsoft.Extensions.DependencyInjection.IServiceCollectioná
-Ñ
--
-#D:\git\Achei\backend\Api\Startup.cs/ /(5
-%1/Microsoft.AspNet.OData.Interfaces.IODataBuilder"àMicrosoft.AspNet.OData.Extensions.ODataServiceCollectionExtensions.AddOData(Microsoft.Extensions.DependencyInjection.IServiceCollection)*F"D
-BMicrosoft.AspNet.OData.Extensions.ODataServiceCollectionExtensions*I
-G
-services;Microsoft.Extensions.DependencyInjection.IServiceCollectionî
-ë
--
-#D:\git\Achei\backend\Api\Startup.cs0 0(:
-%24Microsoft.Extensions.DependencyInjection.IMvcBuilder"ãMicrosoft.Extensions.DependencyInjection.MvcServiceCollectionExtensions.AddMvc(Microsoft.Extensions.DependencyInjection.IServiceCollection)*K"I
-GMicrosoft.Extensions.DependencyInjection.MvcServiceCollectionExtensions*I
-G
-services;Microsoft.Extensions.DependencyInjection.IServiceCollectionE
-C
--
-#D:\git\Achei\backend\Api\Startup.cs06 0(V
-%3"__id*
-""¬
-ø
--
-#D:\git\Achei\backend\Api\Startup.cs0 0(W:
-%44Microsoft.Extensions.DependencyInjection.IMvcBuilder"¡Microsoft.Extensions.DependencyInjection.MvcCoreMvcBuilderExtensions.SetCompatibilityVersion(Microsoft.Extensions.DependencyInjection.IMvcBuilder, Microsoft.AspNetCore.Mvc.CompatibilityVersion)*H"F
-DMicrosoft.Extensions.DependencyInjection.MvcCoreMvcBuilderExtensions*<
-:
-%24Microsoft.Extensions.DependencyInjection.IMvcBuilder*
-
-%3–
-Õ
--
-#D:\git\Achei\backend\Api\Startup.cs2 2(MA
-%5;Microsoft.Extensions.DependencyInjection.IServiceCollection"¨Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddScoped(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Type, System.Type)*O"M
+`Api.Startup.ConfigureAuthentication(Microsoft.Extensions.DependencyInjection.IServiceCollection)/
+#D:\git\Achei\backend\Api\Startup.csë ë(,"0*û%
+0{y
+/
+#D:\git\Achei\backend\Api\Startup.csì: ì(U%
+%0Api.Token.SigningConfigurations"Api.Token.SigningConfigurations¢
+ü
+/
+#D:\git\Achei\backend\Api\Startup.csì> ì(S
+
+%1void"7Api.Token.SigningConfigurations.SigningConfigurations()*'
+%
+%0Api.Token.SigningConfigurationsù
+ö
+/
+#D:\git\Achei\backend\Api\Startup.csì" ì(U8
+signingConfigurationsApi.Token.SigningConfigurations"__id*'
+%
+%0Api.Token.SigningConfigurations˚
+¯
+/
+#D:\git\Achei\backend\Api\Startup.csî î(8A
+%2;Microsoft.Extensions.DependencyInjection.IServiceCollection"©Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton<TService>(Microsoft.Extensions.DependencyInjection.IServiceCollection, TService)*O"M
 KMicrosoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions*I
+G
+services;Microsoft.Extensions.DependencyInjection.IServiceCollection*:
+8
+signingConfigurationsApi.Token.SigningConfigurationswu
+/
+#D:\git\Achei\backend\Api\Startup.csñ6 ñ(O#
+%3Api.Token.TokenConfigurations"Api.Token.TokenConfigurationsú
+ô
+/
+#D:\git\Achei\backend\Api\Startup.csñ: ñ(M
+
+%4void"3Api.Token.TokenConfigurations.TokenConfigurations()*%
+#
+%3Api.Token.TokenConfigurationsó
+î
+/
+#D:\git\Achei\backend\Api\Startup.csñ  ñ(O4
+tokenConfigurationsApi.Token.TokenConfigurations"__id*%
+#
+%3Api.Token.TokenConfigurationsù
+ö
+/
+#D:\git\Achei\backend\Api\Startup.csò ò(7
+%51Microsoft.Extensions.Configuration.IConfiguration"Api.Startup.Configuration.get*
+Api.Startupëé
+/
+#D:\git\Achei\backend\Api\Startup.csò ò(?>
+%68Microsoft.Extensions.Configuration.IConfigurationSection"DMicrosoft.Extensions.Configuration.IConfiguration.GetSection(string)*9
+7
+%51Microsoft.Extensions.Configuration.IConfiguration*
+""2GetSection(string)ŒÀ
+/
+#D:\git\Achei\backend\Api\Startup.csó ò(@N
+%7HMicrosoft.Extensions.Options.ConfigureFromConfigurationOptions<TOptions>"HMicrosoft.Extensions.Options.ConfigureFromConfigurationOptions<TOptions>Ù
+Ò
+/
+#D:\git\Achei\backend\Api\Startup.csó ó(F
+
+%8void"ùMicrosoft.Extensions.Options.ConfigureFromConfigurationOptions<TOptions>.ConfigureFromConfigurationOptions(Microsoft.Extensions.Configuration.IConfiguration)*P
+N
+%7HMicrosoft.Extensions.Options.ConfigureFromConfigurationOptions<TOptions>*@
+>
+%68Microsoft.Extensions.Configuration.IConfigurationSection¨©
+/
+#D:\git\Achei\backend\Api\Startup.csó ô(3
+
+%9void"KMicrosoft.Extensions.Options.ConfigureOptions<TOptions>.Configure(TOptions)*P
+N
+%7HMicrosoft.Extensions.Options.ConfigureFromConfigurationOptions<TOptions>*6
+4
+tokenConfigurationsApi.Token.TokenConfigurations2Configure(TOptions)¯
+ı
+/
+#D:\git\Achei\backend\Api\Startup.csö ö(6B
+%10;Microsoft.Extensions.DependencyInjection.IServiceCollection"©Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton<TService>(Microsoft.Extensions.DependencyInjection.IServiceCollection, TService)*O"M
+KMicrosoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions*I
+G
+services;Microsoft.Extensions.DependencyInjection.IServiceCollection*6
+4
+tokenConfigurationsApi.Token.TokenConfigurationsè
+å
+/
+#D:\git\Achei\backend\Api\Startup.csù °(@
+%119Microsoft.AspNetCore.Authentication.AuthenticationBuilder"ÎMicrosoft.Extensions.DependencyInjection.AuthenticationServiceCollectionExtensions.AddAuthentication(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Action<Microsoft.AspNetCore.Authentication.AuthenticationOptions>)*V"T
+RMicrosoft.Extensions.DependencyInjection.AuthenticationServiceCollectionExtensions*I
 G
 services;Microsoft.Extensions.DependencyInjection.IServiceCollection*
-""*
-""–
-Õ
--
-#D:\git\Achei\backend\Api\Startup.cs3 3(YA
-%6;Microsoft.Extensions.DependencyInjection.IServiceCollection"¨Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddScoped(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Type, System.Type)*O"M
-KMicrosoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions*I
-G
-services;Microsoft.Extensions.DependencyInjection.IServiceCollection*
-""*
-""–
-Õ
--
-#D:\git\Achei\backend\Api\Startup.cs4 4(OA
-%7;Microsoft.Extensions.DependencyInjection.IServiceCollection"¨Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddScoped(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Type, System.Type)*O"M
-KMicrosoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions*I
-G
-services;Microsoft.Extensions.DependencyInjection.IServiceCollection*
-""*
-""–
-Õ
--
-#D:\git\Achei\backend\Api\Startup.cs5 5(UA
-%8;Microsoft.Extensions.DependencyInjection.IServiceCollection"¨Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddScoped(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Type, System.Type)*O"M
-KMicrosoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions*I
-G
-services;Microsoft.Extensions.DependencyInjection.IServiceCollection*
-""*
-""–
-Õ
--
-#D:\git\Achei\backend\Api\Startup.cs6 6(WA
-%9;Microsoft.Extensions.DependencyInjection.IServiceCollection"¨Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddScoped(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Type, System.Type)*O"M
-KMicrosoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions*I
-G
-services;Microsoft.Extensions.DependencyInjection.IServiceCollection*
-""*
-""—
-Œ
--
-#D:\git\Achei\backend\Api\Startup.cs7 7(MB
-%10;Microsoft.Extensions.DependencyInjection.IServiceCollection"¨Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddScoped(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Type, System.Type)*O"M
-KMicrosoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions*I
-G
-services;Microsoft.Extensions.DependencyInjection.IServiceCollection*
-""*
-""—
-Œ
--
-#D:\git\Achei\backend\Api\Startup.cs8 8(GB
-%11;Microsoft.Extensions.DependencyInjection.IServiceCollection"¨Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddScoped(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Type, System.Type)*O"M
-KMicrosoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions*I
-G
-services;Microsoft.Extensions.DependencyInjection.IServiceCollection*
-""*
-""»
-≈
--
-#D:\git\Achei\backend\Api\Startup.cs: :(`B
-%12;Microsoft.Extensions.DependencyInjection.IServiceCollection"≤Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.Scan(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Action<Scrutor.ITypeSourceSelector>)*H"F
-DMicrosoft.Extensions.DependencyInjection.ServiceCollectionExtensions*I
-G
-services;Microsoft.Extensions.DependencyInjection.IServiceCollection*
-""≈
-¬
--
-#D:\git\Achei\backend\Api\Startup.cs< <(NB
-%13;Microsoft.Extensions.DependencyInjection.IServiceCollection"∞Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton<TService, TImplementation>(Microsoft.Extensions.DependencyInjection.IServiceCollection)*O"M
-KMicrosoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions*I
-G
-services;Microsoft.Extensions.DependencyInjection.IServiceCollection≈
-¬
--
-#D:\git\Achei\backend\Api\Startup.cs= =(KB
-%14;Microsoft.Extensions.DependencyInjection.IServiceCollection"∞Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton<TService, TImplementation>(Microsoft.Extensions.DependencyInjection.IServiceCollection)*O"M
-KMicrosoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions*I
-G
-services;Microsoft.Extensions.DependencyInjection.IServiceCollectionñ
-ì
--
-#D:\git\Achei\backend\Api\Startup.cs? ?(9B
-%15;Microsoft.Extensions.DependencyInjection.IServiceCollection"·Microsoft.Extensions.DependencyInjection.EntityFrameworkServiceCollectionExtensions.AddDbContext<TContext>(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Action<Microsoft.EntityFrameworkCore.DbContextOptionsBuilder>, Microsoft.Extensions.DependencyInjection.ServiceLifetime, Microsoft.Extensions.DependencyInjection.ServiceLifetime)*W"U
-SMicrosoft.Extensions.DependencyInjection.EntityFrameworkServiceCollectionExtensions*I
-G
-services;Microsoft.Extensions.DependencyInjection.IServiceCollection*
-""*
-""*
-""x
-v
--
-#D:\git\Achei\backend\Api\Startup.csA" A(4
-%16AutoMapper.IMapper"Api.Mapeamento.Criar()*"
-Api.Mapeamento€
-ÿ
--
-#D:\git\Achei\backend\Api\Startup.csA A(5B
-%17;Microsoft.Extensions.DependencyInjection.IServiceCollection"©Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton<TService>(Microsoft.Extensions.DependencyInjection.IServiceCollection, TService)*O"M
-KMicrosoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions*I
-G
-services;Microsoft.Extensions.DependencyInjection.IServiceCollection*
-
-%16AutoMapper.IMapper˝
-˙
--
-#D:\git\Achei\backend\Api\Startup.csC C(-
-%18void"`Api.Startup.ConfigureAuthentication(Microsoft.Extensions.DependencyInjection.IServiceCollection)*
-Api.Startup*I
-G
-services;Microsoft.Extensions.DependencyInjection.IServiceCollection˝
-˙
--
-#D:\git\Achei\backend\Api\Startup.csE Z(B
-%19;Microsoft.Extensions.DependencyInjection.IServiceCollection"›Microsoft.Extensions.DependencyInjection.SwaggerGenServiceCollectionExtensions.AddSwaggerGen(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Action<Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenOptions>)*R"P
-NMicrosoft.Extensions.DependencyInjection.SwaggerGenServiceCollectionExtensions*I
+""⁄
+◊
+/
+#D:\git\Achei\backend\Api\Startup.csù ™(@
+%129Microsoft.AspNetCore.Authentication.AuthenticationBuilder"”Microsoft.Extensions.DependencyInjection.JwtBearerExtensions.AddJwtBearer(Microsoft.AspNetCore.Authentication.AuthenticationBuilder, System.Action<Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerOptions>)*@">
+<Microsoft.Extensions.DependencyInjection.JwtBearerExtensions*B
+@
+%119Microsoft.AspNetCore.Authentication.AuthenticationBuilder*
+""å
+â
+/
+#D:\git\Achei\backend\Api\Startup.cs¨ ±(B
+%13;Microsoft.Extensions.DependencyInjection.IServiceCollection"ÁMicrosoft.Extensions.DependencyInjection.AuthorizationServiceCollectionExtensions.AddAuthorization(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Action<Microsoft.AspNetCore.Authorization.AuthorizationOptions>)*U"S
+QMicrosoft.Extensions.DependencyInjection.AuthorizationServiceCollectionExtensions*I
 G
 services;Microsoft.Extensions.DependencyInjection.IServiceCollection*
 ""*
-1*I
-1"D
--
-#D:\git\Achei\backend\Api\Startup.cs\ \(	
+1*K
+1"F
+/
+#D:\git\Achei\backend\Api\Startup.cs≤ ≤(	
 implicit return:G
 services;Microsoft.Extensions.DependencyInjection.IServiceCollectionB
 Api.Startup

@@ -1,0 +1,4 @@
+•
+)Entidades.Configuration.ItemPerdidoConfigobject‰
+mConfigure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<Entidades.Entidades.ItemPerdido>)—Entidades.Configuration.ItemPerdidoConfig.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<Entidades.Entidades.ItemPerdido>)T
+ItemPerdidoConfig()=Entidades.Configuration.ItemPerdidoConfig.ItemPerdidoConfig()

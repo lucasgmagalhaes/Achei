@@ -1,19 +1,39 @@
 
-³Persistencia.Contexts.Application.ApplicationDbContext.ApplicationDbContext(Microsoft.EntityFrameworkCore.DbContextOptions<Persistencia.Contexts.Application.ApplicationDbContext>)X
-ND:\git\Achei\backend\Persistencia\Contexts\Application\ApplicationDbContext.cs	 	(#"0*Ë
-0À
-½
-X
-ND:\git\Achei\backend\Persistencia\Contexts\Application\ApplicationDbContext.cs	T 	(c
-
-%0void"aMicrosoft.EntityFrameworkCore.DbContext.DbContext(Microsoft.EntityFrameworkCore.DbContextOptions)*+)
-'Microsoft.EntityFrameworkCore.DbContext*E
-C
-options8Microsoft.EntityFrameworkCore.DbContextOptions<TContext>*
-1*t
-1"o
-X
-ND:\git\Achei\backend\Persistencia\Contexts\Application\ApplicationDbContext.cs	f 	(g
-implicit return:C
-options8Microsoft.EntityFrameworkCore.DbContextOptions<TContext>B:8
-6Persistencia.Contexts.Application.ApplicationDbContext
+gExtensions.EF.Migrations.TableExists(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder, string):
+0D:\git\Achei\backend\Extensions\EF\Migrations.cs (&"0*
+0*
+1
+2*¨
+2q
+o
+:
+0D:\git\Achei\backend\Extensions\EF\Migrations.cs% (C
+%0string"__concat*
+""*
+
+tablestringéæ
+:
+0D:\git\Achei\backend\Extensions\EF\Migrations.cs (D_
+%1YMicrosoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder<TOperation>"KMicrosoft.EntityFrameworkCore.Migrations.MigrationBuilder.Sql(string, bool)*O
+M
+migrationBuilder9Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder*
+
+%0string*
+""2Sql(string, bool)"D
+:
+0D:\git\Achei\backend\Extensions\EF\Migrations.cs (
+""*
+3*
+1
+4*I
+1"D
+:
+0D:\git\Achei\backend\Extensions\EF\Migrations.cs (
+""*V
+4"Q
+:
+0D:\git\Achei\backend\Extensions\EF\Migrations.cs (	
+implicit return:M
+migrationBuilder9Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder:
+tablestringB"
+Extensions.EF.Migrations

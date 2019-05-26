@@ -1,0 +1,40 @@
+
+{Persistencia.Contexts.Application.ApplicationDbContext.OnConfiguring(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder)X
+ND:\git\Achei\backend\Persistencia\Contexts\Application\ApplicationDbContext.cs
+  
+(-"0*¹
+0çä
+X
+ND:\git\Achei\backend\Persistencia\Contexts\Application\ApplicationDbContext.cs (7;
+%05Microsoft.EntityFrameworkCore.DbContextOptionsBuilder"VMicrosoft.EntityFrameworkCore.DbContextOptionsBuilder.EnableSensitiveDataLogging(bool)*I
+G
+optionsBuilder5Microsoft.EntityFrameworkCore.DbContextOptionsBuilder*
+""2 EnableSensitiveDataLogging(bool)½
+º
+X
+ND:\git\Achei\backend\Persistencia\Contexts\Application\ApplicationDbContext.cs (>
+%1string"-Persistencia.ConnectionString.GetConnection()*!"
+Persistencia.ConnectionString²
+¯
+X
+ND:\git\Achei\backend\Persistencia\Contexts\Application\ApplicationDbContext.cs (h;
+%25Microsoft.EntityFrameworkCore.DbContextOptionsBuilder"ëMicrosoft.EntityFrameworkCore.SqlServerDbContextOptionsExtensions.UseSqlServer(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder, string, System.Action<Microsoft.EntityFrameworkCore.Infrastructure.SqlServerDbContextOptionsBuilder>)*E"C
+AMicrosoft.EntityFrameworkCore.SqlServerDbContextOptionsExtensions*I
+G
+optionsBuilder5Microsoft.EntityFrameworkCore.DbContextOptionsBuilder*
+
+%1string*
+""ÏÌ
+X
+ND:\git\Achei\backend\Persistencia\Contexts\Application\ApplicationDbContext.cs (';
+%35Microsoft.EntityFrameworkCore.DbContextOptionsBuilder"PMicrosoft.EntityFrameworkCore.DbContextOptionsBuilder.EnableDetailedErrors(bool)*=
+;
+%25Microsoft.EntityFrameworkCore.DbContextOptionsBuilder*
+""2EnableDetailedErrors(bool)*
+1*t
+1"o
+X
+ND:\git\Achei\backend\Persistencia\Contexts\Application\ApplicationDbContext.cs (	
+implicit return:G
+optionsBuilder5Microsoft.EntityFrameworkCore.DbContextOptionsBuilderB:8
+6Persistencia.Contexts.Application.ApplicationDbContext

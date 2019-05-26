@@ -1,111 +1,27 @@
 
-ÇExtensions.ObjectExtensionMethods.IniciarCopia(System.Reflection.PropertyInfo[], System.Reflection.PropertyInfo[], object, object)C
-9D:\git\Achei\backend\Extensions\ObjectExtensionMethods.csO O(("0*ú
-0ë
-é
-C
-9D:\git\Achei\backend\Extensions\ObjectExtensionMethods.csQ Q(E
++Entidades.Entidades.ItemAchado.ItemAchado()@
+6D:\git\Achei\backend\Entidades\Entidades\ItemAchado.cs ("0*º
+0ìê
+@
+6D:\git\Achei\backend\Entidades\Entidades\ItemAchado.cs! (8(
+%0"System.Collections.Generic.List<T>""System.Collections.Generic.List<T>®
+•
+@
+6D:\git\Achei\backend\Entidades\Entidades\ItemAchado.cs% (6
 
-%0void"áExtensions.ObjectExtensionMethods.ValidarParametros(System.Reflection.PropertyInfo[], System.Reflection.PropertyInfo[], object, object)*%"#
-!Extensions.ObjectExtensionMethods*2
-0
-toProperties System.Reflection.PropertyInfo[]*4
-2
-fromProperties System.Reflection.PropertyInfo[]*
-
-toobject*
-
-fromobject*
-1*
-1*
-2
-3*
-2*
-4*
-4*
-5
-1*î
-5Ø
-¨
-C
-9D:\git\Achei\backend\Extensions\ObjectExtensionMethods.csW W()
-%1string"%System.Reflection.MemberInfo.Name.get*0
-.
-fromPropertySystem.Reflection.PropertyInfo≠
-™
-C
-9D:\git\Achei\backend\Extensions\ObjectExtensionMethods.csW- W(<
-%2string"%System.Reflection.MemberInfo.Name.get*.
-,
+%1void")System.Collections.Generic.List<T>.List()**
+(
+%0"System.Collections.Generic.List<T>Ì
+@
+6D:\git\Achei\backend\Entidades\Entidades\ItemAchado.cs (8
 
-toPropertySystem.Reflection.PropertyInfo§
-°
-C
-9D:\git\Achei\backend\Extensions\ObjectExtensionMethods.csW W(<
-
-%3bool""string.operator ==(string, string)*
-"
-string*
-
-%1string*
-
-%2string*
-6
-4*–
-6æ
-ª
-C
-9D:\git\Achei\backend\Extensions\ObjectExtensionMethods.csW@ W(Y
-%4System.Type"/System.Reflection.PropertyInfo.PropertyType.get*0
-.
-fromPropertySystem.Reflection.PropertyInfoº
-π
-C
-9D:\git\Achei\backend\Extensions\ObjectExtensionMethods.csW] W(t
-%5System.Type"/System.Reflection.PropertyInfo.PropertyType.get*.
-,
-
-toPropertySystem.Reflection.PropertyInfo¬
-ø
-C
-9D:\git\Achei\backend\Extensions\ObjectExtensionMethods.csW@ W(t
-
-%6bool"1System.Type.operator ==(System.Type, System.Type)*"
-System.Type*
-
-%4System.Type*
-
-%5System.Type*
-7
-4*∂
-7À
-»
-C
-9D:\git\Achei\backend\Extensions\ObjectExtensionMethods.csY0 Y(K
-%7object"/System.Reflection.PropertyInfo.GetValue(object)*0
-.
-fromPropertySystem.Reflection.PropertyInfo*
-
-fromobject›
-⁄
-C
-9D:\git\Achei\backend\Extensions\ObjectExtensionMethods.csY Y(L
-
-%8void"7System.Reflection.PropertyInfo.SetValue(object, object)*.
-,
-
-toPropertySystem.Reflection.PropertyInfo*
-
-toobject*
-
-%7object*
-1*_
-3"Z
-C
-9D:\git\Achei\backend\Extensions\ObjectExtensionMethods.cs^ ^(	
-implicit return:0
-toProperties System.Reflection.PropertyInfo[]:2
-fromProperties System.Reflection.PropertyInfo[]:
-toobject:
-fromobjectB%"#
-!Extensions.ObjectExtensionMethods
+%2void"5Entidades.Entidades.ItemAchado.ItensPerdidosMatch.set*" 
+Entidades.Entidades.ItemAchado**
+(
+%0"System.Collections.Generic.List<T>2ItensPerdidosMatch.set*
+1*\
+1"W
+@
+6D:\git\Achei\backend\Entidades\Entidades\ItemAchado.cs (	
+implicit returnB" 
+Entidades.Entidades.ItemAchado

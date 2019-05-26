@@ -1,4 +1,16 @@
-z
+†
+4D:\git\Achei\backend\Migrations\v.3.0\20192505001.cs
+
+
+
+ %
+
+  "
+4 D  
+
+  $
+
+6 Fz
 2D:\git\Achei\backend\Migrations\v1.0\2019031001.cs
 
 		 %

@@ -1,4 +1,3 @@
-Ï
- Api.Controllers.StatusController'Microsoft.AspNetCore.Mvc.ControllerBaseobject/
-Get()&Api.Controllers.StatusController.Get()I
-StatusController()3Api.Controllers.StatusController.StatusController()
+¨
+$Api.Controllers.ApiControllerBase<T>'Microsoft.AspNetCore.Mvc.ControllerBaseobjectO
+ApiControllerBase()8Api.Controllers.ApiControllerBase<T>.ApiControllerBase()
