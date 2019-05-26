@@ -13,6 +13,8 @@ import { HeaderService } from '../header/shared/header.service';
 export class LoginComponent implements OnInit {
 
   formLogin: FormGroup;
+  submitted: boolean;
+
   constructor(
     private sessionService: SessionService,
     private form: FormBuilder,
@@ -28,6 +30,8 @@ export class LoginComponent implements OnInit {
   }
 
   login() {
+    this.submitted = true;
+
     this.headerService.exibirBarraDeProgresso();
     this.sessionService.iniciarSessao(this.formLogin.get('email').value,
       this.formLogin.get('senha').value)
