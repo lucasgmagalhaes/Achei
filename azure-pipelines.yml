@@ -16,6 +16,7 @@ steps:
 - script: |
     cd backend
     cd sonar
+    ls
     sonar-analise.sh
   displayName: 'Backend SonarLint'
 
