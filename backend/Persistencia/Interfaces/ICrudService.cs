@@ -167,5 +167,12 @@ namespace Persistencia.Interfaces
         /// </summary>
         /// <returns></returns>
         DbSet<T> Entity();
+
+        /// <summary>
+        /// Faz a busca de um dbSet diferente do especificado no tipo específico da interface
+        /// </summary>
+        /// <typeparam name="U"></typeparam>
+        /// <returns></returns>
+        DbSet<U> Entity<U>() where U : class, IEntity, new();
     }
 }

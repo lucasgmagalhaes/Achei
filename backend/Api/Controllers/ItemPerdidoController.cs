@@ -66,6 +66,7 @@ namespace Api.Controllers
                 }
 
                 itemPerdidoService.Atualizar(itemPerdido);
+                itemPerdidoService.AtualizarItensCompativeis(itemPerdido);
                 return Ok(new RequestResponse() { message = "Item Atualizado com sucesso", status = "200" });
             }
             catch (EntityNotFoundException ex)
@@ -133,6 +134,7 @@ namespace Api.Controllers
             try
             {
                 itemPerdidoService.Inserir(itemPerdido);
+                itemPerdidoService.AtualizarItensCompativeis(itemPerdido);
                 return Ok(new RequestResponse() { message = "Item cadastrado com sucesso", status = "200" });
             }
             catch (Exception e)

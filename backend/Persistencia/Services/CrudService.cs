@@ -90,7 +90,6 @@ namespace Persistencia.Services
             {
                 result = include(result);
             }
-
             return result.AsQueryable();
         }
 
@@ -244,6 +243,11 @@ namespace Persistencia.Services
         public DbSet<T> Entity()
         {
             return dbService.Set<T>();
+        }
+
+        public DbSet<U> Entity<U>() where U : class, IEntity, new()
+        {
+            return dbService.Set<U>();
         }
     }
 }

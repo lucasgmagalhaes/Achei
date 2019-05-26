@@ -24,7 +24,7 @@ namespace Persistencia.Contexts.Application
             modelBuilder.ApplyConfiguration(new TagConfig());
             modelBuilder.ApplyConfiguration(new RegiaoConfig());
             modelBuilder.ApplyConfiguration(new ItemPerdidoConfig());
-            //modelBuilder.ApplyConfiguration(new ItemAchadoConfig());
+            modelBuilder.ApplyConfiguration(new ItemAchadoConfig());
         }
     }
 }

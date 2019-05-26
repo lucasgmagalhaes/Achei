@@ -4,6 +4,8 @@ using Persistencia.Contexts.Application;
 using Persistencia.Interfaces;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
+using Utils;
 
 namespace Persistencia.Services
 {
@@ -28,6 +30,18 @@ namespace Persistencia.Services
                 .Include(item => item.Regiao)
                 .Include(item => item.Tags)
                 .Single(item => item.Id == id);
+        }
+
+        public async Task AtualizarItensCompativeis(ItemPerdido item)
+        {
+            List<ItemAchado> itensCompativeis = await base.Entity<ItemAchado>()
+                .Where(_item => !_item.Devolvido
+                && _item.Tags.Any(tag => item.Tags.Contains(tag))
+                && Coordenadas.RegioesEstaoPerto(_item.Regiao, item.Regiao))
+                .ToListAsync();
+
+            item.ItensAchadosMatch = itensCompativeis;
+            await base.AtualizarAsync(item);
         }
     }
 }

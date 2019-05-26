@@ -47,6 +47,7 @@ namespace Api.Controllers
             try
             {
                 itemAchadoService.Atualizar(itemAchado);
+                itemAchadoService.AtualizarItensCompativeis(itemAchado);
                 return Ok(new RequestResponse() { message = "Item Atualizado com sucesso", status = "200" });
             }
             catch (Exception ex)
@@ -75,6 +76,7 @@ namespace Api.Controllers
             try
             {
                 itemAchadoService.Inserir(itemAchado);
+                itemAchadoService.AtualizarItensCompativeis(itemAchado);
                 return Ok(new RequestResponse() { message = "Item atualizado com sucesso", status = "200" });
             }
             catch (Exception e)

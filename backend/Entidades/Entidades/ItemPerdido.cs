@@ -6,7 +6,7 @@ namespace Entidades.Entidades
     {
 
         public bool Recuperado { get; set; }
-        public long ItemAchadoMatchId { get; set; }
+        public long? ItemAchadoMatchId { get; set; }
         public virtual ItemAchado ItemAchadoMatch { get; set; }
         public virtual List<ItemAchado> ItensAchadosMatch { get; set; }
 
