@@ -8,11 +8,9 @@
 
   <div class="container">
     <div class="row">
-      <div [className]="next ? 'anime-left': 'none'">
-        <div *ngFor="let perdido of itensPerdidos" class="col-md-2 col-sm-4">
-          <app-item [item]="perdido" [texto]="perdido.recuperado ? 'encontrado' : 'não encontrado'"
-            [routerLink]="['item-detalhe', 'perdido', perdido.id]"></app-item>
-        </div>
+      <div *ngFor="let perdido of itensPerdidos" class="col-md-2 col-sm-4">
+        <app-item [item]="perdido" [texto]="perdido.recuperado ? 'encontrado' : 'não encontrado'"
+          [routerLink]="['item-detalhe', 'perdido', perdido.id]"></app-item>
       </div>
     </div>
   </div>
@@ -21,7 +19,7 @@
 
   <div class="container">
     <div class="row">
-      <div *ngFor="let achado of itensAchados" class="col-sm-3">
+      <div *ngFor="let achado of itensAchados" class="col-md-2 col-sm-4">
         <app-item [item]="achado" [texto]="achado.devolvido ? 'entregue' : 'não entregue'"
           [routerLink]="['item-detalhe', 'achado', achado.id]"></app-item>
       </div>

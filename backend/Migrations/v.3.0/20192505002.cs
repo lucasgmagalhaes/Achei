@@ -5,14 +5,16 @@ using Persistencia.Contexts.Application;
 
 namespace Migrations
 {
-    [Migration("20192505001")]
+    [Migration("20192505002")]
     [DbContext(typeof(ApplicationDbContext))]
-    public class Conversor20192505001 : Migration
+    public class Conversor20192505002 : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.CreateForeignKeyWithIndex("Item", "Item", "ItemPerdidoMatchId", "Id");
-            migrationBuilder.CreateForeignKeyWithIndex("Item", "Item", "ItemAchadoMatchId", "Id");
+            migrationBuilder.Sql("CREATE TABLE ItemMatch("+
+                "Id bigint IDENTITY(1, 1)," +
+                "ItemAchadoId bigint references Item(Id)," +
+                "ItemPerdidoId bigint references Item(Id))");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)

@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 using Persistencia.Interfaces;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Api.Controllers
 {
@@ -56,7 +57,8 @@ namespace Api.Controllers
         /// <param name="itemPerdido"></param>
         /// <returns></returns>
         [HttpPut]
-        public ActionResult Atualizar([FromBody]ItemPerdido itemPerdido)
+        public ActionResult Atualizar([FromBody]ItemPerdido itemPerdido, [FromServices]IItemMatchService itemMatchService,
+           [FromServices]IItemAchadoService itemAchadoService)
         {
             try
             {
@@ -66,6 +68,18 @@ namespace Api.Controllers
                 }
 
                 itemPerdidoService.Atualizar(itemPerdido);
+
+                if (itemPerdido.Recuperado)
+                {
+                    List<ItemMatch> matchs = itemMatchService.BuscarMatchsPerdidos(itemPerdido.UsuarioId, itemPerdido.Id);
+                    matchs.ForEach(match =>
+                    {
+                        match.ItemAchado.Devolvido = true;
+                    });
+
+                    itemAchadoService.Atualizar(matchs.Select(match => match.ItemAchado).ToList());
+                }
+
                 itemPerdidoService.AtualizarItensCompativeis(itemPerdido);
                 return Ok(new RequestResponse() { message = "Item Atualizado com sucesso", status = "200" });
             }

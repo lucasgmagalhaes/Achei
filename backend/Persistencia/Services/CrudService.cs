@@ -90,12 +90,35 @@ namespace Persistencia.Services
             {
                 result = include(result);
             }
+
             return result.AsQueryable();
         }
 
         public T Buscar(long id)
         {
             return dbService.Set<T>().Find(id);
+        }
+
+        public List<T> Buscar(long[] ids)
+        {
+            if (ids == null)
+            {
+                throw new ArgumentNullException("ids", "Não é buscar entidades por uma lista de ids nula");
+            }
+
+            return Buscar(ids.ToList());
+        }
+
+        public List<T> Buscar(List<long> ids)
+        {
+            if (ids == null)
+            {
+                throw new ArgumentNullException("ids", "Não é buscar entidades por uma lista de ids nula");
+            }
+
+            List<T> entidades = new List<T>();
+            ids.ForEach(id => entidades.Add(dbService.Set<T>().Find(id)));
+            return entidades;
         }
 
         public void Deletar(T entidade)
@@ -131,6 +154,42 @@ namespace Persistencia.Services
             dbService.SaveChanges();
         }
 
+        public void Deletar(List<long> ids)
+        {
+            if (ids == null)
+            {
+                throw new ArgumentNullException("ids", "Não é buscar entidades por uma lista de ids nula");
+            }
+
+            foreach (long id in ids)
+            {
+                IEntity obj = new T() { Id = id };
+
+                dbService.Attach(obj);
+                dbService.Remove(obj);
+            }
+
+            dbService.SaveChanges();
+        }
+
+        public async Task DeletarAsync(List<long> ids)
+        {
+            if (ids == null)
+            {
+                throw new ArgumentNullException("ids", "Não é buscar entidades por uma lista de ids nula");
+            }
+
+            foreach (long id in ids)
+            {
+                IEntity obj = new T() { Id = id };
+
+                dbService.Attach(obj);
+                dbService.Remove(obj);
+            }
+
+            await dbService.SaveChangesAsync();
+        }
+
         public void Deletar(long id)
         {
             IEntity obj = new T() { Id = id };
@@ -142,10 +201,7 @@ namespace Persistencia.Services
 
         public T Inserir(T entidade)
         {
-            if (entidade == null)
-            {
-                throw new ArgumentNullException("entidade", "Não é possível inserir uma entidade nula");
-            }
+            ValidarInserirEntidade(entidade);
 
             bool exists = dbService.Set<T>().Any(ent => ent.Id == entidade.Id);
 
@@ -159,6 +215,19 @@ namespace Persistencia.Services
             {
                 throw new EntityAlreadyExistsException("Não é possível criar uma entidade já existente. ");
             }
+        }
+
+        public List<T> Inserir(List<T> entidades)
+        {
+            ValidarInserirEntidades(entidades);
+
+            entidades.ForEach(entidade =>
+            {
+                dbService.Add(entidade);
+            });
+
+            dbService.SaveChanges();
+            return entidades;
         }
 
         private void ValidarEntidadeNulla(T entidade)
@@ -213,6 +282,52 @@ namespace Persistencia.Services
             dbService.Attach(obj);
             dbService.Remove(obj);
             await dbService.SaveChangesAsync();
+        }
+
+        private void ValidarInserirEntidades(List<T> entidades)
+        {
+            if (entidades == null)
+            {
+                throw new ArgumentNullException("entidades", "Não é possível inserir uma lista nula de entidades");
+            }
+        }
+
+        private void ValidarInserirEntidade(T entidade)
+        {
+            if (entidade == null)
+            {
+                throw new ArgumentNullException("entidade", "Não é possível inserir uma entidade nula");
+            }
+        }
+
+        public async Task<List<T>> InserirAsync(List<T> entidades)
+        {
+            ValidarInserirEntidades(entidades);
+
+            foreach (T entidade in entidades)
+            {
+                try
+                {
+                    bool exists = dbService.Set<T>().Any(ent => ent.Id == entidade.Id);
+
+                    if (!exists)
+                    {
+                        await dbService.AddAsync(entidade);
+                    }
+                    else
+                    {
+                        System.Diagnostics.Debug.WriteLine(entidade.GetType() + "de Id:" + entidade.Id + "já foi cadastrada");
+                        throw new EntityAlreadyExistsException("Entidade já foi cadastrada");
+                    }
+                }
+                catch (Exception e)
+                {
+                    System.Diagnostics.Debug.WriteLine(e.Message);
+                    throw new EntityAlreadyExistsException("Não é possível criar uma entidade já existente");
+                }
+            }
+            await dbService.SaveChangesAsync();
+            return entidades;
         }
 
         public async Task<T> InserirAsync(T entidade)

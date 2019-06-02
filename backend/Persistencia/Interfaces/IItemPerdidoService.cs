@@ -22,6 +22,8 @@ namespace Persistencia.Interfaces
 
         ItemPerdido BuscarComEagerLoading(long id);
 
-        Task AtualizarItensCompativeis(ItemPerdido item);
+        void AtualizarItensCompativeis(ItemPerdido item);
+
+        List<ItemMatch> BuscarMatchs(long idItem);
     }
 }

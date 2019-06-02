@@ -13,6 +13,8 @@ namespace Persistencia.Interfaces
         /// <returns></returns>
         List<ItemAchado> BuscarPorIdUsuario(long id);
 
-        Task AtualizarItensCompativeis(ItemAchado item);
+        void AtualizarItensCompativeis(ItemAchado item);
+
+        List<ItemMatch> BuscarMatchs(long idItem);
     }
 }

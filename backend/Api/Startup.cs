@@ -1,4 +1,5 @@
 ﻿using Api.Token;
+using Entidades.Entidades;
 using Microsoft.AspNet.OData.Extensions;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
@@ -50,6 +51,7 @@ namespace Api
             services.AddScoped(typeof(IItemPerdidoService), typeof(ItemPerdidoService));
             services.AddScoped(typeof(IRegiaoService), typeof(RegiaoService));
             services.AddScoped(typeof(ITagService), typeof(TagService));
+            services.AddScoped(typeof(IItemMatchService), typeof(ItemMatchService));
 
             services.Scan(scan => scan.FromCallingAssembly().AddClasses().AsMatchingInterface());
 
