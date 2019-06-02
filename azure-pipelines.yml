@@ -1,5 +1,6 @@
 trigger:
 - master
+- match
 
 pool:
   vmImage: 'ubuntu-latest'
@@ -30,3 +31,4 @@ steps:
     chmod +x sonar-analise.bat
     ./sonar-analise.bat
   displayName: 'Backend SonarLint'
+
