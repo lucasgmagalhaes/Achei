@@ -1,92 +1,90 @@
 
--Persistencia.ConnectionString.GetConnection()?
-5D:\git\Achei\backend\Persistencia\ConnectionString.cs (*"0*¦
-0Ÿ
-œ
-?
-5D:\git\Achei\backend\Persistencia\ConnectionString.cs (%
-%0string"(Persistencia.ConnectionString.Server.get*!"
-Persistencia.ConnectionStrings
-q
-?
-5D:\git\Achei\backend\Persistencia\ConnectionString.cs (%
-%1string"__concat*
-""*
+HExtensions.ObjectExtensionMethods.CopiarPropriedadesPara(object, object)C
+9D:\git\Achei\backend\Extensions\ObjectExtensionMethods.cs8 8(1"0*ª
+0œ
+™
+C
+9D:\git\Achei\backend\Extensions\ObjectExtensionMethods.cs: :(
+
+%0bool""object.operator ==(object, object)*
+"
+object*
 
-%0strings
-q
-?
-5D:\git\Achei\backend\Persistencia\ConnectionString.cs (4
-%2string"__concat*
-
-%1string*
-""¡
-ž
-?
-5D:\git\Achei\backend\Persistencia\ConnectionString.cs7 (?
-%3string"*Persistencia.ConnectionString.Database.get*!"
-Persistencia.ConnectionString{
-y
-?
-5D:\git\Achei\backend\Persistencia\ConnectionString.cs (?
-%4string"__concat*
-
-%2string*
-
-%3strings
-q
-?
-5D:\git\Achei\backend\Persistencia\ConnectionString.cs (
-%5string"__concat*
-
-%4string*
-""Ÿ
-œ
-?
-5D:\git\Achei\backend\Persistencia\ConnectionString.cs  (&
-%6string"(Persistencia.ConnectionString.UserId.get*!"
-Persistencia.ConnectionString{
-y
-?
-5D:\git\Achei\backend\Persistencia\ConnectionString.cs (&
-%7string"__concat*
-
-%5string*
-
-%6strings
-q
-?
-5D:\git\Achei\backend\Persistencia\ConnectionString.cs (5
-%8string"__concat*
-
-%7string*
-""¡
-ž
-?
-5D:\git\Achei\backend\Persistencia\ConnectionString.cs8 (@
-%9string"*Persistencia.ConnectionString.Password.get*!"
-Persistencia.ConnectionString|
+toobject*
+""*
+1
+2*æ
+1Š‡
+C
+9D:\git\Achei\backend\Extensions\ObjectExtensionMethods.cs< <(["
+%1System.ArgumentNullException"System.ArgumentNullExceptionÎ
+Ë
+C
+9D:\git\Achei\backend\Extensions\ObjectExtensionMethods.cs< <(/
+
+%2void"BSystem.ArgumentNullException.ArgumentNullException(string, string)*$
+"
+%1System.ArgumentNullException*
+""*
+""*
+3*»
+
+2|
 z
-?
-5D:\git\Achei\backend\Persistencia\ConnectionString.cs (@
-%10string"__concat*
+C
+9D:\git\Achei\backend\Extensions\ObjectExtensionMethods.cs?* ?(6
+%3System.Type"object.GetType()*
 
-%8string*
+toobject¢
+Ÿ
+C
+9D:\git\Achei\backend\Extensions\ObjectExtensionMethods.cs?* ?(F&
+%4 System.Reflection.PropertyInfo[]"System.Type.GetProperties()*
+
+%3System.Typeª
+§
+C
+9D:\git\Achei\backend\Extensions\ObjectExtensionMethods.cs? ?(F0
+toProperties System.Reflection.PropertyInfo[]"__id*(
+&
+%4 System.Reflection.PropertyInfo[]~
+|
+C
+9D:\git\Achei\backend\Extensions\ObjectExtensionMethods.cs@, @(:
+%5System.Type"object.GetType()*
+
+fromobject¢
+Ÿ
+C
+9D:\git\Achei\backend\Extensions\ObjectExtensionMethods.cs@, @(J&
+%6 System.Reflection.PropertyInfo[]"System.Type.GetProperties()*
+
+%5System.Type¬
+©
+C
+9D:\git\Achei\backend\Extensions\ObjectExtensionMethods.cs@ @(J2
+fromProperties System.Reflection.PropertyInfo[]"__id*(
+&
+%6 System.Reflection.PropertyInfo[]Œ
+‰
+C
+9D:\git\Achei\backend\Extensions\ObjectExtensionMethods.csB B(@
+
+%7void"‚Extensions.ObjectExtensionMethods.IniciarCopia(System.Reflection.PropertyInfo[], System.Reflection.PropertyInfo[], object, object)*%"#
+!Extensions.ObjectExtensionMethods*2
+0
+toProperties System.Reflection.PropertyInfo[]*4
+2
+fromProperties System.Reflection.PropertyInfo[]*
 
-%9stringu
-s
-?
-5D:\git\Achei\backend\Persistencia\ConnectionString.cs (F
-%11string"__concat*
-
-%10string*
-"""R
-?
-5D:\git\Achei\backend\Persistencia\ConnectionString.cs (G
-
-%11string*[
-1"V
-?
-5D:\git\Achei\backend\Persistencia\ConnectionString.cs (	
-implicit returnB!"
-Persistencia.ConnectionString
+toobject*
+
+fromobject*
+3*_
+3"Z
+C
+9D:\git\Achei\backend\Extensions\ObjectExtensionMethods.csC C(	
+implicit return:
+fromobject:
+toobjectB%"#
+!Extensions.ObjectExtensionMethods

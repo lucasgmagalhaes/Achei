@@ -1,4 +1,5 @@
-;
+=
+4D:\git\Achei\backend\Migrations\v.3.0\20192505001.csutf-8;
 2D:\git\Achei\backend\Migrations\v1.0\2019031001.csutf-8;
 2D:\git\Achei\backend\Migrations\v1.0\2019031002.csutf-8;
 2D:\git\Achei\backend\Migrations\v1.0\2019031003.csutf-8;

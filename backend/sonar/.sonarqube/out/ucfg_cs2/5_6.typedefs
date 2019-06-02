@@ -1,4 +1,4 @@
-Ω
-Api.Controllers.TagController'Microsoft.AspNetCore.Mvc.ControllerBaseobjectÆ
-FTagController(Persistencia.Interfaces.ITagService, AutoMapper.IMapper)dApi.Controllers.TagController.TagController(Persistencia.Interfaces.ITagService, AutoMapper.IMapper):
-GetTag(long)*Api.Controllers.TagController.GetTag(long)
+Ñ
+&Api.Controllers.AutenticacaoController'Microsoft.AspNetCore.Mvc.ControllerBaseobjectÀ
+èPost(Entidades.Entidades.Usuario, Persistencia.Interfaces.IAutenticacaoService, Api.Token.SigningConfigurations, Api.Token.TokenConfigurations)∂Api.Controllers.AutenticacaoController.Post(Entidades.Entidades.Usuario, Persistencia.Interfaces.IAutenticacaoService, Api.Token.SigningConfigurations, Api.Token.TokenConfigurations)[
+AutenticacaoController()?Api.Controllers.AutenticacaoController.AutenticacaoController()

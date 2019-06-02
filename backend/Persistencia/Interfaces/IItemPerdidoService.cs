@@ -1,5 +1,6 @@
 ﻿using Entidades.Entidades;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace Persistencia.Interfaces
 {
@@ -20,5 +21,9 @@ namespace Persistencia.Interfaces
         ItemPerdido BuscarComTags(long id);
 
         ItemPerdido BuscarComEagerLoading(long id);
+
+        void AtualizarItensCompativeis(ItemPerdido item);
+
+        List<ItemMatch> BuscarMatchs(long idItem);
     }
 }

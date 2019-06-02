@@ -1,0 +1,14 @@
+<div class="row mt-4">
+  
+    <h3 *ngIf="matchAchados.length > 0">Itens achados compatíveis com os meus perdidos</h3>
+  
+    <div class="container">
+      <div class="row">
+        <div *ngFor="let achado of matchAchados" class="col-md-2 col-sm-4">
+          <app-item [item]="achado" [texto]="achado.devolvido ? 'entregue' : 'não entregue'"
+            [routerLink]="['item-detalhe', 'achado', achado.id, 'true']"></app-item>
+        </div>
+      </div>
+    </div>
+  
+  </div>

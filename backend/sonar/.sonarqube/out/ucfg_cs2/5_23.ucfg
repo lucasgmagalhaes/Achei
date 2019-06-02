@@ -1,83 +1,128 @@
 
-FApi.Startup.Startup(Microsoft.Extensions.Configuration.IConfiguration)-
-#D:\git\Achei\backend\Api\Startup.cs! !("0*Î
-0¥
-±
--
-#D:\git\Achei\backend\Api\Startup.cs# #()
+9Api.Controllers.ItemPerdidoController.BuscarPerdido(long)G
+=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.cs ()"9*
+0*	
+1
+2
+3*
+2*
+4
+5*ì
+4àÖ
+G
+=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.cs" "(45
+%0/Microsoft.AspNetCore.Mvc.BadRequestObjectResult":Microsoft.AspNetCore.Mvc.ControllerBase.BadRequest(object)*+)
+'Microsoft.AspNetCore.Mvc.ControllerBase*
+""2BadRequest(object)"Ç
+G
+=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.cs" "(57
+5
+%0/Microsoft.AspNetCore.Mvc.BadRequestObjectResult*Â
+5ı
+Ú
+G
+=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.cs%& %(81
+%1+Persistencia.Interfaces.IItemPerdidoService"__id*n*l'
+%Api.Controllers.ItemPerdidoController"A
+itemPerdidoService+Persistencia.Interfaces.IItemPerdidoServiceÙÒ
+G
+=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.cs%& %(C%
+%2Entidades.Entidades.ItemPerdido"4Persistencia.Interfaces.ICrudService<T>.Buscar(long)*3
+1
+%1+Persistencia.Interfaces.IItemPerdidoService*
+""2Buscar(long)ß
+§
+G
+=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.cs% %(C*
+perdidoEntidades.Entidades.ItemPerdido"__id*'
+%
+%2Entidades.Entidades.ItemPerdidoæ
+ª
+G
+=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.cs' '(#
 
-%0void"Api.Startup.Configuration.set*
-Api.Startup*D
-B
-configuration1Microsoft.Extensions.Configuration.IConfiguration…
-∆
+%3bool""object.operator ==(object, object)*
+"
+object*,
+*
+perdidoEntidades.Entidades.ItemPerdido*
+""*
+6
+7*ã
+6Çˇ
+G
+=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.cs) )(63
+%4-Microsoft.AspNetCore.Mvc.NotFoundObjectResult"8Microsoft.AspNetCore.Mvc.ControllerBase.NotFound(object)*+)
+'Microsoft.AspNetCore.Mvc.ControllerBase*
+""2NotFound(object)"Ä
+G
+=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.cs) )(75
+3
+%4-Microsoft.AspNetCore.Mvc.NotFoundObjectResult*˘
+7∑
+¥
+G
+=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.cs,) ,(/
+%5AutoMapper.IMapper"__id*I*G'
+%Api.Controllers.ItemPerdidoController"
+mapperAutoMapper.IMapperÉÄ
+G
+=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.cs,) ,(L"
+%6Entidades.Dto.ItemPerdidoDto",AutoMapper.IMapper.Map<TDestination>(object)*
+
+%5AutoMapper.IMapper*,
+*
+perdidoEntidades.Entidades.ItemPerdido2Map<TDestination>(object)°
+û
+G
+=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.cs, ,(L'
+itemDtoEntidades.Dto.ItemPerdidoDto"__id*$
+"
+%6Entidades.Dto.ItemPerdidoDtoìê
+G
+=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.cs- -("-
+%7'Microsoft.AspNetCore.Mvc.OkObjectResult"2Microsoft.AspNetCore.Mvc.ControllerBase.Ok(object)*+)
+'Microsoft.AspNetCore.Mvc.ControllerBase*)
+'
+itemDtoEntidades.Dto.ItemPerdidoDto2
+Ok(object)"z
+G
+=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.cs- -(#/
 -
-#D:\git\Achei\backend\Api\Startup.cs%& %(_
-%1string"}Microsoft.Extensions.Configuration.ConfigurationBinder.GetValue<T>(Microsoft.Extensions.Configuration.IConfiguration, string)*:"8
-6Microsoft.Extensions.Configuration.ConfigurationBinder*D
-B
-configuration1Microsoft.Extensions.Configuration.IConfiguration*
-""õ
-ò
--
-#D:\git\Achei\backend\Api\Startup.cs% %(_
+%7'Microsoft.AspNetCore.Mvc.OkObjectResult*
+8*	
+1
+3
+3*Ç
+1_
+]
+G
+=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.cs1" 1(J
+%8"__id*
+""°û
+G
+=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.cs1 1(N+
+%9%Microsoft.AspNetCore.Mvc.ObjectResult"?Microsoft.AspNetCore.Mvc.ControllerBase.StatusCode(int, object)*+)
+'Microsoft.AspNetCore.Mvc.ControllerBase*
+
+%8*
+
+eSystem.Exception2StatusCode(int, object)"x
+G
+=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.cs1 1(O-
++
+%9%Microsoft.AspNetCore.Mvc.ObjectResult*c
+3"^
+G
+=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.cs3 3(	
+implicit return*r
+9h
+f
+G
+=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.cs ()
+%10"__entrypoint*
+""*
+0:
 
-%2void"(Persistencia.ConnectionString.Server.set*!"
-Persistencia.ConnectionString*
-
-%1string…
-∆
--
-#D:\git\Achei\backend\Api\Startup.cs&( &(c
-%3string"}Microsoft.Extensions.Configuration.ConfigurationBinder.GetValue<T>(Microsoft.Extensions.Configuration.IConfiguration, string)*:"8
-6Microsoft.Extensions.Configuration.ConfigurationBinder*D
-B
-configuration1Microsoft.Extensions.Configuration.IConfiguration*
-""ù
-ö
--
-#D:\git\Achei\backend\Api\Startup.cs& &(c
-
-%4void"*Persistencia.ConnectionString.Database.set*!"
-Persistencia.ConnectionString*
-
-%3string…
-∆
--
-#D:\git\Achei\backend\Api\Startup.cs'& '(_
-%5string"}Microsoft.Extensions.Configuration.ConfigurationBinder.GetValue<T>(Microsoft.Extensions.Configuration.IConfiguration, string)*:"8
-6Microsoft.Extensions.Configuration.ConfigurationBinder*D
-B
-configuration1Microsoft.Extensions.Configuration.IConfiguration*
-""õ
-ò
--
-#D:\git\Achei\backend\Api\Startup.cs' '(_
-
-%6void"(Persistencia.ConnectionString.UserId.set*!"
-Persistencia.ConnectionString*
-
-%5string…
-∆
--
-#D:\git\Achei\backend\Api\Startup.cs(( ((c
-%7string"}Microsoft.Extensions.Configuration.ConfigurationBinder.GetValue<T>(Microsoft.Extensions.Configuration.IConfiguration, string)*:"8
-6Microsoft.Extensions.Configuration.ConfigurationBinder*D
-B
-configuration1Microsoft.Extensions.Configuration.IConfiguration*
-""ù
-ö
--
-#D:\git\Achei\backend\Api\Startup.cs( ((c
-
-%8void"*Persistencia.ConnectionString.Password.set*!"
-Persistencia.ConnectionString*
-
-%7string*
-1*I
-1"D
--
-#D:\git\Achei\backend\Api\Startup.cs) )(	
-implicit return:B
-configuration1Microsoft.Extensions.Configuration.IConfigurationB
-Api.Startup
+idlongB)'
+%Api.Controllers.ItemPerdidoController

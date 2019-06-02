@@ -1,107 +1,25 @@
 
-}Entidades.Configuration.TagConfig.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<Entidades.Tag>)C
-9D:\git\Achei\backend\Entidades\Configuration\TagConfig.cs ("0*ú6
-0Ô
-Ï
-C
-9D:\git\Achei\backend\Entidades\Configuration\TagConfig.cs
- 
-("P
-%0JMicrosoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<TEntity>"®Microsoft.EntityFrameworkCore.RelationalEntityTypeBuilderExtensions.ToTable<TEntity>(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<TEntity>, string)*G"E
-CMicrosoft.EntityFrameworkCore.RelationalEntityTypeBuilderExtensions*W
-U
-builderJMicrosoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<TEntity>*
-""˚¯
-C
-9D:\git\Achei\backend\Entidades\Configuration\TagConfig.cs ('P
-%1JMicrosoft.EntityFrameworkCore.Metadata.Builders.PropertyBuilder<TProperty>"£Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<TEntity>.Property<TProperty>(System.Linq.Expressions.Expression<System.Func<TEntity, TProperty>>)*W
-U
-builderJMicrosoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<TEntity>*
-""2XProperty<TProperty>(System.Linq.Expressions.Expression<System.Func<TEntity, TProperty>>)Ó
-Î
-C
-9D:\git\Achei\backend\Entidades\Configuration\TagConfig.cs ($P
-%2JMicrosoft.EntityFrameworkCore.Metadata.Builders.PropertyBuilder<TProperty>"ÆMicrosoft.EntityFrameworkCore.RelationalPropertyBuilderExtensions.HasColumnName<TProperty>(Microsoft.EntityFrameworkCore.Metadata.Builders.PropertyBuilder<TProperty>, string)*E"C
-AMicrosoft.EntityFrameworkCore.RelationalPropertyBuilderExtensions*R
-P
-%1JMicrosoft.EntityFrameworkCore.Metadata.Builders.PropertyBuilder<TProperty>*
-""Á‰
-C
-9D:\git\Achei\backend\Entidades\Configuration\TagConfig.cs (&P
-%3JMicrosoft.EntityFrameworkCore.Metadata.Builders.PropertyBuilder<TProperty>"`Microsoft.EntityFrameworkCore.Metadata.Builders.PropertyBuilder<TProperty>.ValueGeneratedOnAdd()*R
-P
-%2JMicrosoft.EntityFrameworkCore.Metadata.Builders.PropertyBuilder<TProperty>2ValueGeneratedOnAdd()˚¯
-C
-9D:\git\Achei\backend\Entidades\Configuration\TagConfig.cs ()P
-%4JMicrosoft.EntityFrameworkCore.Metadata.Builders.PropertyBuilder<TProperty>"£Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<TEntity>.Property<TProperty>(System.Linq.Expressions.Expression<System.Func<TEntity, TProperty>>)*W
-U
-builderJMicrosoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<TEntity>*
-""2XProperty<TProperty>(System.Linq.Expressions.Expression<System.Func<TEntity, TProperty>>)Â‚
-C
-9D:\git\Achei\backend\Entidades\Configuration\TagConfig.cs (P
-%5JMicrosoft.EntityFrameworkCore.Metadata.Builders.PropertyBuilder<TProperty>"[Microsoft.EntityFrameworkCore.Metadata.Builders.PropertyBuilder<TProperty>.IsRequired(bool)*R
-P
-%4JMicrosoft.EntityFrameworkCore.Metadata.Builders.PropertyBuilder<TProperty>*
-""2IsRequired(bool)Â‚
-C
-9D:\git\Achei\backend\Entidades\Configuration\TagConfig.cs (!P
-%6JMicrosoft.EntityFrameworkCore.Metadata.Builders.PropertyBuilder<TProperty>"\Microsoft.EntityFrameworkCore.Metadata.Builders.PropertyBuilder<TProperty>.HasMaxLength(int)*R
-P
-%5JMicrosoft.EntityFrameworkCore.Metadata.Builders.PropertyBuilder<TProperty>*22HasMaxLength(int)„‡
-C
-9D:\git\Achei\backend\Entidades\Configuration\TagConfig.cs (!P
-%7JMicrosoft.EntityFrameworkCore.Metadata.Builders.PropertyBuilder<TProperty>"ZMicrosoft.EntityFrameworkCore.Metadata.Builders.PropertyBuilder<TProperty>.IsUnicode(bool)*R
-P
-%6JMicrosoft.EntityFrameworkCore.Metadata.Builders.PropertyBuilder<TProperty>*
-""2IsUnicode(bool)˚¯
-C
-9D:\git\Achei\backend\Entidades\Configuration\TagConfig.cs (+P
-%8JMicrosoft.EntityFrameworkCore.Metadata.Builders.PropertyBuilder<TProperty>"£Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<TEntity>.Property<TProperty>(System.Linq.Expressions.Expression<System.Func<TEntity, TProperty>>)*W
-U
-builderJMicrosoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<TEntity>*
-""2XProperty<TProperty>(System.Linq.Expressions.Expression<System.Func<TEntity, TProperty>>)Ó
-Î
-C
-9D:\git\Achei\backend\Entidades\Configuration\TagConfig.cs ((P
-%9JMicrosoft.EntityFrameworkCore.Metadata.Builders.PropertyBuilder<TProperty>"ÆMicrosoft.EntityFrameworkCore.RelationalPropertyBuilderExtensions.HasColumnName<TProperty>(Microsoft.EntityFrameworkCore.Metadata.Builders.PropertyBuilder<TProperty>, string)*E"C
-AMicrosoft.EntityFrameworkCore.RelationalPropertyBuilderExtensions*R
-P
-%8JMicrosoft.EntityFrameworkCore.Metadata.Builders.PropertyBuilder<TProperty>*
-""•¢
-C
-9D:\git\Achei\backend\Entidades\Configuration\TagConfig.cs ('j
-%10cMicrosoft.EntityFrameworkCore.Metadata.Builders.ReferenceNavigationBuilder<TEntity, TRelatedEntity>"´Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<TEntity>.HasOne<TRelatedEntity>(System.Linq.Expressions.Expression<System.Func<TEntity, TRelatedEntity>>)*W
-U
-builderJMicrosoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<TEntity>*
-""2`HasOne<TRelatedEntity>(System.Linq.Expressions.Expression<System.Func<TEntity, TRelatedEntity>>)íè
-C
-9D:\git\Achei\backend\Entidades\Configuration\TagConfig.cs (=u
-%11nMicrosoft.EntityFrameworkCore.Metadata.Builders.ReferenceCollectionBuilder<TPrincipalEntity, TDependentEntity>"ﬁMicrosoft.EntityFrameworkCore.Metadata.Builders.ReferenceNavigationBuilder<TEntity, TRelatedEntity>.WithMany(System.Linq.Expressions.Expression<System.Func<TRelatedEntity, System.Collections.Generic.IEnumerable<TEntity>>>)*l
-j
-%10cMicrosoft.EntityFrameworkCore.Metadata.Builders.ReferenceNavigationBuilder<TEntity, TRelatedEntity>*
-""2zWithMany(System.Linq.Expressions.Expression<System.Func<TRelatedEntity, System.Collections.Generic.IEnumerable<TEntity>>>)‰·
-C
-9D:\git\Achei\backend\Entidades\Configuration\TagConfig.cs (Zu
-%12nMicrosoft.EntityFrameworkCore.Metadata.Builders.ReferenceCollectionBuilder<TPrincipalEntity, TDependentEntity>"«Microsoft.EntityFrameworkCore.Metadata.Builders.ReferenceCollectionBuilder<TPrincipalEntity, TDependentEntity>.HasForeignKey(System.Linq.Expressions.Expression<System.Func<TDependentEntity, object>>)*w
-u
-%11nMicrosoft.EntityFrameworkCore.Metadata.Builders.ReferenceCollectionBuilder<TPrincipalEntity, TDependentEntity>*
-""2XHasForeignKey(System.Linq.Expressions.Expression<System.Func<TDependentEntity, object>>)\
-Z
-C
-9D:\git\Achei\backend\Entidades\Configuration\TagConfig.csd (z
-%13"__id*
-""°û
-C
-9D:\git\Achei\backend\Entidades\Configuration\TagConfig.cs ({u
-%14nMicrosoft.EntityFrameworkCore.Metadata.Builders.ReferenceCollectionBuilder<TPrincipalEntity, TDependentEntity>"•Microsoft.EntityFrameworkCore.Metadata.Builders.ReferenceCollectionBuilder<TPrincipalEntity, TDependentEntity>.OnDelete(Microsoft.EntityFrameworkCore.DeleteBehavior)*w
-u
-%12nMicrosoft.EntityFrameworkCore.Metadata.Builders.ReferenceCollectionBuilder<TPrincipalEntity, TDependentEntity>*
-
-%1326OnDelete(Microsoft.EntityFrameworkCore.DeleteBehavior)*
-1*_
-1"Z
-C
-9D:\git\Achei\backend\Entidades\Configuration\TagConfig.cs (	
-implicit return:U
-builderJMicrosoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<TEntity>B%#
-!Entidades.Configuration.TagConfig
+uPersistencia.Services.AutenticacaoService.AutenticacaoService(Persistencia.Contexts.Application.ApplicationDbContext)K
+AD:\git\Achei\backend\Persistencia\Services\AutenticacaoService.cs
+ 
+(""0*±
+0¶
+£
+K
+AD:\git\Achei\backend\Persistencia\Services\AutenticacaoService.cs
+A 
+(P
+
+%0void"YPersistencia.Services.CrudService<T>.CrudService(Microsoft.EntityFrameworkCore.DbContext)*(&
+$Persistencia.Services.CrudService<T>*C
+A
+context6Persistencia.Contexts.Application.ApplicationDbContext*
+1*g
+1"b
+K
+AD:\git\Achei\backend\Persistencia\Services\AutenticacaoService.cs
+S 
+(T
+implicit return:A
+context6Persistencia.Contexts.Application.ApplicationDbContextB-+
+)Persistencia.Services.AutenticacaoService

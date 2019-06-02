@@ -1,17 +1,0 @@
-à
-6Persistencia.Contexts.Application.ApplicationDbContext'Microsoft.EntityFrameworkCore.DbContextobject´
-|ApplicationDbContext(Microsoft.EntityFrameworkCore.DbContextOptions<Persistencia.Contexts.Application.ApplicationDbContext>)³Persistencia.Contexts.Application.ApplicationDbContext.ApplicationDbContext(Microsoft.EntityFrameworkCore.DbContextOptions<Persistencia.Contexts.Application.ApplicationDbContext>)Ã
-DOnConfiguring(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder){Persistencia.Contexts.Application.ApplicationDbContext.OnConfiguring(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder)±
-;OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)rPersistencia.Contexts.Application.ApplicationDbContext.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)Q
-Usuario.getBPersistencia.Contexts.Application.ApplicationDbContext.Usuario.getQ
-Usuario.setBPersistencia.Contexts.Application.ApplicationDbContext.Usuario.setW
-ItemAchado.getEPersistencia.Contexts.Application.ApplicationDbContext.ItemAchado.getW
-ItemAchado.setEPersistencia.Contexts.Application.ApplicationDbContext.ItemAchado.setY
-ItemPerdido.getFPersistencia.Contexts.Application.ApplicationDbContext.ItemPerdido.getY
-ItemPerdido.setFPersistencia.Contexts.Application.ApplicationDbContext.ItemPerdido.setI
-Tag.get>Persistencia.Contexts.Application.ApplicationDbContext.Tag.getI
-Tag.set>Persistencia.Contexts.Application.ApplicationDbContext.Tag.setO
-
-Regiao.getAPersistencia.Contexts.Application.ApplicationDbContext.Regiao.getO
-
-Regiao.setAPersistencia.Contexts.Application.ApplicationDbContext.Regiao.set

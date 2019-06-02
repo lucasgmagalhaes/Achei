@@ -17,8 +17,9 @@ const routes: Routes = [
   { path: 'recoverpwd', component: LostpwdComponent, canActivate: [LogadoGuard] },
   { path: 'profile', component: ProfileComponent, canActivate: [AuthGuard] },
   { path: 'home', component: HomeComponent, canActivate: [AuthGuard] },
-  { path: 'achados', component: AchadosComponent },
-  { path: 'achados/item-detalhe/:tipo/:id', component: ItemDetalheComponent },
+  { path: 'achados', component: AchadosComponent, canActivate: [AuthGuard] },
+  { path: 'home/item-detalhe/:tipo/:id/:match', component: ItemDetalheComponent, canActivate: [AuthGuard] },
+  { path: 'achados/item-detalhe/:tipo/:id', component: ItemDetalheComponent, canActivate: [AuthGuard] },
   { path: 'achados/cadastrarachado', component: CadastrarItemComponent, canActivate: [AuthGuard] },
 ];
 

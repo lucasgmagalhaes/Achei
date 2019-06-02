@@ -79,6 +79,20 @@ namespace Persistencia.Interfaces
         T Buscar(long id);
 
         /// <summary>
+        /// Busca uma lista de entidades baseada em uma lista de ids
+        /// </summary>
+        /// <param name="ids"></param>
+        /// <returns></returns>
+        List<T> Buscar(List<long> ids);
+
+        /// <summary>
+        /// Busca uma lista de entidades baseada em uma lista de ids
+        /// </summary>
+        /// <param name="ids"></param>
+        /// <returns></returns>
+        List<T> Buscar(long[] ids);
+
+        /// <summary>
         /// Realiza uma busca por entidades em função de um predicado.
         /// Retornando a query para ser executada
         /// </summary>
@@ -120,6 +134,12 @@ namespace Persistencia.Interfaces
         void Deletar(T entidade);
 
         /// <summary>
+        /// Deleta uma lista de entidades baseada em seu id
+        /// </summary>
+        /// <param name="ids"></param>
+        void Deletar(List<long> ids);
+
+        /// <summary>
         /// Deleta uma lista objetos de uma entidade no banco de dados.
         /// com base na entidade
         /// </summary>
@@ -141,6 +161,13 @@ namespace Persistencia.Interfaces
         Task DeletarAsync(T entidade);
 
         /// <summary>
+        /// Deleta uma lista de entidades de forma assíncrona baseada no id dessas entidades
+        /// </summary>
+        /// <param name="ids"></param>
+        /// <returns></returns>
+        Task DeletarAsync(List<long> ids);
+
+        /// <summary>
         /// Deleta um objeto de uma entidade no banco de dados de forma assíncrona,
         /// com base no id dessa entidade
         /// </summary>
@@ -156,6 +183,13 @@ namespace Persistencia.Interfaces
         T Inserir(T entidade);
 
         /// <summary>
+        /// Persiste uma conjunto de objetos de uma entidade no banco de dados
+        /// </summary>
+        /// <param name="entidade"></param>
+        /// <returns></returns>
+        List<T> Inserir(List<T> entidades);
+
+        /// <summary>
         /// Persiste um objeto de uma entidade no banco de dados de forma assíncrona
         /// </summary>
         /// <param name="entidade"></param>
@@ -163,9 +197,23 @@ namespace Persistencia.Interfaces
         Task<T> InserirAsync(T entidade);
 
         /// <summary>
+        /// Persiste uma lista de objeto de uma entidade no banco de dados de forma assíncrona
+        /// </summary>
+        /// <param name="entidade"></param>
+        /// <returns></returns>
+        Task<List<T>> InserirAsync(List<T> entidades);
+
+        /// <summary>
         /// Retorna o dataSet da entide definida neste serviço
         /// </summary>
         /// <returns></returns>
         DbSet<T> Entity();
+
+        /// <summary>
+        /// Faz a busca de um dbSet diferente do especificado no tipo específico da interface
+        /// </summary>
+        /// <typeparam name="U"></typeparam>
+        /// <returns></returns>
+        DbSet<U> Entity<U>() where U : class, IEntity, new();
     }
 }

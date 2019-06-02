@@ -1,9 +1,39 @@
 
-_Migrations.Conversor_2019031001.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)<
-2D:\git\Achei\backend\Migrations\v1.0\2019031001.cs  ($"0*X
-0"S
-<
-2D:\git\Achei\backend\Migrations\v1.0\2019031001.cs (	
+]Migrations.Conversor20192505001.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)>
+4D:\git\Achei\backend\Migrations\v.3.0\20192505001.cs  (""0*ª
+0Ž
+‹
+>
+4D:\git\Achei\backend\Migrations\v.3.0\20192505001.cs (b
+
+%0void"Extensions.EF.Migrations.CreateForeignKeyWithIndex(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder, string, string, string, string, string, string)*"
+Extensions.EF.Migrations*O
+M
+migrationBuilder9Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder*
+""*
+""*
+""*
+""*
+""*
+""Ž
+‹
+>
+4D:\git\Achei\backend\Migrations\v.3.0\20192505001.cs (a
+
+%1void"Extensions.EF.Migrations.CreateForeignKeyWithIndex(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder, string, string, string, string, string, string)*"
+Extensions.EF.Migrations*O
+M
+migrationBuilder9Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder*
+""*
+""*
+""*
+""*
+""*
+""*
+1*Z
+1"U
+>
+4D:\git\Achei\backend\Migrations\v.3.0\20192505001.cs (	
 implicit return:M
 migrationBuilder9Microsoft.EntityFrameworkCore.Migrations.MigrationBuilderB#!
-Migrations.Conversor_2019031001
+Migrations.Conversor20192505001

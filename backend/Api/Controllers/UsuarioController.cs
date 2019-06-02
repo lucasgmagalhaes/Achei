@@ -134,5 +134,34 @@ namespace Api.Controllers
                 return BadRequest(e);
             }
         }
+
+        [HttpGet("{usuarioId}/itensPerdidosMatch")]
+        public IActionResult BuscarItensPerdidosMatch(long usuarioId, [FromServices] IItemMatchService itemMatchService)
+        {
+            try
+            {
+                List<ItemPerdido> perdidos = itemMatchService.BuscarMatchsPerdidos(usuarioId);
+                return Ok(perdidos);
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e);
+            }
+        }
+
+        [HttpGet("{usuarioId}/itensAchadosMatch")]
+        public IActionResult BuscarItensAchadosMatch(long usuarioId, [FromServices] IItemMatchService itemMatchService)
+        {
+            try
+            {
+                List<ItemAchado> perdidos = itemMatchService.BuscarMatchsAchados(usuarioId);
+                return Ok(perdidos);
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e);
+            }
+        }
+
     }
 }

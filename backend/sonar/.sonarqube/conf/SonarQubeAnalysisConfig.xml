@@ -6,7 +6,7 @@
   <SonarScannerWorkingDirectory>D:\git\Achei\backend\sonar</SonarScannerWorkingDirectory>
   <HasBeginStepCommandLineCredentials>true</HasBeginStepCommandLineCredentials>
   <SonarQubeHostUrl>https://sonarcloud.io</SonarQubeHostUrl>
-  <SonarQubeVersion>7.8.0.25122</SonarQubeVersion>
+  <SonarQubeVersion>7.8.0.25269</SonarQubeVersion>
   <SonarProjectKey>lucasgmagalhaes_Achei</SonarProjectKey>
   <AdditionalConfig>
     <ConfigSetting Id="BuildUri" />
@@ -140,7 +140,7 @@ Select your &lt;a href="https://about.sonarcloud.io"&gt;plan&lt;/a&gt; and start
   &lt;/div&gt;
 &lt;/div&gt;</Property>
     <Property Name="sonar.core.id">BD367519-AWHW8ct9-T_TB3XqouNu</Property>
-    <Property Name="sonar.core.startTime">17/05/2019 01:19:48</Property>
+    <Property Name="sonar.core.startTime">20/05/2019 07:38:07</Property>
   </ServerSettings>
   <LocalSettings>
     <Property Name="sonar.host.url">https://sonarcloud.io</Property>
@@ -168,8 +168,8 @@ Select your &lt;a href="https://about.sonarcloud.io"&gt;plan&lt;/a&gt; and start
         </AnalyzerPlugin>
         <AnalyzerPlugin Key="securitycsharpfrontend" Version="7.8.0.4451" StaticResourceName="SonarAnalyzer.Security-7.8.0.4451.zip">
           <AssemblyPaths>
-            <Path>C:\Users\Lucas\AppData\Local\Temp\.sonarqube\resources\3\analyzers\dotnet\cs\Google.Protobuf.dll</Path>
-            <Path>C:\Users\Lucas\AppData\Local\Temp\.sonarqube\resources\3\analyzers\dotnet\cs\SonarAnalyzer.Security.dll</Path>
+            <Path>C:\Users\Lucas\AppData\Local\Temp\.sonarqube\resources\2\analyzers\dotnet\cs\Google.Protobuf.dll</Path>
+            <Path>C:\Users\Lucas\AppData\Local\Temp\.sonarqube\resources\2\analyzers\dotnet\cs\SonarAnalyzer.Security.dll</Path>
           </AssemblyPaths>
         </AnalyzerPlugin>
       </AnalyzerPlugins>

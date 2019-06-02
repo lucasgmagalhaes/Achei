@@ -36,6 +36,7 @@ export class ItemDetalheComponent implements OnInit {
 
   tipoItem: tipoItem;
   id: number;
+  matchItem: boolean;
 
   addOnBlur = true;
   marker: Marker;
@@ -49,19 +50,24 @@ export class ItemDetalheComponent implements OnInit {
     private notificacao: MatSnackBar,
     private router: Router
   ) {
+
+    this.matchItem = this.activeRoute.snapshot.params['match'];
+
     this.itemForm = this.formBuilder.group({
-      titulo: this.formBuilder.control('', Validators.required),
+      titulo: this.formBuilder.control({ value: '', disabled: this.matchItem }),
       tags: this.formBuilder.array([]),
-      detalhe: this.formBuilder.control(''),
-      latitudeLocal: this.formBuilder.control('', Validators.required),
-      longitudeLocal: this.formBuilder.control('', Validators.required),
-      dataInicial: this.formBuilder.control('', Validators.required),
-      dataFinal: this.formBuilder.control('', Validators.required),
-      hora: this.formBuilder.control('', Validators.required),
-      minuto: this.formBuilder.control('', Validators.required),
-      imagem: this.formBuilder.control(''),
-      marcado: this.formBuilder.control('')
+      detalhe: this.formBuilder.control({ value: '', disabled: this.matchItem }),
+      latitudeLocal: this.formBuilder.control({ value: '', disabled: this.matchItem }, Validators.required),
+      longitudeLocal: this.formBuilder.control({ value: '', disabled: this.matchItem }, Validators.required),
+      dataInicial: this.formBuilder.control({ value: '', disabled: this.matchItem }, Validators.required),
+      dataFinal: this.formBuilder.control({ value: '', disabled: this.matchItem }, Validators.required),
+      hora: this.formBuilder.control({ value: '', disabled: this.matchItem }, Validators.required),
+      minuto: this.formBuilder.control({ value: '', disabled: this.matchItem }, Validators.required),
+      imagem: this.formBuilder.control({ value: '', disabled: this.matchItem }),
+      marcado: this.formBuilder.control({ value: '', disabled: this.matchItem })
     });
+
+    this.itemForm.get('tags').disable();
 
     this.id = this.activeRoute.snapshot.params['id'];
     this.tipoItem = this.activeRoute.snapshot.params['tipo'];
@@ -87,6 +93,7 @@ export class ItemDetalheComponent implements OnInit {
   }
 
   async preencherForm(item: Item) {
+    this.item = item;
     this.itemForm.get('titulo').setValue(item.titulo);
     this.itemForm.get('detalhe').setValue(item.detalhe);
 
@@ -230,4 +237,12 @@ export class ItemDetalheComponent implements OnInit {
     console.log('dragEnd', m, $event);
   }
 
+  itemAchado() {
+    const itemAchado: ItemEncontrado = <ItemEncontrado>this.item;
+    itemAchado.devolvido = true;
+
+    this.itemService.atualizarAchado(itemAchado).then(() => {
+      this.notificacao.open('Item recuperado com sucesso', 'Ok', { duration: 2000 });
+    });
+  }
 }

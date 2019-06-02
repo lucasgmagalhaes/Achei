@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <RuleSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="Rules for SonarQube" Description="This rule set was automatically generated from SonarQube" ToolsVersion="14.0">
-  <Include Path="D:\git\Achei\backend\Entidades\Entidades.ruleset" Action="Default" />
+  <Include Path="D:\git\Achei\backend\Persistencia\Persistencia.ruleset" Action="Default" />
   <Rules AnalyzerId="SonarAnalyzer.CSharp" RuleNamespace="SonarAnalyzer.CSharp">
     <Rule Id="S2589" Action="Warning" />
     <Rule Id="S4524" Action="Warning" />

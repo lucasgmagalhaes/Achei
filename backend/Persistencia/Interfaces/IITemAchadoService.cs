@@ -1,5 +1,6 @@
 ﻿using Entidades.Entidades;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace Persistencia.Interfaces
 {
@@ -11,5 +12,9 @@ namespace Persistencia.Interfaces
         /// <param name="id"></param>
         /// <returns></returns>
         List<ItemAchado> BuscarPorIdUsuario(long id);
+
+        void AtualizarItensCompativeis(ItemAchado item);
+
+        List<ItemMatch> BuscarMatchs(long idItem);
     }
 }

@@ -1,19 +1,22 @@
 
-IExceptions.Entity.EntityNotFoundException.EntityNotFoundException(string)K
-AD:\git\Achei\backend\Exceptions\Entity\EntityNotFoundException.cs, ,(&"0*¶
-0«
-¨
+[Exceptions.Entity.EntityNotFoundException.EntityNotFoundException(string, System.Exception)K
+AD:\git\Achei\backend\Exceptions\Entity\EntityNotFoundException.cs4 4(&"0*å
+0Ú
+×
 K
-AD:\git\Achei\backend\Exceptions\Entity\EntityNotFoundException.cs,7 ,(F
+AD:\git\Achei\backend\Exceptions\Entity\EntityNotFoundException.cs4H 4(^
 
-%0void""System.Exception.Exception(string)*
+%0void"4System.Exception.Exception(string, System.Exception)*
 System.Exception*
 
-messagestring*
+messagestring*
+
+innerSystem.Exception*
 1*g
 1"b
 K
-AD:\git\Achei\backend\Exceptions\Entity\EntityNotFoundException.cs,I ,(J
+AD:\git\Achei\backend\Exceptions\Entity\EntityNotFoundException.cs4a 4(b
 implicit return:
-messagestringB-+
+messagestring:
+innerSystem.ExceptionB-+
 )Exceptions.Entity.EntityNotFoundException

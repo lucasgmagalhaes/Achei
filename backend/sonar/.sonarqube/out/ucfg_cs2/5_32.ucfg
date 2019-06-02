@@ -1,55 +1,29 @@
 
-#Api.Session.FinalizarSessao(string)-
-#D:\git\Achei\backend\Api\Session.csH H(*"0*¨
-0Ç
-Ä
+&Api.Controllers.StatusController.Get()B
+8D:\git\Achei\backend\Api\Controllers\StatusController.cs
+ 
+("2*è
+0ëè
+B
+8D:\git\Achei\backend\Api\Controllers\StatusController.cs ()-
+%0'Microsoft.AspNetCore.Mvc.OkObjectResult"2Microsoft.AspNetCore.Mvc.ControllerBase.Ok(object)*+)
+'Microsoft.AspNetCore.Mvc.ControllerBase*
+""2
+Ok(object)"u
+B
+8D:\git\Achei\backend\Api\Controllers\StatusController.cs (*/
 -
-#D:\git\Achei\backend\Api\Session.csJ J(9
-%03System.Collections.Generic.Dictionary<TKey, TValue>"__id*R*P
-Api.Session"?
-usuarios3System.Collections.Generic.Dictionary<TKey, TValue>Ð
-Í
--
-#D:\git\Achei\backend\Api\Session.csJ J('
-
-%1bool"@System.Collections.Generic.Dictionary<TKey, TValue>.Remove(TKey)*;
-9
-%03System.Collections.Generic.Dictionary<TKey, TValue>*
-
-tokenstring*
-1
-2*½
-1d
-b
--
-#D:\git\Achei\backend\Api\Session.csL$ L(S
-%2string"__concat*
-""*
-
-tokenstringa
-_
--
-#D:\git\Achei\backend\Api\Session.csL$ M(9
-%3string"__concat*
-
-%2string*
-""[Y
--
-#D:\git\Achei\backend\Api\Session.csL M(:
-%4System.Exception"System.ExceptionŒ
-‰
--
-#D:\git\Achei\backend\Api\Session.csL L(#
-
-%5void""System.Exception.Exception(string)*
-
-%4System.Exception*
-
-%3string*
-2*I
-2"D
--
-#D:\git\Achei\backend\Api\Session.csO O(	
-implicit return:
-tokenstringB"
-Api.Session
+%0'Microsoft.AspNetCore.Mvc.OkObjectResult*^
+1"Y
+B
+8D:\git\Achei\backend\Api\Controllers\StatusController.cs (	
+implicit return*d
+2Z
+X
+B
+8D:\git\Achei\backend\Api\Controllers\StatusController.cs
+ 
+(
+%1"__entrypoint*
+0B$"
+ Api.Controllers.StatusController

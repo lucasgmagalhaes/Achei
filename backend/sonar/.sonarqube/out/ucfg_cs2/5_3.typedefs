@@ -1,3 +1,4 @@
-9
-Api.Programobject"
-	Program()Api.Program.Program()
+Š
+Api.AuthorizeHandleobject®
+KHandleAsync(Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext)_Api.AuthorizeHandle.HandleAsync(Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext):
+AuthorizeHandle()%Api.AuthorizeHandle.AuthorizeHandle()

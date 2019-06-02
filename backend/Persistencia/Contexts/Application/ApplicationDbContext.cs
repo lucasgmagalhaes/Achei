@@ -1,5 +1,4 @@
 ﻿using Entidades.Configuration;
-using Entidades.Entidades;
 using Microsoft.EntityFrameworkCore;
 
 namespace Persistencia.Contexts.Application
@@ -24,14 +23,8 @@ namespace Persistencia.Contexts.Application
             modelBuilder.ApplyConfiguration(new ItemConfig());
             modelBuilder.ApplyConfiguration(new TagConfig());
             modelBuilder.ApplyConfiguration(new RegiaoConfig());
-
-            modelBuilder.Entity<ItemPerdido>()
-                .Property(e => e.UsuarioId)
-                .HasColumnName("UsuarioId");
-
-            modelBuilder.Entity<ItemAchado>()
-                .Property(e => e.UsuarioId)
-                .HasColumnName("UsuarioId");
+            modelBuilder.ApplyConfiguration(new ItemPerdidoConfig());
+            modelBuilder.ApplyConfiguration(new ItemAchadoConfig());
         }
     }
 }

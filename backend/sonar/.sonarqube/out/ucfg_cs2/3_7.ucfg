@@ -1,25 +1,111 @@
 
-uPersistencia.Services.AutenticacaoService.AutenticacaoService(Persistencia.Contexts.Application.ApplicationDbContext)K
-AD:\git\Achei\backend\Persistencia\Services\AutenticacaoService.cs
- 
-(""0*±
-0¦
-£
-K
-AD:\git\Achei\backend\Persistencia\Services\AutenticacaoService.cs
-A 
-(P
+‚Extensions.ObjectExtensionMethods.IniciarCopia(System.Reflection.PropertyInfo[], System.Reflection.PropertyInfo[], object, object)C
+9D:\git\Achei\backend\Extensions\ObjectExtensionMethods.csO O(("0*œ
+0‘
+Ž
+C
+9D:\git\Achei\backend\Extensions\ObjectExtensionMethods.csQ Q(E
 
-%0void"YPersistencia.Services.CrudService<T>.CrudService(Microsoft.EntityFrameworkCore.DbContext)*(&
-$Persistencia.Services.CrudService<T>*C
-A
-context6Persistencia.Contexts.Application.ApplicationDbContext*
-1*g
-1"b
-K
-AD:\git\Achei\backend\Persistencia\Services\AutenticacaoService.cs
-S 
-(T
-implicit return:A
-context6Persistencia.Contexts.Application.ApplicationDbContextB-+
-)Persistencia.Services.AutenticacaoService
+%0void"‡Extensions.ObjectExtensionMethods.ValidarParametros(System.Reflection.PropertyInfo[], System.Reflection.PropertyInfo[], object, object)*%"#
+!Extensions.ObjectExtensionMethods*2
+0
+toProperties System.Reflection.PropertyInfo[]*4
+2
+fromProperties System.Reflection.PropertyInfo[]*
+
+toobject*
+
+fromobject*
+1*
+1*
+2
+3*
+2*
+4*
+4*
+5
+1*”
+5¯
+¬
+C
+9D:\git\Achei\backend\Extensions\ObjectExtensionMethods.csW W()
+%1string"%System.Reflection.MemberInfo.Name.get*0
+.
+fromPropertySystem.Reflection.PropertyInfo­
+ª
+C
+9D:\git\Achei\backend\Extensions\ObjectExtensionMethods.csW- W(<
+%2string"%System.Reflection.MemberInfo.Name.get*.
+,
+
+toPropertySystem.Reflection.PropertyInfo¤
+¡
+C
+9D:\git\Achei\backend\Extensions\ObjectExtensionMethods.csW W(<
+
+%3bool""string.operator ==(string, string)*
+"
+string*
+
+%1string*
+
+%2string*
+6
+4*Ð
+6¾
+»
+C
+9D:\git\Achei\backend\Extensions\ObjectExtensionMethods.csW@ W(Y
+%4System.Type"/System.Reflection.PropertyInfo.PropertyType.get*0
+.
+fromPropertySystem.Reflection.PropertyInfo¼
+¹
+C
+9D:\git\Achei\backend\Extensions\ObjectExtensionMethods.csW] W(t
+%5System.Type"/System.Reflection.PropertyInfo.PropertyType.get*.
+,
+
+toPropertySystem.Reflection.PropertyInfoÂ
+¿
+C
+9D:\git\Achei\backend\Extensions\ObjectExtensionMethods.csW@ W(t
+
+%6bool"1System.Type.operator ==(System.Type, System.Type)*"
+System.Type*
+
+%4System.Type*
+
+%5System.Type*
+7
+4*¶
+7Ë
+È
+C
+9D:\git\Achei\backend\Extensions\ObjectExtensionMethods.csY0 Y(K
+%7object"/System.Reflection.PropertyInfo.GetValue(object)*0
+.
+fromPropertySystem.Reflection.PropertyInfo*
+
+fromobjectÝ
+Ú
+C
+9D:\git\Achei\backend\Extensions\ObjectExtensionMethods.csY Y(L
+
+%8void"7System.Reflection.PropertyInfo.SetValue(object, object)*.
+,
+
+toPropertySystem.Reflection.PropertyInfo*
+
+toobject*
+
+%7object*
+1*_
+3"Z
+C
+9D:\git\Achei\backend\Extensions\ObjectExtensionMethods.cs^ ^(	
+implicit return:0
+toProperties System.Reflection.PropertyInfo[]:2
+fromProperties System.Reflection.PropertyInfo[]:
+toobject:
+fromobjectB%"#
+!Extensions.ObjectExtensionMethods

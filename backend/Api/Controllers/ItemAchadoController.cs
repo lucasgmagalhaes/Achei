@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Persistencia.Interfaces;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Api.Controllers
 {
@@ -42,11 +43,25 @@ namespace Api.Controllers
         /// <param name="itemAchado"></param>
         /// <returns></returns>
         [HttpPut]
-        public ActionResult Atualizar([FromBody]ItemAchado itemAchado)
+        public ActionResult Atualizar([FromBody]ItemAchado itemAchado, [FromServices]IItemMatchService itemMatchService,
+            [FromServices]IItemPerdidoService itemPerdidoService)
         {
             try
             {
                 itemAchadoService.Atualizar(itemAchado);
+
+                if (itemAchado.Devolvido)
+                {
+                    List<ItemMatch> matchs = itemMatchService.BuscarMatchsAchados(itemAchado.UsuarioId, itemAchado.Id);
+                    matchs.ForEach(match =>
+                    {
+                        match.ItemPerdido.Recuperado = true;
+                    });
+
+                    itemPerdidoService.Atualizar(matchs.Select(match => match.ItemPerdido).ToList());
+                }
+
+                itemAchadoService.AtualizarItensCompativeis(itemAchado);
                 return Ok(new RequestResponse() { message = "Item Atualizado com sucesso", status = "200" });
             }
             catch (Exception ex)
@@ -75,6 +90,7 @@ namespace Api.Controllers
             try
             {
                 itemAchadoService.Inserir(itemAchado);
+                itemAchadoService.AtualizarItensCompativeis(itemAchado);
                 return Ok(new RequestResponse() { message = "Item atualizado com sucesso", status = "200" });
             }
             catch (Exception e)

@@ -15,13 +15,13 @@
     <div class="row">
       <mat-form-field appearance="outline" class="w-100">
         <mat-chip-list #chipList>
-          <mat-chip *ngFor="let tag of itemForm.get('tags').value; let i = index" [selectable]="true" [removable]="true"
-            (removed)="remove(i)" [color]="primary">
+          <mat-chip *ngFor="let tag of itemForm.get('tags').value; let i = index" [selectable]="!matchItem" [removable]="!matchItem"
+            (removed)="remove(i)" [color]="primary" readonly="!matchItem">
             {{tag.nome}}
-            <mat-icon matChipRemove>cancel</mat-icon>
+            <mat-icon *ngIf="!matchItem" matChipRemove>cancel</mat-icon>
           </mat-chip>
           <input [matChipInputFor]="chipList" [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
-            [matChipInputAddOnBlur]="addOnBlur" (matChipInputTokenEnd)="add($event)">
+            [matChipInputAddOnBlur]="addOnBlur" [readonly]="matchItem" (matChipInputTokenEnd)="add($event)">
         </mat-chip-list>
       </mat-form-field>
     </div>
@@ -88,8 +88,9 @@
     <div class="row">
       <div class="right">
         <button mat-raised-button class="m-2" routerLink="/achados">Voltar</button>
-        <button mat-raised-button color="warn" class="m-2" (click)="excluir()">Deletar</button>
-        <button mat-raised-button color="primary" (click)="salvar()" class="m-2">Salvar</button>
+        <button *ngIf="!matchItem" mat-raised-button color="warn" class="m-2" (click)="excluir()">Deletar</button>
+        <button *ngIf="!matchItem" mat-raised-button color="primary" (click)="salvar()" class="m-2">Salvar</button>
+        <button *ngIf="matchItem && tipoItem === 'achado'" mat-raised-button color="primary" (click)="itemAchado()" class="m-2">Achei!</button>
       </div>
     </div>
 

@@ -1,61 +1,88 @@
 
-(Api.Session.BuscarBancoDoUsuario(string)-
-#D:\git\Achei\backend\Api\Session.cs7 7(1"0*
-0*
-1
-2*Ê
-2Ç
-Ä
--
-#D:\git\Achei\backend\Api\Session.cs; ;('9
-%03System.Collections.Generic.Dictionary<TKey, TValue>"__id*R*P
-Api.Session"?
-usuarios3System.Collections.Generic.Dictionary<TKey, TValue>œ
-™
--
-#D:\git\Achei\backend\Api\Session.cs; ;(.
-%1string"
-__arrayGet*;
-9
-%03System.Collections.Generic.Dictionary<TKey, TValue>*
-
-emailstringX
-V
--
-#D:\git\Achei\backend\Api\Session.cs; ;(.
-bancostring"__id*
-
-%1stringz
-x
--
-#D:\git\Achei\backend\Api\Session.cs< <(0
+7Api.Token.SigningConfigurations.SigningConfigurations()A
+7D:\git\Achei\backend\Api\Token\SigningConfigurations.cs ($"0*†
+0º·
+A
+7D:\git\Achei\backend\Api\Token\SigningConfigurations.cs7 (Y;
+%05System.Security.Cryptography.RSACryptoServiceProvider"5System.Security.Cryptography.RSACryptoServiceProviderí
+ê
+A
+7D:\git\Achei\backend\Api\Token\SigningConfigurations.cs; (S
 
-%2bool"string.IsNullOrEmpty(string)*
-"
-string*
-
-bancostring*
-3
-4*G
-3"B
--
-#D:\git\Achei\backend\Api\Session.cs> >(!
-
-bancostring*<
-4"7
--
-#D:\git\Achei\backend\Api\Session.cs@ @(
-""*
-5*
-1
-6*<
-1"7
--
-#D:\git\Achei\backend\Api\Session.csD D(
-""*I
-6"D
--
-#D:\git\Achei\backend\Api\Session.csF F(	
-implicit return:
-emailstringB"
-Api.Session
+%1void"SSystem.Security.Cryptography.RSACryptoServiceProvider.RSACryptoServiceProvider(int)*=
+;
+%05System.Security.Cryptography.RSACryptoServiceProvider*2€Î
+Ë
+A
+7D:\git\Achei\backend\Api\Token\SigningConfigurations.cs, (YA
+provider5System.Security.Cryptography.RSACryptoServiceProvider"__id*=
+;
+%05System.Security.Cryptography.RSACryptoServiceProvider*
+1*Ï
+1“
+
+A
+7D:\git\Achei\backend\Api\Token\SigningConfigurations.cs) (H0
+%2*System.Security.Cryptography.RSAParameters"LSystem.Security.Cryptography.RSACryptoServiceProvider.ExportParameters(bool)*C
+A
+provider5System.Security.Cryptography.RSACryptoServiceProvider*
+""ª§
+A
+7D:\git\Achei\backend\Api\Token\SigningConfigurations.cs (I3
+%3-Microsoft.IdentityModel.Tokens.RsaSecurityKey"-Microsoft.IdentityModel.Tokens.RsaSecurityKey§
+¤
+A
+7D:\git\Achei\backend\Api\Token\SigningConfigurations.cs ((
+
+%4void"hMicrosoft.IdentityModel.Tokens.RsaSecurityKey.RsaSecurityKey(System.Security.Cryptography.RSAParameters)*5
+3
+%3-Microsoft.IdentityModel.Tokens.RsaSecurityKey*2
+0
+%2*System.Security.Cryptography.RSAParameters×
+Ô
+A
+7D:\git\Achei\backend\Api\Token\SigningConfigurations.cs (I
+
+%5void"'Api.Token.SigningConfigurations.Key.set*#!
+Api.Token.SigningConfigurations*5
+3
+%3-Microsoft.IdentityModel.Tokens.RsaSecurityKey*
+2*•
+2Æ
+Ã
+A
+7D:\git\Achei\backend\Api\Token\SigningConfigurations.cs (0
+%6*Microsoft.IdentityModel.Tokens.SecurityKey"'Api.Token.SigningConfigurations.Key.get*#!
+Api.Token.SigningConfigurationsY
+W
+A
+7D:\git\Achei\backend\Api\Token\SigningConfigurations.cs (:
+%7"__id*
+""²¯
+A
+7D:\git\Achei\backend\Api\Token\SigningConfigurations.cs! (;7
+%81Microsoft.IdentityModel.Tokens.SigningCredentials"1Microsoft.IdentityModel.Tokens.SigningCredentialsÃ
+À
+A
+7D:\git\Achei\backend\Api\Token\SigningConfigurations.cs% (7
+
+%9void"xMicrosoft.IdentityModel.Tokens.SigningCredentials.SigningCredentials(Microsoft.IdentityModel.Tokens.SecurityKey, string)*9
+7
+%81Microsoft.IdentityModel.Tokens.SigningCredentials*2
+0
+%6*Microsoft.IdentityModel.Tokens.SecurityKey*
+
+%7ë
+è
+A
+7D:\git\Achei\backend\Api\Token\SigningConfigurations.cs (;
+%10void"6Api.Token.SigningConfigurations.SigningCredentials.set*#!
+Api.Token.SigningConfigurations*9
+7
+%81Microsoft.IdentityModel.Tokens.SigningCredentials*
+3*]
+3"X
+A
+7D:\git\Achei\backend\Api\Token\SigningConfigurations.cs (	
+implicit returnB#!
+Api.Token.SigningConfigurations

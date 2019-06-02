@@ -1,5 +1,4 @@
-„
-Entidades.Dto.ItemPerdidoDtoEntidades.Entidades.ItemDtoobjectA
-ItemPerdidoDto()-Entidades.Dto.ItemPerdidoDto.ItemPerdidoDto()=
-Recuperado.get+Entidades.Dto.ItemPerdidoDto.Recuperado.get=
-Recuperado.set+Entidades.Dto.ItemPerdidoDto.Recuperado.set
+Ü
+#Persistencia.Services.RegiaoService$Persistencia.Services.CrudService<T>object²
+ERegiaoService(Persistencia.Contexts.Application.ApplicationDbContext)iPersistencia.Services.RegiaoService.RegiaoService(Persistencia.Contexts.Application.ApplicationDbContext)R
+BuscarPorItemId(long)9Persistencia.Services.RegiaoService.BuscarPorItemId(long)

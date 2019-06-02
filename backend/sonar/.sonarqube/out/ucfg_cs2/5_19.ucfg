@@ -1,128 +1,116 @@
 
-9Api.Controllers.ItemPerdidoController.BuscarPerdido(long)G
-=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.cs ()"9*
+KApi.Controllers.ItemAchadoController.Salvar(Entidades.Entidades.ItemAchado)F
+<D:\git\Achei\backend\Api\Controllers\ItemAchadoController.csI I(""5*
 0*	
 1
 2
-3*
-2*
-4
-5*ì
-4àÖ
-G
-=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.cs! !(45
-%0/Microsoft.AspNetCore.Mvc.BadRequestObjectResult":Microsoft.AspNetCore.Mvc.ControllerBase.BadRequest(object)*+)
-'Microsoft.AspNetCore.Mvc.ControllerBase*
-""2BadRequest(object)"Ç
-G
-=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.cs! !(57
-5
-%0/Microsoft.AspNetCore.Mvc.BadRequestObjectResult*Â
-5ı
-Ú
-G
-=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.cs$& $(81
-%1+Persistencia.Interfaces.IItemPerdidoService"__id*n*l'
-%Api.Controllers.ItemPerdidoController"A
-itemPerdidoService+Persistencia.Interfaces.IItemPerdidoServiceÙÒ
-G
-=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.cs$& $(C%
-%2Entidades.Entidades.ItemPerdido"4Persistencia.Interfaces.ICrudService<T>.Buscar(long)*3
-1
-%1+Persistencia.Interfaces.IItemPerdidoService*
-""2Buscar(long)ß
-§
-G
-=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.cs$ $(C*
-perdidoEntidades.Entidades.ItemPerdido"__id*'
-%
-%2Entidades.Entidades.ItemPerdidoæ
-ª
-G
-=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.cs& &(#
+3*¡
+2
+Ì
+F
+<D:\git\Achei\backend\Api\Controllers\ItemAchadoController.csM M(!0
+%0*Persistencia.Interfaces.IItemAchadoService"__id*k*i&
+$Api.Controllers.ItemAchadoController"?
+itemAchadoService*Persistencia.Interfaces.IItemAchadoServiceïí
+F
+<D:\git\Achei\backend\Api\Controllers\ItemAchadoController.csM M(5$
+%1Entidades.Entidades.ItemAchado"2Persistencia.Interfaces.ICrudService<T>.Inserir(T)*2
+0
+%0*Persistencia.Interfaces.IItemAchadoService*.
+,
 
-%3bool""object.operator ==(object, object)*
-"
-object*,
-*
-perdidoEntidades.Entidades.ItemPerdido*
-""*
-6
-7*ã
-6Çˇ
-G
-=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.cs( ((63
-%4-Microsoft.AspNetCore.Mvc.NotFoundObjectResult"8Microsoft.AspNetCore.Mvc.ControllerBase.NotFound(object)*+)
-'Microsoft.AspNetCore.Mvc.ControllerBase*
-""2NotFound(object)"Ä
-G
-=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.cs( ((75
-3
-%4-Microsoft.AspNetCore.Mvc.NotFoundObjectResult*˘
-7∑
-¥
-G
-=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.cs+) +(/
-%5AutoMapper.IMapper"__id*I*G'
-%Api.Controllers.ItemPerdidoController"
-mapperAutoMapper.IMapperÉÄ
-G
-=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.cs+) +(L"
-%6Entidades.Dto.ItemPerdidoDto",AutoMapper.IMapper.Map<TDestination>(object)*
-
-%5AutoMapper.IMapper*,
-*
-perdidoEntidades.Entidades.ItemPerdido2Map<TDestination>(object)°
-û
-G
-=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.cs+ +(L'
-itemDtoEntidades.Dto.ItemPerdidoDto"__id*$
-"
-%6Entidades.Dto.ItemPerdidoDtoìê
-G
-=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.cs, ,("-
-%7'Microsoft.AspNetCore.Mvc.OkObjectResult"2Microsoft.AspNetCore.Mvc.ControllerBase.Ok(object)*+)
-'Microsoft.AspNetCore.Mvc.ControllerBase*)
-'
-itemDtoEntidades.Dto.ItemPerdidoDto2
-Ok(object)"z
-G
-=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.cs, ,(#/
+itemAchadoEntidades.Entidades.ItemAchado2
+Inserir(T)zx
+F
+<D:\git\Achei\backend\Api\Controllers\ItemAchadoController.csN N(k
+%2Api.RequestResponse"Api.RequestResponseõ
+ò
+F
+<D:\git\Achei\backend\Api\Controllers\ItemAchadoController.csN N(-
+
+%3void"%Api.RequestResponse.RequestResponse()*
+
+%2Api.RequestResponseâ
+Ü
+F
+<D:\git\Achei\backend\Api\Controllers\ItemAchadoController.csN2 N(Y.
+
+%2Api.RequestResponse"
+messagestring"__id*
+""à
+Ö
+F
+<D:\git\Achei\backend\Api\Controllers\ItemAchadoController.csN[ N(i-
+
+%2Api.RequestResponse"
+statusstring"__id*
+""ÑÅ
+F
+<D:\git\Achei\backend\Api\Controllers\ItemAchadoController.csN N(l-
+%4'Microsoft.AspNetCore.Mvc.OkObjectResult"2Microsoft.AspNetCore.Mvc.ControllerBase.Ok(object)*+)
+'Microsoft.AspNetCore.Mvc.ControllerBase*
+
+%2Api.RequestResponse2
+Ok(object)"y
+F
+<D:\git\Achei\backend\Api\Controllers\ItemAchadoController.csN N(m/
 -
-%7'Microsoft.AspNetCore.Mvc.OkObjectResult*
-8*	
+%4'Microsoft.AspNetCore.Mvc.OkObjectResult*
+4*	
 1
 3
-3*Ç
-1_
-]
-G
-=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.cs0" 0(J
-%8"__id*
-""°û
-G
-=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.cs0 0(N+
-%9%Microsoft.AspNetCore.Mvc.ObjectResult"?Microsoft.AspNetCore.Mvc.ControllerBase.StatusCode(int, object)*+)
-'Microsoft.AspNetCore.Mvc.ControllerBase*
-
-%8*
+3*¢
+1òï
+F
+<D:\git\Achei\backend\Api\Controllers\ItemAchadoController.csR R($5
+%5/Microsoft.AspNetCore.Mvc.BadRequestObjectResult":Microsoft.AspNetCore.Mvc.ControllerBase.BadRequest(object)*+)
+'Microsoft.AspNetCore.Mvc.ControllerBase*
 
-eSystem.Exception2StatusCode(int, object)"x
-G
-=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.cs0 0(O-
-+
-%9%Microsoft.AspNetCore.Mvc.ObjectResult*c
-3"^
-G
-=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.cs2 2(	
-implicit return*r
-9h
-f
-G
-=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.cs ()
-%10"__entrypoint*
-""*
-0:
+eSystem.Exception2BadRequest(object)"Å
+F
+<D:\git\Achei\backend\Api\Controllers\ItemAchadoController.csR R(%7
+5
+%5/Microsoft.AspNetCore.Mvc.BadRequestObjectResult*b
+3"]
+F
+<D:\git\Achei\backend\Api\Controllers\ItemAchadoController.csT T(	
+implicit return*‹
+5è
+å
+F
+<D:\git\Achei\backend\Api\Controllers\ItemAchadoController.csI I("
+%6"__entrypoint*.
+,
 
-idlongB)'
-%Api.Controllers.ItemPerdidoController
+itemAchadoEntidades.Entidades.ItemAchado—
+Œ
+F
+<D:\git\Achei\backend\Api\Controllers\ItemAchadoController.csI$ I(,
+%7"
+__annotate*B@
+>Microsoft.AspNetCore.Mvc.FromBodyAttribute.FromBodyAttribute()*.
+,
+
+itemAchadoEntidades.Entidades.ItemAchado—
+Œ
+F
+<D:\git\Achei\backend\Api\Controllers\ItemAchadoController.csH	 H(
+%8"
+__annotate*B@
+>Microsoft.AspNetCore.Mvc.HttpPostAttribute.HttpPostAttribute()*.
+,
+
+itemAchadoEntidades.Entidades.ItemAchadoó
+î
+F
+<D:\git\Achei\backend\Api\Controllers\ItemAchadoController.csI# I(B,
+
+itemAchadoEntidades.Entidades.ItemAchado"__annotation*
+
+%7*
+
+%8*
+0:,
+
+itemAchadoEntidades.Entidades.ItemAchadoB(&
+$Api.Controllers.ItemAchadoController

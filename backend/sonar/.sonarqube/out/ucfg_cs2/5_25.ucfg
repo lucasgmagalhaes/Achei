@@ -1,53 +1,105 @@
 
-#Api.Session.IsUsuarioLogado(string)-
-#D:\git\Achei\backend\Api\Session.cs (*"0*
-0*
+3Api.Controllers.ItemPerdidoController.Excluir(long)G
+=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.csR R(#"7*
+0*	
 1
-2*û
-2Ç
-Ä
--
-#D:\git\Achei\backend\Api\Session.cs ('9
-%03System.Collections.Generic.Dictionary<TKey, TValue>"__id*R*P
-Api.Session"?
-usuarios3System.Collections.Generic.Dictionary<TKey, TValue>œ
-™
--
-#D:\git\Achei\backend\Api\Session.cs (.
-%1string"
-__arrayGet*;
-9
-%03System.Collections.Generic.Dictionary<TKey, TValue>*
-
-emailstringX
-V
--
-#D:\git\Achei\backend\Api\Session.cs (.
-bancostring"__id*
-
-%1stringz
-x
--
-#D:\git\Achei\backend\Api\Session.cs (3
+2
+3*
+2*
+4
+5*“
+4ˆ…
+G
+=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.csX X(45
+%0/Microsoft.AspNetCore.Mvc.BadRequestObjectResult":Microsoft.AspNetCore.Mvc.ControllerBase.BadRequest(object)*+)
+'Microsoft.AspNetCore.Mvc.ControllerBase*
+""2BadRequest(object)"‚
+G
+=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.csX X(57
+5
+%0/Microsoft.AspNetCore.Mvc.BadRequestObjectResult*’
+5õ
+ò
+G
+=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.cs[ [("1
+%1+Persistencia.Interfaces.IItemPerdidoService"__id*n*l'
+%Api.Controllers.ItemPerdidoController"A
+itemPerdidoService+Persistencia.Interfaces.IItemPerdidoServiceÛØ
+G
+=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.cs[ [(.
 
-%2bool"string.IsNullOrEmpty(string)*
-"
-string*
-
-bancostring"7
+%2void"5Persistencia.Interfaces.ICrudService<T>.Deletar(long)*3
+1
+%1+Persistencia.Interfaces.IItemPerdidoService*
+""2Deletar(long){y
+G
+=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.cs\ \(i
+%3Api.RequestResponse"Api.RequestResponseœ
+™
+G
+=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.cs\ \(-
+
+%4void"%Api.RequestResponse.RequestResponse()*
+
+%3Api.RequestResponseŠ
+‡
+G
+=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.cs\2 \(W.
+
+%3Api.RequestResponse"
+messagestring"__id*
+""‰
+†
+G
+=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.cs\Y \(g-
+
+%3Api.RequestResponse"
+statusstring"__id*
+""…‚
+G
+=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.cs\ \(j-
+%5'Microsoft.AspNetCore.Mvc.OkObjectResult"2Microsoft.AspNetCore.Mvc.ControllerBase.Ok(object)*+)
+'Microsoft.AspNetCore.Mvc.ControllerBase*
+
+%3Api.RequestResponse2
+Ok(object)"z
+G
+=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.cs\ \(k/
 -
-#D:\git\Achei\backend\Api\Session.cs (4
-""*
-3*
+%5'Microsoft.AspNetCore.Mvc.OkObjectResult*
+6*	
 1
-4*<
-1"7
--
-#D:\git\Achei\backend\Api\Session.cs (
-""*I
-4"D
--
-#D:\git\Achei\backend\Api\Session.cs (	
-implicit return:
-emailstringB"
-Api.Session
+3
+3*ƒ
+1_
+]
+G
+=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.cs`" `(J
+%6"__id*
+""¢Ÿ
+G
+=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.cs` `(O+
+%7%Microsoft.AspNetCore.Mvc.ObjectResult"?Microsoft.AspNetCore.Mvc.ControllerBase.StatusCode(int, object)*+)
+'Microsoft.AspNetCore.Mvc.ControllerBase*
+
+%6*
+
+exSystem.Exception2StatusCode(int, object)"x
+G
+=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.cs` `(P-
++
+%7%Microsoft.AspNetCore.Mvc.ObjectResult*c
+3"^
+G
+=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.csb b(	
+implicit return*q
+7g
+e
+G
+=D:\git\Achei\backend\Api\Controllers\ItemPerdidoController.csR R(#
+%8"__entrypoint*
+""*
+0:
+
+idlongB)'
+%Api.Controllers.ItemPerdidoController

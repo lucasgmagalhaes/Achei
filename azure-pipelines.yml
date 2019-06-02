@@ -31,3 +31,4 @@ steps:
     chmod +x sonar-analise.bat
     ./sonar-analise.bat
   displayName: 'Backend SonarLint'
+

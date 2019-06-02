@@ -40,6 +40,7 @@ namespace Entidades.Configuration
                 .HasForeignKey(d => d.RegiaoId)
                 .HasConstraintName("FK__Item__RegiaoId__5FB337D6").OnDelete(DeleteBehavior.Cascade);
 
+
             builder.Property(e => e.UsuarioId)
                 .HasColumnName("UsuarioId");
 

@@ -1,9 +1,9 @@
 
-_Migrations.Conversor_2019042005.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)<
-2D:\git\Achei\backend\Migrations\v1.0\2019042005.cs  ($"0*X
-0"S
-<
-2D:\git\Achei\backend\Migrations\v1.0\2019042005.cs (	
+_Migrations.Conversor20192505001.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)>
+4D:\git\Achei\backend\Migrations\v.3.0\20192505001.cs  ($"0*Z
+0"U
+>
+4D:\git\Achei\backend\Migrations\v.3.0\20192505001.cs (	
 implicit return:M
 migrationBuilder9Microsoft.EntityFrameworkCore.Migrations.MigrationBuilderB#!
-Migrations.Conversor_2019042005
+Migrations.Conversor20192505001
