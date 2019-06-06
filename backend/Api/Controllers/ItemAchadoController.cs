@@ -49,18 +49,23 @@ namespace Api.Controllers
             try
             {
                 itemAchadoService.Atualizar(itemAchado);
-
+                List<ItemMatch> matchs = itemMatchService.BuscarMatchsAchados(itemAchado.UsuarioId, itemAchado.Id);
                 if (itemAchado.Devolvido)
-                {
-                    List<ItemMatch> matchs = itemMatchService.BuscarMatchsAchados(itemAchado.UsuarioId, itemAchado.Id);
+                {         
                     matchs.ForEach(match =>
                     {
                         match.ItemPerdido.Recuperado = true;
+                    }); 
+                }
+                else
+                {
+                    matchs.ForEach(match =>
+                    {
+                        match.ItemPerdido.Recuperado = false;
                     });
-
-                    itemPerdidoService.Atualizar(matchs.Select(match => match.ItemPerdido).ToList());
                 }
 
+                itemPerdidoService.Atualizar(matchs.Select(match => match.ItemPerdido).ToList());
                 itemAchadoService.AtualizarItensCompativeis(itemAchado);
                 return Ok(new RequestResponse() { message = "Item Atualizado com sucesso", status = "200" });
             }

@@ -38,7 +38,7 @@ namespace Persistencia.Services
             List<ItemPerdido> itensCompativeis = Entity<ItemPerdido>()
                 .Include(_item => _item.Tags)
                 .Include(_item => _item.Regiao)
-                .Where(_item => !_item.Recuperado)
+                .Where(_item => !_item.Recuperado && _item.UsuarioId != item.UsuarioId)
                 .ToList();
 
             List<ItemMatch> matchsItem = BuscarMatchs(item.Id);

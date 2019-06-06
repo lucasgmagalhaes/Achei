@@ -25,14 +25,14 @@ namespace Persistencia.Services
             return Entity()
                 .Include(item => item.ItemAchado)
                 .Include(item => item.ItemPerdido)
-                .Where(item => item.ItemPerdido.UsuarioId == usuarioId && item.ItemAchadoId == idAchado)
+                .Where(item => item.ItemAchadoId == idAchado)
                 .ToList();
         }
 
         public List<ItemMatch> BuscarMatchsPerdidos(long usuarioId, long idPerdido)
         {
             return Entity().Include(item => item.ItemPerdido)
-                    .Where(item => item.ItemAchado.UsuarioId == usuarioId && item.ItemPerdidoId == idPerdido)
+                    .Where(item => item.ItemPerdidoId == idPerdido)
                     .ToList();
         }
 

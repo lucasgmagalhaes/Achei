@@ -25,7 +25,6 @@ namespace Api.Controllers
         /// <param name="id">Id usuário</param>
         /// <returns></returns>
         [HttpGet("{id}")]
-        [Authorize("Bearer")]
         public ActionResult Get(long id)
         {
             try
