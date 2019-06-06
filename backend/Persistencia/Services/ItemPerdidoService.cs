@@ -50,7 +50,7 @@ namespace Persistencia.Services
             List<ItemAchado> itensCompativeis = Entity<ItemAchado>()
                 .Include(_item => _item.Tags)
                 .Include(_item => _item.Regiao)
-                .Where(_item => !_item.Devolvido)
+                .Where(_item => !_item.Devolvido && _item.UsuarioId != item.UsuarioId)
                 .ToList();
 
             List<ItemMatch> itensMatch = BuscarMatchs(item.Id);

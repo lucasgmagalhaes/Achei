@@ -68,18 +68,24 @@ namespace Api.Controllers
                 }
 
                 itemPerdidoService.Atualizar(itemPerdido);
+                List<ItemMatch> matchs = itemMatchService.BuscarMatchsPerdidos(itemPerdido.UsuarioId, itemPerdido.Id);
 
                 if (itemPerdido.Recuperado)
-                {
-                    List<ItemMatch> matchs = itemMatchService.BuscarMatchsPerdidos(itemPerdido.UsuarioId, itemPerdido.Id);
+                {     
                     matchs.ForEach(match =>
                     {
                         match.ItemAchado.Devolvido = true;
+                    }); 
+                }
+                else
+                {
+                    matchs.ForEach(match =>
+                    {
+                        match.ItemAchado.Devolvido = false;
                     });
-
-                    itemAchadoService.Atualizar(matchs.Select(match => match.ItemAchado).ToList());
                 }
 
+                itemAchadoService.Atualizar(matchs.Select(match => match.ItemAchado).ToList());
                 itemPerdidoService.AtualizarItensCompativeis(itemPerdido);
                 return Ok(new RequestResponse() { message = "Item Atualizado com sucesso", status = "200" });
             }
