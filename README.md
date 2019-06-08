@@ -49,3 +49,4 @@ Projeto do 6º período de Sistemas de Informação para busca e informação de
 - [CSU04 "Cadastrar Item"](https://drive.google.com/open?id=1_HoWTEw3QKBvWg0ykG5SMBm2rgggYhpVPSWdSlbgtvY)
 - [CSU05 "Listar itens"](https://drive.google.com/open?id=1tdfk2lNZnfXjjgw-VO5CIWgXmAL4LRciw-ARXvkCpTU)
 - [CSU06 "Upload de imagem"](https://drive.google.com/open?id=1t0oyPdy0PZFS3G4DZ_aDG5Ffepj51u0tq0WgWOc8b-w)
+- [CSU07 "Confirmar Match"](https://drive.google.com/open?id=1W64E1ws-_x4_T_nqB66-ZCm1xhAPZAjgtFfLAulII1A)
