@@ -37,6 +37,10 @@ Projeto do 6º período de Sistemas de Informação para busca e informação de
 
 ## Documentação
 
+### Especificação atualizada
+
+- [Especificação de Requisitos](https://drive.google.com/open?id=13Mih8nkcd9aK4GGMtKondO8bfVX2xmD5Se-37NAZThU)
+
 ### Diagrama de Classe
 
 - [DCE MVC](https://docs.google.com/document/d/1ZUSzTlPLYgsEnEvXeh9WudoOS0GynfZf5T7Yxa8aiAw/edit?usp=sharing)
