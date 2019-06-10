@@ -10,7 +10,7 @@ namespace Migrations
     {
         protected override void Up(MigrationBuilder migration)
         {
-            migration.Sql("ALTER TABLE Item ADD Imagem VARCHAR(MAX) NULL");
+            migration.Sql("ALTER TABLE Item ADD Imagem TEXT(65535) NULL");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)

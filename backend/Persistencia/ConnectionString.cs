@@ -19,7 +19,7 @@
         public static string GetConnection()
         {
             return "Server=" + Server + ";Database=" + Database
-                + ";User ID=" + UserId + ";Password=" + Password + ";";
+                + ";User=" + UserId + ";Password=" + Password + ";Port=3306";
         }
     }
 }

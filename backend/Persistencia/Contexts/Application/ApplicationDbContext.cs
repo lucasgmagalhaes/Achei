@@ -11,7 +11,7 @@ namespace Persistencia.Contexts.Application
         {
             optionsBuilder.EnableSensitiveDataLogging();
             optionsBuilder
-                .UseSqlServer(ConnectionString.GetConnection(), b => b.MigrationsAssembly("Migrations"))
+                .UseMySql(ConnectionString.GetConnection(), b => b.MigrationsAssembly("Migrations"))
                 .EnableDetailedErrors();
         }
 

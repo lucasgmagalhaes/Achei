@@ -12,9 +12,10 @@ namespace Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.Sql("CREATE TABLE ItemMatch("+
-                "Id bigint IDENTITY(1, 1)," +
-                "ItemAchadoId bigint references Item(Id)," +
-                "ItemPerdidoId bigint references Item(Id))");
+                "Id INT AUTO_INCREMENT," +
+                "ItemAchadoId INT references Item(Id)," +
+                "ItemPerdidoId INT references Item(Id)," +
+                "PRIMARY KEY(Id))");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)

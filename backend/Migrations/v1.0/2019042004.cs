@@ -10,21 +10,13 @@ namespace Migrations
     {
         protected override void Up(MigrationBuilder migration)
         {
-            migration.Sql("CREATE TABLE Regiao(" +
-                "Id BIGINT IDENTITY(1, 1)," +
-                "Longitude VARCHAR(30)," +
-                "Latitude VARCHAR(30)," +
-                "PRIMARY KEY(Id)" +
-                ");"
-            );
-
             migration.Sql("CREATE TABLE Item (" +
-                "Id BIGINT IDENTITY(1, 1)," +
+                "Id INT NOT NULL AUTO_INCREMENT," +
                 "Titulo VARCHAR(50) NOT NULL," +
                 "Detalhe VARCHAR(100) NULL," +
-                "Tipo NVARCHAR(MAX) NOT NULL," +
-                "UsuarioId bigint NOT NULL," +
-                "RegiaoId BIGINT NULL," +
+                "Tipo TEXT NOT NULL," +
+                "UsuarioId INT NOT NULL," +
+                "RegiaoId INT NULL," +
                 "DataInicio DATE NULL," +
                 "DataFim DATE NULL," +
                 "Recuperado bit NULL," +
@@ -37,9 +29,9 @@ namespace Migrations
              );
 
             migration.Sql("CREATE TABLE Tag (" +
-                "Id BIGINT IDENTITY(1, 1)," +
+                "Id INT NOT NULL AUTO_INCREMENT," +
                 "Nome VARCHAR(30) NOT NULL," +
-                "ItemId BIGINT NULL," +
+                "ItemId INT NULL," +
                 "FOREIGN KEY(ItemId) REFERENCES Item(Id) ON DELETE CASCADE," +
                 "PRIMARY KEY(Id)" +
                 ");"
